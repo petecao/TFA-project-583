@@ -505,13 +505,13 @@ bool CallGraphPass::doInitialization(Module *M) {
         	continue;
 
 		//Filter C++ VTables
-		if(GV->getName().startswith("_ZTV"))
+		if(GV->getName().starts_with("_ZTV"))
 			continue;
 
-		if(GV->getName().startswith("_ZN"))
+		if(GV->getName().starts_with("_ZN"))
 			continue;
 
-		 if(GV->getName().startswith("_ZTI"))
+		 if(GV->getName().starts_with("_ZTI"))
 		 	continue;
 		
 #ifdef TEST_ONE_INIT_GLOBAL

@@ -50,7 +50,7 @@ StringRef getClassName(GlobalVariable* GV){
 
 void CHABuilderPass::CPPClassHierarchyRelationCollector(GlobalVariable* GV){
 	
-	if(!GV->getName().startswith("_ZTI"))
+	if(!GV->getName().starts_with("_ZTI"))
 		return;
 	
 	if (!GV->hasInitializer()){
@@ -79,7 +79,7 @@ void CHABuilderPass::CPPClassHierarchyRelationCollector(GlobalVariable* GV){
             continue;
 		
 		StringRef gvname = gv->getName();
-		if(!gvname.startswith("_ZTI"))
+		if(!gvname.starts_with("_ZTI"))
 			continue;
 		//OP<<"gv: "<<gv->getName()<<"\n";
 		ParentClassMap[GV->getName().str()].push_back(gvname.str());
@@ -92,7 +92,7 @@ void CHABuilderPass::CPPClassHierarchyRelationCollector(GlobalVariable* GV){
 //In most cases, VTable is a struct with one array element
 void CHABuilderPass::CPPVTableBuilder(GlobalVariable* GV){
 	
-	if(!GV->getName().startswith("_ZTV"))
+	if(!GV->getName().starts_with("_ZTV"))
 		return;
 
 	//TODO: handle this
@@ -171,7 +171,7 @@ void CHABuilderPass::CPPVTableBuilder(GlobalVariable* GV){
 
 void CHABuilderPass::CPPVTableMapping(GlobalVariable* GV){
 
-    if(!GV->getName().startswith("_ZTV"))
+    if(!GV->getName().starts_with("_ZTV"))
 		return;
 
 	//TODO: handle this

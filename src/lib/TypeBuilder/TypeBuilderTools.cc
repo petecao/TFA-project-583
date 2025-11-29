@@ -216,13 +216,13 @@ bool TypeBuilderPass::checkValidGV(GlobalVariable* GV){
         return false;
 
     //Filter C++ VTables
-    if(GV->getName().startswith("_ZTV"))
+    if(GV->getName().starts_with("_ZTV"))
         return false;
 
-    if(GV->getName().startswith("_ZN"))
+    if(GV->getName().starts_with("_ZN"))
         return false;
 
-    if(GV->getName().startswith("_ZTI"))
+    if(GV->getName().starts_with("_ZTI"))
         return false;
 
     return true;

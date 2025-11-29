@@ -61,7 +61,7 @@ void CallGraphPass::findCalleesByType(CallInst *CI, FuncSet &S) {
 				ActualTy = ActualTy->getPointerElementType();
 			}
 			if (DefinedTy->isStructTy() && ActualTy->isStructTy() &&
-				(DefinedTy->getStructName().equals(ActualTy->getStructName())))
+				(DefinedTy->getStructName() == ActualTy->getStructName()))
 				continue;
 			if (DefinedTy->isIntegerTy() && ActualTy->isIntegerTy() &&
 				DefinedTy->getIntegerBitWidth() == ActualTy->getIntegerBitWidth())
