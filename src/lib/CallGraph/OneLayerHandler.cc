@@ -213,13 +213,21 @@ bool CallGraphPass::oneLayerChecker(CallInst* CI, FuncSet &FS){
             continue;
         }
 
+        // TODO: check correctness
         BitCastOperator *BCI = dyn_cast<BitCastOperator>(TV);
         if(BCI){
             
-            //Check if TV comes from union
-            Type *ToTy = BCI->getDestTy(), *FromTy = BCI->getSrcTy();
-            if(FromTy->isPointerTy()){
-                FromTy = FromTy->getPointerElementType();
+            Value *Op = BCI->getOperand(0);
+            Type *FromTy = nullptr;
+
+            if (auto *GEP = dyn_cast<GEPOperator>(Op)) {
+                FromTy = GEP->getSourceElementType();
+            }
+            else if (auto *AI = dyn_cast<AllocaInst>(Op)) {
+                FromTy = AI->getAllocatedType();
+            }
+            else if (auto *GV = dyn_cast<GlobalVariable>(Op)) {
+                FromTy = GV->getValueType();
             }
             if(FromTy->isStructTy()){
                 if(FromTy->getStructName().contains(".union")){

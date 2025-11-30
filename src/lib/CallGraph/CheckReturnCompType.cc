@@ -72,17 +72,14 @@ void CallGraphPass::checkTypeStoreFunc(Value *V, set<CompositeType> &CTSet){
 
 		GetElementPtrInst *GEP = dyn_cast<GetElementPtrInst>(TV);
         if(GEP){
-			Value *PO = GEP->getPointerOperand();
-			Type *PTy = PO->getType();
-			Type *Ty = PTy->getPointerElementType();
 			Type *sTy = GEP->getSourceElementType();
 
 			//Expect the PointerOperand is a struct
-			if (isCompositeType(Ty)	&& GEP->hasAllConstantIndices()) {
+			if (isCompositeType(sTy) && GEP->hasAllConstantIndices()) {
 				User::op_iterator ie = GEP->idx_end();
 				ConstantInt *ConstI = dyn_cast<ConstantInt>((--ie)->get());
 				int Idx = ConstI->getSExtValue();
-				CTSet.insert(std::make_pair(Ty, Idx));
+				CTSet.insert(std::make_pair(sTy, Idx));
 				return;
 			}
 			continue;
