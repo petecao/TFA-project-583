@@ -359,7 +359,7 @@ void TypeBuilderPass::checkLayeredDebugInfo(GlobalVariable *GV){
 bool TypeBuilderPass::doInitialization(Module *M) {
 
     collectLiteralStruct(M);
-    Int8PtrTy[M] = Type::getInt8PtrTy(M->getContext());
+    Int8PtrTy[M] = PointerType::getUnqual(M->getContext());
 
     for (Module::global_iterator gi = M->global_begin(); 
 			gi != M->global_end(); ++gi) {
@@ -378,7 +378,7 @@ bool TypeBuilderPass::doInitialization(Module *M) {
 #endif
 
         Type* GType = GV->getType();
-        Type* GPType = GType->getPointerElementType();
+        Type* GPType = GV->getValueType();
         size_t Tyhash = typeHash(GPType);
 
         if(GPType->isArrayTy()){

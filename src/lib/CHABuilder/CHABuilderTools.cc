@@ -18,19 +18,22 @@ StringRef getClassName(GlobalVariable* GV){
 							if(vop != u2)
 								continue;
 							
-							BitCastOperator *CastO = dyn_cast<BitCastOperator>(pop);
+							// TODO: confirm this change works
+							Value *UnderlyingObject = pop->stripPointerCasts();
+                            Type *RealType = nullptr;
 
-							if(CastO){
-								Value *ToV = CastO, *FromV = CastO->getOperand(0);
-								Type *ToTy = ToV->getType(), *FromTy = FromV->getType();
+                            // Check if the pointer comes from a stack allocation
+                            if (auto *AI = dyn_cast<AllocaInst>(UnderlyingObject)) {
+                                RealType = AI->getAllocatedType();
+                            } 
+                            // Check if the pointer comes from a global variable
+                            else if (auto *GV = dyn_cast<GlobalVariable>(UnderlyingObject)) {
+                                RealType = GV->getValueType();
+                            }
 
-								if(FromTy->isPointerTy()){
-									Type *ToeleType = FromTy->getPointerElementType();
-									if(ToeleType->isStructTy()){
-										className = ToeleType->getStructName();
-									}
-								}
-							}
+                            if (RealType && RealType->isStructTy()) {
+                                className = RealType->getStructName();
+                            }
 
 							GEPOperator *GEPO_outer = dyn_cast<GEPOperator>(pop);
 							if(GEPO_outer){

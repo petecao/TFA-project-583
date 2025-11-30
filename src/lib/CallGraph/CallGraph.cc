@@ -485,7 +485,7 @@ bool CallGraphPass::doInitialization(Module *M) {
 
 	DL = &(M->getDataLayout());
 	CurrentLayout = DL;
-	Int8PtrTy = Type::getInt8PtrTy(M->getContext());
+	Int8PtrTy = PointerType::getUnqual(M->getContext());
 	IntPtrTy = DL->getIntPtrType(M->getContext());
 
 	static int iter_num = 0;
