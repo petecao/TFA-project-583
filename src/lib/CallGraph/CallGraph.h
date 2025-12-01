@@ -143,7 +143,7 @@ class CallGraphPass : public IterativeModulePass {
 		bool getGEPIndex(Type* baseTy, int offset, Type * &resultTy, int &Idx);
 		Type *getBaseType(Value *V, set<Value *> &Visited);
 		Type *getPhiBaseType(PHINode *PN, set<Value *> &Visited);
-		Type *getFuncPtrType(Value *V);
+		//Type *getFuncPtrType(Value *V);
 		Function *getBaseFunction(Value *V);
 		Value *recoverBaseType(Value *V);
 		void propagateType(Value *ToV, Type *FromTy, int FromIdx, StoreInst* SI);

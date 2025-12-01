@@ -146,9 +146,11 @@ bool CallGraphPass::nextLayerBaseType_new(Value *V, list<CompositeType> &TyList,
 		if(ToTy->isPointerTy()){
             ToTy = ToTy->getPointerElementType();
         }
+		
 		if(ToTy->isPointerTy()){
             ToTy = ToTy->getPointerElementType();
         }
+
 		if(ToTy->isFunctionTy()){
 			auto source_v = BCI->getOperand(0);
 			for(User * U : source_v->users()){
@@ -652,8 +654,23 @@ Type *CallGraphPass::getBaseType(Value *V, set<Value *> &Visited) {
 	// The value itself is a pointer to a composite type
 	else if (Ty->isPointerTy()) {
 
-		Type *ETy = Ty->getPointerElementType();
-		if (isCompositeType(ETy)) {
+		// Type *ETy = Ty->getPointerElementType();
+		// if (isCompositeType(ETy)) {
+		// 	return ETy;
+		// }
+		Type *ETy = nullptr;
+    
+		if (AllocaInst *AI = dyn_cast<AllocaInst>(V)) {
+			ETy = AI->getAllocatedType();
+		} else if (GlobalVariable *GV = dyn_cast<GlobalVariable>(V)) {
+			ETy = GV->getValueType();
+		} else if (GetElementPtrInst *GEP = dyn_cast<GetElementPtrInst>(V)) {
+			ETy = GEP->getSourceElementType();
+		} else if (LoadInst *LI = dyn_cast<LoadInst>(V)) {
+			ETy = LI->getType();
+		}
+		
+		if (ETy && isCompositeType(ETy)) {
 			return ETy;
 		}
 	}
@@ -693,16 +710,18 @@ Type *CallGraphPass::getPhiBaseType(PHINode *PN, set<Value *> &Visited) {
 	return NULL;
 }
 
-Type *CallGraphPass::getFuncPtrType(Value *V){
-    Type *Ty = V->getType();
-	if (PointerType *PTy = dyn_cast<PointerType>(Ty)) {
-		Type *ETy = PTy->getPointerElementType();
-		if (ETy->isFunctionTy())
-			return ETy;
-	}
+// LOC 2 : AMR : not used?
+// Type *CallGraphPass::getFuncPtrType(Value *V){
+// 	return NULL;
+//     Type *Ty = V->getType();
+// 	if (PointerType *PTy = dyn_cast<PointerType>(Ty)) {
+// 		Type *ETy = PTy->getPointerElementType();
+// 		if (ETy->isFunctionTy())
+// 			return ETy;
+// 	}
 
-	return NULL;
-}
+// 	return NULL;
+// }
 
 
 Function *CallGraphPass::getBaseFunction(Value *V) {
@@ -773,10 +792,15 @@ bool CallGraphPass::trackFuncPointer(Value* VO, Value* PO, StoreInst* SI){
 	if(!Ty->isPointerTy())
 		return false;
 	
-	Type *ETy = Ty->getPointerElementType();
+	// loc 1 : AMR
+	// Type *ETy = Ty->getPointerElementType();
+
+
+	Type *ETy = VO->getType();
+
 	if(!ETy->isFunctionTy())
 		return false;
-	
+
     std::list<Value *> EV;
     std::set<Value *> PV;
     EV.clear();
