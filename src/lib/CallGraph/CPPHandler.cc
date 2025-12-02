@@ -6,36 +6,6 @@ bool CallGraphPass::getCPPVirtualFunc(Value* V, int &Idx, Type* &Sty){
 
     set<Value *>Visited;
 
-	// Case 1: GetElementPtrInst / GEPOperator
-	// if(GEPOperator *GEP = dyn_cast<GEPOperator>(V)){
-	// 	Type *PTy = GEP->getPointerOperand()->getType();
-	// 	Type *Ty = PTy->getPointerElementType();
-
-    //     if(!Ty->isPointerTy()){
-    //         return false;
-    //     }
-
-    //     Type *innertTy = Ty->getPointerElementType();
-
-	// 	//Expect the PointerOperand is a struct
-	// 	if (innertTy->isFunctionTy() && GEP->hasAllConstantIndices()) {
-
-	// 		User::op_iterator ie = GEP->idx_end();
-	// 		ConstantInt *ConstI = dyn_cast<ConstantInt>((--ie)->get());
-	// 		Idx = ConstI->getSExtValue();
-	// 		if(Idx < 0)
-	// 			return false;
-            
-    //         unsigned indice_num = GEP->getNumIndices();
-    //         if(indice_num != 1)
-    //             return false;
-            
-    //         return getCPPVirtualFunc(GEP->getPointerOperand(), Idx, Sty);
-	// 	}
-	// 	else
-	// 		return false;
-	// }
-
 	// REVISED
 	if (GEPOperator *GEP = dyn_cast<GEPOperator>(V)) {
 		Type *ElemTy = GEP->getResultElementType();
@@ -60,42 +30,13 @@ bool CallGraphPass::getCPPVirtualFunc(Value* V, int &Idx, Type* &Sty){
 		return getCPPVirtualFunc(LI->getOperand(0), Idx, Sty);
 	}
 
-    //Find the special bitcast inst
-    // else if (BitCastInst *BCI = dyn_cast<BitCastInst>(V)){
-        
-    //     Type * srcty = BCI->getSrcTy();
-	// 	Type * destty = BCI->getDestTy();
-
-    //     if(srcty->isPointerTy() && destty->isPointerTy()){
-    //         Type *srctoTy = srcty->getPointerElementType();
-    //         Type *desttoTy = destty->getPointerElementType();
-
-    //         if(srctoTy->isStructTy() && srctoTy->getNumContainedTypes()!= 0){
-    //             string tyname = srctoTy->getStructName().str();
-    //             Type *desttotoTy = desttoTy->getPointerElementType();
-    //             if(desttotoTy->isPointerTy()){
-
-    //                 Type *desttototoTy = desttotoTy->getPointerElementType();
-    //                 if(desttototoTy->isFunctionTy()){
-    //                     Sty = srctoTy;
-    //                     if(Idx >=0)
-    //                         return true;
-    //                     else 
-    //                         return false;
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     return getCPPVirtualFunc(BCI->getOperand(0), Idx, Sty);
-    // }
-
 	else if (BitCastInst *BCI = dyn_cast<BitCastInst>(V)) {
 		Value *Op = BCI->getOperand(0);
 		Type *srctoTy = nullptr;
 
 		if (auto *GEP = dyn_cast<GEPOperator>(Op)) {
 			// If the vtable pointer comes from a GEP, the source element
-			// type is the thing being indexed into (often a struct).
+			// type is the thing being indexed into (often a struct)
 			Type *BaseTy = GEP->getSourceElementType();
 			if (BaseTy && BaseTy->isStructTy())
 				srctoTy = BaseTy;
@@ -110,8 +51,7 @@ bool CallGraphPass::getCPPVirtualFunc(Value* V, int &Idx, Type* &Sty){
 		}
 
 		if (srctoTy && srctoTy->isStructTy() && srctoTy->getNumContainedTypes() != 0) {
-			// treat this as a valid C++ style vtable pattern when the source
-			// side is a non-empty struct
+			// treat this as a valid C++ style vtable pattern when the source is a non-empty struct
 			Sty = srctoTy;
 			return Idx >= 0;
 		}
@@ -217,11 +157,14 @@ void CallGraphPass::resolveVariableParameters(CallInst *CI, FuncSet &FS,
 					is_valid_type = false;
 					break;
 				}
-					
-				if(CI_check_ty->isPointerTy() && f_check_ty->isPointerTy()){
-					CI_check_ty = CI_check_ty->getPointerElementType();
-					f_check_ty = f_check_ty->getPointerElementType();
-				}
+		
+				// TODO: Removed this check for now 
+				// Note that this would take away from resolveVariableParameters functionality
+
+				// if(CI_check_ty->isPointerTy() && f_check_ty->isPointerTy()){
+				// 	CI_check_ty = CI_check_ty->getPointerElementType();
+				// 	f_check_ty = f_check_ty->getPointerElementType();
+				// }
 				
 				if(CI_check_ty->isStructTy() && f_check_ty->isStructTy()){
 					StructType* CI_check_Sty = dyn_cast<StructType>(CI_check_ty);
