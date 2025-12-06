@@ -265,69 +265,77 @@ from type: i32 (%struct.TfLiteContext*, %struct.TfLiteNode*, i32, %struct.TfLite
 to tyoe: i32 (%struct.TfLiteContext.5225*, %struct.TfLiteNode.5220*, i32, %struct.TfLiteTensor.5219**)*
 in this case, we may need to regard a cast happens between %struct.TfLiteContext and %struct.TfLiteContext.5225
 */
-void CallGraphPass::handleIndirectCast(Type *FromTy, Type *ToTy){
-	
-	//Handle the cast inside function pointers
-	if(ToTy->isPointerTy() && FromTy->isPointerTy()){
-		Type *ToeleType = ToTy->getPointerElementType();
-		Type *FromeleType = FromTy->getPointerElementType();
-		
-		if(ToeleType->isFunctionTy() && FromeleType->isFunctionTy()){
+void CallGraphPass::handleIndirectCast(Type *FromTy, Type *ToTy, Value *FromV, Value *ToV) {
+    // We only care about pointer-to-pointer casts here, same as before.
+    if (!FromTy->isPointerTy() || !ToTy->isPointerTy())
+        return;
 
-			/*string to_ty_str = getTypeStr(ToeleType);
-			string from_ty_str = getTypeStr(FromeleType);
-			if(checkStringContainSubString(to_ty_str, "TfLiteContext.1233")){
-				OP<<"from_ty_str: "<<from_ty_str<<"\n";
-				OP<<"to_ty_str: "<<to_ty_str<<"\n";
-				
-			}*/
+    // Helper: try to recover a FunctionType from a value under opaque pointers.
+    auto getFuncTypeFromValue = [](Value *V) -> FunctionType * {
+        if (!V)
+            return nullptr;
 
-			//OP<<"\nToeleType: "<<*ToeleType<<"\n";
-			//OP<<"FromeleType: "<<*FromeleType<<"\n";
-			FunctionType* FromFuncTy = dyn_cast<FunctionType>(FromeleType);
-			FunctionType* ToFuncTy = dyn_cast<FunctionType>(ToeleType);
+        V = V->stripPointerCasts();
 
-			//First handle return type
-			Type* FromReturnTy = FromFuncTy->getReturnType();
-			Type* ToReturnTy = ToFuncTy->getReturnType();
-			if(FromReturnTy != ToReturnTy){
-				if(FromReturnTy->isStructTy() && ToReturnTy->isStructTy()){
-					transitType(ToReturnTy, FromReturnTy);
-				}
-			}
+        // Direct function
+        if (auto *F = dyn_cast<Function>(V))
+            return F->getFunctionType();
 
-			//Next handle arg type
-			if(FromFuncTy->getNumParams() != ToFuncTy->getNumParams()){
-				//OP<<"invalid arg number!\n";
-				return;
-			}
+        // ConstantExpr bitcast of a function (common in globals)
+        if (auto *CE = dyn_cast<ConstantExpr>(V)) {
+            if (CE->getOpcode() == Instruction::BitCast ||
+                CE->getOpcode() == Instruction::PtrToInt ||
+                CE->getOpcode() == Instruction::IntToPtr) {
+                if (auto *F = dyn_cast<Function>(CE->getOperand(0)))
+                    return F->getFunctionType();
+            }
+        }
 
-			for(int i = 0; i < FromFuncTy->getNumParams(); i++){
-				Type* FromArgTy = FromFuncTy->getParamType(i);
-				Type* ToArgTy = ToFuncTy->getParamType(i);
-				//OP<<"FromArgTy: "<<*FromArgTy<<"\n";
-				//OP<<"ToArgTy: "<<*ToArgTy<<"\n";
-				if(ToArgTy->isPointerTy() && FromArgTy->isPointerTy()){
-					//OP<<"both ptr\n";
-					ToArgTy = ToArgTy->getPointerElementType();
-					FromArgTy = FromArgTy->getPointerElementType();
-				}
+        return nullptr;
+    };
 
-				if(FromArgTy != ToArgTy){
-					if(FromArgTy->isStructTy() && ToArgTy->isStructTy()){
-						transitType(ToArgTy, FromArgTy);
-						/*string to_ty_str = getTypeStr(ToArgTy);
-						string from_ty_str = getTypeStr(FromArgTy);
-						if(checkStringContainSubString(to_ty_str, "TfLiteContext.1233")){
-							//if(FromTy->isStructTy())
-							OP<<"\nfrom_ty_str: "<<from_ty_str<<"\n";
-							OP<<"to_ty_str: "<<to_ty_str<<"\n";
-						}*/
-					}
-				}
-			}
-		}
-	}
+    FunctionType *FromFuncTy = getFuncTypeFromValue(FromV);
+    FunctionType *ToFuncTy   = getFuncTypeFromValue(ToV);
+
+    // If we can't recover both function types, we can't reason about their signatures.
+    if (!FromFuncTy || !ToFuncTy)
+        return;
+
+    // --- Return type handling (same logic as before) ---
+
+    Type *FromReturnTy = FromFuncTy->getReturnType();
+    Type *ToReturnTy   = ToFuncTy->getReturnType();
+
+    if (FromReturnTy != ToReturnTy) {
+        if (FromReturnTy->isStructTy() && ToReturnTy->isStructTy()) {
+            transitType(ToReturnTy, FromReturnTy);
+        }
+    }
+
+    // Argument type handling adapted to opaque pointers
+
+    if (FromFuncTy->getNumParams() != ToFuncTy->getNumParams()) {
+        // Different number of params: original code just bailed
+        return;
+    }
+
+    for (unsigned i = 0; i < FromFuncTy->getNumParams(); ++i) {
+        Type *FromArgTy = FromFuncTy->getParamType(i);
+        Type *ToArgTy   = ToFuncTy->getParamType(i);
+
+        // OLD behavior:
+        // if (both pointer) peel one level
+        //
+        // Under opaque pointers that is no longer legal, and pointer types
+        // no longer carry pointee information. So we don't peel pointers
+        // anymore; we only propagate struct<->struct casts directly.
+
+        if (FromArgTy != ToArgTy) {
+            if (FromArgTy->isStructTy() && ToArgTy->isStructTy()) {
+                transitType(ToArgTy, FromArgTy);
+            }
+        }
+    }
 }
 
 bool CallGraphPass::typeConfineInCast(CastInst *CastI) {
@@ -341,93 +349,63 @@ bool CallGraphPass::typeConfineInCast(CastInst *CastI) {
 	return typeConfineInCast(FromTy, ToTy);
 }
 
-bool CallGraphPass::typeConfineInCast(Type *FromTy, Type *ToTy){
-	
-	if (isCompositeType(FromTy)) {
-		transitType(ToTy, FromTy);
-		return true;
-	}
+bool CallGraphPass::typeConfineInCast(Type *FromTy, Type *ToTy) {
 
-	if (!FromTy->isPointerTy() || !ToTy->isPointerTy()){
-		//OP<<"unsupported case type\n";
-		return false;
-	}
+    // If the source type itself is composite (struct/array/vector/etc) 
+	// record the casting relation directly
+    if (isCompositeType(FromTy)) {
+        transitType(ToTy, FromTy);
+        return true;
+    }
 
-	typeStrCastMap[getTypeStr(ToTy)].insert(getTypeStr(FromTy));
+    // Only consider pointer-to-pointer casts beyond this point
+    if (!FromTy->isPointerTy() || !ToTy->isPointerTy()) {
+        return false;
+    }
 
-	Type *EToTy = ToTy->getPointerElementType();
-	Type *EFromTy = FromTy->getPointerElementType();
-	if (isCompositeType(EToTy) && isCompositeType(EFromTy)) {
+    // We still keep the string-level record of this cast for debugging /
+    // statistics, even under opaque pointers
+    typeStrCastMap[getTypeStr(ToTy)].insert(getTypeStr(FromTy));
 
-		transitType(EToTy, EFromTy);
-#ifdef ENABLE_CAST_ESCAPE
-		if(EToTy->isStructTy() && EFromTy->isStructTy()){
-			StructType* EToSTy = dyn_cast<StructType>(EToTy);
-			StructType* EFromSTy = dyn_cast<StructType>(EFromTy);
-			if(!EToSTy->isLiteral() && !EFromSTy->isLiteral()){
-				StringRef To_Ty_name = EToTy->getStructName();
-				StringRef From_Ty_name = EFromTy->getStructName();
-				string parsed_To_Ty_name = parseIdentifiedStructName(To_Ty_name);
-				string parsed_From_Ty_name = parseIdentifiedStructName(From_Ty_name);
-				typeNameTransitMap[parsed_To_Ty_name].insert(parsed_From_Ty_name);
-			}
-		}
-#endif
+    // --- LLVM 17 CHANGE ---
+    //
+    // With opaque pointers, pointer types no longer carry pointee
+    // information, so we cannot do a pointer to composite type cast
+    //
+    // For now, we skip this pointee-propagation step
 
-		return true;
-	}
-
-	return false;
+    return false;
 }
 
-//Record the casting between pointers and structures
-void CallGraphPass::handleCastEscapeType(Type *ToTy, Type *FromTy){
-	
-	int Idx = -1;
-	if(ToTy->isPointerTy() && FromTy->isPointerTy()){
-		string to_ty_str = getTypeStr(ToTy);
-		string from_ty_str = getTypeStr(FromTy);
-		if(to_ty_str == "i8*"){
-			Type *Ty = FromTy->getPointerElementType();
-			if(Ty->isStructTy()){
-				StructType* STy = dyn_cast<StructType>(Ty);
-				if(STy->isLiteral()){
-					string Ty_name = Ctx->Global_Literal_Struct_Map[typeHash(Ty)];
-					castEscapeSet.insert(Ty_name);
-					typeNameTransitMap[Ty_name].insert("i8");
-					typeNameTransitMap["i8"].insert(Ty_name);
-				}
-				else{
-					StringRef Ty_name = Ty->getStructName();
-					string parsed_Ty_name = parseIdentifiedStructName(Ty_name);
-					castEscapeSet.insert(parsed_Ty_name);
-					typeNameTransitMap[parsed_Ty_name].insert("i8");
-					typeNameTransitMap["i8"].insert(parsed_Ty_name);
+// Record the casting between pointers and structures (approximate under opaque ptrs)
+void CallGraphPass::handleCastEscapeType(Type *ToTy, Type *FromTy) {
 
-				}
-			}
-		}
-		else if(from_ty_str == "i8*"){
-			Type *Ty = ToTy->getPointerElementType();
-			if(Ty->isStructTy()){
-				StructType* STy = dyn_cast<StructType>(Ty);
-				if(STy->isLiteral()){
-					string Ty_name = Ctx->Global_Literal_Struct_Map[typeHash(Ty)];
-					castEscapeSet.insert(Ty_name);
-					typeNameTransitMap[Ty_name].insert("i8");
-					typeNameTransitMap["i8"].insert(Ty_name);
-				}
-				else{
-					StringRef Ty_name = Ty->getStructName();
-					string parsed_Ty_name = parseIdentifiedStructName(Ty_name);
-					castEscapeSet.insert(parsed_Ty_name);
-					typeNameTransitMap[parsed_Ty_name].insert("i8");
-					typeNameTransitMap["i8"].insert(parsed_Ty_name);
-				}
-			}
-		}
-	}
+    // Only consider pointer-to-pointer casts, like before
+    if (!ToTy->isPointerTy() || !FromTy->isPointerTy())
+        return;
+
+    std::string to_ty_str   = getTypeStr(ToTy);
+    std::string from_ty_str = getTypeStr(FromTy);
+
+    // In the original (typed-pointer) code, this function looked for casts
+    // between i8* and struct*
+    //
+    // Under opaque pointers, pointer types no longer carry pointee information,
+    // so we cannot robustly recover the struct type here from Type* alone
+    //
+    // We keep a very coarse version of the behavior: if there is a cast
+    // involving i8*, we note that "i8" performs escape-type casting but
+    // we DO NOT try to attribute this to a specific struct name
+
+    if (to_ty_str == "i8*") {
+        castEscapeSet.insert("i8");
+        typeNameTransitMap["i8"].insert("i8");
+    } else if (from_ty_str == "i8*") {
+        castEscapeSet.insert("i8");
+        typeNameTransitMap["i8"].insert("i8");
+    }
 }
+
 
 void CallGraphPass::escapeType(StoreInst* SI, Type *Ty, int Idx) {
 
@@ -557,7 +535,7 @@ bool CallGraphPass::doInitialization(Module *M) {
 			else if (CastInst *CastI = dyn_cast<CastInst>(I)) {
 				typeConfineInCast(CastI);
 				Type *ToTy = CastI->getDestTy(), *FromTy = CastI->getSrcTy();
-				handleIndirectCast(FromTy, ToTy);
+				handleIndirectCast(FromTy, ToTy, CastI->getOperand(0), CastI);
 #ifdef ENABLE_CAST_ESCAPE
             	handleCastEscapeType(CastI->getDestTy(), CastI->getSrcTy());
 #endif
@@ -572,48 +550,48 @@ bool CallGraphPass::doInitialization(Module *M) {
 		}
 
 		for (auto Cast : CastSet) {
-			Type *ToTy = Cast->getDestTy(), *FromTy = Cast->getSrcTy();
+			Type *ToTy   = Cast->getDestTy();
+			Type *FromTy = Cast->getSrcTy();
 
-			if(ToTy->isPointerTy() && FromTy->isPointerTy()){
-				Type *ToeleType = ToTy->getPointerElementType();
-				Type *FromeleType = FromTy->getPointerElementType();
-				if(ToeleType->isFunctionTy() && FromeleType->isFunctionTy()){
-					funcTypeCastMap[typeHash(ToeleType)].insert(typeHash(FromeleType));
-					hashTypeMap[typeHash(ToeleType)] = ToeleType;
-					hashTypeMap[typeHash(FromeleType)] = FromeleType;
-				}
+			if (ToTy->isPointerTy() && FromTy->isPointerTy()) {
 
-				//Sometimes a function pointer type is casted to i8*
-				string to_ty_str = getTypeStr(ToTy);
-				string from_ty_str = getTypeStr(FromTy);
-				if(FromeleType->isFunctionTy() && to_ty_str == "i8*"){
+				// We drop this typed-pointer-based logic
+				// and instead only keep a coarse escape detection for function -> i8* casts.
 
-					Value* op = Cast->getOperand(0);
-					if(Function *F = dyn_cast<Function>(op)){
+				std::string to_ty_str   = getTypeStr(ToTy);
+				std::string from_ty_str = getTypeStr(FromTy);
+
+				// Approximate: if the source operand of the cast is a Function and the
+				// destination type prints as i8*, treat this as a "function pointer cast
+				// to i8*" and mark that function (or its global variants) as escaping
+				if (to_ty_str == "i8*") {
+					Value *op = Cast->getOperand(0);
+					if (Function *F = dyn_cast<Function>(op)) {
 						FuncSet FSet;
 						FSet.clear();
 
-						if(F->isDeclaration()){
-							getGlobalFuncs(F,FSet);
-						}
-						else{
+						if (F->isDeclaration()) {
+							getGlobalFuncs(F, FSet);
+						} else {
 							FSet.insert(F);
 						}
+
 						funcSetMerge(escapeFuncSet, FSet);
 					}
 				}
 
-				handleIndirectCast(FromTy, ToTy);
+				// Use the value-aware, opaque-pointer-safe indirect-cast handler.
+				handleIndirectCast(FromTy, ToTy, Cast->getOperand(0), Cast);
 			}
 
-#ifdef ENABLE_CAST_ESCAPE
-            handleCastEscapeType(ToTy, FromTy);
-#endif
+		#ifdef ENABLE_CAST_ESCAPE
+			handleCastEscapeType(ToTy, FromTy);
+		#endif
 
-			typeConfineInCast(FromTy,ToTy);
+			typeConfineInCast(FromTy, ToTy);
 		}
 
-		// Collect address-taken functions.
+		// Collect address-taken functions
 		if (F.hasAddressTaken()) {
 			Ctx->AddressTakenFuncs.insert(&F); //not used in mlta
 			Ctx->sigFuncsMap[funcHash(&F, false)].insert(&F); //hash without name, only type info

@@ -130,7 +130,7 @@ class CallGraphPass : public IterativeModulePass {
 		bool typeConfineInCast(Type *FromTy, Type *ToTy);
 		void escapeType(StoreInst* SI, Type *Ty, int Idx = -1);
 		void handleCastEscapeType(Type *ToTy, Type *FromTy);
-		void handleIndirectCast(Type *FromTy, Type *ToTy);
+		void handleIndirectCast(Type *FromTy, Type *ToTy, Value *FromV, Value *ToV);
 		void transitType(Type *ToTy, Type *FromTy,
 						int ToIdx = -1, int FromIdx = -1);
 		
