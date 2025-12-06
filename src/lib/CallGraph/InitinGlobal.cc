@@ -126,16 +126,6 @@ bool CallGraphPass::typeConfineInInitializer(GlobalVariable* GV) {
 				if (isa<ConstantPointerNull>(O))
 					continue;
 
-				Type *eleType = POTy->getPointerElementType();
-				if(isCompositeType(eleType)){
-					Type *ITy = U->getType();
-					unsigned ONo = oi->getOperandNo();
-
-					// recognize nested composite types
-					User *OU = dyn_cast<User>(O);
-					LU.push_back(OU);
-				}
-
 				// Now consider if it is a bitcast from a function address
 				// Bitcast could be layered:
 				// %struct.hlist_head* bitcast (i8* getelementptr (i8, 
@@ -147,23 +137,6 @@ bool CallGraphPass::typeConfineInInitializer(GlobalVariable* GV) {
 
 					Type *ToTy = CO->getDestTy(), *FromTy = CO->getSrcTy();
 					Value *Operand = CO->getOperand(0);
-
-					if(ToTy->isPointerTy() && FromTy->isPointerTy()){
-						Type *ToeleType = ToTy->getPointerElementType();
-						Type *FromeleType = FromTy->getPointerElementType();
-						if(ToeleType->isFunctionTy() && FromeleType->isFunctionTy()){
-							funcTypeCastMap[typeHash(ToeleType)].insert(typeHash(FromeleType));
-							hashTypeMap[typeHash(ToeleType)] = ToeleType;
-							hashTypeMap[typeHash(FromeleType)] = FromeleType;
-						}
-
-						//Todo: Sometimes a function pointer type is casted to i8*
-						string to_ty_str = getTypeStr(ToTy);
-						string from_ty_str = getTypeStr(FromTy);
-						if(FromeleType->isFunctionTy() && to_ty_str == "i8*"){
-							//funcTypeCastToVoidSet.insert(typeHash(FromeleType));
-						}
-					}
 					
 					if(Function *F = dyn_cast<Function>(Operand)){
 						Type *ITy = U->getType();
