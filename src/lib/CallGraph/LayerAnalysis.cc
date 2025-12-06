@@ -12,9 +12,9 @@ Value *CallGraphPass::nextLayerBaseType(Value *V, Type * &BTy, int &Idx) {
 	set<Value *>Visited;
 
 	if(GEPOperator *GEP = dyn_cast<GEPOperator>(V)){
-		Type *PTy = GEP->getPointerOperand()->getType();
-		Type *Ty = PTy->getPointerElementType();
-		Type *sTy = GEP->getSourceElementType();
+		Type *Ty = GEP->getSourceElementType();
+    	if (!Ty)
+        	return false;
 
 		//Expect the PointerOperand is a struct
 		if (Ty->isStructTy() && GEP->hasAllConstantIndices()) {
@@ -126,45 +126,9 @@ bool CallGraphPass::nextLayerBaseType_new(Value *V, list<CompositeType> &TyList,
 		return getGEPLayerTypes(GEP, TyList);
 	}
 
-    else if (BitCastOperator *BCI = dyn_cast<BitCastOperator>(V)){
-
-        Type *ToTy = BCI->getDestTy(), *FromTy = BCI->getSrcTy();
-        if(FromTy->isPointerTy()){
-            FromTy = FromTy->getPointerElementType();
-        }
-        if(FromTy->isStructTy()){
-            if(FromTy->getStructName().contains(".union")){
-                return false;
-            }
-            if(FromTy->getStructName().contains(".anon")){
-                return false;
-            }
-        }
-
-		//Handle the case in O2 code:
-		//The GEP is replaced by a cast
-		if(ToTy->isPointerTy()){
-            ToTy = ToTy->getPointerElementType();
-        }
-		
-		if(ToTy->isPointerTy()){
-            ToTy = ToTy->getPointerElementType();
-        }
-
-		if(ToTy->isFunctionTy()){
-			auto source_v = BCI->getOperand(0);
-			for(User * U : source_v->users()){
-				if (BitCastOperator *bcI = dyn_cast<BitCastOperator>(U)){
-					Type *ToTy = bcI->getDestTy(), *FromTy = bcI->getSrcTy();
-					if(ToTy->isPointerTy()){
-						ToTy = ToTy->getPointerElementType();
-					}
-					if(ToTy->isStructTy()){
-						TyList.push_back(make_pair(ToTy, 0));
-					}
-				}
-			}
-		}
+    else if (BitCastOperator *BCI = dyn_cast<BitCastOperator>(V)) {
+		// Under opaque pointers, we treat bitcasts as transparent here and
+		// just follow the underlying operand to discover composite "next layer" types.
 		return nextLayerBaseType_new(BCI->getOperand(0), TyList, VisitedSet, Mode);
 	}
 
@@ -287,8 +251,10 @@ bool CallGraphPass::getGEPLayerTypes(GEPOperator *GEP, list<CompositeType> &TyLi
 	if(!PTy->isPointerTy())
 		return false;
 
-    Type *Ty = PTy->getPointerElementType();
-    Type *sTy = GEP->getSourceElementType();
+    // The GEP itself carries the element type we’re indexing into
+    Type *Ty = GEP->getSourceElementType();
+    if (!Ty)
+        return false;
 
     Type* BTy;
     int Idx;
@@ -372,28 +338,6 @@ bool CallGraphPass::getGEPLayerTypes(GEPOperator *GEP, list<CompositeType> &TyLi
 			else
 				return false;
 		}
-
-		//Usually call inst
-		if(Instruction* I = dyn_cast<Instruction>(PO)){
-			BasicBlock* BB = I->getParent();
-			for (auto User : PO->users()) {
-
-				if (BitCastInst *BCI = dyn_cast<BitCastInst>(User)) {
-					if(BCI->getParent() != BB)
-						continue;
-
-					Type * BCTy = BCI->getType()->getPointerElementType();
-					if (BCTy->isStructTy()) {
-						baseTy = BCTy;
-						break;
-					}
-				}
-			}
-		}
-
-		if(baseTy){
-			goto analysis;
-		}
 		
 		baseTy = getRealType(PO);
 		if(baseTy){
@@ -403,7 +347,6 @@ bool CallGraphPass::getGEPLayerTypes(GEPOperator *GEP, list<CompositeType> &TyLi
 			TypeHandlerMap[PO] = NULL;
 			return false;
 		}
-		
 
 analysis:
 		ConstantInt *ConstI = dyn_cast<ConstantInt>(GEP->idx_begin()->get());
@@ -465,28 +408,6 @@ analysis:
 			}
 			else
 				return false;
-		}
-
-		//Usually call inst
-		if(Instruction* I = dyn_cast<Instruction>(PO)){
-			BasicBlock* BB = I->getParent();
-			for (auto User : PO->users()) {
-
-				if (BitCastInst *BCI = dyn_cast<BitCastInst>(User)) {
-					if(BCI->getParent() != BB)
-						continue;
-
-					Type * BCTy = BCI->getType()->getPointerElementType();
-					if (BCTy->isStructTy()) {
-						baseTy = BCTy;
-						break;
-					}
-				}
-			}
-		}
-
-		if(baseTy){
-			goto analysis2;
 		}
 		
 		baseTy = getRealType(PO);
@@ -653,11 +574,6 @@ Type *CallGraphPass::getBaseType(Value *V, set<Value *> &Visited) {
 	}
 	// The value itself is a pointer to a composite type
 	else if (Ty->isPointerTy()) {
-
-		// Type *ETy = Ty->getPointerElementType();
-		// if (isCompositeType(ETy)) {
-		// 	return ETy;
-		// }
 		Type *ETy = nullptr;
     
 		if (AllocaInst *AI = dyn_cast<AllocaInst>(V)) {
@@ -709,20 +625,6 @@ Type *CallGraphPass::getPhiBaseType(PHINode *PN, set<Value *> &Visited) {
 
 	return NULL;
 }
-
-// LOC 2 : AMR : not used?
-// Type *CallGraphPass::getFuncPtrType(Value *V){
-// 	return NULL;
-//     Type *Ty = V->getType();
-// 	if (PointerType *PTy = dyn_cast<PointerType>(Ty)) {
-// 		Type *ETy = PTy->getPointerElementType();
-// 		if (ETy->isFunctionTy())
-// 			return ETy;
-// 	}
-
-// 	return NULL;
-// }
-
 
 Function *CallGraphPass::getBaseFunction(Value *V) {
 
@@ -791,10 +693,6 @@ bool CallGraphPass::trackFuncPointer(Value* VO, Value* PO, StoreInst* SI){
 	Type* Ty = VO->getType();
 	if(!Ty->isPointerTy())
 		return false;
-	
-	// loc 1 : AMR
-	// Type *ETy = Ty->getPointerElementType();
-
 
 	Type *ETy = VO->getType();
 

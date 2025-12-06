@@ -157,14 +157,6 @@ void CallGraphPass::resolveVariableParameters(CallInst *CI, FuncSet &FS,
 					is_valid_type = false;
 					break;
 				}
-		
-				// TODO: Removed this check for now 
-				// Note that this would take away from resolveVariableParameters functionality
-
-				// if(CI_check_ty->isPointerTy() && f_check_ty->isPointerTy()){
-				// 	CI_check_ty = CI_check_ty->getPointerElementType();
-				// 	f_check_ty = f_check_ty->getPointerElementType();
-				// }
 				
 				if(CI_check_ty->isStructTy() && f_check_ty->isStructTy()){
 					StructType* CI_check_Sty = dyn_cast<StructType>(CI_check_ty);
