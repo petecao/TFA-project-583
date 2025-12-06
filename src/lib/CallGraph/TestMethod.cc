@@ -56,10 +56,7 @@ void CallGraphPass::findCalleesByType(CallInst *CI, FuncSet &S) {
 			// makes the equality evaluation of two types from
 			// two modules very hard, which is actually done
 			// at link time by the linker.
-			while (DefinedTy->isPointerTy() && ActualTy->isPointerTy()) {
-				DefinedTy = DefinedTy->getPointerElementType();
-				ActualTy = ActualTy->getPointerElementType();
-			}
+			
 			if (DefinedTy->isStructTy() && ActualTy->isStructTy() &&
 				(DefinedTy->getStructName() == ActualTy->getStructName()))
 				continue;
