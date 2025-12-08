@@ -55,6 +55,18 @@
 // - Deriving field indices from constant offsets
 //#define ENABLE_ENHANCED_GEP_ANALYSIS
 
+// Enables refinement of alias analysis using LLVM TBAA metadata
+// When enabled:
+//   - TFA inspects !tbaa tags on load/store instructions
+//   - If base TFA logic returns "may-alias", TBAA is used as a second-level filter
+//   - If TBAA proves two memory accesses cannot alias, TFA refines the result to "no-alias"
+// Purpose:
+//   - Reduces false positives in alias propagation
+//   - Improves precision of indirect-call resolution
+// Notes:
+//   - This is a non-invasive refinement layer, the core TFA logic is unchanged
+#define ENABLE_TBAA_ALIAS_REFINEMENT
+
 
 static void SetIcallIgnoreList(vector<string> &IcallIgnoreFileLoc, 
 	vector<string> &IcallIgnoreLineNum) {

@@ -3,6 +3,7 @@
 #include <llvm/IR/InstIterator.h>
 #include <llvm/IR/LegacyPassManager.h>
 
+#include "../utils/TBAATools.h"
 #include "AliasAnalysis.h"
 
 //Merge n1 into n2
@@ -186,6 +187,21 @@ bool checkNodeConnectivity(AliasNode* node1, AliasNode* node2, AliasContext *ali
 
     if(!node1 || !node2)
         return false;
+
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+    // Early "no-alias" check using TBAA metadata.
+    if (node1->TBAATag && node2->TBAATag) {
+        if (!mayAliasByTBAA(node1->TBAATag, node2->TBAATag)) {
+            OP << "[TBAA] Have shown no-alias between nodes:\n";
+            OP << "  Node1 values:\n";
+            node1->print_set();
+            OP << "  Node2 values:\n";
+            node2->print_set();
+            OP << "--------------------------------------\n";
+            return false;
+        }
+    }
+#endif
 
 	list<AliasNode *>LN;
 	LN.push_back(node1);

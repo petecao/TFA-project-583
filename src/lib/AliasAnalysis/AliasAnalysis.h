@@ -29,9 +29,11 @@
 typedef struct AliasNode {
 
     set<Value*> aliasclass;
+    llvm::MDNode *TBAATag;
 
     AliasNode(){
         aliasclass.clear();
+        TBAATag = nullptr;
     }
 
     int count(Value* V){

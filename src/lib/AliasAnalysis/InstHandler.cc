@@ -134,6 +134,12 @@ void HandleLoad(LoadInst* LI, AliasContext *aliasCtx){
         aliasCtx->NodeMap[LI] = node1;
     }
 
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+    if (llvm::MDNode *tag = LI->getMetadata(llvm::LLVMContext::MD_tbaa)) {
+        node1->TBAATag = tag;
+    }
+#endif
+
     Value* op = LI->getOperand(0);
     AliasNode* node2 = getNode(op, aliasCtx);
     if(node2 == NULL){
@@ -161,6 +167,23 @@ void HandleLoad(LoadInst* LI, AliasContext *aliasCtx){
 // *v2 = v1
 void HandleStore(StoreInst* STI, AliasContext *aliasCtx){
     
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+    // Extract TBAA metadata from the store which holds the !tbaa tag
+    if (llvm::MDNode *tag = STI->getMetadata(llvm::LLVMContext::MD_tbaa)) {
+
+        // Associate the metadata with the AliasNode representing this store instruction.
+        AliasNode *storeNode = getNode(STI, aliasCtx);
+
+        if (!storeNode) {
+            storeNode = new AliasNode();
+            storeNode->insert(STI);
+            aliasCtx->NodeMap[STI] = storeNode;
+        }
+
+        storeNode->TBAATag = tag;
+    }
+#endif
+
     //store vop to pop
     Value* vop = STI->getValueOperand(); //v1
     Value* pop = STI->getPointerOperand(); //v2
