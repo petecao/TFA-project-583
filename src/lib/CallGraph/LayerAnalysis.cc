@@ -13,9 +13,6 @@ Value *CallGraphPass::nextLayerBaseType(Value *V, Type * &BTy, int &Idx) {
 
 	if(GEPOperator *GEP = dyn_cast<GEPOperator>(V)){
 		Type *Ty = GEP->getSourceElementType();
-    	if (!Ty)
-        	return false;
-
 		//Expect the PointerOperand is a struct
 		if (Ty->isStructTy() && GEP->hasAllConstantIndices()) {
 			BTy = Ty;
