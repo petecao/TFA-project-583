@@ -4,6 +4,6 @@
 int square(int x) { return x * x; }
 
 int main() {
-    std::function<int(int)> f = square;  // type-erased indirect call
+    std::function f = square;  // type-erased indirect call
     std::cout << f(5) << "\n";           // indirect call
 }
