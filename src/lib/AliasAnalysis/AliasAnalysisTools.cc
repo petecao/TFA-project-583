@@ -2,12 +2,43 @@
 #include <llvm/IR/Function.h>
 #include <llvm/IR/InstIterator.h>
 #include <llvm/IR/LegacyPassManager.h>
+#include <iostream>
 
 #include "../utils/TBAATools.h"
 #include "AliasAnalysis.h"
 
-//Merge n1 into n2
+// Merge n1 into n2
 void mergeNode(AliasNode* n1, AliasNode* n2, AliasContext *aliasCtx){
+
+#ifdef ENABLE_DEBUG
+    OP << "[DEBUG] mergeNode called with:\n";
+    OP << "  n1 values: ";
+    n1->print_set();
+
+    OP << "  n2 values: ";
+    n2->print_set();
+
+    OP << "  n1->TBAATag = " << (n1->TBAATag ? "YES" : "NO") << "\n";
+    OP << "  n2->TBAATag = " << (n2->TBAATag ? "YES" : "NO") << "\n";
+#endif
+
+    // This should be the only place where the TBAA metadata is checked for merging purposes
+    // Reduces redundancy
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+    // If TBAA says these two alias classes represent disjoint memory types,
+    // block the merge entirely
+    if (!shouldMergeByTBAA(n1, n2)) {
+#ifdef ENABLE_DEBUG
+        OP << "[TBAA] mergeNode blocked a merge\n";
+#endif
+        return;
+    }
+    
+    // If n2 has no TBAA tag but n1 does, let n2 inherit it.
+    if (!n2->TBAATag && n1->TBAATag) {
+        n2->TBAATag = n1->TBAATag;
+    }
+#endif
 
     if(n1 == n2)    
         return;
@@ -187,21 +218,6 @@ bool checkNodeConnectivity(AliasNode* node1, AliasNode* node2, AliasContext *ali
 
     if(!node1 || !node2)
         return false;
-
-#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
-    // Early "no-alias" check using TBAA metadata.
-    if (node1->TBAATag && node2->TBAATag) {
-        if (!mayAliasByTBAA(node1->TBAATag, node2->TBAATag)) {
-            OP << "[TBAA] Have shown no-alias between nodes:\n";
-            OP << "  Node1 values:\n";
-            node1->print_set();
-            OP << "  Node2 values:\n";
-            node2->print_set();
-            OP << "--------------------------------------\n";
-            return false;
-        }
-    }
-#endif
 
 	list<AliasNode *>LN;
 	LN.push_back(node1);

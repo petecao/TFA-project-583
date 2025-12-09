@@ -67,6 +67,14 @@
 //   - This is a non-invasive refinement layer, the core TFA logic is unchanged
 #define ENABLE_TBAA_ALIAS_REFINEMENT
 
+// Enables debug mode
+// When enabled:
+//   - When debugging code additions
+// Purpose:
+//   - Reduces confusion and allows for printing debug statements
+// Notes:
+//   - Non-invasive and does not impact analysis
+#define ENABLE_DEBUG
 
 static void SetIcallIgnoreList(vector<string> &IcallIgnoreFileLoc, 
 	vector<string> &IcallIgnoreLineNum) {
