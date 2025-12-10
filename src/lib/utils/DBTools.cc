@@ -7,7 +7,7 @@ void update_database(GlobalContext *Ctx){
 
     //Use your own database config
     const char *server = "localhost";
-    const char *user = "user";
+    const char *user = "petepc";
     const char *pwd = "";
     const char *database = "icall_data";
  
