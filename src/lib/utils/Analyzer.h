@@ -222,6 +222,9 @@ struct GlobalContext {
 	unsigned long long num_typebuilder_haveStructName = 0;
 	unsigned long long num_typebuilder_haveNoStructName = 0;
 
+	// Adding counters to keep track of the TBAA alias graph reduction
+	unsigned long long TBAA_MergeBlocked = 0;
+
 	set <StructInfoMap> Global_Pair_Set;
 	set <PairInfo> Global_Func_Pair_Set;
 	set <string> Global_Debug_Message_Set;

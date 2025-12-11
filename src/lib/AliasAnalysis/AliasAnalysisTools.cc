@@ -28,6 +28,7 @@ void mergeNode(AliasNode* n1, AliasNode* n2, AliasContext *aliasCtx){
     // If TBAA says these two alias classes represent disjoint memory types,
     // block the merge entirely
     if (!shouldMergeByTBAA(n1, n2)) {
+        OP << "[TBAA] mergeNode blocked a merge\n";
 #ifdef ENABLE_DEBUG
         OP << "[TBAA] mergeNode blocked a merge\n";
 #endif
@@ -112,6 +113,7 @@ void mergeNode(AliasNode* n1, AliasNode* n2, AliasContext *aliasCtx){
             aliasCtx->ToNodeMap[n1_fromNode] = n2;
         }
     }
+    OP << "Merge complete --- Not blocked by TBAA or TFA check\n";
 }
 
 
