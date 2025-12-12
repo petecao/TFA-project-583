@@ -67,6 +67,10 @@
 //   - This is a non-invasive refinement layer, the core TFA logic is unchanged
 #define ENABLE_TBAA_ALIAS_REFINEMENT
 
+/// Enables TBAA-based pruning of indirect-call targets.
+/// Requires ENABLE_TBAA_ALIAS_REFINEMENT so that TBAATag is populated.
+#define ENABLE_TBAA_ICALL_PRUNING
+
 // Enables debug mode
 // When enabled:
 //   - When debugging code additions

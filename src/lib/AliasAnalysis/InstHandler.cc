@@ -4,6 +4,7 @@
 #include <llvm/IR/LegacyPassManager.h>
 #include <iostream>
 
+#include "../utils/TBAATools.h"
 #include "AliasAnalysis.h"
 
 void HandleOperator(Value* v, AliasContext *aliasCtx){
@@ -151,9 +152,13 @@ void HandleLoad(LoadInst* LI, AliasContext *aliasCtx){
         tag->print(OP);
         OP << "\n";
 #endif
-    
+        // tag the memory (load location)
         if (!node2->TBAATag) {
             node2->TBAATag = tag;
+        }
+        // tag the SSA result node (the loaded value)
+        if (!node1->TBAATag) {
+            node1->TBAATag = tag;
         }
     }
 #endif
@@ -211,6 +216,28 @@ void HandleStore(StoreInst* STI, AliasContext *aliasCtx){
         tag->print(OP);
         OP << "\n";
 #endif
+
+        if (auto *F = dyn_cast<Function>(vop)) {
+            AliasNode *funcNode = getNode(F, aliasCtx);
+            if (!funcNode) {
+                funcNode = new AliasNode();
+                funcNode->insert(F);
+                aliasCtx->NodeMap[F] = funcNode;
+            }
+
+            if (!funcNode->TBAATag) {
+                // First time we've seen this function with a TBAA tag
+                funcNode->TBAATag = tag;
+            } else if (funcNode->TBAATag != tag && !mayAliasByTBAA(funcNode->TBAATag, tag)) {
+                // Function has been stored in two provably disjoint TBAA slots
+                // Treat it as "generic"
+#ifdef ENABLE_DEBUG
+                OP << "[DEBUG-TBAA] Function " << F->getName()
+                   << " observed in incompatible TBAA contexts; clearing tag.\n";
+#endif
+                funcNode->TBAATag = nullptr;
+            }
+        }
     }
 #endif
 

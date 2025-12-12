@@ -31,9 +31,6 @@ struct DoubleSlot dslot = { 0.0, cb_double };
 void drive(int cond) {
     fp_t fp;
 
-    islot.fp = cb_int;
-    dslot.fp = cb_double;
-
     if (cond) {
         // access via int-typed struct
         islot.pad = 10;      // should carry int-ish TBAA

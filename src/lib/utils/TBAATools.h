@@ -16,3 +16,8 @@ bool mayAliasByTBAA(llvm::MDNode *A, llvm::MDNode *B);
 // considering their TBAA tags. If TBAA is missing or inconclusive,
 // we conservatively return true.
 bool shouldMergeByTBAA(AliasNode *A, AliasNode *B);
+
+/// Return true if it's *safe to keep* FuncNode as a target for this icall:
+///  - true  => may alias / unknown (do NOT prune)
+///  - false => proven no-alias by TBAA (PRUNE)
+bool tbaaCompatibleForICall(AliasNode *ICallNode, AliasNode *FuncNode);

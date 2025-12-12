@@ -1,0 +1,490 @@
+This is the output of the TFA without TBAA for the test I provided:
+
+
+mrzaidi@eecs583a:~/research_project/TFA-project-583$ ./build/lib/analyzer tests/tbaa_layout_diff.bc
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/tbaa_layout_diff.bc
+.
+[CallGraph / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: func_A
+
+[DEBUG] mergeNode called with:
+  n1 values:   1%7 = load volatile ptr, ptr %3, align 8, !dbg !81, !tbaa !73
+  n2 values:   %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %9 = load ptr, ptr %8, align 8, !dbg !82, !tbaa !61
+  n2 values: func: func_A
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %10 = load volatile ptr, ptr %4, align 8, !dbg !83, !tbaa !78
+  n2 values:   %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %12 = load ptr, ptr %11, align 8, !dbg !84, !tbaa !69
+  n2 values: func: func_B
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: func_B
+
+Analyzed func: func_A
+DefinitionFuncSet size: [DEBUG] mergeNode called with:
+1  n1 values: 
+  aliased_callset size: 1
+%7 = load volatile ptr, ptr %3, align 8, !dbg !81, !tbaa !73
+  n2 values:   %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %9 = load ptr, ptr %8, align 8, !dbg !82, !tbaa !61
+  n2 values: func: func_A
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %10 = load volatile ptr, ptr %4, align 8, !dbg !83, !tbaa !78
+  n2 values:   %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %12 = load ptr, ptr %11, align 8, !dbg !84, !tbaa !69
+  n2 values: func: func_B
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: func_B
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
+Update global ICallees info
+
+0 Update icall:   call void %12() #4, !dbg !83
+
+1 Update icall:   call void %9() #4, !dbg !81
+
+ Start ICall Alias Analysis
+
+0 Top func: main
+---icall:   call void %9() #4, !dbg !81
+
+1 Top func: main[DEBUG] mergeNode called with:
+
+  n1 values: ---icall:     call %void7  = load volatile ptr,% 12ptr( )% #34, align , 8!d, b!gd b!g83 !
+81, !tbaa !73
+  n2 values:   %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %[DEBUG] mergeNode called with:
+  n1 values:   %7 = 5load =  volatilegetelementptr  inboundsptr nuw,  iptr8 ,% 3ptr, align  8%, 1!, dib64g  8!81, , !!dtbbga a! 59!
+73  n1->TBAATag = NO
+
+  n2 values:   n2->TBAATag =   NO
+Merge complete --- Not blocked by TBAA or TFA check
+%1[DEBUG] mergeNode called with:
+ =   n1 values: alloca   %struct.StructA%, align 98 = load,  !ptrD,I Aptrs s%i8g, align n8ID,  !!d44bg
+   !82, %!5t = bgetelementptra inboundsa nuw  !i618,
+   n2 values: ptrfunc:  func_A%
+1  n1->TBAATag = , NOi
+64  n2->TBAATag =  NO8
+, Merge complete --- Not blocked by TBAA or TFA check
+![DEBUG] mergeNode called with:
+d  n1 values: bg   !59%10
+ =   n1->TBAATag = loadNO volatile
+   n2->TBAATag = ptrNO,
+ Merge complete --- Not blocked by TBAA or TFA check
+ptr[DEBUG] mergeNode called with:
+   n1 values: %  4, align 8%9,  = !loadd bptrg,  !ptr83 , %!8t, align b8aa,  !!d78bg
+   n2 values: !  82, !%t2b = aallocaa  %!struct.StructB61, align 8
+  n2 values: , func: !func_AD
+I  n1->TBAATag = ANOs
+s  n2->TBAATag = iNOg
+nMerge complete --- Not blocked by TBAA or TFA check
+ID[DEBUG] mergeNode called with:
+   n1 values: !  46
+  %10 = load% volatile6  = ptrgetelementptr, inbounds  nuwptr  i%84,, align  8ptr , %!2d, big64  !883, , !!tdbbaga  !!6778
+  n1->TBAATag = 
+NO  n2 values: 
+    n2->TBAATag = NO
+%Merge complete --- Not blocked by TBAA or TFA check
+2 = [DEBUG] mergeNode called with:
+alloca  n1 values:    %struct.StructB, align %812 = , load! DptrI,A sptrs i%g11n, align I8D , !!46db
+g   !84%, 6! = tgetelementptrb inboundsa nuwa  i!869, 
+ptr  n2 values:  func: %func_B2
+,   n1->TBAATag = iNO64
+   n2->TBAATag = 8NO
+, Merge complete --- Not blocked by TBAA or TFA check
+!dbg !67
+  n1->TBAATag = NO
+  n2->TBAATag = aliased_fset size: NO1
+
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %12 = load ptr, ptr %11, align 8, !dbg !84, !tbaa !69
+  n2 values: func: func_B
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_fset size: 1
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				2
+# Number total icall targets   			2
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			2
+# Number succeed func icall  			2
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+# Load time            		0.008983
+# Typebuilder time     		0.000223
+# MLTA time            		0.000272
+# Icall alias time     		0.001507
+# Func alias time      		0.003745
+# One layer alias time 		6e-06
+# Escape alias time    		4.5e-05
+# DB time              		0.003376
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 2
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 2
+
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+Here is the TFA+TBAA output:
+
+mrzaidi@eecs583a:~/research_project/TFA-project-583$ ./build/lib/analyzer tests/tbaa_layout_diff.bc
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/tbaa_layout_diff.bc
+.
+[CallGraph / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: func_B
+
+1 Top func: func_A
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+           Tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+           Tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %3 = alloca ptr, align 8, !DIAssignID !47
+           Tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %4 = alloca ptr, align 8, !DIAssignID !48
+           Tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG-TBAA] Load has tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %7 = load volatile ptr, ptr %3, align 8, !dbg !81, !tbaa !73
+  n2 values:   %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %9 = load ptr, ptr %8, align 8, !dbg !82, !tbaa !61
+  n2 values: func: func_A
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %10[DEBUG-TBAA] Store memory node has tag, node values:
+ = load volatile ptr, ptr %4, align 8, !dbg !83, !tbaa !78
+  n2 values:   %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %12 = load ptr, ptr %11, align 8, !dbg !84, !tbaa !69
+  n2 values: func: func_B
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: func_A
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+  %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+           Tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+           Tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %3 = alloca ptr, align 8, !DIAssignID !47
+           Tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %4 = alloca ptr, align 8, !DIAssignID !48
+           Tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG-TBAA] Load has tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %7 = load volatile ptr, ptr %3, align 8, !dbg !81, !tbaa !73
+  n2 values:   %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %9 = load ptr, ptr %8, align 8, !dbg !82, !tbaa !61
+  n2 values: func: func_A
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %10 = load volatile ptr, ptr %4, align 8, !dbg !83, !tbaa !78
+  n2 values:   %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %12 = load ptr, ptr %11, align 8, !dbg !84, !tbaa !69
+  n2 values: func: func_B
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: func_B
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
+Update global ICallees info
+
+0 Update icall:   call void %12() #4, !dbg !83
+
+1 Update icall:   call void %9() #4, !dbg !81
+
+ Start ICall Alias Analysis
+
+0 Top func: main
+---icall:   call void %12() #4, !dbg !83
+
+1 Top func: main
+---icall:   call void %9() #4, !dbg !81
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+           Tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+           Tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %3 = alloca ptr, align 8, !DIAssignID !47
+           Tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %4 = alloca ptr, align 8, !DIAssignID !48
+           Tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG-TBAA] Load has tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %7 = load volatile ptr, ptr %3, align 8, !dbg !81, !tbaa !73
+  n2 values:   %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %9 = load ptr, ptr %8, align 8, !dbg !82, !tbaa !61
+  n2 values: func: func_A
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %10 = load volatile ptr, ptr %4, align 8, !dbg !83, !tbaa !78
+  n2 values:   %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %12 = load ptr, ptr %11, align 8, !dbg !84, !tbaa !69
+  n2 values: func: func_B
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Store memory node has tag, node values:
+aliased_fset size: 1
+  %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+           Tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+           Tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %3 = alloca ptr, align 8, !DIAssignID !47
+           Tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG-TBAA] Store memory node has tag, node values:
+  %4 = alloca ptr, align 8, !DIAssignID !48
+           Tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG-TBAA] Load has tag: <0x55c7d23c06e8> = !{<0x55c7d23c06a8>, <0x55c7d23c06a8>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %7 = load volatile ptr, ptr %3, align 8, !dbg !81, !tbaa !73
+  n2 values:   %1 = alloca %struct.StructA, align 8, !DIAssignID !44
+  %5 = getelementptr inbounds nuw i8, ptr %1, i64 8, !dbg !59
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23bfec8> = !{<0x55c7d23bfe08>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %9 = load ptr, ptr %8, align 8, !dbg !82, !tbaa !61
+  n2 values: func: func_A
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0768> = !{<0x55c7d23c0728>, <0x55c7d23c0728>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %10 = load volatile ptr, ptr %4, align 8, !dbg !83, !tbaa !78
+  n2 values:   %2 = alloca %struct.StructB, align 8, !DIAssignID !46
+  %6 = getelementptr inbounds nuw i8, ptr %2, i64 8, !dbg !67
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG-TBAA] Load has tag: <0x55c7d23c0668> = !{<0x55c7d23c0588>, <0x55c7d23bfdb8>, i64 8}
+[DEBUG] mergeNode called with:
+  n1 values:   %12 = load ptr, ptr %11, align 8, !dbg !84, !tbaa !69
+  n2 values: func: func_B
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_fset size: 1
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				2
+# Number total icall targets   			2
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			2
+# Number succeed func icall  			2
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+# Load time            		0.011544
+# Typebuilder time     		0.000144
+# MLTA time            		0.000157
+# Icall alias time     		0.010656
+# Func alias time      		0.051749
+# One layer alias time 		2.7e-05
+# Escape alias time    		0.000115
+# DB time              		0.00221
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 2
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 2
