@@ -3,6 +3,7 @@
 #include <llvm/IR/InstIterator.h>
 #include <llvm/IR/LegacyPassManager.h>
 
+#include "../utils/TBAATools.h"
 #include "AliasAnalysis.h"
 
 using namespace llvm;
@@ -120,13 +121,31 @@ void ICallAliasAnalysis(GlobalContext *Ctx){
 
 		OP<<"aliased_fset size: "<<aliased_fset.size()<<"\n";
 
+		Value *icallV = cai->getCalledOperand();
+		AliasNode *ICallNode = getNode(icallV, aliasCtx);
+
 		//Merge the result of type analysis and alias analysis
 		FuncSet result_set;
 		result_set.clear();
 		for(auto f1 : aliased_fset){
-			if(fset.count(f1)){
-				result_set.insert(f1);
+			// not in type-based set so continue
+			if (!fset.count(f1)) continue;
+        		
+#ifdef ENABLE_TBAA_ICALL_PRUNING
+			// Look up the alias node for this function, if any
+			AliasNode *FuncNode = getNode(f1, aliasCtx);
+
+			if (!tbaaCompatibleForICall(ICallNode, FuncNode)) {
+#ifdef ENABLE_DEBUG
+				OP << "[TBAA-ICALL] Pruning target " << f1->getName()
+				<< " for icall: ";
+				cai->print(OP);
+				OP << "\n";
+#endif
+				continue;   // drop this target, proven no-alias
 			}
+#endif
+			result_set.insert(f1);
 		}
 
 		//Update analysis results

@@ -300,3 +300,28 @@ bool shouldMergeByTBAA(AliasNode *A, AliasNode *B) {
     // If it returns false, that's "proven no-alias" => block merge.
     return mayAliasByTBAA(TA, TB);
 }
+
+bool tbaaCompatibleForICall(AliasNode *ICallNode, AliasNode *FuncNode) {
+    if (!ICallNode || !FuncNode)
+        return true;  // no info -> cannot prune
+
+    llvm::MDNode *CallTag = ICallNode->TBAATag;
+    llvm::MDNode *FuncTag = FuncNode->TBAATag;
+
+    // If either side has no TBAA metadata, we cannot prove no-alias.
+    if (!CallTag || !FuncTag)
+        return true;
+
+#ifdef ENABLE_DEBUG
+    OP << "[TBAA-ICALL] Comparing icall tag vs func tag:\n";
+    OP << "  ICallNode tag: ";
+    CallTag->print(OP);
+    OP << "\n  FuncNode tag: ";
+    FuncTag->print(OP);
+    OP << "\n";
+#endif
+
+    // mayAliasByTBAA == true  => alias or unknown -> KEEP
+    // mayAliasByTBAA == false => proven no-alias  -> PRUNE
+    return mayAliasByTBAA(CallTag, FuncTag);
+}
