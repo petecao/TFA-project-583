@@ -1,0 +1,196 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/test.bc]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/test.bc]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/test.bc
+.
+[CallGraph / 1] [1 / 1] [tests/test.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: _Z6hello2v
+
+[DEBUG] mergeNode called with:
+1  n1 values:  Top func:   _Z6hello1v
+%
+3[DEBUG] mergeNode called with:
+  n1 values: 2 Top func: _ZNSt8ios_base4InitD1Ev
+
+3 Top func: _GLOBAL__sub_I_test.cpp
+
+Analyzed func: _ZNSt8ios_base4InitD1Ev
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: _GLOBAL__sub_I_test.cpp
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+ =   load ptr%,3  = ptrload  %ptr2,, align  8ptr
+   n2 values: %func: 2_Z6hello1v, align 
+8  n1->TBAATag = 
+NO  n2 values: 
+func:   n2->TBAATag = _Z6hello1vNO
+
+  n1->TBAATag = Merge complete --- Not blocked by TBAA or TFA check
+NO[DEBUG] mergeNode called with:
+
+  n1 values:   n2->TBAATag = func: NO_Z6hello2v
+
+Merge complete --- Not blocked by TBAA or TFA check
+  n2 values: [DEBUG] mergeNode called with:
+func:   n1 values: _Z6hello1vfunc: 
+_Z6hello2v  
+%  n2 values: 3func:  = _Z6hello1vload
+   ptr%,3  = ptrload  %ptr2,, align  8ptr
+   n1->TBAATag = %NO2
+, align   n2->TBAATag = 8NO
+
+  n1->TBAATag = Merge complete --- Not blocked by TBAA or TFA check
+NO
+[DEBUG] mergeNode called with:
+  n2->TBAATag =   n1 values: NO  
+%Merge complete --- Not blocked by TBAA or TFA check
+4 = [DEBUG] mergeNode called with:
+load  n1 values:    ptr%,4  = ptrload  %ptr2,, align  8ptr
+   n2 values: %func: 2_Z6hello1v, align 
+8func: 
+_Z6hello2v  n2 values: 
+func:   _Z6hello1v%
+3func:  = _Z6hello2vload
+   ptr%,3  = ptrload  %ptr2,, align  8ptr
+   n1->TBAATag = %NO2
+, align   n2->TBAATag = 8NO
+
+  n1->TBAATag = Merge complete --- Not blocked by TBAA or TFA check
+NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: _Z6hello2v
+DefinitionFuncSet size: 1
+aliased_callset size: 2
+
+Analyzed func: _Z6hello1v
+DefinitionFuncSet size: 1
+aliased_callset size: 2
+
+Update global ICallees info
+
+0 Update icall:   call void %3()
+
+1 Update icall:   call void %4()
+
+ Start ICall Alias Analysis
+
+0 Top func: main
+---icall:   call void %3()
+
+[DEBUG] mergeNode called with:
+1  n1 values:  Top func: main
+---icall:   call void %4()
+[DEBUG] mergeNode called with:
+  n1 values:   %3 = load ptr, ptr %2, align 8
+  n2 values: func: _Z6hello1v
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values: func: _Z6hello2v
+  n2 values: func: _Z6hello1v
+  %3 = load ptr, ptr %2, align 8
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+  [DEBUG] mergeNode called with:
+  n1 values:   %4 = load ptr, ptr %2, align 8
+  n2 values: func: _Z6hello1v
+func: _Z6hello2v
+  %3 = load ptr, ptr %2, align 8
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_fset size: 2
+%3 = load ptr, ptr %2, align 8
+  n2 values: func: _Z6hello1v
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values: func: _Z6hello2v
+  n2 values: func: _Z6hello1v
+  %3 = load ptr, ptr %2, align 8
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values:   %4 = load ptr, ptr %2, align 8
+  n2 values: func: _Z6hello1v
+func: _Z6hello2v
+  %3 = load ptr, ptr %2, align 8
+  n1->TBAATag = NO
+  n2->TBAATag = NO
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_fset size: 2
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				2
+# Number total icall targets   			4
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			2
+# Number succeed func icall  			2
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 2
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 2
+
+
+# Load time            		0.017334
+# Typebuilder time     		0.003137
+# MLTA time            		0.003342
+# Icall alias time     		0.01673
+# Func alias time      		0.015491
+# One layer alias time 		4e-06
+# Escape alias time    		3.9e-05
+# DB time              		0.003891

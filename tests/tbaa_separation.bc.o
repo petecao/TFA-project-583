@@ -1,0 +1,208 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/tbaa_separation.bc]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/tbaa_separation.bc]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/tbaa_separation.bc
+.
+[CallGraph / 1] [1 / 1] [tests/tbaa_separation.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: func_for_B
+
+[DEBUG-TBAA] Store memory node has tag, node values:
+1 Top func: ptrfunc_for_A 
+[DEBUG-TBAA] Store memory node has tag, node values:
+%0ptr
+            Tag: <0x55655843d2d8%>0 = 
+!{           Tag: <<0x55655843d2980x55655843d2d8>>,  = <!{0x55655843cc48<>0x55655843d298, >i, 64< 0x55655843cc480>}, 
+i[DEBUG-TBAA] Store memory node has tag, node values:
+64ptr  0}%
+1[DEBUG-TBAA] Store memory node has tag, node values:
+
+ptr           Tag:  <0x55655843d2d8%>1 = 
+!{           Tag: <<0x55655843d2980x55655843d2d8>>,  = <!{0x55655843cc48<>0x55655843d298, >i, 64< 0x55655843cc480>}, 
+i[DEBUG-TBAA] Load has tag: 64< 0x55655843d2d80>} = 
+!{[DEBUG-TBAA] Load has tag: <<0x55655843d2980x55655843d2d8>>,  = <!{0x55655843cc48<>0x55655843d298, >i, 64< 0x55655843cc480>}, 
+i[DEBUG] mergeNode called with:
+64  n1 values:    0%}3
+ = [DEBUG] mergeNode called with:
+load  n1 values:    ptr,% 3ptr =  load% 0ptr, align ,8 , ptr! d%b0g, align  8!, 38!, d!btgb a!a38 , !!32t
+b  n2 values: afunc: afunc_for_A 
+!  n1->TBAATag = 32YES
+
+  n2 values:   n2->TBAATag = func: YESfunc_for_A
+
+[TBAA] comparing tags:
+  n1->TBAATag =   TA: YES<
+0x55655843d2d8  n2->TBAATag = >YES = 
+!{[TBAA] comparing tags:
+<  TA: 0x55655843d298<>0x55655843d2d8, >< = 0x55655843cc48!{><, 0x55655843d298i>64,  <00x55655843cc48}>
+,   TB: i<640x55655843d2d8 >0 = }!{
+<  TB: 0x55655843d298<>0x55655843d2d8, >< = 0x55655843cc48!{><, 0x55655843d298i>64,  <00x55655843cc48}>
+, Merge complete --- Not blocked by TBAA or TFA check
+i64[DEBUG] mergeNode called with:
+   n1 values: 0ptr} 
+%Merge complete --- Not blocked by TBAA or TFA check
+0
+[DEBUG] mergeNode called with:
+    n1 values: %ptr1  = tail %call0 
+noalias dereferenceable_or_null(8)   ptr% 1@ = malloctail (calli 64noalias dereferenceable_or_null(8)  noundefptr  8@)malloc #(4i, 64! dnoundefb g8 )! #314
+,   n2 values: !ptrd b%g1 
+!  n1->TBAATag = 31YES
+
+  n2 values:   n2->TBAATag = ptrYES 
+[TBAA] comparing tags:
+%  TA: 1<
+0x55655843d2d8  n1->TBAATag = >YES = 
+!{  n2->TBAATag = <YES0x55655843d298
+>[TBAA] comparing tags:
+,   TA: <<0x55655843cc480x55655843d2d8>>,  = i!{64< 0x55655843d2980>}, 
+<  TB: 0x55655843cc48<>0x55655843d2d8, >i = 64!{ <00x55655843d298}>
+,   TB: <<0x55655843cc480x55655843d2d8>>,  = i!{64< 0x55655843d2980>}, 
+<[DEBUG] mergeNode called with:
+0x55655843cc48  n1 values: >func: , func_for_Ai
+64   %03} = 
+load[DEBUG] mergeNode called with:
+   n1 values: ptrfunc: ,func_for_A 
+ptr   %%03, align  = 8load,  !ptrd,b gptr  !%380, , align !8t, b!adab g! 32!
+38  n2 values: , func: !func_for_Bt
+b  n1->TBAATag = aYESa
+   n2->TBAATag = !YES32
+
+[TBAA] comparing tags:
+  n2 values:   TA: func: <func_for_B0x55655843d2d8
+>  n1->TBAATag =  = YES!{
+<  n2->TBAATag = 0x55655843d298YES>
+, [TBAA] comparing tags:
+<  TA: 0x55655843cc48<>0x55655843d2d8, >i = 64!{ <00x55655843d298>}, <
+0x55655843cc48  TB: ><, 0x55655843d2d8i>64 =  !{0<}0x55655843d298
+>  TB: , <<0x55655843d2d80x55655843cc48>> = , !{i<640x55655843d298 >0, }<
+0x55655843cc48Merge complete --- Not blocked by TBAA or TFA check
+>Merge complete --- Not blocked by TBAA or TFA check
+, i64 0}
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: func_for_B
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
+Analyzed func: func_for_A
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
+Update global ICallees info
+
+0 Update icall:   tail call void %3() #4, !dbg !39
+
+ Start ICall Alias Analysis
+
+0 Top func: distinct_processor
+---icall:   tail call void %3() #4, !dbg !39
+[DEBUG-TBAA] Store memory node has tag, node values:
+ptr %0
+           Tag: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+[DEBUG-TBAA] Store memory node has tag, node values:
+ptr %1
+           Tag: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+[DEBUG-TBAA] Load has tag: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values:   %3 = load ptr, ptr %0, align 8, !dbg !38, !tbaa !32
+  n2 values: func: func_for_A
+  n1->TBAATag = YES
+  n2->TBAATag = YES
+[TBAA] comparing tags:
+  TA: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+  TB: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values: ptr %0
+  %1 = tail call noalias dereferenceable_or_null(8) ptr @malloc(i64 noundef 8) #4, !dbg !31
+  n2 values: ptr %1
+  n1->TBAATag = YES
+  n2->TBAATag = YES
+[TBAA] comparing tags:
+  TA: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+  TB: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values: func: func_for_A
+  %3 = load ptr, ptr %0, align 8, !dbg !38, !tbaa !32
+  n2 values: func: func_for_B
+  n1->TBAATag = YES
+  n2->TBAATag = YES
+[TBAA] comparing tags:
+  TA: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+  TB: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_fset size: 2
+[TBAA-ICALL] Comparing icall tag vs func tag:
+  ICallNode tag: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+  FuncNode tag: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+[TBAA-ICALL] Comparing icall tag vs func tag:
+  ICallNode tag: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+  FuncNode tag: <0x55655843d2d8> = !{<0x55655843d298>, <0x55655843cc48>, i64 0}
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			2
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			1
+# Number succeed func icall  			2
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.009895
+# Typebuilder time     		0.0028
+# MLTA time            		0.002622
+# Icall alias time     		0.014324
+# Func alias time      		0.019096
+# One layer alias time 		5e-06
+# Escape alias time    		0.002498
+# DB time              		0.002711

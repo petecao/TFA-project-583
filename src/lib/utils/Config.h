@@ -78,7 +78,7 @@
 //   - Reduces confusion and allows for printing debug statements
 // Notes:
 //   - Non-invasive and does not impact analysis
-//#define ENABLE_DEBUG
+# define ENABLE_DEBUG
 
 static void SetIcallIgnoreList(vector<string> &IcallIgnoreFileLoc, 
 	vector<string> &IcallIgnoreLineNum) {

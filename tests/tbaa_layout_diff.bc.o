@@ -1,0 +1,168 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/tbaa_layout_diff.bc
+.
+[CallGraph / 1] [1 / 1] [tests/tbaa_layout_diff.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: func_B
+
+[DEBUG-TBAA] Load has tag: 1 Top func: <func_A0x561094929ca8
+> = [DEBUG-TBAA] Load has tag: !{<<0x5610949296580x561094929ca8>>,  = <!{0x561094929658<>0x561094929658, >i, 64< 0x5610949296580>}, 
+i64 0[DEBUG] mergeNode called with:
+}  n1 values: 
+func: func_B
+[DEBUG] mergeNode called with:
+  n2 values:   n1 values:   func: func_A
+  n2 values: %4   = load %ptr4, =  loadptr  ptr%,3 , align ptr8 , %!3d, align b8g,  !!d48b, g! t!b48a, a! t!b49a
+a  n1->TBAATag =  NO!
+49  n2->TBAATag = 
+YES  n1->TBAATag = 
+NOMerge complete --- Not blocked by TBAA or TFA check
+
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values: @[DEBUG] mergeNode called with:
+__const.main.a  n1 values:  = @private __const.main.bunnamed_addr =  private constant unnamed_addr% struct.Aconstant  { {i 8i, 64[ 70 x , iptr8 ]@, func_Aptr  }} , align {8 
+i  n2 values: 8@ __const.main.b122 = , private [unnamed_addr7  x constant i{ 8i]8 , zeroinitializer[, 7ptr x  i@8func_B] , }ptr, align  }8 
+{  n2 values:  @i__const.main.a8 =  private 122unnamed_addr,  [constant 7% x struct.Ai 8{]  izeroinitializer64,  ptr0 , @ptrfunc_B  @}func_A, align  8}
+, align { 8i
+8%, struct.A[ 7{ x  ii864] , 0ptr,  }ptr  {@ func_Ai 8} 
+122ptr,  [7 x %i08
+]   %zeroinitializer3,  = ptrgetelementptr  inbounds@ nuwfunc_B  i}8
+,ptr  ptr %0%, 0i
+64   8%, 3! = dgetelementptrb inboundsg nuw  !i488
+,  n1->TBAATag =  NOptr
+   n2->TBAATag = %YES0
+, Merge complete --- Not blocked by TBAA or TFA check
+i64 [DEBUG] mergeNode called with:
+8  n1 values: , func: !func_Bd
+b  n2 values: gfunc:  func_A!
+48  
+  n1->TBAATag = %NO4
+ =   n2->TBAATag = loadYES 
+ptrMerge complete --- Not blocked by TBAA or TFA check
+, ptr %[DEBUG] mergeNode called with:
+3  n1 values: , align func: 8func_A, 
+!  n2 values: dfunc: bfunc_Bg
+   !48%, 4! = tloadb aptra,  !ptr49 
+%  n1->TBAATag = 3NO, align 
+8  n2->TBAATag = , YES!
+dMerge complete --- Not blocked by TBAA or TFA check
+bg !
+Analyzed func: 48func_A, 
+!DefinitionFuncSet size: t1b
+aaliased_callset size: a1 
+!49
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: func_B
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
+Update global ICallees info
+
+0 Update icall:   tail call void %4() #3, !dbg !48
+
+ Start ICall Alias Analysis
+
+0 Top func: run_callback
+---icall:   tail call void %4() #3, !dbg !48
+[DEBUG-TBAA] Load has tag: <0x561094929ca8> = !{<0x561094929658>, <0x561094929658>, i64 0}
+[DEBUG] mergeNode called with:
+  n1 values: @__const.main.b = private unnamed_addr constant { i8, [7 x i8], ptr } { i8 122, [7 x i8] zeroinitializer, ptr @func_B }, align 8
+  n2 values: @__const.main.a = private unnamed_addr constant %struct.A { i64 0, ptr @func_A }, align 8
+ptr %0
+  %3 = getelementptr inbounds nuw i8, ptr %0, i64 8, !dbg !48
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values: func: func_A
+  n2 values:   %4 = load ptr, ptr %3, align 8, !dbg !48, !tbaa !49
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+[DEBUG] mergeNode called with:
+  n1 values: func: func_B
+  n2 values: func: func_A
+  %4 = load ptr, ptr %3, align 8, !dbg !48, !tbaa !49
+  n1->TBAATag = NO
+  n2->TBAATag = YES
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_fset size: 2
+[TBAA-ICALL] Comparing icall tag vs func tag:
+  ICallNode tag: <0x561094929ca8> = !{<0x561094929658>, <0x561094929658>, i64 0}
+  FuncNode tag: <0x561094929ca8> = !{<0x561094929658>, <0x561094929658>, i64 0}
+[TBAA-ICALL] Comparing icall tag vs func tag:
+  ICallNode tag: <0x561094929ca8> = !{<0x561094929658>, <0x561094929658>, i64 0}
+  FuncNode tag: <0x561094929ca8> = !{<0x561094929658>, <0x561094929658>, i64 0}
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			2
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			1
+# Number succeed func icall  			2
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.006382
+# Typebuilder time     		0.005302
+# MLTA time            		0.011049
+# Icall alias time     		0.00519
+# Func alias time      		0.018839
+# One layer alias time 		0.004923
+# Escape alias time    		5.9e-05
+# DB time              		0.008887

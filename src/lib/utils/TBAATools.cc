@@ -195,28 +195,39 @@ static bool immediateParent(MDNode *BaseTy,
 // Return true  => TBAA says they may alias OR we can't prove no-alias.
 // Return false => TBAA proves they do NOT alias.
 bool mayAliasByTBAA(MDNode *A, MDNode *B) {
-    // 1. Basic checks
+    // Basic checks
     if (!A || !B) return true; // No info => May Alias
     if (A == B)   return true; // Same tag => May Alias
 
     MDNode *BaseA = nullptr, *BaseB = nullptr;
     uint64_t OffA = 0, OffB = 0;
 
-    // 2. Parse tags
+    // Parse tags
     if (!getBaseAndOffsetFromTag(A, BaseA, OffA) ||
         !getBaseAndOffsetFromTag(B, BaseB, OffB)) {
         return true; // Malformed => May Alias
     }
 
+    // If the base types are identical (e.g., both are accessing "Struct S"), 
+    // but the offsets are different, strict aliasing says they cannot overlap.
+    // (This works because TBAA nodes are distinct for Unions, so simple offset checks are safe).
+    if (BaseA == BaseB && OffA != OffB) {
+        return false;
+    }
+
     MDNode *RootA = getTBAARootFromTag(A);
     MDNode *RootB = getTBAARootFromTag(B);
 
-    // 3. Different roots => Unknown aliasing => May Alias
-    // (The docs say: "TBAA nodes with different roots have an unknown aliasing relationship")
-    if (!RootA || !RootB || RootA != RootB)
-        return true; 
+    // If we have two valid roots and they are DIFFERENT, assume disjoint
+    // prune
+    if (RootA && RootB && RootA != RootB) {
+         return false;
+    }
 
-    // 4. Build Full Ancestry Chain for A
+    // Fallback: if roots are missing/malformed, we must assume aliasing.
+    if (!RootA || !RootB) return true;
+
+    // Build Full Ancestry Chain for A
     // We store pairs of (MDNode*, Offset)
     SmallVector<std::pair<MDNode*, uint64_t>, 8> ChainA;
     {
@@ -234,7 +245,7 @@ bool mayAliasByTBAA(MDNode *A, MDNode *B) {
         }
     }
 
-    // 5. Build Full Ancestry Chain for B
+    // Build Full Ancestry Chain for B
     SmallVector<std::pair<MDNode*, uint64_t>, 8> ChainB;
     {
         MDNode *CurBase = BaseB;
@@ -251,7 +262,7 @@ bool mayAliasByTBAA(MDNode *A, MDNode *B) {
         }
     }
 
-    // 6. Check Reachability (The "OR" logic from the docs)
+    // Check Reachability (The "OR" logic from the docs)
     
     // Check if (BaseA, OffA) is reachable from B (i.e., is StartA inside ChainB?)
     // This handles cases where B is a struct and A is a member of that struct.

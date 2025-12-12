@@ -18,6 +18,7 @@ find "$SEARCH_DIR" -type f \( -name "*.bc" -o -name "*.o" \) | while read -r fil
     base_name=$(basename "$file")
     # Replace extension with .output
     output_file="$OUTPUT_DIR/${base_name%.*}.output"
+    OUTPUT_FILE="${file}.output"
     
     echo "Processing: $file"
     echo "Saving to:  $output_file"
