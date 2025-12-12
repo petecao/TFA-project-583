@@ -7,6 +7,19 @@
 #include "../utils/TBAATools.h"
 #include "AliasAnalysis.h"
 
+// Stats for TBAA
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+static uint64_t g_NumTBAABlockedMerges = 0;
+
+uint64_t GetTBAABlockedMerges() {
+    return g_NumTBAABlockedMerges;
+}
+
+void ResetTBAABlockedMerges() {
+    g_NumTBAABlockedMerges = 0;
+}
+#endif
+
 // Merge n1 into n2
 void mergeNode(AliasNode* n1, AliasNode* n2, AliasContext *aliasCtx){
 
@@ -28,6 +41,7 @@ void mergeNode(AliasNode* n1, AliasNode* n2, AliasContext *aliasCtx){
     // If TBAA says these two alias classes represent disjoint memory types,
     // block the merge entirely
     if (!shouldMergeByTBAA(n1, n2)) {
+        g_NumTBAABlockedMerges++;
         OP << "[TBAA] mergeNode blocked a merge\n";
 #ifdef ENABLE_DEBUG
         OP << "[TBAA] mergeNode blocked a merge\n";

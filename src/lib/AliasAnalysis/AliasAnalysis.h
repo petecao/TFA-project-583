@@ -94,6 +94,10 @@ typedef struct AliasContext {
     set<Function*> AnalyzedFuncSet;
     set<string> Global_symbol_get_funcSet;
 
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+    uint64_t NumTBAABlockedMerges = 0;
+#endif
+
     AliasContext(){
         NodeMap.clear();
         ToNodeMap.clear();
@@ -170,4 +174,7 @@ void getGlobalFuncs(Function *F, FuncSet &FSet, GlobalContext *Ctx);
 string getGlobalMacroSource(GlobalVariable* GV);
 bool checkNodeConnectivity(AliasNode* node1, AliasNode* node2, AliasContext *aliasCtx);
 
+//TBAA Stats
+uint64_t GetTBAABlockedMerges();
+void ResetTBAABlockedMerges();
 #endif

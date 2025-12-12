@@ -152,6 +152,9 @@ void PrintResults(GlobalContext *GCtx) {
 	OP<<"############## Alias Info Statistics ##############\n";
 	OP<<"# Number succeed alias icall \t\t\t"<<GCtx->icall_support_dataflow_Number<<"\n";
 	OP<<"# Number succeed func icall  \t\t\t"<<GCtx->func_support_dataflow_Number<<"\n";
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+	OP<<"# Number TBAA-blocked alias merges \t\t"<<GetTBAABlockedMerges()<< "\n";
+#endif
 	OP<<"\n  Failed reasons:\n";
 	OP<<"# Number F has no global definition  \t\t"<<GCtx->failure_reasons[F_has_no_global_definition]<<"\n";
 	OP<<"# Number binary_operation    \t\t\t"<<GCtx->failure_reasons[binary_operation]<<"\n";
@@ -330,6 +333,10 @@ int main(int argc, char **argv) {
 	PrintResults(&GlobalCtx);
 
 	omp_destroy_lock(&lock);
+
+#ifdef ENABLE_TBAA_ALIAS_REFINEMENT
+	ResetTBAABlockedMerges();
+#endif
 	return 0;
 }
 
