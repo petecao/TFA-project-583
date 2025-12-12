@@ -1,0 +1,1 @@
+(for f in *.cpp; do ./analyze.sh "$f"; done) &> log.txt
