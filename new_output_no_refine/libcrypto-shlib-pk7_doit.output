@@ -25,9 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: X509_ATTRIBUTE_dup
+0 Top func: X509_ATTRIBUTE_free
 
-1 Top func: X509_ATTRIBUTE_free
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+X509_ATTRIBUTE_dupMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -65,6 +69,21 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: X509_ATTRIBUTE_dupMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -80,25 +99,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 Analyzed func: X509_ATTRIBUTE_free
 DefinitionFuncSet size: 0
 aliased_callset size: 1
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: X509_ATTRIBUTE_dup
-DefinitionFuncSet size: 0
-aliased_callset size: 0
 
 Update global ICallees info
 
@@ -141,11 +141,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.039403
-# Typebuilder time     		0.002575
-# MLTA time            		0.003227
-# Icall alias time     		0.000141
-# Func alias time      		0.008402
-# One layer alias time 		1e-05
-# Escape alias time    		6.9e-05
-# DB time              		0.002433
+# Load time            		0.006714
+# Typebuilder time     		0.000547
+# MLTA time            		0.000521
+# Icall alias time     		6.8e-05
+# Func alias time      		0.000812
+# One layer alias time 		7e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002026

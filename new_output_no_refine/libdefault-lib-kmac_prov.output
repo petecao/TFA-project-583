@@ -25,20 +25,31 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: kmac128_new
+0 Top func: kmac_free
 
-1 Top func: kmac_free
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+kmac128_newMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-kmac_update
+kmac_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-kmac_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+kmac_updateMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+kmac_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -104,39 +115,28 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-4 Top func: kmac_set_ctx_params
-
-5 Top func: kmac_get_ctx_params
+5 Top func: kmac_set_ctx_params
 
 6 Top func: kmac_settable_ctx_params
+
+7 Top func: kmac256_new
      Top func: kmac128_new Failed
-     Top func: kmac_update Failed
      Top func: kmac_gettable_ctx_params Failed
+     Top func: kmac_update Failed
      Top func: kmac_free Failed
+     Top func: kmac_settable_ctx_params Failed
      Top func: kmac_get_ctx_params Failed
 
-7 Top func: kmac_dup
-
-8 Top func: kmac_final
-
-9 Top func: kmac256_new
-     Top func: kmac_settable_ctx_params Failed
-
-10 Top func: kmac_init
-     Top func: kmac_dup Failed
-     Top func: kmac_final Failed
+8 Top func: kmac_dup
      Top func: kmac256_new Failed
+
+9 Top func: kmac_init
+
+10 Top func: kmac_final
+     Top func: kmac_dup Failed
      Top func: kmac_init Failed
+     Top func: kmac_final Failed
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -260,11 +260,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.012329
-# Typebuilder time     		0.000834
-# MLTA time            		0.000509
-# Icall alias time     		4.8e-05
-# Func alias time      		0.00821
-# One layer alias time 		6e-06
-# Escape alias time    		6.4e-05
-# DB time              		0.001884
+# Load time            		0.00382
+# Typebuilder time     		0.000426
+# MLTA time            		0.0004
+# Icall alias time     		7.1e-05
+# Func alias time      		0.007562
+# One layer alias time 		7e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002097

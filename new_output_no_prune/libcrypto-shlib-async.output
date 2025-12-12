@@ -25,30 +25,30 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: async_delete_thread_state
+0 Top func: sk_ASYNC_JOB_freefunc_thunk
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sk_ASYNC_JOB_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
+async_delete_thread_stateMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 sk_ASYNC_JOB_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -88,9 +88,9 @@ aliased_callset size: 1
 
 Update global ICallees info
 
-0 Update icall:   %18 = call i32 %14(ptr noundef %17), !dbg !265
+0 Update icall:   call void %7(ptr noundef %8), !dbg !248
 
-1 Update icall:   call void %7(ptr noundef %8), !dbg !248
+1 Update icall:   %18 = call i32 %14(ptr noundef %17), !dbg !265
 
  Start ICall Alias Analysis
 
@@ -145,11 +145,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.002823
-# Typebuilder time     		0.000591
-# MLTA time            		0.000335
-# Icall alias time     		0.000346
-# Func alias time      		0.001047
-# One layer alias time 		9e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002134
+# Load time            		0.015405
+# Typebuilder time     		0.000383
+# MLTA time            		0.000373
+# Icall alias time     		0.000353
+# Func alias time      		0.008771
+# One layer alias time 		1.2e-05
+# Escape alias time    		6.7e-05
+# DB time              		0.002277

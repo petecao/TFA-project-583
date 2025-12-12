@@ -25,28 +25,28 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: cipher_hw_rc2_ofb64_cipher
+0 Top func: cipher_hw_rc2_initkey
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: cipher_hw_rc2_ecb_cipher
-
-Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: cipher_hw_rc2_initkey
-
-Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: cipher_hw_rc2_cbc_cipher
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: cipher_hw_rc2_ofb64_cipher
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
- Top func: cipher_hw_rc2_cfb64_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: cipher_hw_rc2_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: cipher_hw_rc2_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+cipher_hw_rc2_ecb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+
+4 Top func: cipher_hw_rc2_cfb64_cipher
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+cipher_hw_rc2_cbc_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -54,11 +54,11 @@ Analyzed func: cipher_hw_rc2_ofb64_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: cipher_hw_rc2_cbc_cipher
+Analyzed func: cipher_hw_rc2_initkey
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: cipher_hw_rc2_initkey
+Analyzed func: cipher_hw_rc2_ecb_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -107,11 +107,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001673
-# Typebuilder time     		0.000245
-# MLTA time            		0.00025
-# Icall alias time     		6.7e-05
-# Func alias time      		0.000751
+# Load time            		0.001633
+# Typebuilder time     		0.000293
+# MLTA time            		0.000274
+# Icall alias time     		3.4e-05
+# Func alias time      		0.000689
 # One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002127
+# Escape alias time    		6e-05
+# DB time              		0.001678

@@ -25,36 +25,36 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: POLICY_CONSTRAINTS_it
+0 Top func: v2i_POLICY_CONSTRAINTS
+
+1 Top func: ASN1_INTEGER_it
+
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+POLICY_CONSTRAINTS_itMerge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: v2i_POLICY_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
-
-
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: ASN1_INTEGER_it
+i2v_POLICY_CONSTRAINTS
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+v2i_POLICY_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
-3 Top func: i2v_POLICY_CONSTRAINTS
-     Top func: POLICY_CONSTRAINTS_it Failed
-     Top func: v2i_POLICY_CONSTRAINTS Failed
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 i2v_POLICY_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
- Failed
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+POLICY_CONSTRAINTS_itMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -112,11 +112,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001659
-# Typebuilder time     		0.00027
-# MLTA time            		0.000231
-# Icall alias time     		8e-05
-# Func alias time      		0.003578
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002237
+# Load time            		0.001481
+# Typebuilder time     		0.000298
+# MLTA time            		0.000271
+# Icall alias time     		4.9e-05
+# Func alias time      		0.008219
+# One layer alias time 		6e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.00172

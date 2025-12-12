@@ -25,46 +25,38 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: camellia_cfb8_cipher
+0 Top func: camellia_cfb_cipher
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: camellia_cfb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: camellia_cbc_cipher
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: camellia_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Camellia_encrypt
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Camellia_cbc_encryptMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: Merge complete --- Not blocked by TBAA or TFA check
-Camellia_cbc_encrypt
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Camellia_encryptMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+camellia_cfb8_cipherMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-camellia_ofb_cipherMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -78,13 +70,16 @@ Merge complete --- Not blocked by TBAA or TFA check
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-camellia_cfb8_cipherMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+camellia_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -94,38 +89,25 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 
-Analyzed func: camellia_cbc_cipher
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: camellia_cfb_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: camellia_init_key
+6 Top func: Camellia_decrypt
 
-8 Top func: Merge complete --- Not blocked by TBAA or TFA check
-Camellia_decrypt
-
-Analyzed func: Camellia_cbc_encryptMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_cfb8_cipherMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-9Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 camellia_cfb1_cipherMerge complete --- Not blocked by TBAA or TFA check
 
@@ -133,10 +115,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-camellia_ofb_cipherMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+camellia_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -144,43 +124,63 @@ DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
-
-Analyzed func: camellia_ecb_cipher
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Camellia_encrypt
 DefinitionFuncSet size: 0
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
+aliased_callset size: 0
+
+Analyzed func: Camellia_cbc_encrypt
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+8 Top func: camellia_init_key
+
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: camellia_ofb_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
-10 Top func: camellia_ctr_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_ctr_cipher
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Camellia_decrypt
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
+camellia_cfb1_cipher
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: camellia_cfb1_cipher
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Camellia_decrypt
+DefinitionFuncSet size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_ofb_cipher
 DefinitionFuncSet size: 1
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0
 
-Analyzed func: camellia_ctr_cipher
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-aliased_callset size: 0
+Analyzed func: camellia_ctr_cipherMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -195,18 +195,23 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   call void %19(ptr noundef %20, ptr noundef %21, i64 noundef %22, ptr noundef %24, ptr noundef %27, i32 noundef %29), !dbg !407
+0 Update icall:   call void %33(ptr noundef %36, ptr noundef %39, ptr noundef %41), !dbg !422
 
-1 Update icall:   call void %33(ptr noundef %36, ptr noundef %39, ptr noundef %41), !dbg !422
+1 Update icall:   call void %19(ptr noundef %20, ptr noundef %21, i64 noundef %22, ptr noundef %24, ptr noundef %27, i32 noundef %29), !dbg !407
 
  Start ICall Alias Analysis
 
-0 Top func: camellia_ecb_cipher
----icall:   call void %33(ptr noundef %36, ptr noundef %39, ptr noundef %41), !dbg !422
+0 Top func: camellia_cbc_cipher
+---icall:   call void %19(ptr noundef %20, ptr noundef %21, i64 noundef %22, ptr noundef %24, ptr noundef %27, i32 noundef %29), !dbg !407
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: camellia_cbc_cipher
----icall:   Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+---icall: Merge complete --- Not blocked by TBAA or TFA check
+  Merge complete --- Not blocked by TBAA or TFA check
 callMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 voidMerge complete --- Not blocked by TBAA or TFA check
@@ -215,30 +220,25 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-19Merge complete --- Not blocked by TBAA or TFA check
+33Merge complete --- Not blocked by TBAA or TFA check
 (Merge complete --- Not blocked by TBAA or TFA check
+ptr noundef %36, Merge complete --- Not blocked by TBAA or TFA check
 ptrMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
-noundefMerge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
-%20, ptr Merge complete --- Not blocked by TBAA or TFA check
-noundefMerge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
-%21, Merge complete --- Not blocked by TBAA or TFA check
-iMerge complete --- Not blocked by TBAA or TFA check
-64Merge complete --- Not blocked by TBAA or TFA check
- noundef %22, ptr noundef %24, ptr noundef %27, i32 noundef %29), !dbg !407
+noundef Merge complete --- Not blocked by TBAA or TFA check
+%39Merge complete --- Not blocked by TBAA or TFA check
+, Merge complete --- Not blocked by TBAA or TFA check
+ptr noundef %41), !dbg !422
 aliased_fset size: 0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -300,11 +300,11 @@ reduce_num_escape: 0
 reduce_num_total: 3
 
 
-# Load time            		0.00242
-# Typebuilder time     		0.00059
-# MLTA time            		0.001997
-# Icall alias time     		0.001009
-# Func alias time      		0.002331
-# One layer alias time 		9e-06
-# Escape alias time    		8.3e-05
-# DB time              		0.001979
+# Load time            		0.020082
+# Typebuilder time     		0.000506
+# MLTA time            		0.001072
+# Icall alias time     		0.000984
+# Func alias time      		0.008799
+# One layer alias time 		8e-06
+# Escape alias time    		7.1e-05
+# DB time              		0.002167

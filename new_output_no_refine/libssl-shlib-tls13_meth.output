@@ -27,11 +27,11 @@ Openmp enabled
 
 0 Top func: tls13_set_crypto_state
 
-1 Top func: tls13_post_process_record
+1 Top func: tls_get_more_records
 
 2 Top func: tls_default_set_protocol_version
 
-3 Top func: tls_get_more_records
+3 Top func: tls13_post_process_record
 
 4 Top func: tls_write_records_default
 
@@ -39,36 +39,36 @@ Openmp enabled
 
 6 Top func: tls_prepare_for_encryption_default
      Top func: tls13_set_crypto_state Failed
+     Top func: tls_get_more_records Failed
      Top func: tls_default_set_protocol_version Failed
      Top func: tls_write_records_default Failed
-     Top func: tls_get_more_records Failed
-     Top func: tls_initialise_write_packets_default Failed
      Top func: tls13_post_process_record Failed
+     Top func: tls_initialise_write_packets_default Failed
 
 7 Top func: tls13_cipher
 
-8 Top func: tls_default_read_n
+8 Top func: tls13_validate_record_header
 
-9 Top func: tls_allocate_write_buffers_default
+9 Top func: tls_default_read_n
+
+10 Top func: tls_allocate_write_buffers_default
      Top func: tls_prepare_for_encryption_default Failed
 
-10 Top func: tls13_validate_record_header
+11 Top func: tls_get_max_records_default
 
-11 Top func: tls13_get_record_type
-
-12 Top func: tls_get_max_records_default
+12 Top func: tls13_get_record_type
 
 13 Top func: tls_post_encryption_processing_default
+     Top func: tls13_cipher Failed
      Top func: tls_default_read_n Failed
      Top func: tls_allocate_write_buffers_default Failed
-     Top func: tls13_cipher Failed
-     Top func: tls13_get_record_type Failed
      Top func: tls13_validate_record_header Failed
+     Top func: tls_get_max_records_default Failed
 
 14 Top func: tls_prepare_record_header_default
 
 15 Top func: tls13_add_record_padding
-     Top func: tls_get_max_records_default Failed
+     Top func: tls13_get_record_type Failed
      Top func: tls_post_encryption_processing_default Failed
      Top func: tls_prepare_record_header_default Failed
      Top func: tls13_add_record_padding Failed
@@ -116,11 +116,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002663
-# Typebuilder time     		0.000311
-# MLTA time            		0.000338
-# Icall alias time     		3.5e-05
-# Func alias time      		0.008435
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002285
+# Load time            		0.002866
+# Typebuilder time     		0.00031
+# MLTA time            		0.00033
+# Icall alias time     		7.3e-05
+# Func alias time      		0.006137
+# One layer alias time 		6.8e-05
+# Escape alias time    		0.000854
+# DB time              		0.002225

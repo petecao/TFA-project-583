@@ -25,7 +25,7 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: i2r_ocsp_nonce
+0 Top func: OCSP_CRLID_it
 
 1 Top func: ASN1_GENERALIZEDTIME_it
 
@@ -33,39 +33,39 @@ Openmp enabled
 
 3 Top func: d2i_ocsp_nonce
 
-4 Top func: OCSP_CRLID_it
-     Top func: i2r_ocsp_nonce Failed
-     Top func: ASN1_GENERALIZEDTIME_it Failed
-     Top func: d2i_ocsp_nonce Failed
-     Top func: ocsp_nonce_new Failed
+4 Top func: i2r_ocsp_nonce
+
+5 Top func: s2i_ocsp_nocheck
+
+6 Top func: i2r_ocsp_serviceloc
      Top func: OCSP_CRLID_it Failed
+     Top func: ASN1_GENERALIZEDTIME_it Failed
+     Top func: ocsp_nonce_new Failed
+     Top func: s2i_ocsp_nocheck Failed
+     Top func: d2i_ocsp_nonce Failed
+     Top func: i2r_ocsp_nonce Failed
 
-5 Top func: ASN1_NULL_it
+7 Top func: i2r_ocsp_crlid
 
-6 Top func: i2r_ocsp_acutoff
+8 Top func: i2r_ocsp_acutoff
 
-7 Top func: i2d_ocsp_nonce
+9 Top func: ocsp_nonce_free
 
-8 Top func: ocsp_nonce_free
+10 Top func: i2r_ocsp_nocheck
 
-9 Top func: i2r_ocsp_crlid
-     Top func: ASN1_NULL_it Failed
+11 Top func: i2d_ocsp_nonce
+
+12 Top func: ASN1_NULL_it
+     Top func: i2r_ocsp_serviceloc Failed
      Top func: ocsp_nonce_free Failed
-     Top func: i2d_ocsp_nonce Failed
-     Top func: i2r_ocsp_acutoff Failed
-
-10 Top func: s2i_ocsp_nocheck
      Top func: i2r_ocsp_crlid Failed
 
-11 Top func: i2r_ocsp_nocheck
-
-12 Top func: OCSP_SERVICELOC_it
-
-13 Top func: i2r_ocsp_serviceloc
-     Top func: OCSP_SERVICELOC_it Failed
-     Top func: s2i_ocsp_nocheck Failed
+13 Top func: OCSP_SERVICELOC_it
      Top func: i2r_ocsp_nocheck Failed
-     Top func: i2r_ocsp_serviceloc Failed
+     Top func: i2d_ocsp_nonce Failed
+     Top func: ASN1_NULL_it Failed
+     Top func: i2r_ocsp_acutoff Failed
+     Top func: OCSP_SERVICELOC_it Failed
 
 Update global ICallees info
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.019255
-# Typebuilder time     		0.002999
-# MLTA time            		0.003413
-# Icall alias time     		0.000141
-# Func alias time      		0.018989
-# One layer alias time 		8e-06
-# Escape alias time    		6e-05
-# DB time              		0.002226
+# Load time            		0.002075
+# Typebuilder time     		0.000325
+# MLTA time            		0.000254
+# Icall alias time     		6.9e-05
+# Func alias time      		0.005496
+# One layer alias time 		6.5e-05
+# Escape alias time    		0.000818
+# DB time              		0.002192

@@ -27,20 +27,19 @@ Openmp enabled
 
 0 Top func: ASN1_INTEGER_it
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+OSSL_BASIC_ATTR_CONSTRAINTS_itMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: Merge complete --- Not blocked by TBAA or TFA check
 ASN1_FBOOLEAN_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-OSSL_BASIC_ATTR_CONSTRAINTS_itMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
@@ -48,6 +47,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 i2v_OSSL_BASIC_ATTR_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -57,22 +57,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 v2i_OSSL_BASIC_ATTR_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 i2v_OSSL_BASIC_ATTR_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -90,9 +85,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 OSSL_BASIC_ATTR_CONSTRAINTS_itMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -125,12 +119,18 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: ASN1_FBOOLEAN_it
+Analyzed func: ASN1_INTEGER_it
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: ASN1_INTEGER_it
+Analyzed func: ASN1_FBOOLEAN_it
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -175,11 +175,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001766
-# Typebuilder time     		0.000253
-# MLTA time            		0.000243
-# Icall alias time     		6.7e-05
-# Func alias time      		0.002432
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001981
+# Load time            		0.001484
+# Typebuilder time     		0.00055
+# MLTA time            		0.000277
+# Icall alias time     		7e-05
+# Func alias time      		0.001091
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002058

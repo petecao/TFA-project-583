@@ -29,20 +29,24 @@ Openmp enabled
 
 1 Top func: sm2_asym_encrypt
 
-2 Top func: sm2_dupctx
-
-3 Top func: sm2_freectx
+2 Top func: sm2_freectx
 
 Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_dupctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+4 Top func: Merge complete --- Not blocked by TBAA or TFA check
 sm2_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
- Top func: sm2_set_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_set_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -65,7 +69,6 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 sm2_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -87,17 +90,14 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: sm2_newctx Failed
-     Top func: sm2_dupctx Failed
      Top func: sm2_asym_encrypt Failed
+     Top func: sm2_dupctx Failed
      Top func: sm2_get_ctx_params Failed
-     Top func: sm2_gettable_ctx_params Failed
      Top func: sm2_settable_ctx_params Failed
-     Top func: sm2_set_ctx_params Failed
+     Top func: sm2_gettable_ctx_params Failed
      Top func: sm2_freectx Failed
+     Top func: sm2_set_ctx_params Failed
 
 8 Top func: sm2_init
 
@@ -146,11 +146,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002053
-# Typebuilder time     		0.00035
-# MLTA time            		0.000335
-# Icall alias time     		6.5e-05
-# Func alias time      		0.002284
-# One layer alias time 		6.3e-05
-# Escape alias time    		0.000816
-# DB time              		0.002161
+# Load time            		0.00226
+# Typebuilder time     		0.000307
+# MLTA time            		0.000281
+# Icall alias time     		7e-06
+# Func alias time      		0.002285
+# One layer alias time 		5e-06
+# Escape alias time    		6e-05
+# DB time              		0.002403

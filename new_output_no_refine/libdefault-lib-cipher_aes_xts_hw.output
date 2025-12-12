@@ -30,7 +30,7 @@ Openmp enabled
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_aes_xts_generic_initkeyMerge complete --- Not blocked by TBAA or TFA check
+AES_encryptMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -38,19 +38,24 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-AES_encrypt
+cipher_hw_aes_xts_generic_initkeyMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 cipher_hw_aes_xts_copyctxMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
@@ -61,6 +66,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
@@ -73,6 +79,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -82,14 +89,14 @@ cipher_hw_aes_xts_copyctxMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -97,14 +104,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-AES_decryptMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+     Top func: AES_decrypt Failed
      Top func: AES_encrypt Failed
 
 Update global ICallees info
@@ -148,11 +148,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001332
-# Typebuilder time     		0.00022
-# MLTA time            		0.000184
-# Icall alias time     		0.000155
-# Func alias time      		0.000806
-# One layer alias time 		7e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002125
+# Load time            		0.001504
+# Typebuilder time     		0.000205
+# MLTA time            		0.000221
+# Icall alias time     		7.4e-05
+# Func alias time      		0.000926
+# One layer alias time 		7e-05
+# Escape alias time    		0.000887
+# DB time              		0.002557

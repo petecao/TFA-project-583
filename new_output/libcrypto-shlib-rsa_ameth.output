@@ -1,0 +1,153 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-rsa_ameth.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-rsa_ameth.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-shlib-rsa_ameth.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-rsa_ameth.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: rsa_pkey_export_to
+
+1 Top func: rsa_pss_pkey_import_from
+
+2 Top func: rsa_pub_cmp
+
+3 Top func: old_rsa_priv_encode
+
+4 Top func: rsa_priv_encode
+
+5 Top func: rsa_bits
+
+6 Top func: int_rsa_free
+     Top func: rsa_pkey_export_to Failed
+     Top func: rsa_pss_pkey_import_from Failed
+     Top func: rsa_pub_cmp Failed
+     Top func: old_rsa_priv_encode Failed
+     Top func: rsa_priv_encode Failed
+     Top func: rsa_bits Failed
+
+7 Top func: rsa_pkey_import_from
+
+8 Top func: rsa_pub_decode
+
+9 Top func: rsa_pub_print
+
+10 Top func: rsa_item_verify
+
+11 Top func: rsa_priv_print
+     Top func: int_rsa_free Failed
+
+12 Top func: rsa_security_bits
+
+13 Top func: rsa_pkey_ctrl
+     Top func: rsa_pkey_import_from Failed
+     Top func: rsa_pub_decode Failed
+     Top func: rsa_pub_print Failed
+     Top func: rsa_item_verify Failed
+     Top func: rsa_priv_print Failed
+
+14 Top func: rsa_pkey_copy
+
+15 Top func: rsa_pub_encode
+
+16 Top func: rsa_priv_decode
+
+17 Top func: rsa_item_sign
+
+18 Top func: int_rsa_size
+     Top func: rsa_pkey_ctrl Failed
+     Top func: rsa_security_bits Failed
+
+19 Top func: old_rsa_priv_decode
+
+20 Top func: rsa_sig_print
+     Top func: rsa_pkey_copy Failed
+     Top func: rsa_pub_encode Failed
+     Top func: rsa_priv_decode Failed
+     Top func: rsa_item_sign Failed
+     Top func: int_rsa_size Failed
+
+21 Top func: rsa_pss_pkey_export_to
+
+22 Top func: rsa_sig_info_set
+
+23 Top func: rsa_pkey_dirty_cnt
+
+24 Top func: rsa_pkey_check
+     Top func: rsa_sig_print Failed
+     Top func: old_rsa_priv_decode Failed
+     Top func: rsa_pss_pkey_export_to Failed
+     Top func: rsa_sig_info_set Failed
+     Top func: rsa_pkey_check Failed
+     Top func: rsa_pkey_dirty_cnt Failed
+
+Update global ICallees info
+
+0 Update icall:   %106 = call i32 %102(ptr noundef %103, i32 noundef %104, ptr noundef %105), !dbg !935
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.005792
+# Typebuilder time     		0.000568
+# MLTA time            		0.000911
+# Icall alias time     		6.7e-05
+# Func alias time      		0.001705
+# One layer alias time 		9e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001995

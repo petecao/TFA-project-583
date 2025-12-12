@@ -41,19 +41,19 @@ WARNING: matchStructTypes problem!
 Unexpected case!
 WARNING: matchStructTypes problem!
 empty struct_fields
- #0 0x0000559b0114d420 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (./build/lib/analyzer+0x382420)
- #1 0x0000559b0114a9e1 SignalHandler(int) Signals.cpp:0:0
- #2 0x00007fb9a475a520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
- #3 0x0000559b00e319d4 TypeBuilderPass::updateQueues(llvm::Type*, llvm::Type*, std::deque<llvm::Type*, std::allocator<llvm::Type*>>&) (./build/lib/analyzer+0x669d4)
- #4 0x0000559b00e2c876 TypeBuilderPass::matchStructTypes(llvm::Type*, llvm::User*) (./build/lib/analyzer+0x61876)
- #5 0x0000559b00e2d6e5 TypeBuilderPass::checkLayeredDebugInfo(llvm::GlobalVariable*) (./build/lib/analyzer+0x626e5)
- #6 0x0000559b00e2ba6d TypeBuilderPass::doModulePass(llvm::Module*) (./build/lib/analyzer+0x60a6d)
- #7 0x0000559b00e214bc IterativeModulePass::run(std::vector<std::pair<llvm::Module*, llvm::StringRef>, std::allocator<std::pair<llvm::Module*, llvm::StringRef>>>&) (./build/lib/analyzer+0x564bc)
- #8 0x0000559b00e25653 main (./build/lib/analyzer+0x5a653)
- #9 0x00007fb9a4741d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
-#10 0x00007fb9a4741e40 call_init ./csu/../csu/libc-start.c:128:20
-#11 0x00007fb9a4741e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
-#12 0x0000559b00e20e85 _start (./build/lib/analyzer+0x55e85)
+ #0 0x00005575fee14420 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (./build/lib/analyzer+0x382420)
+ #1 0x00005575fee119e1 SignalHandler(int) Signals.cpp:0:0
+ #2 0x00007ff6a0970520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #3 0x00005575feaf89d4 TypeBuilderPass::updateQueues(llvm::Type*, llvm::Type*, std::deque<llvm::Type*, std::allocator<llvm::Type*>>&) (./build/lib/analyzer+0x669d4)
+ #4 0x00005575feaf3876 TypeBuilderPass::matchStructTypes(llvm::Type*, llvm::User*) (./build/lib/analyzer+0x61876)
+ #5 0x00005575feaf46e5 TypeBuilderPass::checkLayeredDebugInfo(llvm::GlobalVariable*) (./build/lib/analyzer+0x626e5)
+ #6 0x00005575feaf2a6d TypeBuilderPass::doModulePass(llvm::Module*) (./build/lib/analyzer+0x60a6d)
+ #7 0x00005575feae84bc IterativeModulePass::run(std::vector<std::pair<llvm::Module*, llvm::StringRef>, std::allocator<std::pair<llvm::Module*, llvm::StringRef>>>&) (./build/lib/analyzer+0x564bc)
+ #8 0x00005575feaec653 main (./build/lib/analyzer+0x5a653)
+ #9 0x00007ff6a0957d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#10 0x00007ff6a0957e40 call_init ./csu/../csu/libc-start.c:128:20
+#11 0x00007ff6a0957e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#12 0x00005575feae7e85 _start (./build/lib/analyzer+0x55e85)
 PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
 Stack dump:
 0.	Program arguments: ./build/lib/analyzer tests/open_ssl_bc/params_test-bin-params_test.o

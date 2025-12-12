@@ -29,58 +29,58 @@ Openmp enabled
 
 1 Top func: dtls_post_encryption_processing
 
-2 Top func: dtls_get_more_records
+2 Top func: tls_any_set_protocol_version
 
-3 Top func: tls_any_set_protocol_version
+3 Top func: dtls_get_more_records
 
 4 Top func: tls_get_more_records
 
 5 Top func: tls_write_records_default
 
 6 Top func: tls_default_post_process_record
-     Top func: dtls_post_encryption_processing Failed
      Top func: tls_any_prepare_for_encryption Failed
+     Top func: dtls_post_encryption_processing Failed
+     Top func: tls_get_more_records Failed
      Top func: dtls_get_more_records Failed
      Top func: tls_any_set_protocol_version Failed
+
+7 Top func: tls_post_encryption_processing_default
      Top func: tls_write_records_default Failed
-     Top func: tls_get_more_records Failed
 
-7 Top func: tls_any_set_crypto_state
+8 Top func: tls_any_set_crypto_state
 
-8 Top func: tls_post_encryption_processing_default
+9 Top func: tls_validate_record_header
 
-9 Top func: dtls_prepare_record_header
-
-10 Top func: tls_default_read_n
-
-11 Top func: tls_allocate_write_buffers_default
+10 Top func: dtls_prepare_record_header
      Top func: tls_default_post_process_record Failed
 
-12 Top func: tls_validate_record_header
+11 Top func: tls_default_read_n
+
+12 Top func: tls_allocate_write_buffers_default
 
 13 Top func: tls_get_max_records_default
      Top func: tls_post_encryption_processing_default Failed
      Top func: dtls_prepare_record_header Failed
-     Top func: tls_default_read_n Failed
-     Top func: tls_allocate_write_buffers_default Failed
      Top func: tls_any_set_crypto_state Failed
+     Top func: tls_validate_record_header Failed
+     Top func: tls_default_read_n Failed
 
 14 Top func: dtls_any_set_protocol_version
 
 15 Top func: tls_prepare_for_encryption_default
 
-16 Top func: tls_initialise_write_packets_default
+16 Top func: tls_any_cipher
+     Top func: tls_allocate_write_buffers_default Failed
 
-17 Top func: tls_any_cipher
+17 Top func: tls_initialise_write_packets_default
      Top func: tls_get_max_records_default Failed
 
 18 Top func: tls_prepare_record_header_default
-     Top func: tls_validate_record_header Failed
-     Top func: tls_prepare_for_encryption_default Failed
-     Top func: tls_initialise_write_packets_default Failed
      Top func: dtls_any_set_protocol_version Failed
-     Top func: tls_prepare_record_header_default Failed
+     Top func: tls_prepare_for_encryption_default Failed
      Top func: tls_any_cipher Failed
+     Top func: tls_initialise_write_packets_default Failed
+     Top func: tls_prepare_record_header_default Failed
 
 Update global ICallees info
 
@@ -123,11 +123,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001684
-# Typebuilder time     		0.00034
-# MLTA time            		0.000594
-# Icall alias time     		6.2e-05
-# Func alias time      		0.001154
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002167
+# Load time            		0.002912
+# Typebuilder time     		0.000294
+# MLTA time            		0.000389
+# Icall alias time     		9.4e-05
+# Func alias time      		0.001323
+# One layer alias time 		6.3e-05
+# Escape alias time    		0.000798
+# DB time              		0.002337

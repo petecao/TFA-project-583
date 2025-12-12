@@ -35,16 +35,14 @@ CRYPTO_reallocMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 CRYPTO_mallocMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -192,27 +190,19 @@ Merge complete --- Not blocked by TBAA or TFA check
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 CRYPTO_reallocMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 1
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -243,10 +233,20 @@ Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 CRYPTO_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-3
+3Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -351,17 +351,18 @@ aliased_callset size: 5
 
 Update global ICallees info
 
-0 Update icall:   %16 = call ptr %12(i64 noundef %13, ptr noundef %14, i32 noundef %15), !dbg !54
+0 Update icall:   call void %10(ptr noundef %11, ptr noundef %12, i32 noundef %13), !dbg !52
 
-1 Update icall:   %19 = call ptr %14(ptr noundef %15, i64 noundef %16, ptr noundef %17, i32 noundef %18), !dbg !56
+1 Update icall:   %16 = call ptr %12(i64 noundef %13, ptr noundef %14, i32 noundef %15), !dbg !54
 
-2 Update icall:   call void %10(ptr noundef %11, ptr noundef %12, i32 noundef %13), !dbg !52
+2 Update icall:   %19 = call ptr %14(ptr noundef %15, i64 noundef %16, ptr noundef %17, i32 noundef %18), !dbg !56
 
  Start ICall Alias Analysis
 
-0 Top func: CRYPTO_realloc
----icall:   %19 = call ptr %14(ptr noundef %15, i64 noundef %16, ptr noundef %17, i32 noundef %18), !dbg !56
+0 Top func: CRYPTO_malloc
+---icall:   %16 = call ptr %12(i64 noundef %13, ptr noundef %14, i32 noundef %15), !dbg !54
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 CRYPTO_freeMerge complete --- Not blocked by TBAA or TFA check
@@ -374,8 +375,11 @@ callMerge complete --- Not blocked by TBAA or TFA check
 voidMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-%Merge complete --- Not blocked by TBAA or TFA check
-10Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+%10Merge complete --- Not blocked by TBAA or TFA check
 (Merge complete --- Not blocked by TBAA or TFA check
 ptrMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
@@ -390,32 +394,36 @@ noundefMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 12Merge complete --- Not blocked by TBAA or TFA check
-, i32 noundefMerge complete --- Not blocked by TBAA or TFA check
+, Merge complete --- Not blocked by TBAA or TFA check
+iMerge complete --- Not blocked by TBAA or TFA check
+32Merge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+noundefMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
-), Merge complete --- Not blocked by TBAA or TFA check
+13)Merge complete --- Not blocked by TBAA or TFA check
+, Merge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
 dMerge complete --- Not blocked by TBAA or TFA check
 bMerge complete --- Not blocked by TBAA or TFA check
-g Merge complete --- Not blocked by TBAA or TFA check
+gMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
-52
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+52Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-CRYPTO_mallocMerge complete --- Not blocked by TBAA or TFA check
+CRYPTO_reallocMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
----icall: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+---icall: Merge complete --- Not blocked by TBAA or TFA check
   Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -423,48 +431,40 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-16Merge complete --- Not blocked by TBAA or TFA check
+19Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  = Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 callMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
-ptr %Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
-(Merge complete --- Not blocked by TBAA or TFA check
-iMerge complete --- Not blocked by TBAA or TFA check
-64Merge complete --- Not blocked by TBAA or TFA check
+ptrMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+%14(Merge complete --- Not blocked by TBAA or TFA check
+ptrMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 noundefMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
 , Merge complete --- Not blocked by TBAA or TFA check
-ptrMerge complete --- Not blocked by TBAA or TFA check
- noundef %14, i32 noundef %15), !dbg !54
-aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
+iMerge complete --- Not blocked by TBAA or TFA check
+64Merge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+noundefMerge complete --- Not blocked by TBAA or TFA check
+ %16, ptr noundef %17, i32 noundef %18), !dbg !56
+aliased_fset size: 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -545,11 +545,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.027301
-# Typebuilder time     		0.000541
-# MLTA time            		0.000301
-# Icall alias time     		0.001602
-# Func alias time      		0.009117
-# One layer alias time 		8e-06
-# Escape alias time    		6.7e-05
-# DB time              		0.002361
+# Load time            		0.001961
+# Typebuilder time     		0.000222
+# MLTA time            		0.000254
+# Icall alias time     		0.00138
+# Func alias time      		0.003283
+# One layer alias time 		1e-05
+# Escape alias time    		6.8e-05
+# DB time              		0.002163

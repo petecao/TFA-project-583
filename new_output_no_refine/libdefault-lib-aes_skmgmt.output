@@ -25,31 +25,31 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: generic_free
+0 Top func: aes_import
 
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_importMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: generic_free
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-generic_imp_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
+aes_exportMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_exportMerge complete --- Not blocked by TBAA or TFA check
+generic_imp_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
 
-     Top func: generic_imp_settable_params Failed
-     Top func: aes_import Failed
-     Top func: generic_free Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_importMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: aes_export Failed
+     Top func: generic_imp_settable_params Failed
+     Top func: generic_free Failed
 
 Update global ICallees info
 
@@ -92,11 +92,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001233
-# Typebuilder time     		0.000195
-# MLTA time            		0.000206
-# Icall alias time     		7.7e-05
-# Func alias time      		0.005053
+# Load time            		0.00134
+# Typebuilder time     		0.000221
+# MLTA time            		0.000201
+# Icall alias time     		6.4e-05
+# Func alias time      		0.00047
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002084
+# DB time              		0.001956

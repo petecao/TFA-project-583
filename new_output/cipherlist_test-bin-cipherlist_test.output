@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_default_cipherlist_clear
+0 Top func: test_stdname_cipherlist
 
 1 Top func: test_default_cipherlist_implicit
 
-2 Top func: test_stdname_cipherlist
+2 Top func: test_default_cipherlist_clear
 
 3 Top func: test_default_cipherlist_explicit
 
-Analyzed func: test_default_cipherlist_clear
+Analyzed func: test_stdname_cipherlist
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -41,7 +41,7 @@ Analyzed func: test_default_cipherlist_implicit
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_stdname_cipherlist
+Analyzed func: test_default_cipherlist_clear
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00174
-# Typebuilder time     		0.00024
-# MLTA time            		0.00024
+# Load time            		0.001873
+# Typebuilder time     		0.000261
+# MLTA time            		0.000237
 # Icall alias time     		6.9e-05
-# Func alias time      		0.003209
-# One layer alias time 		8e-06
-# Escape alias time    		6.4e-05
-# DB time              		0.002527
+# Func alias time      		0.00391
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002159

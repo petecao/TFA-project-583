@@ -25,21 +25,21 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ml_dsa_digest_sign
+0 Top func: ml_dsa_44_newctx
 
-1 Top func: ml_dsa_verify_msg_final
+1 Top func: ml_dsa_sign_msg_final
 
-2 Top func: ml_dsa_44_newctx
+2 Top func: ml_dsa_digest_sign
 
-3 Top func: ml_dsa_sign_msg_final
+3 Top func: ml_dsa_verify_msg_final
 
-4 Top func: ml_dsa_freectx
+4 Top func: ml_dsa_gettable_ctx_params
 
+5 Top func: ml_dsa_freectx
 Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -77,57 +77,40 @@ Merge complete --- Not blocked by TBAA or TFA check
 6 Top func: ml_dsa_settable_ctx_params
 
 7 Top func: ml_dsa_65_newctx
-     Top func: ml_dsa_verify_msg_final Failed
-     Top func: ml_dsa_sign_msg_final Failed
-     Top func: ml_dsa_digest_sign Failed
      Top func: ml_dsa_44_newctx Failed
-     Top func: ml_dsa_freectx Failed
+     Top func: ml_dsa_sign_msg_final Failed
      Top func: ml_dsa_gettable_ctx_params Failed
+     Top func: ml_dsa_digest_sign Failed
+     Top func: ml_dsa_verify_msg_final Failed
+     Top func: ml_dsa_freectx Failed
      Top func: ml_dsa_settable_ctx_params Failed
 
-8 Top func: ml_dsa_verify
+8 Top func: ml_dsa_sign_msg_init
 
-9Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_signMerge complete --- Not blocked by TBAA or TFA check
+9 Top func: ml_dsa_sign
 
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 10Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_digest_verifyMerge complete --- Not blocked by TBAA or TFA check
+ml_dsa_dupctxMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_65_newctxMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+11 Top func: ml_dsa_digest_verify
+     Top func: ml_dsa_65_newctx Failed
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-11Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_sign_msg_initMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 12Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_verifyMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+13Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -136,20 +119,37 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_dupctxMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -282,19 +282,19 @@ Merge complete --- Not blocked by TBAA or TFA check
 14 Top func: ml_dsa_get_ctx_params
 
 15 Top func: ml_dsa_87_newctx
-     Top func: ml_dsa_digest_verify Failed
      Top func: ml_dsa_sign_msg_init Failed
+     Top func: ml_dsa_digest_verify Failed
      Top func: ml_dsa_dupctx Failed
      Top func: ml_dsa_verify Failed
      Top func: ml_dsa_sign Failed
      Top func: ml_dsa_set_ctx_params Failed
 
 16 Top func: ml_dsa_signverify_msg_update
-     Top func: ml_dsa_get_ctx_params Failed
 
 17 Top func: ml_dsa_verify_msg_init
 
 18 Top func: ml_dsa_digest_signverify_init
+     Top func: ml_dsa_get_ctx_params Failed
      Top func: ml_dsa_87_newctx Failed
      Top func: ml_dsa_signverify_msg_update Failed
      Top func: ml_dsa_verify_msg_init Failed
@@ -341,11 +341,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002936
-# Typebuilder time     		0.000344
-# MLTA time            		0.000392
-# Icall alias time     		5.5e-05
-# Func alias time      		0.003464
+# Load time            		0.003537
+# Typebuilder time     		0.000422
+# MLTA time            		0.000521
+# Icall alias time     		6.3e-05
+# Func alias time      		0.004035
 # One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002036
+# Escape alias time    		5.6e-05
+# DB time              		0.001987

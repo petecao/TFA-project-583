@@ -27,6 +27,7 @@ Openmp enabled
 
 0 Top func: OCSP_RESPID_free
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 X509_EXTENSION_freeMerge complete --- Not blocked by TBAA or TFA check
@@ -101,19 +102,18 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-OCSP_RESPID_free
+Analyzed func: OCSP_RESPID_freeMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 0
-aliased_callset size: 2
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: X509_EXTENSION_free
 DefinitionFuncSet size: 0
@@ -121,21 +121,21 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %49 = call i32 %41(ptr noundef %44, ptr noundef %12, ptr noundef %13, ptr noundef %48), !dbg !1849
+0 Update icall:   %177 = call i32 %174(ptr noundef %175, ptr noundef %176, ptr noundef %24), !dbg !1943
 
-1 Update icall:   %121 = call i32 %117(ptr noundef %118, ptr noundef %119, ptr noundef %120, i32 noundef 512), !dbg !1926
+1 Update icall:   %49 = call i32 %41(ptr noundef %44, ptr noundef %12, ptr noundef %13, ptr noundef %48), !dbg !1849
 
-2 Update icall:   %261 = call i32 %255(ptr noundef %260, ptr noundef %22, ptr noundef %31), !dbg !2085
+2 Update icall:   %94 = call i32 %90(ptr noundef %91, ptr noundef %92, i64 noundef %93, ptr noundef %17), !dbg !1895
 
-3 Update icall:   %219 = call i32 %213(ptr noundef %216, ptr noundef %217, i64 noundef %218), !dbg !2057
+3 Update icall:   %121 = call i32 %117(ptr noundef %118, ptr noundef %119, ptr noundef %120, i32 noundef 512), !dbg !1926
 
-4 Update icall:   %103 = call i32 %96(ptr noundef %101, ptr noundef %102, ptr noundef %20), !dbg !1897
+4 Update icall:   %261 = call i32 %255(ptr noundef %260, ptr noundef %22, ptr noundef %31), !dbg !2085
 
-5 Update icall:   %94 = call i32 %90(ptr noundef %91, ptr noundef %92, i64 noundef %93, ptr noundef %17), !dbg !1895
+5 Update icall:   %219 = call i32 %213(ptr noundef %216, ptr noundef %217, i64 noundef %218), !dbg !2057
 
 6 Update icall:   %34 = call i32 %21(ptr noundef %24, ptr noundef %26, i32 noundef %29, ptr noundef %33), !dbg !1828
 
-7 Update icall:   %177 = call i32 %174(ptr noundef %175, ptr noundef %176, ptr noundef %24), !dbg !1943
+7 Update icall:   %103 = call i32 %96(ptr noundef %101, ptr noundef %102, ptr noundef %20), !dbg !1897
 
  Start ICall Alias Analysis
 
@@ -176,11 +176,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.013144
-# Typebuilder time     		0.001191
-# MLTA time            		0.000869
-# Icall alias time     		7.5e-05
-# Func alias time      		0.010254
-# One layer alias time 		1e-05
-# Escape alias time    		5.7e-05
-# DB time              		0.00201
+# Load time            		0.013328
+# Typebuilder time     		0.001057
+# MLTA time            		0.000865
+# Icall alias time     		2.2e-05
+# Func alias time      		0.005047
+# One layer alias time 		7e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002088

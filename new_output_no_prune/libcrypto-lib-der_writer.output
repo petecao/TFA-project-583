@@ -30,11 +30,8 @@ Openmp enabled
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-int_put_bytes_uint32
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+int_put_bytes_uint32Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -183,13 +180,16 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-int_put_bytes_uint32Merge complete --- Not blocked by TBAA or TFA check
+int_put_bytes_bnMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
-aliased_callset size: 1
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: int_put_bytes_bn
+
+Analyzed func: int_put_bytes_uint32
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
@@ -307,11 +307,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.005501
-# Typebuilder time     		0.000268
-# MLTA time            		0.000301
-# Icall alias time     		0.000804
-# Func alias time      		0.001423
-# One layer alias time 		9e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002174
+# Load time            		0.006954
+# Typebuilder time     		0.000243
+# MLTA time            		0.000259
+# Icall alias time     		0.000755
+# Func alias time      		0.001354
+# One layer alias time 		8e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002104

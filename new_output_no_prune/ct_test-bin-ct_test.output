@@ -25,53 +25,37 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_verify_multiple_scts
+0 Top func: test_multiple_scts_in_certificate
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_verify_fails_for_future_sct
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_no_scts_in_certificate
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_no_scts_in_certificate
-
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_multiple_scts_in_certificate
-
-Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
  Top func: test_decode_tls_sct
 
 Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_default_ct_policy_eval_ctx_time_is_now
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_verify_fails_for_future_sct
+
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_verify_multiple_scts
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-6 Top func: test_encode_tls_sct
+5 Top func: test_encode_tls_sct
 
-7 Top func: test_ctlog_from_base64
+6 Top func: test_default_ct_policy_eval_ctx_time_is_now
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_verify_multiple_sctsMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_no_scts_in_certificateMerge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 1
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1
 aliased_callset size: 0
 
 Analyzed func: test_multiple_scts_in_certificate
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_verify_fails_for_future_sct
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_no_scts_in_certificate
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_default_ct_policy_eval_ctx_time_is_now
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -79,15 +63,31 @@ Analyzed func: test_decode_tls_sct
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-8 Top func: test_one_sct_in_certificate
+Analyzed func: test_verify_fails_for_future_sct
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_verify_multiple_scts
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+7 Top func: test_one_sct_in_certificate
+
+Merge complete --- Not blocked by TBAA or TFA check
+8Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_verify_one_sct
 
 Merge complete --- Not blocked by TBAA or TFA check
 9Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_verify_one_sct
+ Top func: test_ctlog_from_base64
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_ctlog_from_base64Merge complete --- Not blocked by TBAA or TFA check
+test_default_ct_policy_eval_ctx_time_is_nowMerge complete --- Not blocked by TBAA or TFA check
 
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_one_sct_in_certificate
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -95,7 +95,7 @@ Analyzed func: test_verify_one_sct
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_one_sct_in_certificate
+Analyzed func: test_ctlog_from_base64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
@@ -146,11 +146,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003009
-# Typebuilder time     		0.000326
-# MLTA time            		0.000286
-# Icall alias time     		8.9e-05
-# Func alias time      		0.002119
-# One layer alias time 		6e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002048
+# Load time            		0.004812
+# Typebuilder time     		0.000416
+# MLTA time            		0.000318
+# Icall alias time     		6.5e-05
+# Func alias time      		0.00824
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001974

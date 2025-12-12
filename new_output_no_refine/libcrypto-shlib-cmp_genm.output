@@ -27,10 +27,14 @@ Openmp enabled
 
 0 Top func: X509_free
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 selfsigned_verify_cbMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -70,13 +74,9 @@ Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -184,9 +184,9 @@ aliased_callset size: 3
 
 Update global ICallees info
 
-0 Update icall:   %74 = call i32 %70(ptr noundef %71, ptr noundef %72, ptr noundef %73), !dbg !762
+0 Update icall:   %107 = call i32 %104(i32 noundef %105, ptr noundef %106), !dbg !800
 
-1 Update icall:   %107 = call i32 %104(i32 noundef %105, ptr noundef %106), !dbg !800
+1 Update icall:   %74 = call i32 %70(ptr noundef %71, ptr noundef %72, ptr noundef %73), !dbg !762
 
  Start ICall Alias Analysis
 
@@ -271,11 +271,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.003539
-# Typebuilder time     		0.000489
-# MLTA time            		0.000385
-# Icall alias time     		0.000574
-# Func alias time      		0.007412
+# Load time            		0.005448
+# Typebuilder time     		0.000465
+# MLTA time            		0.000329
+# Icall alias time     		0.000597
+# Func alias time      		0.003986
 # One layer alias time 		8e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.00199
+# Escape alias time    		6.2e-05
+# DB time              		0.001942

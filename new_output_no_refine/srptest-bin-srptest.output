@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: run_srp_kat
+0 Top func: run_srp_tests
 
-1 Top func: run_srp_tests
+1 Top func: run_srp_kat
 
-Analyzed func: run_srp_kat
+Analyzed func: run_srp_tests
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: run_srp_tests
+Analyzed func: run_srp_kat
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002061
-# Typebuilder time     		0.000238
-# MLTA time            		0.000259
-# Icall alias time     		7e-06
-# Func alias time      		0.000391
-# One layer alias time 		4e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002081
+# Load time            		0.00237
+# Typebuilder time     		0.000299
+# MLTA time            		0.000244
+# Icall alias time     		6.4e-05
+# Func alias time      		0.004254
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002145

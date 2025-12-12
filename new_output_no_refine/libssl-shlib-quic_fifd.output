@@ -27,6 +27,7 @@ Openmp enabled
 
 0 Top func: on_acked
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 on_lostMerge complete --- Not blocked by TBAA or TFA check
@@ -202,60 +203,59 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-on_discardedMerge complete --- Not blocked by TBAA or TFA check
- Failed
+on_ackedMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: on_discarded Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: on_lost Failed
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: on_acked Failed
 
 Update global ICallees info
 
-0 Update icall:   call void %156(i64 noundef %161, ptr noundef %164), !dbg !253
+0 Update icall:   %41 = call ptr %26(i64 noundef %31, i32 noundef %37, ptr noundef %40), !dbg !173
 
-1 Update icall:   %77 = call ptr %62(i64 noundef %67, i32 noundef %73, ptr noundef %76), !dbg !223
+1 Update icall:   call void %109(i64 noundef 5, i64 noundef %114, ptr noundef %115, ptr noundef %118), !dbg !225
 
-2 Update icall:   %41 = call ptr %26(i64 noundef %31, i32 noundef %37, ptr noundef %40), !dbg !173
+2 Update icall:   call void %156(i64 noundef 17, i64 noundef %161, ptr noundef %162, ptr noundef %165), !dbg !264
 
-3 Update icall:   call void %113(i64 noundef 5, i64 noundef %118, ptr noundef %119, ptr noundef %122), !dbg !239
+3 Update icall:   call void %178(i64 noundef %183, ptr noundef %186), !dbg !279
 
-4 Update icall:   call void %139(i64 noundef 4, i64 noundef %144, ptr noundef %145, ptr noundef %148), !dbg !242
+4 Update icall:   call void %143(i64 noundef 4, i64 noundef %148, ptr noundef %149, ptr noundef %152), !dbg !256
 
-5 Update icall:   %16 = call ptr %12(ptr noundef %15), !dbg !138
+5 Update icall:   call void %282(i64 noundef 3, i64 noundef -1, ptr noundef %283, ptr noundef %286), !dbg !350
 
-6 Update icall:   call void %109(i64 noundef 5, i64 noundef %114, ptr noundef %115, ptr noundef %118), !dbg !225
+6 Update icall:   call void %113(i64 noundef 5, i64 noundef %118, ptr noundef %119, ptr noundef %122), !dbg !239
 
 7 Update icall:   call void %234(i64 noundef 16, i64 noundef -1, ptr noundef %235, ptr noundef %238), !dbg !326
 
-8 Update icall:   call void %218(i64 noundef 30, i64 noundef -1, ptr noundef %219, ptr noundef %222), !dbg !318
+8 Update icall:   %16 = call ptr %12(ptr noundef %15), !dbg !138
 
-9 Update icall:   call void %156(i64 noundef 17, i64 noundef %161, ptr noundef %162, ptr noundef %165), !dbg !264
+9 Update icall:   call void %218(i64 noundef 30, i64 noundef -1, ptr noundef %219, ptr noundef %222), !dbg !318
 
 10 Update icall:   call void %266(i64 noundef 19, i64 noundef -1, ptr noundef %267, ptr noundef %270), !dbg !342
 
-11 Update icall:   call void %143(i64 noundef 4, i64 noundef %148, ptr noundef %149, ptr noundef %152), !dbg !256
+11 Update icall:   call void %156(i64 noundef %161, ptr noundef %164), !dbg !253
 
-12 Update icall:   call void %282(i64 noundef 3, i64 noundef -1, ptr noundef %283, ptr noundef %286), !dbg !350
+12 Update icall:   call void %250(i64 noundef 18, i64 noundef -1, ptr noundef %251, ptr noundef %254), !dbg !334
 
-13 Update icall:   call void %250(i64 noundef 18, i64 noundef -1, ptr noundef %251, ptr noundef %254), !dbg !334
+13 Update icall:   call void %139(i64 noundef 4, i64 noundef %144, ptr noundef %145, ptr noundef %148), !dbg !242
 
-14 Update icall:   %45 = call ptr %30(i64 noundef %35, i32 noundef %41, ptr noundef %44), !dbg !180
+14 Update icall:   %77 = call ptr %62(i64 noundef %67, i32 noundef %73, ptr noundef %76), !dbg !223
 
-15 Update icall:   call void %178(i64 noundef %183, ptr noundef %186), !dbg !279
+15 Update icall:   %45 = call ptr %30(i64 noundef %35, i32 noundef %41, ptr noundef %44), !dbg !180
 
  Start ICall Alias Analysis
 
@@ -296,11 +296,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.015482
-# Typebuilder time     		0.000273
-# MLTA time            		0.000414
-# Icall alias time     		5.3e-05
-# Func alias time      		0.012204
-# One layer alias time 		7e-06
-# Escape alias time    		6e-05
-# DB time              		0.00201
+# Load time            		0.002509
+# Typebuilder time     		0.000265
+# MLTA time            		0.000354
+# Icall alias time     		7.2e-05
+# Func alias time      		0.005123
+# One layer alias time 		9e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002058

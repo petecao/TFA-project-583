@@ -25,35 +25,21 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: OSSL_CMP_certConf_cb
+0 Top func: OSSL_CMP_MSG_http_perform
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-unprotected_exceptionMerge complete --- Not blocked by TBAA or TFA check
+OSSL_CMP_certConf_cbMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-OSSL_CMP_MSG_http_performMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+unprotected_exceptionMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -376,11 +362,15 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 unprotected_exceptionMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
@@ -601,6 +591,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: OSSL_CMP_MSG_http_perform Failed
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -618,9 +609,18 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-OSSL_CMP_MSG_http_performMerge complete --- Not blocked by TBAA or TFA check
- Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -1013,9 +1013,9 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Update global ICallees info
 
-0 Update icall:   %121 = call ptr %118(ptr noundef %119, ptr noundef %120), !dbg !1028
+0 Update icall:   %208 = call i32 %202(ptr noundef %203, ptr noundef %206, i32 noundef %207, ptr noundef %18), !dbg !1167
 
-1 Update icall:   %208 = call i32 %202(ptr noundef %203, ptr noundef %206, i32 noundef %207, ptr noundef %18), !dbg !1167
+1 Update icall:   %121 = call ptr %118(ptr noundef %119, ptr noundef %120), !dbg !1028
 
  Start ICall Alias Analysis
 
@@ -1055,6 +1055,14 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 208Merge complete --- Not blocked by TBAA or TFA check
  = Merge complete --- Not blocked by TBAA or TFA check
@@ -1067,7 +1075,8 @@ iMerge complete --- Not blocked by TBAA or TFA check
 202Merge complete --- Not blocked by TBAA or TFA check
 (Merge complete --- Not blocked by TBAA or TFA check
 ptrMerge complete --- Not blocked by TBAA or TFA check
- noundefMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+noundefMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 203Merge complete --- Not blocked by TBAA or TFA check
@@ -1079,37 +1088,28 @@ noundefMerge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 206Merge complete --- Not blocked by TBAA or TFA check
 , Merge complete --- Not blocked by TBAA or TFA check
-i32Merge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
-noundefMerge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
+iMerge complete --- Not blocked by TBAA or TFA check
+32 Merge complete --- Not blocked by TBAA or TFA check
+noundef Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 207Merge complete --- Not blocked by TBAA or TFA check
 , Merge complete --- Not blocked by TBAA or TFA check
 ptrMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 noundefMerge complete --- Not blocked by TBAA or TFA check
- %Merge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+%Merge complete --- Not blocked by TBAA or TFA check
 18Merge complete --- Not blocked by TBAA or TFA check
 )Merge complete --- Not blocked by TBAA or TFA check
 , Merge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
 dMerge complete --- Not blocked by TBAA or TFA check
-bgMerge complete --- Not blocked by TBAA or TFA check
+bMerge complete --- Not blocked by TBAA or TFA check
+gMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
 1167Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -1924,11 +1924,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004872
-# Typebuilder time     		0.000481
-# MLTA time            		0.000411
-# Icall alias time     		0.007449
-# Func alias time      		0.007962
-# One layer alias time 		8.7e-05
-# Escape alias time    		6.1e-05
-# DB time              		0.002223
+# Load time            		0.006141
+# Typebuilder time     		0.000569
+# MLTA time            		0.000459
+# Icall alias time     		0.007351
+# Func alias time      		0.009066
+# One layer alias time 		8.1e-05
+# Escape alias time    		5.8e-05
+# DB time              		0.001926

@@ -25,40 +25,38 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: got_transport_params_cb
+0 Top func: crypto_send_cb
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-yield_secret_cbMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 crypto_recv_rcd_cbMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-alert_cbMerge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: crypto_release_rcd_cbMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: Merge complete --- Not blocked by TBAA or TFA check
+got_transport_params_cbMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-crypto_release_rcd_cbMerge complete --- Not blocked by TBAA or TFA check
+yield_secret_cbMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-crypto_send_cbMerge complete --- Not blocked by TBAA or TFA check
+alert_cbMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -76,7 +74,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: got_transport_params_cb Failed
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -151,18 +148,22 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+crypto_send_cbMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -274,33 +275,59 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: crypto_send_cb Failed
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+crypto_recv_rcd_cbMerge complete --- Not blocked by TBAA or TFA check
+ Failed
      Top func: yield_secret_cb Failed
+     Top func: got_transport_params_cb Failed
      Top func: crypto_release_rcd_cb Failed
      Top func: alert_cb Failed
-     Top func: crypto_recv_rcd_cb Failed
 
 Update global ICallees info
 
-0 Update icall:   %61 = call i32 %52(ptr noundef %53, i32 noundef %54, i32 noundef %55, ptr noundef %56, i64 noundef %57, ptr noundef %60), !dbg !1704
+0 Update icall:   %51 = call i32 %44(ptr noundef %45, ptr noundef %46, i64 noundef %47, ptr noundef %50), !dbg !1695
 
-1 Update icall:   %54 = call i32 %46(ptr noundef %47, ptr noundef %48, i64 noundef %49, ptr noundef %50, ptr noundef %53), !dbg !1697
+1 Update icall:   %51 = call i32 %44(ptr noundef %45, ptr noundef %46, ptr noundef %47, ptr noundef %50), !dbg !1695
 
-2 Update icall:   %48 = call i32 %42(ptr noundef %43, i64 noundef %44, ptr noundef %47), !dbg !1693
+2 Update icall:   %54 = call i32 %46(ptr noundef %47, ptr noundef %48, i64 noundef %49, ptr noundef %50, ptr noundef %53), !dbg !1697
 
-3 Update icall:   %51 = call i32 %44(ptr noundef %45, ptr noundef %46, i64 noundef %47, ptr noundef %50), !dbg !1695
+3 Update icall:   %61 = call i32 %52(ptr noundef %53, i32 noundef %54, i32 noundef %55, ptr noundef %56, i64 noundef %57, ptr noundef %60), !dbg !1704
 
 4 Update icall:   %48 = call i32 %42(ptr noundef %43, i8 noundef zeroext %44, ptr noundef %47), !dbg !1693
 
-5 Update icall:   %51 = call i32 %44(ptr noundef %45, ptr noundef %46, ptr noundef %47, ptr noundef %50), !dbg !1695
+5 Update icall:   %48 = call i32 %42(ptr noundef %43, i64 noundef %44, ptr noundef %47), !dbg !1693
 
  Start ICall Alias Analysis
 
 0 Top func: crypto_release_rcd_cb
 ---icall:   %48 = call i32 %42(ptr noundef %43, i64 noundef %44, ptr noundef %47), !dbg !1693
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -358,11 +385,11 @@ reduce_num_escape: 1
 reduce_num_total: 1
 
 
-# Load time            		0.003584
-# Typebuilder time     		0.00049
-# MLTA time            		0.000371
-# Icall alias time     		0.000487
-# Func alias time      		0.006586
-# One layer alias time 		5e-06
-# Escape alias time    		7.6e-05
-# DB time              		0.002075
+# Load time            		0.003698
+# Typebuilder time     		0.000483
+# MLTA time            		0.00036
+# Icall alias time     		0.000674
+# Func alias time      		0.004042
+# One layer alias time 		7e-06
+# Escape alias time    		7.4e-05
+# DB time              		0.001857

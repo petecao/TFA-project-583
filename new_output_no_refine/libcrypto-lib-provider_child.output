@@ -236,37 +236,37 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: provider_create_child_cb
-DefinitionFuncSet size: 1
-aliased_callset size: 0
 
 Analyzed func: provider_remove_child_cb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: provider_create_child_cb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Update global ICallees info
 
-0 Update icall:   %50 = call ptr %46(ptr noundef %49), !dbg !154
+0 Update icall:   %30 = call i32 %26(ptr noundef %28, i32 noundef %29), !dbg !129
 
-1 Update icall:   %29 = call ptr %27(ptr noundef %28), !dbg !130
+1 Update icall:   %50 = call ptr %46(ptr noundef %49), !dbg !154
 
-2 Update icall:   %37 = call ptr %35(ptr noundef %36), !dbg !144
+2 Update icall:   %21 = call ptr %19(ptr noundef %20), !dbg !122
 
-3 Update icall:   %30 = call i32 %26(ptr noundef %28, i32 noundef %29), !dbg !129
+3 Update icall:   %37 = call ptr %35(ptr noundef %36), !dbg !144
 
-4 Update icall:   %58 = call ptr %54(ptr noundef %57), !dbg !160
+4 Update icall:   call void %12(ptr noundef %15), !dbg !111
 
-5 Update icall:   %21 = call ptr %19(ptr noundef %20), !dbg !122
+5 Update icall:   %29 = call i32 %26(ptr noundef %27, i32 noundef %28), !dbg !129
 
-6 Update icall:   call void %12(ptr noundef %15), !dbg !111
+6 Update icall:   %58 = call ptr %54(ptr noundef %57), !dbg !160
 
-7 Update icall:   %29 = call i32 %26(ptr noundef %27, i32 noundef %28), !dbg !129
+7 Update icall:   %29 = call ptr %27(ptr noundef %28), !dbg !130
 
 8 Update icall:   %129 = call i32 %124(ptr noundef %127, ptr noundef @provider_create_child_cb, ptr noundef @provider_remove_child_cb, ptr noundef @provider_global_props_cb, ptr noundef %128), !dbg !229
 
@@ -309,11 +309,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00205
-# Typebuilder time     		0.000251
-# MLTA time            		0.000298
-# Icall alias time     		9.8e-05
-# Func alias time      		0.003062
-# One layer alias time 		1.3e-05
-# Escape alias time    		5.9e-05
-# DB time              		0.001967
+# Load time            		0.002086
+# Typebuilder time     		0.000249
+# MLTA time            		0.000307
+# Icall alias time     		4e-05
+# Func alias time      		0.002939
+# One layer alias time 		7e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001954

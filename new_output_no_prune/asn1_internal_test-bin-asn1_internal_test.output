@@ -27,19 +27,19 @@ Openmp enabled
 
 0 Top func: test_unicode_range
 
-1 Top func: test_obj_create
+1 Top func: posix_time_test
 
-2 Top func: posix_time_test
+2 Top func: test_obj_create
 
-3 Top func: test_standard_methods
+3 Top func: test_obj_nid_undef
 
-4 Top func: test_obj_nid_undef
+4 Top func: test_standard_methods
 
 5 Top func: test_asn1_time_tm_conversions
 
 6 Top func: test_tbl_standard
 
-Analyzed func: posix_time_test
+Analyzed func: test_obj_create
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -47,15 +47,11 @@ Analyzed func: test_unicode_range
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_obj_create
+Analyzed func: posix_time_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_obj_nid_undef
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_standard_methods
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -71,11 +67,15 @@ Analyzed func: test_tbl_standard
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_invalid_utf8
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_empty_nonoptional_content
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_invalid_utf8
+Analyzed func: test_standard_methods
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003238
-# Typebuilder time     		0.000526
-# MLTA time            		0.000351
-# Icall alias time     		7.8e-05
-# Func alias time      		0.004901
-# One layer alias time 		7.4e-05
-# Escape alias time    		0.000954
-# DB time              		0.002318
+# Load time            		0.003992
+# Typebuilder time     		0.000542
+# MLTA time            		0.000327
+# Icall alias time     		8e-05
+# Func alias time      		0.008344
+# One layer alias time 		9e-06
+# Escape alias time    		5.9e-05
+# DB time              		0.002267

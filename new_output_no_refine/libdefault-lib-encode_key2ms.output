@@ -25,53 +25,53 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: key2ms_newctx
+0 Top func: key2pvk_set_ctx_params
 
-1 Top func: key2pvk_set_ctx_params
+1 Top func: dsa2pvk_free_object
 
 2 Top func: dsa2msblob_free_object
 
-3 Top func: dsa2pvk_free_object
+3 Top func: key2ms_newctx
 
-4 Top func: rsa2pvk_free_object
+4 Top func: rsa2msblob_encode
 
-5 Top func: rsa2msblob_encode
+5 Top func: rsa2pvk_free_object
 
 6 Top func: rsa2msblob_import_object
-     Top func: key2ms_newctx Failed
-     Top func: key2pvk_set_ctx_params Failed
      Top func: dsa2pvk_free_object Failed
-     Top func: rsa2msblob_encode Failed
+     Top func: key2pvk_set_ctx_params Failed
      Top func: dsa2msblob_free_object Failed
+     Top func: rsa2msblob_encode Failed
+     Top func: key2ms_newctx Failed
      Top func: rsa2pvk_free_object Failed
 
-7 Top func: key2ms_freectx
+7 Top func: dsa2pvk_encode
+     Top func: rsa2msblob_import_object Failed
 
 8 Top func: key2ms_does_selection
 
-9 Top func: dsa2pvk_encode
+9 Top func: dsa2msblob_encode
 
 10 Top func: EVP_PKEY_set1_DSA
-     Top func: rsa2msblob_import_objectMerge complete --- Not blocked by TBAA or TFA check
- Failed
+
+11 Top func: Merge complete --- Not blocked by TBAA or TFA check
+key2ms_freectx
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-11Merge complete --- Not blocked by TBAA or TFA check
+12Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-dsa2msblob_encodeMerge complete --- Not blocked by TBAA or TFA check
+rsa2pvk_encodeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-12 Top func: rsa2pvk_encodeMerge complete --- Not blocked by TBAA or TFA check
+13 Top func: rsa2msblob_free_objectMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-rsa2msblob_free_objectMerge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+dsa2pvk_encodeMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -85,86 +85,55 @@ key2ms_freectxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-dsa2pvk_encodeMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-dsa2msblob_encodeMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+dsa2msblob_encode FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 14Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-dsa2pvk_import_objectMerge complete --- Not blocked by TBAA or TFA check
+dsa2msblob_import_objectMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-15 Top func: key2pvk_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 rsa2pvk_encodeMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
+
+
+15 Top func: Merge complete --- Not blocked by TBAA or TFA check
+dsa2pvk_import_objectMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: rsa2msblob_free_object FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 16Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-dsa2msblob_import_object
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-rsa2msblob_free_objectMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+key2pvk_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-17Merge complete --- Not blocked by TBAA or TFA check
+17 Top func: rsa2pvk_import_object
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+18Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-rsa2pvk_import_objectMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-18 Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_pw_pvk_passwordMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-19Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+19Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 EVP_PKEY_set1_RSAMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-key2pvk_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-dsa2pvk_import_objectMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -181,15 +150,44 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+dsa2pvk_import_objectMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+key2pvk_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 rsa2pvk_import_objectMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 ossl_pw_pvk_passwordMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -197,9 +195,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -425,21 +421,25 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_PKEY_set1_DSAMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: EVP_PKEY_set1_DSA
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 2Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 2
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -500,11 +500,14 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-31Merge complete --- Not blocked by TBAA or TFA check
- = Merge complete --- Not blocked by TBAA or TFA check
-call i32 Merge complete --- Not blocked by TBAA or TFA check
-%28(Merge complete --- Not blocked by TBAA or TFA check
+31 = call Merge complete --- Not blocked by TBAA or TFA check
+i32 Merge complete --- Not blocked by TBAA or TFA check
+%Merge complete --- Not blocked by TBAA or TFA check
+28Merge complete --- Not blocked by TBAA or TFA check
+(Merge complete --- Not blocked by TBAA or TFA check
 ptrMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 noundefMerge complete --- Not blocked by TBAA or TFA check
@@ -513,20 +516,16 @@ noundefMerge complete --- Not blocked by TBAA or TFA check
 29Merge complete --- Not blocked by TBAA or TFA check
 , Merge complete --- Not blocked by TBAA or TFA check
 ptrMerge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
-noundefMerge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
-%30Merge complete --- Not blocked by TBAA or TFA check
-), !dMerge complete --- Not blocked by TBAA or TFA check
-bgMerge complete --- Not blocked by TBAA or TFA check
+ noundefMerge complete --- Not blocked by TBAA or TFA check
+ %30)Merge complete --- Not blocked by TBAA or TFA check
+, !Merge complete --- Not blocked by TBAA or TFA check
+dMerge complete --- Not blocked by TBAA or TFA check
+bMerge complete --- Not blocked by TBAA or TFA check
+gMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
 230Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -606,6 +605,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: 0
 
 start oneLayerHandler
@@ -645,11 +645,11 @@ reduce_num_escape: 0
 reduce_num_total: 6
 
 
-# Load time            		0.002864
-# Typebuilder time     		0.000338
-# MLTA time            		0.000408
-# Icall alias time     		0.001149
-# Func alias time      		0.003436
-# One layer alias time 		9e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002102
+# Load time            		0.002207
+# Typebuilder time     		0.000382
+# MLTA time            		0.000435
+# Icall alias time     		0.00102
+# Func alias time      		0.008611
+# One layer alias time 		7e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.002212

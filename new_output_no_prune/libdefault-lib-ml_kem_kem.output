@@ -25,25 +25,25 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ml_kem_newctx
+0 Top func: ml_kem_encapsulate
 
-1 Top func: ml_kem_encapsulate_init
+1 Top func: ml_kem_decapsulate
 
-2 Top func: ml_kem_decapsulate_init
+2 Top func: ml_kem_newctx
 
-3 Top func: ml_kem_encapsulate
+3 Top func: ml_kem_encapsulate_init
 
-4 Top func: ml_kem_decapsulate
+4 Top func: ml_kem_decapsulate_init
 
 5 Top func: ml_kem_freectx
 
 6 Top func: ml_kem_settable_ctx_params
-     Top func: ml_kem_newctx Failed
      Top func: ml_kem_encapsulate_init Failed
-     Top func: ml_kem_decapsulate_init Failed
      Top func: ml_kem_encapsulate Failed
-     Top func: ml_kem_freectx Failed
+     Top func: ml_kem_newctx Failed
      Top func: ml_kem_decapsulate Failed
+     Top func: ml_kem_decapsulate_init Failed
+     Top func: ml_kem_freectx Failed
 
 7 Top func: ml_kem_set_ctx_params
      Top func: ml_kem_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
@@ -142,11 +142,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002123
-# Typebuilder time     		0.000288
-# MLTA time            		0.00026
-# Icall alias time     		7e-06
-# Func alias time      		0.003991
-# One layer alias time 		1.1e-05
-# Escape alias time    		5.5e-05
-# DB time              		0.002204
+# Load time            		0.001964
+# Typebuilder time     		0.000299
+# MLTA time            		0.000311
+# Icall alias time     		6.7e-05
+# Func alias time      		0.00708
+# One layer alias time 		1.4e-05
+# Escape alias time    		5.6e-05
+# DB time              		0.002206

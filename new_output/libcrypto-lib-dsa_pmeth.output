@@ -50,7 +50,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-pkey_dsa_initMerge complete --- Not blocked by TBAA or TFA check
+pkey_dsa_keygenMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -59,7 +59,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-pkey_dsa_cleanupMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+pkey_dsa_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -68,39 +69,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-pkey_dsa_keygenMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-pkey_dsa_paramgenMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-7Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-pkey_dsa_signMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+pkey_dsa_cleanupMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -137,10 +106,33 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: pkey_dsa_verify
-DefinitionFuncSet size: 1
-aliased_callset size: 1
+6 Top func: pkey_dsa_paramgen
+
+7 Top func: pkey_dsa_sign
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+pkey_dsa_verifyMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
 
 Analyzed func: pkey_dsa_ctrl_str
 DefinitionFuncSet size: 1
@@ -150,7 +142,7 @@ Analyzed func: pkey_dsa_copy
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
-Analyzed func: pkey_dsa_cleanup
+Analyzed func: pkey_dsa_init
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
@@ -158,19 +150,27 @@ Analyzed func: pkey_dsa_keygen
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
-Analyzed func: pkey_dsa_sign
-DefinitionFuncSet size: 1
-aliased_callset size: 1
-
-Analyzed func: pkey_dsa_paramgen
-DefinitionFuncSet size: 1
-aliased_callset size: 1
-
-Analyzed func: pkey_dsa_init
+Analyzed func: pkey_dsa_cleanup
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
 8 Top func: pkey_dsa_ctrl
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+pkey_dsa_signMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+
+Analyzed func: pkey_dsa_ctrl
+DefinitionFuncSet size: 1
+aliased_callset size: 1
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -180,7 +180,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: pkey_dsa_ctrl
+Analyzed func: pkey_dsa_paramgen
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
@@ -225,11 +225,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002377
-# Typebuilder time     		0.000354
-# MLTA time            		0.000427
-# Icall alias time     		7e-06
-# Func alias time      		0.005856
-# One layer alias time 		5e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002245
+# Load time            		0.002622
+# Typebuilder time     		0.000343
+# MLTA time            		0.000347
+# Icall alias time     		5.4e-05
+# Func alias time      		0.002731
+# One layer alias time 		7e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002096

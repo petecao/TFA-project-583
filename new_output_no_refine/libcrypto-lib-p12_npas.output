@@ -25,10 +25,10 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: PKCS7_free
+0 Top func: PKCS12_SAFEBAG_free
 
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: PKCS12_SAFEBAG_freeMerge complete --- Not blocked by TBAA or TFA check
+ Top func: PKCS7_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -214,11 +214,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00265
-# Typebuilder time     		0.0003
-# MLTA time            		0.000247
-# Icall alias time     		6.4e-05
-# Func alias time      		0.001108
-# One layer alias time 		6e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002071
+# Load time            		0.002587
+# Typebuilder time     		0.000451
+# MLTA time            		0.000291
+# Icall alias time     		6.6e-05
+# Func alias time      		0.001059
+# One layer alias time 		8e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.001979

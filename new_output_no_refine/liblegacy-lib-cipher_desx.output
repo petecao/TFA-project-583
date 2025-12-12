@@ -27,45 +27,45 @@ Openmp enabled
 
 0 Top func: ossl_tdes_einit
 
-1 Top func: ossl_cipher_generic_block_update
+1 Top func: ossl_tdes_set_ctx_params
 
-2 Top func: ossl_cipher_generic_cipher
+2 Top func: ossl_tdes_dupctx
 
-3 Top func: ossl_tdes_dupctx
+3 Top func: ossl_tdes_get_ctx_params
 
-4 Top func: tdes_desx_cbc_get_params
+4 Top func: ossl_cipher_generic_cipher
 
-5 Top func: ossl_tdes_get_ctx_params
+5 Top func: tdes_desx_cbc_get_params
 
-6 Top func: ossl_tdes_settable_ctx_params
+6 Top func: ossl_cipher_generic_block_update
      Top func: ossl_tdes_einit Failed
-     Top func: ossl_cipher_generic_block_update Failed
-     Top func: ossl_cipher_generic_cipher Failed
-     Top func: ossl_tdes_dupctx Failed
+     Top func: ossl_tdes_set_ctx_params Failed
      Top func: ossl_tdes_get_ctx_params Failed
+     Top func: ossl_tdes_dupctx Failed
+     Top func: ossl_cipher_generic_cipher Failed
      Top func: tdes_desx_cbc_get_params Failed
 
 7 Top func: ossl_tdes_dinit
 
-8 Top func: ossl_cipher_generic_block_final
+8 Top func: ossl_tdes_settable_ctx_params
 
-9 Top func: tdes_desx_cbc_newctx
+9 Top func: ossl_tdes_gettable_ctx_params
 
 10 Top func: ossl_tdes_freectx
+     Top func: ossl_cipher_generic_block_update Failed
 
-11 Top func: ossl_tdes_gettable_ctx_params
+11 Top func: tdes_desx_cbc_newctx
 
 12 Top func: ossl_cipher_generic_gettable_params
-     Top func: ossl_tdes_settable_ctx_params Failed
-     Top func: ossl_tdes_dinit Failed
-     Top func: ossl_cipher_generic_block_final Failed
-     Top func: ossl_tdes_freectx Failed
-     Top func: ossl_tdes_gettable_ctx_params Failed
 
-13 Top func: ossl_tdes_set_ctx_params
+13 Top func: ossl_cipher_generic_block_final
+     Top func: ossl_tdes_dinit Failed
+     Top func: ossl_tdes_gettable_ctx_params Failed
+     Top func: ossl_tdes_settable_ctx_params Failed
+     Top func: ossl_tdes_freectx Failed
      Top func: tdes_desx_cbc_newctx Failed
      Top func: ossl_cipher_generic_gettable_params Failed
-     Top func: ossl_tdes_set_ctx_params Failed
+     Top func: ossl_cipher_generic_block_final Failed
 
 Update global ICallees info
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001326
-# Typebuilder time     		0.000178
-# MLTA time            		0.000209
-# Icall alias time     		7.4e-05
-# Func alias time      		0.005833
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002149
+# Load time            		0.001102
+# Typebuilder time     		0.000233
+# MLTA time            		0.000288
+# Icall alias time     		7e-05
+# Func alias time      		0.000993
+# One layer alias time 		9e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.001984

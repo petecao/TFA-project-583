@@ -25,14 +25,14 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ASN1_UTF8STRING_it
+0 Top func: s2i_ASN1_UTF8STRING
 
-1 Top func: i2s_ASN1_UTF8STRING
+1 Top func: ASN1_UTF8STRING_it
 
-2 Top func: s2i_ASN1_UTF8STRING
+2 Top func: i2s_ASN1_UTF8STRING
      Top func: ASN1_UTF8STRING_it Failed
-     Top func: i2s_ASN1_UTF8STRING Failed
      Top func: s2i_ASN1_UTF8STRING Failed
+     Top func: i2s_ASN1_UTF8STRING Failed
 
 Update global ICallees info
 
@@ -75,11 +75,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001556
-# Typebuilder time     		0.000225
-# MLTA time            		0.000215
-# Icall alias time     		6.1e-05
-# Func alias time      		0.000427
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001958
+# Load time            		0.00133
+# Typebuilder time     		0.000189
+# MLTA time            		0.000175
+# Icall alias time     		4.6e-05
+# Func alias time      		0.00825
+# One layer alias time 		5e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002038

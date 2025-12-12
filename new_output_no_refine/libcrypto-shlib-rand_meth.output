@@ -25,29 +25,29 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: drbg_seed
+0 Top func: drbg_status
 
-1 Top func: drbg_status
+1 Top func: drbg_seed
 
-2 Top func: drbg_bytes
+2 Top func: drbg_add
 
-3 Top func: drbg_add
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_statusMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_bytes
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 drbg_seedMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_bytes FailedMerge complete --- Not blocked by TBAA or TFA check
+drbg_status FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_bytesMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: drbg_add Failed
 
@@ -92,11 +92,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001265
-# Typebuilder time     		0.000222
-# MLTA time            		0.000256
-# Icall alias time     		7e-05
-# Func alias time      		0.002228
-# One layer alias time 		8e-06
-# Escape alias time    		6.5e-05
-# DB time              		0.001968
+# Load time            		0.001173
+# Typebuilder time     		0.000171
+# MLTA time            		0.000178
+# Icall alias time     		6.6e-05
+# Func alias time      		0.002629
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002121

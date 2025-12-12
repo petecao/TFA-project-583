@@ -27,62 +27,62 @@ Openmp enabled
 
 0 Top func: aria_gcm_freectx
 
-1 Top func: ossl_gcm_gettable_ctx_params
+1 Top func: ossl_gcm_get_ctx_params
 
 2 Top func: ossl_gcm_stream_final
 
 3 Top func: ossl_gcm_einit
 
-4 Top func: ossl_gcm_get_ctx_params
+4 Top func: aria_192_gcm_get_params
 
-5 Top func: aria_192_gcm_get_params
+5 Top func: ossl_gcm_gettable_ctx_params
 
 6 Top func: aria192gcm_newctx
-     Top func: ossl_gcm_gettable_ctx_params Failed
+     Top func: ossl_gcm_get_ctx_params Failed
+     Top func: ossl_gcm_einit Failed
      Top func: ossl_gcm_stream_final Failed
      Top func: aria_gcm_freectx Failed
-     Top func: ossl_gcm_einit Failed
-     Top func: ossl_gcm_get_ctx_params Failed
-
-7 Top func: ossl_gcm_settable_ctx_params
-
-8 Top func: ossl_gcm_cipher
-
-9 Top func: aria128gcm_newctx
+     Top func: ossl_gcm_gettable_ctx_params Failed
      Top func: aria_192_gcm_get_params Failed
 
-10 Top func: ossl_gcm_dinit
+7 Top func: ossl_gcm_set_ctx_params
 
-11 Top func: ossl_gcm_set_ctx_params
+8 Top func: ossl_gcm_dinit
+
+9 Top func: ossl_gcm_cipher
+
+10 Top func: aria128gcm_newctx
      Top func: aria192gcm_newctx Failed
 
+11 Top func: ossl_gcm_settable_ctx_params
+
 12 Top func: aria256gcm_newctx
-     Top func: ossl_gcm_settable_ctx_params Failed
 
 13 Top func: aria192gcm_dupctx
+     Top func: ossl_gcm_set_ctx_params Failed
+     Top func: ossl_gcm_dinit Failed
      Top func: ossl_gcm_cipher Failed
      Top func: aria128gcm_newctx Failed
-     Top func: ossl_gcm_dinit Failed
-     Top func: ossl_gcm_set_ctx_params Failed
+     Top func: ossl_gcm_settable_ctx_params Failed
 
-14 Top func: aria256gcm_dupctx
+14 Top func: ossl_cipher_generic_gettable_params
 
-15 Top func: aria_128_gcm_get_params
+15 Top func: ossl_gcm_stream_update
 
-16 Top func: aria128gcm_dupctx
+16 Top func: aria_128_gcm_get_params
 
-17 Top func: ossl_gcm_stream_update
-
-18 Top func: ossl_cipher_generic_gettable_params
+17 Top func: aria128gcm_dupctx
      Top func: aria256gcm_newctx Failed
+
+18 Top func: aria256gcm_dupctx
      Top func: aria192gcm_dupctx Failed
 
 19 Top func: aria_256_gcm_get_params
-     Top func: aria256gcm_dupctx Failed
-     Top func: ossl_gcm_stream_update Failed
-     Top func: aria_128_gcm_get_params Failed
-     Top func: aria128gcm_dupctx Failed
      Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: ossl_gcm_stream_update Failed
+     Top func: aria128gcm_dupctx Failed
+     Top func: aria_128_gcm_get_params Failed
+     Top func: aria256gcm_dupctx Failed
      Top func: aria_256_gcm_get_params Failed
 
 Update global ICallees info
@@ -126,11 +126,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001627
-# Typebuilder time     		0.00024
-# MLTA time            		0.000277
-# Icall alias time     		6.6e-05
-# Func alias time      		0.001308
+# Load time            		0.022771
+# Typebuilder time     		0.000295
+# MLTA time            		0.000368
+# Icall alias time     		0.000122
+# Func alias time      		0.001434
 # One layer alias time 		7e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.002063
+# DB time              		0.002136

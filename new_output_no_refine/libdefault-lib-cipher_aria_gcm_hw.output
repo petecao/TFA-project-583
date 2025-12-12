@@ -25,26 +25,26 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: aria_gcm_initkey
+0 Top func: ossl_gcm_setiv
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_gcm_aad_updateMerge complete --- Not blocked by TBAA or TFA check
+ossl_gcm_cipher_updateMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_gcm_setivMerge complete --- Not blocked by TBAA or TFA check
+ossl_gcm_aad_updateMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_gcm_cipher_updateMerge complete --- Not blocked by TBAA or TFA check
+aria_gcm_initkeyMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -70,7 +70,7 @@ ossl_aria_encryptMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_gcm_aad_updateMerge complete --- Not blocked by TBAA or TFA check
+ossl_gcm_setivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -83,17 +83,13 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_gcm_setivMerge complete --- Not blocked by TBAA or TFA check
+ossl_gcm_cipher_updateMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: aria_gcm_initkey
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: ossl_gcm_cipher_update
+Analyzed func: ossl_gcm_aad_update
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -101,11 +97,15 @@ Analyzed func: ossl_gcm_cipher_final
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: ossl_gcm_one_shot
-DefinitionFuncSet size: 0
+Analyzed func: aria_gcm_initkey
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: ossl_aria_encrypt
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: ossl_gcm_one_shot
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -150,11 +150,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001377
-# Typebuilder time     		0.000236
-# MLTA time            		0.00022
-# Icall alias time     		1e-05
-# Func alias time      		0.001065
-# One layer alias time 		6e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002131
+# Load time            		0.001441
+# Typebuilder time     		0.000229
+# MLTA time            		0.000183
+# Icall alias time     		8e-06
+# Func alias time      		0.003854
+# One layer alias time 		5e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002011

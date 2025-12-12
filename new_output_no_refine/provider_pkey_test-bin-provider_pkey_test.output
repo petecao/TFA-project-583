@@ -25,13 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_pkey_provider_decoder_props
-
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_pkey_delete
+0 Top func: test_pkey_delete
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: test_alternative_keygen_init
+1 Top func: test_alternative_keygen_init
+
+Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: test_pkey_provider_decoder_props
 
 Merge complete --- Not blocked by TBAA or TFA check
 3 Top func: test_pkey_sig
@@ -40,36 +40,42 @@ Merge complete --- Not blocked by TBAA or TFA check
 4 Top func: test_pkey_eq
 
 Merge complete --- Not blocked by TBAA or TFA check
-5 Top func: fake_pw_read_string
+5 Top func: test_pkey_store
+Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-6 Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_pkey_can_signMerge complete --- Not blocked by TBAA or TFA check
+6 Top func: test_pkey_can_sign
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+7 Top func: fake_pw_read_string
+
+Analyzed func: test_pkey_provider_decoder_propsMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_pkey_deleteMerge complete --- Not blocked by TBAA or TFA check
+test_alternative_keygen_initMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
+1Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_pkey_provider_decoder_props
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_pkey_delete
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_alternative_keygen_init
+Analyzed func: test_pkey_store
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -81,25 +87,19 @@ Analyzed func: test_pkey_eq
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: test_pkey_store_open_ex
+8 Top func: test_pkey_store_open_ex
 
-Merge complete --- Not blocked by TBAA or TFA check
-8 Top func: test_pkey_store
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: test_pkey_can_sign
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: fake_pw_read_string
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+fake_pw_read_string
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_pkey_store_open_ex
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_pkey_store
+Analyzed func: test_pkey_can_sign
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -144,11 +144,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.008862
-# Typebuilder time     		0.000436
-# MLTA time            		0.000325
-# Icall alias time     		8.1e-05
-# Func alias time      		0.005274
-# One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002297
+# Load time            		0.003156
+# Typebuilder time     		0.000354
+# MLTA time            		0.000264
+# Icall alias time     		9.3e-05
+# Func alias time      		0.002313
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002084

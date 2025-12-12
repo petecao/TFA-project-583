@@ -25,33 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: OSSL_ALLOWED_ATTRIBUTES_SYNTAX_it
+0 Top func: OSSL_ALLOWED_ATTRIBUTES_CHOICE_it
+
+1 Top func: i2r_ALLOWED_ATTRIBUTES_SYNTAX
+
+2 Top func: OSSL_ALLOWED_ATTRIBUTES_ITEM_it
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-OSSL_ALLOWED_ATTRIBUTES_CHOICE_it
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-OSSL_ALLOWED_ATTRIBUTES_ITEM_itMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-i2r_ALLOWED_ATTRIBUTES_SYNTAXMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: Merge complete --- Not blocked by TBAA or TFA check
+OSSL_ALLOWED_ATTRIBUTES_SYNTAX_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -63,6 +45,10 @@ Merge complete --- Not blocked by TBAA or TFA check
 ASN1_OBJECT_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -70,10 +56,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 X509_ATTRIBUTE_itMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -81,15 +69,11 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 6Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 GENERAL_NAME_itMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 i2r_ALLOWED_ATTRIBUTES_SYNTAXMerge complete --- Not blocked by TBAA or TFA check
@@ -103,24 +87,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-OSSL_ALLOWED_ATTRIBUTES_SYNTAX_itMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+OSSL_ALLOWED_ATTRIBUTES_SYNTAX_itMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -146,25 +118,53 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ASN1_OBJECT_itMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
+OSSL_ALLOWED_ATTRIBUTES_ITEM_it
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+1
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
 
+
+Analyzed func: ASN1_OBJECT_it
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Analyzed func: X509_ATTRIBUTE_it
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: OSSL_ALLOWED_ATTRIBUTES_ITEM_it
-DefinitionFuncSet size: 1
-aliased_callset size: 4
-
 Analyzed func: GENERAL_NAME_it
 DefinitionFuncSet size: 0
 aliased_callset size: 4
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: OSSL_ALLOWED_ATTRIBUTES_CHOICE_it
 DefinitionFuncSet size: 1
@@ -211,11 +211,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002341
-# Typebuilder time     		0.000404
-# MLTA time            		0.000303
-# Icall alias time     		6.1e-05
-# Func alias time      		0.001202
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002042
+# Load time            		0.002524
+# Typebuilder time     		0.000663
+# MLTA time            		0.000267
+# Icall alias time     		0.000122
+# Func alias time      		0.005279
+# One layer alias time 		9.3e-05
+# Escape alias time    		0.001197
+# DB time              		0.002256

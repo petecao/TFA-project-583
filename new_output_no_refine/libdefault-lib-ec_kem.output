@@ -27,38 +27,39 @@ Openmp enabled
 
 0 Top func: eckem_newctx
 
-1 Top func: eckem_decapsulate
+1 Top func: eckem_freectx
 
-2 Top func: eckem_freectx
+2 Top func: eckem_encapsulate
 
-3 Top func: eckem_encapsulate
+3 Top func: eckem_decapsulate
 
-4 Top func: eckem_set_ctx_params
+4 Top func: eckem_auth_encapsulate_init
+
+5 Top func: eckem_set_ctx_params
+
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckem_auth_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 eckem_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_auth_decapsulate_init
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 eckem_newctxMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_decapsulateMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_freectxMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -68,50 +69,49 @@ eckem_encapsulateMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
- Failed
-Merge complete --- Not blocked by TBAA or TFA check
+eckem_freectx FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-7Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_encapsulate_init
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckem_decapsulateMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckem_auth_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckem_auth_decapsulate_init FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckem_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 8Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_auth_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
+eckem_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-9 Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_auth_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckem_decapsulate_init
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 eckem_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckem_auth_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+ Failed
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 eckem_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
- Failed
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -197,11 +197,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003485
-# Typebuilder time     		0.000359
-# MLTA time            		0.000321
-# Icall alias time     		6.4e-05
-# Func alias time      		0.00666
+# Load time            		0.003766
+# Typebuilder time     		0.000473
+# MLTA time            		0.000472
+# Icall alias time     		3.4e-05
+# Func alias time      		0.00118
 # One layer alias time 		6e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002017
+# Escape alias time    		6.2e-05
+# DB time              		0.001714

@@ -25,31 +25,31 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_rc4_end_processing
+0 Top func: test_rc4_encrypt
 
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_rc_bulk
+ Top func: test_rc4_multi_call
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: test_rc4_encrypt
+2 Top func: test_rc_bulk
 
-3 Top func: test_rc4_multi_call
-
-Analyzed func: test_rc_bulkMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: 1
-aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: test_rc4_end_processing
 
-Analyzed func: test_rc4_end_processing
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+Analyzed func: test_rc4_multi_callMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_rc4_multi_call
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_rc4_encrypt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_rc_bulk
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_rc4_end_processing
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -94,11 +94,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001683
+# Load time            		0.00822
 # Typebuilder time     		0.000284
-# MLTA time            		0.000192
-# Icall alias time     		3.4e-05
-# Func alias time      		0.000532
-# One layer alias time 		5e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002063
+# MLTA time            		0.000191
+# Icall alias time     		0.000104
+# Func alias time      		0.008196
+# One layer alias time 		6.3e-05
+# Escape alias time    		0.000769
+# DB time              		0.002245

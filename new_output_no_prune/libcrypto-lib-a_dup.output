@@ -27,19 +27,19 @@ Openmp enabled
 
 Update global ICallees info
 
-0 Update icall:   %54 = call i32 %52(i32 noundef 14, ptr noundef %5, ptr noundef %53, ptr noundef null), !dbg !150
+0 Update icall:   %64 = call i32 %62(i32 noundef 17, ptr noundef %5, ptr noundef %63, ptr noundef %12), !dbg !158
 
-1 Update icall:   %93 = call i32 %90(i32 noundef 15, ptr noundef %10, ptr noundef %91, ptr noundef %92), !dbg !188
+1 Update icall:   %54 = call i32 %52(i32 noundef 14, ptr noundef %5, ptr noundef %53, ptr noundef null), !dbg !150
 
 2 Update icall:   %35 = call i32 %33(ptr noundef %34, ptr noundef %9), !dbg !93
 
-3 Update icall:   %40 = call ptr %37(ptr noundef null, ptr noundef %10, i64 noundef %39), !dbg !98
+3 Update icall:   %93 = call i32 %90(i32 noundef 15, ptr noundef %10, ptr noundef %91, ptr noundef %92), !dbg !188
 
-4 Update icall:   %19 = call i32 %17(ptr noundef %18, ptr noundef null), !dbg !78
+4 Update icall:   %59 = call i32 %57(i32 noundef 16, ptr noundef %5, ptr noundef %58, ptr noundef %11), !dbg !155
 
-5 Update icall:   %59 = call i32 %57(i32 noundef 16, ptr noundef %5, ptr noundef %58, ptr noundef %11), !dbg !155
+5 Update icall:   %19 = call i32 %17(ptr noundef %18, ptr noundef null), !dbg !78
 
-6 Update icall:   %64 = call i32 %62(i32 noundef 17, ptr noundef %5, ptr noundef %63, ptr noundef %12), !dbg !158
+6 Update icall:   %40 = call ptr %37(ptr noundef null, ptr noundef %10, i64 noundef %39), !dbg !98
 
  Start ICall Alias Analysis
 
@@ -80,11 +80,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001353
-# Typebuilder time     		0.000217
-# MLTA time            		0.000272
-# Icall alias time     		6.3e-05
-# Func alias time      		0.001966
+# Load time            		0.001523
+# Typebuilder time     		0.000222
+# MLTA time            		0.000277
+# Icall alias time     		7.6e-05
+# Func alias time      		0.005178
 # One layer alias time 		1.2e-05
-# Escape alias time    		6.4e-05
-# DB time              		0.001968
+# Escape alias time    		6.3e-05
+# DB time              		0.002068

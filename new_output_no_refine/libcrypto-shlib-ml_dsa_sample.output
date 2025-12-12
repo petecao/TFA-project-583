@@ -25,12 +25,10 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: coeff_from_nibble_4
-
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: coeff_from_nibble_2Merge complete --- Not blocked by TBAA or TFA check
+0 Top func: coeff_from_nibble_2
 
 Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -114,6 +112,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+coeff_from_nibble_4
+
+Analyzed func: coeff_from_nibble_2
+DefinitionFuncSet size: 1
+aliased_callset size: 2
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -205,15 +209,11 @@ Analyzed func: coeff_from_nibble_4
 DefinitionFuncSet size: 1
 aliased_callset size: 2
 
-Analyzed func: coeff_from_nibble_2
-DefinitionFuncSet size: 1
-aliased_callset size: 2
-
 Update global ICallees info
 
-0 Update icall:   %53 = call i32 %46(i32 noundef %47, ptr noundef %52), !dbg !111
+0 Update icall:   %68 = call i32 %61(i32 noundef %62, ptr noundef %67), !dbg !121
 
-1 Update icall:   %68 = call i32 %61(i32 noundef %62, ptr noundef %67), !dbg !121
+1 Update icall:   %53 = call i32 %46(i32 noundef %47, ptr noundef %52), !dbg !111
 
  Start ICall Alias Analysis
 
@@ -362,8 +362,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_fset size: 2
+aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
+2
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -428,11 +428,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00238
-# Typebuilder time     		0.000219
-# MLTA time            		0.000219
-# Icall alias time     		0.001563
-# Func alias time      		0.005959
-# One layer alias time 		1.2e-05
-# Escape alias time    		5.8e-05
-# DB time              		0.002062
+# Load time            		0.002127
+# Typebuilder time     		0.000207
+# MLTA time            		0.00024
+# Icall alias time     		0.002247
+# Func alias time      		0.009223
+# One layer alias time 		9e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.00205

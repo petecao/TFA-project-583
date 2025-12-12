@@ -27,31 +27,23 @@ Openmp enabled
 
 0 Top func: test_des_ecb
 
-1 Top func: test_des_ede_ecb
+1 Top func: test_des_cfb8
 
-2 Top func: test_des_cfb48
+2 Top func: test_des_ede_ecb
 
-3 Top func: test_des_cfb8
+3 Top func: test_des_cfb48
 
-4 Top func: test_input_align
+4 Top func: test_des_ofb
 
-5 Top func: test_des_ofb
+5 Top func: test_des_cbc_cksum
 
-6 Top func: test_des_cbc_cksum
-
-Analyzed func: test_des_ecb
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_des_ede_ecb
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+6 Top func: test_des_weak_keys
 
 Analyzed func: test_des_cfb8
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_input_align
+Analyzed func: test_des_ecb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -59,41 +51,33 @@ Analyzed func: test_des_cfb48
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: test_des_cbc
+Analyzed func: test_des_ofb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-8 Top func: test_des_ede_cbc
+Analyzed func: test_des_ede_ecb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-9 Top func: test_des_cfb16
+7 Top func: test_des_cfb16
 
-10 Top func: test_output_align
+8 Top func: test_des_cbc
 
-11 Top func: test_des_cfb64
+9 Top func: test_des_cfb64
+
+10 Top func: test_des_ofb64
+
+11 Top func: test_des_ede_cbc
 
 Analyzed func: test_des_cbc_cksum
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_des_ofb
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-12 Top func: test_des_quad_cksum
-
-Analyzed func: test_des_cbc
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_des_ede_cbc
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-13 Top func: test_des_ofb64
-
 Analyzed func: test_des_cfb16
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_output_align
+Analyzed func: test_des_cbc
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -101,55 +85,41 @@ Analyzed func: test_des_cfb64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-14 Top func: test_ede_cbc
-
-15 Top func: test_des_pcbc
-
-16 Top func: test_des_cfb32
-
-17 Top func: test_des_key_wrap
-
-Analyzed func: test_des_quad_cksum
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-18 Top func: test_des_ede_cfb64
+12 Top func: test_des_quad_cksum
 
 Analyzed func: test_des_ofb64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-19 Top func: test_des_crypt
-
-Analyzed func: test_ede_cbc
+Analyzed func: test_des_ede_cbc
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_des_pcbc
+13 Top func: test_des_cfb32
+
+14 Top func: test_ede_cbc
+
+15 Top func: test_des_ede_cfb64
+
+16 Top func: test_des_ede_ofb64
+
+17 Top func: test_des_pcbc
+
+Analyzed func: test_des_quad_cksum
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-20 Top func: test_des_ede_ofb64
 
 Analyzed func: test_des_cfb32
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_des_key_wrap
+Analyzed func: test_ede_cbc
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+
+18 Top func: test_des_crypt
 
 Analyzed func: test_des_ede_cfb64
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-21 Top func: test_des_weak_keys
-
-22 Top func: test_des_two_key
-
-23 Top func: test_des_check_bad_parity
-
-Analyzed func: test_des_crypt
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -157,7 +127,33 @@ Analyzed func: test_des_ede_ofb64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_des_weak_keys
+19 Top func: test_input_align
+
+Analyzed func: test_des_pcbc
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+20 Top func: test_des_key_wrap
+
+21 Top func: test_des_two_key
+
+22 Top func: test_des_check_bad_parity
+
+23 Top func: test_output_align
+
+Analyzed func: test_des_crypt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_input_align
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_key_wrap
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_two_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -165,7 +161,11 @@ Analyzed func: test_des_check_bad_parity
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_des_two_key
+Analyzed func: test_output_align
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_weak_keys
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -210,11 +210,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004146
-# Typebuilder time     		0.000704
-# MLTA time            		0.000354
-# Icall alias time     		5.9e-05
-# Func alias time      		0.004295
+# Load time            		0.017523
+# Typebuilder time     		0.000451
+# MLTA time            		0.000286
+# Icall alias time     		6.4e-05
+# Func alias time      		0.008233
 # One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002051
+# Escape alias time    		5.7e-05
+# DB time              		0.00201

@@ -29,19 +29,19 @@ Openmp enabled
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_verify_multiple_scts
+ Top func: test_multiple_scts_in_certificate
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_verify_fails_for_future_sct
+ Top func: test_verify_multiple_scts
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_multiple_scts_in_certificate
-Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_verify_fails_for_future_sct
 
 Merge complete --- Not blocked by TBAA or TFA check
-4 Top func: test_decode_tls_sct
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_decode_tls_sct
 
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
@@ -57,14 +57,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_verify_multiple_scts
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_verify_fails_for_future_sct
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: test_no_scts_in_certificate
 DefinitionFuncSet size: 1
 aliased_callset size: 0
@@ -73,11 +65,19 @@ Analyzed func: test_multiple_scts_in_certificate
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_default_ct_policy_eval_ctx_time_is_now
+Analyzed func: test_verify_multiple_scts
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_decode_tls_sct
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_verify_fails_for_future_sct
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_default_ct_policy_eval_ctx_time_is_now
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -97,11 +97,11 @@ test_encode_tls_sctMerge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_one_sct_in_certificate
+Analyzed func: test_verify_one_sct
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_verify_one_sct
+Analyzed func: test_one_sct_in_certificate
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -146,11 +146,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003768
-# Typebuilder time     		0.00043
-# MLTA time            		0.000359
-# Icall alias time     		5.9e-05
-# Func alias time      		0.001107
-# One layer alias time 		1.1e-05
-# Escape alias time    		6.3e-05
-# DB time              		0.002139
+# Load time            		0.003412
+# Typebuilder time     		0.000382
+# MLTA time            		0.000309
+# Icall alias time     		3.3e-05
+# Func alias time      		0.001093
+# One layer alias time 		5e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002174

@@ -27,9 +27,9 @@ Openmp enabled
 
 0 Top func: template_set_ctx_params
 
-1 Top func: template_newctx
+1 Top func: template_encapsulate_init
 
-2 Top func: template_encapsulate_init
+2 Top func: template_newctx
 
 3 Top func: template_settable_ctx_params
 
@@ -39,9 +39,9 @@ Openmp enabled
 
 6 Top func: template_freectx
      Top func: template_set_ctx_params Failed
-     Top func: template_newctx Failed
-     Top func: template_settable_ctx_params Failed
      Top func: template_encapsulate_init Failed
+     Top func: template_settable_ctx_params Failed
+     Top func: template_newctx Failed
      Top func: template_decapsulate_init Failed
      Top func: template_encapsulate Failed
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001528
-# Typebuilder time     		0.000215
-# MLTA time            		0.0002
-# Icall alias time     		6.6e-05
-# Func alias time      		0.005408
-# One layer alias time 		6e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.001979
+# Load time            		0.001548
+# Typebuilder time     		0.000422
+# MLTA time            		0.000202
+# Icall alias time     		6.7e-05
+# Func alias time      		0.000856
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002125

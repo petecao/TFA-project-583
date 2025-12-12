@@ -25,27 +25,27 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: bwrite_conv
+0 Top func: bread_conv
 
-1 Top func: readbuffer_gets
-
+1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-bread_convMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: readbuffer_puts
+
+2 Top func: bwrite_conv
+
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-readbuffer_putsMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+readbuffer_getsMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -98,7 +98,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-bread_convMerge complete --- Not blocked by TBAA or TFA check
+bwrite_convMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -113,13 +113,13 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: readbuffer_gets
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1
+
+Analyzed func: bread_conv
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: readbuffer_puts
+Analyzed func: readbuffer_gets
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -127,12 +127,12 @@ Analyzed func: readbuffer_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-8 Top func: readbuffer_read
+8 Top func: readbuffer_write
 
 Merge complete --- Not blocked by TBAA or TFA check
 9Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-readbuffer_writeMerge complete --- Not blocked by TBAA or TFA check
+readbuffer_readMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -181,8 +181,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: bwrite_conv
-DefinitionFuncSet size: 0
+Analyzed func: readbuffer_puts
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Update global ICallees info
@@ -226,11 +226,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001972
-# Typebuilder time     		0.000335
-# MLTA time            		0.00036
-# Icall alias time     		6.6e-05
-# Func alias time      		0.002787
-# One layer alias time 		6.2e-05
-# Escape alias time    		0.000804
-# DB time              		0.002386
+# Load time            		0.002048
+# Typebuilder time     		0.000315
+# MLTA time            		0.000268
+# Icall alias time     		7e-05
+# Func alias time      		0.0033
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002202

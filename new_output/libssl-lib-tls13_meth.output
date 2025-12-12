@@ -27,51 +27,51 @@ Openmp enabled
 
 0 Top func: tls13_set_crypto_state
 
-1 Top func: tls_write_records_default
+1 Top func: tls_default_set_protocol_version
 
-2 Top func: tls_default_set_protocol_version
+2 Top func: tls13_post_process_record
 
 3 Top func: tls_get_more_records
 
-4 Top func: tls13_post_process_record
+4 Top func: tls_write_records_default
 
 5 Top func: tls_initialise_write_packets_default
-
-6 Top func: tls_prepare_record_header_default
-     Top func: tls_write_records_default Failed
      Top func: tls_default_set_protocol_version Failed
      Top func: tls_get_more_records Failed
      Top func: tls13_set_crypto_state Failed
-     Top func: tls_initialise_write_packets_default Failed
      Top func: tls13_post_process_record Failed
+     Top func: tls_write_records_default Failed
 
-7 Top func: tls_allocate_write_buffers_default
+6 Top func: tls_default_read_n
 
-8 Top func: tls_default_read_n
+7 Top func: tls13_validate_record_header
 
-9 Top func: tls13_validate_record_header
+8 Top func: tls13_cipher
 
-10 Top func: tls13_cipher
-     Top func: tls_prepare_record_header_default Failed
+9 Top func: tls_get_max_records_default
+     Top func: tls_initialise_write_packets_default Failed
+
+10 Top func: tls_allocate_write_buffers_default
 
 11 Top func: tls13_get_record_type
-
-12 Top func: tls_get_max_records_default
-
-13 Top func: tls13_add_record_padding
-     Top func: tls_allocate_write_buffers_default Failed
      Top func: tls_default_read_n Failed
-     Top func: tls13_cipher Failed
-     Top func: tls13_validate_record_header Failed
-     Top func: tls13_get_record_type Failed
-
-14 Top func: tls_prepare_for_encryption_default
-
-15 Top func: tls_post_encryption_processing_default
      Top func: tls_get_max_records_default Failed
-     Top func: tls13_add_record_padding Failed
+     Top func: tls13_validate_record_header Failed
+     Top func: tls13_cipher Failed
+
+12 Top func: tls_prepare_record_header_default
+
+13 Top func: tls_prepare_for_encryption_default
+
+14 Top func: tls_post_encryption_processing_default
+     Top func: tls_allocate_write_buffers_default Failed
+
+15 Top func: tls13_add_record_padding
+     Top func: tls13_get_record_type Failed
+     Top func: tls_prepare_record_header_default Failed
      Top func: tls_prepare_for_encryption_default Failed
      Top func: tls_post_encryption_processing_default Failed
+     Top func: tls13_add_record_padding Failed
 
 Update global ICallees info
 
@@ -116,11 +116,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003138
-# Typebuilder time     		0.000371
-# MLTA time            		0.000405
-# Icall alias time     		5.6e-05
-# Func alias time      		0.001284
+# Load time            		0.00286
+# Typebuilder time     		0.000315
+# MLTA time            		0.000328
+# Icall alias time     		7.8e-05
+# Func alias time      		0.002415
 # One layer alias time 		9e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001967
+# DB time              		0.002068

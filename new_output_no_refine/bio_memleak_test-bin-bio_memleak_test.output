@@ -29,19 +29,17 @@ Openmp enabled
 
 1 Top func: test_bio_get_mem
 
-2 Top func: test_bio_rdwr_rdonly
+2 Top func: test_bio_rdonly_mem_buf
 
 3 Top func: test_bio_new_mem_buf
 
-4 Top func: test_bio_rdonly_mem_buf
+4 Top func: test_bio_i2d_ASN1_mime
 
-5 Top func: test_bio_nonclear_rst
+5 Top func: test_bio_rdwr_rdonly
+
+6 Top func: test_bio_nonclear_rst
 
 Analyzed func: test_bio_memleak
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_bio_rdwr_rdonly
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -49,36 +47,38 @@ Analyzed func: test_bio_get_mem
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_bio_new_mem_buf
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: test_bio_rdonly_mem_buf
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-6 Top func: test_bio_i2d_ASN1_mime
+Analyzed func: test_bio_i2d_ASN1_mime
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_bio_new_mem_buf
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_bio_rdwr_rdonly
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 7 Top func: BIO_error_callback
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_bio_nonclear_rstMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_bio_nonclear_rstMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_bio_i2d_ASN1_mimeMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: BIO_error_callback
 DefinitionFuncSet size: 1
@@ -125,11 +125,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002188
-# Typebuilder time     		0.000298
-# MLTA time            		0.000234
-# Icall alias time     		6.3e-05
-# Func alias time      		0.004241
-# One layer alias time 		5e-06
+# Load time            		0.002592
+# Typebuilder time     		0.000314
+# MLTA time            		0.000244
+# Icall alias time     		8e-05
+# Func alias time      		0.001074
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002304
+# DB time              		0.002109

@@ -27,34 +27,28 @@ Openmp enabled
 
 0 Top func: v2i_subject_alt
 
-1 Top func: X509V3_conf_free
+1 Top func: i2v_GENERAL_NAMES
 
-Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: Merge complete --- Not blocked by TBAA or TFA check
-v2i_issuer_altMerge complete --- Not blocked by TBAA or TFA check
+2 Top func: GENERAL_NAMES_it
 
-Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: v2i_issuer_alt
 
-Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2v_GENERAL_NAMESMerge complete --- Not blocked by TBAA or TFA check
+4 Top func: X509V3_conf_free
 
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-GENERAL_NAMES_itMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 GENERAL_NAME_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
+GENERAL_NAMES_itMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 v2i_subject_altMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
@@ -62,41 +56,47 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-GENERAL_NAMES_itMerge complete --- Not blocked by TBAA or TFA check
+     Top func: v2i_issuer_altMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
-
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-v2i_issuer_altMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 i2v_GENERAL_NAMESMerge complete --- Not blocked by TBAA or TFA check
- Failed
+Merge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 X509V3_conf_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -271,11 +271,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004633
-# Typebuilder time     		0.000735
-# MLTA time            		0.000409
-# Icall alias time     		6.4e-05
-# Func alias time      		0.001641
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001972
+# Load time            		0.004683
+# Typebuilder time     		0.000393
+# MLTA time            		0.000323
+# Icall alias time     		0.00142
+# Func alias time      		0.001767
+# One layer alias time 		1.5e-05
+# Escape alias time    		5.8e-05
+# DB time              		0.001985

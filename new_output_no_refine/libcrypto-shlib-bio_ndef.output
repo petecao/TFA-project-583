@@ -36,11 +36,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+ndef_prefixMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-ndef_suffix_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -49,13 +50,15 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-ndef_prefixMerge complete --- Not blocked by TBAA or TFA check
+ndef_suffix_freeMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -202,12 +205,9 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -227,14 +227,14 @@ Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ndef_suffix_free
+Analyzed func: ndef_suffix_free
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -244,9 +244,9 @@ aliased_callset size: 1
 
 Update global ICallees info
 
-0 Update icall:   %65 = call i32 %63(i32 noundef 10, ptr noundef %6, ptr noundef %64, ptr noundef %11), !dbg !182
+0 Update icall:   %46 = call i32 %40(i32 noundef 11, ptr noundef %42, ptr noundef %45, ptr noundef %14), !dbg !155
 
-1 Update icall:   %46 = call i32 %40(i32 noundef 11, ptr noundef %42, ptr noundef %45, ptr noundef %14), !dbg !155
+1 Update icall:   %65 = call i32 %63(i32 noundef 10, ptr noundef %6, ptr noundef %64, ptr noundef %11), !dbg !182
 
  Start ICall Alias Analysis
 
@@ -287,11 +287,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001505
-# Typebuilder time     		0.000255
-# MLTA time            		0.000282
-# Icall alias time     		7.2e-05
-# Func alias time      		0.002103
-# One layer alias time 		9e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002106
+# Load time            		0.001833
+# Typebuilder time     		0.000226
+# MLTA time            		0.000252
+# Icall alias time     		6.5e-05
+# Func alias time      		0.001877
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.00217

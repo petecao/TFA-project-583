@@ -25,12 +25,22 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: cmeth_free
+0 Top func: sk_comp_cmp
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-sk_comp_cmpMerge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+cmeth_freeMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -38,19 +48,9 @@ Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 cmeth_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1
+aliased_callset size: 0
 
 Analyzed func: sk_comp_cmp
 DefinitionFuncSet size: 1
@@ -97,11 +97,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001419
-# Typebuilder time     		0.000191
-# MLTA time            		0.000204
-# Icall alias time     		8.2e-05
-# Func alias time      		0.000564
-# One layer alias time 		7e-05
-# Escape alias time    		0.000873
-# DB time              		0.002276
+# Load time            		0.001115
+# Typebuilder time     		0.000164
+# MLTA time            		0.000169
+# Icall alias time     		1e-05
+# Func alias time      		0.00045
+# One layer alias time 		5e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002647

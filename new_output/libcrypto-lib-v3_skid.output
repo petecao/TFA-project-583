@@ -25,14 +25,14 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ASN1_OCTET_STRING_it
+0 Top func: i2s_ASN1_OCTET_STRING
 
-1 Top func: s2i_skey_id
+1 Top func: ASN1_OCTET_STRING_it
 
-2 Top func: i2s_ASN1_OCTET_STRING
+2 Top func: s2i_skey_id
+     Top func: i2s_ASN1_OCTET_STRING Failed
      Top func: ASN1_OCTET_STRING_it Failed
      Top func: s2i_skey_id Failed
-     Top func: i2s_ASN1_OCTET_STRING Failed
 
 Update global ICallees info
 
@@ -75,11 +75,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001985
-# Typebuilder time     		0.000296
-# MLTA time            		0.000224
-# Icall alias time     		7e-06
-# Func alias time      		0.000373
-# One layer alias time 		4e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002082
+# Load time            		0.001944
+# Typebuilder time     		0.000298
+# MLTA time            		0.000231
+# Icall alias time     		5.3e-05
+# Func alias time      		0.000425
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002022

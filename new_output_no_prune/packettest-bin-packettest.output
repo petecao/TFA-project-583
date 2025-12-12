@@ -38,7 +38,7 @@ WARNING: matchStructTypes problem!
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_length_prefixed_2Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_get_sub_packetMerge complete --- Not blocked by TBAA or TFA check
 
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -50,20 +50,20 @@ test_PACKET_equalMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_sub_packetMerge complete --- Not blocked by TBAA or TFA check
+test_PACKET_get_net_2Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_net_2Merge complete --- Not blocked by TBAA or TFA check
-
-
+ Top func: test_PACKET_as_length_prefixed_2
 Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_copy_all
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+5 Top func: test_PACKET_copy_all
 
 Merge complete --- Not blocked by TBAA or TFA check
 6Merge complete --- Not blocked by TBAA or TFA check
@@ -75,21 +75,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-7 Top func: test_PACKET_as_length_prefixed_2
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_length_prefixed_2Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-aliased_callset size: 0
-
 Analyzed func: test_PACKET_get_net_2
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_PACKET_get_sub_packet
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -101,41 +87,7 @@ Analyzed func: test_PACKET_buf_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-8 Top func: test_PACKET_get_length_prefixed_3
-
-Merge complete --- Not blocked by TBAA or TFA check
-9Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_net_3Merge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-10Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_bytesMerge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-11Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_1Merge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_null_initMerge complete --- Not blocked by TBAA or TFA check
-
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_copy_allMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-aliased_callset size: 0
-
-Analyzed func: test_PACKET_contains_zero_byte
+Analyzed func: test_PACKET_get_sub_packet
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -143,69 +95,95 @@ Analyzed func: test_PACKET_as_length_prefixed_2
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-13 Top func: test_PACKET_memdup
+7 Top func: test_PACKET_get_net_3
 
 Merge complete --- Not blocked by TBAA or TFA check
-14Merge complete --- Not blocked by TBAA or TFA check
+8Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_forwardMerge complete --- Not blocked by TBAA or TFA check
+test_PACKET_get_1Merge complete --- Not blocked by TBAA or TFA check
 
+
+Merge complete --- Not blocked by TBAA or TFA check
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_null_initMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_get_bytesMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_bytesMerge complete --- Not blocked by TBAA or TFA check
+test_PACKET_copy_allMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+11 Top func: test_PACKET_get_quic_vlint
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_contains_zero_byteMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
 aliased_callset size: 0
 
-Analyzed func: test_PACKET_get_length_prefixed_3
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+12 Top func: test_PACKET_memdup
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: test_PACKET_get_net_3
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_PACKET_get_1
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-15 Top func: test_PACKET_get_quic_vlint
+13 Top func: test_PACKET_forward
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_null_initMerge complete --- Not blocked by TBAA or TFA check
+test_PACKET_get_1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
 aliased_callset size: 0
 
-16 Top func: test_PACKET_copy_bytes
+Analyzed func: test_PACKET_get_bytes
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_PACKET_null_init
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_PACKET_get_quic_vlint
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+14 Top func: test_PACKET_get_net_4
+
+Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_get_4Merge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+16Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_copy_bytesMerge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
 17Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_as_length_prefixed_1Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_remainingMerge complete --- Not blocked by TBAA or TFA check
 
-
-Merge complete --- Not blocked by TBAA or TFA check
-18Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_net_4Merge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-19Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_4Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-20 Top func: test_PACKET_remaining
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 test_PACKET_memdupMerge complete --- Not blocked by TBAA or TFA check
@@ -215,33 +193,21 @@ DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
 aliased_callset size: 0
 
-Analyzed func: test_PACKET_forward
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_PACKET_get_quic_vlint
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-21 Top func: test_PACKET_strndup
-
-Merge complete --- Not blocked by TBAA or TFA check
-22Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_get_length_prefixed_1Merge complete --- Not blocked by TBAA or TFA check
-
+18 Top func: test_PACKET_get_quic_length_prefixed
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_as_length_prefixed_1Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_forwardMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
 aliased_callset size: 0
 
-Analyzed func: test_PACKET_copy_bytes
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+19 Top func: test_PACKET_strndup
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: test_PACKET_get_4
 DefinitionFuncSet size: 1
@@ -251,16 +217,42 @@ Analyzed func: test_PACKET_get_net_4
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+20 Top func: test_PACKET_get_length_prefixed_1
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_copy_bytesMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1
+aliased_callset size: 0
+
 Analyzed func: test_PACKET_remaining
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-23 Top func: test_PACKET_get_quic_length_prefixed
+Analyzed func: test_PACKET_get_quic_length_prefixed
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+21 Top func: test_PACKET_get_length_prefixed_2
+
+Merge complete --- Not blocked by TBAA or TFA check
+22Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_endMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+23Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_PACKET_as_length_prefixed_1Merge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
 24Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_PACKET_endMerge complete --- Not blocked by TBAA or TFA check
+test_PACKET_get_length_prefixed_3Merge complete --- Not blocked by TBAA or TFA check
 
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
@@ -279,7 +271,15 @@ Analyzed func: test_PACKET_end
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_PACKET_get_quic_length_prefixed
+Analyzed func: test_PACKET_get_length_prefixed_2
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_PACKET_get_length_prefixed_3
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_PACKET_as_length_prefixed_1
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -324,11 +324,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004975
-# Typebuilder time     		0.000915
-# MLTA time            		0.000585
-# Icall alias time     		7e-06
-# Func alias time      		0.006219
-# One layer alias time 		5e-06
-# Escape alias time    		5.9e-05
-# DB time              		0.00212
+# Load time            		0.00715
+# Typebuilder time     		0.000862
+# MLTA time            		0.000541
+# Icall alias time     		0.000102
+# Func alias time      		0.00828
+# One layer alias time 		9e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002007

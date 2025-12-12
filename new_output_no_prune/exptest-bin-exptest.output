@@ -25,13 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_mod_exp_zero
+0 Top func: test_mod_exp
 
 1 Top func: test_mod_exp_x2
 
-2 Top func: test_mod_exp
+2 Top func: test_mod_exp_zero
 
-Analyzed func: test_mod_exp_zero
+Analyzed func: test_mod_exp
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -39,7 +39,7 @@ Analyzed func: test_mod_exp_x2
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_mod_exp
+Analyzed func: test_mod_exp_zero
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002755
-# Typebuilder time     		0.000277
-# MLTA time            		0.000229
-# Icall alias time     		5.9e-05
-# Func alias time      		0.004416
+# Load time            		0.016734
+# Typebuilder time     		0.002106
+# MLTA time            		0.002222
+# Icall alias time     		6.7e-05
+# Func alias time      		0.009045
 # One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001985
+# Escape alias time    		5.8e-05
+# DB time              		0.002448

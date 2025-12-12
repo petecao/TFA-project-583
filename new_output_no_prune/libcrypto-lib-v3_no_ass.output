@@ -29,16 +29,16 @@ Openmp enabled
 
 1 Top func: s2i_NO_ASSERTION
 
-2 Top func: i2r_NO_ASSERTION
+2 Top func: r2i_NO_ASSERTION
 
-3 Top func: i2s_NO_ASSERTION
+3 Top func: i2r_NO_ASSERTION
 
-4 Top func: r2i_NO_ASSERTION
+4 Top func: i2s_NO_ASSERTION
      Top func: ASN1_NULL_it Failed
      Top func: s2i_NO_ASSERTION Failed
-     Top func: i2s_NO_ASSERTION Failed
-     Top func: i2r_NO_ASSERTION Failed
      Top func: r2i_NO_ASSERTION Failed
+     Top func: i2r_NO_ASSERTION Failed
+     Top func: i2s_NO_ASSERTION Failed
 
 Update global ICallees info
 
@@ -81,11 +81,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001221
-# Typebuilder time     		0.00021
-# MLTA time            		0.000228
-# Icall alias time     		9.5e-05
-# Func alias time      		0.00071
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002077
+# Load time            		0.01507
+# Typebuilder time     		0.002392
+# MLTA time            		0.002857
+# Icall alias time     		0.000183
+# Func alias time      		0.008572
+# One layer alias time 		7.3e-05
+# Escape alias time    		0.001099
+# DB time              		0.002426

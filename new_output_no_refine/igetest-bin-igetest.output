@@ -37,19 +37,19 @@ WARNING: matchStructTypes problem!
 
 3 Top func: test_bi_ige_enc_dec
 
-4 Top func: test_ige_vectors
+4 Top func: test_bi_ige_garble2
 
-5 Top func: test_bi_ige_garble2
+5 Top func: test_ige_vectors
 
-6 Top func: test_bi_ige_vectors
+6 Top func: test_bi_ige_garble3
 
-7 Top func: test_bi_ige_garble3
+7 Top func: test_bi_ige_vectors
 
-Analyzed func: test_ige_enc_dec
+Analyzed func: test_ige_dec_chaining
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_ige_dec_chaining
+Analyzed func: test_ige_enc_dec
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -57,11 +57,11 @@ Analyzed func: test_bi_ige_garble1
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_bi_ige_enc_dec
+Analyzed func: test_ige_vectors
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_ige_vectors
+Analyzed func: test_bi_ige_enc_dec
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -69,15 +69,15 @@ Analyzed func: test_bi_ige_garble2
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+8 Top func: test_ige_garble_forwards
+
+9 Top func: test_ige_enc_chaining
+
 Analyzed func: test_bi_ige_vectors
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-8 Top func: test_ige_enc_chaining
-
-9 Top func: test_ige_garble_forwards
-
-Analyzed func: test_bi_ige_garble3
+Analyzed func: test_ige_enc_chaining
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -85,7 +85,7 @@ Analyzed func: test_ige_garble_forwards
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_ige_enc_chaining
+Analyzed func: test_bi_ige_garble3
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -130,11 +130,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002643
-# Typebuilder time     		0.000417
-# MLTA time            		0.000246
-# Icall alias time     		3.2e-05
-# Func alias time      		0.001192
-# One layer alias time 		4e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002287
+# Load time            		0.002584
+# Typebuilder time     		0.000413
+# MLTA time            		0.000245
+# Icall alias time     		0.000156
+# Func alias time      		0.001972
+# One layer alias time 		9e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002078

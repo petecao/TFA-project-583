@@ -27,45 +27,45 @@ Openmp enabled
 
 0 Top func: ossl_tdes_einit
 
-1 Top func: ossl_cipher_generic_block_update
+1 Top func: ossl_tdes_dupctx
 
-2 Top func: ossl_cipher_generic_cipher
+2 Top func: ossl_cipher_generic_block_update
 
-3 Top func: ossl_tdes_dupctx
+3 Top func: ossl_cipher_generic_cipher
 
 4 Top func: tdes_desx_cbc_get_params
 
-5 Top func: ossl_tdes_set_ctx_params
-
-6 Top func: ossl_tdes_get_ctx_params
-
-7 Top func: ossl_tdes_settable_ctx_params
-     Top func: ossl_cipher_generic_block_update Failed
-     Top func: ossl_tdes_einit Failed
-     Top func: ossl_cipher_generic_cipher Failed
+5 Top func: ossl_tdes_get_ctx_params
      Top func: ossl_tdes_dupctx Failed
-     Top func: ossl_tdes_set_ctx_params Failed
-     Top func: ossl_tdes_get_ctx_params Failed
+     Top func: ossl_tdes_einit Failed
+     Top func: ossl_cipher_generic_block_update Failed
+     Top func: ossl_cipher_generic_cipher Failed
      Top func: tdes_desx_cbc_get_params Failed
 
+6 Top func: ossl_tdes_freectx
+
+7 Top func: ossl_tdes_dinit
+
 8 Top func: ossl_cipher_generic_block_final
+     Top func: ossl_tdes_get_ctx_params Failed
 
-9 Top func: ossl_tdes_dinit
+9 Top func: tdes_desx_cbc_newctx
 
-10 Top func: tdes_desx_cbc_newctx
+10 Top func: ossl_cipher_generic_gettable_params
 
-11 Top func: ossl_tdes_freectx
-
-12 Top func: ossl_cipher_generic_gettable_params
-
-13 Top func: ossl_tdes_gettable_ctx_params
-     Top func: ossl_tdes_settable_ctx_params Failed
+11 Top func: ossl_tdes_gettable_ctx_params
+     Top func: ossl_tdes_freectx Failed
      Top func: ossl_tdes_dinit Failed
      Top func: ossl_cipher_generic_block_final Failed
-     Top func: ossl_tdes_freectx Failed
-     Top func: ossl_cipher_generic_gettable_params Failed
-     Top func: ossl_tdes_gettable_ctx_params Failed
      Top func: tdes_desx_cbc_newctx Failed
+
+12 Top func: ossl_tdes_set_ctx_params
+     Top func: ossl_cipher_generic_gettable_params Failed
+
+13 Top func: ossl_tdes_settable_ctx_params
+     Top func: ossl_tdes_gettable_ctx_params Failed
+     Top func: ossl_tdes_settable_ctx_params Failed
+     Top func: ossl_tdes_set_ctx_params Failed
 
 Update global ICallees info
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001218
-# Typebuilder time     		0.000211
-# MLTA time            		0.000249
-# Icall alias time     		6.1e-05
-# Func alias time      		0.001947
+# Load time            		0.014824
+# Typebuilder time     		0.000377
+# MLTA time            		0.000241
+# Icall alias time     		6.6e-05
+# Func alias time      		0.008221
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002076
+# DB time              		0.002023

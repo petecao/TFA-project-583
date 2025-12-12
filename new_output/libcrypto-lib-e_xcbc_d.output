@@ -25,36 +25,36 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: EVP_CIPHER_get_asn1_iv
+0 Top func: EVP_CIPHER_set_asn1_iv
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_set_asn1_iv
+desx_cbc_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-desx_cbc_cipher
+desx_cbc_init_key
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-desx_cbc_init_key
+EVP_CIPHER_get_asn1_iv
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_get_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: EVP_CIPHER_set_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-Analyzed func: EVP_CIPHER_set_asn1_iv
-DefinitionFuncSet size: 0
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0
 aliased_callset size: 0
 
 Analyzed func: desx_cbc_cipher
 DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: EVP_CIPHER_get_asn1_iv
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Analyzed func: desx_cbc_init_key
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001389
-# Typebuilder time     		0.000294
-# MLTA time            		0.000348
-# Icall alias time     		5.7e-05
-# Func alias time      		0.000587
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002144
+# Load time            		0.001538
+# Typebuilder time     		0.000298
+# MLTA time            		0.000349
+# Icall alias time     		9e-06
+# Func alias time      		0.000594
+# One layer alias time 		5e-06
+# Escape alias time    		6.4e-05
+# DB time              		0.002034

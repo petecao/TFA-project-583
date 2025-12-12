@@ -25,44 +25,39 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: x9_62_tests
+0 Top func: test_builtin_as_sm2
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_builtin_as_ecMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 fbytesMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_ecdsa_sig_NULLMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_builtin_as_ecMerge complete --- Not blocked by TBAA or TFA check
+x9_62_testsMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-test_builtin_as_sm2Merge complete --- Not blocked by TBAA or TFA check
+test_ecdsa_sig_NULLMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -71,10 +66,11 @@ Merge complete --- Not blocked by TBAA or TFA check
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-x9_62_testsMerge complete --- Not blocked by TBAA or TFA check
+test_builtin_as_sm2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -85,31 +81,35 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_ecdsa_sig_NULL
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: test_builtin_as_ecMerge complete --- Not blocked by TBAA or TFA check
+
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: x9_62_tests
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_builtin_as_ec
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_builtin_as_sm2Merge complete --- Not blocked by TBAA or TFA check
+test_ecdsa_sig_NULLMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -179,11 +179,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.015242
-# Typebuilder time     		0.002983
-# MLTA time            		0.000677
-# Icall alias time     		6.6e-05
-# Func alias time      		0.00108
-# One layer alias time 		6e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002663
+# Load time            		0.014249
+# Typebuilder time     		0.003003
+# MLTA time            		0.000566
+# Icall alias time     		6.9e-05
+# Func alias time      		0.001031
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002327

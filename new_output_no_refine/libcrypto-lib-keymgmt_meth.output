@@ -25,12 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: evp_keymgmt_up_ref
+0 Top func: help_get_legacy_alg_type_from_keymgmt
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-help_get_legacy_alg_type_from_keymgmtMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+keymgmt_from_algorithmMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -39,7 +40,6 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 evp_keymgmt_freeMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -49,118 +49,118 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-keymgmt_from_algorithmMerge complete --- Not blocked by TBAA or TFA check
+evp_keymgmt_up_refMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-evp_keymgmt_up_refMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+keymgmt_from_algorithmMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: evp_keymgmt_free
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: keymgmt_from_algorithm
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: help_get_legacy_alg_type_from_keymgmt
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: evp_keymgmt_free
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: evp_keymgmt_up_ref
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Update global ICallees info
 
-0 Update icall:   %32 = call ptr %30(i32 noundef %31), !dbg !244
+0 Update icall:   call void %7(ptr noundef %8), !dbg !225
 
-1 Update icall:   %22 = call i32 %18(ptr noundef %19, i32 noundef %20, i32 noundef %21), !dbg !234
+1 Update icall:   %18 = call ptr %16(ptr noundef null, ptr noundef %17), !dbg !233
 
-2 Update icall:   %24 = call ptr %20(ptr noundef %21, i32 noundef %22, ptr noundef %23), !dbg !237
+2 Update icall:   %17 = call ptr %14(ptr noundef %15, i64 noundef %16), !dbg !230
 
-3 Update icall:   %32 = call ptr %30(i32 noundef %31), !dbg !244
+3 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
 
 4 Update icall:   %18 = call ptr %16(ptr noundef null, ptr noundef %17), !dbg !233
 
-5 Update icall:   %20 = call ptr %17(ptr noundef %18, i32 noundef %19), !dbg !234
+5 Update icall:   %18 = call ptr %16(ptr noundef %17), !dbg !233
 
-6 Update icall:   %18 = call ptr %16(ptr noundef %17), !dbg !233
+6 Update icall:   %20 = call ptr %17(ptr noundef %18, i32 noundef %19), !dbg !234
 
-7 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
+7 Update icall:   %32 = call ptr %30(i32 noundef %31), !dbg !244
 
-8 Update icall:   %19 = call ptr %16(ptr noundef %17, i32 noundef %18), !dbg !232
+8 Update icall:   %20 = call ptr %17(ptr noundef %18, i32 noundef %19), !dbg !234
 
-9 Update icall:   call void %12(ptr noundef %13), !dbg !229
+9 Update icall:   %22 = call i32 %18(ptr noundef %19, ptr noundef %20, i32 noundef %21), !dbg !234
 
 10 Update icall:   %18 = call ptr %16(ptr noundef %17), !dbg !233
 
 11 Update icall:   %40 = call ptr %36(ptr noundef %37, ptr noundef %38, ptr noundef %39), !dbg !249
 
-12 Update icall:   call void %7(ptr noundef %8), !dbg !225
+12 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
 
-13 Update icall:   %22 = call i32 %18(ptr noundef %19, i32 noundef %20, ptr noundef %21), !dbg !234
+13 Update icall:   %22 = call i32 %18(ptr noundef %19, i32 noundef %20, i32 noundef %21), !dbg !234
 
-14 Update icall:   %20 = call ptr %17(ptr noundef %18, i32 noundef %19), !dbg !234
+14 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
 
 15 Update icall:   %25 = call i32 %20(ptr noundef %21, i32 noundef %22, ptr noundef %23, ptr noundef %24), !dbg !236
 
-16 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
+16 Update icall:   %19 = call ptr %16(ptr noundef %17, i32 noundef %18), !dbg !232
 
-17 Update icall:   %18 = call ptr %16(ptr noundef %17), !dbg !233
+17 Update icall:   %24 = call ptr %20(ptr noundef %21, i32 noundef %22, ptr noundef %23), !dbg !237
 
-18 Update icall:   %12 = call i32 %9(ptr noundef %10, i32 noundef %11), !dbg !227
+18 Update icall:   %32 = call ptr %30(i32 noundef %31), !dbg !244
 
-19 Update icall:   %22 = call i32 %18(ptr noundef %19, ptr noundef %20, i32 noundef %21), !dbg !234
+19 Update icall:   %12 = call i32 %9(ptr noundef %10, i32 noundef %11), !dbg !227
 
-20 Update icall:   %17 = call ptr %14(ptr noundef %15, i64 noundef %16), !dbg !230
+20 Update icall:   %18 = call ptr %16(ptr noundef %17), !dbg !233
 
 21 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
 
-22 Update icall:   %18 = call ptr %16(ptr noundef null, ptr noundef %17), !dbg !233
+22 Update icall:   %22 = call i32 %18(ptr noundef %19, i32 noundef %20, ptr noundef %21), !dbg !234
 
-23 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
+23 Update icall:   call void %12(ptr noundef %13), !dbg !229
 
 24 Update icall:   %19 = call i32 %16(ptr noundef %17, ptr noundef %18), !dbg !232
 
  Start ICall Alias Analysis
 
-0 Top func: evp_keymgmt_gen_cleanup
----icall:   call void %12(ptr noundef %13), !dbg !229
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-1 Top func: evp_keymgmt_freedata
+0 Top func: evp_keymgmt_freedata
 ---icall:   call void %7(ptr noundef %8), !dbg !225
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+evp_keymgmt_gen_cleanup
+Merge complete --- Not blocked by TBAA or TFA check
+---icall: Merge complete --- Not blocked by TBAA or TFA check
+  call void %12(ptr noundef %13), !dbg !229
+aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_fset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: 0
 
 start oneLayerHandler
@@ -200,11 +200,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.008214
-# Typebuilder time     		0.000553
-# MLTA time            		0.000462
-# Icall alias time     		0.000606
-# Func alias time      		0.01339
-# One layer alias time 		1e-05
-# Escape alias time    		6.9e-05
-# DB time              		0.002027
+# Load time            		0.004139
+# Typebuilder time     		0.000378
+# MLTA time            		0.000451
+# Icall alias time     		0.000475
+# Func alias time      		0.008347
+# One layer alias time 		9e-06
+# Escape alias time    		6.6e-05
+# DB time              		0.002051

@@ -89,20 +89,45 @@ WARNING: matchStructTypes problem!
 
 0 Top func: test_pathlen
 
-1 Top func: test_addr_ranges
+1 Top func: test_ext_syntax
 
 2 Top func: test_asid
 
-3 Top func: test_ext_syntax
+3 Top func: test_addr_ranges
 
-4 Top func: test_addr_subset
+4 Top func: test_addr_fam_len
 
-5 Top func: test_addr_fam_len
+5 Top func: test_addr_subset
 
 6 Top func: IPAddressFamily_free
 
-Analyzed func: test_pathlenMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_ext_syntaxMerge complete --- Not blocked by TBAA or TFA check
 
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_pathlenMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_asid
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
@@ -112,37 +137,10 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_asidMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_addr_rangesMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_ext_syntaxMerge complete --- Not blocked by TBAA or TFA check
-
+test_addr_ranges
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
@@ -153,27 +151,25 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_addr_subset
+test_addr_fam_len
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
+1
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_addr_fam_lenMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -272,6 +268,10 @@ Analyzed func: IPAddressFamily_free
 DefinitionFuncSet size: 0
 aliased_callset size: 2
 
+Analyzed func: test_addr_subset
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Update global ICallees info
 
  Start ICall Alias Analysis
@@ -313,11 +313,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003289
-# Typebuilder time     		0.000964
-# MLTA time            		0.000377
-# Icall alias time     		6.3e-05
-# Func alias time      		0.004751
-# One layer alias time 		9e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002186
+# Load time            		0.003999
+# Typebuilder time     		0.000875
+# MLTA time            		0.000321
+# Icall alias time     		6.2e-05
+# Func alias time      		0.002596
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002025

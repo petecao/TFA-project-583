@@ -27,63 +27,63 @@ Openmp enabled
 
 0 Top func: ossl_gcm_einit
 
-1 Top func: aes_gcm_freectx
+1 Top func: ossl_gcm_gettable_ctx_params
 
 2 Top func: ossl_gcm_stream_final
 
-3 Top func: ossl_gcm_gettable_ctx_params
+3 Top func: ossl_gcm_get_ctx_params
 
-4 Top func: ossl_gcm_get_ctx_params
+4 Top func: aes_gcm_freectx
 
-5 Top func: aes_192_gcm_get_params
+5 Top func: aes192gcm_newctx
 
-6 Top func: aes192gcm_newctx
-
-7 Top func: aes256gcm_dupctx
+6 Top func: aes256gcm_dupctx
      Top func: ossl_gcm_einit Failed
-     Top func: ossl_gcm_gettable_ctx_params Failed
      Top func: ossl_gcm_stream_final Failed
-     Top func: aes_gcm_freectx Failed
+     Top func: ossl_gcm_gettable_ctx_params Failed
      Top func: ossl_gcm_get_ctx_params Failed
-     Top func: aes_192_gcm_get_params Failed
+     Top func: aes192gcm_newctx Failed
+     Top func: aes_gcm_freectx Failed
 
-8 Top func: ossl_gcm_dinit
+7 Top func: ossl_gcm_dinit
+
+8 Top func: ossl_gcm_cipher
 
 9 Top func: ossl_gcm_settable_ctx_params
 
-10 Top func: ossl_gcm_cipher
+10 Top func: ossl_gcm_set_ctx_params
 
-11 Top func: aes128gcm_newctx
+11 Top func: aes192gcm_dupctx
 
-12 Top func: ossl_gcm_set_ctx_params
-
-13 Top func: aes256gcm_newctx
-     Top func: aes192gcm_newctx Failed
+12 Top func: aes128gcm_newctx
      Top func: aes256gcm_dupctx Failed
-
-14 Top func: aes192gcm_dupctx
      Top func: ossl_gcm_dinit Failed
-
-15 Top func: aes_256_gcm_get_params
      Top func: ossl_gcm_cipher Failed
      Top func: ossl_gcm_settable_ctx_params Failed
+
+13 Top func: aes_256_gcm_get_params
      Top func: ossl_gcm_set_ctx_params Failed
+     Top func: aes192gcm_dupctx Failed
      Top func: aes128gcm_newctx Failed
-     Top func: aes256gcm_newctx Failed
 
-16 Top func: ossl_gcm_stream_update
+14 Top func: ossl_gcm_stream_update
 
-17 Top func: aes_128_gcm_get_params
+15 Top func: aes_128_gcm_get_params
+
+16 Top func: aes_192_gcm_get_params
+
+17 Top func: ossl_cipher_generic_gettable_params
 
 18 Top func: aes128gcm_dupctx
 
-19 Top func: ossl_cipher_generic_gettable_params
-     Top func: aes192gcm_dupctx Failed
+19 Top func: aes256gcm_newctx
      Top func: aes_256_gcm_get_params Failed
      Top func: ossl_gcm_stream_update Failed
      Top func: aes_128_gcm_get_params Failed
+     Top func: aes_192_gcm_get_params Failed
      Top func: ossl_cipher_generic_gettable_params Failed
      Top func: aes128gcm_dupctx Failed
+     Top func: aes256gcm_newctx Failed
 
 Update global ICallees info
 
@@ -126,11 +126,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001914
-# Typebuilder time     		0.000327
-# MLTA time            		0.000399
-# Icall alias time     		8.2e-05
-# Func alias time      		0.003635
-# One layer alias time 		6.6e-05
-# Escape alias time    		0.000822
-# DB time              		0.002554
+# Load time            		0.010433
+# Typebuilder time     		0.000246
+# MLTA time            		0.000287
+# Icall alias time     		9.4e-05
+# Func alias time      		0.008215
+# One layer alias time 		6.3e-05
+# Escape alias time    		0.000799
+# DB time              		0.002354

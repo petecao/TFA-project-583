@@ -25,83 +25,83 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_cipher_generic_dinit
+0 Top func: sm4_128_ecb_newctx
 
-1 Top func: sm4_128_ecb_newctx
+1 Top func: ossl_cipher_generic_gettable_params
 
-2 Top func: ossl_cipher_generic_gettable_params
+2 Top func: ossl_cipher_generic_dinit
 
 3 Top func: sm4_128_ecb_get_params
 
-4 Top func: ossl_cipher_generic_skey_einit
+4 Top func: ossl_cipher_generic_stream_final
 
-5 Top func: ossl_cipher_generic_stream_final
+5 Top func: ossl_cipher_generic_skey_einit
 
 6 Top func: sm4_128_cbc_get_params
-
-7 Top func: sm4_128_ofb128_get_params
-     Top func: ossl_cipher_generic_dinit Failed
-     Top func: sm4_128_ecb_newctx Failed
      Top func: ossl_cipher_generic_gettable_params Failed
-     Top func: ossl_cipher_generic_skey_einit Failed
+     Top func: ossl_cipher_generic_dinit Failed
      Top func: ossl_cipher_generic_stream_final Failed
+     Top func: ossl_cipher_generic_skey_einit Failed
+     Top func: sm4_128_ecb_newctx Failed
      Top func: sm4_128_ecb_get_params Failed
-     Top func: sm4_128_cbc_get_params Failed
+
+7 Top func: ossl_cipher_generic_gettable_ctx_params
 
 8 Top func: ossl_cipher_generic_block_update
 
-9 Top func: sm4_freectx
+9 Top func: sm4_128_ctr_get_params
 
-10 Top func: ossl_cipher_generic_gettable_ctx_params
+10 Top func: ossl_cipher_generic_skey_dinit
 
-11 Top func: ossl_cipher_generic_skey_dinit
+11 Top func: sm4_freectx
 
-12 Top func: sm4_128_ctr_get_params
-
-13 Top func: ossl_cipher_generic_get_ctx_params
-     Top func: sm4_128_ofb128_get_params Failed
-
-14 Top func: sm4_128_ctr_newctx
-
-15 Top func: sm4_128_cfb128_newctx
-     Top func: ossl_cipher_generic_block_update Failed
-     Top func: sm4_freectx Failed
+12 Top func: ossl_cipher_generic_get_ctx_params
+     Top func: sm4_128_cbc_get_params Failed
      Top func: ossl_cipher_generic_gettable_ctx_params Failed
+     Top func: ossl_cipher_generic_block_update Failed
      Top func: ossl_cipher_generic_skey_dinit Failed
+
+13 Top func: sm4_128_ctr_newctx
      Top func: ossl_cipher_generic_get_ctx_params Failed
      Top func: sm4_128_ctr_get_params Failed
+     Top func: sm4_freectx Failed
 
-16 Top func: ossl_cipher_generic_block_final
+14 Top func: ossl_cipher_generic_settable_ctx_params
 
-17 Top func: sm4_dupctx
+15 Top func: ossl_cipher_generic_block_final
 
-18 Top func: ossl_cipher_generic_settable_ctx_params
+16 Top func: sm4_128_cbc_newctx
 
-19 Top func: sm4_128_cbc_newctx
+17 Top func: ossl_cipher_generic_set_ctx_params
 
-20 Top func: ossl_cipher_generic_set_ctx_params
+18 Top func: sm4_128_ofb128_newctx
 
-21 Top func: sm4_128_ofb128_newctx
-     Top func: sm4_128_cfb128_newctx Failed
+19 Top func: sm4_dupctx
      Top func: sm4_128_ctr_newctx Failed
-
-22 Top func: sm4_128_cfb128_get_params
-     Top func: ossl_cipher_generic_block_final Failed
-
-23 Top func: ossl_cipher_generic_stream_update
-     Top func: sm4_dupctx Failed
      Top func: ossl_cipher_generic_settable_ctx_params Failed
+     Top func: ossl_cipher_generic_block_final Failed
      Top func: ossl_cipher_generic_set_ctx_params Failed
+
+20 Top func: ossl_cipher_generic_stream_update
      Top func: sm4_128_cbc_newctx Failed
      Top func: sm4_128_ofb128_newctx Failed
 
-24 Top func: ossl_cipher_generic_cipher
+21 Top func: sm4_128_ofb128_get_params
 
-25 Top func: ossl_cipher_generic_einit
-     Top func: sm4_128_cfb128_get_params Failed
+22 Top func: ossl_cipher_generic_cipher
+     Top func: sm4_dupctx Failed
+
+23 Top func: sm4_128_cfb128_get_params
+
+24 Top func: ossl_cipher_generic_einit
+
+25 Top func: sm4_128_cfb128_newctx
      Top func: ossl_cipher_generic_stream_update Failed
      Top func: ossl_cipher_generic_cipher Failed
+     Top func: sm4_128_ofb128_get_params Failed
      Top func: ossl_cipher_generic_einit Failed
+     Top func: sm4_128_cfb128_get_params Failed
+     Top func: sm4_128_cfb128_newctx Failed
 
 Update global ICallees info
 
@@ -146,11 +146,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001854
-# Typebuilder time     		0.000283
-# MLTA time            		0.000508
-# Icall alias time     		0.000121
-# Func alias time      		0.002665
-# One layer alias time 		1e-05
-# Escape alias time    		5.6e-05
-# DB time              		0.002091
+# Load time            		0.001656
+# Typebuilder time     		0.00033
+# MLTA time            		0.000537
+# Icall alias time     		1e-05
+# Func alias time      		0.006086
+# One layer alias time 		6e-06
+# Escape alias time    		6.1e-05
+# DB time              		0.002017

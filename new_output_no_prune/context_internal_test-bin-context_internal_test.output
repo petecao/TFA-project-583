@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_set_get_conf_diagnostics
+0 Top func: test_set0_default
 
-1 Top func: test_set0_default
+1 Top func: test_set_get_conf_diagnostics
 
-Analyzed func: test_set_get_conf_diagnostics
+Analyzed func: test_set0_default
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_set0_default
+Analyzed func: test_set_get_conf_diagnostics
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00148
-# Typebuilder time     		0.000203
-# MLTA time            		0.000199
-# Icall alias time     		7.7e-05
-# Func alias time      		0.000557
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.00208
+# Load time            		0.001404
+# Typebuilder time     		0.000228
+# MLTA time            		0.000212
+# Icall alias time     		8.9e-05
+# Func alias time      		0.002578
+# One layer alias time 		8e-06
+# Escape alias time    		6.4e-05
+# DB time              		0.002038

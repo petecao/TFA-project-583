@@ -35,9 +35,9 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %34 = call i32 %31(ptr noundef %32, ptr noundef %33), !dbg !474
+0 Update icall:   %49 = call i32 %46(ptr noundef %47, ptr noundef %48), !dbg !486
 
-1 Update icall:   %49 = call i32 %46(ptr noundef %47, ptr noundef %48), !dbg !486
+1 Update icall:   %34 = call i32 %31(ptr noundef %32, ptr noundef %33), !dbg !474
 
  Start ICall Alias Analysis
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002083
-# Typebuilder time     		0.000295
-# MLTA time            		0.00025
-# Icall alias time     		6.3e-05
-# Func alias time      		0.002738
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.0021
+# Load time            		0.0047
+# Typebuilder time     		0.000303
+# MLTA time            		0.00026
+# Icall alias time     		9.7e-05
+# Func alias time      		0.008803
+# One layer alias time 		6.4e-05
+# Escape alias time    		0.000798
+# DB time              		0.002336

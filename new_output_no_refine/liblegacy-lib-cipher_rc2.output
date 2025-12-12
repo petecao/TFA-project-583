@@ -25,11 +25,11 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: rc2_128_ecb_newctx
+0 Top func: rc2_dinit
 
-1 Top func: rc2_128_ecb_get_params
+1 Top func: rc2_128_ecb_newctx
 
-2 Top func: rc2_dinit
+2 Top func: rc2_128_ecb_get_params
 
 3 Top func: rc2_gettable_ctx_params
 
@@ -40,20 +40,20 @@ Openmp enabled
 6 Top func: rc2_128_ofb128_get_params
 
 7 Top func: rc2_40_cbc_get_params
-     Top func: rc2_128_ecb_newctx Failed
-     Top func: rc2_128_ecb_get_params Failed
      Top func: rc2_dinit Failed
+     Top func: rc2_128_ecb_get_params Failed
+     Top func: rc2_128_ecb_newctx Failed
      Top func: rc2_gettable_ctx_params Failed
      Top func: rc2_128_cbc_newctx Failed
      Top func: rc2_128_ofb128_newctx Failed
      Top func: rc2_128_ofb128_get_params Failed
      Top func: rc2_40_cbc_get_params Failed
 
-8 Top func: rc2_freectx
+8 Top func: ossl_cipher_generic_block_update
 
 9 Top func: ossl_cipher_generic_gettable_params
 
-10 Top func: ossl_cipher_generic_block_update
+10 Top func: rc2_freectx
 
 11 Top func: rc2_set_ctx_params
 
@@ -86,12 +86,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_block_updateMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_block_updateMerge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
  Failed
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -117,12 +117,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 16Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-rc2_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_block_finalMerge complete --- Not blocked by TBAA or TFA check
 
 
 17Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_block_finalMerge complete --- Not blocked by TBAA or TFA check
+rc2_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -205,11 +205,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002825
-# Typebuilder time     		0.000426
-# MLTA time            		0.000718
+# Load time            		0.002624
+# Typebuilder time     		0.000324
+# MLTA time            		0.000415
 # Icall alias time     		3.3e-05
-# Func alias time      		0.001647
-# One layer alias time 		6e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002496
+# Func alias time      		0.001674
+# One layer alias time 		5e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002014

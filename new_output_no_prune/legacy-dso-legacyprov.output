@@ -25,23 +25,25 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: legacy_query
+0 Top func: legacy_gettable_params
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-legacy_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+legacy_teardownMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-legacy_teardownMerge complete --- Not blocked by TBAA or TFA check
+legacy_queryMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -54,17 +56,10 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-legacy_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+legacy_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -234,58 +229,63 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-legacy_queryMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+legacy_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: legacy_get_params
-DefinitionFuncSet size: 1
-aliased_callset size: 1
-
-Analyzed func: legacy_gettable_params
-DefinitionFuncSet size: 1
-aliased_callset size: 1
 
 Analyzed func: legacy_teardown
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
+Analyzed func: legacy_query
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
+Analyzed func: legacy_get_params
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
 Update global ICallees info
 
-0 Update icall:   %5 = call i32 %4(ptr noundef null), !dbg !297
+0 Update icall:   call void %9(ptr noundef null, i32 noundef %18, ptr noundef %19, ptr noundef %20), !dbg !311
 
-1 Update icall:   call void %1(ptr noundef null), !dbg !293
+1 Update icall:   call void %9(ptr noundef null, i32 noundef %18, ptr noundef %19, ptr noundef %20), !dbg !304
 
-2 Update icall:   call void %9(ptr noundef null, i32 noundef %18, ptr noundef %19, ptr noundef %20), !dbg !304
+2 Update icall:   %5 = call i32 %4(ptr noundef null), !dbg !297
 
-3 Update icall:   call void %9(ptr noundef null, i32 noundef %18, ptr noundef %19, ptr noundef %20), !dbg !311
+3 Update icall:   %2 = call i32 %1(ptr noundef null), !dbg !295
 
-4 Update icall:   %2 = call i32 %1(ptr noundef null), !dbg !295
+4 Update icall:   call void %1(ptr noundef null), !dbg !293
 
-5 Update icall:   %2 = call i32 %1(ptr noundef null), !dbg !295
+5 Update icall:   call void %7(ptr noundef null, ptr noundef %8, i32 noundef %9, ptr noundef %10), !dbg !302
 
 6 Update icall:   %2 = call i32 %1(ptr noundef null), !dbg !295
 
-7 Update icall:   call void %7(ptr noundef null, ptr noundef %8, i32 noundef %9, ptr noundef %10), !dbg !302
+7 Update icall:   %2 = call i32 %1(ptr noundef null), !dbg !295
 
  Start ICall Alias Analysis
 
@@ -447,11 +447,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.002266
-# Typebuilder time     		0.000391
-# MLTA time            		0.000338
-# Icall alias time     		0.0039
-# Func alias time      		0.003005
-# One layer alias time 		9e-06
-# Escape alias time    		6.5e-05
-# DB time              		0.002104
+# Load time            		0.002094
+# Typebuilder time     		0.000423
+# MLTA time            		0.000333
+# Icall alias time     		0.003929
+# Func alias time      		0.005922
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002094

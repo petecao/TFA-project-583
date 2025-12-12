@@ -27,9 +27,9 @@ Openmp enabled
 
 Update global ICallees info
 
-0 Update icall:   %43 = call i32 %41(ptr noundef %42), !dbg !134
+0 Update icall:   call void %8(ptr noundef %5, ptr noundef %11, i32 noundef %12), !dbg !101
 
-1 Update icall:   call void %8(ptr noundef %5, ptr noundef %11, i32 noundef %12), !dbg !101
+1 Update icall:   %43 = call i32 %41(ptr noundef %42), !dbg !134
 
  Start ICall Alias Analysis
 
@@ -70,11 +70,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002833
-# Typebuilder time     		0.000302
-# MLTA time            		0.000347
-# Icall alias time     		6e-05
-# Func alias time      		0.000632
-# One layer alias time 		9e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.001946
+# Load time            		0.011984
+# Typebuilder time     		0.000252
+# MLTA time            		0.000248
+# Icall alias time     		6.7e-05
+# Func alias time      		0.008838
+# One layer alias time 		1.1e-05
+# Escape alias time    		5.8e-05
+# DB time              		0.002044

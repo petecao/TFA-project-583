@@ -25,25 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: SEED_decrypt
-
-1 Top func: SEED_encrypt
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+0 Top func: SEED_encrypt
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: SEED_encrypt
-DefinitionFuncSet size: 0
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+SEED_decryptMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -53,7 +43,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+SEED_encryptMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 
 Analyzed func: SEED_decrypt
 DefinitionFuncSet size: 0
@@ -100,11 +100,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001075
-# Typebuilder time     		0.000147
-# MLTA time            		0.000163
-# Icall alias time     		5.9e-05
-# Func alias time      		0.001948
+# Load time            		0.022941
+# Typebuilder time     		0.000192
+# MLTA time            		0.000182
+# Icall alias time     		8.4e-05
+# Func alias time      		0.006598
 # One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002
+# Escape alias time    		5.7e-05
+# DB time              		0.001986

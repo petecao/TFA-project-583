@@ -27,30 +27,30 @@ Openmp enabled
 
 0 Top func: wp_newctx
 
-1 Top func: wp_internal_final
+1 Top func: wp_freectx
 
-2 Top func: wp_freectx
+2 Top func: wp_dupctx
 
-3 Top func: wp_dupctx
+3 Top func: wp_internal_final
 
-4 Top func: ossl_digest_default_gettable_params
+4 Top func: wp_copyctx
 
-5 Top func: wp_copyctx
+5 Top func: wp_get_params
 
-6 Top func: wp_get_params
-     Top func: wp_internal_final Failed
-     Top func: wp_newctx Failed
+6 Top func: wp_internal_init
      Top func: wp_freectx Failed
-     Top func: ossl_digest_default_gettable_params Failed
-     Top func: wp_copyctx Failed
+     Top func: wp_internal_final Failed
      Top func: wp_dupctx Failed
+     Top func: wp_newctx Failed
+     Top func: wp_get_params Failed
+     Top func: wp_copyctx Failed
 
-7 Top func: wp_internal_init
+7 Top func: ossl_digest_default_gettable_params
 
 8 Top func: WHIRLPOOL_Update
-     Top func: wp_get_params Failed
-     Top func: WHIRLPOOL_Update Failed
      Top func: wp_internal_init Failed
+     Top func: ossl_digest_default_gettable_params Failed
+     Top func: WHIRLPOOL_Update Failed
 
 Update global ICallees info
 
@@ -93,11 +93,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001459
-# Typebuilder time     		0.000228
-# MLTA time            		0.000286
-# Icall alias time     		7e-06
-# Func alias time      		0.000746
-# One layer alias time 		5e-06
+# Load time            		0.001385
+# Typebuilder time     		0.000206
+# MLTA time            		0.000189
+# Icall alias time     		6.5e-05
+# Func alias time      		0.004664
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002091
+# DB time              		0.002267

@@ -25,23 +25,23 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: self_test_on_pairwise_fail
+0 Top func: test_keygen_pairwise_failure
 
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: self_test_on_pairwise_failMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 test_keygen_pairwise_failureMerge complete --- Not blocked by TBAA or TFA check
 
-
-Analyzed func: self_test_on_pairwise_failMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Analyzed func: test_keygen_pairwise_failure
+Analyzed func: self_test_on_pairwise_fail
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -86,11 +86,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002328
-# Typebuilder time     		0.000315
-# MLTA time            		0.00022
-# Icall alias time     		7.5e-05
-# Func alias time      		0.000432
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.00197
+# Load time            		0.005124
+# Typebuilder time     		0.000321
+# MLTA time            		0.000223
+# Icall alias time     		9e-05
+# Func alias time      		0.008373
+# One layer alias time 		7e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.001992

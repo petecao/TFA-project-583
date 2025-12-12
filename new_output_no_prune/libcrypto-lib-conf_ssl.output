@@ -25,23 +25,23 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ssl_module_init
+0 Top func: ssl_module_free
 
-1 Top func: ssl_module_free
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ssl_module_initMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: ssl_module_initMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ssl_module_init
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -195,11 +195,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00182
-# Typebuilder time     		0.000287
-# MLTA time            		0.000268
-# Icall alias time     		6.5e-05
-# Func alias time      		0.00383
+# Load time            		0.001974
+# Typebuilder time     		0.000285
+# MLTA time            		0.000265
+# Icall alias time     		7.3e-05
+# Func alias time      		0.002997
 # One layer alias time 		8e-06
-# Escape alias time    		6.4e-05
-# DB time              		0.00215
+# Escape alias time    		6.2e-05
+# DB time              		0.002117

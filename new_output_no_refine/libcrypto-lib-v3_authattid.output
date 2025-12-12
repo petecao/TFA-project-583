@@ -25,19 +25,17 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: OSSL_ISSUER_SERIAL_it
+0 Top func: OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_it
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_it
+1 Top func: OSSL_ISSUER_SERIAL_itMerge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-i2r_auth_attr_idMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
+i2r_auth_attr_id
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -52,11 +50,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_it Failed
 
 Analyzed func: OSSL_ISSUER_SERIAL_it
 DefinitionFuncSet size: 0
 aliased_callset size: 0
-     Top func: OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_it Failed
 
 Update global ICallees info
 
@@ -99,11 +99,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001665
-# Typebuilder time     		0.000224
-# MLTA time            		0.000182
-# Icall alias time     		6.9e-05
-# Func alias time      		0.000753
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001974
+# Load time            		0.001503
+# Typebuilder time     		0.000304
+# MLTA time            		0.000259
+# Icall alias time     		7.4e-05
+# Func alias time      		0.004245
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002152

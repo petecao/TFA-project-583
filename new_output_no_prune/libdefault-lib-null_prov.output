@@ -25,28 +25,28 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: nullmd_internal_final
+0 Top func: nullmd_freectx
 
 1 Top func: nullmd_dupctx
 
-2 Top func: nullmd_freectx
+2 Top func: nullmd_internal_final
 
-3 Top func: nullmd_newctx
+3 Top func: nullmd_copyctx
 
-4 Top func: ossl_digest_default_gettable_params
+4 Top func: nullmd_newctx
 
 5 Top func: nullmd_get_params
 
-6 Top func: nullmd_copyctx
+6 Top func: ossl_digest_default_gettable_params
 
 7 Top func: nullmd_internal_init
-     Top func: nullmd_internal_final Failed
-     Top func: nullmd_dupctx Failed
-     Top func: nullmd_newctx Failed
      Top func: nullmd_freectx Failed
-     Top func: ossl_digest_default_gettable_params Failed
-     Top func: nullmd_get_params Failed
+     Top func: nullmd_dupctx Failed
      Top func: nullmd_copyctx Failed
+     Top func: nullmd_internal_final Failed
+     Top func: nullmd_newctx Failed
+     Top func: nullmd_get_params Failed
+     Top func: ossl_digest_default_gettable_params Failed
 
 8 Top func: null_update
      Top func: nullmd_internal_init Failed
@@ -93,11 +93,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001461
-# Typebuilder time     		0.000225
-# MLTA time            		0.000239
-# Icall alias time     		6.3e-05
-# Func alias time      		0.001402
+# Load time            		0.001218
+# Typebuilder time     		0.00021
+# MLTA time            		0.000294
+# Icall alias time     		6.9e-05
+# Func alias time      		0.001551
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001956
+# DB time              		0.001972

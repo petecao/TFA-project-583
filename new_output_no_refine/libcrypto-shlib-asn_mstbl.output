@@ -25,21 +25,32 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: stbl_module_init
+0 Top func: X509V3_conf_free
 
-1 Top func: stbl_module_finish
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+stbl_module_initMerge complete --- Not blocked by TBAA or TFA check
 
-2 Top func: X509V3_conf_free
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: stbl_module_initMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: Merge complete --- Not blocked by TBAA or TFA check
+stbl_module_finishMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+stbl_module_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
+1
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
@@ -50,20 +61,9 @@ DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -139,11 +139,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.009257
-# Typebuilder time     		0.000536
-# MLTA time            		0.000207
-# Icall alias time     		6.7e-05
-# Func alias time      		0.008209
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002011
+# Load time            		0.001686
+# Typebuilder time     		0.000236
+# MLTA time            		0.000206
+# Icall alias time     		7.3e-05
+# Func alias time      		0.00094
+# One layer alias time 		7e-06
+# Escape alias time    		6.7e-05
+# DB time              		0.002

@@ -25,121 +25,121 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: drbg_ctr_new
+0 Top func: drbg_ctr_set_ctx_params
+
+1 Top func: drbg_ctr_reseed
 
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_ctr_set_ctx_params
-
-2 Top func: drbg_ctr_reseed
-
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 drbg_ctr_verify_zeroization
 
-4 Top func: drbg_ctr_free
+3 Top func: drbg_ctr_new
 
 Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_drbg_enable_locking
 
-6 Top func: drbg_ctr_generate_wrapper
+5 Top func: drbg_ctr_free
 
-Analyzed func: drbg_ctr_new
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-     Top func: drbg_ctr_set_ctx_params Failed
+Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_generate_wrapper
 
 Analyzed func: drbg_ctr_reseed
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+     Top func: drbg_ctr_set_ctx_params Failed
      Top func: ossl_drbg_enable_locking Failed
+
+Analyzed func: drbg_ctr_new
+DefinitionFuncSet size: 1
+aliased_callset size: 0
      Top func: drbg_ctr_verify_zeroization Failed
      Top func: drbg_ctr_free Failed
 
-7 Top func: drbg_ctr_instantiate
+7 Top func: drbg_ctr_generate
 
 Merge complete --- Not blocked by TBAA or TFA check
 8Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 drbg_ctr_gettable_ctx_params
 
-9 Top func: drbg_ctr_generate
+9 Top func: ossl_drbg_lock
+
+10 Top func: drbg_ctr_instantiate
 
 Merge complete --- Not blocked by TBAA or TFA check
-10Merge complete --- Not blocked by TBAA or TFA check
+11Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_drbg_lock
-
-11 Top func: ossl_drbg_get_seed
+ossl_drbg_get_seed
      Top func: drbg_ctr_generate_wrapper Failed
 
 12 Top func: drbg_ctr_instantiate_wrapper
 
 13 Top func: drbg_ctr_reseed_wrapper
 
-Analyzed func: drbg_ctr_instantiate
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-     Top func: drbg_ctr_gettable_ctx_params Failed
-     Top func: ossl_drbg_lock Failed
-     Top func: ossl_drbg_get_seed Failed
-
 Analyzed func: drbg_ctr_generate
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+     Top func: ossl_drbg_lock Failed
+     Top func: drbg_ctr_gettable_ctx_params Failed
+     Top func: ossl_drbg_get_seed Failed
 
-14 Top func: drbg_ctr_uninstantiate
+Analyzed func: drbg_ctr_instantiate
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+14 Top func: drbg_ctr_new_wrapper
+
+15 Top func: ossl_drbg_unlock
+
+16 Top func: drbg_ctr_get_ctx_params
+     Top func: drbg_ctr_instantiate_wrapper Failed
+
+17 Top func: ossl_drbg_clear_seed
+     Top func: drbg_ctr_reseed_wrapper Failed
+
+18 Top func: drbg_ctr_uninstantiate
 
 Merge complete --- Not blocked by TBAA or TFA check
-15Merge complete --- Not blocked by TBAA or TFA check
+19Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_ctr_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-16Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_drbg_unlockMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-17Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_drbg_clear_seedMerge complete --- Not blocked by TBAA or TFA check
-
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_ctr_instantiate_wrapper FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_ctr_reseed_wrapper FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-18Merge complete --- Not blocked by TBAA or TFA check
- Top func: drbg_ctr_new_wrapperMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-19 Top func: Merge complete --- Not blocked by TBAA or TFA check
 drbg_ctr_uninstantiate_wrapperMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-20 Top func: drbg_ctr_settable_ctx_params
-     Top func: ossl_drbg_unlock Failed
-     Top func: drbg_ctr_get_ctx_params Failed
-     Top func: ossl_drbg_clear_seed Failed
-     Top func: drbg_ctr_new_wrapper Failed
-     Top func: drbg_ctr_settable_ctx_params Failed
-     Top func: drbg_ctr_uninstantiate_wrapper Failed
+Merge complete --- Not blocked by TBAA or TFA check
+20Merge complete --- Not blocked by TBAA or TFA check
+ Top func: drbg_ctr_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_new_wrapperMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_drbg_unlockMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: drbg_ctr_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_drbg_clear_seed FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_uninstantiate_wrapper FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_settable_ctx_params Failed
 
 Analyzed func: drbg_ctr_uninstantiate
 DefinitionFuncSet size: 1
@@ -186,11 +186,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.005472
-# Typebuilder time     		0.000498
-# MLTA time            		0.000418
-# Icall alias time     		6e-05
-# Func alias time      		0.008261
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.00194
+# Load time            		0.005528
+# Typebuilder time     		0.000494
+# MLTA time            		0.000419
+# Icall alias time     		6.5e-05
+# Func alias time      		0.00691
+# One layer alias time 		7e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.001959

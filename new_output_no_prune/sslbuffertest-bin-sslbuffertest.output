@@ -27,14 +27,14 @@ Openmp enabled
 
 0 Top func: test_func
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_free_buffers
+1 Top func: test_free_buffers
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: test_func
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_free_buffers
@@ -82,11 +82,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004053
-# Typebuilder time     		0.000564
-# MLTA time            		0.000225
-# Icall alias time     		1e-05
-# Func alias time      		0.000397
-# One layer alias time 		5e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002082
+# Load time            		0.014901
+# Typebuilder time     		0.000662
+# MLTA time            		0.000261
+# Icall alias time     		0.000115
+# Func alias time      		0.012322
+# One layer alias time 		1.2e-05
+# Escape alias time    		6.8e-05
+# DB time              		0.002287

@@ -33,57 +33,57 @@ Openmp enabled
 
 3 Top func: ossl_ccm_stream_final
 
-4 Top func: ossl_ccm_gettable_ctx_params
+4 Top func: aria_192_ccm_get_params
 
-5 Top func: aria_192_ccm_get_params
+5 Top func: ossl_ccm_gettable_ctx_params
 
-6 Top func: aria256ccm_dupctx
-
-7 Top func: aria192ccm_newctx
-     Top func: ossl_ccm_einit Failed
-     Top func: ossl_ccm_stream_final Failed
-     Top func: ossl_ccm_get_ctx_params Failed
+6 Top func: aria192ccm_newctx
      Top func: aria128ccm_newctx Failed
+     Top func: ossl_ccm_einit Failed
+     Top func: ossl_ccm_get_ctx_params Failed
+     Top func: ossl_ccm_stream_final Failed
      Top func: ossl_ccm_gettable_ctx_params Failed
      Top func: aria_192_ccm_get_params Failed
-     Top func: aria256ccm_dupctx Failed
-     Top func: aria192ccm_newctx Failed
+
+7 Top func: aria_ccm_freectx
 
 8 Top func: ossl_ccm_dinit
 
-9 Top func: ossl_ccm_cipher
+9 Top func: ossl_ccm_set_ctx_params
 
-10 Top func: ossl_ccm_set_ctx_params
+10 Top func: ossl_ccm_cipher
+     Top func: aria192ccm_newctx Failed
 
-11 Top func: aria_ccm_freectx
+11 Top func: ossl_ccm_settable_ctx_params
 
-12 Top func: ossl_ccm_settable_ctx_params
+12 Top func: aria256ccm_newctx
 
-13 Top func: aria256ccm_newctx
-
-14 Top func: aria_256_ccm_get_params
-
-15 Top func: aria192ccm_dupctx
-     Top func: ossl_ccm_cipher Failed
+13 Top func: aria192ccm_dupctx
      Top func: ossl_ccm_dinit Failed
+     Top func: ossl_ccm_cipher Failed
      Top func: ossl_ccm_set_ctx_params Failed
-     Top func: ossl_ccm_settable_ctx_params Failed
      Top func: aria_ccm_freectx Failed
+     Top func: ossl_ccm_settable_ctx_params Failed
+
+14 Top func: ossl_ccm_stream_update
+
+15 Top func: aria_128_ccm_get_params
+
+16 Top func: ossl_cipher_generic_gettable_params
      Top func: aria256ccm_newctx Failed
-     Top func: aria_256_ccm_get_params Failed
 
-16 Top func: aria_128_ccm_get_params
-
-17 Top func: ossl_ccm_stream_update
-
-18 Top func: ossl_cipher_generic_gettable_params
+17 Top func: aria128ccm_dupctx
      Top func: aria192ccm_dupctx Failed
 
-19 Top func: aria128ccm_dupctx
+18 Top func: aria256ccm_dupctx
+
+19 Top func: aria_256_ccm_get_params
      Top func: ossl_ccm_stream_update Failed
      Top func: ossl_cipher_generic_gettable_params Failed
      Top func: aria_128_ccm_get_params Failed
      Top func: aria128ccm_dupctx Failed
+     Top func: aria256ccm_dupctx Failed
+     Top func: aria_256_ccm_get_params Failed
 
 Update global ICallees info
 
@@ -126,11 +126,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001697
-# Typebuilder time     		0.000301
-# MLTA time            		0.000498
-# Icall alias time     		3.5e-05
-# Func alias time      		0.001382
-# One layer alias time 		6e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002551
+# Load time            		0.001586
+# Typebuilder time     		0.000305
+# MLTA time            		0.000452
+# Icall alias time     		8e-06
+# Func alias time      		0.004371
+# One layer alias time 		5e-06
+# Escape alias time    		6e-05
+# DB time              		0.002069

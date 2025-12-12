@@ -25,19 +25,23 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_x509_time
+0 Top func: test_x509_cmp_time
 
-1 Top func: test_X509_cmp_timeframe
+1 Top func: test_x509_time
 
-2 Top func: test_x509_cmp_time_current
+2 Top func: test_X509_cmp_timeframe
 
 3 Top func: test_days
 
-4 Top func: test_x509_cmp_time
+4 Top func: test_x509_cmp_time_current
 
 5 Top func: test_x509_time_print_rfc_822
 
 6 Top func: test_x509_time_print_iso_8601
+
+Analyzed func: test_x509_cmp_time
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_X509_cmp_timeframe
 DefinitionFuncSet size: 1
@@ -51,15 +55,11 @@ Analyzed func: test_days
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_x509_cmp_time_current
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: test_x509_time_print_rfc_822
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_x509_cmp_time
+Analyzed func: test_x509_cmp_time_current
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002837
-# Typebuilder time     		0.000381
-# MLTA time            		0.000244
+# Load time            		0.002778
+# Typebuilder time     		0.000399
+# MLTA time            		0.000222
 # Icall alias time     		7e-05
-# Func alias time      		0.0035
-# One layer alias time 		6.6e-05
-# Escape alias time    		0.000847
-# DB time              		0.002155
+# Func alias time      		0.000851
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002137

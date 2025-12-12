@@ -25,25 +25,25 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: i2v_AUTHORITY_KEYID
+0 Top func: v2i_AUTHORITY_KEYID
 
-1 Top func: v2i_AUTHORITY_KEYID
+1 Top func: AUTHORITY_KEYID_it
 
-2 Top func: AUTHORITY_KEYID_it
+2 Top func: i2v_AUTHORITY_KEYID
 
 3 Top func: X509V3_conf_free
-     Top func: AUTHORITY_KEYID_itMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+     Top func: AUTHORITY_KEYID_it FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2v_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 v2i_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: i2v_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -121,11 +121,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002647
-# Typebuilder time     		0.00034
-# MLTA time            		0.000261
-# Icall alias time     		5.4e-05
-# Func alias time      		0.000649
-# One layer alias time 		6e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002055
+# Load time            		0.011024
+# Typebuilder time     		0.000349
+# MLTA time            		0.00027
+# Icall alias time     		9.6e-05
+# Func alias time      		0.009451
+# One layer alias time 		9e-06
+# Escape alias time    		6.1e-05
+# DB time              		0.00227

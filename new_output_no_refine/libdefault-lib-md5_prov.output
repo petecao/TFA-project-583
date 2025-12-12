@@ -25,31 +25,31 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: md5_dupctx
+0 Top func: md5_newctx
 
-1 Top func: md5_freectx
+1 Top func: md5_internal_final
 
-2 Top func: md5_newctx
+2 Top func: md5_dupctx
 
-3 Top func: md5_internal_final
+3 Top func: md5_freectx
 
-4 Top func: ossl_digest_default_gettable_params
+4 Top func: md5_copyctx
 
-5 Top func: md5_copyctx
+5 Top func: ossl_digest_default_gettable_params
 
-6 Top func: md5_get_params
+6 Top func: md5_internal_init
 
-7 Top func: md5_internal_init
+7 Top func: md5_get_params
      Top func: md5_internal_final Failed
-     Top func: md5_freectx Failed
-     Top func: md5_dupctx Failed
      Top func: md5_newctx Failed
-     Top func: ossl_digest_default_gettable_params Failed
+     Top func: md5_dupctx Failed
+     Top func: md5_freectx Failed
      Top func: md5_copyctx Failed
-     Top func: md5_get_params Failed
+     Top func: ossl_digest_default_gettable_params Failed
 
 8 Top func: MD5_Update
      Top func: md5_internal_init Failed
+     Top func: md5_get_params Failed
      Top func: MD5_Update Failed
 
 Update global ICallees info
@@ -93,11 +93,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001273
-# Typebuilder time     		0.000218
-# MLTA time            		0.00027
-# Icall alias time     		6.4e-05
-# Func alias time      		0.001766
+# Load time            		0.001503
+# Typebuilder time     		0.000224
+# MLTA time            		0.000248
+# Icall alias time     		6.3e-05
+# Func alias time      		0.001371
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002115
+# DB time              		0.001954

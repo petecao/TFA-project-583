@@ -1,0 +1,88 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-pem_lib.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-pem_lib.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-lib-pem_lib.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-pem_lib.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   %106 = call i32 %103(ptr noundef %104, ptr noundef %28, ptr noundef %105), !dbg !348
+
+1 Update icall:   %101 = call i32 %99(ptr noundef %100, ptr noundef %28), !dbg !346
+
+2 Update icall:   %43 = call i32 %40(ptr noundef %41, i32 noundef 1024, i32 noundef 0, ptr noundef %42), !dbg !271
+
+3 Update icall:   %125 = call i32 %122(ptr noundef %123, i32 noundef 1024, i32 noundef 1, ptr noundef %124), !dbg !371
+
+4 Update icall:   %80 = call i32 %77(ptr noundef %78, ptr noundef null, ptr noundef %79), !dbg !325
+
+5 Update icall:   %75 = call i32 %73(ptr noundef %74, ptr noundef null), !dbg !323
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				6
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.004691
+# Typebuilder time     		0.0005
+# MLTA time            		0.000504
+# Icall alias time     		0.000204
+# Func alias time      		0.001827
+# One layer alias time 		1.1e-05
+# Escape alias time    		6.4e-05
+# DB time              		0.002131

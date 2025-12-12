@@ -25,13 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_read_dsa_params
+0 Top func: test_read_dsa_private
 
-1 Top func: test_read_dh_x942_params
+1 Top func: test_read_dh_params
 
-2 Top func: test_read_dsa_private
+2 Top func: test_read_dsa_params
 
-3 Top func: test_read_dh_params
+3 Top func: test_read_dh_x942_params
 
 4 Top func: test_read_dsa_public
 
@@ -39,7 +39,7 @@ Openmp enabled
 
 6 Top func: test_read_rsa_public
 
-Analyzed func: test_read_dh_x942_params
+Analyzed func: test_read_dsa_private
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -47,7 +47,7 @@ Analyzed func: test_read_dsa_params
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_read_dsa_private
+Analyzed func: test_read_dh_x942_params
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -59,11 +59,11 @@ Analyzed func: test_read_dsa_public
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_read_rsa_public
+Analyzed func: test_read_rsa_private
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_read_rsa_private
+Analyzed func: test_read_rsa_public
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001485
-# Typebuilder time     		0.000198
-# MLTA time            		0.000175
-# Icall alias time     		7.4e-05
-# Func alias time      		0.0021
+# Load time            		0.013028
+# Typebuilder time     		0.000249
+# MLTA time            		0.000212
+# Icall alias time     		8.8e-05
+# Func alias time      		0.001221
 # One layer alias time 		7e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.001953
+# DB time              		0.002263

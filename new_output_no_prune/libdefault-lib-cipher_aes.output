@@ -25,18 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: aes_freectx
+0 Top func: ossl_cipher_generic_stream_final
 
-1 Top func: ossl_cipher_generic_stream_final
+1 Top func: aes_freectx
 
 2 Top func: ossl_cipher_generic_set_ctx_params
 
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_cbc_cts_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: aes_cbc_cts_get_ctx_params
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
@@ -48,39 +43,45 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_192_cfb1_get_params
+aes_192_cfb1_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
-6 Top func: ossl_cipher_generic_stream_update
+Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_stream_update
+Merge complete --- Not blocked by TBAA or TFA check
 
 7 Top func: aes_128_cfb8_get_params
      Top func: ossl_cipher_generic_stream_final Failed
-     Top func: ossl_cipher_generic_set_ctx_params Failed
-     Top func: aes_freectx Failed
-     Top func: ossl_cipher_generic_stream_update Failed
-     Top func: aes_192_cfb1_get_params Failed
      Top func: aes_cbc_cts_get_ctx_params Failed
+     Top func: aes_192_cfb1_get_params Failed
      Top func: aes_128_ecb_newctx Failed
+     Top func: aes_freectx Failed
 
 8 Top func: aes_256_ofb_get_params
+     Top func: ossl_cipher_generic_stream_update Failed
+     Top func: ossl_cipher_generic_set_ctx_params Failed
 
-9 Top func: aes_cbc_cts_dinit
+9 Top func: aes_cbc_cts_set_ctx_params
 
-10 Top func: aes_dupctx
-
-11 Top func: aes_192_cfb_newctx
-
-12 Top func: aes_128_cfb1_newctx
-     Top func: aes_128_cfb8_get_params Failed
-
-13 Top func: aes_cbc_cts_set_ctx_params
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_128_cfb1_newctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-14Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+11 Top func: Merge complete --- Not blocked by TBAA or TFA check
 aes_128_ecb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+12 Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_dupctxMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -111,208 +112,207 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: aes_128_cfb8_get_params Failed
+
+13 Top func: aes_192_cfb_newctx
+
+14 Top func: aes_cbc_cts_dinit
+     Top func: aes_256_ofb_get_params Failed
 
 15 Top func: aes_256_ctr_newctx
-     Top func: aes_dupctx Failed
-     Top func: aes_cbc_cts_dinit Failed
-     Top func: aes_256_ofb_get_params Failed
      Top func: aes_128_cfb1_newctx Failed
-     Top func: aes_192_cfb_newctx Failed
-
-16 Top func: ossl_cipher_generic_einit
-
-17Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_cbc_cts_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-18 Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_192_ofb_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-19 Top func: aes_128_cfb1_get_params
      Top func: aes_128_ecb_get_params Failed
      Top func: aes_cbc_cts_set_ctx_params Failed
+     Top func: aes_dupctx Failed
 
-20 Top func: aes_192_cfb_get_params
-     Top func: aes_256_ctr_newctx Failed
+16 Top func: aes_192_ofb_newctx
+     Top func: aes_192_cfb_newctx Failed
 
-21 Top func: aes_256_cbc_newctx
+17 Top func: aes_128_cfb1_get_params
 
-22 Top func: aes_cbc_cts_gettable_ctx_params
-     Top func: ossl_cipher_generic_einit Failed
+18 Top func: aes_256_cbc_newctx
+
+19 Top func: aes_cbc_cts_gettable_ctx_params
+
+20 Top func: ossl_cipher_generic_einit
+     Top func: aes_cbc_cts_dinit FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_256_ctr_newctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+21Merge complete --- Not blocked by TBAA or TFA check
+ Top func: aes_192_cfb_get_params
+
+22 Top func: aes_cbc_cts_settable_ctx_params
+     Top func: aes_192_ofb_newctx Failed
 
 23 Top func: aes_256_ctr_get_params
-     Top func: aes_cbc_cts_settable_ctx_params Failed
-     Top func: aes_192_ofb_newctx Failed
+     Top func: aes_cbc_cts_gettable_ctx_params Failed
      Top func: aes_128_cfb1_get_params Failed
-     Top func: aes_192_cfb_get_params Failed
-
-24 Top func: ossl_cipher_generic_dinit
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-25 Top func: aes_cts_192_cbc_get_params
-
-26 Top func: aes_192_ofb_get_params
      Top func: aes_256_cbc_newctx Failed
 
-27 Top func: aes_256_cfb8_newctx
-     Top func: aes_cbc_cts_gettable_ctx_params Failed
+24 Top func: aes_192_ofb_get_params
+     Top func: ossl_cipher_generic_einit Failed
+     Top func: aes_192_cfb_get_params Failed
 
-28 Top func: aes_128_cfb_newctx
-     Top func: aes_256_ctr_get_params Failed
+25 Top func: ossl_cipher_generic_gettable_ctx_params
 
-29 Top func: aes_256_cbc_get_params
+26 Top func: aes_256_cfb8_newctx
+     Top func: aes_cbc_cts_settable_ctx_params Failed
 
-30 Top func: ossl_cipher_generic_gettable_ctx_params
-     Top func: ossl_cipher_generic_dinit Failed
-     Top func: aes_cts_192_cbc_get_params Failed
+27 Top func: aes_256_cbc_get_params
+
+28 Top func: ossl_cipher_generic_dinit
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_256_ctr_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+29Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_128_cfb_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+
+30 Top func: aes_cts_192_cbc_get_params
      Top func: aes_192_ofb_get_params Failed
 
 31 Top func: aes_192_ctr_newctx
-     Top func: aes_256_cfb8_newctx Failed
-     Top func: aes_128_cfb_newctx Failed
-
-32 Top func: ossl_cipher_generic_block_update
-
-33 Top func: aes_cts_128_cbc_get_params
-
-34 Top func: aes_128_ofb_newctx
      Top func: ossl_cipher_generic_gettable_ctx_params Failed
-
-35 Top func: aes_256_cfb8_get_params
+     Top func: aes_256_cfb8_newctx Failed
      Top func: aes_256_cbc_get_params Failed
 
-36 Top func: aes_128_cfb_get_params
+32 Top func: aes_128_ofb_newctx
+     Top func: aes_128_cfb_newctx Failed
+     Top func: ossl_cipher_generic_dinit Failed
+
+33 Top func: ossl_cipher_generic_settable_ctx_params
+     Top func: aes_cts_192_cbc_get_params Failed
+
+34 Top func: aes_256_cfb8_get_params
+
+35 Top func: aes_192_cbc_newctx
      Top func: aes_192_ctr_newctx Failed
 
-37 Top func: ossl_cipher_generic_settable_ctx_params
+36 Top func: aes_128_cfb_get_params
 
-38 Top func: aes_192_cbc_newctx
-     Top func: ossl_cipher_generic_block_update Failed
-     Top func: aes_cts_128_cbc_get_params Failed
+37 Top func: ossl_cipher_generic_block_update
+
+38 Top func: aes_cts_128_cbc_get_params
      Top func: aes_128_ofb_newctx Failed
 
 39 Top func: aes_192_ctr_get_params
-     Top func: aes_256_cfb8_get_params Failed
-
-40 Top func: ossl_cipher_generic_block_final
-
-41 Top func: ossl_cipher_generic_gettable_params
-
-42 Top func: aes_128_ofb_get_params
-     Top func: aes_128_cfb_get_params Failed
      Top func: ossl_cipher_generic_settable_ctx_params Failed
-
-43 Top func: aes_192_cfb8_newctx
+     Top func: aes_256_cfb8_get_params Failed
      Top func: aes_192_cbc_newctx Failed
 
-44 Top func: aes_256_cfb1_newctx
+40 Top func: aes_128_ofb_get_params
+     Top func: aes_128_cfb_get_params Failed
+     Top func: ossl_cipher_generic_block_update Failed
+     Top func: aes_cts_128_cbc_get_params Failed
+
+41 Top func: ossl_cipher_generic_skey_einit
+
+42 Top func: aes_192_cfb8_newctx
+
+43 Top func: aes_192_cbc_get_params
      Top func: aes_192_ctr_get_params Failed
 
-45 Top func: ossl_cipher_generic_skey_einit
-     Top func: ossl_cipher_generic_block_final Failed
-     Top func: ossl_cipher_generic_gettable_params Failed
+44 Top func: aes_256_cfb1_newctx
+
+45 Top func: ossl_cipher_generic_block_final
+
+46 Top func: ossl_cipher_generic_gettable_params
      Top func: aes_128_ofb_get_params Failed
 
-46 Top func: aes_192_cbc_get_params
-
 47 Top func: aes_128_ctr_newctx
-     Top func: aes_192_cfb8_newctx Failed
-
-48 Top func: ossl_cipher_generic_cipher
-
-49 Top func: ossl_cipher_cbc_cts_block_update
-
-50 Top func: aes_256_cfb_newctx
-     Top func: aes_256_cfb1_newctx Failed
      Top func: ossl_cipher_generic_skey_einit Failed
-
-51 Top func: aes_192_cfb8_get_params
-
-52 Top func: aes_256_cfb1_get_params
+     Top func: aes_192_cfb8_newctx Failed
      Top func: aes_192_cbc_get_params Failed
+
+48 Top func: aes_256_cfb_newctx
+     Top func: ossl_cipher_generic_block_final Failed
+     Top func: aes_256_cfb1_newctx Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
+
+49 Top func: ossl_cipher_generic_skey_dinit
+
+50 Top func: aes_192_cfb8_get_params
+
+51 Top func: aes_128_cbc_newctx
+
+52 Top func: ossl_cipher_generic_cipher
      Top func: aes_128_ctr_newctx Failed
 
-53 Top func: ossl_cipher_generic_skey_dinit
-     Top func: ossl_cipher_generic_cipher Failed
-     Top func: ossl_cipher_cbc_cts_block_update Failed
+53 Top func: aes_256_cfb1_get_params
+
+54 Top func: ossl_cipher_cbc_cts_block_update
      Top func: aes_256_cfb_newctx Failed
 
-54 Top func: aes_128_cbc_newctx
-
 55 Top func: aes_128_ctr_get_params
-
-56 Top func: aes_256_ecb_get_params
-
-57 Top func: ossl_cipher_cbc_cts_block_final
-     Top func: aes_192_cfb8_get_params Failed
-
-58 Top func: aes_256_cfb_get_params
-     Top func: aes_256_cfb1_get_params Failed
      Top func: ossl_cipher_generic_skey_dinit Failed
-
-59 Top func: aes_128_cfb8_newctx
-
-60 Top func: aes_192_cfb1_newctx
+     Top func: aes_192_cfb8_get_params Failed
+     Top func: ossl_cipher_generic_cipher Failed
      Top func: aes_128_cbc_newctx Failed
 
-61 Top func: aes_192_ecb_newctx
+56 Top func: aes_256_cfb_get_params
+     Top func: aes_256_cfb1_get_params Failed
+     Top func: ossl_cipher_cbc_cts_block_update Failed
+
+57 Top func: aes_192_ecb_newctx
+
+58 Top func: aes_128_cfb8_newctx
+
+59 Top func: aes_256_ecb_get_params
+
+60 Top func: aes_128_cbc_get_params
      Top func: aes_128_ctr_get_params Failed
-     Top func: ossl_cipher_cbc_cts_block_final Failed
-     Top func: aes_256_ecb_get_params Failed
+
+61 Top func: aes_192_cfb1_newctx
+
+62 Top func: ossl_cipher_cbc_cts_block_final
      Top func: aes_256_cfb_get_params Failed
 
-62 Top func: aes_128_cbc_get_params
-
 63 Top func: aes_cbc_cts_einit
-
-64 Top func: aes_cts_256_cbc_get_params
-
-65 Top func: ossl_cipher_generic_get_ctx_params
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_128_cfb8_newctxMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-66 Top func: Merge complete --- Not blocked by TBAA or TFA check
-aes_256_ecb_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: aes_192_cfb1_newctxMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: aes_192_ecb_newctx Failed
+     Top func: aes_128_cfb8_newctx Failed
+     Top func: aes_256_ecb_get_params Failed
+     Top func: aes_128_cbc_get_params Failed
 
-67 Top func: aes_192_ecb_get_params
+64 Top func: aes_256_ecb_newctx
+     Top func: aes_192_cfb1_newctx Failed
+     Top func: ossl_cipher_cbc_cts_block_final Failed
+
+65 Top func: aes_192_ecb_get_params
+
+66 Top func: ossl_cipher_generic_get_ctx_params
+
+67 Top func: aes_cts_256_cbc_get_params
 
 68 Top func: aes_256_ofb_newctx
-     Top func: aes_128_cbc_get_params Failed
      Top func: aes_cbc_cts_einit Failed
-     Top func: aes_cts_256_cbc_get_params Failed
      Top func: aes_256_ecb_newctx Failed
-     Top func: ossl_cipher_generic_get_ctx_params Failed
+     Top func: aes_cts_256_cbc_get_params Failed
      Top func: aes_192_ecb_get_params Failed
      Top func: aes_256_ofb_newctx Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: ossl_cipher_generic_get_ctx_params Failed
 
 Update global ICallees info
 
@@ -357,11 +357,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003133
-# Typebuilder time     		0.000575
-# MLTA time            		0.001574
-# Icall alias time     		1.1e-05
-# Func alias time      		0.009735
+# Load time            		0.003699
+# Typebuilder time     		0.000651
+# MLTA time            		0.002926
+# Icall alias time     		8e-06
+# Func alias time      		0.010673
 # One layer alias time 		6e-06
-# Escape alias time    		6e-05
-# DB time              		0.002536
+# Escape alias time    		5.5e-05
+# DB time              		0.002067

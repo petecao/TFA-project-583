@@ -25,9 +25,9 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_cmac_bad
+0 Top func: test_cmac_copy
 
-1 Top func: test_cmac_copy
+1 Top func: test_cmac_bad
 
 2 Top func: test_cmac_run
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002514
-# Typebuilder time     		0.000413
-# MLTA time            		0.000274
+# Load time            		0.011987
+# Typebuilder time     		0.000453
+# MLTA time            		0.000273
 # Icall alias time     		6.6e-05
-# Func alias time      		0.002269
-# One layer alias time 		8e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.001981
+# Func alias time      		0.008247
+# One layer alias time 		1.2e-05
+# Escape alias time    		7.1e-05
+# DB time              		0.002786

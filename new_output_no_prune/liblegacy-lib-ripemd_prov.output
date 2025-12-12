@@ -35,20 +35,20 @@ Openmp enabled
 
 4 Top func: ripemd160_copyctx
 
-5 Top func: ossl_digest_default_gettable_params
-
-6 Top func: ripemd160_get_params
-     Top func: ripemd160_newctx Failed
+5 Top func: ripemd160_get_params
      Top func: ripemd160_internal_final Failed
-     Top func: ossl_digest_default_gettable_params Failed
+     Top func: ripemd160_newctx Failed
      Top func: ripemd160_freectx Failed
-     Top func: ripemd160_copyctx Failed
      Top func: ripemd160_dupctx Failed
+     Top func: ripemd160_copyctx Failed
+
+6 Top func: ossl_digest_default_gettable_params
 
 7 Top func: RIPEMD160_Update
 
 8 Top func: ripemd160_internal_init
      Top func: ripemd160_get_params Failed
+     Top func: ossl_digest_default_gettable_params Failed
      Top func: RIPEMD160_Update Failed
      Top func: ripemd160_internal_init Failed
 
@@ -93,11 +93,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001784
-# Typebuilder time     		0.000227
-# MLTA time            		0.000236
-# Icall alias time     		5.9e-05
-# Func alias time      		0.000726
+# Load time            		0.001471
+# Typebuilder time     		0.000225
+# MLTA time            		0.000237
+# Icall alias time     		4.6e-05
+# Func alias time      		0.008174
 # One layer alias time 		6e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001969
+# DB time              		0.00196

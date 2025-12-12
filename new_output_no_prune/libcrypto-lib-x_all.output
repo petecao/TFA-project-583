@@ -26,51 +26,61 @@ Openmp enabled
  Start Func Alias Analysis
 
 0 Top func: i2d_DSAPrivateKey
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: i2d_X509_SIGMerge complete --- Not blocked by TBAA or TFA check
-
+ Top func: i2d_ECPrivateKey
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: d2i_DSAPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
-
+ Top func: d2i_DSAPrivateKey
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-3 Top func: i2d_PKCS8_PRIV_KEY_INFO
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: d2i_ECPrivateKey
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
- Top func: i2d_ECPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+ Top func: i2d_X509_SIG
 
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_ECPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
- Top func: i2d_X509_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
+i2d_PKCS8_PRIV_KEY_INFOMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-7Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_AutoPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+6 Top func: i2d_X509_PUBKEY
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-i2d_DSAPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: i2d_DSAPrivateKey
+DefinitionFuncSet size: 0
+aliased_callset size: 0
 
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: i2d_ECPrivateKey
+DefinitionFuncSet size: 0
+aliased_callset size: 0
 
+Analyzed func: d2i_DSAPrivateKey
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: d2i_ECPrivateKey
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Analyzed func: i2d_X509_SIG
@@ -81,213 +91,61 @@ Analyzed func: i2d_PKCS8_PRIV_KEY_INFO
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: i2d_ECPrivateKey
-DefinitionFuncSet size: 0
-aliased_callset size: 0
+7 Top func: d2i_DSA_PUBKEY
+Merge complete --- Not blocked by TBAA or TFA check
 
-8 Top func: d2i_DSA_PUBKEY
+Merge complete --- Not blocked by TBAA or TFA check
+8 Top func: Merge complete --- Not blocked by TBAA or TFA check
+X509_SIG_newMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+EC_KEY_new
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+RSA_new
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+11 Top func: X509_PUBKEY_new
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 i2d_X509_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-9 Top func: X509_PUBKEY_new
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_ECPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
-
+12 Top func: i2d_PrivateKey
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
-
-10 Top func: i2d_PrivateKey
-
 Merge complete --- Not blocked by TBAA or TFA check
-11Merge complete --- Not blocked by TBAA or TFA check
- Top func: X509_SIG_newMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_AutoPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
-
-12 Top func: PKCS8_PRIV_KEY_INFO_new
-
-Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-RSA_newMerge complete --- Not blocked by TBAA or TFA check
-
+13 Top func: PKCS8_PRIV_KEY_INFO_new
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 d2i_DSA_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: 0
-
-14 Top func: i2d_PUBKEY
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-X509_PUBKEY_newMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: 0
-
-Analyzed func: i2d_PrivateKey
-DefinitionFuncSet size: 0
+0
 aliased_callset size: 0
 
 Analyzed func: X509_SIG_new
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-15 Top func: i2d_DSA_PUBKEY
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-PKCS8_PRIV_KEY_INFO_newMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
-
-16 Top func: d2i_X509_PUBKEY
-
-Merge complete --- Not blocked by TBAA or TFA check
-17Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_PKEY_newMerge complete --- Not blocked by TBAA or TFA check
-
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-RSA_newMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-18 Top func: d2i_X509_SIG
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-i2d_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
-
-19 Top func: d2i_PKCS8_PRIV_KEY_INFO
-
-Merge complete --- Not blocked by TBAA or TFA check
-20Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_RSA_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
-
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-i2d_DSA_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: 0
-
-21 Top func: d2i_PUBKEY
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_X509_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
-
-Analyzed func: EVP_PKEY_new
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-Analyzed func: d2i_X509_SIG
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-22 Top func: DSA_new
-
-Merge complete --- Not blocked by TBAA or TFA check
-23Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2d_EC_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
-
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-d2i_PKCS8_PRIV_KEY_INFOMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: 0
-
-24 Top func: d2i_EC_PUBKEY
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_RSA_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
-
-25 Top func: EC_KEY_new
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-
-26 Top func: i2d_RSA_PUBKEY
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-DSA_newMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
-
-Analyzed func: i2d_EC_PUBKEY
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-Analyzed func: d2i_EC_PUBKEY
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -295,15 +153,157 @@ Analyzed func: EC_KEY_new
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: i2d_RSA_PUBKEY
+Analyzed func: RSA_new
 DefinitionFuncSet size: 0
 aliased_callset size: 0
+
+Analyzed func: X509_PUBKEY_new
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+14 Top func: i2d_DSA_PUBKEY
+
+Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+ Top func: d2i_X509_SIGMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+16Merge complete --- Not blocked by TBAA or TFA check
+ Top func: d2i_EC_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: d2i_DSAPrivateKey
+17 Top func: d2i_RSA_PUBKEY
+
+Merge complete --- Not blocked by TBAA or TFA check
+18Merge complete --- Not blocked by TBAA or TFA check
+ Top func: d2i_X509_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+i2d_PrivateKeyMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: PKCS8_PRIV_KEY_INFO_new
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+19 Top func: EVP_PKEY_new
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+i2d_DSA_PUBKEYMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+20 Top func: d2i_PKCS8_PRIV_KEY_INFO
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+d2i_X509_SIGMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: 0
+
+Analyzed func: d2i_EC_PUBKEY
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: d2i_RSA_PUBKEY
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: d2i_X509_PUBKEY
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+21 Top func: DSA_new
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+22Merge complete --- Not blocked by TBAA or TFA check
+ Top func: d2i_AutoPrivateKeyMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+23Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+i2d_EC_PUBKEY
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+24 Top func: i2d_RSA_PUBKEY
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+25Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+d2i_PUBKEY
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+EVP_PKEY_newMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: d2i_PKCS8_PRIV_KEY_INFO
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+26 Top func: i2d_PUBKEY
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+DSA_newMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: 0
+
+Analyzed func: d2i_AutoPrivateKey
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: i2d_EC_PUBKEY
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: i2d_RSA_PUBKEY
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: d2i_PUBKEY
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: i2d_PUBKEY
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -348,11 +348,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004463
-# Typebuilder time     		0.000564
-# MLTA time            		0.000447
-# Icall alias time     		5.5e-05
-# Func alias time      		0.00339
+# Load time            		0.033246
+# Typebuilder time     		0.000898
+# MLTA time            		0.000717
+# Icall alias time     		6.4e-05
+# Func alias time      		0.009161
 # One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.00206
+# Escape alias time    		5.9e-05
+# DB time              		0.002032

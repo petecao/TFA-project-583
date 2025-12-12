@@ -25,7 +25,7 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: CBIGNUM_it
+0 Top func: INT32_it
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
@@ -40,13 +40,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-INT32_itMerge complete --- Not blocked by TBAA or TFA check
+dsa_cbMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
@@ -54,8 +53,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-dsa_cbMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+CBIGNUM_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -203,30 +201,32 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: BIGNUM_it
+DefinitionFuncSet size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-CBIGNUM_itMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+INT32_it
 DefinitionFuncSet size: 0
-aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: BIGNUM_it
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-Analyzed func: INT32_it
-DefinitionFuncSet size: 0
-aliased_callset size: 0
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 
 Analyzed func: dsa_cb
 DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: CBIGNUM_it
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Update global ICallees info
@@ -270,11 +270,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001768
-# Typebuilder time     		0.000279
-# MLTA time            		0.000281
-# Icall alias time     		6.3e-05
-# Func alias time      		0.004351
+# Load time            		0.001428
+# Typebuilder time     		0.000322
+# MLTA time            		0.000312
+# Icall alias time     		4.7e-05
+# Func alias time      		0.008203
 # One layer alias time 		6e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002147
+# Escape alias time    		6.3e-05
+# DB time              		0.001873

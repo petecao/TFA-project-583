@@ -25,97 +25,97 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: eckey_pub_decode
+0 Top func: ec_security_bits
 
-1 Top func: eckey_priv_encode
+1 Top func: ec_copy_parameters
 
-2 Top func: ec_copy_parameters
+2 Top func: eckey_pub_decode
 
-3 Top func: int_ec_free
+3 Top func: eckey_priv_encode
 
-4 Top func: ec_security_bits
+4 Top func: ec_pkey_param_check
 
-5 Top func: old_ec_priv_encode
+5 Top func: int_ec_free
 
-6 Top func: ec_pkey_param_check
-     Top func: eckey_pub_decode Failed
-     Top func: eckey_priv_encode Failed
-     Top func: int_ec_free Failed
-     Top func: ec_copy_parameters Failed
-     Top func: old_ec_priv_encode Failed
+6 Top func: old_ec_priv_encode
      Top func: ec_security_bits Failed
-
-7 Top func: eckey_pub_encode
-
-8 Top func: eckey_priv_print
      Top func: ec_pkey_param_check Failed
+     Top func: eckey_priv_encode Failed
+     Top func: ec_copy_parameters Failed
+     Top func: eckey_pub_decode Failed
+     Top func: int_ec_free Failed
 
-9 Top func: ec_pkey_ctrl
+7 Top func: eckey_param_decode
+
+8 Top func: ec_pkey_dirty_cnt
+
+9 Top func: eckey_priv_print
 
 10 Top func: ec_cmp_parameters
+     Top func: old_ec_priv_encode Failed
 
-11 Top func: ec_pkey_check
+11 Top func: eckey_pub_encode
 
-12 Top func: eckey_param_decode
+12 Top func: ec_pkey_ctrl
 
-13 Top func: ec_pkey_dirty_cnt
+13 Top func: ec_pkey_check
+     Top func: ec_pkey_dirty_cnt Failed
+     Top func: eckey_param_decode Failed
      Top func: eckey_priv_print Failed
-     Top func: eckey_pub_encode Failed
      Top func: ec_cmp_parameters Failed
+     Top func: eckey_pub_encode Failed
+
+14 Top func: ec_pkey_export_to
+
+15 Top func: eckey_param_encode
+
+16 Top func: int_ec_size
+
+17 Top func: eckey_param_print
      Top func: ec_pkey_ctrl Failed
      Top func: ec_pkey_check Failed
 
-14 Top func: int_ec_size
+18 Top func: eckey_pub_cmp
 
-15 Top func: eckey_pub_cmp
-     Top func: eckey_param_decode Failed
+19 Top func: old_ec_priv_decode
 
-16 Top func: eckey_param_print
-     Top func: ec_pkey_dirty_cnt Failed
-
-17 Top func: old_ec_priv_decode
-
-18 Top func: ec_pkey_public_check
-
-19 Top func: eckey_param_encode
-
-20 Top func: ec_pkey_export_to
-     Top func: eckey_pub_cmp Failed
-     Top func: int_ec_size Failed
+20 Top func: ec_pkey_public_check
+     Top func: ec_pkey_export_to Failed
+     Top func: eckey_param_encode Failed
      Top func: eckey_param_print Failed
-     Top func: old_ec_priv_decode Failed
+     Top func: int_ec_size Failed
 
-21 Top func: eckey_pub_print
+21 Top func: ec_pkey_import_from
 
-22 Top func: ec_bits
-     Top func: ec_pkey_public_checkMerge complete --- Not blocked by TBAA or TFA check
+22 Top func: ec_missing_parameters
+
+23 Top func: eckey_priv_decode_ex
+
+24 Top func: ec_bits
+     Top func: old_ec_priv_decodeMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-eckey_param_encodeMerge complete --- Not blocked by TBAA or TFA check
+ec_pkey_public_checkMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckey_pub_cmpMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-23Merge complete --- Not blocked by TBAA or TFA check
- Top func: ec_pkey_import_fromMerge complete --- Not blocked by TBAA or TFA check
+25 Top func: ec_pkey_copy
 
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: ec_pkey_export_to Failed
-
-24 Top func: ec_missing_parameters
-
-25 Top func: eckey_priv_decode_ex
-
-26 Top func: ec_pkey_copy
-     Top func: eckey_pub_print Failed
-     Top func: ec_pkey_import_from Failed
-     Top func: ec_bits Failed
-     Top func: eckey_priv_decode_ex Failed
+26 Top func: eckey_pub_print
      Top func: ec_missing_parameters Failed
+     Top func: ec_pkey_import_from Failed
+     Top func: eckey_priv_decode_ex Failed
      Top func: ec_pkey_copy Failed
+     Top func: ec_bits Failed
+     Top func: eckey_pub_print Failed
 
 Update global ICallees info
 
@@ -160,11 +160,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00451
-# Typebuilder time     		0.000522
-# MLTA time            		0.00063
-# Icall alias time     		8.7e-05
-# Func alias time      		0.001736
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002078
+# Load time            		0.003948
+# Typebuilder time     		0.000532
+# MLTA time            		0.000592
+# Icall alias time     		0.000111
+# Func alias time      		0.005527
+# One layer alias time 		9e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.001971

@@ -375,13 +375,25 @@ empty struct_fields
 
  Start Func Alias Analysis
 
-0 Top func: test_rxfc
+0 Top func: test_txfc
 
 1 Top func: fake_now
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_txfc
+ Top func: test_rxfc
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_txfcMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
@@ -395,18 +407,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_txfcMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -560,11 +560,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003332
-# Typebuilder time     		0.002525
-# MLTA time            		0.000301
+# Load time            		0.003347
+# Typebuilder time     		0.002529
+# MLTA time            		0.000299
 # Icall alias time     		6.8e-05
-# Func alias time      		0.00123
-# One layer alias time 		6e-06
+# Func alias time      		0.001275
+# One layer alias time 		8e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002102
+# DB time              		0.002101

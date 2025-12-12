@@ -25,14 +25,11 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: GENERAL_NAME_it
+0 Top func: NAME_CONSTRAINTS_it
 
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ASN1_INTEGER_itMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: GENERAL_NAME_itMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -43,46 +40,49 @@ v2i_NAME_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: NAME_CONSTRAINTS_it
+3 Top func: ASN1_INTEGER_it
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_NAME_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
+GENERAL_SUBTREE_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-5 Top func: GENERAL_SUBTREE_itMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+i2r_NAME_CONSTRAINTS
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+NAME_CONSTRAINTS_it FailedMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+v2i_NAME_CONSTRAINTS Failed
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-GENERAL_NAME_it
+GENERAL_NAME_itMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
 
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-v2i_NAME_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
- Failed
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_NAME_CONSTRAINTSMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+     Top func: i2r_NAME_CONSTRAINTS Failed
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ASN1_INTEGER_itMerge complete --- Not blocked by TBAA or TFA check
-
+Analyzed func: ASN1_INTEGER_it
 DefinitionFuncSet size: 0
 aliased_callset size: 0
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-NAME_CONSTRAINTS_it Failed
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -132,11 +132,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.016635
-# Typebuilder time     		0.000514
-# MLTA time            		0.00042
-# Icall alias time     		6.3e-05
-# Func alias time      		0.003404
-# One layer alias time 		7e-06
-# Escape alias time    		5.8e-05
-# DB time              		0.002025
+# Load time            		0.004238
+# Typebuilder time     		0.000572
+# MLTA time            		0.000467
+# Icall alias time     		6.9e-05
+# Func alias time      		0.007753
+# One layer alias time 		9e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.001968

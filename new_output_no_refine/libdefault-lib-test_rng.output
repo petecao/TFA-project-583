@@ -27,94 +27,94 @@ Openmp enabled
 
 0 Top func: test_rng_new
 
-1 Top func: test_rng_instantiate
+1 Top func: test_rng_nonce
 
-2 Top func: test_rng_nonce
+2 Top func: test_rng_instantiate
 
 3 Top func: test_rng_generate
 
 4 Top func: test_rng_lock
 
-5 Top func: test_rng_gettable_ctx_params
+5 Top func: test_rng_settable_ctx_params
 
-6 Top func: test_rng_settable_ctx_params
-
-7 Top func: test_rng_verify_zeroization
+6 Top func: test_rng_verify_zeroization
      Top func: test_rng_new Failed
+     Top func: test_rng_nonce Failed
      Top func: test_rng_instantiate Failed
      Top func: test_rng_generate Failed
-     Top func: test_rng_nonce Failed
-     Top func: test_rng_lock Failed
-     Top func: test_rng_gettable_ctx_params Failed
      Top func: test_rng_settable_ctx_params Failed
+     Top func: test_rng_lock Failed
 
-8 Top func: test_rng_free
+7 Top func: test_rng_free
+
+8 Top func: test_rng_enable_locking
 
 9 Top func: test_rng_uninstantiate
 
 10 Top func: test_rng_reseed
 
-11 Top func: test_rng_enable_locking
-     Top func: test_rng_verify_zeroization Failed
+11 Top func: test_rng_set_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-12 Top func: test_rng_unlock
+Merge complete --- Not blocked by TBAA or TFA check
+12Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_unlockMerge complete --- Not blocked by TBAA or TFA check
 
-13 Top func: test_rng_get_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_verify_zeroizationMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
-14 Top func: test_rng_set_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: test_rng_freeMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
-15 Top func: test_rng_get_seed
-     Top func: test_rng_free Failed
-     Top func: test_rng_reseed Failed
-     Top func: test_rng_uninstantiate Failed
-     Top func: test_rng_enable_locking Failed
-     Top func: test_rng_get_ctx_params Failed
-     Top func: test_rng_unlock Failed
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+13Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_get_seedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_uninstantiateMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_reseedMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_enable_lockingMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_unlockMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+14Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_rng_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+
+15 Top func: test_rng_get_ctx_params
      Top func: test_rng_get_seed Failed
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: test_rng_gettable_ctx_params Failed
+     Top func: test_rng_get_ctx_params Failed
      Top func: test_rng_set_ctx_params Failed
 
 Update global ICallees info
@@ -158,11 +158,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002709
-# Typebuilder time     		0.000516
-# MLTA time            		0.000274
-# Icall alias time     		6.3e-05
-# Func alias time      		0.005329
+# Load time            		0.002564
+# Typebuilder time     		0.000362
+# MLTA time            		0.000277
+# Icall alias time     		7.1e-05
+# Func alias time      		0.004837
 # One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002081
+# Escape alias time    		5.6e-05
+# DB time              		0.002402

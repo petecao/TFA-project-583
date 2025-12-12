@@ -25,35 +25,42 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: trans_cb
+0 Top func: ossl_callback_to_pkey_gencb
+
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+trans_cbMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_callback_to_pkey_gencb
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_pkey_todata_cbMerge complete --- Not blocked by TBAA or TFA check
+pkey_fake_importMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-pkey_fake_importMerge complete --- Not blocked by TBAA or TFA check
+ossl_pkey_todata_cbMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 trans_cbMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -71,25 +78,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -128,7 +117,24 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -141,19 +147,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_pkey_todata_cb
+ossl_pkey_todata_cbMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -180,21 +180,21 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %24 = call i32 %22(ptr noundef %23), !dbg !1014
+0 Update icall:   %148 = call i32 %144(ptr noundef %145, ptr noundef %147), !dbg !1123
 
-1 Update icall:   %148 = call i32 %144(ptr noundef %145, ptr noundef %147), !dbg !1123
+1 Update icall:   %158 = call i32 %154(ptr noundef %155, ptr noundef %157), !dbg !1132
 
-2 Update icall:   %49 = call i32 %47(ptr noundef %48), !dbg !1035
+2 Update icall:   %24 = call i32 %22(ptr noundef %23), !dbg !1014
 
-3 Update icall:   %158 = call i32 %154(ptr noundef %155, ptr noundef %157), !dbg !1132
+3 Update icall:   %111 = call i32 %109(ptr noundef %110), !dbg !1090
 
-4 Update icall:   %111 = call i32 %109(ptr noundef %110), !dbg !1090
+4 Update icall:   %16 = call i32 %11(ptr noundef %12, ptr noundef %15), !dbg !100
 
-5 Update icall:   %95 = call i32 %93(ptr noundef %94), !dbg !1078
+5 Update icall:   %49 = call i32 %47(ptr noundef %48), !dbg !1035
 
-6 Update icall:   %35 = call i32 %33(ptr noundef %34, ptr noundef %10, ptr noundef @pkey_fake_import, ptr noundef null, ptr noundef null), !dbg !1022
+6 Update icall:   %95 = call i32 %93(ptr noundef %94), !dbg !1078
 
-7 Update icall:   %16 = call i32 %11(ptr noundef %12, ptr noundef %15), !dbg !100
+7 Update icall:   %35 = call i32 %33(ptr noundef %34, ptr noundef %10, ptr noundef @pkey_fake_import, ptr noundef null, ptr noundef null), !dbg !1022
 
  Start ICall Alias Analysis
 
@@ -277,11 +277,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.00528
-# Typebuilder time     		0.000314
-# MLTA time            		0.000407
-# Icall alias time     		0.000746
-# Func alias time      		0.013592
-# One layer alias time 		6.6e-05
-# Escape alias time    		0.00086
-# DB time              		0.002294
+# Load time            		0.004232
+# Typebuilder time     		0.000304
+# MLTA time            		0.000347
+# Icall alias time     		0.000727
+# Func alias time      		0.014262
+# One layer alias time 		8e-06
+# Escape alias time    		7.4e-05
+# DB time              		0.002134

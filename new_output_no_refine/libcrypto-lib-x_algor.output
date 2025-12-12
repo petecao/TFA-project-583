@@ -25,7 +25,7 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: X509_ALGOR_it
+0 Top func: ASN1_ANY_it
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
@@ -37,14 +37,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-ASN1_ANY_itMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+X509_ALGOR_itMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -139,18 +133,24 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ASN1_OBJECT_itMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ASN1_ANY_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 0
+aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: ASN1_OBJECT_it
+DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
+
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
-
-Analyzed func: ASN1_ANY_it
-DefinitionFuncSet size: 0
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: X509_ALGOR_it
 DefinitionFuncSet size: 1
@@ -197,11 +197,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.03259
-# Typebuilder time     		0.000595
-# MLTA time            		0.000333
-# Icall alias time     		8.3e-05
-# Func alias time      		0.008668
-# One layer alias time 		6e-06
-# Escape alias time    		6e-05
-# DB time              		0.002042
+# Load time            		0.001952
+# Typebuilder time     		0.000346
+# MLTA time            		0.000211
+# Icall alias time     		6.6e-05
+# Func alias time      		0.001015
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001984

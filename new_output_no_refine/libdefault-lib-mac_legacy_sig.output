@@ -27,9 +27,13 @@ Openmp enabled
 
 0 Top func: mac_hmac_newctx
 
-1 Top func: mac_digest_sign_update
+1 Top func: mac_freectx
 
-2 Top func: mac_freectx
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: mac_digest_sign_updateMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
@@ -41,76 +45,72 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_cmac_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
 mac_siphash_newctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_poly1305_newctxMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_hmac_newctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_cmac_newctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_set_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_digest_sign_updateMerge complete --- Not blocked by TBAA or TFA check
+ Failed
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_siphash_newctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
-5 Top func: mac_cmac_newctx
+7 Top func: Merge complete --- Not blocked by TBAA or TFA check
+mac_digest_sign_initMerge complete --- Not blocked by TBAA or TFA check
 
-6 Top func: mac_poly1305_newctx
+Merge complete --- Not blocked by TBAA or TFA check
 
-7 Top func: mac_cmac_settable_ctx_params
-     Top func: mac_digest_sign_update Failed
-     Top func: mac_hmac_newctx Failed
-     Top func: mac_set_ctx_params Failed
-     Top func: mac_siphash_newctx Failed
-     Top func: mac_cmac_newctx Failed
-     Top func: mac_freectx Failed
+8 Top func: mac_cmac_settable_ctx_params
+
+9 Top func: mac_hmac_settable_ctx_params
      Top func: mac_poly1305_newctx Failed
 
-8 Top func: mac_digest_sign_final
-
-9 Top func: mac_digest_sign_init
-
-10 Top func: mac_hmac_settable_ctx_params
+10 Top func: mac_digest_sign_final
 
 11 Top func: mac_siphash_settable_ctx_params
 
-12 Top func: mac_dupctx
-     Top func: mac_cmac_settable_ctx_params Failed
-
-13 Top func: mac_poly1305_settable_ctx_params
+12 Top func: mac_poly1305_settable_ctx_params
      Top func: mac_digest_sign_init Failed
-     Top func: mac_digest_sign_final Failed
+     Top func: mac_freectx Failed
+     Top func: mac_cmac_settable_ctx_params Failed
      Top func: mac_hmac_settable_ctx_params Failed
-     Top func: mac_dupctx Failed
+     Top func: mac_digest_sign_final Failed
+
+13 Top func: mac_dupctx
      Top func: mac_siphash_settable_ctx_params Failed
      Top func: mac_poly1305_settable_ctx_params Failed
+     Top func: mac_dupctx Failed
 
 Update global ICallees info
 
@@ -153,11 +153,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002199
-# Typebuilder time     		0.000306
-# MLTA time            		0.000347
-# Icall alias time     		6.9e-05
-# Func alias time      		0.002286
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001971
+# Load time            		0.001985
+# Typebuilder time     		0.000336
+# MLTA time            		0.000443
+# Icall alias time     		8.4e-05
+# Func alias time      		0.004555
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002335

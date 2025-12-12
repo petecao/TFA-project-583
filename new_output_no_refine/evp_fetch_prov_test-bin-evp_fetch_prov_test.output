@@ -25,11 +25,11 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_legacy_provider_unloaded
+0 Top func: test_explicit_EVP_CIPHER_fetch_by_X509_ALGOR
 
 Merge complete --- Not blocked by TBAA or TFA check
 1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_explicit_EVP_MD_fetch_by_name
+test_legacy_provider_unloaded
 
 Merge complete --- Not blocked by TBAA or TFA check
 2 Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -37,7 +37,7 @@ test_implicit_EVP_MD_fetch
 
 Merge complete --- Not blocked by TBAA or TFA check
 3 Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_explicit_EVP_CIPHER_fetch_by_X509_ALGOR
+test_explicit_EVP_MD_fetch_by_name
 
 Merge complete --- Not blocked by TBAA or TFA check
 4 Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -57,7 +57,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_implicit_EVP_MD_fetch
+Analyzed func: test_explicit_EVP_CIPHER_fetch_by_X509_ALGOR
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -65,15 +65,15 @@ Analyzed func: test_explicit_EVP_MD_fetch_by_name
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_explicit_EVP_CIPHER_fetch_by_X509_ALGOR
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_implicit_EVP_CIPHER_fetch
+Analyzed func: test_implicit_EVP_MD_fetch
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_explicit_EVP_MD_fetch_by_X509_ALGOR
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_implicit_EVP_CIPHER_fetch
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -122,11 +122,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003301
-# Typebuilder time     		0.000388
-# MLTA time            		0.000275
-# Icall alias time     		8.1e-05
-# Func alias time      		0.001036
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002098
+# Load time            		0.003242
+# Typebuilder time     		0.000393
+# MLTA time            		0.000271
+# Icall alias time     		9.9e-05
+# Func alias time      		0.008271
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002119

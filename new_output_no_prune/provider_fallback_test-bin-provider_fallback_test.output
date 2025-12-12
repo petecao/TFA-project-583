@@ -29,11 +29,11 @@ Openmp enabled
 
 1 Top func: test_fallback_provider
 
-Analyzed func: test_fallback_provider
+Analyzed func: test_explicit_provider
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_explicit_provider
+Analyzed func: test_fallback_provider
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001282
-# Typebuilder time     		0.000191
-# MLTA time            		0.000174
-# Icall alias time     		7.6e-05
-# Func alias time      		0.001595
-# One layer alias time 		7e-06
-# Escape alias time    		5.8e-05
-# DB time              		0.001959
+# Load time            		0.001167
+# Typebuilder time     		0.000165
+# MLTA time            		0.00018
+# Icall alias time     		3.4e-05
+# Func alias time      		0.000374
+# One layer alias time 		5e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001998

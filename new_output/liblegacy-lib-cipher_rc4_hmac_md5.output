@@ -1,0 +1,189 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc4_hmac_md5.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc4_hmac_md5.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/liblegacy-lib-cipher_rc4_hmac_md5.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc4_hmac_md5.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: rc4_hmac_md5_newctx
+
+1 Top func: rc4_hmac_md5_get_params
+
+2 Top func: ossl_cipher_generic_stream_final
+
+3 Top func: rc4_hmac_md5_dupctx
+
+4 Top func: rc4_hmac_md5_dinit
+
+5 Top func: rc4_hmac_md5_get_ctx_params
+
+6 Top func: rc4_hmac_md5_settable_ctx_params
+     Top func: rc4_hmac_md5_get_params Failed
+     Top func: rc4_hmac_md5_newctx Failed
+     Top func: ossl_cipher_generic_stream_final Failed
+     Top func: rc4_hmac_md5_get_ctx_params Failed
+     Top func: rc4_hmac_md5_dupctx Failed
+     Top func: rc4_hmac_md5_dinit Failed
+
+7 Top func: ossl_cipher_generic_gettable_params
+
+8 Top func: rc4_hmac_md5_freectx
+
+9 Top func: ossl_cipher_generic_cipher
+
+10 Top func: rc4_hmac_md5_gettable_ctx_params
+     Top func: rc4_hmac_md5_settable_ctx_params Failed
+
+11 Top func: rc4_hmac_md5_einit
+
+12 Top func: ossl_cipher_generic_stream_update
+
+13 Top func: rc4_hmac_md5_set_ctx_params
+     Top func: ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_hmac_md5_freectxMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_cipherMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_hmac_md5_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_hmac_md5_einit FailedMerge complete --- Not blocked by TBAA or TFA check
+
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_stream_updateMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: rc4_hmac_md5_set_ctx_params Failed
+
+Update global ICallees info
+
+0 Update icall:   call void %109(ptr noundef %111, ptr noundef %115, i64 noundef %119), !dbg !400
+
+1 Update icall:   %83 = call i32 %72(ptr noundef %74, ptr noundef %78, i64 noundef %82), !dbg !369
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				2
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.002588
+# Typebuilder time     		0.00036
+# MLTA time            		0.000332
+# Icall alias time     		6.7e-05
+# Func alias time      		0.004717
+# One layer alias time 		7e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001951

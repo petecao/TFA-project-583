@@ -27,26 +27,25 @@ Openmp enabled
 
 0 Top func: test_sanity_enum_size
 
-1 Top func: test_sanity_sign
+1 Top func: test_sanity_unsigned_conversion
 
-2 Top func: test_sanity_range
+2 Top func: test_sanity_sign
 
-3 Top func: test_sanity_unsigned_conversion
+3 Top func: test_sanity_range
 
 4 Top func: test_sanity_memcmp
 
-5 Top func: test_sanity_null_zero
+5 Top func: test_sanity_sleep
 
-6 Top func: test_sanity_sleep
+6 Top func: test_sanity_null_zero
 
 7 Top func: alrm_handler
 
 Analyzed func: test_sanity_sign
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -58,21 +57,22 @@ DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+
+Analyzed func: test_sanity_unsigned_conversion
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_sanity_range
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_sanity_unsigned_conversion
+Analyzed func: test_sanity_sleep
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_sanity_memcmp
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_sanity_null_zero
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -82,11 +82,11 @@ Analyzed func: alrm_handler
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_sanity_twos_complement
+Analyzed func: test_sanity_null_zero
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_sanity_sleep
+Analyzed func: test_sanity_twos_complement
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -131,11 +131,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00217
-# Typebuilder time     		0.000342
-# MLTA time            		0.000226
-# Icall alias time     		6.1e-05
-# Func alias time      		0.00187
-# One layer alias time 		6e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002207
+# Load time            		0.00188
+# Typebuilder time     		0.000394
+# MLTA time            		0.000258
+# Icall alias time     		7e-05
+# Func alias time      		0.002092
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002041

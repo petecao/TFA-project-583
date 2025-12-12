@@ -25,49 +25,49 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: chacha20_poly1305_initiv
+0 Top func: chacha20_poly1305_aead_cipher
 
-1 Top func: chacha20_poly1305_initkey
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+chacha_poly1305_tls_initMerge complete --- Not blocked by TBAA or TFA check
 
-2 Top func: chacha_poly1305_tls_init
+
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+chacha20_poly1305_initivMerge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-chacha20_poly1305_aead_cipherMerge complete --- Not blocked by TBAA or TFA check
+chacha20_poly1305_initkeyMerge complete --- Not blocked by TBAA or TFA check
 
 
-4 Top func: chacha_poly1305_tls_iv_set_fixed
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+chacha_poly1305_tls_iv_set_fixedMerge complete --- Not blocked by TBAA or TFA check
+
+
+Analyzed func: chacha20_poly1305_aead_cipherMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: 0
 
 Analyzed func: chacha_poly1305_tls_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: chacha20_poly1305_initiv
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: chacha20_poly1305_initkey
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: chacha20_poly1305_aead_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003061
-# Typebuilder time     		0.000317
-# MLTA time            		0.000326
-# Icall alias time     		7.8e-05
-# Func alias time      		0.003683
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.00215
+# Load time            		0.003244
+# Typebuilder time     		0.00033
+# MLTA time            		0.000305
+# Icall alias time     		9e-05
+# Func alias time      		0.001525
+# One layer alias time 		8.3e-05
+# Escape alias time    		0.001051
+# DB time              		0.002451

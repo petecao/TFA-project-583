@@ -25,18 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ASN1_OBJECT_it
+0 Top func: EXTENDED_KEY_USAGE_it
 
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: i2v_EXTENDED_KEY_USAGE
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: EXTENDED_KEY_USAGE_it
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-i2v_EXTENDED_KEY_USAGEMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ASN1_OBJECT_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -44,22 +41,32 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-v2i_EXTENDED_KEY_USAGEMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+v2i_EXTENDED_KEY_USAGE
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
+4 Top func: Merge complete --- Not blocked by TBAA or TFA check
+ASN1_OBJECT_freeMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
-ASN1_OBJECT_free
-     Top func: v2i_EXTENDED_KEY_USAGEMerge complete --- Not blocked by TBAA or TFA check
- Failed
+     Top func: EXTENDED_KEY_USAGE_itMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2v_EXTENDED_KEY_USAGE FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+i2v_EXTENDED_KEY_USAGEMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+v2i_EXTENDED_KEY_USAGEMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -68,19 +75,12 @@ Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 ASN1_OBJECT_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-EXTENDED_KEY_USAGE_itMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -133,11 +133,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001521
-# Typebuilder time     		0.000233
-# MLTA time            		0.000223
-# Icall alias time     		7.7e-05
-# Func alias time      		0.000706
-# One layer alias time 		7.4e-05
-# Escape alias time    		0.000768
-# DB time              		0.002497
+# Load time            		0.001666
+# Typebuilder time     		0.000332
+# MLTA time            		0.00028
+# Icall alias time     		6.6e-05
+# Func alias time      		0.000818
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002071

@@ -27,13 +27,11 @@ Openmp enabled
 
 0 Top func: sk_ASYNC_JOB_freefunc_thunk
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-async_delete_thread_state
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+async_delete_thread_stateMerge complete --- Not blocked by TBAA or TFA check
+
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 sk_ASYNC_JOB_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
@@ -42,8 +40,10 @@ Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -145,11 +145,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.002291
-# Typebuilder time     		0.000304
-# MLTA time            		0.000265
-# Icall alias time     		0.000334
-# Func alias time      		0.001031
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002173
+# Load time            		0.002954
+# Typebuilder time     		0.000337
+# MLTA time            		0.000316
+# Icall alias time     		0.000327
+# Func alias time      		0.001041
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002028

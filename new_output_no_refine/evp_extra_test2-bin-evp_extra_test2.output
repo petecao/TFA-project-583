@@ -40,28 +40,28 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_dh_paramgen
+ Top func: test_dsa_todataMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_dsa_todataMerge complete --- Not blocked by TBAA or TFA check
+test_evp_md_ctx_copy2Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_pkey_export_nullMerge complete --- Not blocked by TBAA or TFA check
+test_dh_paramgenMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_evp_md_ctx_copy2Merge complete --- Not blocked by TBAA or TFA check
+test_pkey_export_nullMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -78,7 +78,7 @@ test_dsa_todataMerge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_dh_paramgen
+Analyzed func: test_evp_md_ctx_copy2
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -86,45 +86,41 @@ Analyzed func: test_ec_tofrom_data_select
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_evp_md_ctx_copy2
+Analyzed func: test_dh_paramgen
 DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+7 Top func: test_dsa_tofrom_data_select
+
+8 Top func: test_provider_unload_effective
+
+9 Top func: test_ecx_tofrom_data_select
+
+Analyzed func: tls_provider_init
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Analyzed func: test_pkey_export_null
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: test_dsa_tofrom_data_select
-
-8 Top func: test_dh_paramfromdata
-
-9 Top func: test_ecx_tofrom_data_select
-
-10 Top func: test_provider_unload_effective
-
-Analyzed func: tls_provider_init
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-11 Top func: test_pkey_export
+10 Top func: test_dh_paramfromdata
 
 Analyzed func: test_PEM_read_bio_negative_wrong_password
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-12 Top func: test_d2i_AutoPrivateKey_ex
+11 Top func: test_d2i_AutoPrivateKey_ex
+
+12 Top func: test_pkey_export
+
+13 Top func: test_rsa_pss_sign
 
 Analyzed func: test_dsa_tofrom_data_select
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-13 Top func: test_rsa_pss_sign
-
 Analyzed func: test_provider_unload_effective
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_dh_paramfromdata
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -132,7 +128,7 @@ Analyzed func: test_ecx_tofrom_data_select
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_pkey_export
+Analyzed func: test_dh_paramfromdata
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -140,37 +136,33 @@ aliased_callset size: 0
 
 15 Top func: test_evp_pbe_alg_add
 
-16 Top func: test_rsa_tofrom_data_select
-
-17 Top func: test_ec_d2i_i2d_pubkey
-
-18 Top func: test_pkcs8key_nid_bio
-
 Analyzed func: test_d2i_AutoPrivateKey_ex
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+
+16 Top func: test_ec_d2i_i2d_pubkey
 
 Analyzed func: test_rsa_pss_sign
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-19 Top func: test_new_keytype
+Analyzed func: test_pkey_export
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-20 Top func: test_evp_md_ctx_dup
+17 Top func: test_rsa_tofrom_data_select
+
+18 Top func: test_new_keytype
+
+19 Top func: test_evp_md_ctx_dup
+
+20 Top func: test_pkcs8key_nid_bio
 
 Analyzed func: test_evp_pbe_alg_add
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_dsa_fromdata_digest_prop
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_rsa_tofrom_data_select
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_pkcs8key_nid_bio
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -182,11 +174,11 @@ aliased_callset size: 0
 
 22 Top func: test_dh_tofrom_data_select
 
-23 Top func: test_pkey_todata_null
+23 Top func: test_sm2_tofrom_data_select
 
-24 Top func: test_PEM_read_bio_negative
-
-25 Top func: test_sm2_tofrom_data_select
+Analyzed func: test_rsa_tofrom_data_select
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_new_keytype
 DefinitionFuncSet size: 1
@@ -196,23 +188,23 @@ Analyzed func: test_evp_md_ctx_dup
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-26 Top func: test_d2i_PrivateKey_ex
+Analyzed func: test_pkcs8key_nid_bio
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+24 Top func: test_pkey_todata_null
+
+25 Top func: test_d2i_PrivateKey_ex
+
+26 Top func: test_evp_md_ctx_copy
+
+27 Top func: test_PEM_read_bio_negative
 
 Analyzed func: PKCS5_PBE_keyivgen
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-27 Top func: test_evp_md_ctx_copy
-
 Analyzed func: test_dh_tofrom_data_select
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_pkey_todata_null
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_PEM_read_bio_negative
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -224,52 +216,60 @@ aliased_callset size: 0
 
 29 Top func: test_pkey_export_cb
 
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_pkey_todata_nullMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 30Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 test_alternative_defaultMerge complete --- Not blocked by TBAA or TFA check
-
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_d2i_PrivateKey_exMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_evp_md_ctx_copyMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-evp_test_name_parsingMerge complete --- Not blocked by TBAA or TFA check
-
+Analyzed func: test_evp_md_ctx_copy
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_alternative_default
+Analyzed func: test_d2i_PrivateKey_ex
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_PEM_read_bio_negative
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_pkey_export_cb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: evp_test_name_parsing
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_alternative_default
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -314,11 +314,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.007673
-# Typebuilder time     		0.000806
-# MLTA time            		0.000486
-# Icall alias time     		7.5e-05
-# Func alias time      		0.003065
+# Load time            		0.007669
+# Typebuilder time     		0.000805
+# MLTA time            		0.00049
+# Icall alias time     		8.4e-05
+# Func alias time      		0.00335
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.00219
+# DB time              		0.002038

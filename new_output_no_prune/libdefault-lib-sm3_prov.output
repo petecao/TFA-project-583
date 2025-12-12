@@ -25,32 +25,32 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: sm3_newctx
+0 Top func: sm3_freectx
 
-1 Top func: sm3_freectx
+1 Top func: sm3_newctx
 
-2 Top func: sm3_dupctx
+2 Top func: sm3_copyctx
 
 3 Top func: sm3_internal_final
 
-4 Top func: sm3_copyctx
+4 Top func: sm3_dupctx
 
 5 Top func: sm3_get_params
-
-6 Top func: sm3_internal_init
      Top func: sm3_newctx Failed
      Top func: sm3_freectx Failed
+     Top func: sm3_copyctx Failed
      Top func: sm3_internal_final Failed
      Top func: sm3_dupctx Failed
+
+6 Top func: ossl_sm3_update
+
+7 Top func: ossl_digest_default_gettable_params
+
+8 Top func: sm3_internal_init
      Top func: sm3_get_params Failed
-     Top func: sm3_copyctx Failed
-
-7 Top func: ossl_sm3_update
-
-8 Top func: ossl_digest_default_gettable_params
-     Top func: sm3_internal_init Failed
      Top func: ossl_sm3_update Failed
      Top func: ossl_digest_default_gettable_params Failed
+     Top func: sm3_internal_init Failed
 
 Update global ICallees info
 
@@ -93,11 +93,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001392
-# Typebuilder time     		0.000229
-# MLTA time            		0.000247
-# Icall alias time     		6e-05
-# Func alias time      		0.000875
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.001965
+# Load time            		0.005284
+# Typebuilder time     		0.000239
+# MLTA time            		0.000231
+# Icall alias time     		0.000102
+# Func alias time      		0.012372
+# One layer alias time 		6e-06
+# Escape alias time    		5.9e-05
+# DB time              		0.002294

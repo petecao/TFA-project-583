@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_pkcs5_pbe_rc4_md5
+0 Top func: test_pkcs5_pbe_des_sha1
 
-1 Top func: test_pkcs5_pbe_des_sha1
+1 Top func: test_pkcs5_pbe_rc4_md5
 
-Analyzed func: test_pkcs5_pbe_rc4_md5
+Analyzed func: test_pkcs5_pbe_des_sha1
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_pkcs5_pbe_des_sha1
+Analyzed func: test_pkcs5_pbe_rc4_md5
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001418
-# Typebuilder time     		0.000256
-# MLTA time            		0.000223
-# Icall alias time     		3.5e-05
-# Func alias time      		0.008184
-# One layer alias time 		6e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.001873
+# Load time            		0.020493
+# Typebuilder time     		0.00023
+# MLTA time            		0.000197
+# Icall alias time     		9.8e-05
+# Func alias time      		0.00843
+# One layer alias time 		6.6e-05
+# Escape alias time    		0.000832
+# DB time              		0.00217

@@ -29,60 +29,56 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: long_c2i
+0 Top func: long_i2c
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-long_new
+long_c2iMerge complete --- Not blocked by TBAA or TFA check
 
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 long_freeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
- Top func: long_i2c
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-long_printMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 long_newMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+long_printMerge complete --- Not blocked by TBAA or TFA check
+
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+long_i2cMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
+
+Analyzed func: long_c2iMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: long_i2c
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: long_print
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,7 +86,11 @@ Analyzed func: long_free
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: long_c2i
+Analyzed func: long_new
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: long_print
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -135,11 +135,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004751
-# Typebuilder time     		0.000284
-# MLTA time            		0.000246
-# Icall alias time     		5.9e-05
-# Func alias time      		0.000798
+# Load time            		0.001845
+# Typebuilder time     		0.000268
+# MLTA time            		0.000257
+# Icall alias time     		6.2e-05
+# Func alias time      		0.000799
 # One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002075
+# Escape alias time    		5.4e-05
+# DB time              		0.002088

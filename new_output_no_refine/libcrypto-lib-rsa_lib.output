@@ -27,11 +27,20 @@ Openmp enabled
 
 0 Top func: sk_RSA_PRIME_INFO_freefunc_thunk
 
-1 Top func: ossl_rsa_multip_info_free_ex
-
-2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_rsa_multip_info_free_exMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 ossl_rsa_multip_info_freeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -40,24 +49,25 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -339,10 +349,10 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_rsa_multip_info_free_exMerge complete --- Not blocked by TBAA or TFA check
-
+ossl_rsa_multip_info_free_ex
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
@@ -377,34 +387,24 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: ossl_rsa_multip_info_free
 DefinitionFuncSet size: 0
 aliased_callset size: 1
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: sk_RSA_PRIME_INFO_freefunc_thunk
-DefinitionFuncSet size: 1
-aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %32 = call i32 %30(ptr noundef %31), !dbg !360
+0 Update icall:   %33 = call i32 %31(ptr noundef %32), !dbg !362
 
-1 Update icall:   %33 = call i32 %31(ptr noundef %32), !dbg !362
+1 Update icall:   call void %7(ptr noundef %8), !dbg !195
 
-2 Update icall:   call void %7(ptr noundef %8), !dbg !195
+2 Update icall:   %73 = call i32 %71(ptr noundef %72), !dbg !408
 
-3 Update icall:   %73 = call i32 %71(ptr noundef %72), !dbg !408
+3 Update icall:   %32 = call i32 %30(ptr noundef %31), !dbg !360
 
 4 Update icall:   %18 = call i32 %16(ptr noundef %17), !dbg !350
 
@@ -457,11 +457,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.005489
-# Typebuilder time     		0.000473
-# MLTA time            		0.000434
-# Icall alias time     		0.000361
-# Func alias time      		0.006547
-# One layer alias time 		6.3e-05
-# Escape alias time    		0.000795
-# DB time              		0.002232
+# Load time            		0.006656
+# Typebuilder time     		0.000568
+# MLTA time            		0.000526
+# Icall alias time     		0.00023
+# Func alias time      		0.002846
+# One layer alias time 		8e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001997

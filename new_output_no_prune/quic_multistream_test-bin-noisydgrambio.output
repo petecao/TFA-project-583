@@ -25,12 +25,12 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: noisy_dgram_sendmmsg
+0 Top func: noisy_dgram_new
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_newMerge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -40,7 +40,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_freeMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -51,6 +51,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 noisy_dgram_recvmmsgMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -59,41 +60,40 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_freeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: noisy_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+1
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
+0Merge complete --- Not blocked by TBAA or TFA check
+
+
+Analyzed func: noisy_dgram_new
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_new
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: noisy_dgram_ctrl
+Analyzed func: noisy_dgram_free
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -101,7 +101,7 @@ Analyzed func: noisy_dgram_recvmmsg
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: noisy_dgram_free
+Analyzed func: noisy_dgram_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -150,11 +150,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002773
-# Typebuilder time     		0.000275
-# MLTA time            		0.000252
-# Icall alias time     		0.000104
-# Func alias time      		0.001083
+# Load time            		0.019438
+# Typebuilder time     		0.000642
+# MLTA time            		0.000315
+# Icall alias time     		0.000136
+# Func alias time      		0.001482
 # One layer alias time 		8e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002167
+# Escape alias time    		6.4e-05
+# DB time              		0.002241

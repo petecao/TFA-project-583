@@ -27,13 +27,13 @@ Openmp enabled
 
 0 Top func: ecxkem_newctx
 
-1 Top func: ecxkem_encapsulate
+1 Top func: ecxkem_auth_encapsulate_init
 
 2 Top func: ecxkem_freectx
 
 3 Top func: ecxkem_decapsulate
 
-4 Top func: ecxkem_auth_encapsulate_init
+4 Top func: ecxkem_encapsulate
 
 5 Top func: ecxkem_set_ctx_params
 
@@ -48,7 +48,7 @@ ecxkem_newctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecxkem_encapsulateMerge complete --- Not blocked by TBAA or TFA check
+ecxkem_auth_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -58,7 +58,7 @@ ecxkem_freectxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecxkem_auth_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
+ecxkem_encapsulateMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -77,18 +77,24 @@ ecxkem_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 8Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecxkem_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
+ecxkem_auth_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 9Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecxkem_auth_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
+ecxkem_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecxkem_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
- Failed
+ecxkem_settable_ctx_params FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ecxkem_auth_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 ecxkem_encapsulate_initMerge complete --- Not blocked by TBAA or TFA check
@@ -99,12 +105,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 ecxkem_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecxkem_auth_decapsulate_initMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -196,11 +196,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003775
-# Typebuilder time     		0.000444
-# MLTA time            		0.000368
-# Icall alias time     		6.7e-05
-# Func alias time      		0.001289
-# One layer alias time 		8e-06
+# Load time            		0.003585
+# Typebuilder time     		0.000467
+# MLTA time            		0.000439
+# Icall alias time     		7e-06
+# Func alias time      		0.006086
+# One layer alias time 		5e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002098
+# DB time              		0.002112

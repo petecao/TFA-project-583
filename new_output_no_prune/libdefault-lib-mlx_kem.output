@@ -27,26 +27,26 @@ Openmp enabled
 
 0 Top func: mlx_kem_newctx
 
-1 Top func: mlx_kem_encapsulate_init
+1 Top func: mlx_kem_encapsulate
 
-2 Top func: mlx_kem_decapsulate_init
+2 Top func: mlx_kem_decapsulate
 
-3 Top func: mlx_kem_encapsulate
-
-4 Top func: mlx_kem_set_ctx_params
-
-5 Top func: mlx_kem_decapsulate
-
-6 Top func: mlx_kem_freectx
-     Top func: mlx_kem_newctx Failed
-     Top func: mlx_kem_decapsulate_init Failed
-     Top func: mlx_kem_encapsulate_init Failed
-     Top func: mlx_kem_set_ctx_params Failed
-     Top func: mlx_kem_encapsulate Failed
+3 Top func: mlx_kem_encapsulate_init
      Top func: mlx_kem_decapsulate Failed
+     Top func: mlx_kem_encapsulate Failed
+     Top func: mlx_kem_newctx Failed
+     Top func: mlx_kem_encapsulate_init Failed
+
+4 Top func: mlx_kem_freectx
+
+5 Top func: mlx_kem_decapsulate_init
+
+6 Top func: mlx_kem_set_ctx_params
 
 7 Top func: mlx_kem_settable_ctx_params
      Top func: mlx_kem_freectx Failed
+     Top func: mlx_kem_decapsulate_init Failed
+     Top func: mlx_kem_set_ctx_params Failed
      Top func: mlx_kem_settable_ctx_params Failed
 
 Update global ICallees info
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002498
-# Typebuilder time     		0.000376
-# MLTA time            		0.00035
-# Icall alias time     		6.6e-05
-# Func alias time      		0.001727
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002469
+# Load time            		0.016705
+# Typebuilder time     		0.000395
+# MLTA time            		0.000335
+# Icall alias time     		0.011082
+# Func alias time      		0.036193
+# One layer alias time 		0.00011
+# Escape alias time    		0.000862
+# DB time              		0.002251

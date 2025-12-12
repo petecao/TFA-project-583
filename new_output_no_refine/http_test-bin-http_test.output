@@ -27,33 +27,23 @@ Openmp enabled
 
 0 Top func: test_hdr_resp_hdr_limit_none
 
-1 Top func: test_http_keep_alive_0_prefer_yes
+1 Top func: test_http_url_path_query
 
-2 Top func: test_http_url_path_query
+2 Top func: test_http_get_x509
 
-3 Top func: test_http_keep_alive_0_require_no
+3 Top func: test_http_keep_alive_0_prefer_yes
 
-4 Top func: test_http_url_invalid_prefix
+4 Top func: test_http_keep_alive_0_require_no
 
-5 Top func: test_http_get_x509
+5 Top func: test_http_url_invalid_prefix
 
 6 Top func: test_http_get_txt_redirected
-
-7 Top func: test_http_post_x509_error_status
-
-Analyzed func: test_hdr_resp_hdr_limit_none
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_http_keep_alive_0_prefer_yes
-DefinitionFuncSet size: 1
-aliased_callset size: 0
 
 Analyzed func: test_http_url_path_query
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_http_keep_alive_0_require_no
+Analyzed func: test_hdr_resp_hdr_limit_none
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -61,35 +51,35 @@ Analyzed func: test_http_get_x509
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_http_keep_alive_0_require_no
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_http_keep_alive_0_prefer_yes
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+7 Top func: test_http_url_userinfo_query_fragment
+
+8 Top func: test_hdr_resp_hdr_limit_short
+
+9 Top func: test_http_get_x509_redirected
+
+10 Top func: test_http_keep_alive_1_require_no
+
+11 Top func: test_http_keep_alive_1_prefer_yes
+
+Analyzed func: test_http_get_txt_redirected
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_http_url_invalid_prefix
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-8 Top func: test_hdr_resp_hdr_limit_short
-
-9 Top func: test_http_keep_alive_1_prefer_yes
-
-10 Top func: test_http_url_userinfo_query_fragment
-
-11 Top func: test_http_keep_alive_1_require_no
-
-12 Top func: test_http_get_x509_redirected
-
-Analyzed func: test_http_post_x509_error_status
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+12 Top func: test_http_get_txt_fatal_status
 
 13 Top func: test_http_url_invalid_port
-
-14 Top func: test_http_keep_alive_0_no_no
-
-Analyzed func: test_http_keep_alive_1_prefer_yes
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_hdr_resp_hdr_limit_short
-DefinitionFuncSet size: 1
-aliased_callset size: 0
 
 Analyzed func: test_http_url_userinfo_query_fragment
 DefinitionFuncSet size: 1
@@ -99,276 +89,144 @@ Analyzed func: test_http_get_x509_redirected
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_hdr_resp_hdr_limit_short
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_http_keep_alive_1_prefer_yes
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_http_keep_alive_1_require_no
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-15 Top func: test_http_keep_alive_0_require_yes
+14 Top func: test_http_url_ipv4
+
+15 Top func: test_http_post_x509
 
 16 Top func: test_hdr_resp_hdr_limit_256
 
-17 Top func: test_http_url_ipv4
+17 Top func: test_http_keep_alive_0_require_yes
 
-18 Top func: test_http_post_x509
+18 Top func: test_http_url_dns
 
-19 Top func: test_http_url_dns
+Analyzed func: test_http_get_txt_fatal_status
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_http_url_invalid_port
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_http_keep_alive_0_no_no
+19 Top func: test_http_get_txt_error_status
+
+20 Top func: test_http_url_invalid_path
+
+Analyzed func: test_http_url_ipv4
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-20 Top func: test_http_url_invalid_path
+Analyzed func: test_http_post_x509
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_hdr_resp_hdr_limit_256
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_http_keep_alive_0_require_yes
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-21 Top func: http_bio_cb_ex
+Analyzed func: test_http_url_dns
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Analyzed func: test_hdr_resp_hdr_limit_256Merge complete --- Not blocked by TBAA or TFA check
+21 Top func: test_http_url_ipv6
 
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+22 Top func: test_http_post_x509_fatal_status
 
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+23 Top func: test_http_keep_alive_1_no_no
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+24 Top func: test_http_keep_alive_1_require_yes
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_url_ipv4Merge complete --- Not blocked by TBAA or TFA check
+25 Top func: test_http_url_timestamp
 
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_http_get_txt_error_status
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_http_url_invalid_path
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+26 Top func: test_http_post_txt
 
-Analyzed func: test_http_post_x509
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_url_dnsMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-22Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_keep_alive_1_require_yesMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-23Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_http_keep_alive_1_no_noMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-24 Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_url_ipv6Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-25Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_post_x509_fatal_statusMerge complete --- Not blocked by TBAA or TFA check
-
-
-26Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_url_timestampMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_url_invalid_pathMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_keep_alive_1_require_yesMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_keep_alive_1_no_noMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_url_ipv6Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+27 Top func: test_http_get_txt
 
 Analyzed func: test_http_post_x509_fatal_status
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-27 Top func: test_http_get_txtMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_http_url_ipv6
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_http_keep_alive_1_no_no
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_url_timestampMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_http_keep_alive_1_require_yes
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_http_url_timestamp
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
+28 Top func: test_http_post_x509_error_status
 
-28 Top func: test_http_post_txt
+29 Top func: X509V3_conf_free
 
-29 Top func: test_http_get_txt_error_status
-
-30 Top func: test_http_get_txt_fatal_status
-
-31 Top func: X509V3_conf_free
-
-Analyzed func: test_http_get_txtMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+30 Top func: Merge complete --- Not blocked by TBAA or TFA check
 http_bio_cb_exMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+31Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+test_http_keep_alive_0_no_noMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 test_http_post_txtMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -376,24 +234,126 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_get_txt_error_statusMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+test_http_get_txtMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_http_get_txt_fatal_statusMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+test_http_keep_alive_0_no_noMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+test_http_post_x509_error_statusMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+X509V3_conf_freeMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0
@@ -409,12 +369,52 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: X509V3_conf_free
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-Analyzed func: test_http_get_txt_redirected
+Analyzed func: http_bio_cb_ex
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -459,11 +459,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004109
-# Typebuilder time     		0.000537
-# MLTA time            		0.000381
-# Icall alias time     		6.9e-05
-# Func alias time      		0.004575
-# One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002288
+# Load time            		0.003728
+# Typebuilder time     		0.000625
+# MLTA time            		0.000426
+# Icall alias time     		9.5e-05
+# Func alias time      		0.006902
+# One layer alias time 		9e-06
+# Escape alias time    		6.5e-05
+# DB time              		0.002009

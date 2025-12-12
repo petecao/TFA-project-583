@@ -27,62 +27,61 @@ Openmp enabled
 
 0 Top func: sm2_newctx
 
-1 Top func: sm2_get_ctx_params
+1 Top func: sm2_dupctx
 
-2 Top func: sm2_asym_encrypt
+2 Top func: sm2_get_ctx_params
 
-3 Top func: sm2_freectx
+3 Top func: sm2_asym_encrypt
 
-4 Top func: sm2_dupctx
+4 Top func: sm2_freectx
 
-5 Top func: sm2_set_ctx_params
+5 Top func: sm2_gettable_ctx_params
 
-6 Top func: sm2_gettable_ctx_params
-     Top func: sm2_get_ctx_params Failed
-     Top func: sm2_newctx Failed
-     Top func: sm2_asym_encrypt Failed
-     Top func: sm2_dupctx Failed
+6 Top func: sm2_set_ctx_params
+     Top func: sm2_newctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
-7 Top func: sm2_settable_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_dupctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
-8 Top func: sm2_init
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_asym_encryptMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
-9 Top func: sm2_asym_decrypt
-     Top func: sm2_gettable_ctx_params Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_get_ctx_params FailedMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_initMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+8Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_settable_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_asym_decryptMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_gettable_ctx_params Failed
      Top func: sm2_asym_decrypt Failed
      Top func: sm2_init Failed
-     Top func: sm2_settable_ctx_params Failed
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: sm2_freectx Failed
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+sm2_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -104,6 +103,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: sm2_set_ctx_params Failed
+     Top func: sm2_freectx Failed
 
 Update global ICallees info
 
@@ -146,11 +146,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002311
-# Typebuilder time     		0.000303
-# MLTA time            		0.00028
-# Icall alias time     		3.3e-05
-# Func alias time      		0.001111
-# One layer alias time 		5e-06
-# Escape alias time    		0.00028
-# DB time              		0.00199
+# Load time            		0.005727
+# Typebuilder time     		0.000306
+# MLTA time            		0.000285
+# Icall alias time     		6.6e-05
+# Func alias time      		0.008239
+# One layer alias time 		7e-06
+# Escape alias time    		6.1e-05
+# DB time              		0.002006

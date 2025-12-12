@@ -196,12 +196,12 @@ empty struct_fields
 
  Start Func Alias Analysis
 
-0 Top func: keylog_callback
+0 Top func: security_callback_debug
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-security_callback_debugMerge complete --- Not blocked by TBAA or TFA check
+keylog_callbackMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -209,28 +209,28 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 set_cert_cbMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-keylog_callbackMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+security_callback_debugMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-aliased_callset size: 0
+1Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: security_callback_debug
-DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: set_cert_cb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: keylog_callback
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -373,11 +373,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.006805
-# Typebuilder time     		0.001574
-# MLTA time            		0.00045
-# Icall alias time     		0.001215
-# Func alias time      		0.008653
-# One layer alias time 		6e-06
-# Escape alias time    		5.8e-05
-# DB time              		0.00218
+# Load time            		0.00832
+# Typebuilder time     		0.001971
+# MLTA time            		0.000557
+# Icall alias time     		0.001209
+# Func alias time      		0.001076
+# One layer alias time 		5e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002025

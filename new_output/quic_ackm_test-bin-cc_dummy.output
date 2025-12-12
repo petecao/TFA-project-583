@@ -27,28 +27,29 @@ Openmp enabled
 
 0 Top func: dummy_new
 
-1 Top func: dummy_bind_diagnostic
+1 Top func: dummy_reset
 
-2 Top func: dummy_reset
+2 Top func: dummy_get_tx_allowance
 
-3 Top func: dummy_get_tx_allowance
+3 Top func: dummy_bind_diagnostic
 
 4 Top func: dummy_on_data_sent
 
-5 Top func: dummy_on_data_lost
+5 Top func: dummy_on_data_lost_finished
 
-6 Top func: dummy_on_data_lost_finished
-     Top func: dummy_bind_diagnostic Failed
+6 Top func: dummy_on_data_lost
+
+7 Top func: dummy_on_data_invalidated
      Top func: dummy_reset Failed
      Top func: dummy_new Failed
      Top func: dummy_get_tx_allowance Failed
      Top func: dummy_on_data_sent Failed
+     Top func: dummy_on_data_lost_finished Failed
+     Top func: dummy_bind_diagnostic Failed
      Top func: dummy_on_data_lost Failed
 
-7 Top func: dummy_unbind_diagnostic
-
 8 Top func: dummy_set_input_params
-     Top func: dummy_on_data_lost_finished Failed
+     Top func: dummy_on_data_invalidated Failed
 
 9 Top func: dummy_free
 
@@ -56,13 +57,12 @@ Openmp enabled
 
 11 Top func: dummy_on_data_acked
 
-12 Top func: dummy_on_data_invalidated
-     Top func: dummy_unbind_diagnostic Failed
-     Top func: dummy_set_input_params Failed
-     Top func: dummy_get_wakeup_deadline Failed
-     Top func: dummy_on_data_acked Failed
+12 Top func: dummy_unbind_diagnostic
      Top func: dummy_free Failed
-     Top func: dummy_on_data_invalidated Failed
+     Top func: dummy_set_input_params Failed
+     Top func: dummy_on_data_acked Failed
+     Top func: dummy_get_wakeup_deadline Failed
+     Top func: dummy_unbind_diagnostic Failed
 
 Update global ICallees info
 
@@ -105,11 +105,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001564
-# Typebuilder time     		0.000285
-# MLTA time            		0.000378
-# Icall alias time     		5.7e-05
-# Func alias time      		0.001329
+# Load time            		0.001687
+# Typebuilder time     		0.000251
+# MLTA time            		0.000294
+# Icall alias time     		6.1e-05
+# Func alias time      		0.001581
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.00213
+# DB time              		0.002

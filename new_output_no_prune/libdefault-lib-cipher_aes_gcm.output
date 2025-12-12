@@ -25,65 +25,65 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: aes_gcm_freectx
+0 Top func: ossl_gcm_stream_final
 
-1 Top func: ossl_gcm_stream_final
+1 Top func: ossl_gcm_einit
 
-2 Top func: ossl_gcm_einit
+2 Top func: ossl_gcm_get_ctx_params
 
-3 Top func: ossl_gcm_get_ctx_params
+3 Top func: aes_gcm_freectx
 
 4 Top func: ossl_gcm_gettable_ctx_params
 
-5 Top func: aes192gcm_newctx
+5 Top func: aes_192_gcm_get_params
 
-6 Top func: aes256gcm_dupctx
+6 Top func: aes192gcm_newctx
+     Top func: ossl_gcm_einit Failed
      Top func: ossl_gcm_stream_final Failed
      Top func: ossl_gcm_get_ctx_params Failed
-     Top func: ossl_gcm_einit Failed
-     Top func: aes_gcm_freectx Failed
      Top func: ossl_gcm_gettable_ctx_params Failed
+     Top func: aes_gcm_freectx Failed
+     Top func: aes_192_gcm_get_params Failed
      Top func: aes192gcm_newctx Failed
-     Top func: aes256gcm_dupctx Failed
 
-7 Top func: ossl_gcm_cipher
+7 Top func: ossl_gcm_dinit
 
-8 Top func: ossl_gcm_set_ctx_params
+8 Top func: ossl_gcm_cipher
 
-9 Top func: ossl_gcm_dinit
+9 Top func: ossl_gcm_set_ctx_params
 
-10 Top func: aes128gcm_newctx
+10 Top func: ossl_gcm_settable_ctx_params
 
-11 Top func: ossl_gcm_settable_ctx_params
+11 Top func: aes128gcm_newctx
 
-12 Top func: aes192gcm_dupctx
+12 Top func: aes256gcm_newctx
 
-13 Top func: aes_256_gcm_get_params
+13 Top func: aes192gcm_dupctx
      Top func: ossl_gcm_dinit Failed
-     Top func: ossl_gcm_set_ctx_params Failed
      Top func: ossl_gcm_cipher Failed
+     Top func: ossl_gcm_set_ctx_params Failed
      Top func: ossl_gcm_settable_ctx_params Failed
-     Top func: aes192gcm_dupctx Failed
+     Top func: aes256gcm_newctx Failed
      Top func: aes128gcm_newctx Failed
+     Top func: aes192gcm_dupctx Failed
 
 14 Top func: ossl_gcm_stream_update
 
-15 Top func: ossl_cipher_generic_gettable_params
-     Top func: aes_256_gcm_get_params Failed
+15 Top func: aes_128_gcm_get_params
 
-16 Top func: aes_128_gcm_get_params
+16 Top func: ossl_cipher_generic_gettable_params
 
-17 Top func: aes_192_gcm_get_params
+17 Top func: aes256gcm_dupctx
 
 18 Top func: aes128gcm_dupctx
 
-19 Top func: aes256gcm_newctx
-     Top func: ossl_cipher_generic_gettable_params Failed
+19 Top func: aes_256_gcm_get_params
      Top func: ossl_gcm_stream_update Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
      Top func: aes_128_gcm_get_params Failed
+     Top func: aes256gcm_dupctx Failed
      Top func: aes128gcm_dupctx Failed
-     Top func: aes_192_gcm_get_params Failed
-     Top func: aes256gcm_newctx Failed
+     Top func: aes_256_gcm_get_params Failed
 
 Update global ICallees info
 
@@ -126,11 +126,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.016015
-# Typebuilder time     		0.000339
-# MLTA time            		0.000451
-# Icall alias time     		0.000109
-# Func alias time      		0.008286
-# One layer alias time 		8.1e-05
-# Escape alias time    		0.001031
-# DB time              		0.002731
+# Load time            		0.009351
+# Typebuilder time     		0.000299
+# MLTA time            		0.000371
+# Icall alias time     		7.3e-05
+# Func alias time      		0.008335
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.00215

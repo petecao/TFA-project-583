@@ -27,48 +27,42 @@ Openmp enabled
 
 0 Top func: test_rand
 
-Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: test_rand_random_provider
-
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_rand_get0_primary
-
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: fips_health_tests
-
-4 Top func: test_rand_uniformMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: test_rand_random_providerMerge complete --- Not blocked by TBAA or TFA check
 
 
-5 Top func: Merge complete --- Not blocked by TBAA or TFA check
-r_init
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: test_rand_get0_primary
 
-6 Top func: r_teardown
+3 Top func: Merge complete --- Not blocked by TBAA or TFA check
+fips_health_tests
+
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_rand_uniform
+
+5 Top func: r_initMerge complete --- Not blocked by TBAA or TFA check
+
 
 Analyzed func: test_rand_random_provider
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_rand
-DefinitionFuncSet size: 1
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_randMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0
 
 Analyzed func: test_rand_get0_primary
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: r_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -76,37 +70,43 @@ Analyzed func: fips_health_tests
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_rand_uniform
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+6 Top func: r_random_bytes
 
-7 Top func: r_random_bytes
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+r_teardown
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: r_random_bytes
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+test_rand_uniformMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: r_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: r_teardown
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: r_random_bytes
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -151,11 +151,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00353
-# Typebuilder time     		0.000386
+# Load time            		0.004831
+# Typebuilder time     		0.000391
 # MLTA time            		0.000272
-# Icall alias time     		7.2e-05
-# Func alias time      		0.008364
+# Icall alias time     		6.7e-05
+# Func alias time      		0.00822
 # One layer alias time 		7e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002125
+# Escape alias time    		5.5e-05
+# DB time              		0.002153

@@ -27,6 +27,7 @@ Openmp enabled
 
 0 Top func: do_err_strings_init_ossl_
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 err_delete_thread_stateMerge complete --- Not blocked by TBAA or TFA check
@@ -37,7 +38,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-err_string_data_hashMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+err_string_data_cmpMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -51,7 +53,8 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-err_string_data_cmpMerge complete --- Not blocked by TBAA or TFA check
+err_string_data_hashMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -67,8 +70,7 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-lh_ERR_STRING_DATA_doall_thunkMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+lh_ERR_STRING_DATA_hash_thunkMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -78,46 +80,38 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-lh_ERR_STRING_DATA_hash_thunkMerge complete --- Not blocked by TBAA or TFA check
-
+lh_ERR_STRING_DATA_doall_thunkMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-lh_ERR_STRING_DATA_comp_thunkMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-err_string_data_hashMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-1
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-err_delete_thread_stateMerge complete --- Not blocked by TBAA or TFA check
+6 Top func: lh_ERR_STRING_DATA_comp_thunk
 
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-aliased_callset size: 0
+7 Top func: lh_ERR_STRING_DATA_doall_arg_thunk
 
-Analyzed func: lh_ERR_STRING_DATA_doall_thunk
-DefinitionFuncSet size: 1
+Analyzed func: err_delete_thread_stateMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0
 
 Analyzed func: err_string_data_cmp
@@ -128,13 +122,12 @@ Analyzed func: lh_ERR_STRING_DATA_hash_thunk
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: lh_ERR_STRING_DATA_doall_arg_thunk
+Analyzed func: err_string_data_hash
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-lh_ERR_STRING_DATA_comp_thunk
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
+Analyzed func: lh_ERR_STRING_DATA_doall_thunk
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: do_err_strings_init_ossl_
@@ -144,68 +137,75 @@ aliased_callset size: 0
 Analyzed func: lh_ERR_STRING_DATA_doall_arg_thunk
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: lh_ERR_STRING_DATA_comp_thunk
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %12 = call i32 %9(ptr noundef %10, ptr noundef %11), !dbg !396
+0 Update icall:   call void %9(ptr noundef %10, ptr noundef %11), !dbg !400
 
 1 Update icall:   call void %7(ptr noundef %8), !dbg !400
 
 2 Update icall:   %9 = call i64 %7(ptr noundef %8), !dbg !396
 
-3 Update icall:   call void %9(ptr noundef %10, ptr noundef %11), !dbg !400
+3 Update icall:   %12 = call i32 %9(ptr noundef %10, ptr noundef %11), !dbg !396
 
  Start ICall Alias Analysis
 
-0 Top func: lh_ERR_STRING_DATA_hash_thunk
----icall:   %9 = call i64 %7(ptr noundef %8), !dbg !396
+0 Top func: lh_ERR_STRING_DATA_comp_thunk
+---icall:   %12 = call i32 %9(ptr noundef %10, ptr noundef %11), !dbg !396
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-lh_ERR_STRING_DATA_doall_thunkMerge complete --- Not blocked by TBAA or TFA check
+lh_ERR_STRING_DATA_hash_thunkMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 ---icall:   Merge complete --- Not blocked by TBAA or TFA check
-call Merge complete --- Not blocked by TBAA or TFA check
-voidMerge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-%7(ptr noundef %8), !dbg !400
-
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-lh_ERR_STRING_DATA_comp_thunkMerge complete --- Not blocked by TBAA or TFA check
-
----icall: Merge complete --- Not blocked by TBAA or TFA check
-  Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
- = call i32 %9(ptr noundef %10, ptr noundef %11), !dbg !396
+9Merge complete --- Not blocked by TBAA or TFA check
+ = Merge complete --- Not blocked by TBAA or TFA check
+callMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+iMerge complete --- Not blocked by TBAA or TFA check
+64 %7(ptr noundef %8), !dbg !396
+
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+lh_ERR_STRING_DATA_doall_thunkMerge complete --- Not blocked by TBAA or TFA check
+
+---icall: Merge complete --- Not blocked by TBAA or TFA check
+  Merge complete --- Not blocked by TBAA or TFA check
+callMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+voidMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+%7(ptr noundef %8), !dbg !400
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 lh_ERR_STRING_DATA_doall_arg_thunkMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
----icall:   callMerge complete --- Not blocked by TBAA or TFA check
+---icall: Merge complete --- Not blocked by TBAA or TFA check
+  Merge complete --- Not blocked by TBAA or TFA check
+callMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 voidMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
@@ -267,11 +267,11 @@ reduce_num_escape: 0
 reduce_num_total: 4
 
 
-# Load time            		0.004798
-# Typebuilder time     		0.000531
-# MLTA time            		0.000471
-# Icall alias time     		0.001074
-# Func alias time      		0.004107
-# One layer alias time 		9e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002083
+# Load time            		0.003877
+# Typebuilder time     		0.00045
+# MLTA time            		0.000367
+# Icall alias time     		0.00107
+# Func alias time      		0.003239
+# One layer alias time 		8e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002264

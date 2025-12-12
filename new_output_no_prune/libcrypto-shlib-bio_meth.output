@@ -25,34 +25,34 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: bread_conv
+0 Top func: do_bio_type_init_ossl_
 
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-bwrite_convMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: bread_conv
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-do_bio_type_init_ossl_Merge complete --- Not blocked by TBAA or TFA check
+bwrite_convMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: bread_conv
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-aliased_callset size: 0
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+bread_convMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: do_bio_type_init_ossl_
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: bwrite_conv
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: do_bio_type_init_ossl_
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -101,11 +101,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001733
-# Typebuilder time     		0.000556
-# MLTA time            		0.000344
-# Icall alias time     		3.7e-05
-# Func alias time      		0.000949
-# One layer alias time 		6e-06
-# Escape alias time    		6.4e-05
-# DB time              		0.002258
+# Load time            		0.031634
+# Typebuilder time     		0.000262
+# MLTA time            		0.000289
+# Icall alias time     		7.3e-05
+# Func alias time      		0.002272
+# One layer alias time 		9e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.002303

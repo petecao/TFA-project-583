@@ -27,9 +27,8 @@ Openmp enabled
 
 0 Top func: get_time
 
-Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-port_default_packet_handlerMerge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: port_default_packet_handlerMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -169,9 +168,10 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-get_time
+Analyzed func: get_time
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -181,9 +181,9 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %31 = call ptr %26(ptr noundef %27, ptr noundef %30), !dbg !2438
+0 Update icall:   %128 = call i32 %114(ptr noundef %119, ptr noundef %120, ptr noundef %127), !dbg !2491
 
-1 Update icall:   %128 = call i32 %114(ptr noundef %119, ptr noundef %120, ptr noundef %127), !dbg !2491
+1 Update icall:   %31 = call ptr %26(ptr noundef %27, ptr noundef %30), !dbg !2438
 
  Start ICall Alias Analysis
 
@@ -224,11 +224,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.009306
-# Typebuilder time     		0.000956
-# MLTA time            		0.000679
-# Icall alias time     		5.8e-05
+# Load time            		0.007825
+# Typebuilder time     		0.000763
+# MLTA time            		0.000474
+# Icall alias time     		0.000101
 # Func alias time      		0.001743
 # One layer alias time 		9e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.002379
+# DB time              		0.002185

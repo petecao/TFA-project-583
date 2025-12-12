@@ -29,19 +29,19 @@ Openmp enabled
 
 Merge complete --- Not blocked by TBAA or TFA check
 1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-generic_imp_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
+generic_exportMerge complete --- Not blocked by TBAA or TFA check
 
 
 Merge complete --- Not blocked by TBAA or TFA check
 2 Top func: Merge complete --- Not blocked by TBAA or TFA check
-generic_exportMerge complete --- Not blocked by TBAA or TFA check
+generic_importMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-generic_importMerge complete --- Not blocked by TBAA or TFA check
+generic_imp_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -49,11 +49,11 @@ generic_export FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-generic_imp_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
+generic_importMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-generic_importMerge complete --- Not blocked by TBAA or TFA check
+generic_imp_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -115,11 +115,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001454
-# Typebuilder time     		0.000226
-# MLTA time            		0.000213
-# Icall alias time     		6.7e-05
-# Func alias time      		0.000956
-# One layer alias time 		8e-06
+# Load time            		0.001574
+# Typebuilder time     		0.00024
+# MLTA time            		0.00024
+# Icall alias time     		6.5e-05
+# Func alias time      		0.001101
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001984
+# DB time              		0.002137

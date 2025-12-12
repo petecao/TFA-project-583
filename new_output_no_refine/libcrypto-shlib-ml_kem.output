@@ -25,10 +25,10 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: cbd_2
+0 Top func: cbd_3
 
 1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-cbd_3
+cbd_2
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -662,6 +662,7 @@ Update global ICallees info
 0 Top func: gencbd_vector_ntt
 ---icall:   %29 = call i32 %24(ptr noundef %25, ptr noundef %26, ptr noundef %27, ptr noundef %28), !dbg !395
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 gencbd_vectorMerge complete --- Not blocked by TBAA or TFA check
@@ -675,15 +676,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 30Merge complete --- Not blocked by TBAA or TFA check
- = callMerge complete --- Not blocked by TBAA or TFA check
+ = Merge complete --- Not blocked by TBAA or TFA check
+callMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 iMerge complete --- Not blocked by TBAA or TFA check
-32Merge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
+32 Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-24(Merge complete --- Not blocked by TBAA or TFA check
+24Merge complete --- Not blocked by TBAA or TFA check
+(Merge complete --- Not blocked by TBAA or TFA check
 ptrMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 noundefMerge complete --- Not blocked by TBAA or TFA check
@@ -721,18 +724,6 @@ gMerge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
 395Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -1250,6 +1241,15 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: 2
 
 start oneLayerHandler
@@ -1289,11 +1289,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.011153
-# Typebuilder time     		0.000674
-# MLTA time            		0.000631
-# Icall alias time     		0.0036
-# Func alias time      		0.00417
-# One layer alias time 		1e-05
-# Escape alias time    		5.8e-05
-# DB time              		0.002009
+# Load time            		0.007058
+# Typebuilder time     		0.000754
+# MLTA time            		0.000759
+# Icall alias time     		0.003075
+# Func alias time      		0.008773
+# One layer alias time 		9e-06
+# Escape alias time    		6.6e-05
+# DB time              		0.001725

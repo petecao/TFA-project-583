@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_sec_mem
+0 Top func: test_sec_mem_clear
 
-1 Top func: test_sec_mem_clear
+1 Top func: test_sec_mem
 
-Analyzed func: test_sec_mem
+Analyzed func: test_sec_mem_clear
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_sec_mem_clear
+Analyzed func: test_sec_mem
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001381
-# Typebuilder time     		0.00027
-# MLTA time            		0.00024
-# Icall alias time     		6.1e-05
-# Func alias time      		0.000452
-# One layer alias time 		9e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002138
+# Load time            		0.001668
+# Typebuilder time     		0.000248
+# MLTA time            		0.000209
+# Icall alias time     		6e-05
+# Func alias time      		0.008205
+# One layer alias time 		5e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002145

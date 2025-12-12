@@ -25,11 +25,11 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ASN1_ENUMERATED_it
+0 Top func: i2s_ASN1_ENUMERATED_TABLE
 
-1 Top func: i2s_ASN1_ENUMERATED_TABLE
-     Top func: ASN1_ENUMERATED_it Failed
+1 Top func: ASN1_ENUMERATED_it
      Top func: i2s_ASN1_ENUMERATED_TABLE Failed
+     Top func: ASN1_ENUMERATED_it Failed
 
 Update global ICallees info
 
@@ -72,11 +72,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.01034
-# Typebuilder time     		0.000257
-# MLTA time            		0.00021
-# Icall alias time     		5.6e-05
-# Func alias time      		0.002153
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002176
+# Load time            		0.001364
+# Typebuilder time     		0.000472
+# MLTA time            		0.000178
+# Icall alias time     		1e-05
+# Func alias time      		0.000349
+# One layer alias time 		5e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.001954

@@ -118,13 +118,13 @@ WARNING: matchStructTypes problem!
 1 Top func: server_response_check_cb
 
 Analyzed func: tls13groupselection_test
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
-Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -221,11 +221,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002416
-# Typebuilder time     		0.000884
-# MLTA time            		0.000191
-# Icall alias time     		0.000101
-# Func alias time      		0.000888
+# Load time            		0.002204
+# Typebuilder time     		0.000908
+# MLTA time            		0.000192
+# Icall alias time     		8.9e-05
+# Func alias time      		0.000975
 # One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002108
+# Escape alias time    		5.5e-05
+# DB time              		0.00201

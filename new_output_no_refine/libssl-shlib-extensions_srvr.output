@@ -27,11 +27,8 @@ Openmp enabled
 
 0 Top func: X509_EXTENSION_free
 
+1 Top func: OCSP_RESPID_free
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-OCSP_RESPID_freeMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -72,68 +69,71 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-X509_EXTENSION_freeMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: 0
 
 Analyzed func: OCSP_RESPID_free
 DefinitionFuncSet size: 0
 aliased_callset size: 2
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: X509_EXTENSION_free
+DefinitionFuncSet size: 0
+aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %261 = call i32 %255(ptr noundef %260, ptr noundef %22, ptr noundef %31), !dbg !2085
+0 Update icall:   %49 = call i32 %41(ptr noundef %44, ptr noundef %12, ptr noundef %13, ptr noundef %48), !dbg !1849
 
-1 Update icall:   %219 = call i32 %213(ptr noundef %216, ptr noundef %217, i64 noundef %218), !dbg !2057
+1 Update icall:   %103 = call i32 %96(ptr noundef %101, ptr noundef %102, ptr noundef %20), !dbg !1897
 
-2 Update icall:   %121 = call i32 %117(ptr noundef %118, ptr noundef %119, ptr noundef %120, i32 noundef 512), !dbg !1926
+2 Update icall:   %177 = call i32 %174(ptr noundef %175, ptr noundef %176, ptr noundef %24), !dbg !1943
 
-3 Update icall:   %34 = call i32 %21(ptr noundef %24, ptr noundef %26, i32 noundef %29, ptr noundef %33), !dbg !1828
+3 Update icall:   %121 = call i32 %117(ptr noundef %118, ptr noundef %119, ptr noundef %120, i32 noundef 512), !dbg !1926
 
-4 Update icall:   %177 = call i32 %174(ptr noundef %175, ptr noundef %176, ptr noundef %24), !dbg !1943
+4 Update icall:   %34 = call i32 %21(ptr noundef %24, ptr noundef %26, i32 noundef %29, ptr noundef %33), !dbg !1828
 
-5 Update icall:   %103 = call i32 %96(ptr noundef %101, ptr noundef %102, ptr noundef %20), !dbg !1897
+5 Update icall:   %219 = call i32 %213(ptr noundef %216, ptr noundef %217, i64 noundef %218), !dbg !2057
 
-6 Update icall:   %49 = call i32 %41(ptr noundef %44, ptr noundef %12, ptr noundef %13, ptr noundef %48), !dbg !1849
+6 Update icall:   %261 = call i32 %255(ptr noundef %260, ptr noundef %22, ptr noundef %31), !dbg !2085
 
 7 Update icall:   %94 = call i32 %90(ptr noundef %91, ptr noundef %92, i64 noundef %93, ptr noundef %17), !dbg !1895
 
@@ -176,11 +176,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.013173
-# Typebuilder time     		0.001023
-# MLTA time            		0.000871
-# Icall alias time     		8e-05
-# Func alias time      		0.008354
-# One layer alias time 		9e-06
+# Load time            		0.010653
+# Typebuilder time     		0.000838
+# MLTA time            		0.000679
+# Icall alias time     		1.8e-05
+# Func alias time      		0.006923
+# One layer alias time 		7e-06
 # Escape alias time    		5.7e-05
-# DB time              		0.002078
+# DB time              		0.0021

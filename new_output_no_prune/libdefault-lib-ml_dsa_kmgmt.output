@@ -27,99 +27,75 @@ Openmp enabled
 
 0 Top func: ml_dsa_87_new_key
 
-1 Top func: ml_dsa_free_key
+1 Top func: ml_dsa_load
 
-2 Top func: ml_dsa_load
+2 Top func: ml_dsa_free_key
 
 3 Top func: ml_dsa_import
 
 4 Top func: ml_dsa_validate
 
-5 Top func: ml_dsa_gen_settable_params
-
-6 Top func: ml_dsa_gen_cleanup
+5 Top func: ml_dsa_gen_cleanup
      Top func: ml_dsa_87_new_key Failed
+     Top func: ml_dsa_free_key Failed
      Top func: ml_dsa_load Failed
      Top func: ml_dsa_import Failed
-     Top func: ml_dsa_free_key Failed
-     Top func: ml_dsa_gen_settable_params Failed
      Top func: ml_dsa_validate Failed
 
-7 Top func: ml_dsa_87_gen
+6 Top func: ml_dsa_87_gen
 
-8 Top func: ml_dsa_get_params
+7 Top func: ml_dsa_has
 
-9 Top func: ml_dsa_imexport_types
-
-10 Top func: ml_dsa_has
+8Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-11Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_dup_keyMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_imexport_types
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 ml_dsa_gen_cleanupMerge complete --- Not blocked by TBAA or TFA check
- Failed
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
+10Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ml_dsa_gen_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_gen_set_paramsMerge complete --- Not blocked by TBAA or TFA check
+11 Top func: ml_dsa_gen_set_params
+     Top func: ml_dsa_87_gen FailedMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: ml_dsa_87_genMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_dup_keyMerge complete --- Not blocked by TBAA or TFA check
- Failed
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 ml_dsa_imexport_typesMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 ml_dsa_get_paramsMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-14Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+12Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_44_new_keyMerge complete --- Not blocked by TBAA or TFA check
-
+ml_dsa_44_new_key
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-15Merge complete --- Not blocked by TBAA or TFA check
+13Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_65_new_keyMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-16 Top func: Merge complete --- Not blocked by TBAA or TFA check
 ml_dsa_exportMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-17Merge complete --- Not blocked by TBAA or TFA check
- Top func: ml_dsa_gettable_params
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: ml_dsa_hasMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -127,19 +103,29 @@ ml_dsa_gen_initMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-18Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_match
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_44_new_keyMerge complete --- Not blocked by TBAA or TFA check
+     Top func: ml_dsa_hasMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_65_new_key FailedMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+14Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ml_dsa_gettable_params
+
+Merge complete --- Not blocked by TBAA or TFA check
+15 Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_44_genMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+16Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_matchMerge complete --- Not blocked by TBAA or TFA check
+
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_44_new_keyMerge complete --- Not blocked by TBAA or TFA check
+ Failed
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 ml_dsa_exportMerge complete --- Not blocked by TBAA or TFA check
@@ -148,19 +134,33 @@ ml_dsa_exportMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-19 Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_44_genMerge complete --- Not blocked by TBAA or TFA check
+17 Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_gen_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_dsa_gettable_params FailedMerge complete --- Not blocked by TBAA or TFA check
+ml_dsa_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_44_genMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ml_dsa_matchMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+
+18 Top func: ml_dsa_65_new_key
+
+19 Top func: ml_dsa_dup_key
+
 20 Top func: ml_dsa_65_gen
-     Top func: ml_dsa_match Failed
-     Top func: ml_dsa_44_gen Failed
+     Top func: ml_dsa_gen_settable_params Failed
      Top func: ml_dsa_gen_set_params Failed
+     Top func: ml_dsa_65_new_key Failed
+     Top func: ml_dsa_dup_key Failed
      Top func: ml_dsa_65_gen Failed
 
 Update global ICallees info
@@ -299,11 +299,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.003357
-# Typebuilder time     		0.000491
-# MLTA time            		0.000753
-# Icall alias time     		0.00091
-# Func alias time      		0.004024
-# One layer alias time 		1e-05
-# Escape alias time    		6.3e-05
-# DB time              		0.001977
+# Load time            		0.012942
+# Typebuilder time     		0.000402
+# MLTA time            		0.000466
+# Icall alias time     		0.000919
+# Func alias time      		0.008507
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002028

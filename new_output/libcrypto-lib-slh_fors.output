@@ -1,0 +1,122 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-slh_fors.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-slh_fors.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-lib-slh_fors.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-slh_fors.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   call void %213(ptr noundef %214, ptr noundef %215), !dbg !440
+
+1 Update icall:   call void %26(ptr noundef %27, ptr noundef %28), !dbg !238
+
+2 Update icall:   %54 = call i32 %47(ptr noundef %48, ptr noundef %49, ptr noundef %50, ptr noundef %51, ptr noundef %52, i64 noundef %53), !dbg !253
+
+3 Update icall:   call void %31(ptr noundef %32, i32 noundef 6), !dbg !242
+
+4 Update icall:   %71 = call i32 %62(ptr noundef %63, ptr noundef %64, ptr noundef %65, ptr noundef %66, i64 noundef %68, ptr noundef %69, i64 noundef %70), !dbg !272
+
+5 Update icall:   call void %51(ptr noundef %52, i32 noundef 0), !dbg !265
+
+6 Update icall:   call void %146(ptr noundef %147, i32 noundef %149), !dbg !377
+
+7 Update icall:   call void %35(ptr noundef %36, ptr noundef %37), !dbg !245
+
+8 Update icall:   %125 = call i32 %117(ptr noundef %118, ptr noundef %119, ptr noundef %120, ptr noundef %121, ptr noundef %122, ptr noundef %123, i64 noundef %124), !dbg !321
+
+9 Update icall:   call void %104(ptr noundef %105, i32 noundef %106), !dbg !339
+
+10 Update icall:   call void %110(ptr noundef %111, i32 noundef %112), !dbg !317
+
+11 Update icall:   %188 = call i32 %179(ptr noundef %180, ptr noundef %181, ptr noundef %182, ptr noundef %183, ptr noundef %184, ptr noundef %185, i64 noundef %187), !dbg !410
+
+12 Update icall:   call void %102(ptr noundef %103, i32 noundef 0), !dbg !337
+
+13 Update icall:   call void %55(ptr noundef %56, i32 noundef %57), !dbg !268
+
+14 Update icall:   call void %222(ptr noundef %223, ptr noundef %224), !dbg !447
+
+15 Update icall:   %129 = call i32 %119(ptr noundef %120, ptr noundef %121, ptr noundef %122, ptr noundef %123, i64 noundef %125, ptr noundef %126, i64 noundef %128), !dbg !351
+
+16 Update icall:   %235 = call i32 %227(ptr noundef %228, ptr noundef %229, ptr noundef %230, ptr noundef %231, i64 noundef %232, ptr noundef %233, i64 noundef %234), !dbg !451
+
+17 Update icall:   call void %218(ptr noundef %219, i32 noundef 4), !dbg !444
+
+18 Update icall:   call void %105(ptr noundef %106, i32 noundef %107), !dbg !313
+
+19 Update icall:   call void %40(ptr noundef %41, i32 noundef %42), !dbg !249
+
+20 Update icall:   call void %176(ptr noundef %177, i32 noundef %178), !dbg !407
+
+21 Update icall:   call void %156(ptr noundef %157, i32 noundef %158), !dbg !387
+
+22 Update icall:   %168 = call i32 %159(ptr noundef %160, ptr noundef %161, ptr noundef %162, ptr noundef %163, ptr noundef %164, ptr noundef %165, i64 noundef %167), !dbg !390
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				23
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.002464
+# Typebuilder time     		0.000273
+# MLTA time            		0.000353
+# Icall alias time     		7.6e-05
+# Func alias time      		0.010662
+# One layer alias time 		1.1e-05
+# Escape alias time    		5.5e-05
+# DB time              		0.00199

@@ -25,9 +25,9 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ASN1_NULL_it
+0 Top func: i2s_INDIRECT_ISSUER
 
-1 Top func: i2s_INDIRECT_ISSUER
+1 Top func: ASN1_NULL_it
 
 2 Top func: s2i_INDIRECT_ISSUER
 
@@ -35,9 +35,9 @@ Openmp enabled
 
 4 Top func: r2i_INDIRECT_ISSUER
      Top func: ASN1_NULL_it Failed
-     Top func: i2r_INDIRECT_ISSUER Failed
-     Top func: s2i_INDIRECT_ISSUER Failed
      Top func: i2s_INDIRECT_ISSUER Failed
+     Top func: s2i_INDIRECT_ISSUER Failed
+     Top func: i2r_INDIRECT_ISSUER Failed
      Top func: r2i_INDIRECT_ISSUER Failed
 
 Update global ICallees info
@@ -81,11 +81,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001265
-# Typebuilder time     		0.000347
-# MLTA time            		0.000182
-# Icall alias time     		9e-05
-# Func alias time      		0.000701
-# One layer alias time 		1e-05
-# Escape alias time    		5.5e-05
-# DB time              		0.002106
+# Load time            		0.001295
+# Typebuilder time     		0.000208
+# MLTA time            		0.00018
+# Icall alias time     		6.9e-05
+# Func alias time      		0.003249
+# One layer alias time 		6.5e-05
+# Escape alias time    		5.8e-05
+# DB time              		0.002282

@@ -35,70 +35,70 @@ Openmp enabled
 
 4 Top func: dsa_copy_parameters
 
-5 Top func: old_dsa_priv_decode
+5 Top func: dsa_sig_print
 
-6 Top func: dsa_sig_print
-
-7 Top func: dsa_pkey_export_to
+6 Top func: dsa_pkey_export_to
      Top func: dsa_pub_decode Failed
      Top func: int_dsa_size Failed
      Top func: dsa_priv_decode Failed
      Top func: dsa_param_decode Failed
-     Top func: dsa_copy_parameters Failed
-     Top func: old_dsa_priv_decode Failed
      Top func: dsa_sig_print Failed
+     Top func: dsa_copy_parameters Failed
+
+7 Top func: dsa_pub_encode
+
+8 Top func: dsa_bits
+
+9 Top func: dsa_priv_encode
+
+10 Top func: dsa_param_encode
+
+11 Top func: int_dsa_free
      Top func: dsa_pkey_export_to Failed
-
-8 Top func: dsa_pub_encode
-
-9 Top func: dsa_bits
-
-10 Top func: dsa_priv_encode
-
-11 Top func: dsa_param_encode
 
 12 Top func: dsa_cmp_parameters
 
-13 Top func: old_dsa_priv_encode
-
-14 Top func: int_dsa_free
-
-15 Top func: dsa_pkey_import_from
-     Top func: dsa_bits Failed
+13 Top func: dsa_pkey_import_from
      Top func: dsa_pub_encode Failed
-     Top func: dsa_param_encode Failed
+     Top func: dsa_bits Failed
      Top func: dsa_priv_encode Failed
-     Top func: dsa_cmp_parameters Failed
-     Top func: old_dsa_priv_encode Failed
      Top func: int_dsa_free Failed
-     Top func: dsa_pkey_import_from Failed
+     Top func: dsa_param_encode Failed
 
-16 Top func: dsa_security_bits
+14 Top func: dsa_pub_cmp
 
-17 Top func: dsa_pub_cmp
+15 Top func: dsa_security_bits
+
+16 Top func: dsa_priv_print
+
+17 Top func: dsa_pkey_ctrl
 
 18 Top func: dsa_missing_parameters
+     Top func: dsa_cmp_parameters Failed
+     Top func: dsa_pkey_import_from Failed
 
-19 Top func: dsa_priv_print
+19 Top func: dsa_param_print
+     Top func: dsa_pub_cmp Failed
 
-20 Top func: dsa_param_print
-
-21 Top func: dsa_pkey_dirty_cnt
-
-22 Top func: dsa_pkey_ctrl
-
-23 Top func: dsa_pkey_copy
+20 Top func: dsa_pkey_copy
      Top func: dsa_security_bits Failed
      Top func: dsa_priv_print Failed
-     Top func: dsa_missing_parameters Failed
-     Top func: dsa_pub_cmp Failed
-     Top func: dsa_param_print Failed
-     Top func: dsa_pkey_dirty_cnt Failed
      Top func: dsa_pkey_ctrl Failed
-     Top func: dsa_pkey_copy Failed
+     Top func: dsa_missing_parameters Failed
 
-24 Top func: dsa_pub_print
+21 Top func: dsa_pub_print
+
+22 Top func: old_dsa_priv_decode
+
+23 Top func: dsa_pkey_dirty_cnt
+
+24 Top func: old_dsa_priv_encode
+     Top func: dsa_param_print Failed
+     Top func: dsa_pkey_copy Failed
      Top func: dsa_pub_print Failed
+     Top func: dsa_pkey_dirty_cnt Failed
+     Top func: old_dsa_priv_decode Failed
+     Top func: old_dsa_priv_encode Failed
 
 Update global ICallees info
 
@@ -143,11 +143,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003855
-# Typebuilder time     		0.000457
-# MLTA time            		0.000459
-# Icall alias time     		5.5e-05
-# Func alias time      		0.003619
-# One layer alias time 		8e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.00194
+# Load time            		0.003515
+# Typebuilder time     		0.000356
+# MLTA time            		0.000442
+# Icall alias time     		6.5e-05
+# Func alias time      		0.003191
+# One layer alias time 		9e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002138

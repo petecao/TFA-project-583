@@ -25,9 +25,9 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: i2r_SOA_IDENTIFIER
+0 Top func: s2i_SOA_IDENTIFIER
 
-1 Top func: s2i_SOA_IDENTIFIER
+1 Top func: i2r_SOA_IDENTIFIER
 
 2 Top func: ASN1_NULL_it
 
@@ -35,8 +35,8 @@ Openmp enabled
 
 4 Top func: r2i_SOA_IDENTIFIER
      Top func: ASN1_NULL_it Failed
-     Top func: s2i_SOA_IDENTIFIER Failed
      Top func: i2r_SOA_IDENTIFIER Failed
+     Top func: s2i_SOA_IDENTIFIER Failed
      Top func: i2s_SOA_IDENTIFIER Failed
      Top func: r2i_SOA_IDENTIFIER Failed
 
@@ -81,11 +81,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001372
-# Typebuilder time     		0.000223
-# MLTA time            		0.000222
-# Icall alias time     		6.3e-05
-# Func alias time      		0.000633
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.001991
+# Load time            		0.001332
+# Typebuilder time     		0.000227
+# MLTA time            		0.00022
+# Icall alias time     		6.5e-05
+# Func alias time      		0.00046
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002031

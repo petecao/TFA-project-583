@@ -160,39 +160,35 @@ WARNING: matchStructTypes problem!
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: shake_ctrl
-Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha224_initMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+sha512_update
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha512_update
+ Top func: sha224_init
+
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sha512_256_int_init
 
 Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
  Top func: sha256_init
 
-5Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 sha512_224_int_init
 
-Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha384_init
-
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-sha3_int_initMerge complete --- Not blocked by TBAA or TFA check
+shake_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: shake_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -200,11 +196,11 @@ Analyzed func: sha512_update
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: sha512_224_int_init
+Analyzed func: sha3_int_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: sha256_init
+Analyzed func: sha512_256_int_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -212,43 +208,47 @@ Analyzed func: sha224_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: sha3_int_update
+7 Top func: sha1_init
 
 Merge complete --- Not blocked by TBAA or TFA check
 8Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha1_init
+sha512_final
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 9Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-sha512_finalMerge complete --- Not blocked by TBAA or TFA check
-
+ Top func: sha3_int_update
 
 Merge complete --- Not blocked by TBAA or TFA check
 10Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha512_224_int_update
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sha512_256_int_update
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 11Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha256_update
+sha224_updateMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha224_update
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-sha384_initMerge complete --- Not blocked by TBAA or TFA check
+sha256_initMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0
+
+Analyzed func: sha512_224_int_initMerge complete --- Not blocked by TBAA or TFA check
 
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: sha1_init
+12 Top func: sha256_update
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+sha1_initMerge complete --- Not blocked by TBAA or TFA check
+
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -256,23 +256,15 @@ Analyzed func: sha512_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-13 Top func: sha384_update
+13 Top func: sha512_224_int_update
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-sha512_224_int_updateMerge complete --- Not blocked by TBAA or TFA check
+sha224_updateMerge complete --- Not blocked by TBAA or TFA check
 
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: sha256_update
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sha3_int_update
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sha224_update
+Analyzed func: sha512_256_int_update
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -286,54 +278,58 @@ sha1_final
 Merge complete --- Not blocked by TBAA or TFA check
 16Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha512_224_int_final
+sha224_final
 
 Merge complete --- Not blocked by TBAA or TFA check
 17Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha256_final
+ Top func: sha512_256_int_final
 
-Merge complete --- Not blocked by TBAA or TFA check
-18Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha3_int_final
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+sha3_int_updateMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: sha256_update
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: sha512_224_int_update
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+18 Top func: sha3_int_final
 
 Merge complete --- Not blocked by TBAA or TFA check
 19Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha224_final
+sha256_final
+
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+20Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sha512_224_int_finalMerge complete --- Not blocked by TBAA or TFA check
+
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-sha384_updateMerge complete --- Not blocked by TBAA or TFA check
-
+sha1_updateMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
+
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: sha1_update
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
-
-20 Top func: sha384_final
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-sha1_finalMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sha512_224_int_final
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sha256_final
+sha1_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: sha224_final
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: sha512_256_int_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -346,19 +342,21 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 23Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha512_256_int_init
+sha384_init
 
 Merge complete --- Not blocked by TBAA or TFA check
 24Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha512_256_int_final
-
-Merge complete --- Not blocked by TBAA or TFA check
-25Merge complete --- Not blocked by TBAA or TFA check
- Top func: sha512_256_int_update
+ Top func: shake_init
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-sha384_finalMerge complete --- Not blocked by TBAA or TFA check
+sha512_224_int_finalMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0
+
+Analyzed func: sha256_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -366,33 +364,35 @@ Analyzed func: sha3_int_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-26 Top func: shake_init
+25 Top func: sha384_final
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+sha512_initMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+26 Top func: sha384_update
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 sha1_int_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0
-
-Analyzed func: sha512_init
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sha512_256_int_init
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sha512_256_int_final
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sha512_256_int_update
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: shake_init
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: sha384_init
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: sha384_update
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: sha384_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -437,11 +437,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002214
-# Typebuilder time     		0.001088
-# MLTA time            		0.000658
-# Icall alias time     		7.7e-05
-# Func alias time      		0.005936
-# One layer alias time 		6.3e-05
-# Escape alias time    		0.000799
-# DB time              		0.002313
+# Load time            		0.002385
+# Typebuilder time     		0.001395
+# MLTA time            		0.000766
+# Icall alias time     		7.6e-05
+# Func alias time      		0.004322
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002108

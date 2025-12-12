@@ -26,6 +26,8 @@ Openmp enabled
  Start Func Alias Analysis
 
 0 Top func: cipher_hw_desx_copyctx
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 1 Top func: cipher_hw_desx_cbc_initkey
 
@@ -33,19 +35,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: cipher_hw_desx_cbc
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_desx_cbc_initkeyMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: cipher_hw_desx_cbc_initkey
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1
+aliased_callset size: 0
 
+Analyzed func: cipher_hw_desx_copyctx
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: cipher_hw_desx_cbc
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: cipher_hw_desx_copyctx
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002634
-# Typebuilder time     		0.000246
-# MLTA time            		0.000217
-# Icall alias time     		6.5e-05
-# Func alias time      		0.004238
-# One layer alias time 		8e-06
-# Escape alias time    		5.8e-05
-# DB time              		0.002287
+# Load time            		0.032855
+# Typebuilder time     		0.000282
+# MLTA time            		0.000225
+# Icall alias time     		6.7e-05
+# Func alias time      		0.008386
+# One layer alias time 		6e-06
+# Escape alias time    		6e-05
+# DB time              		0.002309

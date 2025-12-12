@@ -1,0 +1,215 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc2.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc2.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/liblegacy-lib-cipher_rc2.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc2.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: rc2_128_ecb_newctx
+
+1 Top func: rc2_dinit
+
+2 Top func: rc2_gettable_ctx_params
+
+3 Top func: rc2_128_ecb_get_params
+
+4 Top func: rc2_128_cbc_newctx
+
+5 Top func: rc2_128_ofb128_newctx
+
+6 Top func: rc2_40_cbc_get_params
+     Top func: rc2_gettable_ctx_params Failed
+     Top func: rc2_dinit Failed
+     Top func: rc2_128_ecb_get_params Failed
+     Top func: rc2_128_ofb128_newctx Failed
+     Top func: rc2_128_ecb_newctx Failed
+     Top func: rc2_128_cbc_newctx Failed
+     Top func: rc2_40_cbc_get_params Failed
+
+7 Top func: rc2_set_ctx_params
+
+8Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_block_updateMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+9 Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_stream_updateMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+11Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_freectxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+12Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_128_cbc_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+13Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_64_cbc_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_stream_update FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_block_updateMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_freectxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_128_cbc_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+14Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_stream_final
+
+Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_64_cbc_newctxMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+
+16Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_block_finalMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+17Merge complete --- Not blocked by TBAA or TFA check
+ Top func: rc2_dupctx
+
+18 Top func: rc2_40_cbc_newctx
+
+19 Top func: rc2_64_cbc_get_params
+     Top func: ossl_cipher_generic_stream_final Failed
+     Top func: rc2_get_ctx_params Failed
+     Top func: ossl_cipher_generic_block_final Failed
+     Top func: rc2_dupctx Failed
+
+20 Top func: rc2_128_ofb128_get_params
+     Top func: rc2_40_cbc_newctx Failed
+
+21 Top func: rc2_settable_ctx_params
+     Top func: rc2_set_ctx_params Failed
+
+22 Top func: ossl_cipher_generic_cipher
+     Top func: rc2_64_cbc_get_params Failed
+
+23 Top func: rc2_einit
+
+24 Top func: rc2_128_cfb128_get_params
+
+25 Top func: rc2_128_cfb128_newctx
+     Top func: rc2_128_ofb128_get_params Failed
+     Top func: rc2_settable_ctx_params Failed
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: rc2_einit Failed
+     Top func: rc2_128_cfb128_get_params Failed
+     Top func: rc2_128_cfb128_newctx Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.003066
+# Typebuilder time     		0.000425
+# MLTA time            		0.000799
+# Icall alias time     		6e-05
+# Func alias time      		0.001652
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.001999

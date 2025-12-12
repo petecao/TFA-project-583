@@ -25,24 +25,24 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_kdf_tls1_prf
+0 Top func: test_kdf_scrypt
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: test_kdf_hkdf
+1 Top func: test_kdf_tls1_prf
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: test_kdf_scrypt
+2 Top func: test_kdf_hkdf
 
-Analyzed func: test_kdf_hkdfMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_kdf_tls1_prfMerge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_kdf_tls1_prf
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_kdf_scrypt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hkdf
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -87,11 +87,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002048
-# Typebuilder time     		0.000301
-# MLTA time            		0.000239
-# Icall alias time     		0.000103
-# Func alias time      		0.000893
-# One layer alias time 		9e-06
-# Escape alias time    		6.5e-05
-# DB time              		0.002178
+# Load time            		0.00208
+# Typebuilder time     		0.000427
+# MLTA time            		0.000215
+# Icall alias time     		8e-05
+# Func alias time      		0.000606
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001974

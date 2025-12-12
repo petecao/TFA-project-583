@@ -27,63 +27,88 @@ Openmp enabled
 
 0 Top func: tls1_allocate_write_buffers
 
-1 Top func: tls1_set_crypto_state
+1 Top func: tls_default_set_protocol_version
 
 2 Top func: tls_default_validate_record_header
 
-3 Top func: tls_write_records_default
+3 Top func: tls1_set_crypto_state
 
-4 Top func: tls_default_set_protocol_version
+4 Top func: tls_write_records_default
 
 5 Top func: tls_write_records_multiblock
 
 6 Top func: tls_post_encryption_processing_default
-
-7 Top func: dtls_prepare_record_header
-     Top func: tls1_allocate_write_buffers Failed
-     Top func: tls1_set_crypto_state Failed
-     Top func: tls_default_validate_record_header Failed
-     Top func: tls_write_records_default Failed
      Top func: tls_default_set_protocol_version Failed
+     Top func: tls_default_validate_record_header Failed
+     Top func: tls1_allocate_write_buffers Failed
+     Top func: tls_write_records_default Failed
      Top func: tls_post_encryption_processing_default Failed
      Top func: tls_write_records_multiblock Failed
+     Top func: tls1_set_crypto_state Failed
 
-8 Top func: tls1_initialise_write_packets
+7 Top func: tls_default_read_n
 
-9 Top func: tls1_cipher
+8 Top func: tls_default_post_process_record
 
-10 Top func: tls_default_post_process_record
+9 Top func: tls1_initialise_write_packets
 
-11 Top func: tls_allocate_write_buffers_default
+10 Top func: tls_allocate_write_buffers_default
 
-12 Top func: tls_default_read_n
+11 Top func: dtls_get_more_records
 
-13 Top func: dtls_get_more_records
+12 Top func: tls_prepare_record_header_default
 
-14 Top func: tls_prepare_record_header_default
-     Top func: dtls_prepare_record_header Failed
+13 Top func: tls1_cipher
+     Top func: tls_default_read_n Failed
      Top func: tls_default_post_process_record Failed
      Top func: tls_allocate_write_buffers_default Failed
-     Top func: tls1_initialise_write_packets Failed
-     Top func: tls1_cipher Failed
-
-15 Top func: dtls_post_encryption_processing
-     Top func: tls_default_read_n Failed
      Top func: dtls_get_more_records Failed
      Top func: tls_prepare_record_header_default Failed
+     Top func: tls1_initialise_write_packets Failed
 
-16 Top func: tls_get_max_records_multiblock
+14 Top func: tls_get_more_records
 
-17 Top func: tls_initialise_write_packets_default
+15 Top func: tls_get_max_records_multiblock
 
-18 Top func: Merge complete --- Not blocked by TBAA or TFA check
-tls1_mac
-Merge complete --- Not blocked by TBAA or TFA check
+16 Top func: dtls_prepare_record_header
 
-Merge complete --- Not blocked by TBAA or TFA check
-19Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
+17 Top func: dtls_post_encryption_processing
+
+18 Top func: tls_prepare_for_encryption_default
+     Top func: tls1_cipher Failed
+
+19 Top func: tls_initialise_write_packets_default
+
+20 Top func: Merge complete --- Not blocked by TBAA or TFA check
+tls1_macMerge complete --- Not blocked by TBAA or TFA check
+
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
 tls_get_more_recordsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+tls_get_max_records_multiblockMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+dtls_prepare_record_headerMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+dtls_post_encryption_processingMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+tls_prepare_for_encryption_defaultMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+tls1_macMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -101,32 +126,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-20 Top func: tls_prepare_for_encryption_default
-     Top func: dtls_post_encryption_processing Failed
-     Top func: tls_get_max_records_multiblock Failed
-     Top func: tls_get_more_records Failed
      Top func: tls_initialise_write_packets_default Failed
-     Top func: tls1_mac Failed
-     Top func: tls_prepare_for_encryption_default Failed
 
 Update global ICallees info
 
@@ -169,11 +169,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004269
-# Typebuilder time     		0.000448
-# MLTA time            		0.000507
-# Icall alias time     		7e-05
-# Func alias time      		0.003344
-# One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002109
+# Load time            		0.003897
+# Typebuilder time     		0.000475
+# MLTA time            		0.000498
+# Icall alias time     		6.9e-05
+# Func alias time      		0.003922
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.001975

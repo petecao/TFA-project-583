@@ -27,19 +27,19 @@ Openmp enabled
 
 0 Top func: kat_test
 
-1 Top func: ivgen_test
+1 Top func: badkeylen_test
 
-2 Top func: badkeylen_test
+2 Top func: ivgen_test
+
+Analyzed func: badkeylen_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: kat_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: ivgen_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: badkeylen_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002469
-# Typebuilder time     		0.000408
-# MLTA time            		0.00025
-# Icall alias time     		6.3e-05
-# Func alias time      		0.001714
-# One layer alias time 		6.1e-05
-# Escape alias time    		0.000788
-# DB time              		0.002251
+# Load time            		0.001891
+# Typebuilder time     		0.000292
+# MLTA time            		0.000248
+# Icall alias time     		7e-05
+# Func alias time      		0.004528
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.001974

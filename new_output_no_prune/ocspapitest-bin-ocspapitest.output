@@ -25,17 +25,17 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_resp_signer
+0 Top func: test_access_description
 
-1 Top func: test_access_description
+1 Top func: test_resp_signer
 
 2 Top func: test_ocsp_url_svcloc_new
 
-Analyzed func: test_access_description
+Analyzed func: test_resp_signer
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_resp_signer
+Analyzed func: test_access_description
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002665
-# Typebuilder time     		0.000324
-# MLTA time            		0.000247
-# Icall alias time     		6.1e-05
-# Func alias time      		0.000475
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002079
+# Load time            		0.003908
+# Typebuilder time     		0.000321
+# MLTA time            		0.000254
+# Icall alias time     		7e-05
+# Func alias time      		0.004235
+# One layer alias time 		7e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002033

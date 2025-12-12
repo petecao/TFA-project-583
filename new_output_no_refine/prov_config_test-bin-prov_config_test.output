@@ -25,21 +25,21 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_recursive_config
+0 Top func: test_path_config
 
 1 Top func: test_double_config
 
-2 Top func: test_path_config
+2 Top func: test_recursive_config
+
+Analyzed func: test_path_config
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_double_config
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_recursive_config
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_path_config
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001954
-# Typebuilder time     		0.000283
-# MLTA time            		0.000204
-# Icall alias time     		7.7e-05
-# Func alias time      		0.000489
+# Load time            		0.001896
+# Typebuilder time     		0.00028
+# MLTA time            		0.00021
+# Icall alias time     		7.9e-05
+# Func alias time      		0.001675
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001976
+# DB time              		0.002307

@@ -27,57 +27,57 @@ Openmp enabled
 
 0 Top func: md5_sha1_newctx
 
-1 Top func: md5_sha1_internal_final
+1 Top func: md5_sha1_get_params
 
-2 Top func: md5_sha1_get_params
+2 Top func: md5_sha1_internal_final
 
 3 Top func: md5_sha1_dupctx
 
-4 Top func: md5_sha1_settable_ctx_params
+4 Top func: ossl_digest_default_gettable_params
 
-5 Top func: ossl_digest_default_gettable_params
-
-6 Top func: md5_sha1_set_ctx_params
-
-7Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-md5_sha1_internal_initMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: md5_sha1_dupctx Failed
-     Top func: md5_sha1_get_params Failed
-     Top func: md5_sha1_internal_final Failed
+5 Top func: md5_sha1_internal_init
      Top func: md5_sha1_newctx Failed
-     Top func: md5_sha1_settable_ctx_params Failed
+     Top func: md5_sha1_get_params Failed
      Top func: ossl_digest_default_gettable_params Failed
-     Top func: md5_sha1_internal_init Failed
+     Top func: md5_sha1_dupctx Failed
+     Top func: md5_sha1_internal_final Failed
 
-8 Top func: md5_sha1_copyctx
+6 Top func: ossl_md5_sha1_update
 
-9 Top func: ossl_md5_sha1_update
+7 Top func: md5_sha1_settable_ctx_params
 
-10 Top func: md5_sha1_freectx
-     Top func: md5_sha1_set_ctx_params Failed
-     Top func: md5_sha1_copyctx Failed
-     Top func: ossl_md5_sha1_update Failed
+8 Top func: md5_sha1_set_ctx_params
+
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_copyctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: md5_sha1_internal_initMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_freectxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_md5_sha1_updateMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_copyctx Failed
      Top func: md5_sha1_freectx Failed
+     Top func: md5_sha1_set_ctx_params Failed
 
 Update global ICallees info
 
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002593
-# Typebuilder time     		0.000302
-# MLTA time            		0.000346
-# Icall alias time     		6.6e-05
-# Func alias time      		0.001756
-# One layer alias time 		9e-06
-# Escape alias time    		6.5e-05
-# DB time              		0.003169
+# Load time            		0.004667
+# Typebuilder time     		0.000253
+# MLTA time            		0.000249
+# Icall alias time     		0.000116
+# Func alias time      		0.008255
+# One layer alias time 		7e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002223

@@ -29,9 +29,13 @@ Openmp enabled
 
 1 Top func: ASN1_GENERALIZEDTIME_it
 
+Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-PKEY_USAGE_PERIOD_itMerge complete --- Not blocked by TBAA or TFA check
+PKEY_USAGE_PERIOD_it
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+i2r_PKEY_USAGE_PERIODMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -49,13 +53,9 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: PKEY_USAGE_PERIOD_it Failed
-     Top func: i2r_PKEY_USAGE_PERIOD Failed
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+PKEY_USAGE_PERIOD_itMerge complete --- Not blocked by TBAA or TFA check
+ Failed
 
 Analyzed func: ASN1_GENERALIZEDTIME_it
 DefinitionFuncSet size: 0
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.02658
-# Typebuilder time     		0.002757
-# MLTA time            		0.003223
-# Icall alias time     		0.000151
-# Func alias time      		0.010165
-# One layer alias time 		8.9e-05
-# Escape alias time    		0.00107
-# DB time              		0.002848
+# Load time            		0.001547
+# Typebuilder time     		0.000253
+# MLTA time            		0.000217
+# Icall alias time     		7e-06
+# Func alias time      		0.00054
+# One layer alias time 		5e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002071

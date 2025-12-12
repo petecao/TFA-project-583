@@ -27,21 +27,21 @@ Openmp enabled
 
 Update global ICallees info
 
-0 Update icall:   %146 = call i32 %141(ptr noundef %145, ptr noundef %8, i64 noundef 1), !dbg !1746
+0 Update icall:   call void %185(i32 noundef 1, i32 noundef %188, i32 noundef 21, ptr noundef %192, i64 noundef 2, ptr noundef %193, ptr noundef %196), !dbg !1781
 
-1 Update icall:   %52 = call i32 %50(ptr noundef %51), !dbg !1691
+1 Update icall:   %66 = call i32 %63(ptr noundef %64, i32 noundef %65), !dbg !1701
 
-2 Update icall:   call void %185(i32 noundef 1, i32 noundef %188, i32 noundef 21, ptr noundef %192, i64 noundef 2, ptr noundef %193, ptr noundef %196), !dbg !1781
+2 Update icall:   %52 = call i32 %50(ptr noundef %51), !dbg !1691
 
-3 Update icall:   %74 = call i32 %72(i32 noundef %73), !dbg !1668
+3 Update icall:   call void %238(ptr noundef %239, i32 noundef 16392, i32 noundef %240), !dbg !1822
 
-4 Update icall:   %122 = call i32 %117(ptr noundef %121), !dbg !1730
+4 Update icall:   %141 = call i32 %139(ptr noundef %140), !dbg !1726
 
-5 Update icall:   call void %238(ptr noundef %239, i32 noundef 16392, i32 noundef %240), !dbg !1822
+5 Update icall:   %122 = call i32 %117(ptr noundef %121), !dbg !1730
 
-6 Update icall:   %66 = call i32 %63(ptr noundef %64, i32 noundef %65), !dbg !1701
+6 Update icall:   %146 = call i32 %141(ptr noundef %145, ptr noundef %8, i64 noundef 1), !dbg !1746
 
-7 Update icall:   %141 = call i32 %139(ptr noundef %140), !dbg !1726
+7 Update icall:   %74 = call i32 %72(i32 noundef %73), !dbg !1668
 
  Start ICall Alias Analysis
 
@@ -82,11 +82,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00336
-# Typebuilder time     		0.000479
-# MLTA time            		0.000263
-# Icall alias time     		6.3e-05
-# Func alias time      		0.005018
+# Load time            		0.00704
+# Typebuilder time     		0.000475
+# MLTA time            		0.000261
+# Icall alias time     		6.9e-05
+# Func alias time      		0.010027
 # One layer alias time 		1e-05
-# Escape alias time    		5.8e-05
-# DB time              		0.002161
+# Escape alias time    		5.7e-05
+# DB time              		0.002022

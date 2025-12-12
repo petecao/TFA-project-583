@@ -27,21 +27,21 @@ Openmp enabled
 
 Update global ICallees info
 
-0 Update icall:   call void %238(ptr noundef %239, i32 noundef 16392, i32 noundef %240), !dbg !1822
+0 Update icall:   %52 = call i32 %50(ptr noundef %51), !dbg !1691
 
-1 Update icall:   %141 = call i32 %139(ptr noundef %140), !dbg !1726
+1 Update icall:   %122 = call i32 %117(ptr noundef %121), !dbg !1730
 
-2 Update icall:   %146 = call i32 %141(ptr noundef %145, ptr noundef %8, i64 noundef 1), !dbg !1746
+2 Update icall:   %74 = call i32 %72(i32 noundef %73), !dbg !1668
 
-3 Update icall:   %66 = call i32 %63(ptr noundef %64, i32 noundef %65), !dbg !1701
+3 Update icall:   call void %238(ptr noundef %239, i32 noundef 16392, i32 noundef %240), !dbg !1822
 
-4 Update icall:   call void %185(i32 noundef 1, i32 noundef %188, i32 noundef 21, ptr noundef %192, i64 noundef 2, ptr noundef %193, ptr noundef %196), !dbg !1781
+4 Update icall:   %141 = call i32 %139(ptr noundef %140), !dbg !1726
 
-5 Update icall:   %52 = call i32 %50(ptr noundef %51), !dbg !1691
+5 Update icall:   %66 = call i32 %63(ptr noundef %64, i32 noundef %65), !dbg !1701
 
-6 Update icall:   %122 = call i32 %117(ptr noundef %121), !dbg !1730
+6 Update icall:   call void %185(i32 noundef 1, i32 noundef %188, i32 noundef 21, ptr noundef %192, i64 noundef 2, ptr noundef %193, ptr noundef %196), !dbg !1781
 
-7 Update icall:   %74 = call i32 %72(i32 noundef %73), !dbg !1668
+7 Update icall:   %146 = call i32 %141(ptr noundef %145, ptr noundef %8, i64 noundef 1), !dbg !1746
 
  Start ICall Alias Analysis
 
@@ -82,11 +82,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002658
-# Typebuilder time     		0.000455
-# MLTA time            		0.000271
-# Icall alias time     		6.5e-05
-# Func alias time      		0.005134
-# One layer alias time 		1e-05
-# Escape alias time    		5.7e-05
-# DB time              		0.002146
+# Load time            		0.003246
+# Typebuilder time     		0.00047
+# MLTA time            		0.000268
+# Icall alias time     		4.4e-05
+# Func alias time      		0.003233
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002044

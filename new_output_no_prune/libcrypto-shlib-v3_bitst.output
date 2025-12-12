@@ -50,9 +50,9 @@ WARNING: matchStructTypes problem!
 1 Top func: i2v_ASN1_BIT_STRING
 
 2 Top func: ASN1_BIT_STRING_it
-     Top func: i2v_ASN1_BIT_STRING Failed
-     Top func: v2i_ASN1_BIT_STRING Failed
      Top func: ASN1_BIT_STRING_it Failed
+     Top func: v2i_ASN1_BIT_STRING Failed
+     Top func: i2v_ASN1_BIT_STRING Failed
 
 Update global ICallees info
 
@@ -95,11 +95,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001466
-# Typebuilder time     		0.00044
-# MLTA time            		0.000197
-# Icall alias time     		0.000159
-# Func alias time      		0.000384
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002053
+# Load time            		0.03195
+# Typebuilder time     		0.000442
+# MLTA time            		0.000245
+# Icall alias time     		6.8e-05
+# Func alias time      		0.008273
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002034

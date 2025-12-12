@@ -25,31 +25,29 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: tests_X509_PURPOSE
+0 Top func: test_a2i_ipaddress
 
-1 Top func: test_standard_exts
+1 Top func: tests_X509_check_time
 
-2 Top func: tests_X509_check_time
+2 Top func: tests_X509_PURPOSE
 
-3 Top func: test_a2i_ipaddress
+3 Top func: test_standard_exts
 
 4 Top func: ck_purp
 
-Analyzed func: tests_X509_PURPOSEMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_a2i_ipaddress
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_standard_extsMerge complete --- Not blocked by TBAA or TFA check
+tests_X509_check_timeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
@@ -57,20 +55,22 @@ aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-tests_X509_check_timeMerge complete --- Not blocked by TBAA or TFA check
+tests_X509_PURPOSEMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_a2i_ipaddress
-DefinitionFuncSet size: 1
+test_standard_extsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
 aliased_callset size: 0
 
 Analyzed func: ck_purp
@@ -118,11 +118,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004025
-# Typebuilder time     		0.000563
-# MLTA time            		0.000288
-# Icall alias time     		7.6e-05
-# Func alias time      		0.006316
-# One layer alias time 		7.2e-05
-# Escape alias time    		0.000921
-# DB time              		0.002155
+# Load time            		0.003475
+# Typebuilder time     		0.000461
+# MLTA time            		0.00023
+# Icall alias time     		8e-05
+# Func alias time      		0.000951
+# One layer alias time 		7e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.00198

@@ -25,69 +25,69 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: noisy_dgram_new
+0 Top func: noisy_dgram_recvmmsg
 
-1 Top func: noisy_dgram_recvmmsg
-
-2 Top func: noisy_dgram_ctrl
-
-3 Top func: noisy_dgram_sendmmsg
-
-4 Top func: noisy_dgram_freeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_new
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_freeMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_recvmmsgMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: noisy_dgram_new
 DefinitionFuncSet size: 1
@@ -97,19 +97,19 @@ Analyzed func: noisy_dgram_sendmmsg
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: noisy_dgram_free
+Analyzed func: noisy_dgram_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: noisy_dgram_recvmmsg
+Analyzed func: noisy_dgram_free
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %97 = call i64 %93(ptr noundef %96), !dbg !279
+0 Update icall:   %43 = call i64 %39(ptr noundef %42), !dbg !226
 
-1 Update icall:   %43 = call i64 %39(ptr noundef %42), !dbg !226
+1 Update icall:   %97 = call i64 %93(ptr noundef %96), !dbg !279
 
  Start ICall Alias Analysis
 
@@ -150,11 +150,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003077
-# Typebuilder time     		0.000588
-# MLTA time            		0.000303
-# Icall alias time     		3.7e-05
-# Func alias time      		0.001125
-# One layer alias time 		1.2e-05
-# Escape alias time    		5.5e-05
-# DB time              		0.001975
+# Load time            		0.002713
+# Typebuilder time     		0.000379
+# MLTA time            		0.000358
+# Icall alias time     		8.4e-05
+# Func alias time      		0.003293
+# One layer alias time 		1.6e-05
+# Escape alias time    		6.4e-05
+# DB time              		0.002017

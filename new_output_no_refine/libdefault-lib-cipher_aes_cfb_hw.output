@@ -25,53 +25,49 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_cipher_hw_generic_cfb128
+0 Top func: cipher_hw_aes_copyctx
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: AES_encrypt
+ Top func: ossl_cipher_hw_generic_cfb128
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_aes_copyctxMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: AES_encryptMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 cipher_hw_aes_initkeyMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_cipher_hw_generic_cfb1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_cipher_hw_generic_cfb8
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_hw_generic_cfb128Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: ossl_cipher_hw_generic_cfb128Merge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-Analyzed func: AES_encrypt
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -81,6 +77,10 @@ aliased_callset size: 0
 
 Analyzed func: cipher_hw_aes_copyctx
 DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: AES_encrypt
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Analyzed func: ossl_cipher_hw_generic_cfb8
@@ -132,11 +132,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001347
-# Typebuilder time     		0.000261
-# MLTA time            		0.000295
+# Load time            		0.001206
+# Typebuilder time     		0.000266
+# MLTA time            		0.000293
 # Icall alias time     		7.7e-05
-# Func alias time      		0.000879
-# One layer alias time 		8e-06
+# Func alias time      		0.006554
+# One layer alias time 		9e-06
 # Escape alias time    		6.4e-05
-# DB time              		0.002142
+# DB time              		0.001997

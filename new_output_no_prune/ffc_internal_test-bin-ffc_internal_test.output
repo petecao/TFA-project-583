@@ -29,25 +29,19 @@ Openmp enabled
 
 1 Top func: ffc_params_gen_canonicalg_test
 
-2 Top func: ffc_params_gen_test
+2 Top func: ffc_params_validate_g_unverified_test
 
-3 Top func: ffc_params_validate_g_unverified_test
+3 Top func: ffc_params_gen_test
 
 4 Top func: ffc_params_fips186_2_gen_validate_test
 
-5 Top func: ffc_public_validate_test
+5 Top func: ffc_private_validate_test
 
 6 Top func: ffc_private_gen_test
 
+7 Top func: ffc_public_validate_test
+
 Analyzed func: ffc_params_copy_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: ffc_params_gen_canonicalg_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: ffc_params_validate_g_unverified_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -55,7 +49,11 @@ Analyzed func: ffc_params_gen_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: ffc_public_validate_test
+Analyzed func: ffc_params_validate_g_unverified_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: ffc_params_gen_canonicalg_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -63,19 +61,21 @@ Analyzed func: ffc_params_fips186_2_gen_validate_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: ffc_params_validate_pq_test
-
-8 Top func: ffc_private_validate_test
+Analyzed func: ffc_private_validate_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: ffc_private_gen_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: ffc_params_validate_pq_test
+8 Top func: ffc_params_validate_pq_test
+
+Analyzed func: ffc_public_validate_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: ffc_private_validate_test
+Analyzed func: ffc_params_validate_pq_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00267
-# Typebuilder time     		0.000522
-# MLTA time            		0.000248
-# Icall alias time     		7.4e-05
-# Func alias time      		0.004213
-# One layer alias time 		7e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002264
+# Load time            		0.002677
+# Typebuilder time     		0.000347
+# MLTA time            		0.000274
+# Icall alias time     		3.3e-05
+# Func alias time      		0.000965
+# One layer alias time 		5e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001963

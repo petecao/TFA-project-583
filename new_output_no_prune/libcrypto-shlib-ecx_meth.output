@@ -27,166 +27,163 @@ Openmp enabled
 
 0 Top func: ecd_item_sign448
 
-1 Top func: ecx_pub_print
-
-2 Top func: ecx_security_bits
-
-3 Top func: pkey_ecx_derive25519
+1 Top func: pkey_ecx_derive25519
 
 Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
- Top func: ecx_get_priv_key
+2 Top func: ecx_security_bits
+
+Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: ecx_pub_print
+
+4 Top func: ecx_get_priv_key
 
 5 Top func: ecd_item_verify
 
 6 Top func: ecx_pkey_copy
-     Top func: ecd_item_sign448 Failed
-     Top func: ecx_pub_print Failed
-     Top func: ecx_security_bits Failed
-     Top func: ecd_item_verify Failed
 
 Analyzed func: pkey_ecx_derive25519
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+     Top func: ecd_item_sign448 Failed
+     Top func: ecx_security_bits Failed
+     Top func: ecx_pub_print Failed
      Top func: ecx_get_priv_key Failed
+     Top func: ecd_item_verify Failed
+     Top func: ecx_pkey_copy Failed
 
-7 Top func: ecd_sig_info_set448
+7 Top func: pkey_ecx_ctrl
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-8 Top func: ecx_priv_encode
+8 Top func: ecd_sig_info_set448
 
 9 Top func: ecx_cmp_parameters
 
-10 Top func: ecd_item_sign25519
+10 Top func: ecx_priv_encode
 
-11 Top func: pkey_ecx_ctrl
+11 Top func: ecx_get_pub_key
 
-Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
- Top func: ecx_get_pub_key
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecx_pkey_copy Failed
-     Top func: ecd_sig_info_set448 Failed
+12 Top func: ecd_item_sign25519
 
 13 Top func: ecx_priv_decode_ex
-     Top func: ecx_cmp_parameters Failed
-     Top func: ecx_priv_encode Failed
-     Top func: ecd_item_sign25519 Failed
-     Top func: ecx_get_pub_key Failed
 
 Analyzed func: pkey_ecx_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+     Top func: ecd_sig_info_set448 Failed
+     Top func: ecx_priv_encode Failed
+     Top func: ecx_cmp_parameters Failed
+     Top func: ecx_get_pub_key Failed
+     Top func: ecd_item_sign25519 Failed
+     Top func: ecx_priv_decode_ex Failed
 
-14 Top func: ed448_import_from
+14 Top func: pkey_ecx_derive448
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-15 Top func: ecx_free
+15 Top func: ed448_import_from
 
 16 Top func: ecx_priv_print
 
-17 Top func: ecd_sig_info_set25519
+17 Top func: ecx_free
 
 18 Top func: ecx_pkey_dirty_cnt
 
-19 Top func: pkey_ecx_derive448
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecx_priv_decode_exMerge complete --- Not blocked by TBAA or TFA check
- Failed
+19 Top func: ecd_sig_info_set25519
 
 20 Top func: x448_import_from
-     Top func: ed448_import_from Failed
-     Top func: ecx_free Failed
-     Top func: ecx_priv_print Failed
-     Top func: ecd_sig_info_set25519 Failed
-     Top func: ecx_pkey_dirty_cnt Failed
 
 Analyzed func: pkey_ecx_derive448
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-21 Top func: ecx_pub_decode
-
-22 Top func: ecx_ctrl
-
-23 Top func: ecx_size
-
-24 Top func: ed25519_import_from
-
-25 Top func: ecx_pkey_export_to
-
-26 Top func: ecx_set_priv_key
+     Top func: ecx_priv_print Failed
+     Top func: ed448_import_from Failed
+     Top func: ecx_pkey_dirty_cnt Failed
+     Top func: ecx_free Failed
+     Top func: ecd_sig_info_set25519 Failed
      Top func: x448_import_from Failed
 
+21 Top func: ecx_set_priv_key
+
+22 Top func: ecx_size
+
+23 Top func: ecx_pub_decode
+
+24 Top func: ecx_pkey_export_to
+
+25 Top func: ecx_ctrl
+
+26 Top func: ed25519_import_from
+
 27 Top func: ecd_size25519
-     Top func: ecx_pub_decode Failed
-     Top func: ecx_ctrl Failed
      Top func: ecx_size Failed
-     Top func: ed25519_import_from Failed
-     Top func: ecx_pkey_export_to Failed
      Top func: ecx_set_priv_key Failed
+     Top func: ecx_pub_decode Failed
+     Top func: ecx_pkey_export_to Failed
+     Top func: ecx_ctrl Failed
+     Top func: ed25519_import_from Failed
 
-28 Top func: ecx_pub_encode
+28 Top func: ecx_bits
+     Top func: ecd_size25519 Failed
 
-29 Top func: pkey_ecx_keygen
+29 Top func: ecx_set_pub_key
 
-30Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ecx_bitsMerge complete --- Not blocked by TBAA or TFA check
+30 Top func: ecx_pub_encode
 
+31 Top func: x25519_import_from
 
-31Merge complete --- Not blocked by TBAA or TFA check
+32 Top func: pkey_ecx_keygen
+
+33Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ecd_size448Merge complete --- Not blocked by TBAA or TFA check
 
 
-32 Top func: Merge complete --- Not blocked by TBAA or TFA check
-x25519_import_fromMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: ecd_size25519 Failed
+34Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ecd_ctrl
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
-33 Top func: ecx_set_pub_key
-
-34 Top func: ecd_ctrl
-     Top func: ecx_pub_encode Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: ecx_bits Failed
-     Top func: ecd_size448 Failed
+     Top func: ecx_pub_encode Failed
+     Top func: ecx_set_pub_key Failed
      Top func: x25519_import_from Failed
+     Top func: ecd_size448 Failed
 
-Analyzed func: pkey_ecx_keygen
+35 Top func: pkey_ecd_ctrl
+
+Merge complete --- Not blocked by TBAA or TFA check
+36Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ecx_pub_cmp
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+pkey_ecx_keygenMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+     Top func: ecd_ctrl Failed
 
-35 Top func: ecx_pub_cmp
-
-36 Top func: pkey_ecd_ctrl
+37 Top func: pkey_ecd_digestverify448
 
 Merge complete --- Not blocked by TBAA or TFA check
-37Merge complete --- Not blocked by TBAA or TFA check
+38Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-pkey_ecd_digestverify448
+pkey_ecd_digestsign448
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-ecx_set_pub_keyMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-
-38 Top func: pkey_ecd_digestsign448
-     Top func: ecd_ctrlMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 
 39 Top func: pkey_ecd_digestverify25519
 
-Merge complete --- Not blocked by TBAA or TFA check
-40Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-pkey_ecd_digestsign25519
+40 Top func: pkey_ecd_digestsign25519
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 ecx_pub_cmpMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
@@ -204,11 +201,14 @@ Analyzed func: pkey_ecd_digestsign448
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: pkey_ecd_digestverify25519
+Analyzed func: pkey_ecd_digestsign25519
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: pkey_ecd_digestsign25519
+Analyzed func: pkey_ecd_digestverify25519
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -255,11 +255,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.006086
-# Typebuilder time     		0.000768
-# MLTA time            		0.001289
-# Icall alias time     		7.5e-05
-# Func alias time      		0.002805
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002063
+# Load time            		0.022572
+# Typebuilder time     		0.000629
+# MLTA time            		0.001442
+# Icall alias time     		0.000106
+# Func alias time      		0.008564
+# One layer alias time 		8e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002182

@@ -27,7 +27,6 @@ Openmp enabled
 
 0 Top func: X509V3_conf_free
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 AUTHORITY_KEYID_itMerge complete --- Not blocked by TBAA or TFA check
@@ -35,31 +34,32 @@ AUTHORITY_KEYID_itMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: Merge complete --- Not blocked by TBAA or TFA check
-v2i_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: i2v_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2v_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-AUTHORITY_KEYID_itMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
 v2i_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+AUTHORITY_KEYID_it FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 i2v_AUTHORITY_KEYIDMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+v2i_AUTHORITY_KEYID FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -121,11 +121,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002613
-# Typebuilder time     		0.000338
-# MLTA time            		0.000262
-# Icall alias time     		6e-05
-# Func alias time      		0.000682
+# Load time            		0.002149
+# Typebuilder time     		0.000524
+# MLTA time            		0.000282
+# Icall alias time     		6.5e-05
+# Func alias time      		0.000649
 # One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.001968
+# Escape alias time    		5.6e-05
+# DB time              		0.002149

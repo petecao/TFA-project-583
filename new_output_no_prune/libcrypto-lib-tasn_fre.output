@@ -29,19 +29,19 @@ Update global ICallees info
 
 0 Update icall:   %76 = call i32 %73(i32 noundef 2, ptr noundef %74, ptr noundef %75, ptr noundef null), !dbg !317
 
-1 Update icall:   %113 = call i32 %110(i32 noundef 3, ptr noundef %111, ptr noundef %112, ptr noundef null), !dbg !357
+1 Update icall:   call void %44(ptr noundef %45, ptr noundef %46), !dbg !243
 
-2 Update icall:   call void %44(ptr noundef %45, ptr noundef %46), !dbg !243
+2 Update icall:   call void %29(ptr noundef %30, ptr noundef %31), !dbg !231
 
-3 Update icall:   call void %29(ptr noundef %30, ptr noundef %31), !dbg !231
+3 Update icall:   %209 = call i32 %206(i32 noundef 3, ptr noundef %207, ptr noundef %208, ptr noundef null), !dbg !450
 
 4 Update icall:   %161 = call i32 %158(i32 noundef 2, ptr noundef %159, ptr noundef %160, ptr noundef null), !dbg !394
 
-5 Update icall:   %42 = call ptr %41(), !dbg !199
+5 Update icall:   %56 = call ptr %55(), !dbg !214
 
-6 Update icall:   %209 = call i32 %206(i32 noundef 3, ptr noundef %207, ptr noundef %208, ptr noundef null), !dbg !450
+6 Update icall:   %42 = call ptr %41(), !dbg !199
 
-7 Update icall:   %56 = call ptr %55(), !dbg !214
+7 Update icall:   %113 = call i32 %110(i32 noundef 3, ptr noundef %111, ptr noundef %112, ptr noundef null), !dbg !357
 
 8 Update icall:   call void %136(ptr noundef %137, ptr noundef %138), !dbg !377
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00252
-# Typebuilder time     		0.000271
-# MLTA time            		0.000319
-# Icall alias time     		0.0001
-# Func alias time      		0.015203
-# One layer alias time 		7e-05
-# Escape alias time    		0.000837
-# DB time              		0.002372
+# Load time            		0.005027
+# Typebuilder time     		0.000256
+# MLTA time            		0.000278
+# Icall alias time     		9.3e-05
+# Func alias time      		0.016754
+# One layer alias time 		1e-05
+# Escape alias time    		5.6e-05
+# DB time              		0.002195

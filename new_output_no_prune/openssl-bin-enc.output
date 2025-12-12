@@ -25,24 +25,12 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: BIO_debug_callback_ex
+0 Top func: show_ciphers
 
-1 Top func: show_ciphers
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+BIO_debug_callback_exMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -679,11 +667,12 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-BIO_debug_callback_exMerge complete --- Not blocked by TBAA or TFA check
+show_ciphersMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
+1Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
@@ -696,9 +685,20 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: show_ciphers
-DefinitionFuncSet size: 1
+Analyzed func: BIO_debug_callback_ex
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Update global ICallees info
@@ -742,11 +742,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003826
-# Typebuilder time     		0.000472
-# MLTA time            		0.00036
-# Icall alias time     		5.7e-05
-# Func alias time      		0.003189
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.001984
+# Load time            		0.027745
+# Typebuilder time     		0.000508
+# MLTA time            		0.000311
+# Icall alias time     		6.2e-05
+# Func alias time      		0.008224
+# One layer alias time 		7e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002217

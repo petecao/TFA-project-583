@@ -25,13 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_param_int
+0 Top func: test_param_ulong
 
-1 Top func: test_param_int64
+1 Top func: test_param_size_t
 
-2 Top func: test_param_ulong
+2 Top func: test_param_int
 
-3 Top func: test_param_size_t
+3 Top func: test_param_int64
 
 4 Top func: test_param_bignum
 
@@ -39,11 +39,9 @@ Openmp enabled
 
 6 Top func: test_param_real
 
-Analyzed func: test_param_int
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+7 Top func: test_param_merge
 
-Analyzed func: test_param_int64
+Analyzed func: test_param_size_t
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -51,7 +49,11 @@ Analyzed func: test_param_ulong
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_param_size_t
+Analyzed func: test_param_int
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_param_int64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -63,25 +65,25 @@ Analyzed func: test_param_bignum
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: test_param_long
-
-8 Top func: test_param_uint64
+8 Top func: test_param_time_t
 
 9 Top func: test_param_int32
 
-10 Top func: test_param_time_t
+10 Top func: test_param_long
 
-11 Top func: test_param_copy_null
+11 Top func: test_param_uint64
 
-Analyzed func: test_param_real
+12 Top func: test_param_copy_null
+
+Analyzed func: test_param_merge
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-12 Top func: test_param_signed_bignum
+13 Top func: test_param_signed_bignum
 
-13 Top func: test_param_construct
+14 Top func: test_param_clear_free
 
-Analyzed func: test_param_long
+Analyzed func: test_param_time_t
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -89,35 +91,29 @@ Analyzed func: test_param_int32
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_param_uint64
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: test_param_copy_null
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_param_time_t
+Analyzed func: test_param_uint64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-14 Top func: test_param_uint
-
-15 Top func: test_param_uint32
-
-16 Top func: test_param_merge
-
-17 Top func: test_param_clear_free
-
-Analyzed func: test_param_construct
+Analyzed func: test_param_long
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+
+15 Top func: test_param_construct
+
+16 Top func: test_param_uint32
+
+17 Top func: test_param_uint
 
 Analyzed func: test_param_signed_bignum
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_param_merge
+Analyzed func: test_param_clear_free
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -125,11 +121,15 @@ Analyzed func: test_param_uint32
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_param_construct
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_param_uint
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_param_clear_free
+Analyzed func: test_param_real
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -174,11 +174,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00553
-# Typebuilder time     		0.000705
-# MLTA time            		0.000555
-# Icall alias time     		8.7e-05
-# Func alias time      		0.002952
-# One layer alias time 		8.4e-05
-# Escape alias time    		0.001004
-# DB time              		0.002261
+# Load time            		0.005853
+# Typebuilder time     		0.000579
+# MLTA time            		0.000407
+# Icall alias time     		7.7e-05
+# Func alias time      		0.002875
+# One layer alias time 		7e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002077

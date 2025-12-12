@@ -25,41 +25,41 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ext_cmp
+0 Top func: ext_cmp_BSEARCH_CMP_FN
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ext_cmp_BSEARCH_CMP_FNMerge complete --- Not blocked by TBAA or TFA check
+ext_cmp
 
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-ext_list_free
+ext_list_freeMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 ext_cmp_BSEARCH_CMP_FNMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: ext_list_freeMerge complete --- Not blocked by TBAA or TFA check
-
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ext_list_free
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
      Top func: ext_cmp Failed
 
 Update global ICallees info
@@ -107,11 +107,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002479
-# Typebuilder time     		0.000343
-# MLTA time            		0.000238
-# Icall alias time     		7.5e-05
-# Func alias time      		0.000895
-# One layer alias time 		6.1e-05
-# Escape alias time    		0.000744
-# DB time              		0.002163
+# Load time            		0.006582
+# Typebuilder time     		0.000338
+# MLTA time            		0.000279
+# Icall alias time     		0.001325
+# Func alias time      		0.009287
+# One layer alias time 		9e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.00203

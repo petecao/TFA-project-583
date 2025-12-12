@@ -25,12 +25,11 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: pkt_split_dgram_ctrl
+0 Top func: pkt_split_dgram_sendmmsg
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-pkt_split_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -41,11 +40,13 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 pkt_split_dgram_recvmmsgMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-pkt_split_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -57,9 +58,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: pkt_split_dgram_sendmmsg
+Analyzed func: pkt_split_dgram_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001829
+# Load time            		0.001734
 # Typebuilder time     		0.000205
-# MLTA time            		0.000195
-# Icall alias time     		6.5e-05
-# Func alias time      		0.000613
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001956
+# MLTA time            		0.000211
+# Icall alias time     		6.6e-05
+# Func alias time      		0.002894
+# One layer alias time 		8e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002089

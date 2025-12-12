@@ -25,30 +25,30 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_load_config
-
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_check_null_numbersMerge complete --- Not blocked by TBAA or TFA check
-
+0 Top func: test_available_providers
 
 Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_load_configMerge complete --- Not blocked by TBAA or TFA check
+
+
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_available_providersMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_check_overflowMerge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_check_overflow
+test_check_null_numbers
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_check_null_numbersMerge complete --- Not blocked by TBAA or TFA check
+test_available_providersMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -61,11 +61,11 @@ Analyzed func: test_load_config
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_available_providers
+Analyzed func: test_check_overflow
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_check_overflow
+Analyzed func: test_check_null_numbers
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -110,11 +110,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002071
-# Typebuilder time     		0.000301
-# MLTA time            		0.000203
+# Load time            		0.00225
+# Typebuilder time     		0.000424
+# MLTA time            		0.000253
 # Icall alias time     		3.4e-05
-# Func alias time      		0.008187
+# Func alias time      		0.000596
 # One layer alias time 		5e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002371
+# Escape alias time    		6.3e-05
+# DB time              		0.001989

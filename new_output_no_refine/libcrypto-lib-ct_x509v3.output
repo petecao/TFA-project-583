@@ -37,13 +37,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
+x509_ext_d2i_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
 
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-x509_ext_d2i_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
+i2r_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -55,17 +55,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 5 Top func: i2s_poison
 
-6 Top func: s2i_poison
+6 Top func: ocsp_ext_d2i_SCT_LIST
      Top func: i2d_SCT_LIST Failed
      Top func: i2r_SCT_LIST Failed
      Top func: ASN1_NULL_it Failed
      Top func: x509_ext_d2i_SCT_LIST Failed
      Top func: SCT_LIST_free Failed
-     Top func: i2s_poison Failed
 
-7 Top func: ocsp_ext_d2i_SCT_LIST
-     Top func: s2i_poison Failed
+7 Top func: s2i_poison
+     Top func: i2s_poison Failed
      Top func: ocsp_ext_d2i_SCT_LIST Failed
+     Top func: s2i_poison Failed
 
 Update global ICallees info
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001272
-# Typebuilder time     		0.000276
-# MLTA time            		0.00034
-# Icall alias time     		7e-06
-# Func alias time      		0.002057
+# Load time            		0.001699
+# Typebuilder time     		0.000208
+# MLTA time            		0.000222
+# Icall alias time     		6e-06
+# Func alias time      		0.000998
 # One layer alias time 		5e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.00207
+# Escape alias time    		5.4e-05
+# DB time              		0.002025

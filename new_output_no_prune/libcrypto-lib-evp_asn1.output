@@ -25,12 +25,12 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: INT32_it
+0 Top func: ASN1_OCTET_STRING_it
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ASN1_OCTET_STRING_itMerge complete --- Not blocked by TBAA or TFA check
+INT32_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -186,11 +186,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002028
-# Typebuilder time     		0.000267
-# MLTA time            		0.000247
+# Load time            		0.002006
+# Typebuilder time     		0.000265
+# MLTA time            		0.000246
 # Icall alias time     		6.7e-05
-# Func alias time      		0.001083
+# Func alias time      		0.00122
 # One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.001965
+# Escape alias time    		5.7e-05
+# DB time              		0.001985

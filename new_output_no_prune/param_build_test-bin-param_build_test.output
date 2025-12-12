@@ -25,31 +25,19 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: builder_limit_test
+0 Top func: template_private_test
 
-1 Top func: template_private_single_zero_test
+1 Top func: template_public_single_zero_test
 
-2 Top func: template_public_single_zero_test
+2 Top func: template_public_test
 
-3 Top func: template_private_test
+3 Top func: template_private_single_zero_test
 
-4 Top func: template_public_test
+4 Top func: builder_merge_test
 
-5 Top func: builder_merge_test
-
-Analyzed func: builder_limit_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: template_private_single_zero_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+5 Top func: builder_limit_test
 
 Analyzed func: template_private_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: template_public_single_zero_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -57,7 +45,19 @@ Analyzed func: template_public_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: template_public_single_zero_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: builder_merge_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: template_private_single_zero_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: builder_limit_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.005194
-# Typebuilder time     		0.000559
-# MLTA time            		0.000402
-# Icall alias time     		7e-05
-# Func alias time      		0.000785
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002355
+# Load time            		0.016974
+# Typebuilder time     		0.0006
+# MLTA time            		0.00044
+# Icall alias time     		6.2e-05
+# Func alias time      		0.000919
+# One layer alias time 		8e-06
+# Escape alias time    		6.4e-05
+# DB time              		0.002207

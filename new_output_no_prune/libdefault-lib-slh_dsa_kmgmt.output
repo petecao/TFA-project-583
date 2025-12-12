@@ -29,83 +29,80 @@ Openmp enabled
 
 1 Top func: slh_dsa_gen_cleanup
 
-2 Top func: slh_dsa_shake_128f_gen
+2 Top func: slh_dsa_sha2_256f_new_key
 
-3 Top func: slh_dsa_sha2_256f_new_key
+3 Top func: slh_dsa_shake_128f_gen
 
 4 Top func: slh_dsa_sha2_192s_new_key
 
-5 Top func: slh_dsa_dup_key
+5 Top func: slh_dsa_export
 
 6 Top func: slh_dsa_shake_256s_new_key
 
-7 Top func: slh_dsa_export
-     Top func: slh_dsa_gen_init Failed
+7 Top func: slh_dsa_dup_key
      Top func: slh_dsa_gen_cleanup Failed
      Top func: slh_dsa_sha2_256f_new_key Failed
-     Top func: slh_dsa_dup_key Failed
-     Top func: slh_dsa_shake_128f_gen Failed
-     Top func: slh_dsa_shake_256s_new_key Failed
      Top func: slh_dsa_sha2_192s_new_key Failed
+     Top func: slh_dsa_shake_128f_gen Failed
      Top func: slh_dsa_export Failed
+     Top func: slh_dsa_shake_256s_new_key Failed
 
-8 Top func: slh_dsa_sha2_128s_gen
-
-9 Top func: slh_dsa_gen_set_params
-
-Merge complete --- Not blocked by TBAA or TFA check
-10 Top func: slh_dsa_sha2_256f_genMerge complete --- Not blocked by TBAA or TFA check
+8 Top func: slh_dsa_gen_set_params
 
 Merge complete --- Not blocked by TBAA or TFA check
+9 Top func: Merge complete --- Not blocked by TBAA or TFA check
+slh_dsa_sha2_256f_genMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-11Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+slh_dsa_sha2_192s_genMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+11 Top func: slh_dsa_shake_192s_new_keyMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+slh_dsa_dup_keyMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+12Merge complete --- Not blocked by TBAA or TFA check
+ Top func: slh_dsa_loadMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+13Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+slh_dsa_shake_256s_genMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+14Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 slh_dsa_hasMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-slh_dsa_shake_192s_new_keyMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-slh_dsa_shake_256s_genMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-14Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-slh_dsa_sha2_192s_genMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-15Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-slh_dsa_loadMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -136,82 +133,85 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: slh_dsa_sha2_256f_gen Failed
-     Top func: slh_dsa_shake_192s_new_key Failed
-     Top func: slh_dsa_sha2_128s_gen Failed
-     Top func: slh_dsa_shake_256s_gen Failed
-     Top func: slh_dsa_load Failed
      Top func: slh_dsa_sha2_192s_gen Failed
-     Top func: slh_dsa_has Failed
-     Top func: slh_dsa_gen_set_params Failed
+     Top func: slh_dsa_shake_192s_new_key Failed
+     Top func: slh_dsa_load Failed
 
-16 Top func: slh_dsa_shake_128s_new_key
+15 Top func: slh_dsa_shake_128s_new_key
+
+16 Top func: slh_dsa_sha2_192f_new_key
+     Top func: slh_dsa_shake_256s_gen Failed
 
 17 Top func: slh_dsa_shake_192s_gen
+     Top func: slh_dsa_has Failed
 
-18 Top func: slh_dsa_sha2_192f_gen
+18 Top func: slh_dsa_get_params
+     Top func: slh_dsa_gen_set_params Failed
 
 19 Top func: slh_dsa_shake_256f_new_key
 
-20 Top func: slh_dsa_get_params
-
-21 Top func: slh_dsa_sha2_192f_new_key
-
-22 Top func: slh_dsa_match
-
-23 Top func: slh_dsa_gen_settable_params
+20 Top func: slh_dsa_match
      Top func: slh_dsa_shake_128s_new_key Failed
-     Top func: slh_dsa_shake_192s_gen Failed
-     Top func: slh_dsa_shake_256f_new_key Failed
-     Top func: slh_dsa_sha2_192f_gen Failed
-     Top func: slh_dsa_get_params Failed
      Top func: slh_dsa_sha2_192f_new_key Failed
+     Top func: slh_dsa_shake_192s_gen Failed
+
+21 Top func: slh_dsa_gen_settable_params
+     Top func: slh_dsa_get_params Failed
+
+22 Top func: slh_dsa_shake_128s_gen
+
+23 Top func: slh_dsa_sha2_128s_new_key
+     Top func: slh_dsa_shake_256f_new_key Failed
+
+24 Top func: slh_dsa_shake_192f_new_key
      Top func: slh_dsa_match Failed
 
-24 Top func: slh_dsa_shake_128s_gen
-     Top func: slh_dsa_gen_settable_params Failed
-
-25 Top func: slh_dsa_shake_192f_new_key
+25 Top func: slh_dsa_gettable_params
 
 26 Top func: slh_dsa_shake_256f_gen
+     Top func: slh_dsa_gen_settable_params Failed
 
-27 Top func: slh_dsa_sha2_256s_new_key
-
-28 Top func: slh_dsa_gettable_params
-
-29 Top func: slh_dsa_sha2_128s_new_key
-
-30 Top func: slh_dsa_import
-
-31 Top func: slh_dsa_sha2_128f_new_key
+27 Top func: slh_dsa_import
      Top func: slh_dsa_shake_128s_gen Failed
-     Top func: slh_dsa_shake_192f_new_key Failed
-     Top func: slh_dsa_shake_256f_gen Failed
-     Top func: slh_dsa_sha2_256s_new_key Failed
-     Top func: slh_dsa_gettable_params Failed
      Top func: slh_dsa_sha2_128s_new_key Failed
+     Top func: slh_dsa_shake_192f_new_key Failed
+
+28 Top func: slh_dsa_sha2_128f_new_key
+
+29 Top func: slh_dsa_shake_128f_new_key
+
+30 Top func: slh_dsa_free_key
+     Top func: slh_dsa_gettable_params Failed
+     Top func: slh_dsa_shake_256f_gen Failed
+
+31 Top func: slh_dsa_shake_192f_gen
      Top func: slh_dsa_import Failed
 
-32 Top func: slh_dsa_shake_128f_new_key
+32 Top func: slh_dsa_validate
 
-33 Top func: slh_dsa_shake_192f_gen
+33 Top func: slh_dsa_sha2_256s_gen
      Top func: slh_dsa_sha2_128f_new_key Failed
 
-34 Top func: slh_dsa_sha2_256s_gen
+34 Top func: slh_dsa_imexport_types
+     Top func: slh_dsa_free_key Failed
+     Top func: slh_dsa_shake_128f_new_key Failed
+     Top func: slh_dsa_shake_192f_gen Failed
 
 35 Top func: slh_dsa_sha2_128f_gen
 
-36 Top func: slh_dsa_validate
+36 Top func: slh_dsa_sha2_256s_new_key
 
-37 Top func: slh_dsa_free_key
-
-38 Top func: slh_dsa_imexport_types
-     Top func: slh_dsa_shake_192f_gen Failed
-     Top func: slh_dsa_shake_128f_new_key Failed
+37 Top func: slh_dsa_sha2_192f_gen
      Top func: slh_dsa_sha2_256s_gen Failed
-     Top func: slh_dsa_sha2_128f_gen Failed
-     Top func: slh_dsa_free_key Failed
      Top func: slh_dsa_validate Failed
+
+38 Top func: slh_dsa_sha2_128s_gen
      Top func: slh_dsa_imexport_types Failed
+     Top func: slh_dsa_sha2_128f_gen Failed
+     Top func: slh_dsa_sha2_256s_new_key Failed
+     Top func: slh_dsa_sha2_192f_gen Failed
+     Top func: slh_dsa_sha2_128s_gen Failed
+     Top func: slh_dsa_gen_init Failed
 
 Update global ICallees info
 
@@ -335,11 +335,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.003278
-# Typebuilder time     		0.000415
-# MLTA time            		0.000737
-# Icall alias time     		0.000884
-# Func alias time      		0.006537
-# One layer alias time 		7.1e-05
-# Escape alias time    		0.000891
-# DB time              		0.00231
+# Load time            		0.008809
+# Typebuilder time     		0.000784
+# MLTA time            		0.001022
+# Icall alias time     		0.000751
+# Func alias time      		0.003303
+# One layer alias time 		5e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002011

@@ -30,7 +30,7 @@ Openmp enabled
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-prefix_readMerge complete --- Not blocked by TBAA or TFA check
+prefix_getsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -40,7 +40,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-prefix_putsMerge complete --- Not blocked by TBAA or TFA check
+prefix_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -50,39 +50,59 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-prefix_getsMerge complete --- Not blocked by TBAA or TFA check
+prefix_putsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-4 Top func: prefix_destroy
-
-5 Top func: prefix_ctrl
-
-Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-prefix_callback_ctrlMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+prefix_readMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-7Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 prefix_createMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+prefix_writeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: prefix_gets
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: prefix_ctrl
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+6 Top func: prefix_destroy
+
+Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+prefix_callback_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -98,22 +118,10 @@ DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-
-Analyzed func: prefix_write
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+0
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: prefix_puts
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: prefix_gets
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: prefix_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -121,19 +129,11 @@ Analyzed func: prefix_create
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: prefix_callback_ctrl
+Analyzed func: prefix_destroy
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: prefix_destroy
+Analyzed func: prefix_callback_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -178,11 +178,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001871
-# Typebuilder time     		0.000416
-# MLTA time            		0.000279
-# Icall alias time     		6e-05
-# Func alias time      		0.002515
-# One layer alias time 		7e-06
+# Load time            		0.003613
+# Typebuilder time     		0.000276
+# MLTA time            		0.000283
+# Icall alias time     		6.7e-05
+# Func alias time      		0.008223
+# One layer alias time 		8e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.002009
+# DB time              		0.001976

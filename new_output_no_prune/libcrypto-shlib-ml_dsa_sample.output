@@ -28,7 +28,8 @@ Openmp enabled
 0 Top func: coeff_from_nibble_2
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
 coeff_from_nibble_4Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -194,16 +195,15 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-coeff_from_nibble_2
-DefinitionFuncSet size: 1
-aliased_callset size: 2
+coeff_from_nibble_2Merge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+2
 
 Analyzed func: coeff_from_nibble_4
 DefinitionFuncSet size: 1
@@ -211,48 +211,47 @@ aliased_callset size: 2
 
 Update global ICallees info
 
-0 Update icall:   %53 = call i32 %46(i32 noundef %47, ptr noundef %52), !dbg !111
+0 Update icall:   %68 = call i32 %61(i32 noundef %62, ptr noundef %67), !dbg !121
 
-1 Update icall:   %68 = call i32 %61(i32 noundef %62, ptr noundef %67), !dbg !121
+1 Update icall:   %53 = call i32 %46(i32 noundef %47, ptr noundef %52), !dbg !111
 
  Start ICall Alias Analysis
 
 0 Top func: rej_bounded_poly
 ---icall:   %68 = call i32 %61(i32 noundef %62, ptr noundef %67), !dbg !121
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
 rej_bounded_polyMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
----icall:   Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+---icall: Merge complete --- Not blocked by TBAA or TFA check
+  Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 53Merge complete --- Not blocked by TBAA or TFA check
  = Merge complete --- Not blocked by TBAA or TFA check
 callMerge complete --- Not blocked by TBAA or TFA check
- iMerge complete --- Not blocked by TBAA or TFA check
-32Merge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
-%Merge complete --- Not blocked by TBAA or TFA check
+iMerge complete --- Not blocked by TBAA or TFA check
+32Merge complete --- Not blocked by TBAA or TFA check
+ %Merge complete --- Not blocked by TBAA or TFA check
 46Merge complete --- Not blocked by TBAA or TFA check
 (Merge complete --- Not blocked by TBAA or TFA check
 iMerge complete --- Not blocked by TBAA or TFA check
 32Merge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 noundefMerge complete --- Not blocked by TBAA or TFA check
- %47, ptr Merge complete --- Not blocked by TBAA or TFA check
-noundef Merge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-52)Merge complete --- Not blocked by TBAA or TFA check
+47Merge complete --- Not blocked by TBAA or TFA check
+, ptr noundef Merge complete --- Not blocked by TBAA or TFA check
+%52Merge complete --- Not blocked by TBAA or TFA check
+)Merge complete --- Not blocked by TBAA or TFA check
 , Merge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
 dMerge complete --- Not blocked by TBAA or TFA check
-bgMerge complete --- Not blocked by TBAA or TFA check
- Merge complete --- Not blocked by TBAA or TFA check
+bMerge complete --- Not blocked by TBAA or TFA check
+g Merge complete --- Not blocked by TBAA or TFA check
 !Merge complete --- Not blocked by TBAA or TFA check
 111Merge complete --- Not blocked by TBAA or TFA check
 
@@ -358,12 +357,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
-2
+2Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -428,11 +428,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002458
-# Typebuilder time     		0.000261
-# MLTA time            		0.000265
-# Icall alias time     		0.001372
-# Func alias time      		0.001536
-# One layer alias time 		1e-05
-# Escape alias time    		5.7e-05
-# DB time              		0.00213
+# Load time            		0.002067
+# Typebuilder time     		0.000216
+# MLTA time            		0.000243
+# Icall alias time     		0.001258
+# Func alias time      		0.001675
+# One layer alias time 		8e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002417

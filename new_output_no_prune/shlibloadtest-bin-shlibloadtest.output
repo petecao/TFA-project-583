@@ -109,27 +109,27 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %107 = call ptr %106(), !dbg !360
+0 Update icall:   %166 = call i64 %165(), !dbg !419
 
-1 Update icall:   %216 = call i32 %214(ptr noundef %215), !dbg !477
+1 Update icall:   %65 = call i32 %64(i64 noundef 524288, ptr noundef null), !dbg !316
 
-2 Update icall:   %179 = call i32 %178(ptr noundef @atexit_handler), !dbg !431
+2 Update icall:   %207 = call ptr %205(ptr noundef %206, i32 noundef 0), !dbg !467
 
-3 Update icall:   %170 = call i64 %169(), !dbg !422
+3 Update icall:   %162 = call i64 %161(), !dbg !415
 
-4 Update icall:   %166 = call i64 %165(), !dbg !419
+4 Update icall:   call void %115(ptr noundef %116), !dbg !369
 
-5 Update icall:   %149 = call i64 %148(), !dbg !399
+5 Update icall:   %108 = call ptr %105(ptr noundef %107), !dbg !359
 
-6 Update icall:   %162 = call i64 %161(), !dbg !415
+6 Update icall:   %107 = call ptr %106(), !dbg !360
 
-7 Update icall:   %65 = call i32 %64(i64 noundef 524288, ptr noundef null), !dbg !316
+7 Update icall:   %216 = call i32 %214(ptr noundef %215), !dbg !477
 
-8 Update icall:   call void %115(ptr noundef %116), !dbg !369
+8 Update icall:   %170 = call i64 %169(), !dbg !422
 
-9 Update icall:   %207 = call ptr %205(ptr noundef %206, i32 noundef 0), !dbg !467
+9 Update icall:   %179 = call i32 %178(ptr noundef @atexit_handler), !dbg !431
 
-10 Update icall:   %108 = call ptr %105(ptr noundef %107), !dbg !359
+10 Update icall:   %149 = call i64 %148(), !dbg !399
 
  Start ICall Alias Analysis
 
@@ -170,11 +170,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001673
-# Typebuilder time     		0.00021
-# MLTA time            		0.000233
-# Icall alias time     		9.6e-05
-# Func alias time      		0.006501
-# One layer alias time 		9e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002101
+# Load time            		0.001664
+# Typebuilder time     		0.000207
+# MLTA time            		0.000206
+# Icall alias time     		4.1e-05
+# Func alias time      		0.003139
+# One layer alias time 		7e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.001953

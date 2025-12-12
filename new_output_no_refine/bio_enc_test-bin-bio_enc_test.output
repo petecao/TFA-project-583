@@ -25,13 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_bio_enc_aes_256_cfb
+0 Top func: test_bio_enc_aes_128_cbc
 
 1 Top func: test_bio_enc_aes_128_ctr
 
-2 Top func: test_bio_enc_aes_128_cbc
+2 Top func: test_bio_enc_aes_256_ofb
 
-3 Top func: test_bio_enc_aes_256_ofb
+3 Top func: test_bio_enc_aes_256_cfb
 
 4 Top func: test_bio_enc_chacha20
 
@@ -39,23 +39,11 @@ Openmp enabled
 
 6 Top func: test_bio_enc_eof_read_flush
 
-Analyzed func: test_bio_enc_aes_256_cfb
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: test_bio_enc_aes_128_ctr
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_bio_enc_aes_128_cbc
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_bio_enc_chacha20
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_bio_enc_chacha20_poly1305
+Analyzed func: test_bio_enc_aes_256_cfb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -63,7 +51,19 @@ Analyzed func: test_bio_enc_aes_256_ofb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_bio_enc_chacha20_poly1305
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_bio_enc_chacha20
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_bio_enc_eof_read_flush
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_bio_enc_aes_128_cbc
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002921
-# Typebuilder time     		0.000333
-# MLTA time            		0.000285
-# Icall alias time     		7e-05
-# Func alias time      		0.000854
-# One layer alias time 		8e-06
+# Load time            		0.002368
+# Typebuilder time     		0.000326
+# MLTA time            		0.00026
+# Icall alias time     		6.6e-05
+# Func alias time      		0.001716
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001988
+# DB time              		0.001965

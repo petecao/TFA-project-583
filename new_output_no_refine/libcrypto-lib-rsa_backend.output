@@ -25,47 +25,40 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: BN_clear_free
+0 Top func: sk_BIGNUM_freefunc_thunk
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sk_BIGNUM_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
+BN_clear_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 sk_BIGNUM_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 1
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
@@ -73,6 +66,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -173,10 +173,10 @@ sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA ch
 
 ---icall: Merge complete --- Not blocked by TBAA or TFA check
   call void %7(ptr noundef %8), !dbg !142
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: 0
@@ -218,11 +218,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.003934
-# Typebuilder time     		0.000494
-# MLTA time            		0.000462
-# Icall alias time     		0.000501
-# Func alias time      		0.003765
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002331
+# Load time            		0.004495
+# Typebuilder time     		0.000424
+# MLTA time            		0.000382
+# Icall alias time     		0.000412
+# Func alias time      		0.001431
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001969

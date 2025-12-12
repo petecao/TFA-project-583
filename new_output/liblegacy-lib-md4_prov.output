@@ -25,32 +25,32 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: md4_dupctx
+0 Top func: md4_newctx
 
-1 Top func: md4_newctx
+1 Top func: md4_freectx
 
-2 Top func: md4_freectx
+2 Top func: md4_dupctx
 
-3 Top func: md4_copyctx
+3 Top func: md4_internal_final
 
-4 Top func: md4_internal_final
+4 Top func: md4_copyctx
 
-5 Top func: md4_get_params
+5 Top func: ossl_digest_default_gettable_params
 
-6 Top func: md4_internal_init
-     Top func: md4_newctx Failed
-     Top func: md4_dupctx Failed
-     Top func: md4_copyctx Failed
-     Top func: md4_get_params Failed
-     Top func: md4_internal_final Failed
-     Top func: md4_freectx Failed
-
-7 Top func: MD4_Update
-     Top func: md4_internal_init Failed
-
-8 Top func: ossl_digest_default_gettable_params
-     Top func: MD4_Update Failed
+6 Top func: md4_get_params
      Top func: ossl_digest_default_gettable_params Failed
+     Top func: md4_dupctx Failed
+     Top func: md4_newctx Failed
+     Top func: md4_freectx Failed
+     Top func: md4_copyctx Failed
+     Top func: md4_internal_final Failed
+
+7 Top func: md4_internal_init
+
+8 Top func: MD4_Update
+     Top func: md4_get_params Failed
+     Top func: MD4_Update Failed
+     Top func: md4_internal_init Failed
 
 Update global ICallees info
 
@@ -93,11 +93,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001438
-# Typebuilder time     		0.000229
-# MLTA time            		0.000233
-# Icall alias time     		5.5e-05
-# Func alias time      		0.000858
-# One layer alias time 		7e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002323
+# Load time            		0.001317
+# Typebuilder time     		0.000271
+# MLTA time            		0.000281
+# Icall alias time     		5.9e-05
+# Func alias time      		0.000842
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002104

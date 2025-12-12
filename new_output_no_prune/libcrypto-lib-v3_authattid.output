@@ -28,13 +28,19 @@ Openmp enabled
 0 Top func: OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_it
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: i2r_auth_attr_idMerge complete --- Not blocked by TBAA or TFA check
-
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+OSSL_ISSUER_SERIAL_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: OSSL_ISSUER_SERIAL_itMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+i2r_auth_attr_idMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 i2r_auth_attr_idMerge complete --- Not blocked by TBAA or TFA check
@@ -42,16 +48,10 @@ i2r_auth_attr_idMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_it FailedMerge complete --- Not blocked by TBAA or TFA check
-
+OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_it Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: OSSL_ISSUER_SERIAL_it
@@ -99,11 +99,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001641
-# Typebuilder time     		0.000477
-# MLTA time            		0.000257
-# Icall alias time     		6.8e-05
-# Func alias time      		0.003662
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002135
+# Load time            		0.001437
+# Typebuilder time     		0.000262
+# MLTA time            		0.00018
+# Icall alias time     		9e-06
+# Func alias time      		0.000556
+# One layer alias time 		6e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.001981

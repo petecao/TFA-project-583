@@ -1,0 +1,156 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_sm4.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_sm4.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-cipher_sm4.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_sm4.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: sm4_128_ecb_newctx
+
+1 Top func: ossl_cipher_generic_dinit
+
+2 Top func: ossl_cipher_generic_gettable_params
+
+3 Top func: sm4_128_ecb_get_params
+
+4 Top func: ossl_cipher_generic_stream_final
+
+5 Top func: ossl_cipher_generic_skey_einit
+
+6 Top func: sm4_128_ofb128_get_params
+
+7 Top func: sm4_128_cbc_get_params
+     Top func: ossl_cipher_generic_dinit Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: sm4_128_ecb_newctx Failed
+     Top func: sm4_128_ecb_get_params Failed
+     Top func: ossl_cipher_generic_stream_final Failed
+     Top func: ossl_cipher_generic_skey_einit Failed
+     Top func: sm4_128_ofb128_get_params Failed
+
+8 Top func: ossl_cipher_generic_block_update
+
+9 Top func: ossl_cipher_generic_gettable_ctx_params
+
+10 Top func: sm4_freectx
+     Top func: sm4_128_cbc_get_params Failed
+
+11 Top func: ossl_cipher_generic_get_ctx_params
+
+12 Top func: sm4_128_ctr_get_params
+
+13 Top func: ossl_cipher_generic_skey_dinit
+
+14 Top func: sm4_128_cfb128_newctx
+
+15 Top func: sm4_128_ctr_newctx
+     Top func: ossl_cipher_generic_block_update Failed
+     Top func: ossl_cipher_generic_gettable_ctx_params Failed
+     Top func: sm4_freectx Failed
+     Top func: ossl_cipher_generic_get_ctx_params Failed
+     Top func: sm4_128_ctr_get_params Failed
+     Top func: ossl_cipher_generic_skey_dinit Failed
+
+16 Top func: ossl_cipher_generic_block_final
+
+17 Top func: ossl_cipher_generic_settable_ctx_params
+     Top func: sm4_128_cfb128_newctx Failed
+
+18 Top func: sm4_dupctx
+
+19 Top func: ossl_cipher_generic_set_ctx_params
+     Top func: sm4_128_ctr_newctx Failed
+
+20 Top func: sm4_128_ofb128_newctx
+
+21 Top func: sm4_128_cbc_newctx
+
+22 Top func: sm4_128_cfb128_get_params
+
+23 Top func: ossl_cipher_generic_stream_update
+     Top func: ossl_cipher_generic_block_final Failed
+     Top func: ossl_cipher_generic_settable_ctx_params Failed
+     Top func: sm4_dupctx Failed
+     Top func: ossl_cipher_generic_set_ctx_params Failed
+     Top func: sm4_128_ofb128_newctx Failed
+
+24 Top func: ossl_cipher_generic_cipher
+     Top func: sm4_128_cbc_newctx Failed
+
+25 Top func: ossl_cipher_generic_einit
+     Top func: sm4_128_cfb128_get_params Failed
+     Top func: ossl_cipher_generic_stream_update Failed
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: ossl_cipher_generic_einit Failed
+
+Update global ICallees info
+
+0 Update icall:   call void %21(ptr noundef %23, ptr noundef %25), !dbg !191
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001649
+# Typebuilder time     		0.000288
+# MLTA time            		0.000502
+# Icall alias time     		3.4e-05
+# Func alias time      		0.001855
+# One layer alias time 		6e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001958

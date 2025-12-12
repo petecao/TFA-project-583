@@ -39,7 +39,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-kdf_pbkdf1_deriveMerge complete --- Not blocked by TBAA or TFA check
+kdf_pbkdf1_set_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -54,29 +54,7 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-kdf_pbkdf1_set_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-kdf_pbkdf1_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+kdf_pbkdf1_deriveMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -245,29 +223,51 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-5 Top func: kdf_pbkdf1_set_skey
+4 Top func: kdf_pbkdf1_set_skey
+
+5 Top func: kdf_pbkdf1_gettable_ctx_params
 
 6 Top func: kdf_pbkdf1_get_ctx_params
-
-7 Top func: kdf_pbkdf1_derive_skey
-     Top func: kdf_pbkdf1_gettable_ctx_params Failed
      Top func: kdf_pbkdf1_free Failed
-     Top func: kdf_pbkdf1_new Failed
-     Top func: kdf_pbkdf1_set_ctx_params Failed
      Top func: kdf_pbkdf1_derive Failed
+     Top func: kdf_pbkdf1_set_ctx_params Failed
+     Top func: kdf_pbkdf1_new Failed
+     Top func: kdf_pbkdf1_gettable_ctx_params Failed
      Top func: kdf_pbkdf1_set_skey Failed
+
+7 Top func: kdf_pbkdf1_reset
+
+8 Top func: kdf_pbkdf1_settable_ctx_params
      Top func: kdf_pbkdf1_get_ctx_params Failed
 
-8 Top func: kdf_pbkdf1_dup
+9 Top func: kdf_pbkdf1_derive_skey
 
-9 Top func: kdf_pbkdf1_reset
-
-10 Top func: kdf_pbkdf1_settable_ctx_params
-     Top func: kdf_pbkdf1_derive_skey Failed
-     Top func: kdf_pbkdf1_dup Failed
+10 Top func: kdf_pbkdf1_dup
      Top func: kdf_pbkdf1_reset Failed
      Top func: kdf_pbkdf1_settable_ctx_params Failed
+     Top func: kdf_pbkdf1_derive_skey Failed
+     Top func: kdf_pbkdf1_dup Failed
 
 Update global ICallees info
 
@@ -312,11 +312,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002981
-# Typebuilder time     		0.000371
-# MLTA time            		0.000332
-# Icall alias time     		5.8e-05
-# Func alias time      		0.002565
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.00206
+# Load time            		0.006912
+# Typebuilder time     		0.000389
+# MLTA time            		0.000337
+# Icall alias time     		6.5e-05
+# Func alias time      		0.008514
+# One layer alias time 		8e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002052

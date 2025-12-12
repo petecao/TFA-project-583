@@ -25,19 +25,31 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_x509_check_cert_pkey
+0 Top func: test_PEM_X509_INFO_read_bio
 
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: X509_INFO_free
+ Top func: test_x509_check_cert_pkey
 
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_PEM_X509_INFO_read_bioMerge complete --- Not blocked by TBAA or TFA check
+2 Top func: Merge complete --- Not blocked by TBAA or TFA check
+X509_INFO_free
 
+Analyzed func: test_PEM_X509_INFO_read_bioMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 test_x509_check_cert_pkeyMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -45,23 +57,11 @@ DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
+0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_PEM_X509_INFO_read_bio
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
 
 Analyzed func: X509_INFO_free
 DefinitionFuncSet size: 0
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001925
-# Typebuilder time     		0.000356
-# MLTA time            		0.00024
-# Icall alias time     		5.4e-05
-# Func alias time      		0.001523
-# One layer alias time 		6e-06
-# Escape alias time    		8.2e-05
-# DB time              		0.002608
+# Load time            		0.006405
+# Typebuilder time     		0.000324
+# MLTA time            		0.000212
+# Icall alias time     		0.000149
+# Func alias time      		0.008366
+# One layer alias time 		9.3e-05
+# Escape alias time    		0.001179
+# DB time              		0.002301

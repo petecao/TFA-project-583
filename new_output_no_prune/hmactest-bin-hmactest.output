@@ -27,27 +27,19 @@ Openmp enabled
 
 0 Top func: test_hmac_md5
 
-1 Top func: test_hmac_single_shot
+1 Top func: test_hmac_bad
 
 2 Top func: test_hmac_run
 
-3 Top func: test_hmac_bad
+3 Top func: test_hmac_single_shot
 
 4 Top func: test_hmac_final_update_fail
 
 5 Top func: test_hmac_copy_uninited
 
-6 Top func: test_hmac_copy
+6 Top func: test_hmac_chunks
 
-7 Top func: test_hmac_chunks
-
-Analyzed func: test_hmac_single_shot
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_hmac_md5
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+7 Top func: test_hmac_copy
 
 Analyzed func: test_hmac_run
 DefinitionFuncSet size: 1
@@ -57,7 +49,7 @@ Analyzed func: test_hmac_bad
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_hmac_copy_uninited
+Analyzed func: test_hmac_md5
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -65,7 +57,15 @@ Analyzed func: test_hmac_final_update_fail
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_hmac_single_shot
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_hmac_chunks
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_hmac_copy_uninited
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -114,11 +114,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003107
-# Typebuilder time     		0.000412
-# MLTA time            		0.000259
-# Icall alias time     		5.7e-05
-# Func alias time      		0.001703
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002181
+# Load time            		0.003369
+# Typebuilder time     		0.000422
+# MLTA time            		0.000264
+# Icall alias time     		8.9e-05
+# Func alias time      		0.002662
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002043

@@ -25,20 +25,26 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: kdf_pbkdf2_new
+0 Top func: kdf_pbkdf2_free
 
-1 Top func: kdf_pbkdf2_free
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+kdf_pbkdf2_deriveMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-kdf_pbkdf2_reset
+kdf_pbkdf2_resetMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-kdf_pbkdf2_deriveMerge complete --- Not blocked by TBAA or TFA check
+kdf_pbkdf2_newMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -48,44 +54,38 @@ Merge complete --- Not blocked by TBAA or TFA check
 kdf_pbkdf2_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-5 Top func: kdf_pbkdf2_gettable_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+5 Top func: kdf_pbkdf2_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 6 Top func: kdf_pbkdf2_set_ctx_params
 
 7 Top func: kdf_pbkdf2_get_ctx_params
-     Top func: kdf_pbkdf2_new Failed
-     Top func: kdf_pbkdf2_reset Failed
-     Top func: kdf_pbkdf2_free Failed
      Top func: kdf_pbkdf2_derive Failed
-     Top func: kdf_pbkdf2_settable_ctx_params Failed
+     Top func: kdf_pbkdf2_reset Failed
+     Top func: kdf_pbkdf2_new Failed
      Top func: kdf_pbkdf2_gettable_ctx_params Failed
+     Top func: kdf_pbkdf2_free Failed
+     Top func: kdf_pbkdf2_settable_ctx_params Failed
+     Top func: kdf_pbkdf2_get_ctx_params Failed
 
 8 Top func: kdf_pbkdf2_dup
-     Top func: kdf_pbkdf2_get_ctx_params Failed
      Top func: kdf_pbkdf2_dup Failed
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -200,11 +200,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003448
-# Typebuilder time     		0.000414
-# MLTA time            		0.000369
-# Icall alias time     		5.5e-05
-# Func alias time      		0.00563
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002111
+# Load time            		0.003443
+# Typebuilder time     		0.000399
+# MLTA time            		0.000336
+# Icall alias time     		7e-06
+# Func alias time      		0.004322
+# One layer alias time 		4e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002185

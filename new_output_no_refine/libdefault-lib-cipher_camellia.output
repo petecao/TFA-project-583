@@ -36,66 +36,79 @@ camellia_cbc_cts_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA che
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-3 Top func: camellia_freectx
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_freectxMerge complete --- Not blocked by TBAA or TFA check
 
-4 Top func: camellia_128_ecb_newctx
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_128_ecb_newctx
+Merge complete --- Not blocked by TBAA or TFA check
 
 5 Top func: ossl_cipher_generic_stream_update
 
 6 Top func: camellia_128_cfb8_get_params
-
-7 Top func: camellia_192_cfb1_get_params
      Top func: ossl_cipher_generic_stream_final Failed
-     Top func: camellia_cbc_cts_get_ctx_params Failed
+     Top func: ossl_cipher_generic_set_ctx_params Failed
      Top func: ossl_cipher_generic_stream_update Failed
+     Top func: camellia_cbc_cts_get_ctx_params Failed
      Top func: camellia_freectx Failed
      Top func: camellia_128_ecb_newctx Failed
-     Top func: camellia_128_cfb8_get_params Failed
 
-8 Top func: camellia_256_ofb_get_params
+7 Top func: camellia_256_ofb_get_params
 
-9 Top func: camellia_cbc_cts_set_ctx_params
+8 Top func: camellia_cbc_cts_dinit
 
-10Merge complete --- Not blocked by TBAA or TFA check
+9 Top func: camellia_192_cfb_newctx
+
+10 Top func: camellia_cbc_cts_set_ctx_params
+
+11Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_192_cfb_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-11 Top func: Merge complete --- Not blocked by TBAA or TFA check
 camellia_dupctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_128_cfb8_get_params FailedMerge complete --- Not blocked by TBAA or TFA check
 
-12Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+12 Top func: Merge complete --- Not blocked by TBAA or TFA check
 camellia_128_ecb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_192_cfb1_get_paramsMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 13Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 camellia_256_ctr_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-14 Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_128_cfb1_newctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 camellia_256_ofb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
-     Top func: camellia_192_cfb_newctxMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_192_cfb_newctxMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_cbc_cts_dinitMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_dupctx Failed
+
+Merge complete --- Not blocked by TBAA or TFA check
+14Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_192_ofb_newctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -103,25 +116,22 @@ camellia_128_ecb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_dupctx FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 15Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_192_ofb_newctxMerge complete --- Not blocked by TBAA or TFA check
+camellia_192_cfb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 
-16 Top func: camellia_192_cfb_get_params
-
-17 Top func: camellia_256_cbc_newctx
+16 Top func: camellia_cbc_cts_settable_ctx_params
      Top func: camellia_256_ctr_newctx Failed
 
-18 Top func: ossl_cipher_generic_einit
-     Top func: camellia_128_cfb1_newctxMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+17 Top func: ossl_cipher_generic_einit
+
+18Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_256_cbc_newctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -130,189 +140,179 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 camellia_256_ctr_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-
-20 Top func: camellia_128_cfb1_get_params
      Top func: camellia_192_ofb_newctx Failed
      Top func: camellia_192_cfb_get_params Failed
-     Top func: camellia_256_cbc_newctx Failed
+     Top func: camellia_cbc_cts_settable_ctx_params Failed
      Top func: camellia_cbc_cts_set_ctx_params Failed
 
-21 Top func: camellia_192_ofb_get_params
+20 Top func: camellia_192_ofb_get_params
 
-22 Top func: camellia_128_cfb_newctx
+21 Top func: camellia_128_cfb_newctx
 
-23 Top func: camellia_256_cbc_get_params
+22 Top func: camellia_cts_192_cbc_get_params
+     Top func: camellia_256_cbc_newctx Failed
      Top func: camellia_256_ctr_get_params Failed
      Top func: ossl_cipher_generic_einit Failed
-     Top func: camellia_128_cfb1_get_params Failed
 
-24 Top func: camellia_cbc_cts_gettable_ctx_params
+23 Top func: camellia_cbc_cts_gettable_ctx_params
+
+24 Top func: camellia_256_cbc_get_params
 
 25 Top func: camellia_192_ctr_newctx
 
 26 Top func: ossl_cipher_generic_dinit
-
-Merge complete --- Not blocked by TBAA or TFA check
-27Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_256_cfb8_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 camellia_192_ofb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
-     Top func: camellia_256_cbc_get_params Failed
-     Top func: camellia_128_cfb_newctx Failed
-
-28 Top func: camellia_128_ofb_newctx
-
-29 Top func: camellia_192_cbc_newctx
-
-30 Top func: camellia_128_cfb_get_params
-     Top func: camellia_cbc_cts_gettable_ctx_params Failed
-     Top func: camellia_192_ctr_newctx Failed
-     Top func: camellia_256_cfb8_newctx Failed
-     Top func: ossl_cipher_generic_dinit Failed
-
-31 Top func: ossl_cipher_generic_gettable_ctx_params
-
-32 Top func: camellia_192_ctr_get_params
-
-33 Top func: camellia_256_cfb8_get_params
-     Top func: camellia_128_ofb_newctx Failed
-     Top func: camellia_128_cfb_get_params Failed
-     Top func: camellia_192_cbc_newctx Failed
-
-34 Top func: ossl_cipher_generic_block_update
-
-35 Top func: camellia_128_ofb_get_params
-
-36 Top func: camellia_256_cfb1_newctx
-
-37 Top func: camellia_192_cbc_get_params
-     Top func: ossl_cipher_generic_gettable_ctx_params Failed
-     Top func: camellia_192_ctr_get_params Failed
-     Top func: camellia_256_cfb8_get_params Failed
-
-38 Top func: ossl_cipher_generic_settable_ctx_params
-
-39 Top func: camellia_128_ctr_newctx
-     Top func: ossl_cipher_generic_block_update Failed
-
-40 Top func: camellia_192_cfb8_newctx
-     Top func: camellia_128_ofb_get_params Failed
-     Top func: camellia_192_cbc_get_params Failed
-     Top func: camellia_256_cfb1_newctx Failed
-
-41 Top func: ossl_cipher_generic_block_final
-
-42 Top func: camellia_256_cfb_newctx
-
-43 Top func: camellia_128_cbc_newctx
-
-44 Top func: camellia_256_cfb1_get_params
-     Top func: ossl_cipher_generic_settable_ctx_params Failed
-     Top func: camellia_128_ctr_newctx Failed
-     Top func: camellia_192_cfb8_newctx Failed
-
-45 Top func: ossl_cipher_generic_skey_einit
-
-46 Top func: camellia_128_ctr_get_params
-     Top func: ossl_cipher_generic_block_final Failed
-
-47 Top func: camellia_192_cfb8_get_params
-     Top func: camellia_256_cfb_newctx Failed
-     Top func: camellia_256_cfb1_get_params Failed
-     Top func: camellia_128_cbc_newctx Failed
-
-48 Top func: ossl_cipher_generic_cipher
-
-49 Top func: camellia_256_cfb_get_params
-
-50 Top func: camellia_192_cfb1_newctx
-
-51 Top func: camellia_128_cbc_get_params
-     Top func: ossl_cipher_generic_skey_einit Failed
-     Top func: camellia_128_ctr_get_params Failed
-     Top func: camellia_192_cfb8_get_params Failed
-
-52 Top func: ossl_cipher_generic_skey_dinit
-
-53 Top func: camellia_cbc_cts_einit
-     Top func: ossl_cipher_generic_cipher Failed
-
-54 Top func: camellia_128_cfb8_newctx
-     Top func: camellia_256_cfb_get_params Failed
-     Top func: camellia_192_cfb1_newctx Failed
-     Top func: camellia_128_cbc_get_params Failed
-
-55 Top func: camellia_256_ecb_get_params
-
-56 Top func: camellia_256_ecb_newctx
-
-57 Top func: ossl_cipher_generic_get_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_skey_dinitMerge complete --- Not blocked by TBAA or TFA check
+camellia_128_cfb_newctxMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
-
 Merge complete --- Not blocked by TBAA or TFA check
-58Merge complete --- Not blocked by TBAA or TFA check
- Top func: camellia_256_ofb_newctxMerge complete --- Not blocked by TBAA or TFA check
+     Top func: camellia_cts_192_cbc_get_params Failed
 
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_cbc_cts_einit FailedMerge complete --- Not blocked by TBAA or TFA check
+27 Top func: camellia_128_ofb_newctx
 
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-camellia_128_cfb8_newctx Failed
+28 Top func: camellia_128_cfb_get_params
 
-59 Top func: camellia_192_ecb_newctx
+29 Top func: camellia_cts_128_cbc_get_params
+     Top func: camellia_cbc_cts_gettable_ctx_params Failed
+     Top func: camellia_256_cbc_get_params Failed
+     Top func: camellia_192_ctr_newctx Failed
+     Top func: ossl_cipher_generic_dinit Failed
 
-60 Top func: ossl_cipher_cbc_cts_block_final
-     Top func: camellia_256_ecb_newctx Failed
+30 Top func: ossl_cipher_generic_gettable_ctx_params
 
-61 Top func: camellia_cts_256_cbc_get_params
-     Top func: camellia_256_ecb_get_params Failed
-     Top func: camellia_256_ofb_newctx Failed
-     Top func: ossl_cipher_generic_get_ctx_params Failed
+31 Top func: camellia_192_cbc_newctx
+     Top func: camellia_128_ofb_newctx Failed
 
-62 Top func: ossl_cipher_cbc_cts_block_update
+32 Top func: camellia_192_ctr_get_params
+     Top func: camellia_128_cfb_get_params Failed
+     Top func: camellia_cts_128_cbc_get_params Failed
 
-63 Top func: ossl_cipher_generic_gettable_params
-     Top func: camellia_192_ecb_newctx Failed
+33 Top func: ossl_cipher_generic_block_update
 
-64 Top func: camellia_cts_128_cbc_get_params
-     Top func: ossl_cipher_cbc_cts_block_final Failed
+34 Top func: camellia_128_ofb_get_params
 
-65 Top func: camellia_cts_192_cbc_get_params
-     Top func: camellia_cts_256_cbc_get_params Failed
+35 Top func: camellia_256_cfb1_newctx
 
-66 Top func: camellia_192_ecb_get_params
+36 Top func: ossl_cipher_generic_gettable_params
+     Top func: ossl_cipher_generic_gettable_ctx_params Failed
+     Top func: camellia_192_cbc_newctx Failed
+     Top func: camellia_192_ctr_get_params Failed
 
-67 Top func: camellia_cbc_cts_settable_ctx_params
-     Top func: ossl_cipher_cbc_cts_block_update Failed
+37 Top func: ossl_cipher_generic_settable_ctx_params
+     Top func: ossl_cipher_generic_block_update Failed
+
+38 Top func: camellia_192_cbc_get_params
+     Top func: camellia_128_ofb_get_params Failed
+     Top func: camellia_256_cfb1_newctx Failed
      Top func: ossl_cipher_generic_gettable_params Failed
 
-68 Top func: camellia_cbc_cts_dinit
-     Top func: camellia_cts_128_cbc_get_params Failed
-     Top func: camellia_cts_192_cbc_get_params Failed
+39 Top func: camellia_128_ctr_newctx
+
+40 Top func: ossl_cipher_generic_block_final
+
+41 Top func: camellia_256_cfb_newctx
+
+42 Top func: camellia_256_cfb1_get_params
+
+43 Top func: ossl_cipher_cbc_cts_block_update
+     Top func: ossl_cipher_generic_settable_ctx_params Failed
+     Top func: camellia_192_cbc_get_params Failed
+
+44 Top func: ossl_cipher_generic_skey_einit
+     Top func: camellia_128_ctr_newctx Failed
+
+45 Top func: camellia_128_cbc_newctx
+     Top func: ossl_cipher_generic_block_final Failed
+     Top func: camellia_256_cfb_newctx Failed
+     Top func: ossl_cipher_cbc_cts_block_update Failed
+     Top func: camellia_256_cfb1_get_params Failed
+
+46 Top func: camellia_128_ctr_get_params
+
+47 Top func: ossl_cipher_generic_cipher
+
+48 Top func: camellia_256_cfb_get_params
+
+49 Top func: ossl_cipher_cbc_cts_block_final
+     Top func: ossl_cipher_generic_skey_einit Failed
+
+50 Top func: camellia_192_cfb1_newctx
+     Top func: camellia_128_cbc_newctx Failed
+
+51 Top func: ossl_cipher_generic_skey_dinit
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: camellia_128_ctr_get_params Failed
+
+52 Top func: camellia_128_cbc_get_params
+     Top func: camellia_256_cfb_get_params Failed
+     Top func: ossl_cipher_cbc_cts_block_final Failed
+     Top func: camellia_192_cfb1_newctx Failed
+
+53 Top func: camellia_256_ecb_get_params
+
+54 Top func: camellia_cbc_cts_einit
+
+55 Top func: camellia_256_ecb_newctx
+
+56 Top func: camellia_cts_256_cbc_get_params
+     Top func: ossl_cipher_generic_skey_dinit Failed
+
+57 Top func: camellia_192_cfb1_get_params
+     Top func: camellia_128_cbc_get_params Failed
+
+58 Top func: camellia_192_ecb_newctx
+     Top func: camellia_256_ecb_get_params Failed
+     Top func: camellia_cbc_cts_einit Failed
+     Top func: camellia_256_ecb_newctx Failed
+
+59 Top func: camellia_256_ofb_newctx
+     Top func: camellia_cts_256_cbc_get_params Failed
+
+60 Top func: ossl_cipher_generic_get_ctx_params
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_192_cfb1_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+61Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_192_ecb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+62Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+camellia_128_cfb8_newctx
+     Top func: camellia_192_ecb_newctx Failed
+
+63 Top func: camellia_192_cfb8_get_params
+
+64 Top func: camellia_128_cfb1_newctx
+     Top func: camellia_256_ofb_newctx Failed
+
+65 Top func: camellia_192_cfb8_newctx
      Top func: camellia_192_ecb_get_params Failed
-     Top func: camellia_cbc_cts_settable_ctx_params Failed
-     Top func: camellia_cbc_cts_dinit Failed
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: ossl_cipher_generic_set_ctx_params Failed
+     Top func: camellia_128_cfb8_newctx Failed
+     Top func: ossl_cipher_generic_get_ctx_params Failed
+
+66 Top func: camellia_256_cfb8_get_params
+     Top func: camellia_192_cfb8_get_params Failed
+     Top func: camellia_128_cfb1_newctx Failed
+
+67 Top func: camellia_256_cfb8_newctx
+
+68 Top func: camellia_128_cfb1_get_params
+     Top func: camellia_192_cfb8_newctx Failed
+     Top func: camellia_256_cfb8_get_params Failed
+     Top func: camellia_256_cfb8_newctx Failed
+     Top func: camellia_128_cfb1_get_params Failed
 
 Update global ICallees info
 
@@ -357,11 +357,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00285
-# Typebuilder time     		0.000423
-# MLTA time            		0.001092
-# Icall alias time     		0.000124
-# Func alias time      		0.004247
-# One layer alias time 		8e-06
+# Load time            		0.002658
+# Typebuilder time     		0.000481
+# MLTA time            		0.001205
+# Icall alias time     		7.5e-05
+# Func alias time      		0.003684
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002151
+# DB time              		0.002091

@@ -49,67 +49,73 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: cast_init_key
+0 Top func: cast5_cbc_cipher
 
-1 Top func: EVP_CIPHER_set_asn1_iv
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+EVP_CIPHER_set_asn1_iv
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_get_asn1_iv
+cast_init_key
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-cast5_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-cast5_cfb64_cipherMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
+EVP_CIPHER_get_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-cast5_ofb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+4 Top func: cast5_ofb_cipher
+
+5 Top func: cast5_cfb64_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
 6Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 cast5_ecb_cipher
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_set_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: EVP_CIPHER_set_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
-Analyzed func: EVP_CIPHER_get_asn1_iv
-DefinitionFuncSet size: 0
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0
 aliased_callset size: 0
 
 Analyzed func: cast5_cbc_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: cast5_cfb64_cipher
+Analyzed func: EVP_CIPHER_get_asn1_iv
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: cast_init_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: cast5_ofb_cipher
+Analyzed func: cast5_cfb64_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -119,14 +125,8 @@ aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: cast_init_key
+Analyzed func: cast5_ofb_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -171,11 +171,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001776
-# Typebuilder time     		0.000481
-# MLTA time            		0.00052
-# Icall alias time     		6.6e-05
-# Func alias time      		0.002359
-# One layer alias time 		8e-06
-# Escape alias time    		6.9e-05
-# DB time              		0.002155
+# Load time            		0.005369
+# Typebuilder time     		0.000457
+# MLTA time            		0.000509
+# Icall alias time     		6.2e-05
+# Func alias time      		0.008662
+# One layer alias time 		7e-06
+# Escape alias time    		6.4e-05
+# DB time              		0.001972

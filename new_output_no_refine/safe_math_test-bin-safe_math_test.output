@@ -25,29 +25,29 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_size_t_ops
+0 Top func: test_int_ops
 
-1 Top func: test_uint_muldiv
+1 Top func: test_uint_ops
 
-2 Top func: test_int_ops
+2 Top func: test_uint_muldiv
 
-3 Top func: test_uint_ops
+3 Top func: test_size_t_ops
 
 4 Top func: test_int_muldiv
-
-Analyzed func: test_size_t_ops
-DefinitionFuncSet size: 1
-aliased_callset size: 0
 
 Analyzed func: test_int_ops
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_uint_muldiv
+Analyzed func: test_uint_ops
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_uint_ops
+Analyzed func: test_size_t_ops
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_uint_muldiv
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -96,11 +96,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004214
-# Typebuilder time     		0.000485
-# MLTA time            		0.000417
-# Icall alias time     		7.7e-05
-# Func alias time      		0.003563
-# One layer alias time 		7.4e-05
-# Escape alias time    		0.000942
-# DB time              		0.002275
+# Load time            		0.003349
+# Typebuilder time     		0.000467
+# MLTA time            		0.000409
+# Icall alias time     		7.5e-05
+# Func alias time      		0.000743
+# One layer alias time 		7.2e-05
+# Escape alias time    		0.000857
+# DB time              		0.002276

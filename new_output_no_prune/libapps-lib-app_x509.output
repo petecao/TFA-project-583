@@ -169,17 +169,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-x509_req_ctrlMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: 1
-aliased_callset size: 1
 
 Analyzed func: x509_ctrl
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: x509_req_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 1
 
@@ -296,11 +296,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001456
-# Typebuilder time     		0.00024
-# MLTA time            		0.000259
-# Icall alias time     		0.00079
-# Func alias time      		0.001443
-# One layer alias time 		9e-06
-# Escape alias time    		6.8e-05
-# DB time              		0.002141
+# Load time            		0.01449
+# Typebuilder time     		0.000232
+# MLTA time            		0.000225
+# Icall alias time     		0.000793
+# Func alias time      		0.002512
+# One layer alias time 		8e-06
+# Escape alias time    		6.1e-05
+# DB time              		0.002021

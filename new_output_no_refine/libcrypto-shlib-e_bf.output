@@ -56,37 +56,37 @@ WARNING: matchStructTypes problem!
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-bf_init_key
+bf_cbc_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-bf_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
+bf_init_keyMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+bf_cfb64_cipher
 Merge complete --- Not blocked by TBAA or TFA check
-bf_cfb64_cipherMerge complete --- Not blocked by TBAA or TFA check
-
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 bf_ofb_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 6Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 bf_ecb_cipher
 
@@ -101,11 +101,11 @@ Analyzed func: bf_cbc_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: bf_cfb64_cipher
+Analyzed func: bf_ofb_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: bf_ofb_cipher
+Analyzed func: bf_cfb64_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -171,11 +171,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001855
+# Load time            		0.001993
 # Typebuilder time     		0.00046
-# MLTA time            		0.000522
-# Icall alias time     		6.7e-05
-# Func alias time      		0.002372
-# One layer alias time 		6.3e-05
-# Escape alias time    		0.000833
-# DB time              		0.002158
+# MLTA time            		0.000519
+# Icall alias time     		6.3e-05
+# Func alias time      		0.002283
+# One layer alias time 		6.1e-05
+# Escape alias time    		0.000782
+# DB time              		0.002275

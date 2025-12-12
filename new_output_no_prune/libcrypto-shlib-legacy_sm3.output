@@ -25,27 +25,27 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: sm3_int_update
+0 Top func: sm3_int_init
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: sm3_int_final
 
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: sm3_int_init
+2 Top func: sm3_int_update
 
-Analyzed func: sm3_int_finalMerge complete --- Not blocked by TBAA or TFA check
-
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+sm3_int_initMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: sm3_int_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: sm3_int_update
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sm3_int_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00141
-# Typebuilder time     		0.000226
-# MLTA time            		0.000241
-# Icall alias time     		9e-06
-# Func alias time      		0.000467
+# Load time            		0.014502
+# Typebuilder time     		0.000234
+# MLTA time            		0.000245
+# Icall alias time     		3.5e-05
+# Func alias time      		0.000497
 # One layer alias time 		5e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002193
+# Escape alias time    		5.6e-05
+# DB time              		0.002093

@@ -27,39 +27,39 @@ Openmp enabled
 
 0 Top func: X509V3_conf_free
 
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: PROXY_CERT_INFO_EXTENSION_itMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: r2i_pci
 
-Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: PROXY_CERT_INFO_EXTENSION_it
 
+3 Top func: i2r_pci
+     Top func: PROXY_CERT_INFO_EXTENSION_it Failed
+     Top func: r2i_pci Failed
+     Top func: i2r_pci Failed
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-r2i_pciMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_pciMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-PROXY_CERT_INFO_EXTENSION_itMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-r2i_pciMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_pciMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -152,11 +152,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002332
-# Typebuilder time     		0.000364
-# MLTA time            		0.000327
-# Icall alias time     		5.5e-05
-# Func alias time      		0.000827
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002122
+# Load time            		0.002422
+# Typebuilder time     		0.000376
+# MLTA time            		0.00033
+# Icall alias time     		5.8e-05
+# Func alias time      		0.005259
+# One layer alias time 		5.5e-05
+# Escape alias time    		0.000703
+# DB time              		0.002148

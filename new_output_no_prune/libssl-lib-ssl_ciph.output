@@ -25,19 +25,9 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ssl_cipher_ptr_id_cmp
+0 Top func: ciphersuite_cb
 
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ciphersuite_cbMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: ssl_cipher_ptr_id_cmp
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -52,10 +42,20 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ssl_cipher_ptr_id_cmp
+Analyzed func: ssl_cipher_ptr_id_cmp
 DefinitionFuncSet size: 0
 aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: ciphersuite_cb
 DefinitionFuncSet size: 1
@@ -63,13 +63,13 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %11 = call ptr %9(ptr noundef %10), !dbg !2075
+0 Update icall:   %67 = call i32 %66(), !dbg !2160
 
-1 Update icall:   %31 = call ptr %29(i32 noundef %30), !dbg !2115
+1 Update icall:   %16 = call ptr %14(ptr noundef %15), !dbg !2079
 
-2 Update icall:   %67 = call i32 %66(), !dbg !2160
+2 Update icall:   %11 = call ptr %9(ptr noundef %10), !dbg !2075
 
-3 Update icall:   %16 = call ptr %14(ptr noundef %15), !dbg !2079
+3 Update icall:   %31 = call ptr %29(i32 noundef %30), !dbg !2115
 
  Start ICall Alias Analysis
 
@@ -110,11 +110,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.007722
-# Typebuilder time     		0.000805
-# MLTA time            		0.000533
-# Icall alias time     		8.3e-05
-# Func alias time      		0.00194
-# One layer alias time 		9e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002159
+# Load time            		0.024487
+# Typebuilder time     		0.001607
+# MLTA time            		0.000626
+# Icall alias time     		0.000114
+# Func alias time      		0.007287
+# One layer alias time 		1e-05
+# Escape alias time    		6.4e-05
+# DB time              		0.002243

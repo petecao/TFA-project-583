@@ -25,44 +25,44 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_gcm_dinit
+0 Top func: ossl_gcm_stream_final
 
-1 Top func: ossl_gcm_stream_final
+1 Top func: ossl_gcm_dinit
 
-2 Top func: sm4_gcm_freectx
+2 Top func: sm4128gcm_dupctx
 
-3 Top func: sm4128gcm_dupctx
+3 Top func: sm4_gcm_freectx
 
 4 Top func: ossl_gcm_gettable_ctx_params
 
 5 Top func: sm4_128_gcm_get_params
 
 6 Top func: ossl_gcm_set_ctx_params
-     Top func: ossl_gcm_stream_final Failed
      Top func: ossl_gcm_dinit Failed
+     Top func: ossl_gcm_stream_final Failed
      Top func: ossl_gcm_gettable_ctx_params Failed
      Top func: sm4_gcm_freectx Failed
      Top func: sm4128gcm_dupctx Failed
      Top func: sm4_128_gcm_get_params Failed
 
-7 Top func: ossl_gcm_cipher
+7 Top func: ossl_gcm_stream_update
 
-8 Top func: ossl_gcm_stream_update
+8 Top func: ossl_gcm_cipher
 
 9 Top func: ossl_gcm_settable_ctx_params
-     Top func: ossl_gcm_set_ctx_params Failed
 
 10 Top func: sm4128gcm_newctx
 
 11 Top func: ossl_gcm_einit
+     Top func: ossl_gcm_set_ctx_params Failed
 
 12 Top func: ossl_gcm_get_ctx_params
 
 13 Top func: ossl_cipher_generic_gettable_params
-     Top func: ossl_gcm_cipher Failed
      Top func: ossl_gcm_stream_update Failed
-     Top func: ossl_gcm_settable_ctx_params Failed
+     Top func: ossl_gcm_cipher Failed
      Top func: ossl_gcm_einit Failed
+     Top func: ossl_gcm_settable_ctx_params Failed
      Top func: sm4128gcm_newctx Failed
      Top func: ossl_gcm_get_ctx_params Failed
      Top func: ossl_cipher_generic_gettable_params Failed
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001524
-# Typebuilder time     		0.000304
-# MLTA time            		0.000261
-# Icall alias time     		7.2e-05
-# Func alias time      		0.003609
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001957
+# Load time            		0.001573
+# Typebuilder time     		0.000262
+# MLTA time            		0.000257
+# Icall alias time     		7e-06
+# Func alias time      		0.006138
+# One layer alias time 		4e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002338

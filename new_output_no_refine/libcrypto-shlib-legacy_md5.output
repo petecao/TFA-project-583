@@ -25,27 +25,27 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: md5_update
+0 Top func: md5_final
 
 Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: md5_init
+
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: md5_final
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: md5_update
 
-2 Top func: md5_init
+Analyzed func: md5_initMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-md5_updateMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-Analyzed func: md5_init
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: md5_final
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: md5_update
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.027987
-# Typebuilder time     		0.000532
-# MLTA time            		0.002592
-# Icall alias time     		0.000145
-# Func alias time      		0.008864
-# One layer alias time 		1.9e-05
-# Escape alias time    		7.3e-05
-# DB time              		0.00257
+# Load time            		0.001305
+# Typebuilder time     		0.000228
+# MLTA time            		0.000245
+# Icall alias time     		6.5e-05
+# Func alias time      		0.00056
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001983

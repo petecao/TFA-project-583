@@ -25,64 +25,61 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_cipher_generic_cipher
+0 Top func: des_ecb_get_params
 
-1 Top func: des_ecb_get_params
+1 Top func: ossl_cipher_generic_cipher
 
 2 Top func: des_gettable_ctx_params
 
-3 Top func: des_cbc_newctx
+3 Top func: des_einit
 
-4 Top func: des_einit
+4 Top func: des_cbc_newctx
 
-5 Top func: ossl_cipher_generic_stream_final
+5 Top func: des_cfb64_newctx
 
-6 Top func: des_cfb1_get_params
+6 Top func: ossl_cipher_generic_stream_final
      Top func: ossl_cipher_generic_cipher Failed
-     Top func: des_gettable_ctx_params Failed
-     Top func: ossl_cipher_generic_stream_final Failed
      Top func: des_ecb_get_params Failed
-     Top func: des_cbc_newctx Failed
+     Top func: des_gettable_ctx_params Failed
      Top func: des_einit Failed
+     Top func: des_cfb64_newctx Failed
+     Top func: des_cbc_newctx Failed
 
 7 Top func: des_ecb_newctx
 
-8 Top func: ossl_cipher_generic_set_ctx_params
+8 Top func: ossl_cipher_generic_gettable_params
 
-9 Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_ofb64_newctxMerge complete --- Not blocked by TBAA or TFA check
+9 Top func: ossl_cipher_generic_set_ctx_params
 
-
-Merge complete --- Not blocked by TBAA or TFA check
 10Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_cfb1_get_paramsMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+des_dinit
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 11Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+des_cfb64_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_stream_finalMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+12Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 des_cbc_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_dinitMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
 13Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_cfb8_newctxMerge complete --- Not blocked by TBAA or TFA check
-
+des_ofb64_newctx
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
@@ -90,56 +87,59 @@ ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_ecb_newctxMerge complete --- Not blocked by TBAA or TFA check
+des_dinitMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
-     Top func: des_ofb64_newctx Failed
-     Top func: des_cbc_get_params Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+des_ecb_newctxMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+     Top func: des_cfb64_get_params Failed
 
 14 Top func: des_get_ctx_params
 
-15 Top func: des_dupctx
-     Top func: des_dinit Failed
+15 Top func: ossl_cipher_generic_block_update
 
-16 Top func: des_ofb64_get_params
-     Top func: des_cfb8_newctx Failed
+16 Top func: des_dupctx
+     Top func: des_cbc_get_params Failed
 
-17 Top func: ossl_cipher_generic_stream_update
+17 Top func: des_cfb1_newctx
+     Top func: des_ofb64_newctx Failed
      Top func: ossl_cipher_generic_set_ctx_params Failed
 
-18 Top func: ossl_cipher_generic_block_update
-
-19 Top func: des_cfb8_get_params
+18 Top func: ossl_cipher_generic_stream_update
      Top func: des_get_ctx_params Failed
+
+19 Top func: des_ofb64_get_params
+     Top func: ossl_cipher_generic_block_update Failed
      Top func: des_dupctx Failed
 
 20 Top func: ossl_cipher_generic_settable_ctx_params
-     Top func: des_ofb64_get_params Failed
+     Top func: des_cfb1_newctx Failed
+
+21 Top func: des_cfb1_get_params
+
+22 Top func: ossl_cipher_generic_block_final
+
+23 Top func: des_freectx
      Top func: ossl_cipher_generic_stream_update Failed
 
-21 Top func: des_cfb64_newctx
-
-22 Top func: des_freectx
-     Top func: ossl_cipher_generic_block_update Failed
-
-23 Top func: ossl_cipher_generic_block_final
-     Top func: des_cfb8_get_params Failed
-
-24 Top func: des_cfb1_newctx
+24 Top func: des_cfb8_get_params
+     Top func: des_ofb64_get_params Failed
      Top func: ossl_cipher_generic_settable_ctx_params Failed
 
-25 Top func: des_cfb64_get_params
-     Top func: des_cfb64_newctx Failed
-     Top func: des_freectx Failed
+25 Top func: des_cfb8_newctx
+     Top func: des_cfb1_get_params Failed
      Top func: ossl_cipher_generic_block_final Failed
-     Top func: des_cfb1_newctx Failed
-     Top func: des_cfb64_get_params Failed
+     Top func: des_freectx Failed
+     Top func: des_cfb8_get_params Failed
+     Top func: des_cfb8_newctx Failed
 
 Update global ICallees info
 
-0 Update icall:   call void %21(ptr noundef %23, ptr noundef %25), !dbg !264
+0 Update icall:   %84 = call i32 %80(ptr noundef %81, ptr noundef %82, i64 noundef %83), !dbg !315
 
-1 Update icall:   %84 = call i32 %80(ptr noundef %81, ptr noundef %82, i64 noundef %83), !dbg !315
+1 Update icall:   call void %21(ptr noundef %23, ptr noundef %25), !dbg !264
 
  Start ICall Alias Analysis
 
@@ -180,11 +180,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002066
-# Typebuilder time     		0.000291
-# MLTA time            		0.000473
-# Icall alias time     		3.5e-05
-# Func alias time      		0.008604
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002098
+# Load time            		0.002335
+# Typebuilder time     		0.000324
+# MLTA time            		0.000401
+# Icall alias time     		7e-05
+# Func alias time      		0.003607
+# One layer alias time 		8e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002202

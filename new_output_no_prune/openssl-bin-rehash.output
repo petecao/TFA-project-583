@@ -25,23 +25,29 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: X509_INFO_free
+0 Top func: sk_strcmp
 
-Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-sk_strcmpMerge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+X509_INFO_freeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 str_freeMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -214,7 +220,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -400,15 +405,10 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: sk_strcmp
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+sk_strcmpMerge complete --- Not blocked by TBAA or TFA check
+
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -457,11 +457,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003411
-# Typebuilder time     		0.000474
-# MLTA time            		0.000362
-# Icall alias time     		5.9e-05
-# Func alias time      		0.001855
-# One layer alias time 		8e-06
-# Escape alias time    		6.7e-05
-# DB time              		0.002139
+# Load time            		0.003639
+# Typebuilder time     		0.000375
+# MLTA time            		0.000255
+# Icall alias time     		6e-05
+# Func alias time      		0.002029
+# One layer alias time 		6e-06
+# Escape alias time    		6.1e-05
+# DB time              		0.001952

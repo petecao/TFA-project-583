@@ -29,7 +29,7 @@ Openmp enabled
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: slh_dsa_sign_verify_test
+ Top func: slh_dsa_bad_pub_len_test
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
@@ -37,7 +37,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
- Top func: slh_dsa_key_validate_failure_test
+ Top func: slh_dsa_sign_verify_test
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
@@ -45,15 +45,11 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
- Top func: slh_dsa_bad_pub_len_test
-
-Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
  Top func: slh_dsa_key_validate_test
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-slh_dsa_sign_verify_testMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: slh_dsa_bad_pub_len_testMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -65,23 +61,27 @@ Analyzed func: slh_dsa_digest_sign_verify_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: slh_dsa_key_validate_failure_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: slh_dsa_keygen_invalid_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: slh_dsa_keygen_test
+Analyzed func: slh_dsa_sign_verify_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+6 Top func: slh_dsa_key_validate_failure_test
 
 Merge complete --- Not blocked by TBAA or TFA check
-8Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
  Top func: slh_dsa_deterministic_usage_test
 
 Merge complete --- Not blocked by TBAA or TFA check
-9Merge complete --- Not blocked by TBAA or TFA check
+8Merge complete --- Not blocked by TBAA or TFA check
  Top func: slh_dsa_key_eq_test
+
+Merge complete --- Not blocked by TBAA or TFA check
+9Merge complete --- Not blocked by TBAA or TFA check
+ Top func: slh_dsa_keygen_test
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 slh_dsa_key_validate_testMerge complete --- Not blocked by TBAA or TFA check
@@ -89,15 +89,15 @@ slh_dsa_key_validate_testMerge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: slh_dsa_bad_pub_len_test
+Analyzed func: slh_dsa_deterministic_usage_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: slh_dsa_key_validate_failure_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: slh_dsa_keygen_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: slh_dsa_deterministic_usage_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -146,11 +146,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.005236
-# Typebuilder time     		0.000603
-# MLTA time            		0.000373
-# Icall alias time     		6.6e-05
-# Func alias time      		0.001148
+# Load time            		0.009034
+# Typebuilder time     		0.00062
+# MLTA time            		0.00037
+# Icall alias time     		7.1e-05
+# Func alias time      		0.008222
 # One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002129
+# Escape alias time    		5.5e-05
+# DB time              		0.001975

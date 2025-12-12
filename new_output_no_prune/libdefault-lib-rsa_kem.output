@@ -27,66 +27,66 @@ Openmp enabled
 
 0 Top func: rsakem_newctx
 
-1 Top func: rsakem_generate
+1 Top func: rsakem_dupctx
 
-2 Top func: rsakem_dupctx
+2 Top func: rsakem_recover
 
-3 Top func: rsakem_recover
+3 Top func: rsakem_generate
 
 4 Top func: rsakem_get_ctx_params
 
 5 Top func: rsakem_set_ctx_params
+
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rsakem_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
-6 Top func: rsakem_gettable_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rsakem_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
-7 Top func: rsakem_settable_ctx_params
-     Top func: rsakem_newctx Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: rsakem_dupctx Failed
      Top func: rsakem_generate Failed
      Top func: rsakem_recover Failed
-     Top func: rsakem_dupctx Failed
+     Top func: rsakem_newctx Failed
+     Top func: rsakem_gettable_ctx_params Failed
+     Top func: rsakem_settable_ctx_params Failed
      Top func: rsakem_set_ctx_params Failed
      Top func: rsakem_get_ctx_params Failed
-     Top func: rsakem_gettable_ctx_params Failed
 
 8 Top func: rsakem_encapsulate_init
 
 9 Top func: rsakem_decapsulate_init
 
 10 Top func: rsakem_freectx
-     Top func: rsakem_settable_ctx_params Failed
-     Top func: rsakem_freectx Failed
      Top func: rsakem_decapsulate_init Failed
      Top func: rsakem_encapsulate_init Failed
+     Top func: rsakem_freectx Failed
 
 Update global ICallees info
 
@@ -129,11 +129,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002345
-# Typebuilder time     		0.000289
-# MLTA time            		0.000246
-# Icall alias time     		5.7e-05
-# Func alias time      		0.001644
-# One layer alias time 		7e-06
-# Escape alias time    		5.9e-05
-# DB time              		0.002256
+# Load time            		0.002706
+# Typebuilder time     		0.000345
+# MLTA time            		0.000345
+# Icall alias time     		7.7e-05
+# Func alias time      		0.002037
+# One layer alias time 		6.6e-05
+# Escape alias time    		0.001097
+# DB time              		0.00295

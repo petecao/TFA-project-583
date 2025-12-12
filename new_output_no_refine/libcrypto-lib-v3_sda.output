@@ -25,28 +25,24 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: OSSL_ATTRIBUTES_SYNTAX_it
+0 Top func: X509_ATTRIBUTE_it
 
-1 Top func: i2r_ATTRIBUTES_SYNTAX
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: OSSL_ATTRIBUTES_SYNTAX_it
 
-2 Top func: X509_ATTRIBUTE_it
-     Top func: i2r_ATTRIBUTES_SYNTAXMerge complete --- Not blocked by TBAA or TFA check
- Failed
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: Merge complete --- Not blocked by TBAA or TFA check
+i2r_ATTRIBUTES_SYNTAX
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+i2r_ATTRIBUTES_SYNTAXMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: X509_ATTRIBUTE_it
-DefinitionFuncSet size: 0
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -58,6 +54,10 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: OSSL_ATTRIBUTES_SYNTAX_it Failed
+
+Analyzed func: X509_ATTRIBUTE_it
+DefinitionFuncSet size: 0
+aliased_callset size: 0
 
 Update global ICallees info
 
@@ -100,11 +100,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001855
-# Typebuilder time     		0.000315
-# MLTA time            		0.00023
-# Icall alias time     		6.3e-05
-# Func alias time      		0.001779
-# One layer alias time 		8e-06
-# Escape alias time    		6.4e-05
-# DB time              		0.001966
+# Load time            		0.001747
+# Typebuilder time     		0.000265
+# MLTA time            		0.000192
+# Icall alias time     		7.2e-05
+# Func alias time      		0.000663
+# One layer alias time 		6.1e-05
+# Escape alias time    		0.000767
+# DB time              		0.002197

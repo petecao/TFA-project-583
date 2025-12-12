@@ -1,0 +1,220 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/destest-bin-destest.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/destest-bin-destest.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/destest-bin-destest.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/destest-bin-destest.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: test_des_ecb
+
+1 Top func: test_des_cfb8
+
+2 Top func: test_des_ede_ecb
+
+3 Top func: test_des_cfb48
+
+4 Top func: test_des_ofb
+
+5 Top func: test_input_align
+
+6 Top func: test_des_cbc_cksum
+
+7 Top func: test_des_weak_keys
+
+Analyzed func: test_des_cfb8
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_ecb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_input_align
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_ofb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_ede_ecb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_cfb48
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+8 Top func: test_des_cfb16
+
+9 Top func: test_des_cbc
+
+10 Top func: test_output_align
+
+11 Top func: test_des_ofb64
+
+12 Top func: test_des_ede_cbc
+
+13 Top func: test_des_cfb64
+
+Analyzed func: test_des_weak_keys
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_cbc
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_cfb16
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+14 Top func: test_des_check_bad_parity
+
+Analyzed func: test_output_align
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_ede_cbc
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_ofb64
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_cfb64
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+15 Top func: test_ede_cbc
+
+16 Top func: test_des_cfb32
+
+17 Top func: test_des_key_wrap
+
+18 Top func: test_des_pcbc
+
+19 Top func: test_des_ede_ofb64
+
+20 Top func: test_des_ede_cfb64
+
+Analyzed func: test_des_check_bad_parity
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_ede_cbc
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+21 Top func: test_des_two_key
+
+Analyzed func: test_des_cfb32
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_key_wrap
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_pcbc
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_ede_ofb64
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_ede_cfb64
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+22 Top func: test_des_crypt
+
+23 Top func: test_des_quad_cksum
+
+Analyzed func: test_des_two_key
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_crypt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_quad_cksum
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_des_cbc_cksum
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.004168
+# Typebuilder time     		0.000578
+# MLTA time            		0.000356
+# Icall alias time     		5.2e-05
+# Func alias time      		0.002943
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.00205

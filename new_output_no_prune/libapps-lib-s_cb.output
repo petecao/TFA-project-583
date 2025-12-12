@@ -196,16 +196,24 @@ empty struct_fields
 
  Start Func Alias Analysis
 
-0 Top func: security_callback_debug
+0 Top func: set_cert_cb
 
-1 Top func: set_cert_cb
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: security_callback_debug
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: keylog_callback
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+keylog_callbackMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: set_cert_cbMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+set_cert_cbMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
@@ -215,22 +223,14 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: keylog_callback
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+security_callback_debugMerge complete --- Not blocked by TBAA or TFA check
+
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: security_callback_debug
+Analyzed func: keylog_callback
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -373,11 +373,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.006819
-# Typebuilder time     		0.001934
-# MLTA time            		0.00061
-# Icall alias time     		0.001273
-# Func alias time      		0.002144
-# One layer alias time 		6e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002143
+# Load time            		0.034594
+# Typebuilder time     		0.002292
+# MLTA time            		0.000626
+# Icall alias time     		0.001224
+# Func alias time      		0.008738
+# One layer alias time 		8e-06
+# Escape alias time    		6.8e-05
+# DB time              		0.002174

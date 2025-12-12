@@ -25,13 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_ASN1_OCTET_STRING_set
+0 Top func: test_cmp_asn1_get_int
 
-1 Top func: test_ASN1_OCTET_STRING_set_tgt_is_src
+1 Top func: test_ASN1_OCTET_STRING_set
 
-2 Top func: test_cmp_asn1_get_int
+2 Top func: test_ASN1_OCTET_STRING_set_tgt_is_src
 
-Analyzed func: test_ASN1_OCTET_STRING_set_tgt_is_src
+Analyzed func: test_cmp_asn1_get_int
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -39,7 +39,7 @@ Analyzed func: test_ASN1_OCTET_STRING_set
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_cmp_asn1_get_int
+Analyzed func: test_ASN1_OCTET_STRING_set_tgt_is_src
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001727
-# Typebuilder time     		0.000244
-# MLTA time            		0.000217
-# Icall alias time     		3.4e-05
-# Func alias time      		0.000781
-# One layer alias time 		5e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.001983
+# Load time            		0.016317
+# Typebuilder time     		0.00024
+# MLTA time            		0.00022
+# Icall alias time     		9.9e-05
+# Func alias time      		0.008257
+# One layer alias time 		7e-05
+# Escape alias time    		0.000873
+# DB time              		0.002151

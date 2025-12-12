@@ -25,29 +25,29 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: thread_fips_rand_fetch
+0 Top func: test_fips_rand_leak
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-thread_runMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: thread_run
 
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_fips_rand_leak
+ Top func: thread_fips_rand_fetch
 
 Analyzed func: thread_run
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: thread_fips_rand_fetch
+Analyzed func: test_fips_rand_leak
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_fips_rand_leak
+Analyzed func: thread_fips_rand_fetch
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.001538
-# Typebuilder time     		0.000202
-# MLTA time            		0.000216
-# Icall alias time     		0.000311
-# Func alias time      		0.000793
-# One layer alias time 		9e-06
+# Load time            		0.001169
+# Typebuilder time     		0.000162
+# MLTA time            		0.000209
+# Icall alias time     		0.000335
+# Func alias time      		0.003406
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001957
+# DB time              		0.002263

@@ -25,21 +25,21 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_skey_skeymgmt
+0 Top func: test_aes_raw_skey
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: test_aes_raw_skey
+1 Top func: test_des_raw_skey
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: test_des_raw_skey
+2 Top func: test_skey_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: test_skey_cipher
+3 Top func: test_skey_skeymgmt
 
 Merge complete --- Not blocked by TBAA or TFA check
 4 Top func: ossl_pkey_todata_cb
 
-Analyzed func: test_skey_skeymgmt
+Analyzed func: test_aes_raw_skey
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
@@ -47,35 +47,35 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_des_raw_skey
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_skey_cipher
-Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_des_raw_skeyMerge complete --- Not blocked by TBAA or TFA check
+
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
-Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_aes_raw_skey
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_skey_cipherMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_skey_skeymgmt
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -130,11 +130,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002178
-# Typebuilder time     		0.000294
-# MLTA time            		0.000208
-# Icall alias time     		7e-06
-# Func alias time      		0.000678
-# One layer alias time 		5e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.001972
+# Load time            		0.002267
+# Typebuilder time     		0.00041
+# MLTA time            		0.000289
+# Icall alias time     		6.1e-05
+# Func alias time      		0.000781
+# One layer alias time 		7e-06
+# Escape alias time    		6.5e-05
+# DB time              		0.002213

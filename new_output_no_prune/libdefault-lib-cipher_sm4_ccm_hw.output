@@ -27,19 +27,24 @@ Openmp enabled
 
 0 Top func: ccm_sm4_initkey
 
-1 Top func: ossl_ccm_generic_auth_encrypt
-
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_ccm_generic_setivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_ccm_generic_setaadMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_ccm_generic_auth_encryptMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -64,7 +69,8 @@ ossl_sm4_encryptMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: ossl_ccm_generic_auth_encryptMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_ccm_generic_setivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -77,16 +83,19 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_ccm_generic_setiv
+ccm_sm4_initkeyMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+0
 
-Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: ossl_ccm_generic_auth_encrypt
+DefinitionFuncSet size: 0
+aliased_callset size: 0
 
 Analyzed func: ossl_ccm_generic_setaad
 DefinitionFuncSet size: 0
@@ -102,15 +111,6 @@ aliased_callset size: 0
 
 Analyzed func: ossl_sm4_encrypt
 DefinitionFuncSet size: 0
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: ccm_sm4_initkey
-DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Update global ICallees info
@@ -154,11 +154,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001399
-# Typebuilder time     		0.000201
-# MLTA time            		0.000229
-# Icall alias time     		8.2e-05
-# Func alias time      		0.002149
-# One layer alias time 		6.8e-05
-# Escape alias time    		0.000875
-# DB time              		0.002304
+# Load time            		0.001124
+# Typebuilder time     		0.000186
+# MLTA time            		0.000221
+# Icall alias time     		7.2e-05
+# Func alias time      		0.003076
+# One layer alias time 		7e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.002235

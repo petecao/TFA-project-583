@@ -27,15 +27,13 @@ Openmp enabled
 
 0 Top func: wp_final
 
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: wp_init
+1 Top func: wp_update
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: wp_update
+ Top func: wp_init
 
-Analyzed func: wp_finalMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: wp_updateMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
@@ -44,8 +42,10 @@ aliased_callset size: 0
 Analyzed func: wp_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: wp_update
+Analyzed func: wp_final
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001177
-# Typebuilder time     		0.000212
-# MLTA time            		0.000278
-# Icall alias time     		6.7e-05
-# Func alias time      		0.003979
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001962
+# Load time            		0.020784
+# Typebuilder time     		0.003913
+# MLTA time            		0.000299
+# Icall alias time     		0.00012
+# Func alias time      		0.008577
+# One layer alias time 		6.3e-05
+# Escape alias time    		0.000798
+# DB time              		0.002519

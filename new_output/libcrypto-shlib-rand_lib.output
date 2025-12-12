@@ -25,30 +25,37 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: random_conf_init
+0 Top func: do_rand_init_ossl_
 
-1 Top func: rand_delete_thread_state
+Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+random_conf_initMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-do_rand_init_ossl_Merge complete --- Not blocked by TBAA or TFA check
+rand_delete_thread_stateMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 random_conf_deinitMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 random_conf_initMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -62,39 +69,24 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 random_conf_deinitMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+0
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: do_rand_init_ossl_Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+do_rand_init_ossl_Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -104,6 +96,14 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -116,21 +116,21 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %20 = call i32 %19(), !dbg !290
+0 Update icall:   call void %17(), !dbg !286
 
-1 Update icall:   %36 = call i32 %32(ptr noundef %33, i32 noundef %35), !dbg !328
+1 Update icall:   %24 = call i32 %20(ptr noundef %21, i32 noundef %22, double noundef %23), !dbg !295
 
-2 Update icall:   call void %17(), !dbg !286
+2 Update icall:   %36 = call i32 %32(ptr noundef %33, i32 noundef %35), !dbg !328
 
-3 Update icall:   %21 = call i32 %18(ptr noundef %19, i32 noundef %20), !dbg !286
+3 Update icall:   %21 = call i32 %18(ptr noundef %19, i32 noundef %20), !dbg !293
 
-4 Update icall:   %44 = call i32 %34(ptr noundef %36, i32 noundef %39, double noundef %43), !dbg !318
+4 Update icall:   %36 = call i32 %32(ptr noundef %33, i32 noundef %35), !dbg !328
 
-5 Update icall:   %21 = call i32 %18(ptr noundef %19, i32 noundef %20), !dbg !293
+5 Update icall:   %44 = call i32 %34(ptr noundef %36, i32 noundef %39, double noundef %43), !dbg !318
 
-6 Update icall:   %24 = call i32 %20(ptr noundef %21, i32 noundef %22, double noundef %23), !dbg !295
+6 Update icall:   %21 = call i32 %18(ptr noundef %19, i32 noundef %20), !dbg !286
 
-7 Update icall:   %36 = call i32 %32(ptr noundef %33, i32 noundef %35), !dbg !328
+7 Update icall:   %20 = call i32 %19(), !dbg !290
 
  Start ICall Alias Analysis
 
@@ -171,11 +171,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00474
-# Typebuilder time     		0.000442
-# MLTA time            		0.000468
-# Icall alias time     		8e-05
-# Func alias time      		0.002377
-# One layer alias time 		5.9e-05
-# Escape alias time    		0.0007
-# DB time              		0.002254
+# Load time            		0.004717
+# Typebuilder time     		0.000441
+# MLTA time            		0.000467
+# Icall alias time     		6.1e-05
+# Func alias time      		0.002421
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002154

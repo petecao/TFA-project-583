@@ -25,14 +25,14 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: kdf_newdata
+0 Top func: kdf_freedata
 
-1 Top func: kdf_has
+1 Top func: kdf_newdata
 
-2 Top func: kdf_freedata
-     Top func: kdf_has Failed
-     Top func: kdf_newdata Failed
+2 Top func: kdf_has
      Top func: kdf_freedata Failed
+     Top func: kdf_newdata Failed
+     Top func: kdf_has Failed
 
 Update global ICallees info
 
@@ -75,11 +75,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001576
-# Typebuilder time     		0.000219
+# Load time            		0.001596
+# Typebuilder time     		0.000224
 # MLTA time            		0.000215
-# Icall alias time     		6.7e-05
-# Func alias time      		0.00046
+# Icall alias time     		6.4e-05
+# Func alias time      		0.000507
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002147
+# DB time              		0.002082

@@ -25,17 +25,17 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: i2r_PKEY_USAGE_PERIOD
+0 Top func: ASN1_GENERALIZEDTIME_it
 
-1 Top func: ASN1_GENERALIZEDTIME_it
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+i2r_PKEY_USAGE_PERIOD
 
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-PKEY_USAGE_PERIOD_itMerge complete --- Not blocked by TBAA or TFA check
-
+ Top func: PKEY_USAGE_PERIOD_it
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 i2r_PKEY_USAGE_PERIOD FailedMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -53,9 +53,9 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: PKEY_USAGE_PERIOD_itMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: PKEY_USAGE_PERIOD_it Failed
 
 Analyzed func: ASN1_GENERALIZEDTIME_it
 DefinitionFuncSet size: 0
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001402
-# Typebuilder time     		0.000284
-# MLTA time            		0.000256
-# Icall alias time     		7.2e-05
-# Func alias time      		0.00092
+# Load time            		0.001631
+# Typebuilder time     		0.000255
+# MLTA time            		0.000222
+# Icall alias time     		6.9e-05
+# Func alias time      		0.00055
 # One layer alias time 		8e-06
-# Escape alias time    		6.4e-05
-# DB time              		0.001975
+# Escape alias time    		6.2e-05
+# DB time              		0.001981

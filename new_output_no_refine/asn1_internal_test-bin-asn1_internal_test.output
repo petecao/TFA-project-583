@@ -25,29 +25,27 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_unicode_range
+0 Top func: posix_time_test
 
-1 Top func: test_asn1_time_tm_conversions
+1 Top func: test_obj_nid_undef
 
-2 Top func: test_obj_nid_undef
+2 Top func: test_unicode_range
 
-3 Top func: posix_time_test
+3 Top func: test_obj_create
 
-4 Top func: test_obj_create
+4 Top func: test_standard_methods
 
-5 Top func: test_tbl_standard
+5 Top func: test_asn1_time_tm_conversions
 
-6 Top func: test_standard_methods
+6 Top func: test_tbl_standard
+
+7 Top func: test_empty_nonoptional_content
+
+Analyzed func: test_obj_create
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_obj_nid_undef
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_asn1_time_tm_conversions
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_unicode_range
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -55,27 +53,29 @@ Analyzed func: posix_time_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_obj_create
+Analyzed func: test_unicode_range
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-7 Top func: test_empty_nonoptional_content
-
-8 Top func: test_invalid_utf8
 
 Analyzed func: test_standard_methods
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_invalid_utf8
+Analyzed func: test_asn1_time_tm_conversions
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+
+Analyzed func: test_tbl_standard
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+8 Top func: test_invalid_utf8
 
 Analyzed func: test_empty_nonoptional_content
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_tbl_standard
+Analyzed func: test_invalid_utf8
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.017255
-# Typebuilder time     		0.000445
-# MLTA time            		0.00025
-# Icall alias time     		0.000138
-# Func alias time      		0.00833
-# One layer alias time 		8e-06
-# Escape alias time    		5.9e-05
-# DB time              		0.002119
+# Load time            		0.003309
+# Typebuilder time     		0.00041
+# MLTA time            		0.000242
+# Icall alias time     		7.8e-05
+# Func alias time      		0.002231
+# One layer alias time 		7e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002372

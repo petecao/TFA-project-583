@@ -25,18 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: PKCS12_SAFEBAG_free
+0 Top func: PKCS7_free
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-PKCS7_free
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+PKCS12_SAFEBAG_freeMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -125,8 +120,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: PKCS7_free
-DefinitionFuncSet size: 0
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+PKCS7_freeMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: 0
 
 Analyzed func: PKCS12_SAFEBAG_free
@@ -174,11 +174,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004008
-# Typebuilder time     		0.000514
-# MLTA time            		0.000421
-# Icall alias time     		7.1e-05
-# Func alias time      		0.00317
-# One layer alias time 		8e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002108
+# Load time            		0.004904
+# Typebuilder time     		0.000479
+# MLTA time            		0.000378
+# Icall alias time     		6.8e-05
+# Func alias time      		0.000813
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002075

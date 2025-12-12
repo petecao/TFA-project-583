@@ -27,29 +27,29 @@ Openmp enabled
 
 Update global ICallees info
 
-0 Update icall:   %56 = call i64 %51(ptr noundef %52, i32 noundef %53, i64 noundef %54, ptr noundef %55), !dbg !206
+0 Update icall:   %16 = call ptr %14(ptr noundef %15), !dbg !176
 
-1 Update icall:   %29 = call ptr %26(ptr noundef %27, ptr noundef %28), !dbg !184
+1 Update icall:   %33 = call ptr %29(ptr noundef %30, ptr noundef %31, ptr noundef %32), !dbg !188
 
-2 Update icall:   %47 = call i32 %45(ptr noundef %46), !dbg !204
+2 Update icall:   %68 = call i32 %66(ptr noundef %67), !dbg !236
 
-3 Update icall:   %38 = call ptr %35(ptr noundef %36, ptr noundef %37), !dbg !196
+3 Update icall:   %50 = call ptr %46(ptr noundef %47, ptr noundef %48, ptr noundef %49), !dbg !200
 
-4 Update icall:   %16 = call ptr %14(ptr noundef %15), !dbg !176
+4 Update icall:   %38 = call i32 %36(ptr noundef %37), !dbg !191
 
-5 Update icall:   %54 = call ptr %51(ptr noundef %52, ptr noundef %53), !dbg !207
+5 Update icall:   %56 = call i32 %54(ptr noundef %55), !dbg !205
 
-6 Update icall:   %33 = call ptr %29(ptr noundef %30, ptr noundef %31, ptr noundef %32), !dbg !188
+6 Update icall:   %29 = call ptr %26(ptr noundef %27, ptr noundef %28), !dbg !184
 
-7 Update icall:   %68 = call i32 %66(ptr noundef %67), !dbg !236
+7 Update icall:   %54 = call ptr %51(ptr noundef %52, ptr noundef %53), !dbg !207
 
-8 Update icall:   %38 = call i32 %36(ptr noundef %37), !dbg !191
+8 Update icall:   %47 = call i32 %45(ptr noundef %46), !dbg !204
 
-9 Update icall:   %50 = call ptr %46(ptr noundef %47, ptr noundef %48, ptr noundef %49), !dbg !200
+9 Update icall:   %22 = call i32 %18(ptr noundef %19, ptr noundef %20, i32 noundef %21), !dbg !182
 
-10 Update icall:   %22 = call i32 %18(ptr noundef %19, ptr noundef %20, i32 noundef %21), !dbg !182
+10 Update icall:   %38 = call ptr %35(ptr noundef %36, ptr noundef %37), !dbg !196
 
-11 Update icall:   %56 = call i32 %54(ptr noundef %55), !dbg !205
+11 Update icall:   %56 = call i64 %51(ptr noundef %52, i32 noundef %53, i64 noundef %54, ptr noundef %55), !dbg !206
 
  Start ICall Alias Analysis
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002189
-# Typebuilder time     		0.000229
-# MLTA time            		0.000265
-# Icall alias time     		9e-05
-# Func alias time      		0.002646
-# One layer alias time 		6.8e-05
-# Escape alias time    		0.000798
-# DB time              		0.002333
+# Load time            		0.00263
+# Typebuilder time     		0.000415
+# MLTA time            		0.000355
+# Icall alias time     		6.9e-05
+# Func alias time      		0.0043
+# One layer alias time 		1e-05
+# Escape alias time    		5.7e-05
+# DB time              		0.001963

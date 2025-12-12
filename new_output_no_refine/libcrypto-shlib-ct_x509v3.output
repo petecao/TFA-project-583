@@ -30,7 +30,7 @@ Openmp enabled
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ASN1_NULL_itMerge complete --- Not blocked by TBAA or TFA check
+i2d_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -43,29 +43,29 @@ x509_ext_d2i_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2d_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
+i2r_SCT_LISTMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_SCT_LIST
+ Top func: ASN1_NULL_it
+
+5 Top func: s2i_poison
+
 Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: i2s_poison
 
-5 Top func: i2s_poison
-
-6 Top func: ocsp_ext_d2i_SCT_LIST
-     Top func: ASN1_NULL_it Failed
+7 Top func: ocsp_ext_d2i_SCT_LIST
      Top func: i2d_SCT_LIST Failed
-     Top func: SCT_LIST_free Failed
      Top func: x509_ext_d2i_SCT_LIST Failed
+     Top func: ASN1_NULL_it Failed
      Top func: i2r_SCT_LIST Failed
-     Top func: i2s_poison Failed
-
-7 Top func: s2i_poison
-     Top func: ocsp_ext_d2i_SCT_LIST Failed
      Top func: s2i_poison Failed
+     Top func: SCT_LIST_free Failed
+     Top func: i2s_poison Failed
+     Top func: ocsp_ext_d2i_SCT_LIST Failed
 
 Update global ICallees info
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001587
-# Typebuilder time     		0.000247
-# MLTA time            		0.00027
+# Load time            		0.001568
+# Typebuilder time     		0.000239
+# MLTA time            		0.000271
 # Icall alias time     		6.8e-05
-# Func alias time      		0.003348
+# Func alias time      		0.001654
 # One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002144
+# Escape alias time    		5.6e-05
+# DB time              		0.001966

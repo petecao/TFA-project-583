@@ -31,21 +31,21 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: test_hexstr_to_from
+0 Top func: test_hexstr_sep_to_from
 
 1 Top func: test_hexstr_ex_to_from
 
-2 Top func: test_hexstr_sep_to_from
+2 Top func: test_hexstr_to_from
+
+Analyzed func: test_hexstr_sep_to_from
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_hexstr_ex_to_from
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_hexstr_to_from
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_hexstr_sep_to_from
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002911
-# Typebuilder time     		0.000327
-# MLTA time            		0.000193
-# Icall alias time     		6.2e-05
-# Func alias time      		0.004415
+# Load time            		0.002436
+# Typebuilder time     		0.000317
+# MLTA time            		0.000164
+# Icall alias time     		6.7e-05
+# Func alias time      		0.008232
 # One layer alias time 		7e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002063
+# Escape alias time    		5.8e-05
+# DB time              		0.002022

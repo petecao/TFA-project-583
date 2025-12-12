@@ -25,32 +25,32 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: cipher_hw_seed_ecb_cipher
+0 Top func: cipher_hw_seed_cbc_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: cipher_hw_seed_initkey
+1 Top func: cipher_hw_seed_ofb128_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: cipher_hw_seed_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
+2 Top func: cipher_hw_seed_initkey
+
+Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: cipher_hw_seed_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_seed_ofb128_cipher
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
- Top func: cipher_hw_seed_cfb128_cipher
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+cipher_hw_seed_cfb128_cipher
 
-Analyzed func: cipher_hw_seed_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+cipher_hw_seed_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
 
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: cipher_hw_seed_ecb_cipher
+Analyzed func: cipher_hw_seed_cbc_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -107,11 +107,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00161
-# Typebuilder time     		0.000251
-# MLTA time            		0.000239
-# Icall alias time     		7.2e-05
-# Func alias time      		0.004895
-# One layer alias time 		6.8e-05
-# Escape alias time    		0.000921
-# DB time              		0.002174
+# Load time            		0.001657
+# Typebuilder time     		0.000291
+# MLTA time            		0.000283
+# Icall alias time     		7e-05
+# Func alias time      		0.005568
+# One layer alias time 		9e-06
+# Escape alias time    		6.4e-05
+# DB time              		0.002045

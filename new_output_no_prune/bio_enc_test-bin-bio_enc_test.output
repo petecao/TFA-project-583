@@ -25,21 +25,21 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_bio_enc_aes_256_ofb
+0 Top func: test_bio_enc_aes_256_cfb
 
-1 Top func: test_bio_enc_aes_128_ctr
+1 Top func: test_bio_enc_aes_256_ofb
 
 2 Top func: test_bio_enc_aes_128_cbc
 
-3 Top func: test_bio_enc_aes_256_cfb
+3 Top func: test_bio_enc_aes_128_ctr
 
-4 Top func: test_bio_enc_chacha20_poly1305
+4 Top func: test_bio_enc_chacha20
 
-5 Top func: test_bio_enc_chacha20
+5 Top func: test_bio_enc_chacha20_poly1305
 
 6 Top func: test_bio_enc_eof_read_flush
 
-Analyzed func: test_bio_enc_aes_128_ctr
+Analyzed func: test_bio_enc_aes_256_ofb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -47,11 +47,15 @@ Analyzed func: test_bio_enc_aes_256_cfb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_bio_enc_chacha20_poly1305
+Analyzed func: test_bio_enc_aes_128_cbc
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_bio_enc_aes_128_cbc
+Analyzed func: test_bio_enc_aes_128_ctr
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_bio_enc_chacha20_poly1305
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -60,10 +64,6 @@ DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_bio_enc_eof_read_flush
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_bio_enc_aes_256_ofb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003067
+# Load time            		0.002773
 # Typebuilder time     		0.000329
-# MLTA time            		0.000251
-# Icall alias time     		6.6e-05
-# Func alias time      		0.001669
-# One layer alias time 		6.3e-05
-# Escape alias time    		0.000827
-# DB time              		0.002166
+# MLTA time            		0.00026
+# Icall alias time     		6.8e-05
+# Func alias time      		0.000862
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002126

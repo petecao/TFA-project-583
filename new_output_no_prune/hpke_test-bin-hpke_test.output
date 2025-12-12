@@ -25,19 +25,19 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: export_only_test
+0 Top func: x25519kdfsha256_hkdfsha256_aes128gcm_psk_test
 
-Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: x25519kdfsha256_hkdfsha256_aes128gcm_psk_test
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: export_only_test
 
 Merge complete --- Not blocked by TBAA or TFA check
 2 Top func: test_hpke_suite_strs
 
 Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: test_hpke_ikms
+3 Top func: test_hpke_export
 
 Merge complete --- Not blocked by TBAA or TFA check
-4 Top func: test_hpke_export
+4 Top func: test_hpke_ikms
 
 Merge complete --- Not blocked by TBAA or TFA check
 5 Top func: test_hpke_compressed
@@ -46,15 +46,11 @@ Merge complete --- Not blocked by TBAA or TFA check
 6 Top func: test_hpke_oddcalls
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-export_only_test
+x25519kdfsha256_hkdfsha256_aes128gcm_psk_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: x25519kdfsha256_hkdfsha256_aes128gcm_psk_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_hpke_ikms
+Analyzed func: export_only_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -66,29 +62,37 @@ Analyzed func: test_hpke_export
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_hpke_ikms
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_hpke_suite_strs
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: x25519kdfsha256_hkdfsha256_aes128gcm_base_test
+7 Top func: P256kdfsha256_hkdfsha256_aes128gcm_base_test
 
 Merge complete --- Not blocked by TBAA or TFA check
-8 Top func: P256kdfsha256_hkdfsha256_aes128gcm_base_test
+8 Top func: x25519kdfsha256_hkdfsha256_aes128gcm_base_test
 
 Merge complete --- Not blocked by TBAA or TFA check
-9 Top func: test_hpke_random_suites
+9 Top func: test_hpke_noncereuse
 
 Merge complete --- Not blocked by TBAA or TFA check
-10 Top func: test_hpke_noncereuse
+10 Top func: test_hpke_modes_suites
 
 Merge complete --- Not blocked by TBAA or TFA check
-11 Top func: test_hpke_modes_suites
-
-Merge complete --- Not blocked by TBAA or TFA check
-12 Top func: test_hpke_grease
+11 Top func: test_hpke_random_suites
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 test_hpke_oddcalls
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+12 Top func: test_hpke_grease
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+x25519kdfsha256_hkdfsha256_aes128gcm_base_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -96,11 +100,7 @@ Analyzed func: P256kdfsha256_hkdfsha256_aes128gcm_base_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: x25519kdfsha256_hkdfsha256_aes128gcm_base_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_hpke_random_suites
+Analyzed func: test_hpke_noncereuse
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,7 +108,7 @@ Analyzed func: test_hpke_modes_suites
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_hpke_noncereuse
+Analyzed func: test_hpke_random_suites
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -157,11 +157,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.007469
-# Typebuilder time     		0.000819
-# MLTA time            		0.000461
-# Icall alias time     		6e-05
-# Func alias time      		0.001361
-# One layer alias time 		6e-06
+# Load time            		0.007411
+# Typebuilder time     		0.000853
+# MLTA time            		0.000462
+# Icall alias time     		6.2e-05
+# Func alias time      		0.001398
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001949
+# DB time              		0.002133

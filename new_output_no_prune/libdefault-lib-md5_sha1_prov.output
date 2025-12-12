@@ -25,49 +25,49 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: md5_sha1_internal_final
+0 Top func: md5_sha1_newctx
 
-1 Top func: md5_sha1_newctx
+1 Top func: md5_sha1_internal_final
 
-2 Top func: md5_sha1_get_params
+2 Top func: md5_sha1_dupctx
 
-3 Top func: md5_sha1_dupctx
+3 Top func: md5_sha1_get_params
 
 4 Top func: ossl_digest_default_gettable_params
 
-5 Top func: md5_sha1_settable_ctx_params
+5 Top func: md5_sha1_internal_init
 
-6 Top func: md5_sha1_internal_init
-
-7 Top func: md5_sha1_set_ctx_params
+6 Top func: md5_sha1_settable_ctx_params
      Top func: md5_sha1_newctx Failed
-     Top func: md5_sha1_internal_final Failed
-     Top func: md5_sha1_get_params Failed
      Top func: md5_sha1_dupctx Failed
+     Top func: md5_sha1_internal_final Failed
      Top func: ossl_digest_default_gettable_params Failed
-     Top func: md5_sha1_settable_ctx_params Failed
+     Top func: md5_sha1_get_params Failed
      Top func: md5_sha1_internal_init Failed
 
-8 Top func: ossl_md5_sha1_update
+7 Top func: ossl_md5_sha1_update
+
+8 Top func: md5_sha1_copyctx
 
 9 Top func: md5_sha1_freectx
 
-10 Top func: md5_sha1_copyctx
-     Top func: ossl_md5_sha1_update Failed
-     Top func: md5_sha1_freectx Failed
-     Top func: md5_sha1_copyctx Failed
+10 Top func: md5_sha1_set_ctx_params
+     Top func: md5_sha1_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_md5_sha1_update Failed
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_copyctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_freectxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001526
-# Typebuilder time     		0.000258
-# MLTA time            		0.000255
-# Icall alias time     		6.3e-05
-# Func alias time      		0.003201
-# One layer alias time 		6e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002024
+# Load time            		0.001708
+# Typebuilder time     		0.000252
+# MLTA time            		0.000272
+# Icall alias time     		6.8e-05
+# Func alias time      		0.000945
+# One layer alias time 		7e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002211

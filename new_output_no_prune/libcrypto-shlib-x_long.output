@@ -31,62 +31,62 @@ WARNING: matchStructTypes problem!
 
 0 Top func: long_free
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-long_newMerge complete --- Not blocked by TBAA or TFA check
+long_c2iMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 long_i2cMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+long_newMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-long_c2iMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 long_printMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-long_newMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+long_freeMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
+1
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
 
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
-
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-long_freeMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: long_i2c
+long_i2c
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: long_c2i
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: long_new
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -135,11 +135,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001791
-# Typebuilder time     		0.000286
-# MLTA time            		0.000237
-# Icall alias time     		6.2e-05
-# Func alias time      		0.000707
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001971
+# Load time            		0.001536
+# Typebuilder time     		0.000328
+# MLTA time            		0.000278
+# Icall alias time     		6.7e-05
+# Func alias time      		0.000741
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.001981

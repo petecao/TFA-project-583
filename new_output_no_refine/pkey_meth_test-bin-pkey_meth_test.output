@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_pkey_meths
+0 Top func: test_asn1_meths
 
-1 Top func: test_asn1_meths
+1 Top func: test_pkey_meths
 
-Analyzed func: test_pkey_meths
+Analyzed func: test_asn1_meths
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_asn1_meths
+Analyzed func: test_pkey_meths
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001406
-# Typebuilder time     		0.000204
-# MLTA time            		0.00019
-# Icall alias time     		7.9e-05
-# Func alias time      		0.000893
+# Load time            		0.001388
+# Typebuilder time     		0.000202
+# MLTA time            		0.000158
+# Icall alias time     		3.3e-05
+# Func alias time      		0.000326
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002138
+# DB time              		0.001952

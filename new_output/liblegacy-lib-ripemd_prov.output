@@ -27,30 +27,30 @@ Openmp enabled
 
 0 Top func: ripemd160_newctx
 
-1 Top func: ripemd160_dupctx
+1 Top func: ripemd160_freectx
 
 2 Top func: ripemd160_internal_final
 
-3 Top func: ripemd160_freectx
+3 Top func: ripemd160_dupctx
 
 4 Top func: ripemd160_copyctx
 
 5 Top func: ossl_digest_default_gettable_params
 
 6 Top func: ripemd160_get_params
-
-7 Top func: ripemd160_internal_init
      Top func: ripemd160_newctx Failed
-     Top func: ripemd160_dupctx Failed
      Top func: ossl_digest_default_gettable_params Failed
+     Top func: ripemd160_freectx Failed
+     Top func: ripemd160_dupctx Failed
      Top func: ripemd160_internal_final Failed
      Top func: ripemd160_copyctx Failed
-     Top func: ripemd160_freectx Failed
-     Top func: ripemd160_get_params Failed
 
-8 Top func: RIPEMD160_Update
-     Top func: ripemd160_internal_init Failed
+7 Top func: RIPEMD160_Update
+
+8 Top func: ripemd160_internal_init
+     Top func: ripemd160_get_params Failed
      Top func: RIPEMD160_Update Failed
+     Top func: ripemd160_internal_init Failed
 
 Update global ICallees info
 
@@ -93,11 +93,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001391
-# Typebuilder time     		0.000226
-# MLTA time            		0.000242
-# Icall alias time     		5.7e-05
-# Func alias time      		0.0015
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001958
+# Load time            		0.001281
+# Typebuilder time     		0.000257
+# MLTA time            		0.000275
+# Icall alias time     		6.3e-05
+# Func alias time      		0.000874
+# One layer alias time 		9e-06
+# Escape alias time    		6.4e-05
+# DB time              		0.001983

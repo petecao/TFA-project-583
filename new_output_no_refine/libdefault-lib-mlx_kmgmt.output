@@ -25,21 +25,26 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: mlx_p384_kem_gen_init
+0 Top func: mlx_kem_imexport_types
 
-1 Top func: mlx_kem_imexport_types
+1 Top func: mlx_kem_key_free
 
-2 Top func: mlx_kem_key_free
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+mlx_p384_kem_gen_init
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-mlx_x448_kem_new
+ Top func: mlx_x448_kem_newMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
- Top func: mlx_kem_set_paramsMerge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+mlx_kem_set_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -127,55 +132,52 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 6 Top func: mlx_kem_match
 
 7 Top func: mlx_kem_dup
-     Top func: mlx_kem_imexport_types Failed
      Top func: mlx_p384_kem_gen_init Failed
+     Top func: mlx_kem_imexport_types Failed
      Top func: mlx_x448_kem_new Failed
-     Top func: mlx_kem_gen_settable_params Failed
-     Top func: mlx_kem_set_params Failed
      Top func: mlx_kem_key_free Failed
+     Top func: mlx_kem_set_params Failed
+     Top func: mlx_kem_gen_settable_params Failed
      Top func: mlx_kem_match Failed
 
-8 Top func: mlx_kem_export
+8 Top func: mlx_x25519_kem_new
 
-9 Top func: mlx_x25519_kem_new
+9 Top func: mlx_kem_export
 
 10 Top func: mlx_x448_kem_gen_init
 
-11 Top func: mlx_kem_gen
+11 Top func: mlx_kem_settable_params
 
-12 Top func: mlx_kem_settable_params
+12 Top func: mlx_kem_get_params
+
+13 Top func: mlx_kem_gen
      Top func: mlx_kem_dup Failed
-
-13 Top func: mlx_kem_get_params
 
 14 Top func: mlx_p256_kem_gen_init
 
 15 Top func: mlx_kem_import
-     Top func: mlx_kem_export Failed
      Top func: mlx_x25519_kem_new Failed
-     Top func: mlx_kem_gen Failed
+     Top func: mlx_kem_export Failed
      Top func: mlx_x448_kem_gen_init Failed
-     Top func: mlx_kem_settable_params Failed
      Top func: mlx_kem_get_params Failed
+     Top func: mlx_kem_gen Failed
+     Top func: mlx_kem_settable_params Failed
 
-16 Top func: mlx_p384_kem_new
+16 Top func: mlx_x25519_kem_gen_init
 
-17 Top func: mlx_x25519_kem_gen_init
+17 Top func: mlx_p384_kem_new
 
-18 Top func: mlx_kem_gen_cleanup
+18 Top func: mlx_p256_kem_new
 
-19Merge complete --- Not blocked by TBAA or TFA check
- Top func: mlx_p256_kem_newMerge complete --- Not blocked by TBAA or TFA check
+19 Top func: mlx_kem_gettable_params
 
+20 Top func: mlx_kem_gen_cleanup
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -201,41 +203,39 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: mlx_p256_kem_gen_init Failed
-
-20 Top func: mlx_kem_has
      Top func: mlx_kem_import Failed
 
-21 Top func: mlx_kem_gettable_params
+21 Top func: mlx_kem_has
 
 22 Top func: mlx_kem_gen_set_params
 
 23 Top func: export_sub_cb
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-mlx_p384_kem_newMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 mlx_x25519_kem_gen_initMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-mlx_kem_gen_cleanupMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-mlx_p256_kem_new FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-mlx_kem_hasMerge complete --- Not blocked by TBAA or TFA check
+mlx_p384_kem_newMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 mlx_kem_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mlx_kem_gen_cleanup FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mlx_p256_kem_newMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+mlx_kem_hasMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -664,11 +664,11 @@ reduce_num_escape: 0
 reduce_num_total: 4
 
 
-# Load time            		0.005647
-# Typebuilder time     		0.000556
-# MLTA time            		0.00065
-# Icall alias time     		0.001855
-# Func alias time      		0.009346
-# One layer alias time 		9e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002122
+# Load time            		0.004707
+# Typebuilder time     		0.000847
+# MLTA time            		0.000621
+# Icall alias time     		0.001831
+# Func alias time      		0.009206
+# One layer alias time 		1.1e-05
+# Escape alias time    		6.3e-05
+# DB time              		0.002125

@@ -175,17 +175,17 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   call void %53(ptr noundef %54), !dbg !465
+0 Update icall:   %31 = call ptr %29(ptr noundef %30), !dbg !437
 
-1 Update icall:   %31 = call ptr %29(ptr noundef %30), !dbg !437
+1 Update icall:   call void %342(ptr noundef %347), !dbg !788
 
-2 Update icall:   call void %342(ptr noundef %347), !dbg !788
+2 Update icall:   call void %15(ptr noundef %18), !dbg !392
 
-3 Update icall:   %300 = call i32 %286(ptr noundef %287, ptr noundef %288, ptr noundef %289, ptr noundef %290, i32 noundef %295, ptr noundef @ossl_pw_passphrase_callback_enc, ptr noundef %299), !dbg !723
+3 Update icall:   call void %53(ptr noundef %54), !dbg !465
 
-4 Update icall:   %205 = call ptr %198(ptr noundef %199, ptr noundef %204), !dbg !634
+4 Update icall:   %300 = call i32 %286(ptr noundef %287, ptr noundef %288, ptr noundef %289, ptr noundef %290, i32 noundef %295, ptr noundef @ossl_pw_passphrase_callback_enc, ptr noundef %299), !dbg !723
 
-5 Update icall:   call void %15(ptr noundef %18), !dbg !392
+5 Update icall:   %205 = call ptr %198(ptr noundef %199, ptr noundef %204), !dbg !634
 
  Start ICall Alias Analysis
 
@@ -226,11 +226,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004554
-# Typebuilder time     		0.000454
-# MLTA time            		0.000389
-# Icall alias time     		9.2e-05
-# Func alias time      		0.0077
+# Load time            		0.020863
+# Typebuilder time     		0.000513
+# MLTA time            		0.000447
+# Icall alias time     		0.00012
+# Func alias time      		0.015021
 # One layer alias time 		8e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002084
+# Escape alias time    		5.6e-05
+# DB time              		0.002137

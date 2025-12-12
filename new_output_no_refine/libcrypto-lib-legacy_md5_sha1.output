@@ -25,39 +25,39 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: md5_sha1_int_update
+0 Top func: md5_sha1_int_init
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: md5_sha1_int_init
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_int_ctrl
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+md5_sha1_int_update
+
+3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 md5_sha1_int_finalMerge complete --- Not blocked by TBAA or TFA check
 
 
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-md5_sha1_int_ctrl
-
-Analyzed func: md5_sha1_int_updateMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: md5_sha1_int_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
 aliased_callset size: 0
 
-Analyzed func: md5_sha1_int_init
+Analyzed func: md5_sha1_int_ctrl
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: md5_sha1_int_update
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: md5_sha1_int_final
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: md5_sha1_int_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001108
-# Typebuilder time     		0.000194
-# MLTA time            		0.000204
-# Icall alias time     		3.6e-05
-# Func alias time      		0.000648
-# One layer alias time 		6e-06
-# Escape alias time    		6.1e-05
-# DB time              		0.002584
+# Load time            		0.001298
+# Typebuilder time     		0.000221
+# MLTA time            		0.000209
+# Icall alias time     		7e-06
+# Func alias time      		0.001915
+# One layer alias time 		5e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001953

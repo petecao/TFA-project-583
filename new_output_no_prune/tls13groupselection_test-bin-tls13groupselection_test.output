@@ -113,25 +113,21 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: server_response_check_cb
+0 Top func: tls13groupselection_test
 
-1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-tls13groupselection_testMerge complete --- Not blocked by TBAA or TFA check
-
+1 Top func: server_response_check_cb
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-tls13groupselection_testMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -180,6 +176,10 @@ Analyzed func: server_response_check_cb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: tls13groupselection_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Update global ICallees info
 
  Start ICall Alias Analysis
@@ -221,11 +221,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002186
-# Typebuilder time     		0.00104
-# MLTA time            		0.000265
-# Icall alias time     		8.8e-05
-# Func alias time      		0.000818
+# Load time            		0.017258
+# Typebuilder time     		0.001063
+# MLTA time            		0.000275
+# Icall alias time     		9.8e-05
+# Func alias time      		0.008234
 # One layer alias time 		8e-06
-# Escape alias time    		6.4e-05
-# DB time              		0.00211
+# Escape alias time    		6.6e-05
+# DB time              		0.002296

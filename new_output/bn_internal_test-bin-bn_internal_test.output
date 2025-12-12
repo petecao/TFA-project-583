@@ -27,19 +27,19 @@ Openmp enabled
 
 0 Top func: test_is_composite_enhanced
 
-1 Top func: test_bn_small_factors
+1 Top func: test_is_prime_enhanced
 
-2 Top func: test_is_prime_enhanced
+2 Top func: test_bn_small_factors
 
 Analyzed func: test_is_composite_enhanced
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_bn_small_factors
+Analyzed func: test_is_prime_enhanced
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_is_prime_enhanced
+Analyzed func: test_bn_small_factors
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001316
-# Typebuilder time     		0.000192
-# MLTA time            		0.000185
-# Icall alias time     		6.8e-05
-# Func alias time      		0.00049
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002302
+# Load time            		0.001556
+# Typebuilder time     		0.000259
+# MLTA time            		0.000222
+# Icall alias time     		7.1e-05
+# Func alias time      		0.000457
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002059

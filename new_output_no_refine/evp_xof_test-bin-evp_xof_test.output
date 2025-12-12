@@ -27,27 +27,21 @@ Openmp enabled
 
 0 Top func: shake_squeeze_large_test
 
-1 Top func: xof_fail_test
+1 Top func: shake_squeeze_no_absorb_test
 
 2 Top func: shake_kat_test
 
-3 Top func: shake_squeeze_no_absorb_test
+3 Top func: xof_fail_test
 
-4 Top func: shake_absorb_test
+4 Top func: shake_kat_digestfinal_test
 
-5 Top func: shake_kat_digestfinal_test
+5 Top func: shake_kat_digestfinal_xoflen_test
 
-6 Top func: shake_kat_digestfinal_xoflen_test
+6 Top func: shake_squeeze_kat_test
 
-Analyzed func: shake_squeeze_large_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+7 Top func: shake_absorb_test
 
 Analyzed func: xof_fail_test
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: shake_kat_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -55,17 +49,13 @@ Analyzed func: shake_squeeze_no_absorb_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: shake_absorb_test
+Analyzed func: shake_kat_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: shake_kat_digestfinal_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-7 Top func: shake_squeeze_dup_test
-
-8 Top func: shake_squeeze_kat_test
 
 Analyzed func: shake_kat_digestfinal_xoflen_test
 DefinitionFuncSet size: 1
@@ -75,7 +65,17 @@ Analyzed func: shake_squeeze_kat_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+8 Top func: shake_squeeze_dup_test
+
+Analyzed func: shake_absorb_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: shake_squeeze_dup_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: shake_squeeze_large_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002555
-# Typebuilder time     		0.000434
-# MLTA time            		0.000313
-# Icall alias time     		7.3e-05
-# Func alias time      		0.001049
-# One layer alias time 		9e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.00215
+# Load time            		0.00254
+# Typebuilder time     		0.000419
+# MLTA time            		0.000312
+# Icall alias time     		6e-05
+# Func alias time      		0.001533
+# One layer alias time 		6e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.002502

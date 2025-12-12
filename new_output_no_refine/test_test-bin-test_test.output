@@ -27,11 +27,11 @@ Openmp enabled
 
 0 Top func: test_int
 
-1 Top func: test_uchar
+1 Top func: test_bool
 
-2 Top func: test_bool
+2 Top func: test_size_t
 
-3 Top func: test_size_t
+3 Top func: test_uchar
 
 4 Top func: test_memory_overflow
 
@@ -39,7 +39,9 @@ Openmp enabled
 
 6 Top func: test_long_output
 
-Analyzed func: test_int
+7 Top func: test_skip_null
+
+Analyzed func: test_memory_overflow
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -51,7 +53,7 @@ Analyzed func: test_output
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_memory_overflow
+Analyzed func: test_int
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -63,33 +65,19 @@ Analyzed func: test_size_t
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: test_uint
+8 Top func: test_bignum
 
-8 Top func: test_long
+9 Top func: test_long
 
-9 Top func: test_bn_output
+10 Top func: test_bn_output
 
-10 Top func: test_bignum
+11 Top func: test_uint
 
-11 Top func: test_string
+12 Top func: test_string
 
-12 Top func: test_time_t
+13 Top func: test_time_t
 
-Analyzed func: test_long_output
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_long
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-13 Top func: test_messages
-
-Analyzed func: test_uint
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_bn_output
+Analyzed func: test_skip_null
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -97,7 +85,17 @@ Analyzed func: test_bignum
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_string
+14 Top func: test_skip_many
+
+Analyzed func: test_bn_output
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_long
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_uint
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -105,29 +103,23 @@ Analyzed func: test_time_t
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-14 Top func: test_ulong
+Analyzed func: test_string
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-15 Top func: test_char
+15 Top func: test_long_bignum
 
 16 Top func: test_skip_one
 
-17 Top func: test_long_bignum
+17 Top func: test_ulong
 
-18 Top func: test_memory
+18 Top func: test_char
 
 19 Top func: test_pointer
 
-Analyzed func: test_messages
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+20 Top func: test_memory
 
-20 Top func: test_single_eval
-
-Analyzed func: test_ulong
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_char
+Analyzed func: test_skip_many
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -139,7 +131,7 @@ Analyzed func: test_long_bignum
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_memory
+Analyzed func: test_ulong
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -147,19 +139,27 @@ Analyzed func: test_pointer
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-21 Top func: test_skip_null
+Analyzed func: test_char
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-22 Top func: test_skip_many
+21 Top func: test_single_eval
+
+Analyzed func: test_memory
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+22 Top func: test_messages
 
 Analyzed func: test_single_eval
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_skip_many
+Analyzed func: test_messages
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_skip_null
+Analyzed func: test_long_output
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -204,11 +204,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.005673
-# Typebuilder time     		0.000762
-# MLTA time            		0.0005
-# Icall alias time     		6.1e-05
-# Func alias time      		0.00211
+# Load time            		0.00501
+# Typebuilder time     		0.000608
+# MLTA time            		0.000386
+# Icall alias time     		6.2e-05
+# Func alias time      		0.003034
 # One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002076
+# DB time              		0.002084

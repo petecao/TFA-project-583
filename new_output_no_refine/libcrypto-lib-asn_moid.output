@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: oid_module_init
+0 Top func: oid_module_finish
 
-1 Top func: oid_module_finish
+1 Top func: oid_module_init
 
-Analyzed func: oid_module_init
+Analyzed func: oid_module_finish
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: oid_module_finish
+Analyzed func: oid_module_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001707
-# Typebuilder time     		0.000222
-# MLTA time            		0.0002
-# Icall alias time     		6.5e-05
-# Func alias time      		0.000388
-# One layer alias time 		7e-06
+# Load time            		0.001425
+# Typebuilder time     		0.000244
+# MLTA time            		0.000232
+# Icall alias time     		3.4e-05
+# Func alias time      		0.000431
+# One layer alias time 		5e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001959
+# DB time              		0.001984

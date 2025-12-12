@@ -33,13 +33,11 @@ Openmp enabled
 
 3 Top func: sm4_xts_stream_final
 
-4 Top func: sm4_128_xts_get_params
+4 Top func: sm4_xts_set_ctx_params
 
-5 Top func: sm4_xts_set_ctx_params
-
-6Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sm4_xts_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+sm4_128_xts_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -90,47 +88,45 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-7 Top func: ossl_cipher_generic_get_ctx_params
+6 Top func: ossl_cipher_generic_get_ctx_params
+
+7 Top func: sm4_xts_settable_ctx_params
      Top func: sm4_128_xts_newctx Failed
      Top func: sm4_xts_freectx Failed
-     Top func: sm4_xts_stream_final Failed
      Top func: sm4_xts_dinit Failed
-     Top func: sm4_128_xts_get_params Failed
-     Top func: sm4_xts_settable_ctx_params Failed
+     Top func: sm4_xts_stream_final Failed
      Top func: sm4_xts_set_ctx_params Failed
+     Top func: sm4_128_xts_get_params Failed
+     Top func: ossl_cipher_generic_get_ctx_params Failed
 
 8 Top func: sm4_xts_einit
 
 9 Top func: sm4_xts_dupctx
 
-10 Top func: sm4_xts_cipher
-     Top func: ossl_cipher_generic_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+10 Top func: sm4_xts_stream_update
 
-Merge complete --- Not blocked by TBAA or TFA check
+11 Top func: sm4_xts_cipher
 
-Merge complete --- Not blocked by TBAA or TFA check
-11 Top func: sm4_xts_stream_updateMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 12Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
 
-
-13 Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: sm4_xts_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-sm4_xts_einitMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+13Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_gettable_ctx_params
+     Top func: sm4_xts_dupctxMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-sm4_xts_dupctxMerge complete --- Not blocked by TBAA or TFA check
+sm4_xts_einitMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -196,17 +192,21 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: sm4_xts_cipher Failed
 
 Update global ICallees info
 
 0 Update icall:   call void %119(ptr noundef %120, ptr noundef %121, i64 noundef %122, ptr noundef %126, ptr noundef %130, ptr noundef %134, i32 noundef %141), !dbg !361
 
-1 Update icall:   %64 = call i32 %60(ptr noundef %61, ptr noundef %62, i64 noundef %63), !dbg !304
+1 Update icall:   call void %53(ptr noundef %55, ptr noundef %57), !dbg !297
 
 2 Update icall:   call void %66(ptr noundef %67, ptr noundef %68, i64 noundef %69, ptr noundef %73, ptr noundef %77, ptr noundef %81, i32 noundef %88), !dbg !323
 
-3 Update icall:   call void %53(ptr noundef %55, ptr noundef %57), !dbg !297
+3 Update icall:   %64 = call i32 %60(ptr noundef %61, ptr noundef %62, i64 noundef %63), !dbg !304
 
  Start ICall Alias Analysis
 
@@ -247,11 +247,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002587
-# Typebuilder time     		0.000396
-# MLTA time            		0.000424
-# Icall alias time     		3.7e-05
-# Func alias time      		0.002824
-# One layer alias time 		7e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002676
+# Load time            		0.002602
+# Typebuilder time     		0.000333
+# MLTA time            		0.000328
+# Icall alias time     		6.2e-05
+# Func alias time      		0.003508
+# One layer alias time 		9e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001952

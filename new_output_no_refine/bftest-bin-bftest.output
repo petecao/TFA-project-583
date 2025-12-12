@@ -25,28 +25,25 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_bf_cbc
-
-1 Top func: test_bf_ecb_raw
+0 Top func: test_bf_ecb
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: test_bf_ecb
+1 Top func: test_bf_set_key
 
 Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: test_bf_set_key
+2 Top func: test_bf_cbc
 
 Merge complete --- Not blocked by TBAA or TFA check
-4 Top func: test_bf_cfb64
+3 Top func: test_bf_ecb_raw
 
 Merge complete --- Not blocked by TBAA or TFA check
-5 Top func: test_bf_ofb64
+4 Top func: test_bf_ofb64
+
+Merge complete --- Not blocked by TBAA or TFA check
+5 Top func: test_bf_cfb64
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 test_bf_ecb
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_bf_ecb_raw
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -54,16 +51,19 @@ Analyzed func: test_bf_set_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_bf_cfb64
+Analyzed func: test_bf_ecb_raw
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_bf_cbc
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_bf_ofb64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_bf_cbc
+Analyzed func: test_bf_cfb64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002658
-# Typebuilder time     		0.000346
-# MLTA time            		0.000252
-# Icall alias time     		6e-05
-# Func alias time      		0.001595
-# One layer alias time 		8e-06
+# Load time            		0.002399
+# Typebuilder time     		0.0004
+# MLTA time            		0.000285
+# Icall alias time     		6.8e-05
+# Func alias time      		0.002421
+# One layer alias time 		9e-06
 # Escape alias time    		6.3e-05
-# DB time              		0.00198
+# DB time              		0.002023

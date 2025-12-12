@@ -27,11 +27,11 @@ Openmp enabled
 
 0 Top func: rsakem_newctx
 
-1 Top func: rsakem_generate
+1 Top func: rsakem_recover
 
 2 Top func: rsakem_dupctx
 
-3 Top func: rsakem_recover
+3 Top func: rsakem_generate
 
 4 Top func: rsakem_get_ctx_params
 
@@ -70,23 +70,23 @@ Merge complete --- Not blocked by TBAA or TFA check
 6 Top func: rsakem_gettable_ctx_params
 
 7 Top func: rsakem_settable_ctx_params
-     Top func: rsakem_generate Failed
      Top func: rsakem_newctx Failed
-     Top func: rsakem_dupctx Failed
      Top func: rsakem_recover Failed
-     Top func: rsakem_set_ctx_params Failed
+     Top func: rsakem_dupctx Failed
+     Top func: rsakem_generate Failed
      Top func: rsakem_get_ctx_params Failed
+     Top func: rsakem_set_ctx_params Failed
      Top func: rsakem_gettable_ctx_params Failed
 
-8 Top func: rsakem_decapsulate_init
+8 Top func: rsakem_encapsulate_init
 
-9 Top func: rsakem_encapsulate_init
+9 Top func: rsakem_freectx
 
-10 Top func: rsakem_freectx
+10 Top func: rsakem_decapsulate_init
      Top func: rsakem_settable_ctx_params Failed
-     Top func: rsakem_decapsulate_init Failed
      Top func: rsakem_encapsulate_init Failed
      Top func: rsakem_freectx Failed
+     Top func: rsakem_decapsulate_init Failed
 
 Update global ICallees info
 
@@ -129,11 +129,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002551
-# Typebuilder time     		0.000637
-# MLTA time            		0.000303
-# Icall alias time     		6.5e-05
-# Func alias time      		0.001811
-# One layer alias time 		6e-06
+# Load time            		0.002735
+# Typebuilder time     		0.000332
+# MLTA time            		0.00034
+# Icall alias time     		6.4e-05
+# Func alias time      		0.001747
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002235
+# DB time              		0.002056

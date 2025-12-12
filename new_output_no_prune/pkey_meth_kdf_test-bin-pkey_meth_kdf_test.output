@@ -28,21 +28,21 @@ Openmp enabled
 0 Top func: test_kdf_tls1_prf
 
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_kdf_hkdf
+ Top func: test_kdf_scrypt
 
 Merge complete --- Not blocked by TBAA or TFA check
-2 Top func: test_kdf_scrypt
+2 Top func: test_kdf_hkdf
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_kdf_tls1_prf
+Analyzed func: test_kdf_scrypt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_tls1_prf
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_kdf_hkdf
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_kdf_scrypt
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -87,11 +87,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002106
-# Typebuilder time     		0.000296
-# MLTA time            		0.000216
-# Icall alias time     		3.3e-05
-# Func alias time      		0.000428
-# One layer alias time 		5e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002136
+# Load time            		0.016972
+# Typebuilder time     		0.003727
+# MLTA time            		0.004361
+# Icall alias time     		0.000101
+# Func alias time      		0.014435
+# One layer alias time 		9e-06
+# Escape alias time    		6.9e-05
+# DB time              		0.0023

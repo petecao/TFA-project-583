@@ -47,23 +47,23 @@ Merge complete --- Not blocked by TBAA or TFA check
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 pkt_split_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: pkt_split_dgram_recvmmsg
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
+
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: pkt_split_dgram_sendmmsg
+Analyzed func: pkt_split_dgram_recvmmsg
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00176
-# Typebuilder time     		0.000286
-# MLTA time            		0.000247
-# Icall alias time     		7.3e-05
-# Func alias time      		0.002585
-# One layer alias time 		9e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002007
+# Load time            		0.002211
+# Typebuilder time     		0.000407
+# MLTA time            		0.000249
+# Icall alias time     		0.000184
+# Func alias time      		0.01486
+# One layer alias time 		7.3e-05
+# Escape alias time    		0.000932
+# DB time              		0.002403

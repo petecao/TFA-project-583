@@ -25,16 +25,20 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ameth_cmp_BSEARCH_CMP_FN
+0 Top func: ameth_cmp
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ameth_cmp
+ameth_cmp_BSEARCH_CMP_FNMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 sk_EVP_PKEY_ASN1_METHOD_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -53,20 +57,16 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-sk_EVP_PKEY_ASN1_METHOD_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+sk_EVP_PKEY_ASN1_METHOD_freefunc_thunk
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -121,11 +121,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002622
-# Typebuilder time     		0.000306
-# MLTA time            		0.000258
-# Icall alias time     		6.6e-05
-# Func alias time      		0.008149
-# One layer alias time 		6.2e-05
-# Escape alias time    		0.000774
-# DB time              		0.002307
+# Load time            		0.003196
+# Typebuilder time     		0.000376
+# MLTA time            		0.000265
+# Icall alias time     		6.8e-05
+# Func alias time      		0.000863
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002127

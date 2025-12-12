@@ -25,10 +25,10 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_store_get_params
+0 Top func: test_store_open
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_store_attach_unregistered_schemeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: test_store_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -36,36 +36,36 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-test_store_openMerge complete --- Not blocked by TBAA or TFA check
+test_store_search_by_key_fingerprint_failMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-test_store_search_by_key_fingerprint_failMerge complete --- Not blocked by TBAA or TFA check
+test_store_attach_unregistered_schemeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_store_attach_unregistered_scheme
-Merge complete --- Not blocked by TBAA or TFA check
+test_store_get_params
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0
-
-Analyzed func: test_store_get_params
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: test_store_open
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_store_search_by_key_fingerprint_fail
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_store_attach_unregistered_scheme
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -110,11 +110,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001872
-# Typebuilder time     		0.000271
-# MLTA time            		0.000182
-# Icall alias time     		9.9e-05
-# Func alias time      		0.000682
-# One layer alias time 		9e-06
+# Load time            		0.002154
+# Typebuilder time     		0.000309
+# MLTA time            		0.00022
+# Icall alias time     		7.4e-05
+# Func alias time      		0.000974
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001963
+# DB time              		0.001985

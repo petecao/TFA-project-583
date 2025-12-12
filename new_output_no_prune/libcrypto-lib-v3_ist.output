@@ -25,35 +25,27 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ISSUER_SIGN_TOOL_it
+0 Top func: v2i_issuer_sign_tool
 
-Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: v2i_issuer_sign_toolMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: i2r_issuer_sign_tool
 
-Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: ASN1_UTF8STRING_it
 
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: ASN1_UTF8STRING_itMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-i2r_issuer_sign_toolMerge complete --- Not blocked by TBAA or TFA check
+ISSUER_SIGN_TOOL_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-v2i_issuer_sign_toolMerge complete --- Not blocked by TBAA or TFA check
- Failed
-     Top func: i2r_issuer_sign_toolMerge complete --- Not blocked by TBAA or TFA check
- Failed
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: ISSUER_SIGN_TOOL_itMerge complete --- Not blocked by TBAA or TFA check
+i2r_issuer_sign_toolMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+v2i_issuer_sign_toolMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -70,6 +62,14 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ISSUER_SIGN_TOOL_it FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -174,11 +174,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002045
-# Typebuilder time     		0.000268
-# MLTA time            		0.00022
-# Icall alias time     		6e-05
-# Func alias time      		0.003708
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.001978
+# Load time            		0.002082
+# Typebuilder time     		0.000294
+# MLTA time            		0.000265
+# Icall alias time     		3.5e-05
+# Func alias time      		0.00102
+# One layer alias time 		5e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001977

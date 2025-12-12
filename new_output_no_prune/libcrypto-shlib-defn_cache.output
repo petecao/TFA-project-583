@@ -25,35 +25,35 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: property_defn_hash
+0 Top func: property_defn_free
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: property_defn_cmpMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-lh_PROPERTY_DEFN_ELEM_hfn_thunkMerge complete --- Not blocked by TBAA or TFA check
+property_defn_hashMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+2 Top func: property_defn_cmp
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
- Top func: property_defn_free
+ Top func: lh_PROPERTY_DEFN_ELEM_hfn_thunkMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-lh_PROPERTY_DEFN_ELEM_cfn_thunkMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+ Top func: lh_PROPERTY_DEFN_ELEM_cfn_thunk
 
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
@@ -69,10 +69,6 @@ property_defn_hashMerge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: property_defn_cmp
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: property_defn_free
 DefinitionFuncSet size: 1
 aliased_callset size: 0
@@ -81,11 +77,15 @@ Analyzed func: lh_PROPERTY_DEFN_ELEM_hfn_thunk
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: lh_PROPERTY_DEFN_ELEM_doall_thunk
+Analyzed func: lh_PROPERTY_DEFN_ELEM_cfn_thunk
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: lh_PROPERTY_DEFN_ELEM_cfn_thunk
+Analyzed func: property_defn_cmp
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: lh_PROPERTY_DEFN_ELEM_doall_thunk
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -105,8 +105,8 @@ Update global ICallees info
 
  Start ICall Alias Analysis
 
-0 Top func: lh_PROPERTY_DEFN_ELEM_hfn_thunk
----icall:   %9 = call i64 %7(ptr noundef %8), !dbg !120
+0 Top func: lh_PROPERTY_DEFN_ELEM_doall_thunk
+---icall:   call void %7(ptr noundef %8), !dbg !120
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
@@ -114,57 +114,57 @@ Merge complete --- Not blocked by TBAA or TFA check
 lh_PROPERTY_DEFN_ELEM_doall_arg_thunkMerge complete --- Not blocked by TBAA or TFA check
 
 ---icall:   Merge complete --- Not blocked by TBAA or TFA check
-call Merge complete --- Not blocked by TBAA or TFA check
-voidMerge complete --- Not blocked by TBAA or TFA check
- %9(ptr noundef %10, ptr noundef %11), !dbg !124
-
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-lh_PROPERTY_DEFN_ELEM_doall_thunkMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
----icall:   Merge complete --- Not blocked by TBAA or TFA check
 callMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 voidMerge complete --- Not blocked by TBAA or TFA check
  Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
-7(ptr noundef %8), !dbg !120
+9(ptrMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+noundef Merge complete --- Not blocked by TBAA or TFA check
+%Merge complete --- Not blocked by TBAA or TFA check
+10, ptr noundef %11), !dbg !124
 
 Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 lh_PROPERTY_DEFN_ELEM_cfn_thunkMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 ---icall:   Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 %Merge complete --- Not blocked by TBAA or TFA check
 12Merge complete --- Not blocked by TBAA or TFA check
  = Merge complete --- Not blocked by TBAA or TFA check
 callMerge complete --- Not blocked by TBAA or TFA check
- i32Merge complete --- Not blocked by TBAA or TFA check
- %Merge complete --- Not blocked by TBAA or TFA check
-9(Merge complete --- Not blocked by TBAA or TFA check
-ptrMerge complete --- Not blocked by TBAA or TFA check
- noundef %10, ptr noundef %11), !dbg !120
+ i32 %9(ptr noundef %10, ptr noundef %11), !dbg !120
+
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+lh_PROPERTY_DEFN_ELEM_hfn_thunkMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+---icall:   Merge complete --- Not blocked by TBAA or TFA check
+%Merge complete --- Not blocked by TBAA or TFA check
+9 = Merge complete --- Not blocked by TBAA or TFA check
+callMerge complete --- Not blocked by TBAA or TFA check
+ Merge complete --- Not blocked by TBAA or TFA check
+iMerge complete --- Not blocked by TBAA or TFA check
+64 %7(ptr noundef %8), !dbg !120
 aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
-0
+aliased_fset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
-0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
 aliased_fset size: 0
 
 start oneLayerHandler
@@ -204,11 +204,11 @@ reduce_num_escape: 0
 reduce_num_total: 4
 
 
-# Load time            		0.001682
-# Typebuilder time     		0.000277
-# MLTA time            		0.000297
-# Icall alias time     		0.000984
-# Func alias time      		0.002128
+# Load time            		0.001848
+# Typebuilder time     		0.00028
+# MLTA time            		0.000296
+# Icall alias time     		0.000999
+# Func alias time      		0.005208
 # One layer alias time 		1.1e-05
-# Escape alias time    		6.4e-05
-# DB time              		0.001985
+# Escape alias time    		6.3e-05
+# DB time              		0.00219

@@ -25,12 +25,11 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: dlfcn_bind_func
+0 Top func: dlfcn_name_converter
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-dlfcn_unloadMerge complete --- Not blocked by TBAA or TFA check
+dlfcn_loadMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -39,16 +38,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-dlfcn_loadMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+dlfcn_unloadMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-dlfcn_name_converterMerge complete --- Not blocked by TBAA or TFA check
+dlfcn_bind_funcMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -71,15 +71,15 @@ dlfcn_pathbyaddrMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 dlfcn_globallookupMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-dlfcn_bind_funcMerge complete --- Not blocked by TBAA or TFA check
+dlfcn_name_converterMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -99,7 +99,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-dlfcn_unloadMerge complete --- Not blocked by TBAA or TFA check
+dlfcn_loadMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
@@ -110,7 +110,7 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-dlfcn_loadMerge complete --- Not blocked by TBAA or TFA check
+dlfcn_unloadMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -121,7 +121,7 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 
-Analyzed func: dlfcn_name_converter
+Analyzed func: dlfcn_bind_func
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -179,10 +179,10 @@ reduce_num_total: 0
 
 
 # Load time            		0.002181
-# Typebuilder time     		0.00029
-# MLTA time            		0.000283
-# Icall alias time     		5.6e-05
-# Func alias time      		0.00164
-# One layer alias time 		7e-06
+# Typebuilder time     		0.000287
+# MLTA time            		0.000291
+# Icall alias time     		3.3e-05
+# Func alias time      		0.000924
+# One layer alias time 		5e-06
 # Escape alias time    		5.4e-05
-# DB time              		0.002095
+# DB time              		0.001979

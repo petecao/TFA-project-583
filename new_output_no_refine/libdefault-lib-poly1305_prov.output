@@ -27,39 +27,31 @@ Openmp enabled
 
 0 Top func: poly1305_new
 
-1 Top func: poly1305_update
+1 Top func: poly1305_final
 
 2 Top func: poly1305_free
 
-3 Top func: poly1305_final
+3 Top func: poly1305_update
 
 4 Top func: poly1305_gettable_params
 
 5 Top func: poly1305_settable_ctx_params
 
 6 Top func: poly1305_get_params
-     Top func: poly1305_update Failed
      Top func: poly1305_free Failed
      Top func: poly1305_new Failed
      Top func: poly1305_final Failed
+     Top func: poly1305_update Failed
      Top func: poly1305_gettable_params Failed
      Top func: poly1305_settable_ctx_params Failed
+     Top func: poly1305_get_params Failed
 
-7 Top func: poly1305_set_ctx_params
+7 Top func: poly1305_init
 
-8 Top func: Merge complete --- Not blocked by TBAA or TFA check
-poly1305_initMerge complete --- Not blocked by TBAA or TFA check
+8 Top func: poly1305_dup
 
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-9Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-poly1305_dupMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-poly1305_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+9 Top func: poly1305_set_ctx_params
+     Top func: poly1305_initMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -67,10 +59,18 @@ Merge complete --- Not blocked by TBAA or TFA check
 poly1305_dupMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-poly1305_initMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -121,11 +121,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001712
-# Typebuilder time     		0.000242
-# MLTA time            		0.000215
-# Icall alias time     		7.2e-05
-# Func alias time      		0.000921
-# One layer alias time 		7e-06
+# Load time            		0.001763
+# Typebuilder time     		0.000327
+# MLTA time            		0.000341
+# Icall alias time     		3.4e-05
+# Func alias time      		0.001043
+# One layer alias time 		5e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001967
+# DB time              		0.001999

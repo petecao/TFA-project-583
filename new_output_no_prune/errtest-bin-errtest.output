@@ -27,27 +27,21 @@ Openmp enabled
 
 0 Top func: test_clear_error
 
-1 Top func: vdata_appends
+1 Top func: test_marks
 
-2 Top func: preserves_system_error
+2 Top func: test_save_restore
 
-3 Top func: test_save_restore
+3 Top func: preserves_system_error
 
 4 Top func: raised_error
 
-5 Top func: test_marks
-
-6 Top func: test_print_error_format
-
-Analyzed func: vdata_appends
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+5 Top func: test_print_error_format
 
 Analyzed func: test_clear_error
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: preserves_system_error
+Analyzed func: test_marks
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -59,11 +53,17 @@ Analyzed func: raised_error
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_marks
+Analyzed func: preserves_system_error
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_print_error_format
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+6 Top func: vdata_appends
+
+Analyzed func: vdata_appends
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004613
-# Typebuilder time     		0.000569
-# MLTA time            		0.000492
-# Icall alias time     		9.3e-05
-# Func alias time      		0.001384
-# One layer alias time 		1.1e-05
-# Escape alias time    		9.1e-05
-# DB time              		0.003186
+# Load time            		0.006144
+# Typebuilder time     		0.000345
+# MLTA time            		0.000294
+# Icall alias time     		6.2e-05
+# Func alias time      		0.008299
+# One layer alias time 		7e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001956

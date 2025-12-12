@@ -25,17 +25,17 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_rsa_saos
+0 Top func: test_rsa_pkcs1
 
 1 Top func: test_rsa_security_bit
 
-2 Top func: test_rsa_pkcs1
+2 Top func: test_rsa_saos
 
 3 Top func: test_rsa_oaep
 
 4 Top func: test_EVP_rsa_legacy_key
 
-Analyzed func: test_rsa_saos
+Analyzed func: test_rsa_pkcs1
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -43,11 +43,11 @@ Analyzed func: test_rsa_security_bit
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_rsa_oaep
+Analyzed func: test_rsa_saos
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_rsa_pkcs1
+Analyzed func: test_rsa_oaep
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -96,11 +96,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002525
-# Typebuilder time     		0.000321
-# MLTA time            		0.000221
-# Icall alias time     		6e-05
-# Func alias time      		0.000764
-# One layer alias time 		7e-06
+# Load time            		0.002831
+# Typebuilder time     		0.000327
+# MLTA time            		0.000219
+# Icall alias time     		3.3e-05
+# Func alias time      		0.000756
+# One layer alias time 		5e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.002025
+# DB time              		0.002029

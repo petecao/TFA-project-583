@@ -25,47 +25,47 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: sm4128ccm_dupctx
+0 Top func: ossl_ccm_stream_final
 
-1 Top func: ossl_ccm_stream_final
+1 Top func: sm4128ccm_newctx
 
 2 Top func: ossl_ccm_dinit
 
-3 Top func: sm4128ccm_newctx
+3 Top func: sm4128ccm_dupctx
 
 4 Top func: sm4_128_ccm_get_params
 
-5 Top func: ossl_ccm_gettable_ctx_params
+5 Top func: ossl_ccm_set_ctx_params
 
-6 Top func: ossl_ccm_set_ctx_params
-     Top func: ossl_ccm_dinit Failed
+6 Top func: ossl_ccm_gettable_ctx_params
      Top func: ossl_ccm_stream_final Failed
-     Top func: sm4128ccm_dupctx Failed
-     Top func: ossl_ccm_gettable_ctx_params Failed
+     Top func: ossl_ccm_dinit Failed
      Top func: sm4128ccm_newctx Failed
+     Top func: sm4128ccm_dupctx Failed
      Top func: sm4_128_ccm_get_params Failed
 
-7 Top func: ossl_ccm_stream_update
+7 Top func: ossl_ccm_cipher
 
-8 Top func: ossl_ccm_cipher
-
-9 Top func: ossl_ccm_einit
-
-10 Top func: ossl_ccm_settable_ctx_params
-
-11 Top func: sm4_ccm_freectx
+8 Top func: ossl_ccm_stream_update
      Top func: ossl_ccm_set_ctx_params Failed
 
-12 Top func: ossl_ccm_get_ctx_params
+9 Top func: sm4_ccm_freectx
 
-13 Top func: ossl_cipher_generic_gettable_params
-     Top func: ossl_ccm_einit Failed
-     Top func: ossl_ccm_stream_update Failed
+10 Top func: ossl_ccm_einit
+     Top func: ossl_ccm_gettable_ctx_params Failed
+
+11 Top func: ossl_ccm_get_ctx_params
+
+12 Top func: ossl_cipher_generic_gettable_params
+
+13 Top func: ossl_ccm_settable_ctx_params
      Top func: ossl_ccm_cipher Failed
-     Top func: ossl_ccm_settable_ctx_params Failed
+     Top func: ossl_ccm_stream_update Failed
+     Top func: ossl_ccm_einit Failed
      Top func: sm4_ccm_freectx Failed
      Top func: ossl_ccm_get_ctx_params Failed
      Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: ossl_ccm_settable_ctx_params Failed
 
 Update global ICallees info
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001489
-# Typebuilder time     		0.00028
-# MLTA time            		0.000312
-# Icall alias time     		7e-05
-# Func alias time      		0.004028
+# Load time            		0.019329
+# Typebuilder time     		0.000256
+# MLTA time            		0.000261
+# Icall alias time     		7.1e-05
+# Func alias time      		0.008319
 # One layer alias time 		8e-06
 # Escape alias time    		6.3e-05
-# DB time              		0.00203
+# DB time              		0.00202

@@ -25,30 +25,30 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: drbg_bytes
+0 Top func: drbg_status
 
-1 Top func: drbg_add
+1 Top func: drbg_bytes
 
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_status
+2 Top func: drbg_seed
 
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: drbg_add
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
 drbg_seedMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_bytesMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 drbg_status FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_bytesMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-     Top func: drbg_seed Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
      Top func: drbg_add Failed
 
 Update global ICallees info
@@ -92,11 +92,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001111
-# Typebuilder time     		0.000234
-# MLTA time            		0.000256
-# Icall alias time     		0.000135
-# Func alias time      		0.000823
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002022
+# Load time            		0.001266
+# Typebuilder time     		0.000199
+# MLTA time            		0.000219
+# Icall alias time     		3.3e-05
+# Func alias time      		0.000544
+# One layer alias time 		5e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.00196

@@ -25,17 +25,17 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: init_thread_destructor
-
-1 Top func: create_global_tevent_register_ossl_
-
-Analyzed func: init_thread_destructorMerge complete --- Not blocked by TBAA or TFA check
+0 Top func: create_global_tevent_register_ossl_
 
 Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: init_thread_destructor
+
+Analyzed func: create_global_tevent_register_ossl_
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: create_global_tevent_register_ossl_
+Analyzed func: init_thread_destructor
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -246,11 +246,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.00245
-# Typebuilder time     		0.0004
-# MLTA time            		0.000345
-# Icall alias time     		0.004531
-# Func alias time      		0.008408
-# One layer alias time 		7.9e-05
-# Escape alias time    		0.00022
-# DB time              		0.002114
+# Load time            		0.002328
+# Typebuilder time     		0.000279
+# MLTA time            		0.000315
+# Icall alias time     		0.003435
+# Func alias time      		0.00074
+# One layer alias time 		8e-06
+# Escape alias time    		6e-05
+# DB time              		0.002128

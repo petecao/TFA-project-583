@@ -25,42 +25,42 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: sk_RSA_PRIME_INFO_freefunc_thunk
+0 Top func: sk_BIGNUM_freefunc_thunk
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sk_BIGNUM_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
+sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 BN_clear_freeMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
-
+Analyzed func: sk_RSA_PRIME_INFO_freefunc_thunk
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
-Merge complete --- Not blocked by TBAA or TFA check
+1
+aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
 sk_BIGNUM_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -163,13 +163,13 @@ Update global ICallees info
 
  Start ICall Alias Analysis
 
-0 Top func: sk_RSA_PRIME_INFO_freefunc_thunk
+0 Top func: sk_BIGNUM_freefunc_thunk
 ---icall:   call void %7(ptr noundef %8), !dbg !142
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sk_BIGNUM_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
+sk_RSA_PRIME_INFO_freefunc_thunkMerge complete --- Not blocked by TBAA or TFA check
 
 ---icall: Merge complete --- Not blocked by TBAA or TFA check
   call void %7(ptr noundef %8), !dbg !142
@@ -218,11 +218,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.003698
-# Typebuilder time     		0.000443
-# MLTA time            		0.000424
-# Icall alias time     		0.000514
-# Func alias time      		0.00148
-# One layer alias time 		9e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.00203
+# Load time            		0.004324
+# Typebuilder time     		0.000422
+# MLTA time            		0.000385
+# Icall alias time     		0.000468
+# Func alias time      		0.001579
+# One layer alias time 		8e-06
+# Escape alias time    		6.1e-05
+# DB time              		0.002292

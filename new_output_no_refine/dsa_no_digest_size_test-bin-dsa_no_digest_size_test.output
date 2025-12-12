@@ -29,6 +29,8 @@ Openmp enabled
 
 1 Top func: dsa_exact_size_test
 
+2 Top func: dsa_large_digest_test
+
 Analyzed func: dsa_small_digest_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
@@ -36,8 +38,6 @@ aliased_callset size: 0
 Analyzed func: dsa_exact_size_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-2 Top func: dsa_large_digest_test
 
 Analyzed func: dsa_large_digest_test
 DefinitionFuncSet size: 1
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.0019
-# Typebuilder time     		0.000256
-# MLTA time            		0.000226
-# Icall alias time     		8.9e-05
-# Func alias time      		0.003155
-# One layer alias time 		7e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.002
+# Load time            		0.002097
+# Typebuilder time     		0.000211
+# MLTA time            		0.000208
+# Icall alias time     		6.1e-05
+# Func alias time      		0.00823
+# One layer alias time 		6e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002091

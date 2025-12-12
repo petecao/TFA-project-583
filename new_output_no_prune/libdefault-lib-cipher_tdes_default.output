@@ -25,95 +25,95 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_tdes_einit
+0 Top func: tdes_ede3_cfb1_newctx
 
-1 Top func: ossl_cipher_generic_cipher
+1 Top func: ossl_tdes_einit
 
-2 Top func: ossl_tdes_set_ctx_params
+2 Top func: ossl_cipher_generic_cipher
 
-3 Top func: tdes_ede3_ofb_get_params
+3 Top func: ossl_tdes_set_ctx_params
 
-4 Top func: tdes_ede3_cfb1_newctx
-
-5 Top func: ossl_cipher_generic_block_update
-
-6 Top func: tdes_ede2_ofb_get_params
+4 Top func: tdes_ede3_ofb_get_params
      Top func: ossl_tdes_einit Failed
-     Top func: ossl_cipher_generic_cipher Failed
      Top func: ossl_tdes_set_ctx_params Failed
-     Top func: ossl_cipher_generic_block_update Failed
-     Top func: tdes_ede3_ofb_get_params Failed
      Top func: tdes_ede3_cfb1_newctx Failed
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: tdes_ede3_ofb_get_params Failed
 
-7 Top func: ossl_tdes_dinit
+5 Top func: ossl_tdes_dinit
+
+6 Top func: ossl_tdes_settable_ctx_params
+
+7 Top func: tdes_ede3_cfb1_get_params
 
 8 Top func: tdes_ede3_ofb_newctx
 
-9 Top func: ossl_tdes_settable_ctx_params
-
-10 Top func: ossl_cipher_generic_block_final
-
-11 Top func: ossl_cipher_generic_gettable_params
-
-12 Top func: tdes_ede3_cfb1_get_params
-     Top func: tdes_ede2_ofb_get_params Failed
+9 Top func: ossl_cipher_generic_gettable_params
      Top func: ossl_tdes_dinit Failed
-
-13 Top func: tdes_ede2_cfb_newctx
-     Top func: tdes_ede3_ofb_newctx Failed
      Top func: ossl_tdes_settable_ctx_params Failed
-     Top func: ossl_cipher_generic_block_final Failed
-     Top func: ossl_cipher_generic_gettable_params Failed
      Top func: tdes_ede3_cfb1_get_params Failed
+     Top func: tdes_ede3_ofb_newctx Failed
 
-14 Top func: ossl_cipher_generic_stream_update
+10 Top func: ossl_cipher_generic_stream_update
 
-15 Top func: ossl_tdes_dupctx
+11 Top func: tdes_ede3_cfb_newctx
 
-16 Top func: tdes_ede3_cfb_newctx
+12 Top func: tdes_ede3_cfb8_newctx
+     Top func: ossl_cipher_generic_gettable_params Failed
 
-17 Top func: tdes_ede2_ecb_newctx
+13 Top func: ossl_tdes_dupctx
 
-18 Top func: ossl_tdes_get_ctx_params
-
-19 Top func: tdes_ede3_cfb8_newctx
-     Top func: tdes_ede2_cfb_newctx Failed
+14 Top func: ossl_tdes_get_ctx_params
      Top func: ossl_cipher_generic_stream_update Failed
-     Top func: ossl_tdes_dupctx Failed
-
-20 Top func: tdes_ede2_cfb_get_params
-     Top func: ossl_tdes_get_ctx_params Failed
-     Top func: tdes_ede2_ecb_newctx Failed
-     Top func: tdes_ede3_cfb_newctx Failed
      Top func: tdes_ede3_cfb8_newctx Failed
+     Top func: tdes_ede3_cfb_newctx Failed
 
-21 Top func: ossl_cipher_generic_stream_final
+15 Top func: ossl_cipher_generic_stream_final
 
-22 Top func: ossl_tdes_freectx
+16 Top func: tdes_ede3_cfb8_get_params
 
-23 Top func: ossl_tdes_gettable_ctx_params
+17 Top func: tdes_ede3_cfb_get_params
+     Top func: ossl_tdes_dupctx Failed
+     Top func: ossl_tdes_get_ctx_params Failed
 
-24 Top func: tdes_ede2_ecb_get_params
-
-25 Top func: tdes_ede3_cfb_get_params
-
-26 Top func: tdes_ede3_cfb8_get_params
-     Top func: tdes_ede2_cfb_get_params Failed
+18 Top func: ossl_tdes_freectx
      Top func: ossl_cipher_generic_stream_final Failed
-     Top func: ossl_tdes_freectx Failed
-     Top func: ossl_tdes_gettable_ctx_params Failed
-     Top func: tdes_ede3_cfb_get_params Failed
-     Top func: tdes_ede2_ecb_get_params Failed
 
-27 Top func: tdes_ede2_cbc_newctx
+19 Top func: ossl_tdes_gettable_ctx_params
+     Top func: tdes_ede3_cfb_get_params Failed
      Top func: tdes_ede3_cfb8_get_params Failed
 
-28 Top func: tdes_ede2_ofb_newctx
+20 Top func: ossl_cipher_generic_block_update
 
-29 Top func: tdes_ede2_cbc_get_params
+21 Top func: tdes_ede2_cbc_newctx
+     Top func: ossl_tdes_freectx Failed
+
+22 Top func: tdes_ede2_ofb_get_params
+     Top func: ossl_tdes_gettable_ctx_params Failed
+
+23 Top func: tdes_ede2_ofb_newctx
+     Top func: ossl_cipher_generic_block_update Failed
+
+24 Top func: tdes_ede2_cbc_get_params
      Top func: tdes_ede2_cbc_newctx Failed
+     Top func: tdes_ede2_ofb_get_params Failed
+
+25 Top func: ossl_cipher_generic_block_final
+
+26 Top func: tdes_ede2_ecb_get_params
+
+27 Top func: tdes_ede2_cfb_newctx
      Top func: tdes_ede2_ofb_newctx Failed
      Top func: tdes_ede2_cbc_get_params Failed
+
+28 Top func: tdes_ede2_cfb_get_params
+     Top func: ossl_cipher_generic_block_final Failed
+     Top func: tdes_ede2_cfb_newctx Failed
+     Top func: tdes_ede2_ecb_get_params Failed
+
+29 Top func: tdes_ede2_ecb_newctx
+     Top func: tdes_ede2_cfb_get_params Failed
+     Top func: tdes_ede2_ecb_newctx Failed
 
 Update global ICallees info
 
@@ -156,11 +156,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001478
-# Typebuilder time     		0.000307
-# MLTA time            		0.000767
-# Icall alias time     		6.9e-05
-# Func alias time      		0.001668
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002096
+# Load time            		0.019368
+# Typebuilder time     		0.000291
+# MLTA time            		0.00059
+# Icall alias time     		0.000181
+# Func alias time      		0.009488
+# One layer alias time 		9e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002078

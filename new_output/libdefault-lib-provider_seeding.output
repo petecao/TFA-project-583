@@ -27,7 +27,7 @@ Openmp enabled
 
 Update global ICallees info
 
-0 Update icall:   %35 = call i64 %29(ptr noundef %30, ptr noundef %31, i32 noundef %32, i64 noundef %33, i64 noundef %34), !dbg !129
+0 Update icall:   call void %21(ptr noundef %22, ptr noundef %23, i64 noundef %24), !dbg !122
 
 1 Update icall:   %24 = call i64 %18(ptr noundef %19, ptr noundef %20, i32 noundef %21, i64 noundef %22, i64 noundef %23), !dbg !119
 
@@ -35,11 +35,11 @@ Update global ICallees info
 
 3 Update icall:   call void %13(ptr noundef %14, ptr noundef %15, i64 noundef %16), !dbg !115
 
-4 Update icall:   %27 = call i64 %20(ptr noundef %21, ptr noundef %22, i64 noundef %23, i64 noundef %24, ptr noundef %25, i64 noundef %26), !dbg !121
+4 Update icall:   %35 = call i64 %29(ptr noundef %30, ptr noundef %31, i32 noundef %32, i64 noundef %33, i64 noundef %34), !dbg !129
 
-5 Update icall:   call void %21(ptr noundef %22, ptr noundef %23, i64 noundef %24), !dbg !122
+5 Update icall:   %39 = call i64 %32(ptr noundef %33, ptr noundef %34, i64 noundef %35, i64 noundef %36, ptr noundef %37, i64 noundef %38), !dbg !132
 
-6 Update icall:   %39 = call i64 %32(ptr noundef %33, ptr noundef %34, i64 noundef %35, i64 noundef %36, ptr noundef %37, i64 noundef %38), !dbg !132
+6 Update icall:   %27 = call i64 %20(ptr noundef %21, ptr noundef %22, i64 noundef %23, i64 noundef %24, ptr noundef %25, i64 noundef %26), !dbg !121
 
 7 Update icall:   call void %13(ptr noundef %14, ptr noundef %15, i64 noundef %16), !dbg !115
 
@@ -82,11 +82,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001465
-# Typebuilder time     		0.000352
-# MLTA time            		0.000215
-# Icall alias time     		1.8e-05
-# Func alias time      		0.007252
-# One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002026
+# Load time            		0.00188
+# Typebuilder time     		0.000343
+# MLTA time            		0.000261
+# Icall alias time     		6.5e-05
+# Func alias time      		0.002347
+# One layer alias time 		9e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001951

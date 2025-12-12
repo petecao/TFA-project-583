@@ -25,179 +25,179 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: aria_192_ecb_get_params
+0 Top func: aria_256_ecb_get_params
 
 1 Top func: aria_256_ecb_newctx
 
-2 Top func: aria_256_ecb_get_params
+2 Top func: aria_192_cfb8_newctx
 
-3 Top func: aria_192_cfb8_newctx
+3 Top func: aria_192_ecb_get_params
 
 4 Top func: aria_128_cbc_newctx
 
-5 Top func: aria_192_ofb_get_params
-     Top func: aria_256_ecb_newctx Failed
-     Top func: aria_192_ecb_get_params Failed
-     Top func: aria_128_cbc_newctx Failed
-     Top func: aria_192_ofb_get_params Failed
+5 Top func: aria_128_cfb_newctx
+
+6 Top func: aria_192_ofb_get_params
+
+7 Top func: aria_128_cfb8_get_params
      Top func: aria_256_ecb_get_params Failed
+     Top func: aria_256_ecb_newctx Failed
+     Top func: aria_128_cbc_newctx Failed
+     Top func: aria_192_ecb_get_params Failed
+     Top func: aria_128_cfb_newctx Failed
      Top func: aria_192_cfb8_newctx Failed
+     Top func: aria_192_ofb_get_params Failed
 
-6 Top func: aria_freectx
+8 Top func: ossl_cipher_generic_get_ctx_params
+     Top func: aria_128_cfb8_get_params Failed
 
-7 Top func: aria_128_ecb_newctx
+9 Top func: aria_freectx
 
-8 Top func: aria_128_cbc_get_params
+10 Top func: aria_128_cbc_get_params
 
-9 Top func: aria_128_ofb_newctx
+11 Top func: aria_128_ecb_newctx
 
-10 Top func: ossl_cipher_generic_get_ctx_params
+12 Top func: aria_128_cfb_get_params
 
-11 Top func: ossl_cipher_generic_gettable_params
-     Top func: aria_freectx Failed
-     Top func: aria_128_ecb_newctx Failed
-     Top func: aria_128_cbc_get_params Failed
-     Top func: aria_128_ofb_newctx Failed
+13 Top func: ossl_cipher_generic_gettable_params
+
+14 Top func: aria_128_ofb_newctx
+
+15 Top func: aria_256_ctr_newctx
      Top func: ossl_cipher_generic_get_ctx_params Failed
-
-12 Top func: aria_dupctx
-
-13 Top func: aria_128_ecb_get_params
-
-14 Top func: aria_256_ofb_newctx
-
-15 Top func: aria_128_ofb_get_params
+     Top func: aria_freectx Failed
+     Top func: aria_128_cbc_get_params Failed
+     Top func: aria_128_cfb_get_params Failed
+     Top func: aria_128_ecb_newctx Failed
      Top func: ossl_cipher_generic_gettable_params Failed
 
 16 Top func: ossl_cipher_generic_set_ctx_params
+     Top func: aria_128_ofb_newctx Failed
 
-17 Top func: ossl_cipher_generic_gettable_ctx_params
-     Top func: aria_dupctx Failed
-     Top func: aria_128_ecb_get_params Failed
-     Top func: aria_256_ofb_newctx Failed
-     Top func: aria_128_ofb_get_params Failed
+17 Top func: aria_dupctx
 
-18 Top func: ossl_cipher_generic_einit
+18 Top func: aria_256_ofb_newctx
 
-19 Top func: aria_256_cbc_newctx
+19 Top func: aria_256_cfb1_newctx
 
-20 Top func: ossl_cipher_generic_stream_update
-     Top func: ossl_cipher_generic_set_ctx_params Failed
-     Top func: ossl_cipher_generic_gettable_ctx_params Failed
-
-21 Top func: aria_256_cfb_newctx
-
-22 Top func: aria_192_cfb1_get_params
-
-23 Top func: ossl_cipher_generic_settable_ctx_params
-     Top func: ossl_cipher_generic_einit Failed
-     Top func: aria_256_cbc_newctx Failed
-     Top func: ossl_cipher_generic_stream_update Failed
-
-24 Top func: ossl_cipher_generic_dinit
-
-25 Top func: aria_256_cbc_get_params
-
-26 Top func: ossl_cipher_generic_stream_final
-     Top func: aria_256_cfb_newctx Failed
-     Top func: ossl_cipher_generic_settable_ctx_params Failed
-     Top func: aria_192_cfb1_get_params Failed
-
-27 Top func: aria_256_cfb_get_params
-
-28 Top func: ossl_cipher_generic_skey_einit
-     Top func: ossl_cipher_generic_dinit Failed
-     Top func: aria_256_cbc_get_params Failed
-     Top func: ossl_cipher_generic_stream_final Failed
-
-29 Top func: aria_128_cfb1_newctx
-
-30 Top func: ossl_cipher_generic_block_update
-
-31 Top func: aria_192_cbc_newctx
-
-32 Top func: aria_256_ofb_get_params
-     Top func: ossl_cipher_generic_skey_einit Failed
-     Top func: aria_256_cfb_get_params Failed
-
-33 Top func: ossl_cipher_generic_skey_dinit
-
-34 Top func: aria_192_cfb_newctx
-     Top func: ossl_cipher_generic_block_update Failed
-     Top func: aria_192_cbc_newctx Failed
-     Top func: aria_256_ofb_get_params Failed
-     Top func: aria_128_cfb1_newctx Failed
-
-35 Top func: ossl_cipher_generic_block_final
-
-36 Top func: aria_192_cbc_get_params
-
-37 Top func: aria_192_ofb_newctx
-     Top func: ossl_cipher_generic_skey_dinit Failed
-
-38 Top func: aria_128_cfb1_get_params
-     Top func: aria_192_cfb_newctx Failed
-
-39 Top func: aria_192_ecb_newctx
-     Top func: ossl_cipher_generic_block_final Failed
-     Top func: aria_192_cbc_get_params Failed
-
-40 Top func: aria_192_cfb_get_params
-     Top func: aria_192_ofb_newctx Failed
-     Top func: aria_128_cfb1_get_params Failed
-
-41 Top func: ossl_cipher_generic_cipher
-
-42 Top func: aria_128_cfb_newctx
-
-43 Top func: aria_128_cfb8_get_params
-     Top func: aria_192_ecb_newctx Failed
-
-44 Top func: aria_256_cfb8_newctx
-     Top func: aria_192_cfb_get_params Failed
-
-45 Top func: aria_128_cfb8_newctx
-     Top func: ossl_cipher_generic_cipher Failed
-     Top func: aria_128_cfb_newctx Failed
-     Top func: aria_128_cfb8_get_params Failed
-
-46 Top func: aria_256_cfb8_get_params
-     Top func: aria_256_cfb8_newctx Failed
-
-47 Top func: aria_192_cfb8_get_params
-
-48 Top func: aria_128_cfb_get_params
-
-49 Top func: aria_256_ctr_newctx
-     Top func: aria_128_cfb8_newctx Failed
-
-50 Top func: aria_192_cfb1_newctx
-     Top func: aria_256_cfb8_get_params Failed
-
-51 Top func: aria_256_cfb1_get_params
-     Top func: aria_192_cfb8_get_params Failed
-     Top func: aria_128_cfb_get_params Failed
+20 Top func: aria_128_ecb_get_params
      Top func: aria_256_ctr_newctx Failed
 
-52 Top func: aria_256_cfb1_newctx
+21 Top func: ossl_cipher_generic_gettable_ctx_params
 
-53 Top func: aria_128_ctr_get_params
+22 Top func: aria_128_ofb_get_params
 
-54 Top func: aria_128_ctr_newctx
-
-55 Top func: aria_256_ctr_get_params
-     Top func: aria_192_cfb1_newctx Failed
-     Top func: aria_256_cfb1_get_params Failed
-
-56 Top func: aria_192_ctr_get_params
-     Top func: aria_128_ctr_newctx Failed
-     Top func: aria_128_ctr_get_params Failed
+23 Top func: aria_256_ctr_get_params
+     Top func: ossl_cipher_generic_set_ctx_params Failed
+     Top func: aria_dupctx Failed
+     Top func: aria_256_ofb_newctx Failed
      Top func: aria_256_cfb1_newctx Failed
+     Top func: aria_128_ecb_get_params Failed
+     Top func: ossl_cipher_generic_gettable_ctx_params Failed
 
-57 Top func: aria_192_ctr_newctx
+24 Top func: aria_192_cfb1_get_params
+
+25 Top func: ossl_cipher_generic_einit
+
+26 Top func: ossl_cipher_generic_stream_update
+     Top func: aria_128_ofb_get_params Failed
+
+27 Top func: aria_256_cfb1_get_params
      Top func: aria_256_ctr_get_params Failed
+
+28 Top func: aria_256_cbc_newctx
+
+29 Top func: ossl_cipher_generic_settable_ctx_params
+
+30 Top func: aria_256_cfb_newctx
+
+31 Top func: aria_192_ctr_newctx
+     Top func: ossl_cipher_generic_einit Failed
+     Top func: ossl_cipher_generic_stream_update Failed
+     Top func: aria_192_cfb1_get_params Failed
+     Top func: aria_256_cfb1_get_params Failed
+     Top func: aria_256_cbc_newctx Failed
+
+32 Top func: ossl_cipher_generic_dinit
+
+33 Top func: ossl_cipher_generic_stream_final
+     Top func: ossl_cipher_generic_settable_ctx_params Failed
+
+34 Top func: aria_128_cfb1_newctx
+
+35 Top func: aria_192_cfb1_newctx
+     Top func: aria_256_cfb_newctx Failed
      Top func: aria_192_ctr_newctx Failed
+
+36 Top func: aria_256_cbc_get_params
+
+37 Top func: ossl_cipher_generic_skey_einit
+
+38 Top func: aria_256_cfb_get_params
+
+39 Top func: aria_192_ctr_get_params
+     Top func: ossl_cipher_generic_dinit Failed
+     Top func: ossl_cipher_generic_stream_final Failed
+     Top func: aria_128_cfb1_newctx Failed
+     Top func: aria_192_cfb1_newctx Failed
+
+40 Top func: ossl_cipher_generic_block_update
+     Top func: aria_256_cbc_get_params Failed
+
+41 Top func: aria_256_ofb_get_params
+
+42 Top func: aria_128_cfb1_get_params
+     Top func: ossl_cipher_generic_skey_einit Failed
+
+43 Top func: aria_192_cfb8_get_params
      Top func: aria_192_ctr_get_params Failed
+     Top func: aria_256_cfb_get_params Failed
+
+44 Top func: aria_192_cbc_newctx
+
+45 Top func: ossl_cipher_generic_skey_dinit
+
+46 Top func: aria_128_ctr_newctx
+     Top func: ossl_cipher_generic_block_update Failed
+
+47 Top func: aria_192_cfb_newctx
+     Top func: aria_256_ofb_get_params Failed
+     Top func: aria_128_cfb1_get_params Failed
+     Top func: aria_192_cfb8_get_params Failed
+
+48 Top func: ossl_cipher_generic_block_final
+     Top func: aria_192_cbc_newctx Failed
+
+49 Top func: aria_192_ofb_newctx
+
+50 Top func: aria_256_cfb8_newctx
+     Top func: ossl_cipher_generic_skey_dinit Failed
+     Top func: aria_128_ctr_newctx Failed
+
+51 Top func: aria_128_cfb8_newctx
+
+52 Top func: aria_192_cbc_get_params
+     Top func: aria_192_cfb_newctx Failed
+
+53 Top func: aria_192_ecb_newctx
+
+54 Top func: aria_128_ctr_get_params
+     Top func: ossl_cipher_generic_block_final Failed
+     Top func: aria_192_ofb_newctx Failed
+     Top func: aria_256_cfb8_newctx Failed
+
+55 Top func: aria_192_cfb_get_params
+     Top func: aria_128_cfb8_newctx Failed
+
+56 Top func: ossl_cipher_generic_cipher
+     Top func: aria_192_cbc_get_params Failed
+
+57 Top func: aria_256_cfb8_get_params
+     Top func: aria_128_ctr_get_params Failed
+     Top func: aria_192_ecb_newctx Failed
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: aria_256_cfb8_get_params Failed
+     Top func: aria_192_cfb_get_params Failed
 
 Update global ICallees info
 
@@ -242,11 +242,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.012097
-# Typebuilder time     		0.000435
-# MLTA time            		0.001424
-# Icall alias time     		6.3e-05
-# Func alias time      		0.008428
-# One layer alias time 		8e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002266
+# Load time            		0.00268
+# Typebuilder time     		0.000426
+# MLTA time            		0.001422
+# Icall alias time     		7.3e-05
+# Func alias time      		0.008894
+# One layer alias time 		9e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002098

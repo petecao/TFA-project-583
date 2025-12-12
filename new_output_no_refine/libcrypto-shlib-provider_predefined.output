@@ -27,12 +27,12 @@ Openmp enabled
 
 0 Top func: ossl_null_provider_init
 
-1 Top func: ossl_default_provider_init
+1 Top func: ossl_base_provider_init
 
-2 Top func: ossl_base_provider_init
+2 Top func: ossl_default_provider_init
      Top func: ossl_null_provider_init Failed
-     Top func: ossl_default_provider_init Failed
      Top func: ossl_base_provider_init Failed
+     Top func: ossl_default_provider_init Failed
 
 Update global ICallees info
 
@@ -75,11 +75,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001017
-# Typebuilder time     		0.000156
-# MLTA time            		0.000191
-# Icall alias time     		7.5e-05
-# Func alias time      		0.000463
-# One layer alias time 		7e-06
+# Load time            		0.001106
+# Typebuilder time     		0.000185
+# MLTA time            		0.000189
+# Icall alias time     		3.3e-05
+# Func alias time      		0.00032
+# One layer alias time 		5e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002079
+# DB time              		0.001961

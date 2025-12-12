@@ -27,19 +27,19 @@ Openmp enabled
 
 0 Top func: test_evp_pkey_ctx_dup_kdf
 
-1 Top func: test_fromdata_rsa_derive_from_pq_sp800
+1 Top func: test_evp_pkey_get_bn_param_large
 
-2 Top func: test_evp_pkey_get_bn_param_large
+2 Top func: test_fromdata_rsa_derive_from_pq_sp800
 
 3 Top func: test_fromdata_dh_fips186_4
 
 4 Top func: test_check_dsa
 
-Analyzed func: test_evp_pkey_ctx_dup_kdf
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+5 Top func: test_ec_dup_no_operation
 
-Analyzed func: test_fromdata_rsa_derive_from_pq_sp800
+6 Top func: test_fromdata_ecx
+
+Analyzed func: test_evp_pkey_ctx_dup_kdf
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -47,7 +47,7 @@ Analyzed func: test_evp_pkey_get_bn_param_large
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_fromdata_dh_fips186_4
+Analyzed func: test_fromdata_rsa_derive_from_pq_sp800
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -55,21 +55,41 @@ Analyzed func: test_check_dsa
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-5 Top func: test_name_dup
+Analyzed func: test_ec_dup_no_operation
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-6 Top func: test_fromdata_rsa_derive_from_pq_multiprime
+Analyzed func: test_fromdata_dh_fips186_4
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-7 Top func: test_fromdata_rsa
+7 Top func: test_name_dup
 
-8 Top func: test_fromdata_dh_named_group
+8 Top func: test_fromdata_rsa
 
-9 Top func: test_fromdata_dsa_fips186_4
+9 Top func: test_fromdata_rsa_derive_from_pq_multiprime
+
+10 Top func: test_fromdata_dsa_fips186_4
+
+11 Top func: test_ec_dup_keygen_operation
+
+12 Top func: test_fromdata_dh_named_group
+
+Analyzed func: test_fromdata_ecx
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+13 Top func: test_fromdata_ec
+
+Analyzed func: test_fromdata_rsa_derive_from_pq_multiprime
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_name_dup
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_fromdata_rsa_derive_from_pq_multiprime
+Analyzed func: test_fromdata_dsa_fips186_4
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -77,55 +97,37 @@ Analyzed func: test_fromdata_rsa
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: test_ec_dup_keygen_operation
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Analyzed func: test_fromdata_dh_named_group
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-10 Top func: test_fromdata_ecx
-
-Analyzed func: test_fromdata_dsa_fips186_4
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-11 Top func: test_ec_dup_no_operation
-
-12 Top func: test_ec_dup_keygen_operation
-
-13 Top func: pass_cb
-Merge complete --- Not blocked by TBAA or TFA check
+14 Top func: pass_cb
 
 Merge complete --- Not blocked by TBAA or TFA check
-14 Top func: Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+ Top func: pass_cb_errorMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 test_fromdata_ecMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_fromdata_ecxMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_ec_dup_no_operationMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -134,21 +136,37 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_ec_dup_keygen_operation
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-15 Top func: pass_cb_error
-
-Analyzed func: test_fromdata_ecMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -162,26 +180,8 @@ pass_cbMerge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+0
 
 Analyzed func: pass_cb_error
 DefinitionFuncSet size: 1
@@ -228,11 +228,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.04727
-# Typebuilder time     		0.004822
-# MLTA time            		0.005034
-# Icall alias time     		9.5e-05
-# Func alias time      		0.011285
-# One layer alias time 		9e-06
-# Escape alias time    		6.8e-05
-# DB time              		0.002675
+# Load time            		0.008521
+# Typebuilder time     		0.0011
+# MLTA time            		0.000592
+# Icall alias time     		8.5e-05
+# Func alias time      		0.001931
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001975

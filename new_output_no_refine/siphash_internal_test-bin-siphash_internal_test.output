@@ -25,15 +25,15 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_siphash_basic
+0 Top func: test_siphash
 
-1 Top func: test_siphash
+1 Top func: test_siphash_basic
 
-Analyzed func: test_siphash_basic
+Analyzed func: test_siphash
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_siphash
+Analyzed func: test_siphash_basic
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -78,11 +78,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002531
-# Typebuilder time     		0.000515
+# Load time            		0.002582
+# Typebuilder time     		0.000527
 # MLTA time            		0.000326
-# Icall alias time     		9e-06
-# Func alias time      		0.000627
-# One layer alias time 		5e-06
+# Icall alias time     		8.7e-05
+# Func alias time      		0.000496
+# One layer alias time 		7e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.002071
+# DB time              		0.00194

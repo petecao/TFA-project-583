@@ -25,25 +25,25 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_cert_key_cert
+0 Top func: test_invalid
 
-1 Top func: test_b64
+1 Top func: test_cert_key_cert
 
-2 Top func: test_invalid
+2 Top func: test_b64
 
 3 Top func: test_protected_params
 
 4 Top func: test_empty_payload
+
+Analyzed func: test_invalid
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_b64
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_cert_key_cert
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_invalid
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -96,11 +96,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001602
-# Typebuilder time     		0.000502
-# MLTA time            		0.000232
-# Icall alias time     		6.3e-05
-# Func alias time      		0.000697
-# One layer alias time 		9e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.001975
+# Load time            		0.00156
+# Typebuilder time     		0.000305
+# MLTA time            		0.000233
+# Icall alias time     		6.4e-05
+# Func alias time      		0.000701
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.00225

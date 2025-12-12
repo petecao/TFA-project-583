@@ -27,27 +27,27 @@ Openmp enabled
 
 0 Top func: template_set_ctx_params
 
-1 Top func: template_newctx
+1 Top func: template_settable_ctx_params
 
-2 Top func: template_settable_ctx_params
+2 Top func: template_newctx
 
 3 Top func: template_encapsulate_init
 
 4 Top func: template_encapsulate
 
-5 Top func: template_decapsulate_init
+5 Top func: template_decapsulate
 
-6 Top func: template_freectx
+6 Top func: template_decapsulate_init
      Top func: template_set_ctx_params Failed
+     Top func: template_settable_ctx_params Failed
      Top func: template_newctx Failed
      Top func: template_encapsulate_init Failed
-     Top func: template_settable_ctx_params Failed
-     Top func: template_decapsulate_init Failed
+     Top func: template_decapsulate Failed
      Top func: template_encapsulate Failed
 
-7 Top func: template_decapsulate
+7 Top func: template_freectx
+     Top func: template_decapsulate_init Failed
      Top func: template_freectx Failed
-     Top func: template_decapsulate Failed
 
 Update global ICallees info
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.0015
-# Typebuilder time     		0.000239
-# MLTA time            		0.000215
-# Icall alias time     		7.3e-05
-# Func alias time      		0.000859
-# One layer alias time 		6.2e-05
-# Escape alias time    		0.000763
-# DB time              		0.002312
+# Load time            		0.0017
+# Typebuilder time     		0.000296
+# MLTA time            		0.00029
+# Icall alias time     		0.000104
+# Func alias time      		0.000807
+# One layer alias time 		9e-06
+# Escape alias time    		6.4e-05
+# DB time              		0.002163

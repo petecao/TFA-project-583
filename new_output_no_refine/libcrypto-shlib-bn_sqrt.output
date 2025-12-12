@@ -27,6 +27,7 @@ Openmp enabled
 
 0 Top func: BN_add
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 BN_subMerge complete --- Not blocked by TBAA or TFA check
@@ -471,10 +472,9 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-BN_add
+BN_sub
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 0
 Merge complete --- Not blocked by TBAA or TFA check
@@ -483,7 +483,7 @@ aliased_callset size: 1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: BN_sub
+Analyzed func: BN_add
 DefinitionFuncSet size: 0
 aliased_callset size: 1
 
@@ -759,11 +759,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.001959
-# Typebuilder time     		0.000194
-# MLTA time            		0.000206
-# Icall alias time     		0.001636
-# Func alias time      		0.002482
-# One layer alias time 		6e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002164
+# Load time            		0.002148
+# Typebuilder time     		0.000265
+# MLTA time            		0.000267
+# Icall alias time     		0.001652
+# Func alias time      		0.002431
+# One layer alias time 		9e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.001982

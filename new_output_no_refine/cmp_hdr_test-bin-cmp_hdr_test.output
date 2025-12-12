@@ -29,9 +29,9 @@ Openmp enabled
 
 1 Top func: test_HDR_update_messageTime
 
-2 Top func: test_HDR_set1_sender
+2 Top func: test_HDR_push0_freeText
 
-3 Top func: test_HDR_push0_freeText
+3 Top func: test_HDR_set1_sender
 
 4 Top func: test_HDR_generalInfo_push0_item
 
@@ -41,7 +41,19 @@ Openmp enabled
 
 7 Top func: OSSL_CMP_ITAV_free
 
-Analyzed func: test_HDR_set1_senderMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_HDR_set_get_pvno
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+test_HDR_update_messageTimeMerge complete --- Not blocked by TBAA or TFA check
 
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
@@ -53,19 +65,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_HDR_set_get_pvnoMerge complete --- Not blocked by TBAA or TFA check
-
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_HDR_update_messageTime
+test_HDR_push0_freeText
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
@@ -76,12 +76,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-test_HDR_push0_freeTextMerge complete --- Not blocked by TBAA or TFA check
+test_HDR_set1_senderMerge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_HDR_init_with_subject
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -89,13 +85,17 @@ Analyzed func: test_HDR_generalInfo_push0_item
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-8 Top func: test_HDR_set1_recipient
+Analyzed func: test_HDR_init_with_subject
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
-9 Top func: test_HDR_get0_senderNonce
+8 Top func: test_HDR_get0_senderNonce
 
-10 Top func: test_HDR_set1_senderKID
+9 Top func: test_HDR_set1_senderKID
 
-11 Top func: test_HDR_push1_freeText
+10 Top func: test_HDR_push1_freeText
+
+11 Top func: test_HDR_set1_recipient
 
 12 Top func: test_HDR_generalInfo_push1_items
 
@@ -105,15 +105,15 @@ Analyzed func: OSSL_CMP_ITAV_free
 DefinitionFuncSet size: 0
 aliased_callset size: 1
 
-Analyzed func: test_HDR_set1_recipient
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: test_HDR_get0_senderNonce
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_HDR_set1_senderKID
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_HDR_set1_recipient
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -174,11 +174,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003644
-# Typebuilder time     		0.000527
-# MLTA time            		0.000356
-# Icall alias time     		6.8e-05
-# Func alias time      		0.002434
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002032
+# Load time            		0.003742
+# Typebuilder time     		0.000406
+# MLTA time            		0.000284
+# Icall alias time     		6.7e-05
+# Func alias time      		0.00252
+# One layer alias time 		7e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.001958

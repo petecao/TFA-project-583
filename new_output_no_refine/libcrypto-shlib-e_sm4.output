@@ -25,70 +25,67 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: sm4_init_key
+0 Top func: ossl_sm4_encrypt
 
-1 Top func: ossl_sm4_decrypt
-
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_sm4_encryptMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: sm4_init_key
 
 Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: sm4_cbc_cipher
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-sm4_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
+3 Top func: ossl_sm4_decrypt
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-sm4_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
-
+4 Top func: sm4_ecb_cipher
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
- Top func: sm4_cfb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+sm4_cfb_cipherMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-6 Top func: sm4_ofb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+sm4_ctr_cipherMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-7 Top func: sm4_ctr_cipher
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_sm4_decrypt
-DefinitionFuncSet size: 0
-aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+sm4_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: ossl_sm4_encrypt
-DefinitionFuncSet size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
 aliased_callset size: 0
 
 Analyzed func: sm4_cbc_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: sm4_ecb_cipher
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: sm4_ofb_cipher
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+7 Top func: sm4_ofb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: sm4_cfb_cipher
 DefinitionFuncSet size: 1
@@ -97,27 +94,30 @@ aliased_callset size: 0
 Analyzed func: sm4_ctr_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: sm4_init_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: ossl_sm4_decrypt
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: ossl_sm4_encrypt
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: sm4_ofb_cipher
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
 Update global ICallees info
 
-0 Update icall:   call void %19(ptr noundef %20, ptr noundef %21, i64 noundef %22, ptr noundef %24, ptr noundef %27, i32 noundef %29), !dbg !377
+0 Update icall:   call void %30(ptr noundef %31, ptr noundef %32, i64 noundef %33, ptr noundef %35, i32 noundef %37), !dbg !387
 
-1 Update icall:   call void %49(ptr noundef %52, ptr noundef %55, ptr noundef %57), !dbg !408
+1 Update icall:   call void %19(ptr noundef %20, ptr noundef %21, i64 noundef %22, ptr noundef %24, ptr noundef %27, i32 noundef %29), !dbg !377
 
-2 Update icall:   call void %30(ptr noundef %31, ptr noundef %32, i64 noundef %33, ptr noundef %35, i32 noundef %37), !dbg !387
+2 Update icall:   call void %49(ptr noundef %52, ptr noundef %55, ptr noundef %57), !dbg !408
 
  Start ICall Alias Analysis
 
@@ -194,11 +194,11 @@ reduce_num_escape: 0
 reduce_num_total: 2
 
 
-# Load time            		0.001942
-# Typebuilder time     		0.000372
-# MLTA time            		0.000707
+# Load time            		0.002051
+# Typebuilder time     		0.000361
+# MLTA time            		0.000686
 # Icall alias time     		0.000531
-# Func alias time      		0.003535
-# One layer alias time 		6e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002317
+# Func alias time      		0.001993
+# One layer alias time 		7e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002229

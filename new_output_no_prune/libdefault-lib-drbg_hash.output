@@ -25,24 +25,24 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: drbg_hash_uninstantiate_wrapper
+0 Top func: drbg_hash_new_wrapper
 
-1 Top func: drbg_hash_new_wrapper
+1 Top func: drbg_hash_uninstantiate_wrapper
 
 2 Top func: ossl_drbg_enable_locking
 
-3 Top func: drbg_hash_settable_ctx_params
+3 Top func: drbg_hash_instantiate
 
-4 Top func: drbg_hash_get_ctx_params
+4 Top func: drbg_hash_settable_ctx_params
 
-5 Top func: ossl_drbg_clear_seed
-     Top func: drbg_hash_uninstantiate_wrapper Failed
+5 Top func: drbg_hash_get_ctx_params
+
+6 Top func: ossl_drbg_clear_seed
      Top func: drbg_hash_new_wrapper Failed
+     Top func: drbg_hash_uninstantiate_wrapper Failed
      Top func: ossl_drbg_enable_locking Failed
-     Top func: drbg_hash_get_ctx_params Failed
      Top func: drbg_hash_settable_ctx_params Failed
-
-6 Top func: drbg_hash_generate_wrapper
+     Top func: drbg_hash_get_ctx_params Failed
 
 7 Top func: drbg_hash_free
      Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -50,46 +50,56 @@ ossl_drbg_clear_seedMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 
-8 Top func: ossl_drbg_lock
+8 Top func: drbg_hash_generate_wrapper
 
-9 Top func: drbg_hash_verify_zeroization
+9 Top func: ossl_drbg_lock
 
 10 Top func: drbg_hash_set_ctx_params
 
-11 Top func: drbg_hash_new
-     Top func: drbg_hash_freeMerge complete --- Not blocked by TBAA or TFA check
+11 Top func: drbg_hash_verify_zeroization
+
+12 Top func: drbg_hash_new
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_drbg_lockMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: drbg_hash_generate_wrapper Failed
-     Top func: ossl_drbg_lock Failed
+     Top func: drbg_hash_free Failed
+     Top func: drbg_hash_set_ctx_params Failed
      Top func: drbg_hash_verify_zeroization Failed
 
-12 Top func: drbg_hash_instantiate_wrapper
+13 Top func: ossl_drbg_unlock
 
-13 Top func: drbg_hash_reseed_wrapper
-     Top func: drbg_hash_set_ctx_params Failed
+14 Top func: drbg_hash_reseed_wrapper
 
-14 Top func: ossl_drbg_unlock
+15 Top func: drbg_hash_instantiate_wrapper
 
-15 Top func: ossl_drbg_get_seed
+16 Top func: drbg_hash_gettable_ctx_params
+
+17 Top func: ossl_drbg_get_seed
 
 Analyzed func: drbg_hash_new
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-16 Top func: drbg_hash_gettable_ctx_params
+     Top func: ossl_drbg_unlock Failed
      Top func: drbg_hash_reseed_wrapper Failed
-     Top func: drbg_hash_instantiate_wrapper Failed
-
-17 Top func: drbg_hash_instantiate
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_drbg_unlockMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-     Top func: ossl_drbg_get_seed Failed
 
 18 Top func: drbg_hash_uninstantiate
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_hash_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_hash_instantiate_wrapperMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_drbg_get_seedMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 19Merge complete --- Not blocked by TBAA or TFA check
@@ -100,36 +110,19 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 20Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 drbg_hash_generateMerge complete --- Not blocked by TBAA or TFA check
 
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-drbg_hash_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-drbg_hash_instantiateMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+drbg_hash_reseedMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: drbg_hash_reseedMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1
@@ -142,6 +135,13 @@ aliased_callset size: 0
 Analyzed func: drbg_hash_uninstantiate
 DefinitionFuncSet size: 1
 aliased_callset size: 1
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: drbg_hash_instantiate
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Update global ICallees info
 
@@ -184,11 +184,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.005675
-# Typebuilder time     		0.0006
-# MLTA time            		0.000442
-# Icall alias time     		6.1e-05
-# Func alias time      		0.001475
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002076
+# Load time            		0.021231
+# Typebuilder time     		0.000724
+# MLTA time            		0.000549
+# Icall alias time     		7.2e-05
+# Func alias time      		0.008244
+# One layer alias time 		8e-06
+# Escape alias time    		6.8e-05
+# DB time              		0.002491

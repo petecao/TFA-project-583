@@ -29,7 +29,7 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: test_object_group_attr
+0 Top func: test_acert_sign
 
 Merge complete --- Not blocked by TBAA or TFA check
 1 Top func: Merge complete --- Not blocked by TBAA or TFA check
@@ -37,9 +37,9 @@ test_print_acert
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_acert_sign
+ Top func: test_object_group_attr
 
-Analyzed func: test_object_group_attrMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: test_acert_signMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
@@ -49,7 +49,7 @@ Analyzed func: test_print_acert
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_acert_sign
+Analyzed func: test_object_group_attr
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -94,11 +94,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001706
-# Typebuilder time     		0.000368
-# MLTA time            		0.000226
-# Icall alias time     		7.5e-05
-# Func alias time      		0.000581
-# One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002158
+# Load time            		0.001555
+# Typebuilder time     		0.00027
+# MLTA time            		0.000168
+# Icall alias time     		8.3e-05
+# Func alias time      		0.001582
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001967

@@ -25,13 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_WPACKET_init
+0 Top func: test_WPACKET_set_flags
 
-1 Top func: test_WPACKET_set_flags
+1 Top func: test_WPACKET_allocate_bytes
 
-2 Top func: test_WPACKET_allocate_bytes
+2 Top func: test_WPACKET_start_sub_packet
 
-3 Top func: test_WPACKET_start_sub_packet
+3 Top func: test_WPACKET_init
 
 4 Top func: test_WPACKET_memcpy
 
@@ -41,15 +41,7 @@ Openmp enabled
 
 7 Top func: test_WPACKET_quic_vlint_random
 
-Analyzed func: test_WPACKET_init
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Analyzed func: test_WPACKET_set_flags
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_WPACKET_allocate_bytes
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -57,11 +49,19 @@ Analyzed func: test_WPACKET_start_sub_packet
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_WPACKET_memcpy
+Analyzed func: test_WPACKET_allocate_bytes
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_WPACKET_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: test_WPACKET_quic
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_WPACKET_memcpy
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -120,11 +120,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004509
+# Load time            		0.004497
 # Typebuilder time     		0.000418
-# MLTA time            		0.000362
-# Icall alias time     		6.1e-05
-# Func alias time      		0.001866
-# One layer alias time 		6e-06
+# MLTA time            		0.000347
+# Icall alias time     		6.6e-05
+# Func alias time      		0.002299
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002069
+# DB time              		0.001935

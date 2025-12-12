@@ -25,69 +25,69 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: rc4_40_newctx
+0 Top func: ossl_cipher_generic_stream_final
 
-1 Top func: rc4_dinit
+1 Top func: rc4_40_newctx
 
-2 Top func: ossl_cipher_generic_stream_final
+2 Top func: rc4_dinit
 
 3 Top func: rc4_dupctx
 
-4 Top func: ossl_cipher_generic_gettable_ctx_params
+4 Top func: rc4_40_get_params
 
-5 Top func: rc4_40_get_params
-
-6 Top func: ossl_cipher_var_keylen_set_ctx_params
-
-7Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-rc4_128_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_stream_finalMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: rc4_dupctxMerge complete --- Not blocked by TBAA or TFA check
+5 Top func: ossl_cipher_var_keylen_set_ctx_params
+     Top func: ossl_cipher_generic_stream_finalMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-rc4_dinitMerge complete --- Not blocked by TBAA or TFA check
+rc4_40_newctxMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-rc4_40_newctx Failed
-     Top func: ossl_cipher_generic_gettable_ctx_params Failed
-     Top func: rc4_40_get_params Failed
+rc4_dinit Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_dupctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
 
-8 Top func: ossl_cipher_generic_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_40_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+
+6 Top func: ossl_cipher_generic_cipher
+
+7 Top func: rc4_freectx
+
+8 Top func: ossl_cipher_generic_stream_update
 
 9 Top func: rc4_einit
 
-10 Top func: ossl_cipher_generic_stream_update
-
-11 Top func: rc4_freectx
-     Top func: rc4_128_newctx Failed
-
-12 Top func: ossl_cipher_var_keylen_settable_ctx_params
-
-13 Top func: ossl_cipher_generic_get_ctx_params
+10 Top func: ossl_cipher_generic_get_ctx_params
      Top func: ossl_cipher_var_keylen_set_ctx_params Failed
-
-14 Top func: rc4_128_get_params
      Top func: ossl_cipher_generic_cipher Failed
      Top func: ossl_cipher_generic_stream_update Failed
-     Top func: rc4_einit Failed
      Top func: rc4_freectx Failed
+     Top func: rc4_einit Failed
 
-15 Top func: ossl_cipher_generic_gettable_params
-     Top func: ossl_cipher_var_keylen_settable_ctx_params Failed
+11 Top func: ossl_cipher_generic_gettable_params
+
+12 Top func: ossl_cipher_generic_gettable_ctx_params
+
+13 Top func: ossl_cipher_var_keylen_settable_ctx_params
      Top func: ossl_cipher_generic_get_ctx_params Failed
-     Top func: rc4_128_get_params Failed
+
+14 Top func: rc4_128_newctx
+
+15 Top func: rc4_128_get_params
      Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: ossl_cipher_generic_gettable_ctx_params Failed
+     Top func: ossl_cipher_var_keylen_settable_ctx_params Failed
+     Top func: rc4_128_newctx Failed
+     Top func: rc4_128_get_params Failed
 
 Update global ICallees info
 
@@ -130,11 +130,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001421
-# Typebuilder time     		0.000294
-# MLTA time            		0.000412
-# Icall alias time     		7e-06
-# Func alias time      		0.001408
-# One layer alias time 		5e-06
+# Load time            		0.006434
+# Typebuilder time     		0.00027
+# MLTA time            		0.000308
+# Icall alias time     		6.8e-05
+# Func alias time      		0.008253
+# One layer alias time 		7e-06
 # Escape alias time    		5.8e-05
-# DB time              		0.002135
+# DB time              		0.002053

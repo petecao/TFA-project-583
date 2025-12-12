@@ -141,17 +141,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 6 Top func: eckem_settable_ctx_params
 
 7 Top func: eckem_auth_decapsulate_init
-     Top func: eckem_freectx Failed
-     Top func: eckem_newctx Failed
      Top func: eckem_encapsulate Failed
+     Top func: eckem_newctx Failed
+     Top func: eckem_freectx Failed
+     Top func: eckem_auth_encapsulate_init Failed
      Top func: eckem_decapsulate Failed
      Top func: eckem_set_ctx_params Failed
-     Top func: eckem_auth_encapsulate_init Failed
      Top func: eckem_settable_ctx_params Failed
 
-8 Top func: eckem_encapsulate_init
+8 Top func: eckem_decapsulate_init
 
-9 Top func: eckem_decapsulate_init
+9 Top func: eckem_encapsulate_init
      Top func: eckem_auth_decapsulate_init Failed
      Top func: eckem_encapsulate_init Failed
      Top func: eckem_decapsulate_init Failed
@@ -197,11 +197,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003801
-# Typebuilder time     		0.000367
-# MLTA time            		0.000307
-# Icall alias time     		7e-05
-# Func alias time      		0.003301
-# One layer alias time 		7e-06
+# Load time            		0.004227
+# Typebuilder time     		0.000439
+# MLTA time            		0.000387
+# Icall alias time     		5.3e-05
+# Func alias time      		0.001921
+# One layer alias time 		6e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002022
+# DB time              		0.002014

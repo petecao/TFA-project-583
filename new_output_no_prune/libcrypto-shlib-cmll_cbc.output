@@ -28,19 +28,13 @@ Openmp enabled
 0 Top func: Camellia_encrypt
 
 1Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Camellia_decrypt
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Camellia_decryptMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Camellia_encryptMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -52,7 +46,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 0
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Camellia_encryptMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
 aliased_callset size: 0
 
 Analyzed func: Camellia_decrypt
@@ -100,11 +100,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001246
-# Typebuilder time     		0.000174
-# MLTA time            		0.000183
-# Icall alias time     		7.9e-05
-# Func alias time      		0.001803
-# One layer alias time 		1e-05
-# Escape alias time    		6.3e-05
-# DB time              		0.001953
+# Load time            		0.005227
+# Typebuilder time     		0.000181
+# MLTA time            		0.000182
+# Icall alias time     		0.000104
+# Func alias time      		0.008235
+# One layer alias time 		6.7e-05
+# Escape alias time    		0.000823
+# DB time              		0.002144

@@ -25,27 +25,27 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ripe_final
+0 Top func: ripe_update
 
-1 Top func: ripe_init
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ripe_final
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: ripe_update
+ Top func: ripe_init
 
-Analyzed func: ripe_initMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ripe_updateMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-
-Analyzed func: ripe_update
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: ripe_final
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: ripe_init
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001314
-# Typebuilder time     		0.000229
-# MLTA time            		0.000243
-# Icall alias time     		6.6e-05
-# Func alias time      		0.001511
+# Load time            		0.014218
+# Typebuilder time     		0.000242
+# MLTA time            		0.000237
+# Icall alias time     		9.7e-05
+# Func alias time      		0.008293
 # One layer alias time 		8e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.001964
+# Escape alias time    		5.7e-05
+# DB time              		0.002024

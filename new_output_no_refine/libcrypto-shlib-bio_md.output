@@ -30,7 +30,7 @@ Openmp enabled
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-md_getsMerge complete --- Not blocked by TBAA or TFA check
+bread_convMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -40,7 +40,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-bread_convMerge complete --- Not blocked by TBAA or TFA check
+md_getsMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -62,7 +62,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-md_ctrlMerge complete --- Not blocked by TBAA or TFA check
+md_freeMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -73,7 +73,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-md_freeMerge complete --- Not blocked by TBAA or TFA check
+md_ctrlMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -90,7 +90,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 bwrite_convMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -104,6 +103,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: bread_conv
@@ -152,11 +152,11 @@ Analyzed func: md_new
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: md_write
+Analyzed func: md_callback_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: md_callback_ctrl
+Analyzed func: md_write
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -201,11 +201,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001857
-# Typebuilder time     		0.000253
-# MLTA time            		0.000302
-# Icall alias time     		6.6e-05
-# Func alias time      		0.001151
-# One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002127
+# Load time            		0.001921
+# Typebuilder time     		0.000247
+# MLTA time            		0.000289
+# Icall alias time     		6.9e-05
+# Func alias time      		0.005544
+# One layer alias time 		6.3e-05
+# Escape alias time    		0.000805
+# DB time              		0.002287

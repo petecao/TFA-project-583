@@ -29,17 +29,21 @@ Openmp enabled
 
 1 Top func: test_namemap_independent
 
-2 Top func: test_cipher_is_a
+2 Top func: test_namemap_stored
 
-3 Top func: test_namemap_empty
+3 Top func: test_cipher_is_a
 
-4 Top func: test_namemap_stored
+4 Top func: test_namemap_empty
 
-5 Top func: test_cipherbyname
-
-6 Top func: test_digest_is_a
+Analyzed func: test_namemap_independent
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: test_digestbyname
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_namemap_stored
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -47,15 +51,11 @@ Analyzed func: test_cipher_is_a
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+5 Top func: test_cipherbyname
+
+6 Top func: test_digest_is_a
+
 Analyzed func: test_namemap_empty
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_namemap_independent
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: test_namemap_stored
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001826
-# Typebuilder time     		0.000489
-# MLTA time            		0.000262
-# Icall alias time     		8e-06
-# Func alias time      		0.002937
-# One layer alias time 		5e-06
-# Escape alias time    		6.1e-05
-# DB time              		0.001993
+# Load time            		0.010077
+# Typebuilder time     		0.000295
+# MLTA time            		0.000225
+# Icall alias time     		0.000102
+# Func alias time      		0.017625
+# One layer alias time 		8e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.003088

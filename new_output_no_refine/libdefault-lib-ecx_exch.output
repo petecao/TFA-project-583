@@ -35,25 +35,25 @@ Openmp enabled
 
 4 Top func: ecx_get_ctx_params
 
-5 Top func: ecx_gettable_ctx_params
+5 Top func: x448_newctx
 
-6 Top func: x448_newctx
-
-7 Top func: x448_init
+6 Top func: ecx_gettable_ctx_params
      Top func: ecx_derive Failed
      Top func: x25519_newctx Failed
      Top func: ecx_freectx Failed
      Top func: ecx_dupctx Failed
-     Top func: ecx_get_ctx_params Failed
      Top func: x448_newctx Failed
+     Top func: ecx_get_ctx_params Failed
+
+7 Top func: ecx_set_peer
+
+8 Top func: x25519_init
+
+9 Top func: x448_init
      Top func: ecx_gettable_ctx_params Failed
-
-8 Top func: ecx_set_peer
-
-9 Top func: x25519_init
-     Top func: x448_init Failed
-     Top func: x25519_init Failed
      Top func: ecx_set_peer Failed
+     Top func: x25519_init Failed
+     Top func: x448_init Failed
 
 Update global ICallees info
 
@@ -96,11 +96,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00186
-# Typebuilder time     		0.000269
-# MLTA time            		0.000274
-# Icall alias time     		6.7e-05
-# Func alias time      		0.001537
+# Load time            		0.001948
+# Typebuilder time     		0.000494
+# MLTA time            		0.000276
+# Icall alias time     		6.1e-05
+# Func alias time      		0.000806
 # One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.001965
+# Escape alias time    		5.6e-05
+# DB time              		0.002084

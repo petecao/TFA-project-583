@@ -26,12 +26,12 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: dsa_init
+0 Top func: dsa_sign_setup_no_digest
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-dsa_sign_setup_no_digestMerge complete --- Not blocked by TBAA or TFA check
+dsa_initMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -51,10 +51,9 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 dsa_do_signMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -63,19 +62,20 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 dsa_finishMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-dsa_sign_setup_no_digestMerge complete --- Not blocked by TBAA or TFA check
+dsa_initMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -87,7 +87,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-dsa_init
+dsa_sign_setup_no_digest
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
@@ -151,11 +151,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.004073
-# Typebuilder time     		0.000351
-# MLTA time            		0.000341
-# Icall alias time     		0.000107
-# Func alias time      		0.013894
-# One layer alias time 		6.6e-05
-# Escape alias time    		0.000801
-# DB time              		0.002351
+# Load time            		0.003091
+# Typebuilder time     		0.000349
+# MLTA time            		0.000339
+# Icall alias time     		0.000102
+# Func alias time      		0.00635
+# One layer alias time 		8e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002015

@@ -29,70 +29,37 @@ WARNING: matchStructTypes problem!
 
 0 Top func: msblob2dsa_newctx
 
-1 Top func: msblob2key_export_object
+1 Top func: ossl_b2i_DSA_after_header
 
-2 Top func: ossl_b2i_DSA_after_header
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+msblob2key_export_object
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-DSA_free
-Merge complete --- Not blocked by TBAA or TFA check
+msblob2key_does_selectionMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+
 4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+DSA_freeMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-msblob2key_does_selectionMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-msblob2dsa_newctxMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-msblob2key_export_objectMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-5 Top func: Merge complete --- Not blocked by TBAA or TFA check
-msblob2key_freectxMerge complete --- Not blocked by TBAA or TFA check
-
-     Top func: msblob2key_does_selectionMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-
-6 Top func: msblob2rsa_newctx
-
-7 Top func: Merge complete --- Not blocked by TBAA or TFA check
-msblob2key_decodeMerge complete --- Not blocked by TBAA or TFA check
-
-     Top func: msblob2key_freectx Failed
-     Top func: ossl_b2i_DSA_after_header Failed
-     Top func: msblob2rsa_newctx Failed
-     Top func: DSA_free Failed
-     Top func: msblob2key_decode Failed
-
-8 Top func: ossl_b2i_RSA_after_header
-
-9 Top func: Merge complete --- Not blocked by TBAA or TFA check
 rsa_adjustMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-10Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -138,20 +105,53 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: ossl_b2i_RSA_after_header Failed
+7 Top func: ossl_b2i_RSA_after_header
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: msblob2key_export_object Failed
+     Top func: ossl_b2i_DSA_after_header Failed
+     Top func: msblob2key_does_selection Failed
+     Top func: msblob2dsa_newctx Failed
+     Top func: DSA_free Failed
      Top func: rsa_adjust Failed
+
+8 Top func: msblob2rsa_newctx
+
+9 Top func: msblob2key_freectx
+
+10 Top func: msblob2key_decode
      Top func: RSA_free Failed
+     Top func: ossl_b2i_RSA_after_header Failed
+     Top func: msblob2rsa_newctx Failed
+     Top func: msblob2key_decode Failed
+     Top func: msblob2key_freectx Failed
 
 Update global ICallees info
 
-0 Update icall:   %140 = call ptr %137(ptr noundef %18, i32 noundef %138, i32 noundef %139), !dbg !353
+0 Update icall:   %43 = call i32 %38(ptr noundef %39, i32 noundef %40, ptr noundef %41, ptr noundef %42), !dbg !248
 
 1 Update icall:   %223 = call i32 %220(ptr noundef %221, ptr noundef %222), !dbg !443
 
-2 Update icall:   %43 = call i32 %38(ptr noundef %39, i32 noundef %40, ptr noundef %41, ptr noundef %42), !dbg !248
+2 Update icall:   call void %200(ptr noundef %201, ptr noundef %202), !dbg !409
 
-3 Update icall:   call void %200(ptr noundef %201, ptr noundef %202), !dbg !409
+3 Update icall:   %140 = call ptr %137(ptr noundef %18, i32 noundef %138, i32 noundef %139), !dbg !353
 
 4 Update icall:   call void %233(ptr noundef %234), !dbg !454
 
@@ -162,11 +162,20 @@ Update global ICallees info
 0 Top func: msblob2key_decode
 ---icall:   call void %233(ptr noundef %234), !dbg !454
 
-1 Top func: msblob2key_decodeMerge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+msblob2key_decodeMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 ---icall: Merge complete --- Not blocked by TBAA or TFA check
   Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -329,15 +338,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 start oneLayerHandler
 
@@ -376,11 +376,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003463
-# Typebuilder time     		0.000395
-# MLTA time            		0.000472
-# Icall alias time     		0.001238
-# Func alias time      		0.014038
-# One layer alias time 		1.4e-05
-# Escape alias time    		6.9e-05
-# DB time              		0.002562
+# Load time            		0.002012
+# Typebuilder time     		0.000376
+# MLTA time            		0.000435
+# Icall alias time     		0.001235
+# Func alias time      		0.002702
+# One layer alias time 		7e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002428

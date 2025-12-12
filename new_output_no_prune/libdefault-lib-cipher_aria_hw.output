@@ -27,88 +27,93 @@ Openmp enabled
 
 0 Top func: cipher_hw_aria_initkey
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_hw_chunked_cfb128
+ Top func: cipher_hw_aria_copyctx
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_cipher_hw_generic_ecb
+ Top func: ossl_cipher_hw_generic_ecbMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_cipher_hw_chunked_ofb128
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_chunked_ofb128Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_aria_copyctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_chunked_cfb128
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-5 Top func: ossl_cipher_hw_chunked_cfb8Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-
+5Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-6Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_cipher_hw_generic_cfb1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_generic_cfb1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_hw_chunked_cfb128Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_generic_ecbMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_hw_generic_ecb
-DefinitionFuncSet size: 0
+0
 aliased_callset size: 0
 
 Analyzed func: ossl_cipher_hw_chunked_ofb128
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: ossl_cipher_hw_chunked_cfb8
+Analyzed func: ossl_cipher_hw_chunked_cfb128
 DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+6 Top func: ossl_cipher_hw_chunked_cfb8
+
+Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ossl_cipher_hw_generic_ctr
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_generic_cfb1Merge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+8 Top func: ossl_cipher_hw_chunked_cbc
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+cipher_hw_aria_copyctxMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: cipher_hw_aria_initkey
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-7 Top func: ossl_cipher_hw_generic_ctr
-
-Merge complete --- Not blocked by TBAA or TFA check
-8Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_cipher_hw_chunked_cbc
-
-Merge complete --- Not blocked by TBAA or TFA check
-9Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_aria_encrypt
+9 Top func: ossl_aria_encrypt
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_hw_generic_cfb1
+ossl_cipher_hw_chunked_cfb8Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
@@ -120,30 +125,25 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_aria_copyctxMerge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_generic_ctrMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
+0
+Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_hw_generic_ctr
+ossl_cipher_hw_chunked_cbc
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0
-
-Analyzed func: ossl_cipher_hw_chunked_cbc
-DefinitionFuncSet size: 0
-aliased_callset size: 0
      Top func: ossl_aria_encrypt Failed
 
 Update global ICallees info
@@ -187,11 +187,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001548
+# Load time            		0.001631
 # Typebuilder time     		0.000249
-# MLTA time            		0.000291
-# Icall alias time     		6.4e-05
-# Func alias time      		0.001254
+# MLTA time            		0.000298
+# Icall alias time     		7.1e-05
+# Func alias time      		0.003247
 # One layer alias time 		7e-06
-# Escape alias time    		6.9e-05
-# DB time              		0.002193
+# Escape alias time    		5.5e-05
+# DB time              		0.00198

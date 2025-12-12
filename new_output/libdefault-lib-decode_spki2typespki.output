@@ -27,18 +27,18 @@ Openmp enabled
 
 0 Top func: spki2typespki_settable_ctx_params
 
-1 Top func: spki2typespki_freectx
+1 Top func: spki2typespki_set_ctx_params
 
-2 Top func: spki2typespki_newctx
+2 Top func: spki2typespki_freectx
 
-3 Top func: spki2typespki_decode
+3 Top func: spki2typespki_newctx
 
-4 Top func: spki2typespki_set_ctx_params
-     Top func: spki2typespki_freectx Failed
+4 Top func: spki2typespki_decode
+     Top func: spki2typespki_set_ctx_params Failed
      Top func: spki2typespki_settable_ctx_params Failed
+     Top func: spki2typespki_freectx Failed
      Top func: spki2typespki_newctx Failed
      Top func: spki2typespki_decode Failed
-     Top func: spki2typespki_set_ctx_params Failed
 
 Update global ICallees info
 
@@ -148,11 +148,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.002113
-# Typebuilder time     		0.000282
-# MLTA time            		0.000257
-# Icall alias time     		0.000802
-# Func alias time      		0.000734
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002165
+# Load time            		0.002095
+# Typebuilder time     		0.000283
+# MLTA time            		0.000258
+# Icall alias time     		0.000762
+# Func alias time      		0.000794
+# One layer alias time 		9e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002023

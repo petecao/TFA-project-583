@@ -25,12 +25,12 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: evp_kem_up_ref
+0 Top func: evp_kem_from_algorithm
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-evp_kem_from_algorithm
+evp_kem_up_ref
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -40,55 +40,55 @@ Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 evp_kem_freeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-evp_kem_up_refMerge complete --- Not blocked by TBAA or TFA check
+evp_kem_from_algorithmMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: evp_kem_up_ref
+DefinitionFuncSet size: 1
+aliased_callset size: 0
 
 Analyzed func: evp_kem_free
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: evp_kem_from_algorithm
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
 Update global ICallees info
 
-0 Update icall:   %275 = call i32 %267(ptr noundef %271, ptr noundef %272, ptr noundef %273, ptr noundef %274), !dbg !1098
+0 Update icall:   %233 = call i32 %225(ptr noundef %229, ptr noundef %230, ptr noundef %231, ptr noundef %232), !dbg !1058
 
-1 Update icall:   %55 = call i32 %46(ptr noundef %50, ptr noundef %51, ptr noundef %52, ptr noundef %53, i64 noundef %54), !dbg !864
+1 Update icall:   %50 = call i32 %41(ptr noundef %45, ptr noundef %46, ptr noundef %47, ptr noundef %48, ptr noundef %49), !dbg !861
 
-2 Update icall:   %233 = call i32 %225(ptr noundef %229, ptr noundef %230, ptr noundef %231, ptr noundef %232), !dbg !1058
+2 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !179
 
-3 Update icall:   %252 = call i32 %245(ptr noundef %249, ptr noundef %250, ptr noundef %251), !dbg !1076
+3 Update icall:   %275 = call i32 %267(ptr noundef %271, ptr noundef %272, ptr noundef %273, ptr noundef %274), !dbg !1098
 
-4 Update icall:   %294 = call i32 %287(ptr noundef %291, ptr noundef %292, ptr noundef %293), !dbg !1116
+4 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !179
 
-5 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !179
+5 Update icall:   %294 = call i32 %287(ptr noundef %291, ptr noundef %292, ptr noundef %293), !dbg !1116
 
-6 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !179
+6 Update icall:   %252 = call i32 %245(ptr noundef %249, ptr noundef %250, ptr noundef %251), !dbg !1076
 
 7 Update icall:   %202 = call ptr %197(ptr noundef %201), !dbg !1031
 
-8 Update icall:   %50 = call i32 %41(ptr noundef %45, ptr noundef %46, ptr noundef %47, ptr noundef %48, ptr noundef %49), !dbg !861
+8 Update icall:   %55 = call i32 %46(ptr noundef %50, ptr noundef %51, ptr noundef %52, ptr noundef %53, i64 noundef %54), !dbg !864
 
  Start ICall Alias Analysis
 
@@ -129,11 +129,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003392
-# Typebuilder time     		0.00046
-# MLTA time            		0.000396
-# Icall alias time     		0.0001
-# Func alias time      		0.005382
-# One layer alias time 		6.4e-05
-# Escape alias time    		0.000754
-# DB time              		0.002301
+# Load time            		0.004102
+# Typebuilder time     		0.000428
+# MLTA time            		0.000363
+# Icall alias time     		9.2e-05
+# Func alias time      		0.004958
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002025

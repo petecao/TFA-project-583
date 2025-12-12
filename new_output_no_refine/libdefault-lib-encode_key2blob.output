@@ -25,35 +25,35 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ec2blob_does_selection
+0 Top func: key2blob_newctx
 
-1 Top func: key2blob_newctx
+1 Top func: ec2blob_encode
 
-2 Top func: ec2blob_encode
+2 Top func: ec2blob_free_object
 
-3 Top func: ec2blob_free_object
+3 Top func: ec2blob_does_selection
 
-4 Top func: sm22blob_free_object
+4 Top func: sm22blob_does_selection
 
 5 Top func: sm22blob_import_object
-     Top func: ec2blob_does_selection Failed
-     Top func: key2blob_newctx Failed
-     Top func: ec2blob_free_object Failed
-     Top func: sm22blob_free_object Failed
-     Top func: ec2blob_encode Failed
 
-6 Top func: ec2blob_import_object
+6 Top func: sm22blob_encode
+     Top func: key2blob_newctx Failed
+     Top func: ec2blob_encode Failed
+     Top func: ec2blob_free_object Failed
+     Top func: ec2blob_does_selection Failed
+     Top func: sm22blob_import_object Failed
+     Top func: sm22blob_does_selection Failed
 
 7 Top func: key2blob_freectx
 
-8 Top func: sm22blob_does_selection
+8 Top func: sm22blob_free_object
 
-9 Top func: sm22blob_encode
-     Top func: sm22blob_import_object Failed
+9 Top func: ec2blob_import_object
+     Top func: sm22blob_encode Failed
+     Top func: sm22blob_free_object Failed
      Top func: ec2blob_import_object Failed
      Top func: key2blob_freectx Failed
-     Top func: sm22blob_encode Failed
-     Top func: sm22blob_does_selection Failed
 
 Update global ICallees info
 
@@ -96,11 +96,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001651
-# Typebuilder time     		0.00026
-# MLTA time            		0.000266
-# Icall alias time     		7.5e-05
-# Func alias time      		0.003292
+# Load time            		0.001746
+# Typebuilder time     		0.000249
+# MLTA time            		0.000298
+# Icall alias time     		7.1e-05
+# Func alias time      		0.000835
 # One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002108
+# Escape alias time    		5.5e-05
+# DB time              		0.002129

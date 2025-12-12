@@ -25,115 +25,115 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_cipher_generic_cipher
+0 Top func: des_gettable_ctx_params
 
 1 Top func: des_ecb_get_params
 
-2 Top func: des_gettable_ctx_params
+2 Top func: ossl_cipher_generic_cipher
 
-3 Top func: des_cbc_newctx
+3 Top func: des_einit
 
-4 Top func: des_cfb64_newctx
+4 Top func: des_cbc_newctx
 
-5 Top func: ossl_cipher_generic_stream_final
+5 Top func: des_cfb64_newctx
 
-6 Top func: des_einit
-
-7 Top func: des_cfb1_get_params
+6 Top func: ossl_cipher_generic_stream_final
      Top func: des_gettable_ctx_params Failed
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: des_einit Failed
      Top func: des_ecb_get_params Failed
-     Top func: ossl_cipher_generic_stream_final Failed
      Top func: des_cbc_newctx Failed
      Top func: des_cfb64_newctx Failed
-     Top func: des_einit Failed
 
-8 Top func: ossl_cipher_generic_set_ctx_params
+7 Top func: ossl_cipher_generic_set_ctx_params
 
+8Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+des_ecb_newctx
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 9Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_gettable_params
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-10Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_ofb64_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-11Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_cbc_get_paramsMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-12Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_cfb64_get_paramsMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_cfb1_get_paramsMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-13Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 des_dinitMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-14Merge complete --- Not blocked by TBAA or TFA check
+10Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-des_cfb8_newctxMerge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+11 Top func: Merge complete --- Not blocked by TBAA or TFA check
+des_cbc_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_cipher_generic_gettable_params Failed
+ossl_cipher_generic_stream_finalMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+12Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+des_cfb64_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+13Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: des_ofb64_newctx
+     Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: des_ecb_newctx Failed
+     Top func: des_dinit Failed
      Top func: des_cbc_get_params Failed
-     Top func: des_ofb64_newctx Failed
-     Top func: des_cfb64_get_params Failed
+
+14 Top func: des_cfb1_get_params
 
 15 Top func: des_get_ctx_params
+     Top func: des_cfb64_get_params Failed
 
-16 Top func: ossl_cipher_generic_stream_update
+16 Top func: des_dupctx
 
-17 Top func: des_ofb64_get_params
-     Top func: des_dinit Failed
-     Top func: des_cfb8_newctx Failed
+17 Top func: ossl_cipher_generic_block_update
+
+18 Top func: ossl_cipher_generic_stream_update
      Top func: ossl_cipher_generic_set_ctx_params Failed
+     Top func: des_ofb64_newctx Failed
 
-18 Top func: des_cfb1_newctx
+19 Top func: des_cfb1_newctx
 
-19 Top func: ossl_cipher_generic_block_update
+20 Top func: ossl_cipher_generic_settable_ctx_params
 
-20 Top func: des_cfb8_get_params
-
-21 Top func: ossl_cipher_generic_settable_ctx_params
-     Top func: ossl_cipher_generic_stream_update Failed
+21 Top func: des_ofb64_get_params
      Top func: des_get_ctx_params Failed
-     Top func: des_ofb64_get_params Failed
-
-22 Top func: ossl_cipher_generic_block_final
-     Top func: des_cfb1_newctx Failed
-
-23 Top func: des_freectx
-     Top func: ossl_cipher_generic_block_update Failed
-     Top func: ossl_cipher_generic_settable_ctx_params Failed
-     Top func: des_cfb8_get_params Failed
-
-24 Top func: des_dupctx
-
-25 Top func: des_ecb_newctx
-     Top func: ossl_cipher_generic_block_final Failed
-     Top func: des_freectx Failed
+     Top func: des_cfb1_get_params Failed
      Top func: des_dupctx Failed
-     Top func: des_ecb_newctx Failed
-     Top func: ossl_cipher_generic_cipher Failed
+     Top func: ossl_cipher_generic_block_update Failed
+     Top func: ossl_cipher_generic_stream_update Failed
+
+22 Top func: des_cfb8_get_params
+
+23 Top func: des_cfb8_newctx
+
+24 Top func: des_freectx
+
+25 Top func: ossl_cipher_generic_block_final
+     Top func: ossl_cipher_generic_settable_ctx_params Failed
+     Top func: des_cfb1_newctx Failed
+     Top func: des_ofb64_get_params Failed
+     Top func: des_cfb8_get_params Failed
+     Top func: des_cfb8_newctx Failed
+     Top func: des_freectx Failed
+     Top func: ossl_cipher_generic_block_final Failed
 
 Update global ICallees info
 
@@ -180,11 +180,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001952
-# Typebuilder time     		0.000533
-# MLTA time            		0.000519
+# Load time            		0.002318
+# Typebuilder time     		0.000354
+# MLTA time            		0.000552
 # Icall alias time     		5.8e-05
-# Func alias time      		0.002541
-# One layer alias time 		8e-06
+# Func alias time      		0.003468
+# One layer alias time 		7e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.001968
+# DB time              		0.00214

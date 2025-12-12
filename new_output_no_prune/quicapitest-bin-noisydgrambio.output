@@ -25,62 +25,58 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: noisy_dgram_recvmmsg
+0 Top func: noisy_dgram_ctrl
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_newMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: noisy_dgram_recvmmsg
 
-Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: noisy_dgram_sendmmsg
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+3 Top func: noisy_dgram_new
 
+4 Top func: noisy_dgram_free
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_freeMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-noisy_dgram_newMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+noisy_dgram_sendmmsg
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
@@ -88,16 +84,20 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: noisy_dgram_recvmmsg
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: noisy_dgram_sendmmsg
+Analyzed func: noisy_dgram_new
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: noisy_dgram_ctrl
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: noisy_dgram_recvmmsg
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -107,9 +107,9 @@ aliased_callset size: 0
 
 Update global ICallees info
 
-0 Update icall:   %43 = call i64 %39(ptr noundef %42), !dbg !226
+0 Update icall:   %97 = call i64 %93(ptr noundef %96), !dbg !279
 
-1 Update icall:   %97 = call i64 %93(ptr noundef %96), !dbg !279
+1 Update icall:   %43 = call i64 %39(ptr noundef %42), !dbg !226
 
  Start ICall Alias Analysis
 
@@ -150,11 +150,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00307
-# Typebuilder time     		0.000344
-# MLTA time            		0.000308
-# Icall alias time     		7.5e-05
-# Func alias time      		0.005657
+# Load time            		0.009603
+# Typebuilder time     		0.000341
+# MLTA time            		0.000307
+# Icall alias time     		8e-05
+# Func alias time      		0.001597
 # One layer alias time 		8e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.001969
+# Escape alias time    		5.6e-05
+# DB time              		0.002309

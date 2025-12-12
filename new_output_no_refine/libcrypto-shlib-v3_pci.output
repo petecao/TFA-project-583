@@ -25,39 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: X509V3_conf_free
+0 Top func: PROXY_CERT_INFO_EXTENSION_it
 
-Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-PROXY_CERT_INFO_EXTENSION_itMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: r2i_pci
 
-Merge complete --- Not blocked by TBAA or TFA check
+2 Top func: i2r_pci
 
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_pciMerge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-r2i_pciMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-PROXY_CERT_INFO_EXTENSION_it FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2r_pciMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-r2i_pci FailedMerge complete --- Not blocked by TBAA or TFA check
-
+3 Top func: X509V3_conf_free
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -106,10 +80,36 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: PROXY_CERT_INFO_EXTENSION_it Failed
+     Top func: r2i_pci Failed
 
 Analyzed func: X509V3_conf_free
 DefinitionFuncSet size: 0
 aliased_callset size: 0
+     Top func: i2r_pci Failed
 
 Update global ICallees info
 
@@ -152,11 +152,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002384
-# Typebuilder time     		0.000332
-# MLTA time            		0.000234
-# Icall alias time     		6.3e-05
-# Func alias time      		0.000893
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002084
+# Load time            		0.002426
+# Typebuilder time     		0.000266
+# MLTA time            		0.000232
+# Icall alias time     		8.1e-05
+# Func alias time      		0.001527
+# One layer alias time 		6.6e-05
+# Escape alias time    		0.000814
+# DB time              		0.002139

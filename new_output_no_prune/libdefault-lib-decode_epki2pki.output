@@ -25,26 +25,26 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: epki2pki_decode
+0 Top func: epki2pki_freectx
 
-1 Top func: epki2pki_newctx
+1 Top func: epki2pki_settable_ctx_params
 
-2 Top func: epki2pki_freectx
+2 Top func: epki2pki_newctx
 
-3 Top func: epki2pki_settable_ctx_params
+3 Top func: epki2pki_decode
 
 4 Top func: epki2pki_set_ctx_params
-     Top func: epki2pki_decode Failed
+     Top func: epki2pki_settable_ctx_params Failed
      Top func: epki2pki_freectx Failed
      Top func: epki2pki_newctx Failed
-     Top func: epki2pki_settable_ctx_params Failed
+     Top func: epki2pki_decode Failed
      Top func: epki2pki_set_ctx_params Failed
 
 Update global ICallees info
 
-0 Update icall:   %114 = call i32 %111(ptr noundef %112, ptr noundef %113), !dbg !355
+0 Update icall:   %49 = call i32 %46(ptr noundef %47, i64 noundef 1024, ptr noundef %26, ptr noundef null, ptr noundef %48), !dbg !264
 
-1 Update icall:   %49 = call i32 %46(ptr noundef %47, i64 noundef 1024, ptr noundef %26, ptr noundef null, ptr noundef %48), !dbg !264
+1 Update icall:   %114 = call i32 %111(ptr noundef %112, ptr noundef %113), !dbg !355
 
  Start ICall Alias Analysis
 
@@ -173,11 +173,11 @@ reduce_num_escape: 0
 reduce_num_total: 1
 
 
-# Load time            		0.001797
-# Typebuilder time     		0.000404
-# MLTA time            		0.000251
-# Icall alias time     		0.000934
-# Func alias time      		0.005431
-# One layer alias time 		9e-06
+# Load time            		0.002311
+# Typebuilder time     		0.000291
+# MLTA time            		0.000286
+# Icall alias time     		0.0009
+# Func alias time      		0.001001
+# One layer alias time 		8e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.001954
+# DB time              		0.002024

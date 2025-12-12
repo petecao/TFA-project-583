@@ -30,13 +30,18 @@ Openmp enabled
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
+ASN1_OCTET_STRING_itMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
 GENERAL_NAME_itMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: ASN1_OCTET_STRING_it
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -59,17 +64,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: ASN1_INTEGER_it
-DefinitionFuncSet size: 0
-aliased_callset size: 0
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -89,11 +83,17 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: GENERAL_NAME_it
+Analyzed func: ASN1_INTEGER_itMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Analyzed func: ASN1_OCTET_STRING_it
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: GENERAL_NAME_it
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -138,11 +138,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001338
-# Typebuilder time     		0.000224
-# MLTA time            		0.000204
-# Icall alias time     		3.5e-05
-# Func alias time      		0.001049
-# One layer alias time 		5e-06
+# Load time            		0.013634
+# Typebuilder time     		0.000226
+# MLTA time            		0.000209
+# Icall alias time     		6.7e-05
+# Func alias time      		0.008194
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002047
+# DB time              		0.001954

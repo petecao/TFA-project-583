@@ -95,15 +95,15 @@ aliased_callset size: 1
 
 Update global ICallees info
 
-0 Update icall:   call void %63(ptr noundef %64, ptr noundef %65, i32 noundef %66, ptr noundef %69), !dbg !139
+0 Update icall:   %102 = call i32 %98(ptr noundef %101), !dbg !174
 
-1 Update icall:   %42 = call i32 %35(ptr noundef %36, i32 noundef %37, i32 noundef %38, ptr noundef %41, ptr noundef %13), !dbg !106
+1 Update icall:   %90 = call i32 %83(ptr noundef %84, i32 noundef %85, i32 noundef %86, ptr noundef %89, ptr noundef %13), !dbg !159
 
-2 Update icall:   %23 = call i32 %18(i32 noundef %19, ptr noundef %22), !dbg !91
+2 Update icall:   call void %63(ptr noundef %64, ptr noundef %65, i32 noundef %66, ptr noundef %69), !dbg !139
 
-3 Update icall:   %102 = call i32 %98(ptr noundef %101), !dbg !174
+3 Update icall:   %42 = call i32 %35(ptr noundef %36, i32 noundef %37, i32 noundef %38, ptr noundef %41, ptr noundef %13), !dbg !106
 
-4 Update icall:   %90 = call i32 %83(ptr noundef %84, i32 noundef %85, i32 noundef %86, ptr noundef %89, ptr noundef %13), !dbg !159
+4 Update icall:   %23 = call i32 %18(i32 noundef %19, ptr noundef %22), !dbg !91
 
  Start ICall Alias Analysis
 
@@ -144,11 +144,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001723
-# Typebuilder time     		0.000241
-# MLTA time            		0.000301
-# Icall alias time     		3.9e-05
-# Func alias time      		0.001886
-# One layer alias time 		7e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.002217
+# Load time            		0.001925
+# Typebuilder time     		0.000215
+# MLTA time            		0.000264
+# Icall alias time     		0.000125
+# Func alias time      		0.00196
+# One layer alias time 		1e-05
+# Escape alias time    		5.7e-05
+# DB time              		0.00213

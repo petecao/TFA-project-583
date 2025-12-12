@@ -47,59 +47,56 @@ template_hasMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
-5 Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_get_params
+5Merge complete --- Not blocked by TBAA or TFA check
+ Top func: template_get_params
 
+Merge complete --- Not blocked by TBAA or TFA check
 6 Top func: Merge complete --- Not blocked by TBAA or TFA check
 template_set_params
 Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_exportMerge complete --- Not blocked by TBAA or TFA check
- Failed
+template_export FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_gen_cleanup Failed
-     Top func: template_gen_settable_params Failed
+     Top func: template_gen_cleanup Failed
      Top func: template_has Failed
+     Top func: template_gen_settable_params Failed
      Top func: template_get_params Failed
 
 7 Top func: template_gen_init
 
 8 Top func: template_dup
 
-9 Top func: template_gen
+9 Top func: template_match
 
-10 Top func: template_match
+10 Top func: template_gen
      Top func: template_set_params Failed
 
 11 Top func: template_gettable_params
      Top func: template_new Failed
 
 12 Top func: template_settable_params
-     Top func: template_dup Failed
-     Top func: template_gen_init Failed
-     Top func: template_gen Failed
      Top func: template_match Failed
+     Top func: template_gen_init Failed
+     Top func: template_dup Failed
+     Top func: template_gen Failed
 
 13 Top func: template_free
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
+template_gettable_params FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 14Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_imexport_types
+template_imexport_typesMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-15 Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_gen_set_paramsMerge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+ Top func: template_gen_set_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -118,22 +115,25 @@ Merge complete --- Not blocked by TBAA or TFA check
 template_settable_paramsMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_imexport_typesMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-template_freeMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
      Top func: Merge complete --- Not blocked by TBAA or TFA check
 template_importMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+template_imexport_typesMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+template_freeMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -265,11 +265,11 @@ reduce_num_escape: 0
 reduce_num_total: 3
 
 
-# Load time            		0.002627
-# Typebuilder time     		0.00045
-# MLTA time            		0.000438
-# Icall alias time     		0.000688
-# Func alias time      		0.005141
+# Load time            		0.002687
+# Typebuilder time     		0.000442
+# MLTA time            		0.000452
+# Icall alias time     		0.000659
+# Func alias time      		0.004034
 # One layer alias time 		9e-06
 # Escape alias time    		6.3e-05
-# DB time              		0.001972
+# DB time              		0.002074

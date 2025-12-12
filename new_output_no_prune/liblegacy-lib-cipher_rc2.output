@@ -27,32 +27,33 @@ Openmp enabled
 
 0 Top func: rc2_128_ecb_newctx
 
-1 Top func: rc2_gettable_ctx_params
+1 Top func: rc2_dinit
 
-2 Top func: rc2_128_ecb_get_params
+2 Top func: rc2_gettable_ctx_params
 
-3 Top func: rc2_dinit
+3 Top func: rc2_128_ecb_get_params
 
-4 Top func: rc2_128_cbc_newctx
+4 Top func: rc2_128_ofb128_newctx
 
-5 Top func: rc2_128_ofb128_newctx
+5 Top func: rc2_128_cbc_newctx
 
 6 Top func: rc2_40_cbc_get_params
 
 7 Top func: rc2_128_ofb128_get_params
      Top func: rc2_128_ecb_newctx Failed
-     Top func: rc2_128_ecb_get_params Failed
      Top func: rc2_dinit Failed
+     Top func: rc2_128_ecb_get_params Failed
      Top func: rc2_gettable_ctx_params Failed
      Top func: rc2_128_ofb128_newctx Failed
-     Top func: rc2_128_cbc_newctx Failed
      Top func: rc2_40_cbc_get_params Failed
+     Top func: rc2_128_ofb128_get_params Failed
+     Top func: rc2_128_cbc_newctx Failed
 
 8 Top func: rc2_freectx
 
-9 Top func: ossl_cipher_generic_gettable_params
+9 Top func: ossl_cipher_generic_block_update
 
-10 Top func: ossl_cipher_generic_block_update
+10 Top func: ossl_cipher_generic_gettable_params
 
 11 Top func: rc2_set_ctx_params
 
@@ -64,12 +65,22 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 13 Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_64_cbc_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+14Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc2_128_cfb128_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
 rc2_128_cbc_get_paramsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: rc2_128_ofb128_get_paramsMerge complete --- Not blocked by TBAA or TFA check
- FailedMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -114,53 +125,42 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-14 Top func: rc2_64_cbc_newctx
-
-15 Top func: rc2_128_cfb128_newctx
      Top func: ossl_cipher_generic_block_update Failed
-     Top func: ossl_cipher_generic_gettable_params Failed
      Top func: rc2_freectx Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
      Top func: ossl_cipher_generic_stream_update Failed
+     Top func: rc2_128_cfb128_newctx Failed
      Top func: rc2_128_cbc_get_params Failed
+     Top func: rc2_64_cbc_newctx Failed
      Top func: rc2_set_ctx_params Failed
 
 16 Top func: ossl_cipher_generic_block_final
 
-17 Top func: rc2_get_ctx_params
+17 Top func: rc2_dupctx
 
-18 Top func: rc2_dupctx
+18 Top func: rc2_get_ctx_params
 
 19 Top func: ossl_cipher_generic_stream_final
 
-20 Top func: rc2_40_cbc_newctx
-     Top func: rc2_64_cbc_newctx Failed
-     Top func: rc2_128_cfb128_newctx Failed
+20 Top func: rc2_128_cfb128_get_params
 
-21 Top func: rc2_settable_ctx_params
+21 Top func: rc2_40_cbc_newctx
 
 22 Top func: rc2_64_cbc_get_params
-     Top func: ossl_cipher_generic_block_final Failed
 
-23 Top func: rc2_128_cfb128_get_params
-     Top func: rc2_get_ctx_params Failed
+23 Top func: rc2_settable_ctx_params
+     Top func: ossl_cipher_generic_block_final Failed
      Top func: rc2_dupctx Failed
      Top func: ossl_cipher_generic_stream_final Failed
+     Top func: rc2_get_ctx_params Failed
      Top func: rc2_40_cbc_newctx Failed
+     Top func: rc2_128_cfb128_get_params Failed
+     Top func: rc2_64_cbc_get_params Failed
+     Top func: rc2_settable_ctx_params Failed
 
 24 Top func: ossl_cipher_generic_cipher
 
 25 Top func: rc2_einit
-     Top func: rc2_settable_ctx_params Failed
-     Top func: rc2_64_cbc_get_params Failed
-     Top func: rc2_128_cfb128_get_params Failed
      Top func: ossl_cipher_generic_cipher Failed
      Top func: rc2_einit Failed
 
@@ -205,11 +205,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002405
-# Typebuilder time     		0.00033
-# MLTA time            		0.000429
-# Icall alias time     		1.1e-05
-# Func alias time      		0.002782
+# Load time            		0.002757
+# Typebuilder time     		0.000391
+# MLTA time            		0.000538
+# Icall alias time     		9e-06
+# Func alias time      		0.003129
 # One layer alias time 		5e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.00205
+# Escape alias time    		5.4e-05
+# DB time              		0.002351

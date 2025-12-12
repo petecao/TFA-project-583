@@ -1,0 +1,121 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-shlib-ssl3_meth.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-shlib-ssl3_meth.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libssl-shlib-ssl3_meth.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libssl-shlib-ssl3_meth.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: ssl3_set_crypto_state
+
+1 Top func: tls_default_validate_record_header
+
+2 Top func: ssl3_mac
+
+3 Top func: tls_default_read_n
+
+4 Top func: tls_get_max_records_default
+
+5 Top func: tls_prepare_record_header_default
+
+6 Top func: tls1_allocate_write_buffers
+     Top func: tls_default_validate_record_header Failed
+     Top func: tls_default_read_n Failed
+     Top func: tls_get_max_records_default Failed
+     Top func: ssl3_set_crypto_state Failed
+     Top func: tls_prepare_record_header_default Failed
+     Top func: ssl3_mac Failed
+
+7 Top func: tls_default_post_process_record
+
+8 Top func: tls_get_more_records
+
+9 Top func: tls_write_records_default
+
+10 Top func: ssl3_cipher
+
+11 Top func: tls_prepare_for_encryption_default
+     Top func: tls1_allocate_write_buffers Failed
+
+12 Top func: tls_default_set_protocol_version
+
+13 Top func: tls1_initialise_write_packets
+     Top func: tls_default_post_process_record Failed
+     Top func: tls_get_more_records Failed
+     Top func: tls_write_records_default Failed
+     Top func: tls_prepare_for_encryption_default Failed
+     Top func: ssl3_cipher Failed
+
+14 Top func: tls_post_encryption_processing_default
+     Top func: tls_default_set_protocol_version Failed
+     Top func: tls1_initialise_write_packets Failed
+     Top func: tls_post_encryption_processing_default Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.00228
+# Typebuilder time     		0.000367
+# MLTA time            		0.000391
+# Icall alias time     		6.7e-05
+# Func alias time      		0.006213
+# One layer alias time 		5.8e-05
+# Escape alias time    		0.000734
+# DB time              		0.00211

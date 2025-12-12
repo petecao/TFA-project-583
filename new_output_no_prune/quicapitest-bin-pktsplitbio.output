@@ -27,9 +27,10 @@ Openmp enabled
 
 0 Top func: pkt_split_dgram_recvmmsg
 
+Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-pkt_split_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -39,13 +40,11 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-pkt_split_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 pkt_split_dgram_recvmmsgMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -58,6 +57,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: pkt_split_dgram_sendmmsg
 DefinitionFuncSet size: 1
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001915
-# Typebuilder time     		0.000247
-# MLTA time            		0.000218
-# Icall alias time     		6.4e-05
-# Func alias time      		0.000824
-# One layer alias time 		7e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002129
+# Load time            		0.014767
+# Typebuilder time     		0.000258
+# MLTA time            		0.000214
+# Icall alias time     		7.1e-05
+# Func alias time      		0.00426
+# One layer alias time 		8e-06
+# Escape alias time    		5.7e-05
+# DB time              		0.002175

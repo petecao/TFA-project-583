@@ -27,7 +27,10 @@ Openmp enabled
 
 0 Top func: get_secret_key
 
-1 Top func: transfer_cb
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+transfer_cb
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -42,6 +45,19 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+get_secret_keyMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -97,22 +113,6 @@ Merge complete --- Not blocked by TBAA or TFA check
 Analyzed func: transfer_cb
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: get_secret_key
-DefinitionFuncSet size: 1
-aliased_callset size: 0
 
 Update global ICallees info
 
@@ -157,11 +157,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002533
-# Typebuilder time     		0.000279
-# MLTA time            		0.000282
-# Icall alias time     		6.5e-05
-# Func alias time      		0.002694
-# One layer alias time 		6.1e-05
-# Escape alias time    		0.000771
-# DB time              		0.002141
+# Load time            		0.002593
+# Typebuilder time     		0.00031
+# MLTA time            		0.000334
+# Icall alias time     		6.6e-05
+# Func alias time      		0.006199
+# One layer alias time 		6.3e-05
+# Escape alias time    		0.000793
+# DB time              		0.00231

@@ -27,39 +27,39 @@ Openmp enabled
 
 0 Top func: null_newctx
 
-1 Top func: null_cipher
+1 Top func: null_einit
 
-2 Top func: null_get_params
+2 Top func: null_cipher
 
-3 Top func: null_einit
+3 Top func: null_get_params
 
-4 Top func: null_set_ctx_params
+4 Top func: null_get_ctx_params
 
-5 Top func: null_get_ctx_params
+5 Top func: null_gettable_ctx_params
 
-6 Top func: null_settable_ctx_params
+6 Top func: null_set_ctx_params
 
-7 Top func: null_gettable_ctx_params
-     Top func: null_cipher Failed
-     Top func: null_newctx Failed
-     Top func: null_get_params Failed
+7 Top func: null_settable_ctx_params
      Top func: null_einit Failed
-     Top func: null_set_ctx_params Failed
+     Top func: null_newctx Failed
+     Top func: null_cipher Failed
+     Top func: null_get_params Failed
      Top func: null_get_ctx_params Failed
-     Top func: null_settable_ctx_params Failed
      Top func: null_gettable_ctx_params Failed
+     Top func: null_set_ctx_params Failed
 
-8 Top func: null_final
+8 Top func: null_dinit
 
 9 Top func: null_freectx
 
-10 Top func: ossl_cipher_generic_gettable_params
+10 Top func: null_final
 
-11 Top func: null_dinit
+11 Top func: ossl_cipher_generic_gettable_params
+     Top func: null_settable_ctx_params Failed
+     Top func: null_dinit Failed
+     Top func: null_freectx Failed
      Top func: null_final Failed
      Top func: ossl_cipher_generic_gettable_params Failed
-     Top func: null_freectx Failed
-     Top func: null_dinit Failed
 
 Update global ICallees info
 
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002642
-# Typebuilder time     		0.000356
-# MLTA time            		0.000404
-# Icall alias time     		7e-05
-# Func alias time      		0.002021
-# One layer alias time 		9e-06
-# Escape alias time    		6.5e-05
-# DB time              		0.004553
+# Load time            		0.002323
+# Typebuilder time     		0.000301
+# MLTA time            		0.0003
+# Icall alias time     		6.7e-05
+# Func alias time      		0.001809
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001968

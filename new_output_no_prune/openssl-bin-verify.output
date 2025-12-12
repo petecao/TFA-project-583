@@ -155,16 +155,16 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: X509_CRL_freeMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+cb
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: cb
-DefinitionFuncSet size: 1
+Analyzed func: X509_CRL_free
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Update global ICallees info
@@ -208,11 +208,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002765
-# Typebuilder time     		0.000357
-# MLTA time            		0.000207
-# Icall alias time     		6.1e-05
-# Func alias time      		0.004016
-# One layer alias time 		5.6e-05
-# Escape alias time    		0.000711
-# DB time              		0.002282
+# Load time            		0.024749
+# Typebuilder time     		0.000803
+# MLTA time            		0.000268
+# Icall alias time     		9.4e-05
+# Func alias time      		0.002247
+# One layer alias time 		7e-06
+# Escape alias time    		5.8e-05
+# DB time              		0.002166

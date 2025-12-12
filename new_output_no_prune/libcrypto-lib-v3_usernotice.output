@@ -25,23 +25,21 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: OSSL_USER_NOTICE_SYNTAX_it
+0 Top func: USERNOTICE_it
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: USERNOTICE_itMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: i2r_USER_NOTICE_SYNTAX
 
-
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: i2r_USER_NOTICE_SYNTAXMerge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+OSSL_USER_NOTICE_SYNTAX_itMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
      Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 i2r_USER_NOTICE_SYNTAXMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -51,12 +49,14 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-OSSL_USER_NOTICE_SYNTAX_it Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: USERNOTICE_it
 DefinitionFuncSet size: 0
 aliased_callset size: 0
+     Top func: OSSL_USER_NOTICE_SYNTAX_it Failed
 
 Update global ICallees info
 
@@ -99,11 +99,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00171
-# Typebuilder time     		0.000324
-# MLTA time            		0.000258
-# Icall alias time     		6.5e-05
-# Func alias time      		0.000608
+# Load time            		0.00177
+# Typebuilder time     		0.000261
+# MLTA time            		0.000186
+# Icall alias time     		0.000106
+# Func alias time      		0.001176
 # One layer alias time 		8e-06
-# Escape alias time    		6.2e-05
-# DB time              		0.001997
+# Escape alias time    		6.5e-05
+# DB time              		0.002234

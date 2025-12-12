@@ -27,50 +27,50 @@ Openmp enabled
 
 0 Top func: mdc2_set_ctx_params
 
+1 Top func: mdc2_copyctx
+
+2 Top func: MDC2_Update
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-MDC2_UpdateMerge complete --- Not blocked by TBAA or TFA check
-
-
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-mdc2_copyctxMerge complete --- Not blocked by TBAA or TFA check
-
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-3 Top func: mdc2_freectxMerge complete --- Not blocked by TBAA or TFA check
+3 Top func: mdc2_freectx
 
-Merge complete --- Not blocked by TBAA or TFA check
+4 Top func: mdc2_internal_init
 
-Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
- Top func: mdc2_get_params
-
-5 Top func: mdc2_internal_init
+5 Top func: mdc2_get_params
 
 6 Top func: ossl_digest_default_gettable_params
-
-7 Top func: mdc2_settable_ctx_params
      Top func: MDC2_Update Failed
      Top func: mdc2_copyctx Failed
-     Top func: mdc2_set_ctx_params Failed
-     Top func: mdc2_freectx Failed
-     Top func: ossl_digest_default_gettable_params Failed
      Top func: mdc2_internal_init Failed
+     Top func: mdc2_freectx Failed
      Top func: mdc2_get_params Failed
 
-8 Top func: mdc2_internal_final
+7 Top func: mdc2_internal_final
+
+8 Top func: mdc2_settable_ctx_params
 
 9 Top func: mdc2_newctx
+     Top func: ossl_digest_default_gettable_params Failed
 
 10 Top func: mdc2_dupctx
-     Top func: mdc2_settable_ctx_params Failed
      Top func: mdc2_internal_final Failed
-     Top func: mdc2_dupctx Failed
+     Top func: mdc2_settable_ctx_params Failed
      Top func: mdc2_newctx Failed
+     Top func: mdc2_dupctx Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: mdc2_set_ctx_params Failed
 
 Update global ICallees info
 
@@ -113,11 +113,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001707
-# Typebuilder time     		0.000277
-# MLTA time            		0.000255
-# Icall alias time     		6.1e-05
-# Func alias time      		0.001847
-# One layer alias time 		6e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.001985
+# Load time            		0.005432
+# Typebuilder time     		0.000273
+# MLTA time            		0.000259
+# Icall alias time     		9.4e-05
+# Func alias time      		0.008305
+# One layer alias time 		6.4e-05
+# Escape alias time    		0.000812
+# DB time              		0.002286

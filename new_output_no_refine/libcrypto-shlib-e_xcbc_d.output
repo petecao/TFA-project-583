@@ -27,20 +27,20 @@ Openmp enabled
 
 0 Top func: desx_cbc_cipher
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_set_asn1_iv
+EVP_CIPHER_get_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_get_asn1_iv
+desx_cbc_init_key
 
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-desx_cbc_init_key
+EVP_CIPHER_set_asn1_iv
 
 Analyzed func: EVP_CIPHER_get_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
 
@@ -49,16 +49,16 @@ DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
 0
 aliased_callset size: 0
 
-Analyzed func: EVP_CIPHER_set_asn1_iv
-DefinitionFuncSet size: 0
+Analyzed func: desx_cbc_init_key
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: desx_cbc_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: desx_cbc_init_key
-DefinitionFuncSet size: 1
+Analyzed func: EVP_CIPHER_set_asn1_iv
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Update global ICallees info
@@ -102,11 +102,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001435
-# Typebuilder time     		0.000213
-# MLTA time            		0.000224
-# Icall alias time     		6.8e-05
-# Func alias time      		0.00073
-# One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002087
+# Load time            		0.001459
+# Typebuilder time     		0.000261
+# MLTA time            		0.000274
+# Icall alias time     		6.7e-05
+# Func alias time      		0.00053
+# One layer alias time 		9e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002022

@@ -49,25 +49,16 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: EVP_CIPHER_get_asn1_iv
+0 Top func: EVP_CIPHER_set_asn1_iv
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-idea_cbc_cipher
+idea_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
+
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_set_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 idea_init_key
@@ -75,33 +66,38 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-4Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-idea_ofb_cipherMerge complete --- Not blocked by TBAA or TFA check
+EVP_CIPHER_get_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+idea_cfb64_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+5 Top func: idea_ofb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-5 Top func: idea_cfb64_cipher
-
 6 Top func: idea_ecb_cipher
-
-Analyzed func: EVP_CIPHER_get_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
-aliased_callset size: 0
 
 Analyzed func: EVP_CIPHER_set_asn1_iv
 DefinitionFuncSet size: 0
@@ -111,6 +107,14 @@ Analyzed func: idea_cbc_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
+Analyzed func: idea_cfb64_cipher
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: EVP_CIPHER_get_asn1_iv
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
 Analyzed func: idea_ofb_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
@@ -118,15 +122,11 @@ aliased_callset size: 0
 Analyzed func: idea_init_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: idea_ecb_cipher
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: idea_cfb64_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -171,11 +171,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.020954
-# Typebuilder time     		0.000568
-# MLTA time            		0.000804
-# Icall alias time     		6.4e-05
-# Func alias time      		0.006446
-# One layer alias time 		9e-06
-# Escape alias time    		7.4e-05
-# DB time              		0.002163
+# Load time            		0.001866
+# Typebuilder time     		0.00047
+# MLTA time            		0.000517
+# Icall alias time     		7.9e-05
+# Func alias time      		0.002767
+# One layer alias time 		7e-06
+# Escape alias time    		6.5e-05
+# DB time              		0.002091

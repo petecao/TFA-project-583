@@ -25,12 +25,13 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: SEED_encrypt
+0 Top func: SEED_decrypt
 
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-SEED_decryptMerge complete --- Not blocked by TBAA or TFA check
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+SEED_encryptMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -48,14 +49,13 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-SEED_encryptMerge complete --- Not blocked by TBAA or TFA check
+SEED_decryptMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: SEED_decrypt
+Analyzed func: SEED_encrypt
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -100,11 +100,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001074
-# Typebuilder time     		0.000149
-# MLTA time            		0.000181
-# Icall alias time     		6.6e-05
-# Func alias time      		0.000499
-# One layer alias time 		8e-06
+# Load time            		0.001119
+# Typebuilder time     		0.000181
+# MLTA time            		0.000179
+# Icall alias time     		6.5e-05
+# Func alias time      		0.004671
+# One layer alias time 		6e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.001968
+# DB time              		0.002123

@@ -25,12 +25,12 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_ccm_generic_setiv
+0 Top func: ossl_ccm_generic_auth_encrypt
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_ccm_generic_auth_encryptMerge complete --- Not blocked by TBAA or TFA check
+ossl_ccm_generic_setivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -56,11 +56,11 @@ ossl_ccm_generic_auth_decryptMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-5 Top func: ossl_ccm_generic_gettag
+Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_ccm_generic_gettag
 
 Merge complete --- Not blocked by TBAA or TFA check
 6Merge complete --- Not blocked by TBAA or TFA check
@@ -70,7 +70,7 @@ AES_encryptMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-ossl_ccm_generic_setaadMerge complete --- Not blocked by TBAA or TFA check
+ossl_ccm_generic_setivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
@@ -94,7 +94,7 @@ aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 
-Analyzed func: ossl_ccm_generic_setiv
+Analyzed func: ossl_ccm_generic_setaad
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -155,11 +155,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00116
-# Typebuilder time     		0.000189
-# MLTA time            		0.000215
-# Icall alias time     		7.2e-05
-# Func alias time      		0.003469
-# One layer alias time 		8e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.00205
+# Load time            		0.001318
+# Typebuilder time     		0.000251
+# MLTA time            		0.000252
+# Icall alias time     		3.4e-05
+# Func alias time      		0.001016
+# One layer alias time 		6e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002021

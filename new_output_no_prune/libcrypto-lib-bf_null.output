@@ -25,11 +25,11 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: bwrite_conv
+0 Top func: nullf_read
 
-Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: bread_convMerge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+bwrite_convMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -38,8 +38,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-nullf_writeMerge complete --- Not blocked by TBAA or TFA check
+bread_convMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
@@ -50,7 +49,8 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-nullf_readMerge complete --- Not blocked by TBAA or TFA check
+nullf_writeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -70,7 +70,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-nullf_ctrlMerge complete --- Not blocked by TBAA or TFA check
+nullf_getsMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
@@ -85,24 +85,18 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-6 Top func: nullf_gets
+6 Top func: nullf_ctrl
 
-7 Top func: nullf_callback_ctrl
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-bwrite_convMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
-
+Analyzed func: bwrite_conv
+DefinitionFuncSet size: 0
+aliased_callset size: 0
 
 Analyzed func: bread_conv
 DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: nullf_read
+DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: nullf_write
@@ -113,13 +107,19 @@ Analyzed func: nullf_puts
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: nullf_read
+Analyzed func: nullf_gets
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: nullf_ctrl
-DefinitionFuncSet size: 1
-aliased_callset size: 0
+7 Top func: nullf_callback_ctrl
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: nullf_callback_ctrl
 DefinitionFuncSet size: 1
@@ -133,7 +133,7 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: nullf_gets
+Analyzed func: nullf_ctrl
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -178,11 +178,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001547
-# Typebuilder time     		0.000225
-# MLTA time            		0.000207
-# Icall alias time     		5.7e-05
-# Func alias time      		0.002483
+# Load time            		0.003355
+# Typebuilder time     		0.000251
+# MLTA time            		0.000265
+# Icall alias time     		7.8e-05
+# Func alias time      		0.008228
 # One layer alias time 		7e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.002333
+# DB time              		0.00199

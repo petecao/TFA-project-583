@@ -25,23 +25,23 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: ossl_cipher_hw_tdes_cbc
+0 Top func: ossl_cipher_hw_tdes_copyctx
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_cipher_hw_tdes_copyctx
+ Top func: ossl_cipher_hw_tdes_ede3_initkey
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: ossl_cipher_hw_tdes_ede3_initkey
+ Top func: ossl_cipher_hw_tdes_cbc
 
-Analyzed func: ossl_cipher_hw_tdes_cbcMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_tdes_copyctxMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
-Analyzed func: ossl_cipher_hw_tdes_copyctx
+Analyzed func: ossl_cipher_hw_tdes_cbc
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001174
-# Typebuilder time     		0.000201
-# MLTA time            		0.00019
-# Icall alias time     		7.5e-05
-# Func alias time      		0.004648
+# Load time            		0.001054
+# Typebuilder time     		0.000177
+# MLTA time            		0.000207
+# Icall alias time     		7.4e-05
+# Func alias time      		0.000595
 # One layer alias time 		7e-06
 # Escape alias time    		5.6e-05
-# DB time              		0.001958
+# DB time              		0.001975

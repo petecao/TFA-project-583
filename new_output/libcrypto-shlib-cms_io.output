@@ -25,27 +25,27 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: d2i_CMS_ContentInfo
+0 Top func: i2d_CMS_ContentInfo
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-i2d_CMS_ContentInfoMerge complete --- Not blocked by TBAA or TFA check
+ Top func: d2i_CMS_ContentInfoMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-d2i_CMS_ContentInfo
-DefinitionFuncSet size: 0
-aliased_callset size: 0
+i2d_CMS_ContentInfoMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: i2d_CMS_ContentInfo
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: d2i_CMS_ContentInfo
 DefinitionFuncSet size: 0
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.003011
-# Typebuilder time     		0.000269
-# MLTA time            		0.00022
-# Icall alias time     		5.4e-05
-# Func alias time      		0.000396
-# One layer alias time 		6e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002156
+# Load time            		0.001987
+# Typebuilder time     		0.000303
+# MLTA time            		0.000256
+# Icall alias time     		6.3e-05
+# Func alias time      		0.000413
+# One layer alias time 		8e-06
+# Escape alias time    		6.3e-05
+# DB time              		0.002211

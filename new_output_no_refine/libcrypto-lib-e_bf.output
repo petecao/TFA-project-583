@@ -49,61 +49,61 @@ WARNING: matchStructTypes problem!
 
  Start Func Alias Analysis
 
-0 Top func: bf_cbc_cipher
+0 Top func: bf_init_key
+
+1 Top func: Merge complete --- Not blocked by TBAA or TFA check
+EVP_CIPHER_set_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_set_asn1_iv
 
+Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-bf_init_keyMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+bf_cbc_cipher
+Merge complete --- Not blocked by TBAA or TFA check
 
-
+Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_get_asn1_iv
 Merge complete --- Not blocked by TBAA or TFA check
+EVP_CIPHER_get_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-bf_cfb64_cipherMerge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
+bf_cfb64_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 5Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 bf_ofb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 6Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-bf_ecb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+bf_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-EVP_CIPHER_set_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: EVP_CIPHER_set_asn1_ivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 0
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+0
 aliased_callset size: 0
 
 Analyzed func: bf_cbc_cipher
@@ -118,12 +118,12 @@ Analyzed func: bf_cfb64_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: EVP_CIPHER_get_asn1_iv
-DefinitionFuncSet size: 0
-aliased_callset size: 0
-
 Analyzed func: bf_ofb_cipher
 DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: EVP_CIPHER_get_asn1_iv
+DefinitionFuncSet size: 0
 aliased_callset size: 0
 
 Analyzed func: bf_ecb_cipher
@@ -171,11 +171,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001615
-# Typebuilder time     		0.000578
-# MLTA time            		0.000503
-# Icall alias time     		6.8e-05
-# Func alias time      		0.003908
-# One layer alias time 		7e-06
-# Escape alias time    		6.1e-05
-# DB time              		0.002157
+# Load time            		0.001889
+# Typebuilder time     		0.000462
+# MLTA time            		0.00053
+# Icall alias time     		3.3e-05
+# Func alias time      		0.000827
+# One layer alias time 		5e-06
+# Escape alias time    		6e-05
+# DB time              		0.001963

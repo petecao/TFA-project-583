@@ -27,25 +27,17 @@ Openmp enabled
 
 0 Top func: ml_kem_newctx
 
-1 Top func: ml_kem_decapsulate_init
+1 Top func: ml_kem_encapsulate
 
-2 Top func: ml_kem_encapsulate_init
+2 Top func: ml_kem_decapsulate_init
 
-3 Top func: ml_kem_encapsulate
+3 Top func: ml_kem_encapsulate_init
 
 4 Top func: ml_kem_decapsulate
 
 5 Top func: ml_kem_set_ctx_params
 
-Merge complete --- Not blocked by TBAA or TFA check
 6Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-ml_kem_freectxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-7Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 ml_kem_settable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
 
@@ -92,14 +84,22 @@ Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+7 Top func: ml_kem_freectx
+     Top func: ml_kem_encapsulate Failed
      Top func: ml_kem_newctx Failed
      Top func: ml_kem_decapsulate_init Failed
-     Top func: ml_kem_encapsulate Failed
-     Top func: ml_kem_encapsulate_init Failed
-     Top func: ml_kem_freectx Failed
-     Top func: ml_kem_decapsulate Failed
      Top func: ml_kem_settable_ctx_params Failed
      Top func: ml_kem_set_ctx_params Failed
+     Top func: ml_kem_decapsulate Failed
+     Top func: ml_kem_encapsulate_init Failed
+     Top func: ml_kem_freectx Failed
 
 Update global ICallees info
 
@@ -142,11 +142,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.0033
-# Typebuilder time     		0.000346
-# MLTA time            		0.00032
-# Icall alias time     		7.6e-05
-# Func alias time      		0.00228
-# One layer alias time 		1.7e-05
-# Escape alias time    		6.8e-05
-# DB time              		0.002113
+# Load time            		0.002374
+# Typebuilder time     		0.000353
+# MLTA time            		0.000331
+# Icall alias time     		6.7e-05
+# Func alias time      		0.004234
+# One layer alias time 		1.5e-05
+# Escape alias time    		5.7e-05
+# DB time              		0.002037

@@ -25,12 +25,12 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: pkt_split_dgram_ctrl
+0 Top func: pkt_split_dgram_recvmmsg
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-pkt_split_dgram_recvmmsgMerge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
@@ -45,22 +45,22 @@ pkt_split_dgram_sendmmsgMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-pkt_split_dgram_ctrlMerge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_recvmmsgMerge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1Merge complete --- Not blocked by TBAA or TFA check
-
+1
 Merge complete --- Not blocked by TBAA or TFA check
 aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
 0Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: pkt_split_dgram_recvmmsg
-DefinitionFuncSet size: 1
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+pkt_split_dgram_ctrl
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1
 aliased_callset size: 0
 
 Analyzed func: pkt_split_dgram_sendmmsg
@@ -108,11 +108,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001977
-# Typebuilder time     		0.000242
-# MLTA time            		0.000218
-# Icall alias time     		7.6e-05
-# Func alias time      		0.000544
-# One layer alias time 		6e-06
+# Load time            		0.001764
+# Typebuilder time     		0.000209
+# MLTA time            		0.00018
+# Icall alias time     		8.3e-05
+# Func alias time      		0.000673
+# One layer alias time 		7e-06
 # Escape alias time    		5.5e-05
-# DB time              		0.002073
+# DB time              		0.001992

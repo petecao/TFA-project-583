@@ -25,21 +25,21 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: test_cmac_copy
+0 Top func: test_cmac_run
 
-1 Top func: test_cmac_run
+1 Top func: test_cmac_bad
 
-2 Top func: test_cmac_bad
+2 Top func: test_cmac_copy
 
 Analyzed func: test_cmac_run
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_cmac_copy
+Analyzed func: test_cmac_bad
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_cmac_bad
+Analyzed func: test_cmac_copy
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -84,11 +84,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.00233
-# Typebuilder time     		0.000327
-# MLTA time            		0.000199
-# Icall alias time     		7e-06
-# Func alias time      		0.00299
-# One layer alias time 		5e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002155
+# Load time            		0.002649
+# Typebuilder time     		0.000419
+# MLTA time            		0.000273
+# Icall alias time     		3.5e-05
+# Func alias time      		0.000437
+# One layer alias time 		4e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.00207

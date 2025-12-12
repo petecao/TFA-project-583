@@ -29,11 +29,11 @@ Openmp enabled
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
- Top func: rc4_hmac_md5_init_key
+ Top func: rc4_hmac_md5_cipher
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: rc4_hmac_md5_cipher
+ Top func: rc4_hmac_md5_init_key
 
 Analyzed func: rc4_hmac_md5_ctrlMerge complete --- Not blocked by TBAA or TFA check
 
@@ -41,11 +41,11 @@ Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: rc4_hmac_md5_init_key
+Analyzed func: rc4_hmac_md5_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: rc4_hmac_md5_cipher
+Analyzed func: rc4_hmac_md5_init_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002222
-# Typebuilder time     		0.000281
-# MLTA time            		0.00027
-# Icall alias time     		7.4e-05
-# Func alias time      		0.002455
+# Load time            		0.001803
+# Typebuilder time     		0.000534
+# MLTA time            		0.000325
+# Icall alias time     		7.1e-05
+# Func alias time      		0.001605
 # One layer alias time 		7e-06
-# Escape alias time    		5.7e-05
-# DB time              		0.001961
+# Escape alias time    		5.5e-05
+# DB time              		0.002091

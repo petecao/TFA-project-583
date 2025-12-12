@@ -27,15 +27,15 @@ Openmp enabled
 
 0 Top func: null_cipher
 
-1 Top func: null_init_key
 Merge complete --- Not blocked by TBAA or TFA check
+1 Top func: null_init_key
 
-Analyzed func: null_init_key
+Analyzed func: null_cipherMerge complete --- Not blocked by TBAA or TFA check
+
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: null_cipher
+Analyzed func: null_init_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -80,11 +80,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001538
-# Typebuilder time     		0.000236
-# MLTA time            		0.00022
-# Icall alias time     		6e-05
-# Func alias time      		0.001239
-# One layer alias time 		5.7e-05
-# Escape alias time    		0.000786
-# DB time              		0.002245
+# Load time            		0.001321
+# Typebuilder time     		0.000234
+# MLTA time            		0.000222
+# Icall alias time     		6.2e-05
+# Func alias time      		0.000387
+# One layer alias time 		7e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001994

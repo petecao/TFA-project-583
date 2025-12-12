@@ -25,7 +25,7 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: chacha20_cipher
+0 Top func: chacha20_initkey
 
 Merge complete --- Not blocked by TBAA or TFA check
 1Merge complete --- Not blocked by TBAA or TFA check
@@ -33,19 +33,19 @@ Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 2Merge complete --- Not blocked by TBAA or TFA check
- Top func: chacha20_initkey
+ Top func: chacha20_cipher
 
-Analyzed func: chacha20_cipherMerge complete --- Not blocked by TBAA or TFA check
+Analyzed func: chacha20_initivMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: chacha20_initiv
+Analyzed func: chacha20_initkey
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: chacha20_initkey
+Analyzed func: chacha20_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -90,11 +90,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001604
-# Typebuilder time     		0.000207
-# MLTA time            		0.000185
-# Icall alias time     		3.3e-05
-# Func alias time      		0.000432
-# One layer alias time 		5e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.001966
+# Load time            		0.010678
+# Typebuilder time     		0.000281
+# MLTA time            		0.000201
+# Icall alias time     		9.4e-05
+# Func alias time      		0.000823
+# One layer alias time 		9e-06
+# Escape alias time    		6.6e-05
+# DB time              		0.002011

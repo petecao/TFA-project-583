@@ -28,12 +28,12 @@ Openmp enabled
 0 Top func: rc4_init_key
 
 Merge complete --- Not blocked by TBAA or TFA check
-1 Top func: Merge complete --- Not blocked by TBAA or TFA check
-rc4_cipher
+1 Top func: rc4_cipherMerge complete --- Not blocked by TBAA or TFA check
+
 Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: rc4_init_key
-Merge complete --- Not blocked by TBAA or TFA check
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_init_key
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -82,11 +82,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001387
-# Typebuilder time     		0.000239
-# MLTA time            		0.000222
-# Icall alias time     		6.8e-05
-# Func alias time      		0.000899
-# One layer alias time 		9e-06
-# Escape alias time    		5.9e-05
-# DB time              		0.0021
+# Load time            		0.001475
+# Typebuilder time     		0.00025
+# MLTA time            		0.000268
+# Icall alias time     		0.000567
+# Func alias time      		0.0068
+# One layer alias time 		7.7e-05
+# Escape alias time    		0.000895
+# DB time              		0.002159

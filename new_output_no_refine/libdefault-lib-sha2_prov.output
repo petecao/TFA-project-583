@@ -27,216 +27,216 @@ Openmp enabled
 
 0 Top func: sha1_newctx
 
-1 Top func: sha1_internal_init
+1 Top func: sha256_copyctx
 
 2 Top func: sha224_copyctx
 
-3 Top func: sha256_copyctx
+3 Top func: sha1_internal_init
 
-4 Top func: sha512_get_params
+4 Top func: sha256_192_internal_get_params
 
-5 Top func: sha256_192_internal_get_params
+5 Top func: sha512_get_params
 
 6 Top func: sha384_get_params
-     Top func: sha1_internal_init Failed
-     Top func: sha1_newctx Failed
-     Top func: sha224_copyctx Failed
-     Top func: sha256_192_internal_get_params Failed
-     Top func: sha256_copyctx Failed
-     Top func: sha512_get_params Failed
 
-7 Top func: sha1_settable_ctx_params
+7 Top func: sha512_224_internal_init
+     Top func: sha1_newctx Failed
+     Top func: sha256_copyctx Failed
+     Top func: sha224_copyctx Failed
+     Top func: sha1_internal_init Failed
+     Top func: sha256_192_internal_get_params Failed
+     Top func: sha512_get_params Failed
+     Top func: sha384_get_params Failed
 
 8 Top func: SHA1_Update
 
-9 Top func: sha224_get_params
-     Top func: sha384_get_params Failed
+9 Top func: sha256_get_params
 
-10 Top func: sha256_192_internal_internal_init
+10 Top func: sha224_get_params
 
-11 Top func: sha256_get_params
+11 Top func: sha1_settable_ctx_params
 
-12 Top func: sha512_internal_init
+12 Top func: sha256_192_internal_internal_init
+     Top func: sha512_224_internal_init Failed
 
-13 Top func: sha384_internal_init
+13 Top func: sha512_internal_init
+
+14 Top func: sha384_internal_init
+
+15 Top func: sha512_256_newctx
      Top func: SHA1_Update Failed
-     Top func: sha1_settable_ctx_params Failed
-     Top func: sha224_get_params Failed
-     Top func: sha256_192_internal_internal_init Failed
      Top func: sha256_get_params Failed
+     Top func: sha224_get_params Failed
+     Top func: sha1_settable_ctx_params Failed
+     Top func: sha256_192_internal_internal_init Failed
+     Top func: sha512_internal_init Failed
 
-14 Top func: sha1_internal_final
+16 Top func: sha1_internal_final
 
-15 Top func: sha1_set_ctx_params
+17 Top func: sha256_internal_init
 
-16 Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha224_internal_initMerge complete --- Not blocked by TBAA or TFA check
+18 Top func: sha224_internal_init
 
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha512_internal_init FailedMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-17Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha384_newctxMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-     Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha384_internal_initMerge complete --- Not blocked by TBAA or TFA check
+19 Top func: sha1_set_ctx_params
+     Top func: sha384_internal_initMerge complete --- Not blocked by TBAA or TFA check
  FailedMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-18Merge complete --- Not blocked by TBAA or TFA check
+20 Top func: Merge complete --- Not blocked by TBAA or TFA check
+sha384_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+21Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-sha256_internal_initMerge complete --- Not blocked by TBAA or TFA check
+sha512_224_newctxMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
-19 Top func: sha512_224_newctx
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: sha512_256_newctx Failed
 
-20 Top func: sha512_newctx
-     Top func: sha1_internal_final Failed
-     Top func: sha224_internal_init Failed
-     Top func: sha384_newctx Failed
-
-21 Top func: sha1_freectx
+22 Top func: sha512_newctx
      Top func: sha256_internal_init Failed
+     Top func: sha224_internal_init Failed
 
-22 Top func: sha256_newctx
-
-23 Top func: SHA384_Update
+23 Top func: sha512_256_internal_final
+     Top func: sha1_internal_final Failed
      Top func: sha512_224_newctx Failed
+     Top func: sha384_newctx Failed
      Top func: sha1_set_ctx_params Failed
-     Top func: sha512_newctx Failed
 
 24 Top func: sha256_192_internal_newctx
 
-25 Top func: sha512_224_internal_final
+25 Top func: sha256_newctx
 
-26 Top func: sha224_newctx
+26 Top func: sha1_freectx
 
-27 Top func: SHA512_Update
-     Top func: sha1_freectx Failed
-     Top func: SHA384_Update Failed
+27 Top func: sha512_224_internal_final
+
+28 Top func: SHA384_Update
+     Top func: sha512_newctx Failed
+
+29 Top func: sha224_newctx
+     Top func: sha512_256_internal_final Failed
+
+30 Top func: SHA512_Update
      Top func: sha256_newctx Failed
-
-28 Top func: sha1_dupctx
-
-29 Top func: sha384_internal_final
-
-30 Top func: SHA256_Update
      Top func: sha256_192_internal_newctx Failed
-     Top func: SHA512_Update Failed
+     Top func: SHA384_Update Failed
      Top func: sha512_224_internal_final Failed
+     Top func: sha1_freectx Failed
+
+31 Top func: sha512_256_freectx
+
+32 Top func: SHA256_Update
      Top func: sha224_newctx Failed
 
-31 Top func: sha256_192_internal_internal_final
+33 Top func: sha256_192_internal_internal_final
 
-32 Top func: sha512_internal_final
+34 Top func: sha384_internal_final
 
-33 Top func: sha512_224_freectx
+35 Top func: sha512_224_freectx
 
-34 Top func: SHA224_Update
+36 Top func: sha1_dupctx
+     Top func: SHA512_Update Failed
+
+37 Top func: SHA224_Update
+
+38 Top func: sha512_internal_final
      Top func: SHA256_Update Failed
+     Top func: sha512_256_freectx Failed
+     Top func: sha512_224_freectx Failed
      Top func: sha384_internal_final Failed
      Top func: sha1_dupctx Failed
-
-35 Top func: sha256_internal_final
-
-36 Top func: sha384_freectx
      Top func: sha256_192_internal_internal_final Failed
-     Top func: sha512_internal_final Failed
-     Top func: SHA224_Update Failed
 
-37 Top func: sha1_copyctx
-     Top func: sha512_224_freectx Failed
+39 Top func: sha256_internal_final
 
-38 Top func: sha256_192_internal_freectx
-
-39 Top func: sha512_freectx
-
-40 Top func: sha224_internal_final
-     Top func: sha256_internal_final Failed
+40 Top func: sha512_256_dupctx
 
 41 Top func: sha512_224_dupctx
+
+42 Top func: sha384_freectx
+
+43 Top func: sha1_copyctx
+     Top func: SHA224_Update Failed
+     Top func: sha512_internal_final Failed
+
+44 Top func: sha256_192_internal_freectx
+
+45 Top func: sha224_internal_final
+
+46 Top func: sha512_freectx
+     Top func: sha256_internal_final Failed
+     Top func: sha512_256_dupctx Failed
+     Top func: sha512_224_dupctx Failed
      Top func: sha384_freectx Failed
      Top func: sha1_copyctx Failed
-
-42 Top func: sha256_freectx
      Top func: sha256_192_internal_freectx Failed
+
+47 Top func: sha256_freectx
+
+48 Top func: sha512_256_copyctx
+
+49 Top func: sha512_224_copyctx
+
+50 Top func: sha384_dupctx
+     Top func: sha224_internal_final Failed
      Top func: sha512_freectx Failed
 
-43 Top func: sha384_dupctx
+51 Top func: sha1_get_params
 
-44 Top func: sha1_get_params
-     Top func: sha224_internal_final Failed
-     Top func: sha512_224_dupctx Failed
+52 Top func: sha256_192_internal_dupctx
 
-45 Top func: sha256_192_internal_dupctx
+53 Top func: sha224_freectx
 
-46 Top func: sha512_dupctx
-
-47 Top func: sha224_freectx
+54 Top func: sha512_dupctx
      Top func: sha256_freectx Failed
-
-48 Top func: sha512_224_copyctx
+     Top func: sha512_256_copyctx Failed
+     Top func: sha512_224_copyctx Failed
      Top func: sha384_dupctx Failed
      Top func: sha1_get_params Failed
-
-49 Top func: sha256_dupctx
      Top func: sha256_192_internal_dupctx Failed
+
+55 Top func: sha256_dupctx
+
+56 Top func: sha512_256_get_params
+
+57 Top func: sha512_224_get_params
+
+58 Top func: sha384_copyctx
+     Top func: sha224_freectx Failed
      Top func: sha512_dupctx Failed
 
-50 Top func: sha384_copyctx
+59 Top func: ossl_digest_default_gettable_params
 
-51 Top func: ossl_digest_default_gettable_params
-     Top func: sha224_freectx Failed
-     Top func: sha512_224_copyctx Failed
+60 Top func: sha256_192_internal_copyctx
 
-52 Top func: sha256_192_internal_copyctx
+61 Top func: sha224_dupctx
 
-53 Top func: sha512_copyctx
+62 Top func: sha512_copyctx
      Top func: sha256_dupctx Failed
-
-54 Top func: sha224_dupctx
-
-55 Top func: sha512_224_get_params
+     Top func: sha512_256_get_params Failed
      Top func: sha384_copyctx Failed
+     Top func: sha512_224_get_params Failed
      Top func: ossl_digest_default_gettable_params Failed
-
-56 Top func: sha512_224_internal_init
      Top func: sha256_192_internal_copyctx Failed
 
-57 Top func: sha512_256_internal_init
-     Top func: sha512_copyctx Failed
-
-58 Top func: sha512_256_get_params
+63 Top func: sha512_256_internal_init
      Top func: sha224_dupctx Failed
-     Top func: sha512_224_get_params Failed
-
-59 Top func: sha512_256_copyctx
-
-60 Top func: sha512_256_dupctx
-     Top func: sha512_224_internal_init Failed
-
-61 Top func: sha512_256_freectx
-
-62 Top func: sha512_256_internal_final
+     Top func: sha512_copyctx Failed
      Top func: sha512_256_internal_init Failed
-     Top func: sha512_256_get_params Failed
-
-63 Top func: sha512_256_newctx
-     Top func: sha512_256_copyctx Failed
-     Top func: sha512_256_dupctx Failed
-     Top func: sha512_256_freectx Failed
-     Top func: sha512_256_internal_final Failed
-     Top func: sha512_256_newctx Failed
 
 Update global ICallees info
 
@@ -279,11 +279,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002451
-# Typebuilder time     		0.00046
-# MLTA time            		0.000562
-# Icall alias time     		7.7e-05
-# Func alias time      		0.003184
-# One layer alias time 		8e-06
-# Escape alias time    		6.3e-05
-# DB time              		0.002157
+# Load time            		0.002582
+# Typebuilder time     		0.000523
+# MLTA time            		0.000888
+# Icall alias time     		1e-05
+# Func alias time      		0.008141
+# One layer alias time 		5e-06
+# Escape alias time    		5.9e-05
+# DB time              		0.002007

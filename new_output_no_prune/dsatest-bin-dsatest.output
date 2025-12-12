@@ -25,49 +25,45 @@ Openmp enabled
 
  Start Func Alias Analysis
 
-0 Top func: dsa_test
+0 Top func: dsa_keygen_test
 
-1 Top func: dsa_keygen_test
+1 Top func: dsa_cb
 
-2 Top func: dsa_cb
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: test_dsa_sig_neg_paramMerge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
 3Merge complete --- Not blocked by TBAA or TFA check
  Top func: test_dsa_sig_infinite_loopMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 
+Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_dsa_default_paramgen_validateMerge complete --- Not blocked by TBAA or TFA check
-
-
-Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
- Top func: test_dsa_sig_neg_paramMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
 dsa_testMerge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
-aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
-0Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+test_dsa_default_paramgen_validateMerge complete --- Not blocked by TBAA or TFA check
 
-Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-dsa_keygen_testMerge complete --- Not blocked by TBAA or TFA check
-
+test_dsa_sig_neg_param
 Merge complete --- Not blocked by TBAA or TFA check
-DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
-1
-aliased_callset size: 0
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: test_dsa_default_paramgen_validate
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: dsa_keygen_test
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -75,7 +71,11 @@ Analyzed func: test_dsa_sig_infinite_loop
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: test_dsa_sig_neg_param
+Analyzed func: dsa_test
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_dsa_default_paramgen_validate
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -124,11 +124,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002745
-# Typebuilder time     		0.00033
-# MLTA time            		0.000233
-# Icall alias time     		5.5e-05
-# Func alias time      		0.000817
-# One layer alias time 		8e-06
-# Escape alias time    		5.5e-05
-# DB time              		0.002215
+# Load time            		0.003211
+# Typebuilder time     		0.000414
+# MLTA time            		0.000282
+# Icall alias time     		5.7e-05
+# Func alias time      		0.00083
+# One layer alias time 		6e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.002046

@@ -29,69 +29,71 @@ Openmp enabled
 
 1Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_des_ecb_cipher
+cipher_hw_des_cbc_cipher
+
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: cipher_hw_des_ecb_cipher
+Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
  Top func: cipher_hw_des_copyctx
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-3Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_des_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 4Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
  Top func: Merge complete --- Not blocked by TBAA or TFA check
 cipher_hw_des_ofb64_cipherMerge complete --- Not blocked by TBAA or TFA check
-
 Merge complete --- Not blocked by TBAA or TFA check
 
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
-5Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
- Top func: cipher_hw_des_cfb1_cipher
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
 Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+5 Top func: cipher_hw_des_cfb1_cipher
 
 6 Top func: cipher_hw_des_cfb64_cipher
 
-7 Top func: cipher_hw_des_cfb8_cipher
+Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
+ Top func: cipher_hw_des_cfb8_cipher
 
 Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
-cipher_hw_des_ecb_cipherMerge complete --- Not blocked by TBAA or TFA check
+cipher_hw_des_cbc_cipherMerge complete --- Not blocked by TBAA or TFA check
 
-DefinitionFuncSet size: 1
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+
 aliased_callset size: 0
 
 Analyzed func: cipher_hw_des_initkey
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
-Analyzed func: cipher_hw_des_cfb1_cipher
-DefinitionFuncSet size: 1
-aliased_callset size: 0
-
-Analyzed func: cipher_hw_des_cbc_cipher
+Analyzed func: cipher_hw_des_ecb_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
 Analyzed func: cipher_hw_des_ofb64_cipher
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: cipher_hw_des_cfb64_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -102,10 +104,8 @@ aliased_callset size: 0
 Analyzed func: cipher_hw_des_cfb8_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
-Merge complete --- Not blocked by TBAA or TFA check
-Merge complete --- Not blocked by TBAA or TFA check
 
-Analyzed func: cipher_hw_des_cfb64_cipher
+Analyzed func: cipher_hw_des_cfb1_cipher
 DefinitionFuncSet size: 1
 aliased_callset size: 0
 
@@ -152,11 +152,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.002091
-# Typebuilder time     		0.000291
-# MLTA time            		0.000308
-# Icall alias time     		6.8e-05
-# Func alias time      		0.002447
-# One layer alias time 		7e-06
-# Escape alias time    		5.6e-05
-# DB time              		0.002163
+# Load time            		0.002192
+# Typebuilder time     		0.000284
+# MLTA time            		0.000312
+# Icall alias time     		3.4e-05
+# Func alias time      		0.001601
+# One layer alias time 		5e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.001952

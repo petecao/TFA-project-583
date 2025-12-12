@@ -29,163 +29,163 @@ Openmp enabled
 
 1 Top func: dsa_main
 
-2 Top func: verify_main
+2 Top func: skeyutl_main
 
-3 Top func: skeyutl_main
+3 Top func: verify_main
 
 4 Top func: gendsa_main
 
-5 Top func: pkey_main
-
-6 Top func: mac_main
-
-7 Top func: req_main
-     Top func: asn1parse_main Failed
+5 Top func: mac_main
      Top func: dsa_main Failed
+     Top func: asn1parse_main Failed
      Top func: skeyutl_main Failed
      Top func: verify_main Failed
-     Top func: pkey_main Failed
      Top func: gendsa_main Failed
+
+6 Top func: dsaparam_main
+
+7 Top func: ca_main
+
+8 Top func: smime_main
+
+9 Top func: version_main
      Top func: mac_main Failed
 
-8 Top func: ca_main
+10 Top func: genpkey_main
 
-9 Top func: dsaparam_main
-
-10 Top func: smime_main
-
-11 Top func: version_main
-
-12 Top func: pkeyparam_main
-     Top func: req_main Failed
-
-13 Top func: genpkey_main
-
-14 Top func: nseq_main
-
-15 Top func: rsa_main
-     Top func: ca_main Failed
+11 Top func: nseq_main
      Top func: dsaparam_main Failed
+     Top func: ca_main Failed
      Top func: smime_main Failed
      Top func: version_main Failed
-     Top func: pkeyparam_main Failed
+
+12 Top func: ec_main
+
+13 Top func: ciphers_main
+
+14 Top func: speed_main
      Top func: genpkey_main Failed
-
-16 Top func: ciphers_main
-
-17 Top func: ec_main
-
-18 Top func: speed_main
-
-19 Top func: x509_main
-
-20 Top func: pkeyutl_main
      Top func: nseq_main Failed
-     Top func: rsa_main Failed
 
-21 Top func: genrsa_main
+15 Top func: x509_main
 
-22 Top func: ocsp_main
+16 Top func: genrsa_main
 
-23 Top func: rsautl_main
+17 Top func: ocsp_main
+     Top func: ec_main Failed
      Top func: ciphers_main Failed
      Top func: speed_main Failed
-     Top func: ec_main Failed
+
+18 Top func: ecparam_main
+
+19 Top func: cmp_main
+
+20 Top func: spkac_main
      Top func: x509_main Failed
-     Top func: pkeyutl_main Failed
-
-24 Top func: cmp_main
-
-25 Top func: spkac_main
-
-26 Top func: ecparam_main
-
-27 Top func: crl_main
      Top func: genrsa_main Failed
-
-28 Top func: prime_main
      Top func: ocsp_main Failed
-     Top func: rsautl_main Failed
 
-29 Top func: help_main
+21 Top func: crl_main
 
-30 Top func: passwd_main
+22 Top func: help_main
+     Top func: ecparam_main Failed
      Top func: cmp_main Failed
+
+23 Top func: passwd_main
      Top func: spkac_main Failed
 
-31 Top func: s_client_main
+24 Top func: enc_main
+
+25 Top func: cms_main
      Top func: crl_main Failed
-     Top func: ecparam_main Failed
-     Top func: prime_main Failed
-
-32 Top func: cms_main
-
-33 Top func: srp_main
-
-34 Top func: crl2pkcs7_main
-
-35 Top func: enc_main
      Top func: help_main Failed
 
-36 Top func: rand_main
+26 Top func: srp_main
      Top func: passwd_main Failed
-     Top func: s_client_main Failed
 
-37 Top func: info_main
+27 Top func: pkey_main
+
+28 Top func: crl2pkcs7_main
+
+29 Top func: info_main
      Top func: cms_main Failed
 
-38 Top func: pkcs12_main
+30 Top func: pkcs12_main
      Top func: srp_main Failed
+
+31 Top func: configutl_main
+     Top func: pkey_main Failed
      Top func: crl2pkcs7_main Failed
-
-39 Top func: s_server_main
-     Top func: enc_main Failed
-     Top func: rand_main Failed
-
-40 Top func: configutl_main
-
-41 Top func: storeutl_main
-
-42 Top func: dgst_main
-
-43 Top func: errstr_main
      Top func: info_main Failed
 
-44 Top func: rehash_main
+32 Top func: storeutl_main
+
+33 Top func: pkeyparam_main
      Top func: pkcs12_main Failed
-     Top func: s_server_main Failed
 
-45 Top func: kdf_main
+34 Top func: dgst_main
+
+35 Top func: kdf_main
      Top func: configutl_main Failed
-     Top func: storeutl_main Failed
 
-46 Top func: pkcs7_main
+36 Top func: pkcs7_main
+     Top func: storeutl_main Failed
+     Top func: pkeyparam_main Failed
+
+37 Top func: sess_id_main
+     Top func: kdf_main Failed
      Top func: dgst_main Failed
 
-47 Top func: s_time_main
+38 Top func: ts_main
+
+39 Top func: pkeyutl_main
+
+40 Top func: list_main
+     Top func: pkcs7_main Failed
+
+41 Top func: dhparam_main
+     Top func: sess_id_main Failed
+
+42 Top func: pkcs8_main
+     Top func: ts_main Failed
+     Top func: pkeyutl_main Failed
+     Top func: list_main Failed
+
+43 Top func: fipsinstall_main
+     Top func: dhparam_main Failed
+
+44 Top func: errstr_main
+
+45 Top func: prime_main
+
+46 Top func: rehash_main
+     Top func: pkcs8_main Failed
+
+47 Top func: rand_main
+     Top func: fipsinstall_main Failed
+
+48 Top func: req_main
      Top func: errstr_main Failed
+     Top func: prime_main Failed
      Top func: rehash_main Failed
 
-48 Top func: sess_id_main
+49 Top func: s_time_main
 
-49 Top func: ts_main
+50 Top func: s_server_main
 
-50 Top func: dhparam_main
-     Top func: kdf_main Failed
+51 Top func: s_client_main
+     Top func: rand_main Failed
 
-51 Top func: fipsinstall_main
+52 Top func: rsautl_main
+     Top func: req_main Failed
 
-52 Top func: list_main
-     Top func: pkcs7_main Failed
+53 Top func: rsa_main
      Top func: s_time_main Failed
-
-53 Top func: pkcs8_main
-     Top func: sess_id_main Failed
-     Top func: ts_main Failed
-     Top func: dhparam_main Failed
-     Top func: fipsinstall_main Failed
-     Top func: list_main Failed
-     Top func: pkcs8_main Failed
+     Top func: s_server_main Failed
+     Top func: s_client_main Failed
+     Top func: rsautl_main Failed
+     Top func: rsa_main Failed
+     Top func: enc_main Failed
 
 Update global ICallees info
 
@@ -228,11 +228,11 @@ reduce_num_escape: 0
 reduce_num_total: 0
 
 
-# Load time            		0.001828
-# Typebuilder time     		0.00038
-# MLTA time            		0.001259
-# Icall alias time     		5.5e-05
-# Func alias time      		0.006774
+# Load time            		0.014032
+# Typebuilder time     		0.000398
+# MLTA time            		0.000845
+# Icall alias time     		6.2e-05
+# Func alias time      		0.002952
 # One layer alias time 		7e-06
-# Escape alias time    		5.4e-05
-# DB time              		0.002045
+# Escape alias time    		5.6e-05
+# DB time              		0.002343
