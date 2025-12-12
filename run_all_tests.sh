@@ -2,7 +2,7 @@
 
 ANALYZER="./build/lib/analyzer"
 SEARCH_DIR="tests"
-OUTPUT_DIR="./new_output_no_refine"
+OUTPUT_DIR="./new_output"
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
