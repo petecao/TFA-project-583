@@ -150,8 +150,8 @@ void PrintResults(GlobalContext *GCtx) {
 	OP<<"\n";
 
 	OP<<"############## Alias Info Statistics ##############\n";
-	OP<<"# Number succeed alias icall \t\t\t"<<GCtx->icall_support_dataflow_Number<<"\n";
-	OP<<"# Number succeed func icall  \t\t\t"<<GCtx->func_support_dataflow_Number<<"\n";
+	// OP<<"# Number succeed alias icall \t\t\t"<<GCtx->icall_support_dataflow_Number<<"\n";
+	// OP<<"# Number succeed func icall  \t\t\t"<<GCtx->func_support_dataflow_Number<<"\n";
 #ifdef ENABLE_TBAA_ALIAS_REFINEMENT
 	OP<<"# Number TBAA-blocked alias merges \t\t"<<GetTBAABlockedMerges()<< "\n";
 #endif
