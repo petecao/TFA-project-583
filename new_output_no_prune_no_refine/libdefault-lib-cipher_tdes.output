@@ -1,0 +1,124 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_tdes.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_tdes.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-cipher_tdes.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_tdes.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: ossl_tdes_einit
+
+1 Top func: ossl_cipher_generic_block_update
+
+2 Top func: ossl_tdes_dupctx
+
+3 Top func: ossl_cipher_generic_cipher
+
+4 Top func: tdes_ede3_ecb_get_params
+
+5 Top func: ossl_tdes_get_ctx_params
+     Top func: ossl_tdes_einit Failed
+     Top func: ossl_tdes_dupctx Failed
+     Top func: ossl_cipher_generic_block_update Failed
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: tdes_ede3_ecb_get_params Failed
+
+6 Top func: ossl_tdes_dinit
+
+7 Top func: ossl_tdes_freectx
+
+8 Top func: ossl_cipher_generic_block_final
+
+9 Top func: tdes_ede3_ecb_newctx
+
+10 Top func: ossl_cipher_generic_gettable_params
+     Top func: ossl_tdes_get_ctx_params Failed
+     Top func: ossl_tdes_dinit Failed
+     Top func: ossl_tdes_freectx Failed
+     Top func: ossl_cipher_generic_block_final Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
+
+11 Top func: ossl_tdes_gettable_ctx_params
+     Top func: tdes_ede3_ecb_newctx Failed
+
+12 Top func: ossl_tdes_set_ctx_params
+
+13 Top func: tdes_ede3_cbc_newctx
+
+14 Top func: tdes_ede3_cbc_get_params
+
+15 Top func: ossl_tdes_settable_ctx_params
+     Top func: ossl_tdes_set_ctx_params Failed
+     Top func: ossl_tdes_gettable_ctx_params Failed
+     Top func: tdes_ede3_cbc_get_params Failed
+     Top func: tdes_ede3_cbc_newctx Failed
+     Top func: ossl_tdes_settable_ctx_params Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001316
+# Typebuilder time     		0.00025
+# MLTA time            		0.000372
+# Icall alias time     		7.8e-05
+# Func alias time      		0.004278
+# One layer alias time 		8e-06
+# Escape alias time    		6.5e-05
+# DB time              		0.002128

@@ -1,0 +1,140 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc4.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc4.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/liblegacy-lib-cipher_rc4.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/liblegacy-lib-cipher_rc4.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: rc4_40_newctx
+
+1 Top func: rc4_40_get_params
+
+2 Top func: ossl_cipher_generic_stream_final
+
+3 Top func: rc4_dinit
+
+4 Top func: rc4_dupctx
+     Top func: rc4_40_get_params Failed
+     Top func: rc4_40_newctx Failed
+     Top func: ossl_cipher_generic_stream_final Failed
+     Top func: rc4_dinit Failed
+
+5 Top func: ossl_cipher_generic_get_ctx_params
+
+6 Top func: rc4_freectx
+
+7 Top func: ossl_cipher_generic_cipher
+
+8 Top func: ossl_cipher_generic_stream_update
+     Top func: rc4_dupctx Failed
+     Top func: ossl_cipher_generic_get_ctx_params Failed
+
+9 Top func: rc4_einit
+     Top func: rc4_freectx Failed
+     Top func: ossl_cipher_generic_stream_update Failed
+     Top func: ossl_cipher_generic_cipher Failed
+
+10 Top func: ossl_cipher_var_keylen_set_ctx_params
+
+11Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_gettable_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+12 Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_gettable_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+13Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_128_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+rc4_einitMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: ossl_cipher_generic_gettable_ctx_params Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: rc4_128_newctx Failed
+
+14 Top func: ossl_cipher_var_keylen_settable_ctx_params
+
+15 Top func: rc4_128_get_params
+     Top func: ossl_cipher_var_keylen_set_ctx_params Failed
+     Top func: ossl_cipher_var_keylen_settable_ctx_params Failed
+     Top func: rc4_128_get_params Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.028478
+# Typebuilder time     		0.000281
+# MLTA time            		0.000315
+# Icall alias time     		0.000118
+# Func alias time      		0.012471
+# One layer alias time 		7e-06
+# Escape alias time    		6e-05
+# DB time              		0.002089

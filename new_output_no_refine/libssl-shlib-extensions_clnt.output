@@ -1,0 +1,84 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-shlib-extensions_clnt.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-shlib-extensions_clnt.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libssl-shlib-extensions_clnt.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libssl-shlib-extensions_clnt.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   %76 = call i32 %72(ptr noundef %73, ptr noundef null, ptr noundef %74, i32 noundef 256, ptr noundef %75, i32 noundef 512), !dbg !1875
+
+1 Update icall:   %65 = call i32 %52(ptr noundef %55, ptr noundef %12, ptr noundef %13, ptr noundef %57, i32 noundef %60, ptr noundef %64), !dbg !1844
+
+2 Update icall:   %47 = call i32 %44(ptr noundef %45, ptr noundef %46, ptr noundef %13, ptr noundef %14, ptr noundef %15), !dbg !1846
+
+3 Update icall:   %36 = call i32 %25(ptr noundef %26, ptr noundef %28, i32 noundef %31, ptr noundef %35), !dbg !1824
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				4
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.012677
+# Typebuilder time     		0.001041
+# MLTA time            		0.00077
+# Icall alias time     		0.000103
+# Func alias time      		0.002085
+# One layer alias time 		9e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001969

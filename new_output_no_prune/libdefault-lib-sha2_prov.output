@@ -1,0 +1,289 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-sha2_prov.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-sha2_prov.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-sha2_prov.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-sha2_prov.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: sha1_internal_init
+
+1 Top func: sha1_newctx
+
+2 Top func: sha256_copyctx
+
+3 Top func: sha224_copyctx
+
+4 Top func: sha256_192_internal_get_params
+
+5 Top func: sha512_get_params
+
+6 Top func: sha384_get_params
+
+7 Top func: sha512_224_internal_init
+     Top func: sha1_newctx Failed
+     Top func: sha1_internal_init Failed
+     Top func: sha256_192_internal_get_params Failed
+     Top func: sha224_copyctx Failed
+     Top func: sha512_get_params Failed
+     Top func: sha256_copyctx Failed
+     Top func: sha384_get_params Failed
+
+8 Top func: SHA1_Update
+
+9 Top func: sha1_settable_ctx_params
+     Top func: sha512_224_internal_init Failed
+
+10 Top func: sha256_192_internal_internal_init
+
+11 Top func: sha224_get_params
+
+12 Top func: sha512_internal_init
+
+13 Top func: sha256_get_params
+
+14 Top func: sha384_internal_init
+
+15 Top func: sha512_256_newctx
+     Top func: SHA1_Update Failed
+     Top func: sha1_settable_ctx_params Failed
+     Top func: sha256_192_internal_internal_init Failed
+     Top func: sha224_get_params Failed
+     Top func: sha512_internal_init Failed
+     Top func: sha256_get_params Failed
+
+16 Top func: sha1_internal_final
+
+17 Top func: sha1_set_ctx_params
+     Top func: sha384_internal_initMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+18 Top func: Merge complete --- Not blocked by TBAA or TFA check
+sha384_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+19Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+sha224_internal_initMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: sha512_256_newctx Failed
+
+20 Top func: sha512_224_newctx
+
+21 Top func: sha256_internal_init
+
+22 Top func: sha512_newctx
+
+23 Top func: sha512_256_internal_final
+     Top func: sha1_internal_final Failed
+     Top func: sha224_internal_init Failed
+     Top func: sha384_newctx Failed
+     Top func: sha1_set_ctx_params Failed
+     Top func: sha512_224_newctx Failed
+     Top func: sha256_internal_init Failed
+
+24 Top func: sha1_freectx
+
+25 Top func: sha256_newctx
+
+26 Top func: SHA384_Update
+     Top func: sha512_newctx Failed
+
+27 Top func: sha224_newctx
+
+28 Top func: sha512_224_internal_final
+     Top func: sha512_256_internal_final Failed
+
+29 Top func: sha256_192_internal_newctx
+
+30 Top func: SHA512_Update
+
+31 Top func: sha512_256_freectx
+     Top func: sha1_freectx Failed
+     Top func: sha256_newctx Failed
+     Top func: SHA384_Update Failed
+     Top func: sha224_newctx Failed
+     Top func: sha512_224_internal_final Failed
+
+32 Top func: sha1_dupctx
+
+33 Top func: SHA256_Update
+     Top func: sha256_192_internal_newctx Failed
+
+34 Top func: sha384_internal_final
+
+35 Top func: SHA224_Update
+     Top func: SHA512_Update Failed
+
+36 Top func: sha512_224_freectx
+     Top func: sha512_256_freectx Failed
+
+37 Top func: sha256_192_internal_internal_final
+
+38 Top func: sha512_internal_final
+     Top func: sha1_dupctx Failed
+     Top func: SHA256_Update Failed
+
+39 Top func: sha512_256_dupctx
+     Top func: SHA224_Update Failed
+     Top func: sha384_internal_final Failed
+     Top func: sha512_224_freectx Failed
+
+40 Top func: sha1_copyctx
+
+41 Top func: sha256_internal_final
+
+42 Top func: sha224_internal_final
+     Top func: sha256_192_internal_internal_final Failed
+
+43 Top func: sha384_freectx
+     Top func: sha512_internal_final Failed
+
+44 Top func: sha512_224_dupctx
+     Top func: sha512_256_dupctx Failed
+
+45 Top func: sha256_192_internal_freectx
+
+46 Top func: sha512_freectx
+     Top func: sha1_copyctx Failed
+     Top func: sha256_internal_final Failed
+     Top func: sha224_internal_final Failed
+
+47 Top func: sha512_256_copyctx
+     Top func: sha384_freectx Failed
+
+48 Top func: sha1_get_params
+     Top func: sha512_224_dupctx Failed
+
+49 Top func: sha256_freectx
+
+50 Top func: sha224_freectx
+     Top func: sha512_freectx Failed
+     Top func: sha256_192_internal_freectx Failed
+
+51 Top func: sha384_dupctx
+
+52 Top func: sha512_224_copyctx
+     Top func: sha512_256_copyctx Failed
+
+53 Top func: sha512_dupctx
+
+54 Top func: sha256_192_internal_dupctx
+     Top func: sha1_get_params Failed
+     Top func: sha256_freectx Failed
+     Top func: sha224_freectx Failed
+
+55 Top func: sha512_256_get_params
+
+56 Top func: ossl_digest_default_gettable_params
+     Top func: sha384_dupctx Failed
+
+57 Top func: sha256_dupctx
+     Top func: sha512_224_copyctx Failed
+
+58 Top func: sha224_dupctx
+     Top func: sha512_dupctx Failed
+     Top func: sha256_192_internal_dupctx Failed
+
+59 Top func: sha384_copyctx
+
+60 Top func: sha512_224_get_params
+
+61 Top func: sha512_copyctx
+
+62 Top func: sha256_192_internal_copyctx
+     Top func: ossl_digest_default_gettable_params Failed
+     Top func: sha512_256_get_params Failed
+     Top func: sha256_dupctx Failed
+     Top func: sha224_dupctx Failed
+
+63 Top func: sha512_256_internal_init
+     Top func: sha384_copyctx Failed
+     Top func: sha512_224_get_params Failed
+     Top func: sha512_copyctx Failed
+     Top func: sha256_192_internal_copyctx Failed
+     Top func: sha512_256_internal_init Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.002931
+# Typebuilder time     		0.000419
+# MLTA time            		0.000578
+# Icall alias time     		6.6e-05
+# Func alias time      		0.008699
+# One layer alias time 		6e-06
+# Escape alias time    		5.4e-05
+# DB time              		0.001988

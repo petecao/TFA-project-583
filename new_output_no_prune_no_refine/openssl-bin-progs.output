@@ -1,0 +1,238 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/openssl-bin-progs.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/openssl-bin-progs.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/openssl-bin-progs.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/openssl-bin-progs.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: dsa_main
+
+1 Top func: asn1parse_main
+
+2 Top func: skeyutl_main
+
+3 Top func: verify_main
+
+4 Top func: gendsa_main
+
+5 Top func: pkey_main
+
+6 Top func: req_main
+
+7 Top func: mac_main
+     Top func: dsa_main Failed
+     Top func: skeyutl_main Failed
+     Top func: asn1parse_main Failed
+     Top func: verify_main Failed
+     Top func: gendsa_main Failed
+     Top func: pkey_main Failed
+     Top func: req_main Failed
+
+8 Top func: dsaparam_main
+
+9 Top func: smime_main
+
+10 Top func: ca_main
+     Top func: mac_main Failed
+
+11 Top func: version_main
+
+12 Top func: genpkey_main
+
+13 Top func: pkeyparam_main
+
+14 Top func: rsa_main
+
+15 Top func: nseq_main
+     Top func: dsaparam_main Failed
+     Top func: smime_main Failed
+     Top func: ca_main Failed
+     Top func: version_main Failed
+     Top func: genpkey_main Failed
+     Top func: pkeyparam_main Failed
+
+16 Top func: ec_main
+
+17 Top func: speed_main
+     Top func: rsa_main Failed
+
+18 Top func: ciphers_main
+     Top func: nseq_main Failed
+
+19 Top func: x509_main
+
+20 Top func: genrsa_main
+
+21 Top func: pkeyutl_main
+
+22 Top func: rsautl_main
+
+23 Top func: ocsp_main
+     Top func: ec_main Failed
+     Top func: speed_main Failed
+     Top func: ciphers_main Failed
+     Top func: x509_main Failed
+     Top func: genrsa_main Failed
+
+24 Top func: ecparam_main
+     Top func: pkeyutl_main Failed
+
+25 Top func: spkac_main
+     Top func: rsautl_main Failed
+
+26 Top func: cmp_main
+     Top func: ocsp_main Failed
+
+27 Top func: crl_main
+
+28 Top func: help_main
+
+29 Top func: prime_main
+
+30 Top func: s_client_main
+
+31 Top func: passwd_main
+     Top func: ecparam_main Failed
+     Top func: spkac_main Failed
+     Top func: cmp_main Failed
+     Top func: crl_main Failed
+
+32 Top func: enc_main
+     Top func: help_main Failed
+     Top func: prime_main Failed
+
+33 Top func: srp_main
+
+34 Top func: cms_main
+     Top func: s_client_main Failed
+
+35 Top func: crl2pkcs7_main
+     Top func: passwd_main Failed
+
+36 Top func: info_main
+
+37 Top func: rand_main
+
+38 Top func: s_server_main
+
+39 Top func: pkcs12_main
+     Top func: enc_main Failed
+     Top func: srp_main Failed
+     Top func: cms_main Failed
+     Top func: crl2pkcs7_main Failed
+
+40 Top func: errstr_main
+     Top func: info_main Failed
+
+41 Top func: storeutl_main
+     Top func: rand_main Failed
+
+42 Top func: configutl_main
+     Top func: s_server_main Failed
+
+43 Top func: dgst_main
+     Top func: pkcs12_main Failed
+
+44 Top func: kdf_main
+
+45 Top func: rehash_main
+
+46 Top func: s_time_main
+     Top func: errstr_main Failed
+
+47 Top func: pkcs7_main
+     Top func: storeutl_main Failed
+     Top func: configutl_main Failed
+     Top func: dgst_main Failed
+
+48 Top func: fipsinstall_main
+
+49 Top func: ts_main
+     Top func: kdf_main Failed
+     Top func: rehash_main Failed
+
+50 Top func: sess_id_main
+     Top func: s_time_main Failed
+
+51 Top func: dhparam_main
+     Top func: pkcs7_main Failed
+
+52 Top func: list_main
+
+53 Top func: pkcs8_main
+     Top func: fipsinstall_main Failed
+     Top func: ts_main Failed
+     Top func: sess_id_main Failed
+     Top func: dhparam_main Failed
+     Top func: list_main Failed
+     Top func: pkcs8_main Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001662
+# Typebuilder time     		0.000319
+# MLTA time            		0.000614
+# Icall alias time     		6e-05
+# Func alias time      		0.002895
+# One layer alias time 		6e-06
+# Escape alias time    		6.2e-05
+# DB time              		0.001694

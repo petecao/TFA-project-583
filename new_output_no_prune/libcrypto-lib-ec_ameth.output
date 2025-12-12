@@ -1,0 +1,170 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-ec_ameth.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-ec_ameth.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-lib-ec_ameth.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-ec_ameth.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: eckey_pub_decode
+
+1 Top func: ec_copy_parameters
+
+2 Top func: eckey_priv_encode
+
+3 Top func: ec_security_bits
+
+4 Top func: int_ec_free
+
+5 Top func: ec_pkey_param_check
+
+6 Top func: old_ec_priv_encode
+     Top func: eckey_pub_decode Failed
+     Top func: ec_copy_parameters Failed
+     Top func: eckey_priv_encode Failed
+     Top func: ec_security_bits Failed
+     Top func: ec_pkey_param_check Failed
+     Top func: int_ec_free Failed
+
+7 Top func: eckey_pub_encode
+
+8 Top func: ec_cmp_parameters
+
+9 Top func: eckey_priv_print
+
+10 Top func: eckey_param_decode
+
+11 Top func: ec_pkey_dirty_cnt
+
+12 Top func: ec_pkey_ctrl
+     Top func: old_ec_priv_encode Failed
+
+13 Top func: ec_pkey_check
+     Top func: eckey_pub_encode Failed
+     Top func: ec_cmp_parameters Failed
+     Top func: eckey_param_decode Failed
+     Top func: eckey_priv_print Failed
+     Top func: ec_pkey_dirty_cnt Failed
+     Top func: ec_pkey_ctrl Failed
+
+14 Top func: eckey_pub_cmp
+
+15 Top func: eckey_param_print
+
+16 Top func: eckey_param_encode
+
+17 Top func: int_ec_size
+
+18 Top func: ec_pkey_export_to
+
+19 Top func: old_ec_priv_decode
+     Top func: ec_pkey_check Failed
+
+20 Top func: ec_pkey_public_check
+     Top func: eckey_pub_cmp Failed
+     Top func: eckey_param_print Failed
+     Top func: eckey_param_encode Failed
+     Top func: int_ec_size Failed
+     Top func: old_ec_priv_decode Failed
+     Top func: ec_pkey_export_to Failed
+
+21 Top func: eckey_pub_print
+
+22 Top func: ec_pkey_import_from
+
+23 Top func: ec_missing_parameters
+
+24 Top func: ec_bits
+
+25Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+eckey_priv_decode_exMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+26Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ec_pkey_copyMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: ec_pkey_public_check FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: eckey_pub_print Failed
+     Top func: ec_pkey_import_from Failed
+     Top func: eckey_priv_decode_ex Failed
+     Top func: ec_pkey_copy Failed
+     Top func: ec_missing_parameters Failed
+     Top func: ec_bits Failed
+
+Update global ICallees info
+
+0 Update icall:   %133 = call i32 %129(ptr noundef %130, i32 noundef %131, ptr noundef %132), !dbg !1031
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			1
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.004471
+# Typebuilder time     		0.000537
+# MLTA time            		0.000472
+# Icall alias time     		7.7e-05
+# Func alias time      		0.00547
+# One layer alias time 		8e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001952

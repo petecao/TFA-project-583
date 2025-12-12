@@ -1,0 +1,367 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aes.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aes.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-cipher_aes.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aes.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: ossl_cipher_generic_stream_final
+
+1 Top func: aes_freectx
+
+2 Top func: aes_cbc_cts_get_ctx_params
+
+3 Top func: ossl_cipher_generic_set_ctx_params
+
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_192_cfb1_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_128_ecb_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_stream_update
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: ossl_cipher_generic_stream_final Failed
+     Top func: aes_freectx Failed
+     Top func: aes_128_ecb_newctx Failed
+     Top func: aes_192_cfb1_get_params Failed
+     Top func: aes_cbc_cts_get_ctx_params Failed
+
+7 Top func: aes_256_ofb_get_params
+
+8 Top func: aes_dupctx
+
+9 Top func: aes_128_ecb_get_params
+
+10 Top func: aes_128_cfb1_newctx
+     Top func: ossl_cipher_generic_stream_update Failed
+     Top func: ossl_cipher_generic_set_ctx_params Failed
+
+11 Top func: aes_cbc_cts_set_ctx_params
+
+12Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_192_cfb_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+13 Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_cbc_cts_dinitMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: aes_dupctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_256_ofb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: aes_128_cfb1_newctx Failed
+     Top func: aes_128_ecb_get_params Failed
+
+14 Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_generic_einitMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+aes_192_ofb_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+16Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+aes_128_cfb1_get_params
+Merge complete --- Not blocked by TBAA or TFA check
+
+17Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_128_cfb8_get_params
+
+Merge complete --- Not blocked by TBAA or TFA check
+18Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_256_cbc_newctxMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_192_cfb_newctxMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_cbc_cts_dinitMerge complete --- Not blocked by TBAA or TFA check
+ FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+19 Top func: aes_192_cfb_get_params
+
+20 Top func: aes_cbc_cts_settable_ctx_params
+     Top func: aes_128_cfb1_get_params Failed
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: aes_192_ofb_newctx Failed
+     Top func: aes_256_cbc_newctx Failed
+     Top func: aes_128_cfb8_get_params Failed
+
+21 Top func: aes_256_cfb8_newctx
+
+22 Top func: aes_192_ofb_get_params
+
+23 Top func: aes_256_cbc_get_params
+
+24 Top func: aes_256_ctr_newctx
+     Top func: aes_192_cfb_get_params Failed
+     Top func: aes_cbc_cts_set_ctx_params Failed
+     Top func: aes_cbc_cts_settable_ctx_params Failed
+     Top func: ossl_cipher_generic_einit Failed
+
+25 Top func: aes_128_cfb_newctx
+
+26 Top func: aes_cbc_cts_gettable_ctx_params
+
+27 Top func: aes_cts_192_cbc_get_params
+     Top func: aes_256_cfb8_newctx Failed
+     Top func: aes_192_ofb_get_params Failed
+     Top func: aes_256_cbc_get_params Failed
+     Top func: aes_256_ctr_newctx Failed
+
+28 Top func: ossl_cipher_generic_dinit
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+29 Top func: aes_256_cfb8_get_params
+
+30 Top func: aes_128_ofb_newctx
+
+31 Top func: aes_192_cbc_newctx
+
+32 Top func: aes_256_ctr_get_params
+     Top func: aes_128_cfb_newctx Failed
+     Top func: aes_cbc_cts_gettable_ctx_params Failed
+     Top func: aes_cts_192_cbc_get_params Failed
+
+33 Top func: aes_128_cfb_get_params
+     Top func: ossl_cipher_generic_dinit Failed
+
+34 Top func: ossl_cipher_generic_gettable_ctx_params
+     Top func: aes_256_cfb8_get_params Failed
+
+35 Top func: aes_cts_128_cbc_get_params
+     Top func: aes_128_ofb_newctx Failed
+     Top func: aes_192_cbc_newctx Failed
+     Top func: aes_256_ctr_get_params Failed
+
+36 Top func: ossl_cipher_generic_block_update
+
+37 Top func: aes_192_cfb8_newctx
+
+38 Top func: aes_128_ofb_get_params
+
+39 Top func: aes_192_cbc_get_params
+     Top func: aes_128_cfb_get_params Failed
+
+40 Top func: aes_192_ctr_newctx
+     Top func: ossl_cipher_generic_gettable_ctx_params Failed
+     Top func: aes_cts_128_cbc_get_params Failed
+
+41 Top func: aes_256_cfb1_newctx
+     Top func: ossl_cipher_generic_block_update Failed
+
+42 Top func: ossl_cipher_generic_settable_ctx_params
+
+43 Top func: ossl_cipher_generic_gettable_params
+     Top func: aes_192_cfb8_newctx Failed
+     Top func: aes_128_ofb_get_params Failed
+     Top func: aes_192_cbc_get_params Failed
+     Top func: aes_192_ctr_newctx Failed
+
+44 Top func: ossl_cipher_generic_block_final
+
+45 Top func: aes_192_cfb8_get_params
+
+46 Top func: aes_256_cfb_newctx
+
+47 Top func: aes_128_cbc_newctx
+     Top func: aes_256_cfb1_newctx Failed
+
+48 Top func: aes_192_ctr_get_params
+     Top func: ossl_cipher_generic_settable_ctx_params Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
+
+49 Top func: aes_256_cfb1_get_params
+     Top func: ossl_cipher_generic_block_final Failed
+
+50 Top func: ossl_cipher_generic_skey_einit
+     Top func: aes_192_cfb8_get_params Failed
+
+51 Top func: ossl_cipher_cbc_cts_block_update
+     Top func: aes_256_cfb_newctx Failed
+     Top func: aes_128_cbc_newctx Failed
+
+52 Top func: ossl_cipher_generic_cipher
+     Top func: aes_192_ctr_get_params Failed
+
+53 Top func: aes_128_cfb8_newctx
+
+54 Top func: aes_256_cfb_get_params
+     Top func: aes_256_cfb1_get_params Failed
+
+55 Top func: aes_128_cbc_get_params
+
+56 Top func: aes_128_ctr_newctx
+     Top func: ossl_cipher_generic_skey_einit Failed
+     Top func: ossl_cipher_cbc_cts_block_update Failed
+
+57 Top func: aes_192_cfb1_newctx
+     Top func: ossl_cipher_generic_cipher Failed
+
+58 Top func: ossl_cipher_generic_skey_dinit
+     Top func: aes_128_cfb8_newctx Failed
+
+59 Top func: ossl_cipher_cbc_cts_block_final
+     Top func: aes_256_cfb_get_params Failed
+     Top func: aes_128_cbc_get_params Failed
+
+60 Top func: aes_256_ecb_get_params
+     Top func: aes_128_ctr_newctx Failed
+
+61 Top func: aes_cbc_cts_einit
+
+62 Top func: aes_256_ecb_newctx
+
+63 Top func: aes_256_ofb_newctx
+     Top func: aes_192_cfb1_newctx Failed
+
+64 Top func: aes_128_ctr_get_params
+     Top func: ossl_cipher_generic_skey_dinit Failed
+     Top func: ossl_cipher_cbc_cts_block_final Failed
+
+65 Top func: ossl_cipher_generic_get_ctx_params
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_256_ecb_get_paramsMerge complete --- Not blocked by TBAA or TFA check
+ Failed
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+66Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+aes_192_ecb_newctx
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: aes_cbc_cts_einit Failed
+     Top func: aes_256_ecb_newctx Failed
+
+67 Top func: aes_cts_256_cbc_get_params
+     Top func: aes_256_ofb_newctx Failed
+     Top func: aes_128_ctr_get_params Failed
+
+68 Top func: aes_192_ecb_get_params
+     Top func: ossl_cipher_generic_get_ctx_params Failed
+     Top func: aes_192_ecb_newctx Failed
+     Top func: aes_cts_256_cbc_get_params Failed
+     Top func: aes_192_ecb_get_params Failed
+
+Update global ICallees info
+
+0 Update icall:   call void %21(ptr noundef %23, ptr noundef %25), !dbg !300
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.003256
+# Typebuilder time     		0.000498
+# MLTA time            		0.001596
+# Icall alias time     		3.6e-05
+# Func alias time      		0.004328
+# One layer alias time 		6e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.001987

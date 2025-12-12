@@ -1,0 +1,92 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-lib-s3_msg.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-lib-s3_msg.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libssl-lib-s3_msg.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libssl-lib-s3_msg.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   %146 = call i32 %141(ptr noundef %145, ptr noundef %8, i64 noundef 1), !dbg !1746
+
+1 Update icall:   %52 = call i32 %50(ptr noundef %51), !dbg !1691
+
+2 Update icall:   call void %185(i32 noundef 1, i32 noundef %188, i32 noundef 21, ptr noundef %192, i64 noundef 2, ptr noundef %193, ptr noundef %196), !dbg !1781
+
+3 Update icall:   %74 = call i32 %72(i32 noundef %73), !dbg !1668
+
+4 Update icall:   %122 = call i32 %117(ptr noundef %121), !dbg !1730
+
+5 Update icall:   call void %238(ptr noundef %239, i32 noundef 16392, i32 noundef %240), !dbg !1822
+
+6 Update icall:   %66 = call i32 %63(ptr noundef %64, i32 noundef %65), !dbg !1701
+
+7 Update icall:   %141 = call i32 %139(ptr noundef %140), !dbg !1726
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				8
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.00336
+# Typebuilder time     		0.000479
+# MLTA time            		0.000263
+# Icall alias time     		6.3e-05
+# Func alias time      		0.005018
+# One layer alias time 		1e-05
+# Escape alias time    		5.8e-05
+# DB time              		0.002161

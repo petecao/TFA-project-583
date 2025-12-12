@@ -1,0 +1,106 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-ecx_exch.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-ecx_exch.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-ecx_exch.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-ecx_exch.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: ecx_derive
+
+1 Top func: x25519_newctx
+
+2 Top func: ecx_dupctx
+
+3 Top func: ecx_freectx
+
+4 Top func: ecx_get_ctx_params
+
+5 Top func: ecx_gettable_ctx_params
+
+6 Top func: x448_init
+     Top func: x25519_newctx Failed
+     Top func: ecx_derive Failed
+     Top func: ecx_dupctx Failed
+     Top func: ecx_freectx Failed
+     Top func: ecx_gettable_ctx_params Failed
+     Top func: ecx_get_ctx_params Failed
+
+7 Top func: x25519_init
+
+8 Top func: ecx_set_peer
+
+9 Top func: x448_newctx
+     Top func: x448_init Failed
+     Top func: ecx_set_peer Failed
+     Top func: x25519_init Failed
+     Top func: x448_newctx Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001883
+# Typebuilder time     		0.000275
+# MLTA time            		0.000275
+# Icall alias time     		6.2e-05
+# Func alias time      		0.00239
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002165

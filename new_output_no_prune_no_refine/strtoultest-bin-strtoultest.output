@@ -1,0 +1,20 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/strtoultest-bin-strtoultest.o]
+ #0 0x00005558ee5d3240 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (./build/lib/analyzer+0x382240)
+ #1 0x00005558ee5d0801 SignalHandler(int) Signals.cpp:0:0
+ #2 0x00007f4ee53a1520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #3 0x00005558ee2b79d4 TypeBuilderPass::updateQueues(llvm::Type*, llvm::Type*, std::deque<llvm::Type*, std::allocator<llvm::Type*>>&) (./build/lib/analyzer+0x669d4)
+ #4 0x00005558ee2b2876 TypeBuilderPass::matchStructTypes(llvm::Type*, llvm::User*) (./build/lib/analyzer+0x61876)
+ #5 0x00005558ee2b36e5 TypeBuilderPass::checkLayeredDebugInfo(llvm::GlobalVariable*) (./build/lib/analyzer+0x626e5)
+ #6 0x00005558ee2b1a6d TypeBuilderPass::doModulePass(llvm::Module*) (./build/lib/analyzer+0x60a6d)
+ #7 0x00005558ee2a74bc IterativeModulePass::run(std::vector<std::pair<llvm::Module*, llvm::StringRef>, std::allocator<std::pair<llvm::Module*, llvm::StringRef>>>&) (./build/lib/analyzer+0x564bc)
+ #8 0x00005558ee2ab653 main (./build/lib/analyzer+0x5a653)
+ #9 0x00007f4ee5388d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#10 0x00007f4ee5388e40 call_init ./csu/../csu/libc-start.c:128:20
+#11 0x00007f4ee5388e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#12 0x00005558ee2a6e85 _start (./build/lib/analyzer+0x55e85)
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
+Stack dump:
+0.	Program arguments: ./build/lib/analyzer tests/open_ssl_bc/strtoultest-bin-strtoultest.o

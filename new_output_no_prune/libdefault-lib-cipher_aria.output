@@ -1,0 +1,252 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aria.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aria.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-cipher_aria.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aria.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: aria_256_ecb_newctx
+
+1 Top func: aria_192_ecb_get_params
+
+2 Top func: aria_192_cfb8_newctx
+
+3 Top func: aria_256_ecb_get_params
+
+4 Top func: aria_128_cbc_newctx
+
+5 Top func: aria_192_ofb_get_params
+
+6 Top func: aria_128_cfb_newctx
+     Top func: aria_256_ecb_newctx Failed
+     Top func: aria_192_ecb_get_params Failed
+     Top func: aria_192_cfb8_newctx Failed
+     Top func: aria_256_ecb_get_params Failed
+     Top func: aria_128_cbc_newctx Failed
+     Top func: aria_192_ofb_get_params Failed
+
+7 Top func: aria_freectx
+
+8 Top func: aria_128_ecb_newctx
+
+9 Top func: ossl_cipher_generic_gettable_params
+
+10 Top func: ossl_cipher_generic_get_ctx_params
+     Top func: aria_128_cfb_newctx Failed
+
+11 Top func: aria_128_cbc_get_params
+
+12 Top func: aria_128_ofb_newctx
+
+13 Top func: aria_128_cfb_get_params
+     Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: ossl_cipher_generic_get_ctx_params Failed
+     Top func: aria_freectx Failed
+     Top func: aria_128_ecb_newctx Failed
+     Top func: aria_128_cbc_get_params Failed
+
+14 Top func: ossl_cipher_generic_gettable_ctx_params
+
+15 Top func: ossl_cipher_generic_set_ctx_params
+
+16 Top func: aria_dupctx
+
+17 Top func: aria_128_ecb_get_params
+     Top func: aria_128_ofb_newctx Failed
+     Top func: aria_128_cfb_get_params Failed
+
+18 Top func: aria_256_ofb_newctx
+
+19 Top func: aria_128_ofb_get_params
+
+20 Top func: aria_256_cfb1_newctx
+     Top func: ossl_cipher_generic_gettable_ctx_params Failed
+     Top func: ossl_cipher_generic_set_ctx_params Failed
+     Top func: aria_128_ecb_get_params Failed
+     Top func: aria_dupctx Failed
+
+21 Top func: ossl_cipher_generic_settable_ctx_params
+
+22 Top func: aria_192_cfb1_get_params
+
+23 Top func: aria_256_cbc_newctx
+
+24 Top func: ossl_cipher_generic_einit
+     Top func: aria_128_ofb_get_params Failed
+     Top func: aria_256_ofb_newctx Failed
+     Top func: aria_256_cfb1_newctx Failed
+
+25 Top func: aria_256_cfb_newctx
+
+26 Top func: ossl_cipher_generic_stream_update
+     Top func: ossl_cipher_generic_settable_ctx_params Failed
+     Top func: aria_192_cfb1_get_params Failed
+     Top func: ossl_cipher_generic_einit Failed
+     Top func: aria_256_cbc_newctx Failed
+
+27 Top func: aria_256_cfb1_get_params
+
+28 Top func: ossl_cipher_generic_skey_einit
+
+29 Top func: aria_128_cfb1_newctx
+
+30 Top func: ossl_cipher_generic_dinit
+
+31 Top func: aria_256_cbc_get_params
+     Top func: aria_256_cfb_newctx Failed
+     Top func: ossl_cipher_generic_stream_update Failed
+
+32 Top func: aria_256_cfb_get_params
+     Top func: ossl_cipher_generic_skey_einit Failed
+     Top func: aria_256_cfb1_get_params Failed
+     Top func: ossl_cipher_generic_dinit Failed
+
+33 Top func: ossl_cipher_generic_stream_final
+     Top func: aria_128_cfb1_newctx Failed
+     Top func: aria_256_cbc_get_params Failed
+
+34 Top func: ossl_cipher_generic_skey_dinit
+
+35 Top func: aria_192_cfb1_newctx
+
+36 Top func: ossl_cipher_generic_block_update
+
+37 Top func: aria_128_cfb1_get_params
+
+38 Top func: aria_192_cbc_newctx
+     Top func: aria_256_cfb_get_params Failed
+     Top func: ossl_cipher_generic_stream_final Failed
+     Top func: ossl_cipher_generic_skey_dinit Failed
+
+39 Top func: aria_192_cfb_newctx
+     Top func: aria_192_cfb1_newctx Failed
+     Top func: ossl_cipher_generic_block_update Failed
+
+40 Top func: aria_256_ofb_get_params
+     Top func: aria_128_cfb1_get_params Failed
+     Top func: aria_192_cbc_newctx Failed
+
+41 Top func: aria_192_ecb_newctx
+
+42 Top func: aria_192_cfb8_get_params
+
+43 Top func: ossl_cipher_generic_block_final
+
+44 Top func: aria_256_cfb8_newctx
+
+45 Top func: aria_192_cbc_get_params
+     Top func: aria_192_cfb_newctx Failed
+     Top func: aria_256_ofb_get_params Failed
+     Top func: aria_192_ecb_newctx Failed
+     Top func: aria_192_cfb8_get_params Failed
+
+46 Top func: aria_192_cfb_get_params
+     Top func: ossl_cipher_generic_block_final Failed
+
+47 Top func: aria_192_ofb_newctx
+     Top func: aria_256_cfb8_newctx Failed
+     Top func: aria_192_cbc_get_params Failed
+
+48 Top func: aria_128_cfb8_newctx
+
+49 Top func: aria_128_cfb8_get_params
+
+50 Top func: ossl_cipher_generic_cipher
+
+51 Top func: aria_256_cfb8_get_params
+
+52 Top func: aria_128_ctr_get_params
+     Top func: aria_192_cfb_get_params Failed
+     Top func: aria_192_ofb_newctx Failed
+     Top func: aria_128_cfb8_newctx Failed
+     Top func: aria_128_cfb8_get_params Failed
+
+53 Top func: aria_128_ctr_newctx
+     Top func: ossl_cipher_generic_cipher Failed
+     Top func: aria_256_cfb8_get_params Failed
+
+54 Top func: aria_192_ctr_get_params
+     Top func: aria_128_ctr_get_params Failed
+
+55 Top func: aria_192_ctr_newctx
+
+56 Top func: aria_256_ctr_newctx
+
+57 Top func: aria_256_ctr_get_params
+     Top func: aria_128_ctr_newctx Failed
+     Top func: aria_192_ctr_get_params Failed
+     Top func: aria_192_ctr_newctx Failed
+     Top func: aria_256_ctr_newctx Failed
+     Top func: aria_256_ctr_get_params Failed
+
+Update global ICallees info
+
+0 Update icall:   call void %21(ptr noundef %23, ptr noundef %25), !dbg !228
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.002319
+# Typebuilder time     		0.000343
+# MLTA time            		0.000971
+# Icall alias time     		6.4e-05
+# Func alias time      		0.00602
+# One layer alias time 		8e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002517

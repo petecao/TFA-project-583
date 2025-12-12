@@ -1,0 +1,153 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-dsa_ameth.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-dsa_ameth.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-lib-dsa_ameth.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-dsa_ameth.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: dsa_pub_decode
+
+1 Top func: dsa_param_decode
+
+2 Top func: int_dsa_size
+
+3 Top func: dsa_priv_decode
+
+4 Top func: dsa_copy_parameters
+
+5 Top func: dsa_sig_print
+
+6 Top func: dsa_pkey_export_to
+     Top func: dsa_pub_decode Failed
+     Top func: dsa_priv_decode Failed
+     Top func: dsa_param_decode Failed
+     Top func: int_dsa_size Failed
+     Top func: dsa_copy_parameters Failed
+     Top func: dsa_sig_print Failed
+
+7 Top func: dsa_pub_encode
+
+8 Top func: dsa_priv_encode
+
+9 Top func: dsa_param_encode
+
+10 Top func: dsa_bits
+
+11 Top func: dsa_cmp_parameters
+
+12 Top func: int_dsa_free
+     Top func: dsa_pkey_export_to Failed
+
+13 Top func: dsa_pkey_import_from
+     Top func: dsa_pub_encode Failed
+     Top func: dsa_priv_encode Failed
+     Top func: dsa_bits Failed
+     Top func: dsa_param_encode Failed
+     Top func: dsa_cmp_parameters Failed
+     Top func: int_dsa_free Failed
+
+14 Top func: dsa_pub_cmp
+
+15 Top func: dsa_priv_print
+
+16 Top func: dsa_security_bits
+
+17 Top func: dsa_missing_parameters
+
+18 Top func: dsa_param_print
+
+19 Top func: dsa_pkey_ctrl
+     Top func: dsa_pkey_import_from Failed
+     Top func: dsa_priv_print Failed
+
+20 Top func: dsa_pkey_copy
+     Top func: dsa_pub_cmp Failed
+     Top func: dsa_security_bits Failed
+     Top func: dsa_missing_parameters Failed
+     Top func: dsa_pkey_ctrl Failed
+     Top func: dsa_param_print Failed
+
+21 Top func: old_dsa_priv_decode
+
+22 Top func: dsa_pub_print
+
+23 Top func: dsa_pkey_dirty_cnt
+
+24 Top func: old_dsa_priv_encode
+     Top func: dsa_pkey_copy Failed
+     Top func: old_dsa_priv_decode Failed
+     Top func: dsa_pub_print Failed
+     Top func: dsa_pkey_dirty_cnt Failed
+     Top func: old_dsa_priv_encode Failed
+
+Update global ICallees info
+
+0 Update icall:   %101 = call i32 %97(ptr noundef %98, i32 noundef %99, ptr noundef %100), !dbg !689
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				1
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.003309
+# Typebuilder time     		0.000382
+# MLTA time            		0.000452
+# Icall alias time     		6.7e-05
+# Func alias time      		0.004696
+# One layer alias time 		9e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002075

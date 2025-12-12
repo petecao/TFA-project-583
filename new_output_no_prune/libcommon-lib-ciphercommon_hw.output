@@ -1,0 +1,82 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcommon-lib-ciphercommon_hw.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcommon-lib-ciphercommon_hw.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcommon-lib-ciphercommon_hw.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcommon-lib-ciphercommon_hw.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   call void %16(ptr noundef %17, ptr noundef %18, i64 noundef %19, ptr noundef %22, ptr noundef %25, i32 noundef %31), !dbg !136
+
+1 Update icall:   call void %27(ptr noundef %28, ptr noundef %29, i64 noundef %30, ptr noundef %33, i32 noundef %39), !dbg !146
+
+2 Update icall:   call void %51(ptr noundef %54, ptr noundef %57, ptr noundef %60), !dbg !169
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				3
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001887
+# Typebuilder time     		0.000272
+# MLTA time            		0.000292
+# Icall alias time     		6.9e-05
+# Func alias time      		0.00109
+# One layer alias time 		1.1e-05
+# Escape alias time    		6.3e-05
+# DB time              		0.002112

@@ -1,0 +1,86 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-xts128.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-xts128.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-lib-xts128.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-xts128.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   call void %69(ptr noundef %70, ptr noundef %71, ptr noundef %74), !dbg !124
+
+1 Update icall:   call void %33(ptr noundef %34, ptr noundef %35, ptr noundef %38), !dbg !94
+
+2 Update icall:   call void %164(ptr noundef %165, ptr noundef %166, ptr noundef %169), !dbg !215
+
+3 Update icall:   call void %279(ptr noundef %280, ptr noundef %281, ptr noundef %284), !dbg !325
+
+4 Update icall:   call void %222(ptr noundef %223, ptr noundef %224, ptr noundef %227), !dbg !277
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				5
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001508
+# Typebuilder time     		0.000207
+# MLTA time            		0.000195
+# Icall alias time     		0.000107
+# Func alias time      		0.005867
+# One layer alias time 		1.2e-05
+# Escape alias time    		6.3e-05
+# DB time              		0.001975

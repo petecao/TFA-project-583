@@ -1,0 +1,139 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-kem.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-kem.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-shlib-kem.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-kem.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: evp_kem_free
+
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+evp_kem_up_ref
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+evp_kem_from_algorithmMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+evp_kem_freeMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: evp_kem_up_ref
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: evp_kem_from_algorithm
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Update global ICallees info
+
+0 Update icall:   %50 = call i32 %41(ptr noundef %45, ptr noundef %46, ptr noundef %47, ptr noundef %48, ptr noundef %49), !dbg !861
+
+1 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !179
+
+2 Update icall:   %275 = call i32 %267(ptr noundef %271, ptr noundef %272, ptr noundef %273, ptr noundef %274), !dbg !1098
+
+3 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !179
+
+4 Update icall:   %202 = call ptr %197(ptr noundef %201), !dbg !1031
+
+5 Update icall:   %252 = call i32 %245(ptr noundef %249, ptr noundef %250, ptr noundef %251), !dbg !1076
+
+6 Update icall:   %294 = call i32 %287(ptr noundef %291, ptr noundef %292, ptr noundef %293), !dbg !1116
+
+7 Update icall:   %233 = call i32 %225(ptr noundef %229, ptr noundef %230, ptr noundef %231, ptr noundef %232), !dbg !1058
+
+8 Update icall:   %55 = call i32 %46(ptr noundef %50, ptr noundef %51, ptr noundef %52, ptr noundef %53, i64 noundef %54), !dbg !864
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				9
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.004084
+# Typebuilder time     		0.000432
+# MLTA time            		0.000364
+# Icall alias time     		0.000123
+# Func alias time      		0.004909
+# One layer alias time 		9e-06
+# Escape alias time    		5.6e-05
+# DB time              		0.002102

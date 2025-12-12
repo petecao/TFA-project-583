@@ -1,0 +1,98 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/tls13encryptiontest-bin-tls13encryptiontest.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/tls13encryptiontest-bin-tls13encryptiontest.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/tls13encryptiontest-bin-tls13encryptiontest.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/tls13encryptiontest-bin-tls13encryptiontest.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: test_tls13_encryption
+
+Analyzed func: test_tls13_encryption
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Update global ICallees info
+
+0 Update icall:   %75 = call i32 %70(ptr noundef null, ptr noundef null, i32 noundef 772, i32 noundef 1, i32 noundef 0, i32 noundef 3, i16 noundef zeroext 0, ptr noundef null, i64 noundef 0, ptr noundef %71, i64 noundef 16, ptr noundef %72, i64 noundef %73, ptr noundef null, i64 noundef 0, ptr noundef %74, i64 noundef 16, i32 noundef 0, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef %9), !dbg !571
+
+1 Update icall:   %126 = call i32 %124(ptr noundef %125), !dbg !617
+
+2 Update icall:   %92 = call i32 %90(ptr noundef %91, ptr noundef %1, i64 noundef 1, i32 noundef 0, ptr noundef null, i64 noundef 0), !dbg !578
+
+3 Update icall:   %36 = call i32 %31(ptr noundef null, ptr noundef null, i32 noundef 772, i32 noundef 1, i32 noundef 1, i32 noundef 3, i16 noundef zeroext 0, ptr noundef null, i64 noundef 0, ptr noundef %32, i64 noundef 16, ptr noundef %33, i64 noundef %34, ptr noundef null, i64 noundef 0, ptr noundef %35, i64 noundef 16, i32 noundef 0, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef null, ptr noundef %10), !dbg !552
+
+4 Update icall:   %129 = call i32 %127(ptr noundef %128), !dbg !620
+
+5 Update icall:   %113 = call i32 %111(ptr noundef %112), !dbg !595
+
+6 Update icall:   %110 = call i32 %108(ptr noundef %109), !dbg !592
+
+7 Update icall:   %53 = call i32 %51(ptr noundef %52, ptr noundef %1, i64 noundef 1, i32 noundef 1, ptr noundef null, i64 noundef 0), !dbg !559
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				8
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.002625
+# Typebuilder time     		0.000312
+# MLTA time            		0.000284
+# Icall alias time     		9.7e-05
+# Func alias time      		0.004198
+# One layer alias time 		1.1e-05
+# Escape alias time    		5.6e-05
+# DB time              		0.001947

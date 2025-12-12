@@ -1,0 +1,196 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-drbg_ctr.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-drbg_ctr.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-drbg_ctr.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-drbg_ctr.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: drbg_ctr_new
+
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_set_ctx_params
+
+2 Top func: drbg_ctr_reseed
+
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_verify_zeroization
+
+4 Top func: drbg_ctr_free
+
+Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_drbg_enable_locking
+
+6 Top func: drbg_ctr_generate_wrapper
+
+Analyzed func: drbg_ctr_new
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+     Top func: drbg_ctr_set_ctx_params Failed
+
+Analyzed func: drbg_ctr_reseed
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+     Top func: ossl_drbg_enable_locking Failed
+     Top func: drbg_ctr_verify_zeroization Failed
+     Top func: drbg_ctr_free Failed
+
+7 Top func: drbg_ctr_instantiate
+
+Merge complete --- Not blocked by TBAA or TFA check
+8Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_gettable_ctx_params
+
+9 Top func: drbg_ctr_generate
+
+Merge complete --- Not blocked by TBAA or TFA check
+10Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_drbg_lock
+
+11 Top func: ossl_drbg_get_seed
+     Top func: drbg_ctr_generate_wrapper Failed
+
+12 Top func: drbg_ctr_instantiate_wrapper
+
+13 Top func: drbg_ctr_reseed_wrapper
+
+Analyzed func: drbg_ctr_instantiate
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+     Top func: drbg_ctr_gettable_ctx_params Failed
+     Top func: ossl_drbg_lock Failed
+     Top func: ossl_drbg_get_seed Failed
+
+Analyzed func: drbg_ctr_generate
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+14 Top func: drbg_ctr_uninstantiate
+
+Merge complete --- Not blocked by TBAA or TFA check
+15Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_get_ctx_paramsMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+16Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ossl_drbg_unlockMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+17Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_drbg_clear_seedMerge complete --- Not blocked by TBAA or TFA check
+
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_instantiate_wrapper FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+     Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_reseed_wrapper FailedMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+18Merge complete --- Not blocked by TBAA or TFA check
+ Top func: drbg_ctr_new_wrapperMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+19 Top func: Merge complete --- Not blocked by TBAA or TFA check
+drbg_ctr_uninstantiate_wrapperMerge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+20 Top func: drbg_ctr_settable_ctx_params
+     Top func: ossl_drbg_unlock Failed
+     Top func: drbg_ctr_get_ctx_params Failed
+     Top func: ossl_drbg_clear_seed Failed
+     Top func: drbg_ctr_new_wrapper Failed
+     Top func: drbg_ctr_settable_ctx_params Failed
+     Top func: drbg_ctr_uninstantiate_wrapper Failed
+
+Analyzed func: drbg_ctr_uninstantiate
+DefinitionFuncSet size: 1
+aliased_callset size: 1
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			1
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.005472
+# Typebuilder time     		0.000498
+# MLTA time            		0.000418
+# Icall alias time     		6e-05
+# Func alias time      		0.008261
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.00194

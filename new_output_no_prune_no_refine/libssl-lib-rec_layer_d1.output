@@ -1,0 +1,96 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-lib-rec_layer_d1.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libssl-lib-rec_layer_d1.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libssl-lib-rec_layer_d1.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libssl-lib-rec_layer_d1.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   call void %475(ptr noundef %476, i32 noundef 16388, i32 noundef %477), !dbg !2051
+
+1 Update icall:   %30 = call i32 %28(ptr noundef %29), !dbg !1698
+
+2 Update icall:   call void %435(i32 noundef 0, i32 noundef %438, i32 noundef 21, ptr noundef %439, i64 noundef 2, ptr noundef %440, ptr noundef %443), !dbg !2016
+
+3 Update icall:   %85 = call i32 %80(ptr noundef %84, ptr noundef %13, i64 noundef 1), !dbg !1747
+
+4 Update icall:   %662 = call i32 %657(ptr noundef %661), !dbg !2225
+
+5 Update icall:   %690 = call i32 %688(ptr noundef %689), !dbg !2257
+
+6 Update icall:   %716 = call i32 %711(ptr noundef %715), !dbg !2275
+
+7 Update icall:   %207 = call i32 %202(ptr noundef %206), !dbg !1814
+
+8 Update icall:   %175 = call i32 %155(ptr noundef %159, ptr noundef %161, ptr noundef %163, ptr noundef %165, ptr noundef %167, ptr noundef %169, ptr noundef %171, ptr noundef %174), !dbg !1790
+
+9 Update icall:   %93 = call i32 %91(ptr noundef %92), !dbg !1727
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				10
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.004841
+# Typebuilder time     		0.000586
+# MLTA time            		0.000365
+# Icall alias time     		0.000116
+# Func alias time      		0.00627
+# One layer alias time 		1.1e-05
+# Escape alias time    		5.6e-05
+# DB time              		0.001978

@@ -1,0 +1,430 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/evp_kdf_test-bin-evp_kdf_test.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/evp_kdf_test-bin-evp_kdf_test.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/evp_kdf_test-bin-evp_kdf_test.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/evp_kdf_test-bin-evp_kdf_test.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: test_kdf_pbkdf1
+
+1 Top func: test_kdf_tls1_prf_1byte_seed
+
+2 Top func: test_kdf_tls1_prf
+
+3 Top func: test_kdf_kbkdf_zero_output_size
+
+4 Top func: test_kdf_hkdf_empty_key
+
+5 Top func: test_kdf_hkdf_set_invalid_mode
+
+6 Top func: test_kdf_sshkdf
+
+Analyzed func: test_kdf_tls1_prf_1byte_seed
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_pbkdf1
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_zero_output_size
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_tls1_prf
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+7 Top func: test_kdf_hkdf
+
+8 Top func: test_kdf_pbkdf1_skey
+
+9 Top func: test_kdf_kbkdf_empty_key
+
+10 Top func: test_kdf_tls1_prf_set_skey
+
+Analyzed func: test_kdf_hkdf_set_invalid_mode
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_sshkdf
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hkdf_empty_key
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+11 Top func: test_kdf_hkdf_set_ctx_param_fail
+
+12 Top func: test_kdf_x963
+
+Analyzed func: test_kdf_hkdf
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_empty_key
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+13 Top func: test_kdf_hkdf_1byte_key
+
+Analyzed func: test_kdf_pbkdf1_skey
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_tls1_prf_set_skey
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+14 Top func: test_kdf_hkdf_invalid_digest
+
+15 Top func: test_kdf_kbkdf_1byte_key
+
+16 Top func: test_kdf_pbkdf1_key_too_long
+
+Analyzed func: test_kdf_hkdf_set_ctx_param_fail
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_x963
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+17 Top func: test_kdf_tls1_prf_derive_skey
+
+Analyzed func: test_kdf_hkdf_1byte_key
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+18 Top func: test_kdf_pbkdf2
+
+19 Top func: test_kdf_x942_asn1
+
+Analyzed func: test_kdf_hkdf_invalid_digest
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+20 Top func: test_kdf_hkdf_empty_salt
+
+Analyzed func: test_kdf_kbkdf_1byte_key
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_pbkdf1_key_too_long
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_tls1_prf_derive_skey
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+21 Top func: test_kdf_hkdf_fixed_digest_change_digest
+
+22 Top func: test_kdf_kbkdf_8009_prf1
+
+23 Top func: test_kdf_kbkdf_6803_128
+
+Analyzed func: test_kdf_pbkdf2
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+24 Top func: test_kdf_tls1_prf_invalid_digest
+
+Analyzed func: test_kdf_x942_asn1
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hkdf_empty_salt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+25 Top func: test_kdf_pbkdf2_small_output
+
+26 Top func: test_kdf_krb5kdf
+
+27 Top func: test_kdf_hkdf_gettables
+
+Analyzed func: test_kdf_hkdf_fixed_digest_change_digest
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_8009_prf1
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_6803_128
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_tls1_prf_invalid_digest
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+28 Top func: test_kdf_hkdf_fixed_digest_preserve_digest
+
+29 Top func: test_kdf_kbkdf_8009_prf2
+
+30 Top func: test_kdf_kbkdf_6803_256
+
+Analyzed func: test_kdf_pbkdf2_small_output
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_krb5kdf
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+31 Top func: test_kdf_tls1_prf_zero_output_size
+
+Analyzed func: test_kdf_hkdf_gettables
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+32 Top func: test_kdf_pbkdf2_large_output
+
+33 Top func: test_kdf_hmac_drbg_settables
+
+Analyzed func: test_kdf_hkdf_fixed_digest_preserve_digest
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_8009_prf2
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_6803_256
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+34 Top func: test_kdf_hkdf_gettables_extractonly
+
+Analyzed func: test_kdf_tls1_prf_zero_output_size
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+35 Top func: test_kdf_hkdf_reset
+
+36 Top func: test_kdf_kbkdf_fixedinfo
+
+37 Top func: test_kdf_kbkdf_invalid_digest
+
+38 Top func: test_kdf_tls1_prf_empty_secret
+
+Analyzed func: test_kdf_pbkdf2_large_output
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hmac_drbg_settables
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hkdf_gettables_extractonly
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+39 Top func: test_kdf_pbkdf2_small_salt
+
+40 Top func: test_kdf_hmac_drbg_gettables
+
+41 Top func: test_kdf_hkdf_gettables_no_digest
+
+Analyzed func: test_kdf_kbkdf_fixedinfo
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hkdf_reset
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_tls1_prf_empty_secret
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_invalid_digest
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+42 Top func: test_kdf_kbkdf_kmac
+
+43 Top func: test_kdf_hkdf_zero_output_size
+
+44 Top func: test_kdf_tls1_prf_1byte_secret
+
+Analyzed func: test_kdf_pbkdf2_small_salt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+45 Top func: test_kdf_kbkdf_invalid_mac
+
+Analyzed func: test_kdf_hmac_drbg_gettables
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hkdf_gettables_no_digest
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+46 Top func: test_kdf_pbkdf2_small_iterations
+
+47 Top func: test_kbkdf_mac_change
+
+Analyzed func: test_kdf_hkdf_zero_output_size
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+48 Top func: test_kdf_hkdf_derive_set_params_fail
+
+Analyzed func: test_kdf_kbkdf_kmac
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_tls1_prf_1byte_secret
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_invalid_mac
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+49 Top func: test_kdf_pbkdf2_small_salt_pkcs5
+
+50 Top func: test_kdf_get_kdf
+
+51 Top func: test_kdf_tls1_prf_empty_seed
+
+52 Top func: test_kdf_kbkdf_invalid_r
+
+Analyzed func: test_kbkdf_mac_change
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_pbkdf2_small_iterations
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_hkdf_derive_set_params_fail
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+53 Top func: test_kdf_ss_kmac
+
+54 Top func: test_kdf_ss_hmac
+
+Analyzed func: test_kdf_get_kdf
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_pbkdf2_small_salt_pkcs5
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_kbkdf_invalid_r
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+55 Top func: test_kdf_ss_hash
+
+Analyzed func: test_kdf_tls1_prf_empty_seed
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+56 Top func: test_kdf_scrypt
+
+57 Top func: test_kdf_pbkdf2_small_iterations_pkcs5
+
+58 Top func: test_kdf_pbkdf2_invalid_digest
+
+Analyzed func: test_kdf_ss_hmac
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_ss_kmac
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_ss_hash
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_pbkdf2_small_iterations_pkcs5
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_scrypt
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_kdf_pbkdf2_invalid_digest
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.008395
+# Typebuilder time     		0.000771
+# MLTA time            		0.000662
+# Icall alias time     		7.8e-05
+# Func alias time      		0.006194
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002116

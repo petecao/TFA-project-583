@@ -1,0 +1,110 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-cts128.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-cts128.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-shlib-cts128.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-cts128.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   call void %56(ptr noundef %57, ptr noundef %58, i64 noundef 32, ptr noundef %59, ptr noundef %60, i32 noundef 0), !dbg !97
+
+1 Update icall:   call void %25(ptr noundef %26, ptr noundef %27, i64 noundef %28, ptr noundef %29, ptr noundef %30, i32 noundef 0), !dbg !68
+
+2 Update icall:   call void %63(ptr noundef %64, ptr noundef %65, ptr noundef %66), !dbg !90
+
+3 Update icall:   call void %47(ptr noundef %48, ptr noundef %50, ptr noundef %51), !dbg !86
+
+4 Update icall:   call void %46(ptr noundef %47, ptr noundef %48, i64 noundef 16, ptr noundef %49, ptr noundef %51, i32 noundef 0), !dbg !87
+
+5 Update icall:   call void %25(ptr noundef %26, ptr noundef %27, i64 noundef %28, ptr noundef %29, ptr noundef %30, i32 noundef 1), !dbg !66
+
+6 Update icall:   call void %68(ptr noundef %69, ptr noundef %70, ptr noundef %71), !dbg !108
+
+7 Update icall:   call void %46(ptr noundef %47, ptr noundef %51, i64 noundef 16, ptr noundef %52, ptr noundef %53, i32 noundef 1), !dbg !88
+
+8 Update icall:   call void %54(ptr noundef %57, ptr noundef %58, i64 noundef 16, ptr noundef %59, ptr noundef %61, i32 noundef 0), !dbg !98
+
+9 Update icall:   call void %61(ptr noundef %62, ptr noundef %63, ptr noundef %64), !dbg !89
+
+10 Update icall:   call void %59(ptr noundef %60, ptr noundef %61, ptr noundef %62), !dbg !98
+
+11 Update icall:   call void %32(ptr noundef %33, ptr noundef %34, i64 noundef %35, ptr noundef %36, ptr noundef %37, i32 noundef 0), !dbg !74
+
+12 Update icall:   call void %40(ptr noundef %41, ptr noundef %42, i64 noundef %43, ptr noundef %44, ptr noundef %45, i32 noundef 0), !dbg !83
+
+13 Update icall:   call void %28(ptr noundef %29, ptr noundef %30, i64 noundef %31, ptr noundef %32, ptr noundef %33, i32 noundef 1), !dbg !70
+
+14 Update icall:   call void %48(ptr noundef %49, ptr noundef %51, i64 noundef 16, ptr noundef %52, ptr noundef %53, i32 noundef 1), !dbg !90
+
+15 Update icall:   call void %65(ptr noundef %66, ptr noundef %67, i64 noundef 32, ptr noundef %68, ptr noundef %69, i32 noundef 0), !dbg !107
+
+16 Update icall:   call void %55(ptr noundef %58, ptr noundef %60, ptr noundef %61), !dbg !97
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				17
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001974
+# Typebuilder time     		0.000266
+# MLTA time            		0.00036
+# Icall alias time     		6.6e-05
+# Func alias time      		0.0047
+# One layer alias time 		1.2e-05
+# Escape alias time    		6.3e-05
+# DB time              		0.002191

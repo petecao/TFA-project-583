@@ -1,0 +1,136 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aes_ccm.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aes_ccm.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-cipher_aes_ccm.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_aes_ccm.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: aes128ccm_newctx
+
+1 Top func: ossl_ccm_get_ctx_params
+
+2 Top func: ossl_ccm_einit
+
+3 Top func: ossl_ccm_stream_final
+
+4 Top func: aes_192_ccm_get_params
+
+5 Top func: ossl_ccm_gettable_ctx_params
+
+6 Top func: aes192ccm_newctx
+     Top func: ossl_ccm_einit Failed
+     Top func: ossl_ccm_get_ctx_params Failed
+     Top func: ossl_ccm_stream_final Failed
+     Top func: aes128ccm_newctx Failed
+     Top func: ossl_ccm_gettable_ctx_params Failed
+     Top func: aes_192_ccm_get_params Failed
+
+7 Top func: ossl_ccm_dinit
+
+8 Top func: ossl_ccm_set_ctx_params
+
+9 Top func: ossl_ccm_cipher
+
+10 Top func: aes_ccm_freectx
+
+11 Top func: ossl_ccm_settable_ctx_params
+
+12 Top func: aes256ccm_newctx
+     Top func: aes192ccm_newctx Failed
+     Top func: ossl_ccm_dinit Failed
+     Top func: ossl_ccm_set_ctx_params Failed
+     Top func: ossl_ccm_cipher Failed
+
+13 Top func: aes192ccm_dupctx
+     Top func: ossl_ccm_settable_ctx_params Failed
+     Top func: aes256ccm_newctx Failed
+     Top func: aes_ccm_freectx Failed
+
+14 Top func: ossl_ccm_stream_update
+
+15 Top func: ossl_cipher_generic_gettable_params
+
+16 Top func: aes_128_ccm_get_params
+
+17 Top func: aes256ccm_dupctx
+
+18 Top func: aes128ccm_dupctx
+
+19 Top func: aes_256_ccm_get_params
+     Top func: aes192ccm_dupctx Failed
+     Top func: ossl_cipher_generic_gettable_params Failed
+     Top func: ossl_ccm_stream_update Failed
+     Top func: aes_128_ccm_get_params Failed
+     Top func: aes128ccm_dupctx Failed
+     Top func: aes256ccm_dupctx Failed
+     Top func: aes_256_ccm_get_params Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.001441
+# Typebuilder time     		0.000315
+# MLTA time            		0.000429
+# Icall alias time     		9.5e-05
+# Func alias time      		0.006866
+# One layer alias time 		9e-06
+# Escape alias time    		6.5e-05
+# DB time              		0.002177

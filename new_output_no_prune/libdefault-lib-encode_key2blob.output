@@ -1,0 +1,106 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-encode_key2blob.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-encode_key2blob.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-encode_key2blob.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-encode_key2blob.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: ec2blob_encode
+
+1 Top func: key2blob_newctx
+
+2 Top func: ec2blob_does_selection
+
+3 Top func: ec2blob_free_object
+
+4 Top func: sm22blob_does_selection
+
+5 Top func: sm22blob_free_object
+
+6 Top func: sm22blob_import_object
+
+7 Top func: sm22blob_encode
+     Top func: ec2blob_encode Failed
+     Top func: ec2blob_does_selection Failed
+     Top func: key2blob_newctx Failed
+     Top func: ec2blob_free_object Failed
+     Top func: sm22blob_does_selection Failed
+     Top func: sm22blob_import_object Failed
+     Top func: sm22blob_free_object Failed
+
+8 Top func: key2blob_freectx
+
+9 Top func: ec2blob_import_object
+     Top func: sm22blob_encode Failed
+     Top func: ec2blob_import_object Failed
+     Top func: key2blob_freectx Failed
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.00162
+# Typebuilder time     		0.000295
+# MLTA time            		0.000308
+# Icall alias time     		6.6e-05
+# Func alias time      		0.00152
+# One layer alias time 		6e-06
+# Escape alias time    		5.5e-05
+# DB time              		0.002229

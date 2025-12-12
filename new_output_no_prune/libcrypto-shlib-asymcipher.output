@@ -1,0 +1,143 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-asymcipher.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-asymcipher.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-shlib-asymcipher.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-asymcipher.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: evp_asym_cipher_up_ref
+
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+evp_asym_cipher_from_algorithmMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+evp_asym_cipher_free
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+evp_asym_cipher_up_refMerge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+DefinitionFuncSet size: 1Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: Merge complete --- Not blocked by TBAA or TFA check
+0
+
+Analyzed func: evp_asym_cipher_free
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: evp_asym_cipher_from_algorithm
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Update global ICallees info
+
+0 Update icall:   %136 = call i32 %130(ptr noundef %131, ptr noundef %132, ptr noundef %133, ptr noundef %134, i64 noundef %135), !dbg !951
+
+1 Update icall:   %68 = call i32 %51(ptr noundef %55, ptr noundef %56, ptr noundef %57, i64 noundef %65, ptr noundef %66, i64 noundef %67), !dbg !893
+
+2 Update icall:   %172 = call ptr %167(ptr noundef %171), !dbg !1016
+
+3 Update icall:   %236 = call i32 %229(ptr noundef %233, ptr noundef %234, ptr noundef %235), !dbg !1073
+
+4 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !193
+
+5 Update icall:   %278 = call i32 %276(ptr noundef %277), !dbg !1119
+
+6 Update icall:   %136 = call i32 %130(ptr noundef %131, ptr noundef %132, ptr noundef %133, ptr noundef %134, i64 noundef %135), !dbg !951
+
+7 Update icall:   %68 = call i32 %51(ptr noundef %55, ptr noundef %56, ptr noundef %57, i64 noundef %65, ptr noundef %66, i64 noundef %67), !dbg !893
+
+8 Update icall:   %294 = call i32 %292(ptr noundef %293), !dbg !1131
+
+9 Update icall:   %215 = call i32 %208(ptr noundef %212, ptr noundef %213, ptr noundef %214), !dbg !1053
+
+10 Update icall:   %21 = call ptr %19(ptr noundef null, ptr noundef %20), !dbg !193
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				11
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.008437
+# Typebuilder time     		0.000933
+# MLTA time            		0.000824
+# Icall alias time     		0.000217
+# Func alias time      		0.013526
+# One layer alias time 		1.7e-05
+# Escape alias time    		0.000113
+# DB time              		0.004036

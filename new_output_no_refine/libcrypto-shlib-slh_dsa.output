@@ -1,0 +1,98 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-slh_dsa.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-slh_dsa.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-shlib-slh_dsa.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-shlib-slh_dsa.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   call void %150(ptr noundef %151, i32 noundef %152), !dbg !368
+
+1 Update icall:   call void %120(ptr noundef %121), !dbg !363
+
+2 Update icall:   %142 = call i32 %126(ptr noundef %127, ptr noundef %137, ptr noundef %138, ptr noundef %139, i64 noundef %140, ptr noundef %141), !dbg !369
+
+3 Update icall:   %165 = call i32 %147(ptr noundef %148, ptr noundef %149, ptr noundef %150, ptr noundef %161, ptr noundef %162, i64 noundef %163, ptr noundef %164, i64 noundef 49), !dbg !379
+
+4 Update icall:   %119 = call i32 %111(ptr noundef %112, ptr noundef %113, ptr noundef %114, ptr noundef %115, ptr noundef %116, i64 noundef %117, ptr noundef %118, i64 noundef 49), !dbg !336
+
+5 Update icall:   call void %190(ptr noundef %191, i32 noundef %192), !dbg !404
+
+6 Update icall:   call void %186(ptr noundef %187, i32 noundef 3), !dbg !401
+
+7 Update icall:   call void %181(ptr noundef %182, i64 noundef %183), !dbg !397
+
+8 Update icall:   call void %141(ptr noundef %142, i64 noundef %143), !dbg !361
+
+9 Update icall:   call void %85(ptr noundef %86), !dbg !329
+
+10 Update icall:   call void %146(ptr noundef %147, i32 noundef 3), !dbg !365
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				11
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.002921
+# Typebuilder time     		0.000264
+# MLTA time            		0.000327
+# Icall alias time     		6.5e-05
+# Func alias time      		0.005068
+# One layer alias time 		1e-05
+# Escape alias time    		5.6e-05
+# DB time              		0.002138

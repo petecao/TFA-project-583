@@ -1,0 +1,163 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [./mehdi_tests/tbaa_conflicting_test_comp.bc]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [./mehdi_tests/tbaa_conflicting_test_comp.bc]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: ./mehdi_tests/tbaa_conflicting_test_comp.bc
+.
+[CallGraph / 1] [1 / 1] [./mehdi_tests/tbaa_conflicting_test_comp.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: _Z10cb_set_intv
+
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: _Z8cb_resetvMerge complete --- Not blocked by TBAA or TFA check
+
+
+2 Top func: _Z12cb_set_floatv
+
+3Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+_Z13cb_set_doublev
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: _Z11cb_set_longvMerge complete --- Not blocked by TBAA or TFA check
+
+
+5 Top func: _Z11cb_with_argi
+     Top func: _Z8cb_resetv Failed
+     Top func: _Z10cb_set_intv Failed
+     Top func: _Z13cb_set_doublev Failed
+     Top func: _Z12cb_set_floatv Failed
+     Top func: _Z11cb_set_longv Failed
+     Top func: _Z11cb_with_argi Failed
+
+Update global ICallees info
+
+0 Update icall:   tail call void %6(), !dbg !111
+
+1 Update icall:   tail call void %4(), !dbg !104
+
+2 Update icall:   tail call void %16(), !dbg !193
+
+3 Update icall:   tail call void %7(i32 noundef %0), !dbg !101
+
+4 Update icall:   tail call void %1(), !dbg !106
+
+5 Update icall:   tail call void %8(), !dbg !121
+
+6 Update icall:   tail call void %14(i32 noundef 2), !dbg !169
+
+7 Update icall:   tail call void %15(), !dbg !189
+
+8 Update icall:   tail call void %2(), !dbg !110
+
+ Start ICall Alias Analysis
+
+0 Top func: _Z13helper_runnerPvi
+---icall:   tail call void %4(), !dbg !104
+
+1 Top func: _Z22test_strict_separationi
+---icall:   tail call void %6(), !dbg !111
+
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: _Z19test_array_indexingi
+---icall:   tail call void %7(i32 noundef %0), !dbg !101
+
+3 Top func: main
+---icall:   tail call void %16(), !dbg !193
+
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: _Z22test_void_polymorphismvMerge complete --- Not blocked by TBAA or TFA check
+
+---icall:   tail call void %1(), !dbg !106
+
+5 Top func: _Z22test_void_polymorphismv
+---icall:   tail call void %2(), !dbg !110
+
+6 Top func: main
+---icall:   tail call void %15(), !dbg !189
+aliased_fset size: Merge complete --- Not blocked by TBAA or TFA check
+0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+7 Top func: main
+---icall:   tail call void %8(), !dbg !121
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+8 Top func: main
+---icall:   tail call void %14(i32 noundef 2), !dbg !169
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				9
+# Number total icall targets   			26
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			1
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 5
+reduce_num_func: 0
+reduce_num_onelayer: 6
+reduce_num_escape: 0
+reduce_num_total: 11
+
+
+# Load time            		0.004994
+# Typebuilder time     		0.000253
+# MLTA time            		0.000282
+# Icall alias time     		0.001819
+# Func alias time      		0.012218
+# One layer alias time 		1.7e-05
+# Escape alias time    		5.6e-05
+# DB time              		0.001996

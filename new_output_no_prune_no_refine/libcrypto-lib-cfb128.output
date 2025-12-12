@@ -1,0 +1,90 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-cfb128.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-cfb128.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libcrypto-lib-cfb128.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libcrypto-lib-cfb128.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+Update global ICallees info
+
+0 Update icall:   call void %28(ptr noundef %29, ptr noundef %30, ptr noundef %31), !dbg !70
+
+1 Update icall:   call void %310(ptr noundef %311, ptr noundef %312, ptr noundef %313), !dbg !323
+
+2 Update icall:   call void %149(ptr noundef %150, ptr noundef %151, ptr noundef %152), !dbg !171
+
+3 Update icall:   call void %68(ptr noundef %69, ptr noundef %70, ptr noundef %71), !dbg !100
+
+4 Update icall:   call void %107(ptr noundef %108, ptr noundef %109, ptr noundef %110), !dbg !138
+
+5 Update icall:   call void %218(ptr noundef %219, ptr noundef %220, ptr noundef %221), !dbg !233
+
+6 Update icall:   call void %263(ptr noundef %264, ptr noundef %265, ptr noundef %266), !dbg !280
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				7
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.002062
+# Typebuilder time     		0.000252
+# MLTA time            		0.000323
+# Icall alias time     		8e-05
+# Func alias time      		0.007488
+# One layer alias time 		7.2e-05
+# Escape alias time    		0.000911
+# DB time              		0.002294

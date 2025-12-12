@@ -1,0 +1,143 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_tdes_default_hw.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_tdes_default_hw.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/libdefault-lib-cipher_tdes_default_hw.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/libdefault-lib-cipher_tdes_default_hw.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: ossl_cipher_hw_tdes_ede3_initkey
+
+Merge complete --- Not blocked by TBAA or TFA check
+1Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ossl_cipher_hw_tdes_copyctx
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+2Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_tdes_cfb1Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+3Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_tdes_cfb
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+4Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_tdes_cfb8Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+5Merge complete --- Not blocked by TBAA or TFA check
+ Top func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_tdes_ecbMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+6Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ossl_cipher_hw_tdes_cbcMerge complete --- Not blocked by TBAA or TFA check
+
+
+Merge complete --- Not blocked by TBAA or TFA check
+7Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+ Top func: ossl_cipher_hw_tdes_ede2_initkey
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+Merge complete --- Not blocked by TBAA or TFA check
+
+Analyzed func: ossl_cipher_hw_tdes_cfb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: ossl_cipher_hw_tdes_cfb1
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: ossl_cipher_hw_tdes_cfb8
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: ossl_cipher_hw_tdes_ecb
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+Analyzed func: ossl_cipher_hw_tdes_cbc
+DefinitionFuncSet size: 0
+aliased_callset size: 0
+
+8 Top func: ossl_cipher_hw_tdes_ofb
+
+Analyzed func: Merge complete --- Not blocked by TBAA or TFA check
+ossl_cipher_hw_tdes_copyctxMerge complete --- Not blocked by TBAA or TFA check
+
+DefinitionFuncSet size: 0Merge complete --- Not blocked by TBAA or TFA check
+
+Merge complete --- Not blocked by TBAA or TFA check
+aliased_callset size: 0
+
+Analyzed func: ossl_cipher_hw_tdes_ede2_initkey
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: ossl_cipher_hw_tdes_ofb
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+ #0 0x000055621e197260 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (./build/lib/analyzer+0x382260)
+ #1 0x000055621e194821 SignalHandler(int) Signals.cpp:0:0
+ #2 0x00007fd9baaf5520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #3 0x000055621dec0f76 llvm::DenseMapBase<llvm::DenseMap<llvm::Function*, llvm::SmallPtrSet<llvm::CallInst*, 8u>, llvm::DenseMapInfo<llvm::Function*, void>, llvm::detail::DenseMapPair<llvm::Function*, llvm::SmallPtrSet<llvm::CallInst*, 8u>>>, llvm::Function*, llvm::SmallPtrSet<llvm::CallInst*, 8u>, llvm::DenseMapInfo<llvm::Function*, void>, llvm::detail::DenseMapPair<llvm::Function*, llvm::SmallPtrSet<llvm::CallInst*, 8u>>>::operator[](llvm::Function* const&) (./build/lib/analyzer+0xabf76)
+ #4 0x000055621debfb34 interCaseHandler(llvm::Value*, std::__cxx11::list<llvm::Value*, std::allocator<llvm::Value*>>&, std::set<llvm::Value*, std::less<llvm::Value*>, std::allocator<llvm::Value*>>, AliasContext*, GlobalContext*) (./build/lib/analyzer+0xaab34)
+ #5 0x000055621deb40b4 HandleFunc(llvm::Function*, AliasContext*, GlobalContext*, llvm::SmallPtrSet<llvm::CallInst*, 8u>&, omp_lock_t*) (./build/lib/analyzer+0x9f0b4)
+ #6 0x000055621deb22fb FuncAliasAnalysis(GlobalContext*) (.omp_outlined) FuncAliasAnalysis.cc:0:0
+ #7 0x00007fd9badc0e89 __kmp_invoke_microtask (/n/eecs583a/home/amrhuss/my-llvm-omp/lib/libomp.so+0xc4e89)
+ #8 0x00007fd9bad3d71f __kmp_invoke_task_func (/n/eecs583a/home/amrhuss/my-llvm-omp/lib/libomp.so+0x4171f)
+ #9 0x00007fd9bad37e15 __kmp_fork_call (/n/eecs583a/home/amrhuss/my-llvm-omp/lib/libomp.so+0x3be15)
+#10 0x00007fd9bad2789d __kmpc_fork_call (/n/eecs583a/home/amrhuss/my-llvm-omp/lib/libomp.so+0x2b89d)
+#11 0x000055621deb17ea FuncAliasAnalysis(GlobalContext*) (./build/lib/analyzer+0x9c7ea)
+#12 0x000055621de6f7b1 main (./build/lib/analyzer+0x5a7b1)
+#13 0x00007fd9baadcd90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#14 0x00007fd9baadce40 call_init ./csu/../csu/libc-start.c:128:20
+#15 0x00007fd9baadce40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#16 0x000055621de6ae85 _start (./build/lib/analyzer+0x55e85)
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
+Stack dump:
+0.	Program arguments: ./build/lib/analyzer tests/open_ssl_bc/libdefault-lib-cipher_tdes_default_hw.o

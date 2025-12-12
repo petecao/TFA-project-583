@@ -1,0 +1,118 @@
+Total 1 file(s)
+Openmp enabled
+[TypeBuilder] Initializing 1 modules .
+[TypeBuilder / 1] [1 / 1] [tests/open_ssl_bc/errtest-bin-errtest.o]
+
+[TypeBuilder] Updated in 0 modules.
+[TypeBuilder] Postprocessing ...
+[TypeBuilder] Done!
+
+[CHABuilder] Initializing 1 modules .
+[CHABuilder / 1] [1 / 1] [tests/open_ssl_bc/errtest-bin-errtest.o]
+
+[CHABuilder] Updated in 0 modules.
+[CHABuilder] Postprocessing ...
+[CHABuilder] Done!
+
+[CallGraph] Initializing 1 modules 0: Module: tests/open_ssl_bc/errtest-bin-errtest.o
+.
+[CallGraph / 1] [1 / 1] [tests/open_ssl_bc/errtest-bin-errtest.o]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+[CallGraph] Done!
+
+
+ Start Func Alias Analysis
+
+0 Top func: test_clear_error
+
+1 Top func: vdata_appends
+
+2 Top func: preserves_system_error
+
+3 Top func: test_save_restore
+
+4 Top func: raised_error
+
+5 Top func: test_marks
+
+6 Top func: test_print_error_format
+
+Analyzed func: vdata_appends
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_clear_error
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: preserves_system_error
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_save_restore
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: raised_error
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_marks
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Analyzed func: test_print_error_format
+DefinitionFuncSet size: 1
+aliased_callset size: 0
+
+Update global ICallees info
+
+ Start ICall Alias Analysis
+
+start oneLayerHandler
+
+start escapeHandler
+
+related types: 0
+succeed_type_num: 0
+related SI_num: 0
+succeed_inst_num: 0
+loop num: 1
+WARNING: MYSQL connect failed!
+Access denied for user 'petepc'@'localhost'
+
+############## Indirect Call Target Results Statistics ##############
+# Number icalls 				0
+# Number total icall targets   			0
+
+############## Alias Info Statistics ##############
+# Number succeed alias icall 			0
+# Number succeed func icall  			0
+
+  Failed reasons:
+# Number F has no global definition  		0
+# Number binary_operation    			0
+# Number llvm_used           			0
+# Number exceed_max          			0
+
+############## Time Statistics ##############
+
+############## Round Statistics ##############
+Round: 0
+reduce_num_icall: 0
+reduce_num_func: 0
+reduce_num_onelayer: 0
+reduce_num_escape: 0
+reduce_num_total: 0
+
+
+# Load time            		0.004613
+# Typebuilder time     		0.000569
+# MLTA time            		0.000492
+# Icall alias time     		9.3e-05
+# Func alias time      		0.001384
+# One layer alias time 		1.1e-05
+# Escape alias time    		9.1e-05
+# DB time              		0.003186
